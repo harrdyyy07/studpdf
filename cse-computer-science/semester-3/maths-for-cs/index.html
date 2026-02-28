@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics for Computer Science | StudPDF</title>
+    <link rel="stylesheet" href="../../../styles.css">
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+
+    <main class="container" style="padding-top: 8rem; padding-bottom: 8rem;">
+        <div class="breadcrumb">
+            <a href="../../../index.html">🏠</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="../../index.html">CSE</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="../index.html">Sem 3</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Mathematics for Computer Science</span>
+        </div>
+
+        <header style="margin-bottom: 4rem;">
+            <div id="subject-badge" class="badge"
+                style="color: var(--primary); background: rgba(99, 102, 241, 0.1); width: fit-content; margin-bottom: 1rem;">
+                Subject</div>
+            <h1 id="subject-title" style="font-size: 3.5rem; margin-bottom: 1rem;">Mathematics for Computer Science</h1>
+            <p id="subject-desc" style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px;">Access
+                module-wise notes and solved question papers.</p>
+        </header>
+
+        <div id="module-grid" class="module-grid">
+            <!-- Modules injected here -->
+        </div>
+    </main>
+
+    <script src="../../../data.js"></script>
+    <script src="../../../auth.js"></script>
+    <script src="../../../nav.js"></script>
+    <script src="../../../search.js"></script>
+    <script>
+        const subjectData = siteData.cse.semesters.find(s => s.sem === 3).subjects.find(sub => sub.slug === 'maths-for-cs');
+        const modules = subjectData.modules;
+        const grid = document.getElementById('module-grid');
+
+        if (modules && modules.length > 0) {
+            modules.forEach(mod => {
+                const card = document.createElement('div');
+                card.className = 'module-card glass';
+                card.innerHTML = `
+                    <div class="module-top">
+                        <div class="module-icon-box">📄</div>
+                        <div class="badge">${mod.type}</div>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem;">${mod.name}</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">${mod.desc}</p>
+                    <div class="module-meta">
+                        <span>${mod.size}</span>
+                        <span>${mod.date}</span>
+                    </div>
+                    <div class="module-actions">
+                        <a href="${mod.link}" class="btn-preview">Preview</a>
+                        <a href="${mod.link}" download class="btn-download">Download</a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        } else {
+            grid.innerHTML = '<div class="glass" style="grid-column: 1/-1; padding: 4rem; text-align: center; border-radius: 2rem;">No modules available yet. We are working on uploading the materials!</div>';
+        }
+    </script>
+</body>
+
+</html>

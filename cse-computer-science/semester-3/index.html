@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester 3 Subjects | CSE | StudPDF</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+
+    <main class="container" style="padding-top: 8rem;">
+        <div class="breadcrumb">
+            <a href="../../index.html">🏠</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="../index.html">CSE</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Semester 3</span>
+        </div>
+
+        <header style="margin-bottom: 4rem;">
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Semester 3 Subjects</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem;">Choose a subject to access module-wise notes and
+                question papers.</p>
+        </header>
+
+        <div id="subject-grid" class="module-grid">
+            <!-- Subjects injected here -->
+        </div>
+    </main>
+
+    <script src="../../data.js"></script>
+    <script src="../../auth.js"></script>
+    <script src="../../nav.js"></script>
+    <script src="../../search.js"></script>
+    <script>
+        const subjects = siteData.cse.semesters.find(s => s.sem === 3).subjects;
+        const grid = document.getElementById('subject-grid');
+
+        subjects.forEach(sub => {
+            const card = document.createElement('div');
+            card.className = 'module-card glass';
+            card.style.borderRadius = '1.5rem';
+            card.innerHTML = `
+                <div class="module-top">
+                    <div class="module-icon-box">📚</div>
+                    <div class="badge badge-outline" style="color: var(--accent-purple); border-color: rgba(168, 85, 247, 0.3);">${sub.credits}</div>
+                </div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem; letter-spacing: 1px;">${sub.code}</div>
+                <h3 style="margin-bottom: 1rem;">${sub.name}</h3>
+                <p style="font-size: 0.85rem; line-height: 1.5;">Access comprehensive notes, solved model question papers, and lab manuals for all modules.</p>
+                
+                <div style="border-top: 1px solid var(--surface-border); padding-top: 1.5rem; margin-top: 1.5rem;">
+                    <a href="${sub.slug}/" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: var(--accent-purple); font-weight: 600; font-size: 0.9rem;">
+                        <span>Access Modules</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+
+</html>

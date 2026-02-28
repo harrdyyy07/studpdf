@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Computer Science Engineering | StudPDF</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+
+    <main class="container" style="padding-top: 8rem;">
+        <div class="breadcrumb">
+            <a href="../index.html">🏠</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>CSE</span>
+        </div>
+
+        <header style="margin-bottom: 4rem;">
+            <div class="badge"
+                style="color: var(--primary); background: rgba(99, 102, 241, 0.1); width: fit-content; margin-bottom: 1rem;">
+                Stream</div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Computer Science</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px;">Select your current semester to
+                access comprehensive notes, previous year question papers, and study materials.</p>
+        </header>
+
+        <div id="sem-grid" class="branch-grid">
+            <!-- Semesters injected here -->
+        </div>
+    </main>
+
+    <script src="../data.js"></script>
+    <script src="../auth.js"></script>
+    <script src="../nav.js"></script>
+    <script src="../search.js"></script>
+    <script>
+        const dept = 'cse';
+        const deptData = siteData[dept];
+        const grid = document.getElementById('sem-grid');
+
+        deptData.semesters.forEach(s => {
+            const card = document.createElement('a');
+            card.href = `semester-${s.sem}/`;
+            card.className = 'branch-card glass';
+            card.style.padding = '3rem';
+            card.innerHTML = `
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <span style="font-size: 4rem; font-weight: 800; opacity: 0.1;">${s.sem}</span>
+                    <div>
+                        <h3 style="margin-bottom: 0.5rem;">Semester ${s.sem}</h3>
+                        <p style="font-size: 0.9rem;">View Subjects →</p>
+                    </div>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+
+</html>

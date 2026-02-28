@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Electronics & Communication Engineering Notes | StudPDF</title>
+    <meta name="description"
+        content="Download VTU ECE (Electronics & Communication Engineering) notes, previous year question papers, and model answer papers.">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .page-header {
+            padding: 8rem 0 4rem;
+            background: radial-gradient(circle at top left, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+        }
+
+        .sem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .sem-card {
+            padding: 2rem;
+        }
+
+        .sem-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+            border-bottom: 1px solid var(--surface-border);
+            padding-bottom: 0.5rem;
+        }
+
+        .subject-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .subject-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .subject-name {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .resource-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .res-btn {
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            font-weight: 600;
+            background: var(--surface);
+            border: 1px solid var(--surface-border);
+            color: var(--text);
+            transition: all 0.2s ease;
+        }
+
+        .res-btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .back-btn {
+            margin-bottom: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: var(--text);
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <header class="page-header">
+        <div class="container">
+            <a href="../index.html" class="back-btn">← Back to Branches</a>
+            <h1 id="dept-title">ECE - Electronics & Communication</h1>
+            <p id="dept-desc">Access targeted notes and question papers for your semester.</p>
+        </div>
+    </header>
+    <main class="container">
+        <div id="sem-container" class="sem-grid"></div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 StudPDF. Built for Engineers.</p>
+        </div>
+    </footer>
+    <script src="../data.js"></script>
+    <script src="../auth.js"></script>
+    <script src="../nav.js"></script>
+    <script src="../search.js"></script>
+    <script>
+        const dept = 'ece';
+        const deptData = siteData[dept];
+        if (deptData) {
+            const container = document.getElementById('sem-container');
+            deptData.semesters.forEach(semObj => {
+                const semCard = document.createElement('div');
+                semCard.className = 'sem-card glass';
+                let subjectsHTML = semObj.subjects.map(sub => `
+                    <div class="subject-item">
+                        <span class="subject-name">${sub.name}</span>
+                        <div class="resource-links">
+                            <a href="${sub.notes}" class="res-btn">Notes</a>
+                            <a href="${sub.pyqp}" class="res-btn">PYQP</a>
+                            <a href="${sub.model}" class="res-btn">Model Paper</a>
+                        </div>
+                    </div>
+                `).join('');
+                semCard.innerHTML = `<h3 class="sem-title">Semester ${semObj.sem}</h3><div class="subject-list">${subjectsHTML || '<p class="text-muted">No data available yet.</p>'}</div>`;
+                container.appendChild(semCard);
+            });
+        }
+    </script>
+</body>
+
+</html>
