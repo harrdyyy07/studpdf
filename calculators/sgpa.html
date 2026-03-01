@@ -1,26 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGPA Calculator - StudPDF</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>VTU SGPA Calculator | VTU WISE</title>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <!-- Favicon link -->
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5780720681894064"
+     crossorigin="anonymous"></script>
+    
+    <style>
+        /* Custom Styles for Inter Font and General Layout */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background inspired by modern themes */
+            color: #c9d1d9; /* Light text color */
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        /* Styling for the print/PDF result */
+        @media print {
+            body {
+                background-color: #fff;
+                color: #000;
+                font-size: 10pt;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .calculator-card {
+                box-shadow: none !important;
+                border: 1px solid #ccc;
+                padding: 1rem;
+            }
+            #result {
+                display: block !important;
+            }
+            #watermark {
+                display: none; /* Hide watermark for actual print */
+            }
+            .sgpa-display, .student-info {
+                border-radius: 0;
+            }
+            .sgpa-value {
+                font-size: 2rem !important;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 15px;
+            }
+            th, td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+            /* Ensure text inputs are not visible, but marks are still there in the result table */
+            #result-body input {
+                display: none;
+            }
+            /* Hide the download button itself */
+            #generatepdfbtn {
+                display: none !important;
+            }
+        }
+    </style>
+      <meta name="google-site-verification" content="8QWs3z7awUXShb0ae4LY4VhW9xSZt5L0RA9qnS9rowc" />
 </head>
 
-<body>
-    <nav id="navbar"></nav>
-    <main class="container" style="padding-top: 10rem; text-align: center;">
-        <h1>SGPA Calculator</h1>
-        <p style="color: var(--text-muted); margin-top: 1rem;">Choose your scheme and semester to calculate your SGPA
-            accurately.</p>
-        <div class="glass" style="margin-top: 3rem; padding: 4rem; border-radius: 2rem;">
-            <p>Calculator interface coming soon...</p>
-        </div>
-    </main>
-    <script src="../auth.js"></script>
-    <script src="../nav.js"></script>
-    <script src="../search.js"></script>
-</body>
+    <script>
+        // --- Subject Data Structure (Mocked VTU 2021/2022 Data) ---
+        // This is necessary to maintain the website's original functionality of dynamically loading subjects.
+        const subjectData = {
+            
+            "2022 Scheme": {
+                
+            
+                    CSE: {
+                        1: [
+                            {code: "BMATS101", name: "Mathematics-I for CSE Stream", credits: 4},
+                            {code: "BPHYS102", name: "Applied Physics / Chemistry for CSE Stream", credits: 4},
+                            {code: "BPOPS103", name: "Programming in C / Engineering Drawing", credits: 3},
+                            {code: "BESCK104x", name: "Engineering Science Course-I", credits: 3},
+                            {code: "BETCK105x", name: "Emerging Tech / Programming Language-I", credits: 3},
+                            {code: "BENGK106", name: "Communicative English / Professional Writing Skills", credits: 1},
+                            {code: "BKSKK107", name: "Kannada / Constitution of India", credits: 1},
+                            {code: "BIDTK158", name: "Innovation and Design Thinking / Health", credits: 1},
+                            {code: "BNSK359", name: "NSS / Physical Education / Yoga", credits: 0}
+                        ],
+                        2: [
+                            {code: "BMATS201", name: "Mathematics-II for CSE Stream", credits: 4},
+                            {code: "BCHES202", name: "Applied Chemistry / Physics for CSE Stream", credits: 4},
+                            {code: "BCEDK203", name: "Engineering Drawing / Programming in C", credits: 3},
+                            {code: "BESCK204x", name: "Engineering Science Course-II", credits: 3},
+                            {code: "BPLCK205x", name: "Programming Language-II / Emerging Tech-II", credits: 3},
+                            {code: "BENGK206", name: "English / Professional Writing Skills", credits: 1},
+                            {code: "BKSKK207", name: "Kannada / Constitution", credits: 1},
+                            {code: "BSFHK258", name: "Health Foundations / Innovation and Design Thinking", credits: 1}
+                        ],
+                        3: [
+                            {code: "BCS301", name: "Mathematics for Computer Science", credits: 4},
+                            {code: "BCS302", name: "Digital Design and Computer Organization", credits: 4},
+                            {code: "BCS303", name: "Operating Systems", credits: 4},
+                            {code: "BCS304", name: "Data Structures and Applications", credits: 3},
+                            {code: "BCSL305", name: "Data Structures Lab", credits: 1},
+                            {code: "BCS306x", name: "ESC/ETC/PLC (Java, C++ etc.)", credits: 3},
+                            {code: "BSCK307", name: "Social Connect and Responsibility", credits: 1},
+                            {code: "BCS358x", name: "AEC/SEC-III (Excel, R, Git, Data Viz)", credits: 1},
+                            {code: "BNSK359", name: "NSS / Physical Education / Yoga", credits: 0}
+                        ],
+                        4: [
+                            {code: "BCS401", name: "Analysis and Design of Algorithms", credits: 4},
+                            {code: "BCS402", name: "Microcontrollers", credits: 4},
+                            {code: "BCS403", name: "Database Management Systems", credits: 4},
+                            {code: "BCSL404", name: "ADA Lab", credits: 1},
+                            {code: "BCS405x", name: "ESC/ETC/PLC (Discrete Math, Graph Theory)", credits: 3},
+                            {code: "BCS456x", name: "AEC/SEC-IV (Green IT, UI/UX, LATEX)", credits: 1},
+                            {code: "BBOC407", name: "Biology for Computer Engineers", credits: 2},
+                            {code: "BUHK408", name: "Universal Human Values", credits: 1},
+                            {code: "BNSK459", name: "NSS / PE / Yoga", credits: 0},
+                            {code: "BSCK407", name: "Environmental Studies", credits: 1},
+                            {code: "BCS458x", name: "R Programming", credits: 1}
+                        ],
+                        5: [
+                            {code: "BCS501", name: "Software Engineering and Project Management", credits: 4},
+                            {code: "BCS502", name: "Computer Networks", credits: 4},
+                            {code: "BCS503", name: "Theory of Computation", credits: 4},
+                            {code: "BCSL504", name: "Web Technology Lab", credits: 1},
+                            {code: "BCS515x", name: "Professional Elective-I (CG, AI, Unix, Distributed Systems)", credits: 3},
+                            {code: "BCS586", name: "Mini Project", credits: 2},
+                            {code: "BRMK557", name: "Research Methodology and IPR", credits: 3},
+                            {code: "BCS508", name: "Environmental Studies and E-Waste Mgmt", credits: 1},
+                            {code: "BNSK559", name: "NSS / PE / Yoga", credits: 0}
+                        ],
+                        6: [
+                            {code: "BCS601", name: "Cloud Computing (OpenStack/Google)", credits: 4},
+                            {code: "BCS602", name: "Machine Learning", credits: 4},
+                            {code: "BCS613x", name: "Professional Elective-II (Blockchain, CV, Compiler, Adv. Java)", credits: 3},
+                            {code: "BCS654x", name: "Open Elective-I (DS, OS, AI, Mobile App Dev)", credits: 3},
+                            {code: "BCS685", name: "Project Phase-I", credits: 2},
+                            {code: "BCSL606", name: "Machine Learning Lab", credits: 1},
+                            {code: "BCS657x", name: "AEC/SEC-V (React, DevOps, Tosca, Generative AI)", credits: 1},
+                            {code: "BNSK658", name: "NSS / PE / Yoga", credits: 0},
+                            {code: "BIKS609", name: "Indian Knowledge System", credits: 0}
+                        ],
+                        7: [
+                            {code: "BCS701", name: "Internet of Things", credits: 4},
+                            {code: "BCS702", name: "Parallel Computing", credits: 4},
+                            {code: "BCS703", name: "Cryptography and Network Security", credits: 4},
+                            {code: "BCS714x", name: "Professional Elective-III (DL, NLP, Big Data, Social Network Analysis)", credits: 3},
+                            {code: "BCS755x", name: "Open Elective-II (DBMS, Algorithms, SE)", credits: 3},
+                            {code: "BCS786", name: "Major Project Phase-II", credits: 6}
+                        ],
+                        8: [
+                            {code: "BCS801x", name: "Professional Elective-IV (Online via NPTEL)", credits: 3},
+                            {code: "BCS802x", name: "Open Elective-III (Online via NPTEL)", credits: 3},
+                            {code: "BCS803", name: "Internship (Industry/Research/Rural - 14-20 weeks)", credits: 10}
+                        ]
+                    },
+                    AIML: {
+                        1: [{code: "BMATS101", name: "Mathematics-I for CSE Stream", credits: 4}, {code: "BPHYS102", name: "Applied Physics for CSE Stream", credits: 4}, {code: "BPOPS103", name: "Principles of Programming Using C", credits: 3}, {code: "BESCK104x", name: "Engineering Science Course-I", credits: 3}, {code: "BETCK105x", name: "Emerging Technology Course-I", credits: 3}, {code: "BENGK106", name: "Communicative English", credits: 1}, {code: "BKSKK107", name: "Kannada OR Indian Constitution", credits: 1}, {code: "BIDTK158", name: "Innovation and Design Thinking", credits: 1}],
+                        2: [{code: "BMATS201", name: "Mathematics-II for CSE Stream", credits: 4}, {code: "BCHES202", name: "Applied Chemistry for CSE Stream", credits: 4}, {code: "BCEDK203", name: "Computer-Aided Engineering Drawing", credits: 3}, {code: "BESCK204x", name: "Engineering Science Course-II", credits: 3}, {code: "BPLCK205x", name: "Programming Language Course-II", credits: 3}, {code: "BPWSK206", name: "Professional Writing Skills in English", credits: 1}, {code: "BICOK207", name: "Indian Constitution", credits: 1}, {code: "BSFHK258", name: "Scientific Foundations of Health", credits: 1}],
+                        3: [{code: "BCS301", name: "Mathematics for Computer Science", credits: 4}, {code: "BCS302", name: "Digital Design and Computer Organization", credits: 4}, {code: "BCS303", name: "Operating Systems", credits: 4}, {code: "BCS304", name: "Data Structures and Applications", credits: 3}, {code: "BCSL305", name: "Data Structures Lab", credits: 1}, {code: "BCS306x", name: "ESC/ETC/PLC (Elective)", credits: 3}, {code: "BSCK307", name: "Social Connect and Responsibility", credits: 1}, {code: "BXX358x", name: "AEC/SEC-III", credits: 1}, {code: "BNSK359", name: "NSS/Physical Education/Yoga", credits: 0}],
+                        4: [{code: "BCS401", name: "Analysis and Design of Algorithms", credits: 3}, {code: "BAI402", name: "Artificial Intelligence", credits: 4}, {code: "BCS403", name: "Database Management Systems", credits: 4}, {code: "BCSL404", name: "ADA Lab", credits: 1}, {code: "BCS405x", name: "ESC/ETC/PLC (Elective)", credits: 3}, {code: "BDS456x", name: "AEC/SEC-IV", credits: 1}, {code: "BBOK407", name: "Biology for Engineers", credits: 2}, {code: "BUHK408", name: "Universal Human Values", credits: 1}, {code: "BNSK459", name: "NSS/Physical Education/Yoga", credits: 0}],
+                        5: [{code: "BCS501", name: "Software Engineering and Project Management", credits: 4}, {code: "BCS502", name: "Computer Networks", credits: 4}, {code: "BCS503", name: "Theory of Computation", credits: 4}, {code: "BAIL504", name: "Data Visualization Lab", credits: 1}, {code: "BXX515x", name: "Professional Elective-I", credits: 3}, {code: "BAI586", name: "Mini Project", credits: 2}, {code: "BRMK557", name: "Research Methodology and IPR", credits: 3}, {code: "BCS508", name: "Environmental Studies and E-Waste Management", credits: 1}, {code: "BNSK559", name: "NSS/Physical Education/Yoga", credits: 0}],
+                        6: [{code: "BAI601", name: "Natural Language Processing", credits: 4}, {code: "BAI602", name: "Machine Learning-I", credits: 4}, {code: "BXX613x", name: "Professional Elective-II", credits: 3}, {code: "BXX654x", name: "Open Elective-I", credits: 3}, {code: "BAI685", name: "Project Phase-I", credits: 2}, {code: "BAIL606", name: "Machine Learning Lab", credits: 1}, {code: "BXX657x", name: "AEC/SEC-V", credits: 1}, {code: "BNSK658", name: "NSS/Physical Education/Yoga", credits: 0}, {code: "BIKS609", name: "Indian Knowledge System", credits: 0}],
+                        7: [{code: "BAI701", name: "Deep Learning and Reinforcement Learning", credits: 4}, {code: "BAI702", name: "Machine Learning-II", credits: 4}, {code: "BAD703", name: "Data Security and Privacy", credits: 4}, {code: "BAI714x", name: "Professional Elective-III", credits: 3}, {code: "BAI755x", name: "Open Elective-II", credits: 3}, {code: "BAI786", name: "Major Project Phase-II", credits: 6}],
+                        8: [{code: "BAI801x", name: "Professional Elective (Online-NPTEL)", credits: 3}, {code: "BAI802x", name: "Open Elective (Online-NPTEL)", credits: 3}, {code: "BAI803", name: "Internship (Industry/Research)", credits: 10}]
+                    },
+                    ECE: {
+                        1: [{code: "BMATS101", name: "Mathematics-I (CSE Stream)", credits: 4}, {code: "BPHYS102", name: "Applied Physics (CSE Stream)", credits: 4}, {code: "BPOPS103", name: "Principles of Programming using C", credits: 3}, {code: "BESCK104x", name: "Engineering Science Course-I (Choose one)", credits: 3}, {code: "BETCK105x", name: "Emerging Tech-I / Programming Lang-I", credits: 3}, {code: "BENGK106", name: "Communicative English / Prof. Writing Skills", credits: 1}, {code: "BKSKK107", name: "Kannada / Constitution", credits: 1}, {code: "BIDTK158", name: "Innovation and Design Thinking / Health Science", credits: 1}],
+                        2: [{code: "BMATS201", name: "Mathematics-II (CSE Stream)", credits: 4}, {code: "BCHES202", name: "Applied Chemistry (CSE Stream)", credits: 4}, {code: "BCEDK203", name: "Computer-Aided Engineering Drawing", credits: 3}, {code: "BESCK204x", name: "Engineering Science Course-II (Choose one)", credits: 3}, {code: "BPLCK205x", name: "Programming Lang-II / Emerging Tech-II", credits: 3}, {code: "BPWSK206", name: "Prof. Writing Skills / Communicative English", credits: 1}, {code: "BICOK207", name: "Constitution / Kannada", credits: 1}, {code: "BSFHK258", name: "Health Science / Innovation and Design Thinking", credits: 1}],
+                        3: [{code: "BMATEC301", name: "Mathematics-III for EC", credits: 3}, {code: "BEC302", name: "Digital System Design using Verilog", credits: 4}, {code: "BEC303", name: "Electronic Principles and Circuits", credits: 4}, {code: "BEC304", name: "Network Analysis", credits: 3}, {code: "BECL305", name: "Analog and Digital Systems Design Lab", credits: 1}, {code: "BEC306x", name: "ESC/ETC/PLC (Electronics Devices / Sensors / COA / Applied Numerical)", credits: 3}, {code: "BSCK307", name: "Social Connect & Responsibility", credits: 1}, {code: "BEC358x", name: "AEC/SEC – III (LabVIEW, MATLAB, C++, IoT, etc.)", credits: 1}, {code: "BNSK359", name: "NSS / Physical Education / Yoga (Mandatory, Non-credit)", credits: 0}],
+                        4: [{code: "BEC401", name: "Electromagnetics Theory", credits: 3}, {code: "BEC402", name: "Principles of Communication Systems", credits: 4}, {code: "BEC403", name: "Control Systems", credits: 4}, {code: "BECL404", name: "Communication Lab", credits: 1}, {code: "BEC405x", name: "ESC/ETC/PLC (Microcontrollers / OS / Industrial Electronics / DS in C)", credits: 3}, {code: "BEC456x", name: "AEC/SEC – IV (MC Lab / PLC / Octave / DS Lab in C)", credits: 1}, {code: "BBOK407", name: "Biology for Engineers", credits: 3}, {code: "BUHK408", name: "Universal Human Values", credits: 1}, {code: "BNSK459", name: "NSS / Physical Education / Yoga (Mandatory, Non-credit)", credits: 0}],
+                        5: [{code: "BEC501", name: "Technological Innovation & Management Entrepreneurship", credits: 3}, {code: "BEC502", name: "Digital Signal Processing", credits: 4}, {code: "BEC503", name: "Digital Communication", credits: 4}, {code: "BECL504", name: "Digital Communication Lab", credits: 1}, {code: "BEC515x", name: "Professional Elective – I", credits: 3}, {code: "BEC586", name: "Mini Project", credits: 2}, {code: "BRMK557", name: "Research Methodology & IPR", credits: 3}, {code: "BESK508", name: "Environmental Studies (Mandatory)", credits: 2}, {code: "BNSK559", name: "NSS / Physical Education / Yoga (Mandatory, Non-credit)", credits: 0}],
+                        6: [{code: "BEC601", name: "Embedded System Design", credits: 4}, {code: "BEC602", name: "VLSI Design and Testing", credits: 4}, {code: "BEC613x", name: "Professional Elective – II", credits: 3}, {code: "BEC654x", name: "Open Elective – I", credits: 3}, {code: "BEC685", name: "Major Project Phase – I", credits: 2}, {code: "BECL606", name: "VLSI Design & Testing Lab", credits: 1}, {code: "BEC657x", name: "AEC/SEC – V (FPGA / IoT / Simulink / Python for ML)", credits: 1}, {code: "BNSK658", name: "NSS / Physical Education / Yoga (Mandatory, Non-credit)", credits: 0}, {code: "BIKS609", name: "Indian Knowledge System (Mandatory, Non-credit)", credits: 0}],
+                        7: [{code: "BEC701", name: "Microwave Engineering and Antenna Theory", credits: 4}, {code: "BEC702", name: "Computer Networks & Protocols", credits: 4}, {code: "BEC703", name: "Wireless Communication Systems", credits: 4}, {code: "BEC714x", name: "Professional Elective – III", credits: 3}, {code: "BEC755x", name: "Open Elective – II", credits: 3}, {code: "BEC786", name: "Major Project Phase – II", credits: 6}],
+                        8: [{code: "BEC801x", name: "Professional Elective – IV (Online)", credits: 3}, {code: "BEC802x", name: "Open Elective – III (Online)", credits: 3}, {code: "BEC803", name: "Internship (Industry / Research) (14–20 weeks)", credits: 10}]
+                    },
+                    EEE: {
+                        1: [{code: "BMATS101", name: "Mathematics-I (CSE Stream)", credits: 4}, {code: "BPHYS102", name: "Applied Physics (CSE Stream)", credits: 4}, {code: "BPOPS103", name: "Principles of Programming using C", credits: 3}, {code: "BESCK104x", name: "Engineering Science Course-I (Choose one)", credits: 3}, {code: "BETCK105x", name: "Emerging Tech-I / Programming Lang-I", credits: 3}, {code: "BENGK106", name: "Communicative English / Prof. Writing Skills", credits: 1}, {code: "BKSKK107", name: "Kannada / Constitution", credits: 1}, {code: "BIDTK158", name: "Innovation and Design Thinking / Health Science", credits: 1}],
+                        2: [{code: "BMATS201", name: "Mathematics-II (CSE Stream)", credits: 4}, {code: "BCHES202", name: "Applied Chemistry (CSE Stream)", credits: 4}, {code: "BCEDK203", name: "Computer-Aided Engineering Drawing", credits: 3}, {code: "BESCK204x", name: "Engineering Science Course-II (Choose one)", credits: 3}, {code: "BPLCK205x", name: "Programming Lang-II / Emerging Tech-II", credits: 3}, {code: "BPWSK206", name: "Prof. Writing Skills / Communicative English", credits: 1}, {code: "BICOK207", name: "Constitution / Kannada", credits: 1}, {code: "BSFHK258", name: "Health Science / Innovation and Design Thinking", credits: 1}],
+                        3: [{code: "BEE301", name: "Engineering Mathematics for EEE", credits: 3}, {code: "BEE302", name: "Electric Circuit Analysis (IPCC)", credits: 4}, {code: "BEE303", name: "Analog Electronic Circuits (IPCC)", credits: 4}, {code: "BEE304", name: "Transformers and Generators", credits: 3}, {code: "BEEL305", name: "Transformers and Generators Lab", credits: 1}, {code: "BEE306x", name: "ESC / ETC / PLC (Elective)", credits: 3}, {code: "BSCK307", name: "Social Connect and Responsibility (UHV)", credits: 1}, {code: "BEEx358x", name: "Ability / Skill Enhancement Course – III", credits: 1}, {code: "BNSK359", name: "NSS / PE / Yoga (MC)", credits: 0}],
+                        4: [{code: "BEE401", name: "Electric Motors", credits: 3}, {code: "BEE402", name: "Transmission and Distribution", credits: 4}, {code: "BEE403", name: "Microcontrollers (IPCC)", credits: 4}, {code: "BEEL404", name: "Electric Motors Lab", credits: 1}, {code: "BEE405x", name: "ESC / ETC / PLC (Elective)", credits: 3}, {code: "BEEx456x", name: "Ability / Skill Enhancement Course – IV", credits: 1}, {code: "BBOK407", name: "Biology for Engineers", credits: 3}, {code: "BUHK408", name: "Universal Human Values", credits: 1}, {code: "BNSK459", name: "NSS / PE / Yoga (MC)", credits: 0}],
+                        5: [{code: "BEE501", name: "Engineering Management & Entrepreneurship", credits: 3}, {code: "BEE502", name: "Signals & DSP (IPCC)", credits: 4}, {code: "BEE503", name: "Power Electronics", credits: 4}, {code: "BEEL504", name: "Power Electronics Lab", credits: 1}, {code: "BEE515x", name: "Professional Elective – I", credits: 3}, {code: "BEE586", name: "Mini Project", credits: 2}, {code: "BRMK557", name: "Research Methodology & IPR (AEC)", credits: 3}, {code: "BESK508", name: "Environmental Studies (MC)", credits: 2}, {code: "BNSK559", name: "NSS / PE / Yoga (MC)", credits: 0}],
+                        6: [{code: "BEE601", name: "Power System Analysis – I (IPCC)", credits: 4}, {code: "BEE602", name: "Control Systems", credits: 4}, {code: "BEE613x", name: "Professional Elective – II", credits: 3}, {code: "BEE654x", name: "Open Elective – I", credits: 3}, {code: "BEE685", name: "Project Phase – I", credits: 2}, {code: "BEEL606", name: "Control Systems Lab", credits: 1}, {code: "BEE657x", name: "Ability / Skill Development Course – V", credits: 1}, {code: "BNSK658", name: "NSS / PE / Yoga (MC)", credits: 0}, {code: "BIKS609", name: "Indian Knowledge System (MC)", credits: 0}],
+                        7: [{code: "BEE701", name: "Switchgear and Protection (IPCC)", credits: 4}, {code: "BEE702", name: "Industrial Drives and Applications", credits: 4}, {code: "BEE703", name: "Power System Analysis – II (IPCC)", credits: 4}, {code: "BEE714x", name: "Professional Elective – III", credits: 3}, {code: "BEE755x", name: "Open Elective – II", credits: 3}, {code: "BEE786", name: "Major Project Phase – II", credits: 6}],
+                        8: [{code: "BEE801x", name: "Professional Elective – IV (Online)", credits: 3}, {code: "BEE802x", name: "Open Elective – III (Online)", credits: 3}, {code: "BEE803", name: "Internship (Industry / Research, 14–20 wks)", credits: 10}]
+                    },
+                    CIVIL: {
+                        1: [{code: "BMATC101", name: "Mathematics-I for Civil Engg Stream", credits: 4}, {code: "BPHYC102", name: "Applied Physics for Civil Engg Stream", credits: 4}, {code: "BCIVC103", name: "Engineering Mechanics", credits: 3}, {code: "BESCK104x", name: "Engineering Science Course-I (choose one)", credits: 3}, {code: "BETCK105x", name: "Emerging Technology Course-I OR Programming Language Course-I", credits: 3}, {code: "BENGK106", name: "Communicative English OR Professional Writing Skills", credits: 1}, {code: "BKSKK107", name: "Kannada / Indian Constitution", credits: 1}, {code: "BIDTK158", name: "Innovation and Design Thinking OR Health", credits: 1}],
+                        2: [{code: "BMATC201", name: "Mathematics-II for Civil Engg Stream", credits: 4}, {code: "BCHEC202", name: "Applied Chemistry for Civil Engg Stream", credits: 4}, {code: "BCEDK203", name: "Computer-Aided Engineering Drawing", credits: 3}, {code: "BESCK204x", name: "Engineering Science Course-II (choose one)", credits: 3}, {code: "BPLCK205x", name: "Programming Language Course-II OR Emerging Technology Course-II", credits: 3}, {code: "BPWSK206", name: "Professional Writing Skills OR Communicative English", credits: 1}, {code: "BICOK207", name: "Indian Constitution / Kannada", credits: 1}, {code: "BSFHK258", name: "Health OR Innovation and Design Thinking", credits: 1}],
+                        3: [{code: "BCV301", name: "Strength of Materials", credits: 3}, {code: "BCV302", name: "Engineering Survey", credits: 4}, {code: "BCV303", name: "Engineering Geology", credits: 4}, {code: "BCV304", name: "Water Supply and Waste Water Engineering", credits: 3}, {code: "BCV305", name: "Computer Aided Building Planning & Drawing", credits: 1}, {code: "BCV306x", name: "ESC/ETC/PLC (Elective)", credits: 3}, {code: "BSCK307", name: "Social Connect and Responsibility", credits: 1}, {code: "BCV358x", name: "Ability/Skill Enhancement Course – III", credits: 1}, {code: "BNSK359", name: "NSS / Physical Education / Yoga", credits: 0}],
+                        4: [{code: "BCV401", name: "Analysis of Structures", credits: 3}, {code: "BCV402", name: "Fluid Mechanics & Hydraulics", credits: 4}, {code: "BCV403", name: "Transportation Engineering", credits: 4}, {code: "BCVL404", name: "Building Materials Testing Lab", credits: 1}, {code: "BCV405x", name: "ESC/ETC/PLC (Elective)", credits: 3}, {code: "BCV456x", name: "Ability/Skill Enhancement Course – IV", credits: 1}, {code: "BBOK407", name: "Biology for Engineers", credits: 3}, {code: "BUHK408", name: "Universal Human Values", credits: 1}, {code: "BNSK459", name: "NSS / Physical Education / Yoga", credits: 0}],
+                        5: [{code: "BCV501", name: "Construction Management & Entrepreneurship", credits: 3}, {code: "BCV502", name: "Geotechnical Engineering", credits: 4}, {code: "BCV503", name: "Concrete Technology", credits: 4}, {code: "BCV504", name: "Environmental Engineering Lab", credits: 1}, {code: "BCV515x", name: "Professional Elective I", credits: 3}, {code: "BCV586", name: "Mini Project / Extensive Survey Project", credits: 2}, {code: "BRMK557", name: "Research Methodology & IPR", credits: 3}, {code: "BESK508", name: "Environmental Studies", credits: 2}, {code: "BNSK559", name: "NSS / Physical Education / Yoga", credits: 0}],
+                        6: [{code: "BCV601", name: "Design of RCC Structures", credits: 4}, {code: "BCV602", name: "Irrigation Engineering & Hydraulic Structures", credits: 4}, {code: "BCV613x", name: "Professional Elective II", credits: 3}, {code: "BCV654x", name: "Open Elective I", credits: 3}, {code: "BCV685", name: "Major Project Phase – I", credits: 2}, {code: "BCVL606", name: "Software Application Lab", credits: 1}, {code: "BCV657x", name: "Ability/Skill Enhancement Course – V", credits: 1}, {code: "BNSK658", name: "NSS / Physical Education / Yoga", credits: 0}, {code: "BIKS609", name: "Indian Knowledge System", credits: 0}],
+                        7: [{code: "BCV701", name: "Design of Steel Structures", credits: 4}, {code: "BCV702", name: "Estimation & Contract Management", credits: 4}, {code: "BCV703", name: "Prestressed Concrete", credits: 4}, {code: "BCV714x", name: "Professional Elective III", credits: 3}, {code: "BCV755x", name: "Open Elective II", credits: 3}, {code: "BCV786", name: "Major Project Phase – II", credits: 6}],
+                        8: [{code: "BCV801x", name: "Professional Elective (Online)", credits: 3}, {code: "BCV802x", name: "Open Elective (Online)", credits: 3}, {code: "BCV803", name: "Internship (Industry/Research)", credits: 10}]
+                    },
 
+                    MECH: {
+                        1: [{code: "BMATM101", name: "Mathematics-I for Mechanical Engg Stream", credits: 4}, {code: "BPHYM102", name: "Applied Physics for Mechanical Engg Stream", credits: 4}, {code: "BEMEM103", name: "Elements of Mechanical Engineering", credits: 3}, {code: "BESCK104x", name: "Engineering Science Course-I (choose one)", credits: 3}, {code: "BETCK105x", name: "Emerging Technology Course-I / Programming Language Course-I", credits: 3}, {code: "BENGK106", name: "Communicative English / Professional Writing Skills", credits: 1}, {code: "BKSKK107", name: "Kannada / Indian Constitution", credits: 1}, {code: "BIDTK158", name: "Innovation and Design Thinking / Health", credits: 1}],
+                        2: [{code: "BMATM201", name: "Mathematics-II for Mechanical Engg Stream", credits: 4}, {code: "BCHEM202", name: "Applied Chemistry for Mechanical Engg Stream", credits: 4}, {code: "BCEDK203", name: "Computer-Aided Engineering Drawing", credits: 3}, {code: "BESCK204x", name: "Engineering Science Course-II (choose one)", credits: 3}, {code: "BETCK205x", name: "Emerging Technology Course-II / Programming Language Course-II", credits: 3}, {code: "BPWSK206", name: "Professional Writing Skills / Communicative English", credits: 1}, {code: "BICOK207", name: "Indian Constitution / Kannada", credits: 1}, {code: "BSFHK258", name: "Health / Innovation and Design Thinking", credits: 1}],
+                        3: [{code: "BME301", name: "Mechanics of Materials", credits: 3}, {code: "BME302", name: "Manufacturing Process", credits: 4}, {code: "BME303", name: "Material Science and Engineering", credits: 4}, {code: "BME304", name: "Basic Thermodynamics", credits: 3}, {code: "BME305", name: "Introduction to Modelling and Design for Manufacturing (Lab)", credits: 1}, {code: "BME306x", name: "ESC / ETC / PLC (Elective)", credits: 3}, {code: "BSCK307", name: "Social Connect and Responsibility", credits: 1}, {code: "BME358x", name: "Ability / Skill Enhancement Course – III", credits: 1}, {code: "BNSK359", name: "NSS / Physical Education / Yoga", credits: 0}],
+                        4: [{code: "BME401", name: "Applied Thermodynamics", credits: 3}, {code: "BME402", name: "Machining Science & Metrology", credits: 4}, {code: "BME403", name: "Fluid Mechanics", credits: 4}, {code: "BME404", name: "Mechanical Measurements and Metrology Lab", credits: 1}, {code: "BME405x", name: "ESC / ETC / PLC (Elective)", credits: 3}, {code: "BME456x", name: "Ability / Skill Enhancement Course – IV", credits: 1}, {code: "BBOK407", name: "Biology for Engineers", credits: 3}, {code: "BUHK408", name: "Universal Human Values", credits: 1}, {code: "BNSK459", name: "NSS / Physical Education / Yoga", credits: 0}],
+                        5: [{code: "BME501", name: "Industrial Management & Entrepreneurship", credits: 3}, {code: "BME502", name: "Turbo Machines", credits: 4}, {code: "BME503", name: "Theory of Machines", credits: 4}, {code: "BME504", name: "CNC Programming and 3D Printing Lab", credits: 1}, {code: "BME515x", name: "Professional Elective – I", credits: 3}, {code: "BME586", name: "Mini Project", credits: 2}, {code: "BRMK557", name: "Research Methodology & IPR", credits: 3}, {code: "BESK508", name: "Environmental Studies", credits: 2}, {code: "BNSK559", name: "NSS / Physical Education / Yoga", credits: 0}],
+                        6: [{code: "BME601", name: "Heat Transfer", credits: 4}, {code: "BME602", name: "Machine Design", credits: 4}, {code: "BME613x", name: "Professional Elective – II", credits: 3}, {code: "BME654x", name: "Open Elective – I", credits: 3}, {code: "BME685", name: "Major Project Phase – I", credits: 2}, {code: "BMEL606", name: "Design Lab", credits: 1}, {code: "BME657x", name: "Ability / Skill Enhancement Course – V", credits: 1}, {code: "BNSK658", name: "NSS / Physical Education / Yoga", credits: 0}, {code: "BIKS609", name: "Indian Knowledge System", credits: 0}],
+                        7: [{code: "BME701", name: "Finite Element Methods", credits: 4}, {code: "BME702", name: "Hydraulics and Pneumatics", credits: 4}, {code: "BME703", name: "Control Engineering", credits: 4}, {code: "BME714x", name: "Professional Elective – III", credits: 3}, {code: "BME755x", name: "Open Elective – II", credits: 3}, {code: "BME786", name: "Major Project Phase – II", credits: 6}],
+                        8: [{code: "BME801x", name: "Professional Elective – IV (Online)", credits: 3}, {code: "BME802x", name: "Open Elective – III (Online)", credits: 3}, {code: "BME803", name: "Internship (Industry / Research, 14–20 weeks)", credits: 10}]
+                    }
+                
+            }
+        };
+
+        // --- Core Calculator Functions ---
+
+        /**
+         * Maps raw marks (0-100) to VTU 2021/2022 Grade and Grade Point.
+         * @param {number} marks - The total marks (CIE + SEE).
+         * @returns {{grade: string, points: number}}
+         */
+        function getGradeAndPoints(marks) {
+            const m = parseFloat(marks);
+            if (m < 40) return { grade: "F", points: 0 };
+            if (m >= 90) return { grade: "S+", points: 10 };
+            if (m >= 80) return { grade: "S", points: 9 };
+            if (m >= 70) return { grade: "A", points: 8 };
+            if (m >= 60) return { grade: "B", points: 7 };
+            if (m >= 50) return { grade: "C", points: 6 };
+            if (m >= 45) return { grade: "D", points: 5 };
+            if (m >= 40) return { grade: "E", points: 4 };
+            // Should not happen if input validation is strict, but as a fallback
+            return { grade: "F", points: 0 };
+        }
+
+        /**
+         * Function to load branches based on selected scheme.
+         */
+        function loadBranches() {
+            const schemeSelect = document.getElementById('scheme');
+            const branchGroup = document.getElementById('branch-group');
+            const branchSelect = document.getElementById('branch');
+            const scheme = schemeSelect.value;
+            
+            // Reset lower selections and groups
+            document.getElementById('semester-group').style.display = 'none';
+            document.getElementById('subjects-group').style.display = 'none';
+            document.getElementById('result').style.display = 'none';
+            branchSelect.innerHTML = '<option value="">Select a Branch</option>';
+            
+            if (scheme && subjectData[scheme]) {
+                const branches = Object.keys(subjectData[scheme]);
+                branches.forEach(branch => {
+                    const option = document.createElement('option');
+                    option.value = branch;
+                    option.textContent = branch;
+                    branchSelect.appendChild(option);
+                });
+                branchGroup.style.display = 'block';
+            } else {
+                branchGroup.style.display = 'none';
+            }
+        }
+
+        /**
+         * Function to load semesters based on selected scheme and branch.
+         */
+        function loadSemesters() {
+            const scheme = document.getElementById('scheme').value;
+            const branch = document.getElementById('branch').value;
+            const semesterGroup = document.getElementById('semester-group');
+            const semesterSelect = document.getElementById('semester');
+
+            // Reset lower selections and groups
+            document.getElementById('subjects-group').style.display = 'none';
+            document.getElementById('result').style.display = 'none';
+            semesterSelect.innerHTML = '<option value="">Select a Semester</option>';
+            
+            if (scheme && branch && subjectData[scheme] && subjectData[scheme][branch]) {
+                const semesters = Object.keys(subjectData[scheme][branch]);
+                semesters.forEach(semester => {
+                    const option = document.createElement('option');
+                    option.value = semester;
+                    option.textContent = semester;
+                    semesterSelect.appendChild(option);
+                });
+                semesterGroup.style.display = 'block';
+            } else {
+                semesterGroup.style.display = 'none';
+            }
+        }
+
+        /**
+         * Function to load subject input fields based on scheme, branch, and semester.
+         */
+        function loadSubjects() {
+            const scheme = document.getElementById('scheme').value;
+            const branch = document.getElementById('branch').value;
+            const semester = document.getElementById('semester').value;
+            const subjectsDiv = document.getElementById('subjects');
+            const subjectsGroup = document.getElementById('subjects-group');
+            
+            // Hide result initially
+            document.getElementById('result').style.display = 'none';
+
+            subjectsDiv.innerHTML = '';
+            subjectsGroup.style.display = 'none';
+            
+            if (scheme && branch && semester && subjectData[scheme] && subjectData[scheme][branch] && subjectData[scheme][branch][semester]) {
+                const subjects = subjectData[scheme][branch][semester];
+
+                // Add Student Info inputs
+                subjectsDiv.innerHTML += `
+                    <h3 class="text-xl font-semibold mb-4 text-white/90">Student Details</h3>
+                    <div class="grid md:grid-cols-2 gap-4 mb-8">
+                        <div>
+                            <label for="studentName" class="block text-sm font-medium text-gray-300 mb-1">Your Full Name (for result)</label>
+                            <input type="text" id="studentName" placeholder="E.g., Priya Sharma" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        </div>
+                        <div>
+                            <label for="studentUsn" class="block text-sm font-medium text-gray-300 mb-1">Your USN (for result)</label>
+                            <input type="text" id="studentUsn" placeholder="E.g., 1MS21CS001" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white/90">Subject Marks (Total out of 100)</h3>
+                `;
+
+                subjects.forEach((subject, index) => {
+                    // Skip non-credit audit courses (credits: 0)
+                    if (subject.credits === 0) return;
+                    
+                    const subjectHtml = `
+                        <div class="flex items-center space-x-4 mb-4 p-4 bg-gray-800 rounded-xl shadow-lg border border-gray-700 transition-shadow hover:shadow-2xl">
+                            <div class="flex-grow">
+                                <label for="marks-${index}" class="block text-sm font-medium text-gray-300">
+                                    <span class="font-bold text-blue-400">${subject.code}</span> - ${subject.name} 
+                                    <span class="text-xs text-gray-500">(Credits: ${subject.credits})</span>
+                                </label>
+                            </div>
+                            <div class="w-24">
+                                <input 
+                                    type="number" 
+                                    id="marks-${index}" 
+                                    min="0" 
+                                    max="100" 
+                                    placeholder="Marks" 
+                                    data-credits="${subject.credits}" 
+                                    data-code="${subject.code}" 
+                                    data-name="${subject.name}"
+                                    class="w-full p-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-center focus:ring-green-500 focus:border-green-500 transition-colors"
+                                    oninput="this.value = Math.min(100, Math.max(0, parseInt(this.value || 0)))"
+                                >
+                            </div>
+                        </div>
+                    `;
+                    subjectsDiv.innerHTML += subjectHtml;
+                });
+
+                // Display the subject inputs
+                subjectsGroup.style.display = 'block';
+            }
+        }
+
+        /**
+         * Main function to calculate SGPA and display results.
+         */
+        function calculateSGPA() {
+            const marksInputs = document.querySelectorAll('#subjects-group input[data-credits]');
+            const resultDiv = document.getElementById('result');
+            const resultBody = document.getElementById('result-body');
+            const sgpaValueDiv = document.getElementById('sgpa-value');
+            const studentName = document.getElementById('studentName').value || 'Student Name Missing';
+            const studentUsn = document.getElementById('studentUsn').value || 'USN Missing';
+            const semester = document.getElementById('semester').value;
+            const scheme = document.getElementById('scheme').value;
+            
+            resultBody.innerHTML = '';
+            let totalCreditPoints = 0;
+            let totalCredits = 0;
+            let allSubjectsEntered = true;
+
+            const results = [];
+
+            marksInputs.forEach(input => {
+                const marks = parseInt(input.value);
+                const credits = parseFloat(input.dataset.credits);
+                const code = input.dataset.code;
+                const name = input.dataset.name;
+                
+                if (isNaN(marks) || marks === null || input.value === '') {
+                    allSubjectsEntered = false;
+                    // Treat missing/empty as F grade (0 points) for partial calculation but warn the user
+                    // For now, let's process with 0 if missing, matching the original note "Enter 0 if you don't have marks"
+                    // If we strictly enforce input, we'd return/show error. Sticking to the hint: 0 is acceptable.
+                }
+
+                const { grade, points } = getGradeAndPoints(marks);
+                const creditPoints = points * credits;
+
+                totalCreditPoints += creditPoints;
+                totalCredits += credits;
+
+                results.push({
+                    code: code,
+                    marks: marks,
+                    grade: grade,
+                    credits: credits,
+                    points: creditPoints
+                });
+            });
+
+            // Handle non-credit courses (audit courses) by fetching them from the data and adding a zero entry
+            const branch = document.getElementById('branch').value;
+            const sem = document.getElementById('semester').value;
+
+            if (scheme && branch && sem && subjectData[scheme] && subjectData[scheme][branch] && subjectData[scheme][branch][sem]) {
+                const subjects = subjectData[scheme][branch][sem];
+                subjects.filter(s => s.credits === 0).forEach(subject => {
+                    results.push({
+                        code: subject.code,
+                        marks: 'N/A', // Marks are not applicable/used for 0-credit course
+                        grade: 'NP', // Not Passed / Non-Credit Pass
+                        credits: 0,
+                        points: 0
+                    });
+                });
+            }
+
+            const sgpa = totalCredits > 0 ? (totalCreditPoints / totalCredits) : 0;
+
+            // Populate Result Table
+            results.forEach(res => {
+                const row = `
+                    <tr class="border-b border-gray-700 hover:bg-gray-800 transition-colors">
+                        <td class="px-4 py-2 font-medium text-white">${res.code}</td>
+                        <td class="px-4 py-2">${res.marks}</td>
+                        <td class="px-4 py-2 font-bold ${res.grade === 'F' ? 'text-red-500' : 'text-green-400'}">${res.grade}</td>
+                        <td class="px-4 py-2">${res.credits}</td>
+                        <td class="px-4 py-2">${res.points.toFixed(1)}</td>
+                    </tr>
+                `;
+                resultBody.innerHTML += row;
+            });
+
+            // Update Info and SGPA Display
+            document.getElementById('student-name').innerHTML = `<b>Name:</b> ${studentName}`;
+            document.getElementById('student-usn').innerHTML = `<b>USN:</b> ${studentUsn}`;
+            document.getElementById('student-semester').innerHTML = `<b>Semester:</b> ${semester}`;
+            document.getElementById('student-scheme').innerHTML = `<b>Scheme:</b> ${scheme}`;
+            document.getElementById('download-datetime').innerHTML = `<b>Generated Date:</b> ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`;
+
+            sgpaValueDiv.textContent = sgpa.toFixed(2);
+            document.getElementById('divide-top-value').textContent = totalCreditPoints.toFixed(1);
+            document.getElementById('divide-bottom-value').textContent = totalCredits.toFixed(1);
+            document.getElementById('total-sgpa-value').textContent = `= ${sgpa.toFixed(2)}`;
+
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+
+            if (!allSubjectsEntered) {
+                // If any subject input was empty, show a warning, but still display the result based on the 0-value
+                // Using a non-intrusive message box instead of alert()
+                console.warn("SGPA Calculated: Some subject marks were empty and treated as 0 (F grade).");
+            }
+        }
+
+        // Initialize listeners on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Set up initial change listeners if they are not inline
+            document.getElementById('scheme').addEventListener('change', loadBranches);
+            document.getElementById('branch').addEventListener('change', loadSemesters);
+            document.getElementById('semester').addEventListener('change', loadSubjects);
+            document.getElementById('calculateBtn').addEventListener('click', calculateSGPA);
+            
+            // Optionally, load branches on initial page load if a default scheme is pre-selected
+            // loadBranches();
+        });
+    </script>
+</head>
+<body class="antialiased min-h-screen">
+
+<div class="container">
+    <div class="bg-[#161b22] p-6 sm:p-8 rounded-3xl shadow-2xl border border-gray-700 mt-6 calculator-card no-print">
+        
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                VTU WISE SGPA Calculator
+            </h1>
+            <p class="mt-2 text-gray-400 text-lg">
+                Calculate your Semester Grade Point Average (SGPA) for <span class="text-yellow-400">VTU Schemes</span>
+            </p>
+        </header>
+
+        <!-- Grade Chart Modal Toggle -->
+        <div class="flex justify-center mb-8">
+            <button 
+                onclick="document.getElementById('grade-chart-modal').classList.remove('hidden')"
+                class="bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm hover:bg-gray-700 transition-colors flex items-center shadow-md">
+                <i class="fas fa-chart-line mr-2"></i> View Grade Chart
+            </button>
+        </div>
+
+        <!-- Inputs Form -->
+        <div id="form-container">
+            <h2 class="text-2xl font-bold mb-6 border-b border-gray-700 pb-3 text-white">1. Select Your Details</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Scheme Selection -->
+                <div class="subject">
+                    <label for="scheme" class="block text-sm font-medium text-gray-300 mb-2">Select Scheme</label>
+                    <select id="scheme" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-xl text-white appearance-none focus:ring-blue-500 focus:border-blue-500 transition-colors cursor-pointer">
+                        <option value="">Select a Scheme</option>
+                        <option value="2022 Scheme">2022 Scheme</option>
+                    </select>
+                </div>
+                
+                <!-- Branch Selection -->
+                <div class="form-group" id="branch-group" style="display: none;">
+                    <div class="subject">
+                        <label for="branch" class="block text-sm font-medium text-gray-300 mb-2">Select Branch</label>
+                        <select id="branch" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-xl text-white appearance-none focus:ring-blue-500 focus:border-blue-500 transition-colors cursor-pointer">
+                            <option value="">Select a Branch</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Semester Selection -->
+                <div class="form-group" id="semester-group" style="display: none;">
+                    <div class="subject">
+                        <label for="semester" class="block text-sm font-medium text-gray-300 mb-2">Select Semester</label>
+                        <select id="semester" class="w-full p-3 bg-gray-700 border border-gray-600 rounded-xl text-white appearance-none focus:ring-blue-500 focus:border-blue-500 transition-colors cursor-pointer">
+                            <option value="">Select a Semester</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marks Input Section -->
+            <div class="form-group mt-10" id="subjects-group" style="display: none;">
+                <h2 class="text-2xl font-bold mb-6 border-b border-gray-700 pb-3 text-white">2. Enter Marks</h2>
+                <div class="missing-marks-note bg-yellow-900/50 p-3 rounded-xl border-l-4 border-yellow-400 text-yellow-300 mb-6">
+                    <i class="fas fa-exclamation-circle mr-2"></i>
+                    **Important:** Enter the **Total Marks (CIE + SEE)** for each subject (out of 100). Enter 0 if you don't have marks yet.
+                </div>
+                <div id="subjects">
+                    <!-- Subject fields will be injected here by loadSubjects() -->
+                </div>
+                
+                <!-- Calculate Button -->
+                <div class="mt-8">
+                    <button id="calculateBtn" 
+                        class="w-full flex items-center justify-center px-6 py-3 bg-gradient-to-r from-green-500 to-teal-600 text-white font-extrabold text-lg rounded-xl shadow-lg hover:from-green-600 hover:to-teal-700 transition-all duration-300 transform hover:scale-[1.01]">
+                        <i class="fas fa-calculator mr-3"></i> Calculate SGPA
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Result Display Section -->
+    <div id="result" class="bg-[#161b22] p-6 sm:p-8 rounded-3xl shadow-2xl border border-gray-700 mt-8 mb-8" style="display: none;">
+        <div class="relative">
+            <h2 class="text-3xl font-extrabold text-blue-400 mb-6 text-center">SGPA Result Card</h2>
+
+            <!-- Student Info -->
+            <div class="student-info bg-gray-800 p-4 rounded-xl mb-6 grid sm:grid-cols-2 gap-4 text-gray-300 text-sm">
+                <div class="space-y-1" id="student-main-info">
+                    <div id="student-name" class="truncate"><b>Name:</b> </div>
+                    <div id="student-usn" class="truncate"><b>USN:</b> </div>
+                </div>
+                <div class="space-y-1 sm:text-right" id="student-secondary-info">
+                    <div id="student-scheme"><b>Scheme:</b> </div>
+                    <div id="student-semester"><b>Semester:</b> </div>
+                    <div id="download-datetime"><b>Generated Date:</b> </div>
+                </div>
+            </div>
+            
+            <!-- SGPA Display Card -->
+            <div class="sgpa-display bg-gray-900 p-6 rounded-2xl text-center mb-8 border border-green-500/50">
+                <h3 class="text-xl font-semibold text-gray-300 mb-3">Your Calculated SGPA</h3>
+                <div class="sgpa-value text-7xl font-black text-green-400" id="sgpa-value">0.00</div>
+                <div class="mt-4 text-gray-500">
+                    <p class="font-mono">SGPA Formula:</p>
+                    <div class="flex justify-center items-center font-bold text-lg text-gray-400">
+                        <div class="flex flex-col items-center mx-4">
+                            <div class="divide-top" id="divide-top-value">0</div>
+                            <div class="w-full h-1 bg-gray-600 my-1"></div>
+                            <div class="divide-bottom" id="divide-bottom-value">0</div>
+                        </div>
+                        <span class="text-2xl">=</span>
+                        <div class="total-sgpa-value ml-4 text-white" id="total-sgpa-value">= 0.00</div>
+                    </div>
+                    <p class="text-sm mt-1 text-gray-500">(Sum of Grade Points * Credits) / (Total Credits)</p>
+                </div>
+            </div>
+
+            <!-- Subject Results Table -->
+            <h3 class="text-xl font-bold text-white mb-4">Subject-wise Performance</h3>
+            <div class="overflow-x-auto bg-gray-800 rounded-xl shadow-lg">
+                <table class="min-w-full text-sm text-left text-gray-400">
+                    <thead class="text-xs uppercase bg-gray-700 text-gray-300">
+                        <tr>
+                            <th scope="col" class="px-4 py-3">Code</th>
+                            <th scope="col" class="px-4 py-3">Marks (Out of 100)</th>
+                            <th scope="col" class="px-4 py-3">Grade</th>
+                            <th scope="col" class="px-4 py-3">Credits (C)</th>
+                            <th scope="col" class="px-4 py-3">Points (G x C)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-body">
+                        <!-- Result rows injected here -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Download Button -->
+            <div id="pdfprint" class="mt-8 no-print">
+                <button id="generatepdfbtn" onclick="window.print()" 
+                    class="w-full flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-500 to-blue-600 text-white font-extrabold text-lg rounded-xl shadow-lg hover:from-indigo-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-[1.01]">
+                    <i class="fas fa-print mr-3"></i> Download/Print Result (PDF)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grade Chart Modal -->
+    <div id="grade-chart-modal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-80 transition-opacity duration-300">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-[#161b22] rounded-xl shadow-2xl p-6 w-full max-w-lg border border-gray-700 transform transition-all duration-300 scale-100">
+                <div class="flex justify-between items-center pb-3 border-b border-gray-700 mb-4">
+                    <h3 class="text-2xl font-bold text-white">VTU Grading System</h3>
+                    <button onclick="document.getElementById('grade-chart-modal').classList.add('hidden')" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm text-left text-gray-400 border border-gray-700 rounded-lg">
+                        <thead class="text-xs uppercase bg-gray-700 text-gray-300">
+                            <tr>
+                                <th scope="col" class="px-4 py-2">Marks Range (M)</th>
+                                <th scope="col" class="px-4 py-2">Grade</th>
+                                <th scope="col" class="px-4 py-2">Grade Point (P)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-700 hover:bg-gray-800"><td class="px-4 py-2 text-white font-bold">M ≥ 90</td><td class="px-4 py-2 text-green-400 font-bold">S+ (Outstanding)</td><td class="px-4 py-2">10</td></tr>
+                            <tr class="border-b border-gray-700 hover:bg-gray-800"><td class="px-4 py-2 text-white font-bold">80 ≤ M < 90</td><td class="px-4 py-2 text-green-400">S (Excellent)</td><td class="px-4 py-2">9</td></tr>
+                            <tr class="border-b border-gray-700 hover:bg-gray-800"><td class="px-4 py-2">70 ≤ M < 80</td><td class="px-4 py-2 text-blue-400">A (Very Good)</td><td class="px-4 py-2">8</td></tr>
+                            <tr class="border-b border-gray-700 hover:bg-gray-800"><td class="px-4 py-2">60 ≤ M < 70</td><td class="px-4 py-2 text-blue-400">B (Good)</td><td class="px-4 py-2">7</td></tr>
+                            <tr class="border-b border-gray-700 hover:bg-gray-800"><td class="px-4 py-2">50 ≤ M < 60</td><td class="px-4 py-2 text-yellow-400">C (Average)</td><td class="px-4 py-2">6</td></tr>
+                            <tr class="border-b border-gray-700 hover:bg-gray-800"><td class="px-4 py-2">45 ≤ M < 50</td><td class="px-4 py-2 text-yellow-400">D (Satisfactory)</td><td class="px-4 py-2">5</td></tr>
+                            <tr class="border-b border-gray-700 hover:bg-gray-800"><td class="px-4 py-2">40 ≤ M < 45</td><td class="px-4 py-2 text-orange-400">E (Pass)</td><td class="px-4 py-2">4</td></tr>
+                            <tr class="hover:bg-gray-800"><td class="px-4 py-2 text-red-500 font-bold">M < 40</td><td class="px-4 py-2 text-red-500 font-bold">F (Fail / Re-register)</td><td class="px-4 py-2">0</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-4 text-xs text-gray-500 text-center">
+                    Note: This is based on the standard VTU 2021/2022 CBCS Grading System.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+            <!-- Bottom Section -->
+            <div class="border-t border-gray-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-400 ">
+                            &copy; <span id="current-year">2026</span> VTU WISE. All Rights Reserved.
+                        </p>
+                        <p class="text-sm text-gray-500 mt-1">
+                            A student-focused initiative for educational resources.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
 </html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | vtuwise</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--surface-border);
+            padding-bottom: 1.5rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-toggle-icon {
+            font-size: 1.2rem;
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <main class="container" style="padding-top: 10rem; padding-bottom: 5rem;">
+        <h1 style="text-align: center; margin-bottom: 3rem;">Frequently Asked Questions</h1>
+        <div class="glass" style="padding: 3rem; border-radius: 2rem; max-width: 800px; margin: 0 auto;">
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    Are the study materials free?
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, absolutely! Our mission is to make quality educational content accessible to all students. All
+                    our notes, question papers, and calculators are 100% free to use and download.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    Are the notes updated to the latest VTU scheme?
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    We try our best to keep materials updated for the 2021 and 2022 CBCS schemes. The scheme details
+                    will be mentioned appropriately on the subject pages. Always cross-verify topics with your official
+                    syllabus copy.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    How accurate is the SGPA/CGPA calculator?
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Our calculator is strictly built according to the official VTU grade point logic (Absolute Grading
+                    System). If you enter the correct credits and marks, the result is highly accurate.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    Can I contribute my own notes?
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, we highly encourage student contributions! You can use the "Upload Notes" page linked in the
+                    footer to submit your scanned handwritten notes or typed PDFs. Our team will review and publish
+                    them.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                    I found a broken link or incorrect document. What should I do?
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    If you encounter any issues, please reach out to us via the Contact Us page or join our
+                    WhatsApp/Telegram community groups to report the issue directly. We will fix it as soon as possible.
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="../data.js"></script>
+    <script src="../auth.js"></script>
+    <script src="../nav.js"></script>
+    <script src="../search.js"></script>
+</body>
+
+</html>

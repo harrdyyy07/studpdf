@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subject Dashboard | StudPDF</title>
+    <title>Subject Name | vtuwise</title>
     <link rel="stylesheet" href="../../../styles.css">
 </head>
 
@@ -43,7 +43,7 @@
         const subjectData = siteData.cse.semesters.find(s => s.sem === 3).subjects.find(sub => sub.slug === slug);
 
         if (subjectData) {
-            document.title = `${subjectData.name} | StudPDF`;
+            document.title = `${subjectData.name} | vtuwise`;
             document.getElementById('subject-title').textContent = subjectData.name;
             document.getElementById('breadcrumb-current').textContent = subjectData.name;
             const modules = subjectData.modules;

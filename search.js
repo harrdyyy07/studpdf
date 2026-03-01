@@ -1,5 +1,5 @@
 /**
- * Site-Wide Search Logic for StudPDF
+ * Centralized Search for vtuwise
  */
 const Search = {
     init: () => {

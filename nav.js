@@ -1,5 +1,5 @@
 /**
- * Centralized Navigation for StudPDF
+ * Centralized Navigation for vtuwise
  */
 
 // Theme Initialization (Immediate)
@@ -56,7 +56,7 @@ const Navigation = {
                     <span class="hamburger"></span>
                 </button>
                 
-                <a href="${prefix}index.html" class="logo">StudPDF</a>
+                <a href="${prefix}index.html" class="logo">vtuwise</a>
                 
                 <ul class="nav-links">
                     <li><a href="${prefix}index.html">Home</a></li>
@@ -231,9 +231,9 @@ const Navigation = {
         const footerHtml = `
             <div class="container footer-content">
                 <div class="footer-column brand-column">
-                    <a href="${prefix}index.html" class="logo">StudPDF <span class="logo-accent">wise.</span></a>
+                <a href="${prefix}index.html" class="logo">vtuwise</a>
                     <p class="footer-desc">
-                        StudPDF: Your comprehensive academic companion. 📚 Prepare effectively with expertly curated resources, thoughtfully created by students to support student success.
+                        vtuwise: Your comprehensive academic companion. 📚 Prepare effectively with expertly curated resources, thoughtfully created by students to support student success.
                     </p>
                     <div class="social-links">
                         <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">
@@ -274,7 +274,7 @@ const Navigation = {
             
             <div class="footer-bottom">
                 <div class="container">
-                    <p>© 2026 StudPDF. All Rights Reserved.</p>
+                    <p>© 2026 vtuwise. All Rights Reserved.</p>
                     <p class="footer-tagline">A student-focused initiative for educational resources.</p>
                 </div>
             </div>
