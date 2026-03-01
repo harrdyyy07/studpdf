@@ -83,7 +83,7 @@ const Navigation = {
                         </div>
                     </li>
                     <li class="mobile-only-action">
-                        <a href="https://whatsapp.com/channel/your-channel-id" target="_blank" class="btn-join-mobile">Join Us</a>
+                        <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" class="btn-join-mobile">Join Us</a>
                     </li>
                 </ul>
 
@@ -100,7 +100,7 @@ const Navigation = {
                         <svg class="icon-sun-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
                     </div>
 
-                    <a href="https://whatsapp.com/channel/your-channel-id" target="_blank" class="btn-join">Join Us</a>
+                    <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" class="btn-join">Join Us</a>
                 </div>
             </div>
 
