@@ -58,21 +58,21 @@ const Search = {
         if (href.includes('/first-year/semester-1/mathematics-for-cse/')) prefix = "../../../";
         else if (href.includes('/first-year/semester-1/')) prefix = "../../";
         else if (href.includes('/first-year/')) prefix = "../";
-        else if (href.includes('/cse-computer-science/')) prefix = "../";
-        else if (href.includes('/ece-electronics-communication/')) prefix = "../";
-        else if (href.includes('/eee-electrical-electronics/')) prefix = "../";
-        else if (href.includes('/mechanical-engineering/')) prefix = "../";
-        else if (href.includes('/civil-engineering/')) prefix = "../";
+        else if (href.includes('/cse/')) prefix = "../";
+        else if (href.includes('/ece/')) prefix = "../";
+        else if (href.includes('/eee/')) prefix = "../";
+        else if (href.includes('/mech/')) prefix = "../";
+        else if (href.includes('/civil/')) prefix = "../";
         else if (href.includes('/calculators/') || href.includes('/legal/')) prefix = "../";
 
         // Map branch key to folder name
         const branchFolders = {
             'firstyear': 'first-year',
-            'cse': 'cse-computer-science',
-            'ece': 'ece-electronics-communication',
-            'eee': 'eee-electrical-electronics',
-            'mech': 'mechanical-engineering',
-            'civil': 'civil-engineering'
+            'cse': 'cse',
+            'ece': 'ece',
+            'eee': 'eee',
+            'mech': 'mech',
+            'civil': 'civil'
         };
 
         const folder = branchFolders[branch] || branch;

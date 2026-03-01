@@ -76,6 +76,36 @@ const Navigation = {
 
                     <!-- Mobile Specific Actions -->
                     <li class="mobile-only-action">
+                        <a href="/cse/index.html" class="nav-item">
+                            <span class="nav-icon">💻</span>
+                            <span>Computer Science</span>
+                        </a>
+                    </li>
+                    <li class="mobile-only-action">
+                        <a href="/ece/index.html" class="nav-item">
+                            <span class="nav-icon">📡</span>
+                            <span>Electronics & Comm.</span>
+                        </a>
+                    </li>
+                    <li class="mobile-only-action">
+                        <a href="/eee/index.html" class="nav-item">
+                            <span class="nav-icon">⚡</span>
+                            <span>Electrical & Electronics</span>
+                        </a>
+                    </li>
+                    <li class="mobile-only-action">
+                        <a href="/mech/index.html" class="nav-item">
+                            <span class="nav-icon">⚙️</span>
+                            <span>Mechanical</span>
+                        </a>
+                    </li>
+                    <li class="mobile-only-action">
+                        <a href="/civil/index.html" class="nav-item">
+                            <span class="nav-icon">🏗️</span>
+                            <span>Civil</span>
+                        </a>
+                    </li>
+                    <li class="mobile-only-action">
                         <div class="theme-switch" role="button" aria-label="Toggle Theme">
                             <svg class="icon-moon-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                             <div class="switch-knob"></div>
