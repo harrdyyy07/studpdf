@@ -215,6 +215,15 @@ const Navigation = {
         // Initialize footer
         Navigation.initFooter(prefix);
 
+        // Footer dropdown logic
+        document.querySelectorAll('.footer-dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    toggle.parentElement.classList.toggle('active');
+                }
+            });
+        });
+
         // Initialize search logic after nav is ready
         if (typeof Search !== 'undefined' && Search.init) {
             Search.init();
@@ -249,9 +258,9 @@ const Navigation = {
                     <a href="${prefix}upload.html" class="btn-upload">Upload Notes</a>
                 </div>
                 
-                <div class="footer-column">
-                    <h4>POLICY DETAILS</h4>
-                    <ul class="footer-links">
+                <div class="footer-column footer-dropdown">
+                    <h4 class="footer-dropdown-toggle">POLICY DETAILS <i>▾</i></h4>
+                    <ul class="footer-links footer-dropdown-menu">
                         <li><a href="${prefix}legal/about.html">About</a></li>
                         <li><a href="${prefix}legal/terms.html">Terms and Conditions</a></li>
                         <li><a href="${prefix}legal/privacy.html">Privacy Policy</a></li>
@@ -261,9 +270,9 @@ const Navigation = {
                     </ul>
                 </div>
 
-                <div class="footer-column">
-                    <h4>UNIVERSITY LINKS</h4>
-                    <ul class="footer-links">
+                <div class="footer-column footer-dropdown">
+                    <h4 class="footer-dropdown-toggle">UNIVERSITY LINKS <i>▾</i></h4>
+                    <ul class="footer-links footer-dropdown-menu">
                         <li><a href="#">Academic Calendar</a></li>
                         <li><a href="#">VTU Result</a></li>
                         <li><a href="#">VTU Model Paper</a></li>
@@ -278,8 +287,30 @@ const Navigation = {
                     <p class="footer-tagline">A student-focused initiative for educational resources.</p>
                 </div>
             </div>
+            
+            <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+                ↑
+            </button>
         `;
         footer.innerHTML = footerHtml;
+
+        const backToTopButton = document.getElementById('back-to-top');
+        if (backToTopButton) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
     }
 };
 
