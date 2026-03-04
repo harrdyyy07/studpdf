@@ -129,7 +129,8 @@ const Navigation = {
                         <div class="switch-knob"></div>
                         <svg class="icon-sun-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
                     </div>
-
+                    
+                    <button id="install-pwa-btn" class="btn-join" style="display: none; background: linear-gradient(135deg, #10B981 0%, #059669 100%); margin-left: 0.5rem;">Install App</button>
                     <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" class="btn-join">Join Us</a>
                 </div>
             </div>
@@ -258,6 +259,42 @@ const Navigation = {
         if (typeof Search !== 'undefined' && Search.init) {
             Search.init();
         }
+
+        // PWA Install Logic
+        let deferredPrompt;
+        const installBtn = document.getElementById('install-pwa-btn');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent Chrome 67 and earlier from automatically showing the prompt
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI to notify the user they can add to home screen
+            if (installBtn) {
+                installBtn.style.display = 'block';
+
+                installBtn.addEventListener('click', (e) => {
+                    // hide our user interface that shows our A2HS button
+                    installBtn.style.display = 'none';
+                    // Show the prompt
+                    deferredPrompt.prompt();
+                    // Wait for the user to respond to the prompt
+                    deferredPrompt.userChoice.then((choiceResult) => {
+                        if (choiceResult.outcome === 'accepted') {
+                            console.log('User accepted the A2HS prompt');
+                        } else {
+                            console.log('User dismissed the A2HS prompt');
+                            installBtn.style.display = 'block'; // Show it again if they dismissed it
+                        }
+                        deferredPrompt = null;
+                    });
+                });
+            }
+        });
+
+        window.addEventListener('appinstalled', (evt) => {
+            console.log('vtuwise was installed', evt);
+        });
     },
 
     initFooter: (prefix) => {
