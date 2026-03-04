@@ -1,0 +1,26 @@
+{
+  "name": "vtuwise - Engineering Notes",
+  "short_name": "vtuwise",
+  "description": "Get premium engineering notes, previous year question papers, and model papers for all branches.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2B59FF",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

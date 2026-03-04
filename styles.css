@@ -1993,3 +1993,100 @@ html {
     box-shadow: 0 8px 16px rgba(37, 211, 102, 0.4);
     background: #1faf53;
 }
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(43, 89, 255, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 900;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--primary-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(43, 89, 255, 0.6);
+}
+
+.back-to-top svg {
+    width: 24px;
+    height: 24px;
+}
+/* Skeleton Loading Animation */
+@keyframes skeleton-loading {
+    0% {
+        background-color: var(--surface-border);
+    }
+    50% {
+        background-color: rgba(226, 232, 240, 0.4);
+    }
+    100% {
+        background-color: var(--surface-border);
+    }
+}
+
+[data-theme="dark"] @keyframes skeleton-loading {
+    0% {
+        background-color: #333333;
+    }
+    50% {
+        background-color: rgba(51, 51, 51, 0.4);
+    }
+    100% {
+        background-color: #333333;
+    }
+}
+
+.skeleton {
+    animation: skeleton-loading 1.5s infinite linear;
+    border-radius: 0.5rem;
+}
+
+.skeleton-text {
+    height: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.skeleton-text.short {
+    width: 60%;
+}
+
+.skeleton-title {
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.skeleton-card {
+    background: var(--surface);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    border: 1px solid var(--surface-border);
+}
+
+.skeleton-card .skeleton-thumb {
+    height: 160px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}

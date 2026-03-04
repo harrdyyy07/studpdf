@@ -8,6 +8,7 @@
     <meta name="description"
         content="Download VTU ECE (Electronics & Communication Engineering) notes, previous year question papers, and model answer papers.">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="manifest" href="../manifest.json">
 </head>
 
 <body>
@@ -43,24 +44,41 @@
         const deptData = siteData[dept];
         const grid = document.getElementById('sem-grid');
 
-        if (deptData && deptData.semesters) {
-            deptData.semesters.forEach(s => {
-                const card = document.createElement('a');
-                card.href = `semester-${s.sem}/`;
-                card.className = 'branch-card glass';
-                card.style.padding = '3rem';
-                card.innerHTML = `
-                    <div style="display: flex; align-items: center; gap: 2rem;">
-                        <span style="font-size: 4rem; font-weight: 800; opacity: 0.1;">${s.sem}</span>
-                        <div>
-                            <h3 style="margin-bottom: 0.5rem;">Semester ${s.sem}</h3>
-                            <p style="font-size: 0.9rem;">View Subjects →</p>
-                        </div>
+        // Render Skeletons first
+        grid.innerHTML = Array(2).fill(`
+            <div class="branch-card glass skeleton-card" style="padding: 3rem;">
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <div class="skeleton skeleton-thumb" style="width: 4rem; height: 4rem; opacity: 0.1; margin: 0;"></div>
+                    <div style="flex: 1;">
+                        <div class="skeleton skeleton-title"></div>
+                        <div class="skeleton skeleton-text short"></div>
                     </div>
-                `;
-                grid.appendChild(card);
-            });
-        }
+                </div>
+            </div>
+        `).join('');
+
+        // Simulate network delay to show off the skeleton loading effect
+        setTimeout(() => {
+            grid.innerHTML = '';
+            if (deptData && deptData.semesters) {
+                deptData.semesters.forEach(s => {
+                    const card = document.createElement('a');
+                    card.href = `semester-${s.sem}/`;
+                    card.className = 'branch-card glass';
+                    card.style.padding = '3rem';
+                    card.innerHTML = `
+                        <div style="display: flex; align-items: center; gap: 2rem;">
+                            <span style="font-size: 4rem; font-weight: 800; opacity: 0.1;">${s.sem}</span>
+                            <div>
+                                <h3 style="margin-bottom: 0.5rem;">Semester ${s.sem}</h3>
+                                <p style="font-size: 0.9rem;">View Subjects →</p>
+                            </div>
+                        </div>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+        }, 800);
     </script>
 </body>
 
