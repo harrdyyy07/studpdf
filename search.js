@@ -53,17 +53,15 @@ const Search = {
         // For simplicity, let's use the same prefix logic as nav.js or just use absolute-like paths if we can
         // But since this is a static site, we'll try to determine the root
 
-        const href = window.location.href;
         let prefix = "";
-        if (href.includes('/first-year/semester-1/mathematics-for-cse/')) prefix = "../../../";
-        else if (href.includes('/first-year/semester-1/')) prefix = "../../";
-        else if (href.includes('/first-year/')) prefix = "../";
-        else if (href.includes('/cse/')) prefix = "../";
-        else if (href.includes('/ece/')) prefix = "../";
-        else if (href.includes('/eee/')) prefix = "../";
-        else if (href.includes('/mech/')) prefix = "../";
-        else if (href.includes('/civil/')) prefix = "../";
-        else if (href.includes('/calculators/') || href.includes('/legal/')) prefix = "../";
+        const scripts = document.getElementsByTagName('script');
+        for (let i = 0; i < scripts.length; i++) {
+            const src = scripts[i].getAttribute('src');
+            if (src && (src.endsWith('/search.js') || src === 'search.js')) {
+                prefix = src.replace(/search\.js$/, '');
+                break;
+            }
+        }
 
         // Map branch key to folder name
         const branchFolders = {

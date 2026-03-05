@@ -27,19 +27,16 @@ const Navigation = {
         // or just calculate based on how many folders deep we are.
         // Assuming root is /studpdf/index.html or similar.
 
-        // Simpler approach: Check how many "../" we need based on directory hierarchy
+        // Dynamically determine the relative depth prefix by looking at how nav.js was included
         let prefix = "";
-        const href = window.location.href;
-        if (href.includes('/first-year/semester-1/mathematics-for-cse/')) prefix = "../../../";
-        else if (href.includes('/first-year/semester-1/')) prefix = "../../";
-        else if (href.includes('/first-year/')) prefix = "../";
-        else if (href.includes('/cse-computer-science/')) prefix = "../";
-        else if (href.includes('/ece-electronics-communication/')) prefix = "../";
-        else if (href.includes('/eee-electrical-electronics/')) prefix = "../";
-        else if (href.includes('/mechanical-engineering/')) prefix = "../";
-        else if (href.includes('/civil-engineering/')) prefix = "../";
-        else if (href.includes('/calculators/')) prefix = "../";
-        else if (href.includes('/legal/')) prefix = "../";
+        const scripts = document.getElementsByTagName('script');
+        for (let i = 0; i < scripts.length; i++) {
+            const src = scripts[i].getAttribute('src');
+            if (src && (src.endsWith('/nav.js') || src === 'nav.js')) {
+                prefix = src.replace(/nav\.js$/, '');
+                break;
+            }
+        }
 
         const showTopBar = sessionStorage.getItem('hideTopBar') !== 'true';
         const topBarSection = showTopBar ? `
@@ -75,36 +72,6 @@ const Navigation = {
                     <li><a href="${prefix}legal/index.html">Legal</a></li>
 
                     <!-- Mobile Specific Actions -->
-                    <li class="mobile-only-action">
-                        <a href="/cse/index.html" class="nav-item">
-                            <span class="nav-icon">💻</span>
-                            <span>Computer Science</span>
-                        </a>
-                    </li>
-                    <li class="mobile-only-action">
-                        <a href="/ece/index.html" class="nav-item">
-                            <span class="nav-icon">📡</span>
-                            <span>Electronics & Comm.</span>
-                        </a>
-                    </li>
-                    <li class="mobile-only-action">
-                        <a href="/eee/index.html" class="nav-item">
-                            <span class="nav-icon">⚡</span>
-                            <span>Electrical & Electronics</span>
-                        </a>
-                    </li>
-                    <li class="mobile-only-action">
-                        <a href="/mech/index.html" class="nav-item">
-                            <span class="nav-icon">⚙️</span>
-                            <span>Mechanical</span>
-                        </a>
-                    </li>
-                    <li class="mobile-only-action">
-                        <a href="/civil/index.html" class="nav-item">
-                            <span class="nav-icon">🏗️</span>
-                            <span>Civil</span>
-                        </a>
-                    </li>
                     <li class="mobile-only-action">
                         <div class="theme-switch" role="button" aria-label="Toggle Theme">
                             <svg class="icon-moon-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>

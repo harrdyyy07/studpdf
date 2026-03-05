@@ -118,6 +118,28 @@ const siteData = {
                     { name: "Research Methodology and IPR", code: "BRMK557", credits: "2 CR", slug: "research-methodology-and-ipr-rmipr-brmk557-vtu-notes", modules: [] },
                     { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [] }
                 ]
+            },
+            {
+                sem: 6,
+                subjects: [
+                    { name: "Embedded System Design", code: "BEC601", credits: "3 CR", slug: "embedded-system-design-esd-bec601-vtu-notes", modules: [] },
+                    { name: "VLSI Design and Testing", code: "BEC602", credits: "4 CR", slug: "vlsi-design-and-testing-vdt-bec602-vtu-notes", modules: [] },
+                    { name: "VLSI Design and Testing Lab", code: "BECL606", credits: "1 CR", slug: "vlsi-design-and-testing-lab-vdtl-becl606-vtu-notes", modules: [] },
+                    { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
+                    { name: "Multimedia Communication", code: "BEC613A", credits: "3 CR", slug: "multimedia-communication-mc-bec613a-vtu-notes", modules: [] },
+                    { name: "Computer and Data Security", code: "BEC613B", credits: "3 CR", slug: "computer-and-data-security-cds-bec613b-vtu-notes", modules: [] },
+                    { name: "Digital Image Processing", code: "BEC613C", credits: "3 CR", slug: "digital-image-processing-dip-bec613c-vtu-notes", modules: [] },
+                    { name: "FPGA System Design using Verilog", code: "BEC613D", credits: "3 CR", slug: "fpga-system-design-using-verilog-fsdv-bec613d-vtu-notes", modules: [] },
+                    { name: "Digital System Design using Verilog", code: "BEC654A", credits: "3 CR", slug: "digital-system-design-using-verilog-dsdv-bec654a-vtu-notes", modules: [] },
+                    { name: "Consumer Electronics", code: "BEC654B", credits: "3 CR", slug: "consumer-electronics-ce-bec654b-vtu-notes", modules: [] },
+                    { name: "Electronic Communication Systems", code: "BEC654C", credits: "3 CR", slug: "electronic-communication-systems-ecs-bec654c-vtu-notes", modules: [] },
+                    { name: "Basic VLSI Design", code: "BEC654D", credits: "3 CR", slug: "basic-vlsi-design-bvd-bec654d-vtu-notes", modules: [] },
+                    { name: "Open Elective Subjects Mechanical Engg", code: "", credits: "3 CR", slug: "open-elective-subjects-mechanical-engg-oeme-vtu-notes", modules: [] },
+                    { name: "FPGA System Design using Verilog Lab", code: "BECL657A", credits: "1 CR", slug: "fpga-system-design-using-verilog-lab-fsdvl-becl657a-vtu-notes", modules: [] },
+                    { name: "System Modelling using Simulink", code: "BECL657B", credits: "1 CR", slug: "system-modelling-using-simulink-sms-becl657b-vtu-notes", modules: [] },
+                    { name: "IoT Laboratory", code: "BECL657C", credits: "1 CR", slug: "iot-laboratory-il-becl657c-vtu-notes", modules: [] },
+                    { name: "Python Programming for Machine Learning Applications", code: "BECL657D", credits: "1 CR", slug: "python-programming-for-machine-learning-applications-ppmla-becl657d-vtu-notes", modules: [] }
+                ]
             }
         ]
     },
