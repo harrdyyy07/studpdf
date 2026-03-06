@@ -31,20 +31,24 @@
         </header>
         <div id="module-grid" class="module-grid"></div>
     </main>
+    
     <script src="../../../data.js"></script>
     <script src="../../../auth.js"></script>
     <script src="../../../nav.js"></script>
     <script src="../../../search.js"></script>
     <script>
         const pathParts = window.location.pathname.split('/');
-        // Handle both trailing slash and no trailing slash
-        let slug = pathParts[pathParts.length - 1] === "" ? pathParts[pathParts.length - 2] : pathParts[pathParts.length - 1];
-        if (slug.endsWith('.html')) slug = slug.replace('.html', '');
+        let slug = pathParts[pathParts.length - 1];
+        if (slug === 'index.html' || slug === '') {
+            slug = pathParts[pathParts.length - 2];
+        } else if (slug.endsWith('.html')) {
+            slug = slug.replace('.html', '');
+        }
 
         const subjectData = siteData.ece.semesters.find(s => s.sem === 4).subjects.find(sub => sub.slug === slug);
 
         if (subjectData) {
-            document.title = \\ | vtuwise\;
+            document.title = `${subjectData.name} | vtuwise`;
             document.getElementById('subject-title').textContent = subjectData.name;
             document.getElementById('breadcrumb-current').textContent = subjectData.name;
             const modules = subjectData.modules;
@@ -54,25 +58,26 @@
                 modules.forEach(mod => {
                     const card = document.createElement('div');
                     card.className = 'module-card glass';
-                    card.innerHTML = \
+                    card.innerHTML = `
                         <div class="module-top">
-                            <div class="module-icon-box">??</div>
-                            <div class="badge">\</div>
+                            <div class="module-icon-box">📖</div>
+                            ${mod.essential ? '<div class="badge badge-essential">ESSENTIAL</div>' : ''}
                         </div>
-                        <h3 style="margin-bottom: 0.5rem;">\</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">\</p>
+                        <h3 style="margin-bottom: 0.5rem;">${mod.name}</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">${mod.desc}</p>
                         <div class="module-actions">
-                            <a href="\" class="btn-preview">Preview</a>
-                            <a href="\" download class="btn-download">Download</a>
+                            <a href="${mod.link}" class="btn-preview" target="_blank">Preview</a>
+                            <a href="${mod.link}" class="btn-download" target="_blank">Download</a>
                         </div>
-                    \;
+                    `;
                     grid.appendChild(card);
                 });
             } else {
                 grid.innerHTML = '<div class="glass" style="grid-column: 1/-1; padding: 4rem; text-align: center; border-radius: 2rem;">No modules available yet. We are working on uploading the materials!</div>';
             }
+        } else {
+            document.getElementById('subject-title').textContent = "Subject Not Found";
         }
     </script>
 </body>
-
 </html>

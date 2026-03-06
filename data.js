@@ -127,7 +127,10 @@ const siteData = {
             {
                 sem: 3,
                 subjects: [
-                    { name: "Digital System Design using Verilog", code: "BEC302", credits: "4 CR", slug: "digital-system-design-using-verilog-dsdv-bec302-vtu-notes", modules: [] },
+                    { name: "Digital System Design using Verilog", code: "BEC302", credits: "4 CR", slug: "digital-system-design-using-verilog-dsdv-bec302-vtu-notes", modules: [
+                            { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1LgmPpbI6THNmfL-hPTJQyc6mh9DYjZYT/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "#", type: "Notes", essential: true },
+                            { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "#", type: "Notes", essential: true }] },
                     { name: "Electronic Principles and Circuits", code: "BEC303", credits: "4 CR", slug: "electronic-principles-and-circuits-epc-bec303-vtu-notes", modules: [] },
                     { name: "Network Analysis", code: "BEC304", credits: "4 CR", slug: "network-analysis-na-bec304-vtu-notes", modules: [] },
                     { name: "Electronic Devices", code: "BEC306A", credits: "3 CR", slug: "electronic-devices-ed-bec306a-vtu-notes", modules: [] },
