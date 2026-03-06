@@ -8,6 +8,9 @@
     document.documentElement.setAttribute('data-theme', currentTheme);
 })();
 
+// Disable Right Click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 const Navigation = {
     init: () => {
         const nav = document.getElementById('navbar');
