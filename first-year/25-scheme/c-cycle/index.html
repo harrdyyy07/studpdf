@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry (C) Cycle | 25 Scheme | vtuwise</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="manifest" href="../../../manifest.json">
+</head>
+<body>
+    <nav id="navbar"></nav>
+
+    <main class="container" style="padding-top: 8rem;">
+        <div class="breadcrumb">
+            <a href="../../../index.html">🏠</a>
+            <span class="breadcrumb-separator">/</span>
+            <a href="../../index.html">First Year</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>25 Scheme</span>
+            <span class="breadcrumb-separator">/</span>
+            <span>Chemistry (C) Cycle</span>
+        </div>
+
+        <header style="margin-bottom: 4rem;">
+            <div class="badge" style="color: var(--primary); background: rgba(99, 102, 241, 0.1); width: fit-content; margin-bottom: 1rem;">25 Scheme</div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Chemistry (C) Cycle</h1>
+            <p style="color: var(--text-muted); font-size: 1.1rem; max-width: 600px;">Access all notes and study materials for Chemistry (C) Cycle.</p>
+        </header>
+
+        <div id="subjects-grid" class="subjects-grid"></div>
+    </main>
+
+    <script src="../../../data.js"></script>
+    <script src="../../../auth.js"></script>
+    <script src="../../../nav.js"></script>
+    <script src="../../../search.js"></script>
+    <script>
+        const schemeSlug = "25-scheme";
+        const cycleSlug = "c-cycle";
+        const scheme = siteData.firstyear.schemes.find(s => s.slug === schemeSlug);
+        const cycle = scheme.cycles.find(c => c.slug === cycleSlug);
+        
+        const grid = document.getElementById('subjects-grid');
+        
+        if (cycle && cycle.subjects && cycle.subjects.length > 0) {
+            cycle.subjects.forEach(subject => {
+                const card = document.createElement('div');
+                card.className = 'subject-card glass';
+                card.innerHTML = `
+                    <div class="subject-header">
+                        <h3 class="subject-title">${subject.name}</h3>
+                        <span class="subject-code">${subject.code}</span>
+                    </div>
+                    <div class="subject-meta">
+                        <span>${subject.credits}</span>
+                        <span>${subject.modules ? subject.modules.length : 0} Modules</span>
+                    </div>
+                    <a href="${subject.slug}/" class="btn-primary" style="width: 100%; text-align: center; display: block;">View Modules</a>
+                `;
+                grid.appendChild(card);
+            });
+        } else {
+             grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: var(--text-muted);">Subjects are currently being added for this cycle. Check back soon!</p>';
+        }
+    </script>
+</body>
+</html>

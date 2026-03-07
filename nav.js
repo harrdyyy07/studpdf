@@ -70,8 +70,8 @@ const Navigation = {
                     </li>
                     
                     <li><a href="${prefix}upload.html">Upload</a></li>
-                    <li><a href="${prefix}results.html">Results</a></li>
-                    <li><a href="${prefix}academics.html">Academics</a></li>
+                    <li><a href="${prefix}https://results.vtu.ac.in/">Results</a></li>
+                    <li><a href="${prefix}https://vtu.ac.in/en/">Academics</a></li>
                     <li><a href="${prefix}legal/index.html">Legal</a></li>
 
                     <!-- Mobile Specific Actions -->
@@ -230,6 +230,9 @@ const Navigation = {
             Search.init();
         }
 
+        // Initialize PDF Modal
+        Navigation.initPdfModal();
+
         // PWA Install Logic
         let deferredPrompt;
         const installBtn = document.getElementById('install-pwa-btn');
@@ -310,10 +313,10 @@ const Navigation = {
                 <div class="footer-column footer-dropdown">
                     <h4 class="footer-dropdown-toggle">UNIVERSITY LINKS <i>▾</i></h4>
                     <ul class="footer-links footer-dropdown-menu">
-                        <li><a href="#">Academic Calendar</a></li>
-                        <li><a href="#">VTU Result</a></li>
-                        <li><a href="#">VTU Model Paper</a></li>
-                        <li><a href="#">VTU Examination</a></li>
+                        <li><a href="https://vtu.ac.in/academic-calendar/">Academic Calendar</a></li>
+                        <li><a href="https://results.vtu.ac.in/">VTU Result</a></li>
+                        <li><a href="https://vtu.ac.in/model-question-paper-b-e-b-tech-b-arch/">VTU Model Paper</a></li>
+                        <li><a href="https://vtu.ac.in/en/category/examination/">VTU Examination</a></li>
                     </ul>
                 </div>
             </div>
@@ -348,6 +351,112 @@ const Navigation = {
                 });
             });
         }
+    },
+
+    initPdfModal: () => {
+        // Create modal HTML and append to body
+        const modalHtml = `
+            <div id="pdf-preview-modal" class="pdf-modal-overlay">
+                <div class="pdf-modal-content">
+                    <div class="pdf-modal-header">
+                        <h3 class="pdf-modal-title">Document Preview</h3>
+                        <button class="pdf-modal-close" id="pdf-modal-close-btn" aria-label="Close Preview">
+                            <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                        </button>
+                    </div>
+                    <div class="pdf-modal-body">
+                        <div class="pdf-loading-spinner" id="pdf-loading-spinner"></div>
+                        <iframe id="pdf-preview-iframe" class="pdf-modal-iframe" allow="autoplay; encrypted-media" title="Document Preview"></iframe>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
+
+        const modal = document.getElementById('pdf-preview-modal');
+        const iframe = document.getElementById('pdf-preview-iframe');
+        const closeBtn = document.getElementById('pdf-modal-close-btn');
+        const spinner = document.getElementById('pdf-loading-spinner');
+
+        // Handle clicks on any preview button globally
+        document.addEventListener('click', (e) => {
+            const previewBtn = e.target.closest('.btn-preview');
+            if (previewBtn) {
+                e.preventDefault();
+                let link = previewBtn.getAttribute('href');
+                if (link && link !== '#') {
+                    // Try to format google drive links for embedding
+                    if (link.includes('drive.google.com/file/d/')) {
+                        link = link.replace(/\/view.*?$/, '/preview');
+                    }
+
+                    // Specific logic for module cards to use the module name as title
+                    const card = previewBtn.closest('.module-card');
+                    if (card) {
+                        const titleEl = card.querySelector('h3');
+                        if (titleEl) {
+                            document.querySelector('.pdf-modal-title').textContent = titleEl.textContent;
+                        }
+                    } else {
+                        document.querySelector('.pdf-modal-title').textContent = 'Document Preview';
+                    }
+
+                    iframe.src = link;
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+
+                    // Show spinner initially, hide when loaded
+                    spinner.style.display = 'block';
+                    iframe.onload = () => {
+                        spinner.style.display = 'none';
+                    };
+                }
+            }
+        });
+
+        // Handle clicks on any download button globally to force Drive downloads
+        document.addEventListener('click', (e) => {
+            const target = e.target.closest('a');
+            if (target && (target.classList.contains('btn-download') || target.hasAttribute('download') || target.textContent.trim().toLowerCase() === 'download')) {
+                let link = target.getAttribute('href');
+                if (link && link.includes('drive.google.com/file/d/')) {
+                    e.preventDefault();
+                    // Extract file ID
+                    const match = link.match(/\/d\/([a-zA-Z0-9_-]+)/);
+                    if (match && match[1]) {
+                        const fileId = match[1];
+                        const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+                        window.open(downloadUrl, '_blank');
+                    } else {
+                        window.open(link, '_blank');
+                    }
+                }
+            }
+        });
+
+        // Close logic
+        const closeModal = () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            // Clear iframe src after transition to stop memory leaks
+            setTimeout(() => {
+                iframe.src = '';
+            }, 300);
+        };
+
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
     }
 };
 

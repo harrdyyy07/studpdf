@@ -1,38 +1,57 @@
 const siteData = {
     firstyear: {
         title: "First Year (P & C Cycle)",
-        semesters: [
+        schemes: [
             {
-                sem: 1,
-                subjects: [
+                name: "25 Scheme",
+                slug: "25-scheme",
+                cycles: [
+                    { name: "Physics (P) Cycle", slug: "p-cycle", subjects: [] },
+                    { name: "Chemistry (C) Cycle", slug: "c-cycle", subjects: [] }
+                ]
+            },
+            {
+                name: "22 Scheme",
+                slug: "22-scheme",
+                cycles: [
                     {
-                        name: "Mathematics For CSE",
-                        code: "BMATS101",
-                        credits: "4 CR",
-                        slug: "mathematics-for-cse",
-                        modules: [
-                            { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1LgmPpbI6THNmfL-hPTJQyc6mh9DYjZYT/view?usp=drive_link", type: "Notes", essential: true },
-                            { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "#", type: "Notes", essential: true },
-                            { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "#", type: "Notes", essential: true }
+                        name: "Physics (P) Cycle",
+                        slug: "p-cycle",
+                        subjects: [
+                            {
+                                name: "Mathematics For CSE",
+                                code: "BMATS101",
+                                credits: "4 CR",
+                                slug: "mathematics-for-cse",
+                                modules: [
+                                    { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1LgmPpbI6THNmfL-hPTJQyc6mh9DYjZYT/view?usp=drive_link", type: "Notes", essential: true },
+                                    { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "#", type: "Notes", essential: true },
+                                    { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "#", type: "Notes", essential: true }
+                                ]
+                            },
+                            {
+                                name: "Applied Physics For CSE",
+                                code: "BPHYS102/202",
+                                credits: "3 CR",
+                                slug: "applied-physics",
+                                modules: []
+                            },
+                            {
+                                name: "Principle of Programming Using C",
+                                code: "BPOP103/203",
+                                credits: "4 CR",
+                                slug: "programming-c",
+                                modules: []
+                            }
                         ]
                     },
                     {
-                        name: "Applied Physics For CSE",
-                        code: "BPHYS102/202",
-                        credits: "3 CR",
-                        slug: "applied-physics",
-                        modules: []
-                    },
-                    {
-                        name: "Principle of Programming Using C",
-                        code: "BPOP103/203",
-                        credits: "4 CR",
-                        slug: "programming-c",
-                        modules: []
+                        name: "Chemistry (C) Cycle",
+                        slug: "c-cycle",
+                        subjects: []
                     }
                 ]
-            },
-            { sem: 2, subjects: [] }
+            }
         ]
     },
     cse: {
@@ -127,10 +146,20 @@ const siteData = {
             {
                 sem: 3,
                 subjects: [
-                    { name: "Digital System Design using Verilog", code: "BEC302", credits: "4 CR", slug: "digital-system-design-using-verilog-dsdv-bec302-vtu-notes", modules: [
-                            { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1LgmPpbI6THNmfL-hPTJQyc6mh9DYjZYT/view?usp=drive_link", type: "Notes", essential: true },
-                            { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "#", type: "Notes", essential: true },
-                            { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "#", type: "Notes", essential: true }] },
+                    {
+                        name: "Digital System Design using Verilog", code: "BEC302", credits: "4 CR", slug: "digital-system-design-using-verilog-dsdv-bec302-vtu-notes", modules: [
+                            { id: 1, name: "Module 1: Handwritten Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/19aG_zj14r3KY3ZY8ioCW2ppiVNGYzVwR/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1N1e9bwVmir5GJ89XObawHKyNPZv0X2Sc/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 2, name: "Module 2: Handwritten Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "https://drive.google.com/file/d/1aCnYI5fv-4Zj6mlZEcxRD4gxlTCcGD8t/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "https://drive.google.com/file/d/1hkzEZMOj_dDnkBVM5vVVYJCDlPXCGiOG/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1HS3Ai2j_lr16kqGl8_MH1e7GU06PuNDk/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 4, name: "Module 4: Handwritten Notes", desc: "Comprehensive notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1uNRtCjF5AYSvTZczW8TJ9oF3QxNJKsAY/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 4, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1qYQ1-Y6w163iJf9x4k0d6R2iYQhdtQF5/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 5, name: "Module 5: Handwritten Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1mq1FvxWmzmQeT-9MazGXUznJ8pWJJGnT/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1po9LsKraAOM-gBGGbpmLsAAd234WdiqE/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1i24ATSpPwiuiVynEgfSjW7bXTUmjKefS/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 5, name: "Model question paper", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1mSX-IisWcpGBJ_px13OlLMmNu0IUDD_u/view?usp=drive_link", type: "PYQP", essential: false }]
+                    },
                     { name: "Electronic Principles and Circuits", code: "BEC303", credits: "4 CR", slug: "electronic-principles-and-circuits-epc-bec303-vtu-notes", modules: [] },
                     { name: "Network Analysis", code: "BEC304", credits: "4 CR", slug: "network-analysis-na-bec304-vtu-notes", modules: [] },
                     { name: "Electronic Devices", code: "BEC306A", credits: "3 CR", slug: "electronic-devices-ed-bec306a-vtu-notes", modules: [] },
@@ -285,5 +314,83 @@ const siteData = {
         ]
     },
     mech: { title: "Mechanical Engineering", semesters: [] },
-    civil: { title: "Civil Engineering", semesters: [] }
+    civil: {
+        title: "Civil Engineering",
+        semesters: [
+            {
+                sem: 3,
+                subjects: [
+                    { name: "Strength of Materials", code: "BCV301", credits: "4 CR", slug: "strength-of-materials-som-bcv301-vtu-notes", modules: [] },
+                    { name: "Engineering Survey", code: "BCV302", credits: "4 CR", slug: "engineering-survey-es-bcv302-vtu-notes", modules: [] },
+                    { name: "Engineering Geology", code: "BCV303", credits: "4 CR", slug: "engineering-geology-eg-bcv303-vtu-notes", modules: [] },
+                    { name: "Water Supply and Waste water Engineering", code: "BCV304", credits: "4 CR", slug: "water-supply-and-waste-water-engineering-wswwe-bcv304-vtu-notes", modules: [] },
+                    { name: "Computer Aided Building Planning and Drawing", code: "BCV305", credits: "1 CR", slug: "computer-aided-building-planning-and-drawing-cabpd-bcv305-vtu-notes", modules: [] },
+                    { name: "Rural, Urban Planning and Architecture", code: "BCV306A", credits: "3 CR", slug: "rural-urban-planning-and-architecture-rupa-bcv306a-vtu-notes", modules: [] },
+                    { name: "Geospatial Techniques in Practice", code: "BCV306B", credits: "3 CR", slug: "geospatial-techniques-in-practice-gtp-bcv306b-vtu-notes", modules: [] },
+                    { name: "Sustainable Design Concept for Building Services", code: "BCV306C", credits: "3 CR", slug: "sustainable-design-concept-for-building-services-sdcbs-bcv306c-vtu-notes", modules: [] },
+                    { name: "Fire Safety in Buildings", code: "BCV306D", credits: "3 CR", slug: "fire-safety-in-buildings-fsb-bcv306d-vtu-notes", modules: [] },
+                    { name: "Data analytics with Excel", code: "BCVL358A", credits: "1 CR", slug: "data-analytics-with-excel-dawe-bcvl358a-vtu-notes", modules: [] },
+                    { name: "Smart Urban Infrastructure", code: "BCV358B", credits: "1 CR", slug: "smart-urban-infrastructure-sui-bcv358b-vtu-notes", modules: [] },
+                    { name: "Problem Solving with Python", code: "BCVL358C", credits: "1 CR", slug: "problem-solving-with-python-psp-bcvl358c-vtu-notes", modules: [] },
+                    { name: "Personality Development for Civil Engineers", code: "BCV358D", credits: "1 CR", slug: "personality-development-for-civil-engineers-pdce-bcv358d-vtu-notes", modules: [] }
+                ]
+            },
+            {
+                sem: 4,
+                subjects: [
+                    { name: "Analysis of Structures", code: "BCV401", credits: "4 CR", slug: "analysis-of-structures-aos-bcv401-vtu-notes", modules: [] },
+                    { name: "Fluid Mechanics and Hydraulics", code: "BCV402", credits: "4 CR", slug: "fluid-mechanics-and-hydraulics-fmh-bcv402-vtu-notes", modules: [] },
+                    { name: "Transportation Engineering", code: "BCV403", credits: "4 CR", slug: "transportation-engineering-te-bcv403-vtu-notes", modules: [] },
+                    { name: "Building Materials Testing Lab", code: "BCVL404", credits: "1 CR", slug: "building-materials-testing-lab-bmtl-bcvl404-vtu-notes", modules: [] },
+                    { name: "Finance for Professionals", code: "BCV405A", credits: "3 CR", slug: "finance-for-professionals-ffp-bcv405a-vtu-notes", modules: [] },
+                    { name: "Construction Equipment, Plants and Machinery", code: "BCV405B", credits: "3 CR", slug: "construction-equipment-plants-and-machinery-cepm-bcv405b-vtu-notes", modules: [] },
+                    { name: "Concreting Techniques & Practices", code: "BCV405C", credits: "3 CR", slug: "concreting-techniques-and-practices-ctp-bcv405c-vtu-notes", modules: [] },
+                    { name: "Watershed Management", code: "BCV405D", credits: "3 CR", slug: "watershed-management-wm-bcv405d-vtu-notes", modules: [] },
+                    { name: "Biology For Engineers", code: "BBOK407", credits: "3 CR", slug: "biology-for-engineers-bfe-bbok407-vtu-notes", modules: [] },
+                    { name: "Universal Human Values", code: "BUHK408", credits: "1 CR", slug: "universal-human-values-uhv-buhk408-vtu-notes", modules: [] },
+                    { name: "Building Information Modelling in Civil Engineering", code: "BCVL456A", credits: "1 CR", slug: "building-information-modelling-in-civil-engineering-bimce-bcvl456a-vtu-notes", modules: [] },
+                    { name: "GIS with Quantum GIS", code: "BCV456B", credits: "1 CR", slug: "gis-with-quantum-gis-gqg-bcv456b-vtu-notes", modules: [] },
+                    { name: "Electronic Waste Management", code: "BCV456C", credits: "1 CR", slug: "electronic-waste-management-ewm-bcv456c-vtu-notes", modules: [] },
+                    { name: "Technical Writing Skills", code: "BCV456D", credits: "1 CR", slug: "technical-writing-skills-tws-bcv456d-vtu-notes", modules: [] }
+                ]
+            },
+            {
+                sem: 5,
+                subjects: [
+                    { name: "Construction Management and Entrepreneurship", code: "BCV501", credits: "3 CR", slug: "construction-management-and-entrepreneurship-cme-bcv501-vtu-notes", modules: [] },
+                    { name: "Geotechnical Engineering", code: "BCV502", credits: "4 CR", slug: "geotechnical-engineering-ge-bcv502-vtu-notes", modules: [] },
+                    { name: "Concrete Technology", code: "BCV503", credits: "3 CR", slug: "concrete-technology-ct-bcv503-vtu-notes", modules: [] },
+                    { name: "Environmental Engineering Lab", code: "BCVL504", credits: "1 CR", slug: "environmental-engineering-lab-eel-bcvl504-vtu-notes", modules: [] },
+                    { name: "Numerical Methods in Civil Engineering", code: "BCV515A", credits: "3 CR", slug: "numerical-methods-in-civil-engineering-nmce-bcv515a-vtu-notes", modules: [] },
+                    { name: "Occupational Safety and Health Monitoring", code: "BCV515B", credits: "3 CR", slug: "occupational-safety-and-health-monitoring-oshm-bcv515b-vtu-notes", modules: [] },
+                    { name: "Solid Waste Management", code: "BCV515C", credits: "3 CR", slug: "solid-waste-management-swm-bcv515c-vtu-notes", modules: [] },
+                    { name: "Remote Sensing and GIS", code: "BCV515D", credits: "3 CR", slug: "remote-sensing-and-gis-rsg-bcv515d-vtu-notes", modules: [] },
+                    { name: "Research Methodology and IPR", code: "BRMK557", credits: "2 CR", slug: "research-methodology-and-ipr-rmipr-brmk557-vtu-notes", modules: [] },
+                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [] }
+                ]
+            },
+            {
+                sem: 6,
+                subjects: [
+                    { name: "Design of RCC Structures", code: "BCV601", credits: "4 CR", slug: "design-of-rcc-structures-drs-bcv601-vtu-notes", modules: [] },
+                    { name: "Irrigation Engineering and Hydraulic Structures", code: "BCV602", credits: "4 CR", slug: "irrigation-engineering-and-hydraulic-structures-iehs-bcv602-vtu-notes", modules: [] },
+                    { name: "Software Application Lab", code: "BCVL606", credits: "1 CR", slug: "software-application-lab-sal-bcvl606-vtu-notes", modules: [] },
+                    { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
+                    { name: "Design of Bridges", code: "BCV613A", credits: "3 CR", slug: "design-of-bridges-db-bcv613a-vtu-notes", modules: [] },
+                    { name: "Design of formwork and scaffolding", code: "BCV613B", credits: "3 CR", slug: "design-of-formwork-and-scaffolding-dfs-bcv613b-vtu-notes", modules: [] },
+                    { name: "Applied Geotechnical Engineering", code: "BCV613C", credits: "3 CR", slug: "applied-geotechnical-engineering-age-bcv613c-vtu-notes", modules: [] },
+                    { name: "Design and Construction of Highway Pavements", code: "BCV613D", credits: "3 CR", slug: "design-and-construction-of-highway-pavements-dchp-bcv613d-vtu-notes", modules: [] },
+                    { name: "Water Conservation and Rainwater Harvesting", code: "BCV654A", credits: "3 CR", slug: "water-conservation-and-rainwater-harvesting-wcrh-bcv654a-vtu-notes", modules: [] },
+                    { name: "Geographic Information Systems", code: "BCV654B", credits: "3 CR", slug: "geographic-information-systems-gis-bcv654b-vtu-notes", modules: [] },
+                    { name: "Integrated Waste Management for a Smart City", code: "BCV654C", credits: "3 CR", slug: "integrated-waste-management-for-a-smart-city-iwmsc-bcv654c-vtu-notes", modules: [] },
+                    { name: "Sustainable Development Goals", code: "BCV654D", credits: "3 CR", slug: "sustainable-development-goals-sdg-bcv654d-vtu-notes", modules: [] },
+                    { name: "Open Elective Subjects Mechanical Engg", code: "", credits: "3 CR", slug: "open-elective-subjects-mechanical-engg-oeme-vtu-notes", modules: [] },
+                    { name: "Building Information Modelling - Advanced", code: "BCV657A", credits: "1 CR", slug: "building-information-modelling-advanced-bima-bcv657a-vtu-notes", modules: [] },
+                    { name: "Structural Health Monitoring Using Sensors", code: "BCV657B", credits: "1 CR", slug: "structural-health-monitoring-using-sensors-shms-bcv657b-vtu-notes", modules: [] },
+                    { name: "Data Analytics for Civil Engineers", code: "BCV657C", credits: "1 CR", slug: "data-analytics-for-civil-engineers-dace-bcv657c-vtu-notes", modules: [] },
+                    { name: "Quality Control and Quality Assurance", code: "BCV657D", credits: "1 CR", slug: "quality-control-and-quality-assurance-qcqa-bcv657d-vtu-notes", modules: [] }
+                ]
+            }
+        ]
+    }
 };

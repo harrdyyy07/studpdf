@@ -38,21 +38,37 @@
     <script>
         const deptData = siteData['firstyear'];
         const grid = document.getElementById('sem-grid');
-        deptData.semesters.forEach(s => {
-            const card = document.createElement('a');
-            card.href = `semester-${s.sem}/`;
-            card.className = 'branch-card glass';
-            card.style.padding = '3rem';
-            card.innerHTML = `
-                <div style="display: flex; align-items: center; gap: 2rem;">
-                    <span style="font-size: 4rem; font-weight: 800; opacity: 0.1;">${s.sem}</span>
-                    <div>
-                        <h3 style="margin-bottom: 0.5rem;">Semester ${s.sem}</h3>
-                        <p style="font-size: 0.9rem;">View Subjects →</p>
+
+        deptData.schemes.forEach(scheme => {
+            // Create a section header for the scheme
+            const schemeHeader = document.createElement('div');
+            schemeHeader.style.gridColumn = '1 / -1';
+            schemeHeader.style.marginTop = '2rem';
+            schemeHeader.innerHTML = `<h2 style="font-size: 2rem; border-bottom: 2px solid var(--surface-border); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">${scheme.name}</h2>`;
+            grid.appendChild(schemeHeader);
+
+            // Iterate over the cycles in this scheme
+            scheme.cycles.forEach(cycle => {
+                const card = document.createElement('a');
+                card.href = `${scheme.slug}/${cycle.slug}/`;
+                card.className = 'branch-card glass';
+                card.style.padding = '3rem';
+
+                // Determine icon based on cycle
+                const isPhysics = cycle.name.toLowerCase().includes('physics');
+                const icon = isPhysics ? '⚛️' : '🧪';
+
+                card.innerHTML = `
+                    <div style="display: flex; align-items: center; gap: 2rem;">
+                        <span style="font-size: 4rem; opacity: 0.9;">${icon}</span>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem;">${cycle.name}</h3>
+                            <p style="font-size: 0.9rem;">View Subjects →</p>
+                        </div>
                     </div>
-                </div>
-            `;
-            grid.appendChild(card);
+                `;
+                grid.appendChild(card);
+            });
         });
     </script>
 </body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semester 1 (P & C Cycle) | vtuwise</title>
+    <title>Civil Semester 4 | vtuwise</title>
     <link rel="stylesheet" href="../../styles.css">
     <link rel="manifest" href="../manifest.json">
 </head>
@@ -16,13 +16,13 @@
         <div class="breadcrumb">
             <a href="../../index.html">🏠</a>
             <span class="breadcrumb-separator">/</span>
-            <a href="../index.html">First Year</a>
+            <a href="../index.html">Civil</a>
             <span class="breadcrumb-separator">/</span>
-            <span>Semester 1</span>
+            <span>Semester 4</span>
         </div>
 
         <header style="margin-bottom: 4rem;">
-            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Semester 1 Subjects</h1>
+            <h1 style="font-size: 3rem; margin-bottom: 1rem;">Semester 4 Subjects</h1>
             <p style="color: var(--text-muted); font-size: 1.1rem;">Choose a subject to access module-wise notes and
                 question papers.</p>
         </header>
@@ -37,7 +37,7 @@
     <script src="../../nav.js"></script>
     <script src="../../search.js"></script>
     <script>
-        const subjects = siteData.firstyear.semesters.find(s => s.sem === 1).subjects;
+        const subjects = siteData.civil.semesters.find(s => s.sem === 4).subjects;
         const grid = document.getElementById('subject-grid');
 
         subjects.forEach(sub => {
