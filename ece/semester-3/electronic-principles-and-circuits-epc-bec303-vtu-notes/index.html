@@ -60,7 +60,8 @@
                     card.className = 'module-card glass';
                     card.innerHTML = `
                         <div class="module-top">
-                            <div class="module-icon-box">📖</div>
+                            <div class="module-icon-box">📄</div>
+                            <div class="badge">${mod.type || 'Notes'}</div>
                             ${mod.essential ? '<div class="badge badge-essential">ESSENTIAL</div>' : ''}
                         </div>
                         <h3 style="margin-bottom: 0.5rem;">${mod.name}</h3>

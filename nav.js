@@ -233,6 +233,12 @@ const Navigation = {
         // Initialize PDF Modal
         Navigation.initPdfModal();
 
+        // Initialize Module Filters
+        // Use a short timeout to ensure inline scripts have populated the grid
+        setTimeout(() => {
+            Navigation.initFilters();
+        }, 50);
+
         // PWA Install Logic
         let deferredPrompt;
         const installBtn = document.getElementById('install-pwa-btn');
@@ -347,10 +353,67 @@ const Navigation = {
             backToTopButton.addEventListener('click', () => {
                 window.scrollTo({
                     top: 0,
-                    behavior: 'smooth'
                 });
             });
         }
+    },
+
+    initFilters: () => {
+        const grid = document.getElementById('module-grid') || document.getElementById('modules-grid');
+        if (!grid) return;
+
+        const cards = grid.querySelectorAll('.module-card');
+        if (cards.length === 0) return;
+
+        const types = new Set(['All']);
+
+        cards.forEach(card => {
+            // Find the badge but exclude the essential badge
+            let typeBadge = Array.from(card.querySelectorAll('.module-top .badge')).find(badge => !badge.classList.contains('badge-essential'));
+            let type = 'Notes'; // default
+
+            if (typeBadge) {
+                type = typeBadge.textContent.trim();
+            } else {
+                // First year template has type inside .module-meta
+                const metaSpans = card.querySelectorAll('.module-meta span');
+                metaSpans.forEach(span => {
+                    if (span.textContent.includes('📄')) {
+                        type = span.textContent.replace('📄', '').trim();
+                    }
+                });
+            }
+            types.add(type);
+            card.dataset.moduleType = type;
+        });
+
+        if (types.size <= 1) return; // Only 'All', no need for filters
+
+        const filterContainer = document.createElement('div');
+        filterContainer.className = 'module-filters';
+
+        types.forEach(type => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn' + (type === 'All' ? ' active' : '');
+            btn.textContent = type;
+            btn.dataset.filter = type;
+            btn.addEventListener('click', () => {
+                filterContainer.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                cards.forEach(card => {
+                    if (type === 'All' || card.dataset.moduleType === type) {
+                        card.style.display = ''; // Reset display to stylesheet default
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+            filterContainer.appendChild(btn);
+        });
+
+        // Insert before the grid
+        grid.parentNode.insertBefore(filterContainer, grid);
     },
 
     initPdfModal: () => {

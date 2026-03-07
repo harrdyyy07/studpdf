@@ -158,7 +158,7 @@ const siteData = {
                             { id: 5, name: "Module 5: Handwritten Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1mq1FvxWmzmQeT-9MazGXUznJ8pWJJGnT/view?usp=drive_link", type: "Notes", essential: true },
                             { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1po9LsKraAOM-gBGGbpmLsAAd234WdiqE/view?usp=drive_link", type: "Notes", essential: true },
                             { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1i24ATSpPwiuiVynEgfSjW7bXTUmjKefS/view?usp=drive_link", type: "Notes", essential: true },
-                            { id: 5, name: "Model question paper", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1mSX-IisWcpGBJ_px13OlLMmNu0IUDD_u/view?usp=drive_link", type: "PYQP", essential: false }]
+                            { id: 5, name: "Model question paper", desc: "Combined model question paper for dsdv", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1mSX-IisWcpGBJ_px13OlLMmNu0IUDD_u/view?usp=drive_link", type: "PYQP", essential: false }]
                     },
                     { name: "Electronic Principles and Circuits", code: "BEC303", credits: "4 CR", slug: "electronic-principles-and-circuits-epc-bec303-vtu-notes", modules: [] },
                     { name: "Network Analysis", code: "BEC304", credits: "4 CR", slug: "network-analysis-na-bec304-vtu-notes", modules: [] },
