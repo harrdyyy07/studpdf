@@ -43,6 +43,8 @@ const layoutTemplate = `<!DOCTYPE html>
     <meta property="og:description" content="Discover premium notes, question banks, and academic resources tailored for VTU students. Access materials for CSE, ECE, EEE, Mechanical, and Civil branches.">
     <link rel="stylesheet" href="../../../styles.css">
     <link rel="manifest" href="../../../manifest.json">
+    <link rel="icon" type="image/png" href="../../../favicon.png">
+    <link rel="icon" type="image/png" href="../../../../favicon.png">
 </head>
 <body>
     <nav id="navbar"></nav>
@@ -118,6 +120,7 @@ const subjectTemplate = `<!DOCTYPE html>
     <meta property="og:description" content="Discover premium notes, question banks, and academic resources tailored for VTU students. Access materials for CSE, ECE, EEE, Mechanical, and Civil branches.">
     <link rel="stylesheet" href="../../../../styles.css">
     <link rel="manifest" href="../../../../manifest.json">
+    <link rel="icon" type="image/png" href="../../../../favicon.png">
 </head>
 <body>
     <nav id="navbar"></nav>
