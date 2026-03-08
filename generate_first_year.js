@@ -34,6 +34,13 @@ const layoutTemplate = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{CYCLE_NAME}} | {{SCHEME_NAME}} | vtuwise</title>
+
+    <meta name="description" content="Get premium engineering notes, previous year question papers, syllabus, and model papers for all branches. Designed exclusively for VTU students to excel in exams.">
+    <meta name="keywords" content="VTU notes, VTU previous year question papers, VTU syllabus, VTU engineering notes, VTU students, VTU study materials, CSE notes, ECE notes, EEE notes, Civil notes, Mechanical notes">
+    <meta name="author" content="vtuwise">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="vtuwise | Engineering Notes & Question Papers for VTU Students">
+    <meta property="og:description" content="Discover premium notes, question banks, and academic resources tailored for VTU students. Access materials for CSE, ECE, EEE, Mechanical, and Civil branches.">
     <link rel="stylesheet" href="../../../styles.css">
     <link rel="manifest" href="../../../manifest.json">
 </head>
@@ -102,6 +109,13 @@ const subjectTemplate = `<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{SUBJECT_NAME}} | {{CYCLE_NAME}} | vtuwise</title>
+
+    <meta name="description" content="Get premium engineering notes, previous year question papers, syllabus, and model papers for all branches. Designed exclusively for VTU students to excel in exams.">
+    <meta name="keywords" content="VTU notes, VTU previous year question papers, VTU syllabus, VTU engineering notes, VTU students, VTU study materials, CSE notes, ECE notes, EEE notes, Civil notes, Mechanical notes">
+    <meta name="author" content="vtuwise">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="vtuwise | Engineering Notes & Question Papers for VTU Students">
+    <meta property="og:description" content="Discover premium notes, question banks, and academic resources tailored for VTU students. Access materials for CSE, ECE, EEE, Mechanical, and Civil branches.">
     <link rel="stylesheet" href="../../../../styles.css">
     <link rel="manifest" href="../../../../manifest.json">
 </head>
