@@ -56,10 +56,10 @@ const Navigation = {
                     <span class="hamburger"></span>
                 </button>
                 
-                <a href="${prefix}index.html" class="logo">vtuwise</a>
+                <a href="${prefix === '' ? '/' : prefix}" class="logo">vtuwise</a>
                 
                 <ul class="nav-links">
-                    <li><a href="${prefix}index.html">Home</a></li>
+                    <li><a href="${prefix === '' ? '/' : prefix}">Home</a></li>
                     
                     <li class="dropdown">
                         <span class="dropdown-toggle">Calculator</span>
@@ -286,7 +286,7 @@ const Navigation = {
         const footerHtml = `
             <div class="container footer-content">
                 <div class="footer-column brand-column">
-                <a href="${prefix}index.html" class="logo">vtuwise</a>
+                <a href="${prefix === '' ? '/' : prefix}" class="logo">vtuwise</a>
                     <p class="footer-desc">
                         vtuwise: Your comprehensive academic companion. 📚 Prepare effectively with expertly curated resources, thoughtfully created by students to support student success.
                     </p>
