@@ -32,27 +32,40 @@ const Search = {
 
         for (const branchKey in siteData) {
             const branch = siteData[branchKey];
-            branch.semesters.forEach(sem => {
-                sem.subjects.forEach(sub => {
-                    if (sub.name.toLowerCase().includes(query) || sub.code.toLowerCase().includes(query)) {
-                        results.push({
-                            title: sub.name,
-                            path: `${branch.title} > Sem ${sem.sem}`,
-                            url: Search.getRelativeUrl(branchKey, sem.sem, sub.slug),
-                            type: 'Subject'
-                        });
-                    }
+            if (branch.semesters) {
+                branch.semesters.forEach(sem => {
+                    sem.subjects.forEach(sub => {
+                        if (sub.name.toLowerCase().includes(query) || sub.code.toLowerCase().includes(query)) {
+                            results.push({
+                                title: sub.name,
+                                path: `${branch.title} > Sem ${sem.sem}`,
+                                url: Search.getRelativeUrl(branchKey, sem.sem, sub.slug),
+                                type: 'Subject'
+                            });
+                        }
+                    });
                 });
-            });
+            } else if (branch.schemes) {
+                branch.schemes.forEach(scheme => {
+                    scheme.cycles.forEach(cycle => {
+                        cycle.subjects.forEach(sub => {
+                            if (sub.name.toLowerCase().includes(query) || sub.code.toLowerCase().includes(query)) {
+                                results.push({
+                                    title: sub.name,
+                                    path: `${branch.title} > ${scheme.name} > ${cycle.name}`,
+                                    url: Search.getFirstYearUrl(scheme.slug, cycle.slug, sub.slug),
+                                    type: 'Subject'
+                                });
+                            }
+                        });
+                    });
+                });
+            }
         }
         return results.slice(0, 8); // Limit to 8 results
     },
 
-    getRelativeUrl: (branch, sem, slug) => {
-        // We need to know where we are to build the right relative path
-        // For simplicity, let's use the same prefix logic as nav.js or just use absolute-like paths if we can
-        // But since this is a static site, we'll try to determine the root
-
+    getPrefix: () => {
         let prefix = "";
         const scripts = document.getElementsByTagName('script');
         for (let i = 0; i < scripts.length; i++) {
@@ -62,6 +75,11 @@ const Search = {
                 break;
             }
         }
+        return prefix;
+    },
+
+    getRelativeUrl: (branch, sem, slug) => {
+        const prefix = Search.getPrefix();
 
         // Map branch key to folder name
         const branchFolders = {
@@ -75,6 +93,11 @@ const Search = {
 
         const folder = branchFolders[branch] || branch;
         return `${prefix}${folder}/semester-${sem}/${slug}/index.html`;
+    },
+
+    getFirstYearUrl: (scheme, cycle, slug) => {
+        const prefix = Search.getPrefix();
+        return `${prefix}first-year/${scheme}/${cycle}/${slug}/index.html`;
     },
 
     displayResults: (results, container) => {

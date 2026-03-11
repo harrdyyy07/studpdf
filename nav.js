@@ -109,16 +109,16 @@ const Navigation = {
             <div id="search-overlay" class="search-overlay">
                 <div class="search-overlay-content">
                     <button class="search-close-btn">✕</button>
-                    <h2>What are you looking for?</h2>
+                    <h2>Search for your notes</h2>
                     <div class="search-box-large">
                         <span class="search-icon-large">🔍</span>
                         <input type="text" id="site-search" placeholder="Type subject or code..." autocomplete="off">
                     </div>
                     <div class="quick-tags">
                         <span class="tag-label">Quick Search:</span>
-                        <button class="search-tag" data-query="Semester 3">Semester 3</button>
+                        <button class="search-tag" data-query="bcs302">BCS302</button>
                         <button class="search-tag" data-query="Mat">Mathematics</button>
-                        <button class="search-tag" data-query="CSE">CSE Notes</button>
+                        <button class="search-tag" data-query="bec501">BEC501</button>
                     </div>
                     <div id="search-results-container">
                         <div id="search-results"></div>
