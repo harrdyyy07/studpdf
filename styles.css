@@ -1198,6 +1198,10 @@ footer {
     fill: #E4405F;
 }
 
+.social-icon.youtube:hover svg {
+    fill: #FF0000;
+}
+
 .btn-upload {
     display: inline-block;
     background: #000000;
