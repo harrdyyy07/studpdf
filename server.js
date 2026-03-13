@@ -11,8 +11,12 @@ app.use(cors());
 app.use(express.json());
 
 // --- Database Schema Setup ---
-// In a real production app, connect to MongoDB:
-// mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/vtuScraper', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => console.log('✅ MongoDB Connected'))
+  .catch(err => console.error('❌ MongoDB Connection Error:', err));
+
 const ResultSchema = new mongoose.Schema({
     usn: { type: String, unique: true, required: true },
     studentName: String,
@@ -23,8 +27,8 @@ const ResultSchema = new mongoose.Schema({
     semester: String,
     fetchedAt: { type: Date, default: Date.now }
 });
-// Create a mongoose model, mocked here for architecture demonstration
-// const Result = mongoose.model('Result', ResultSchema);
+
+const Result = mongoose.model('Result', ResultSchema);
 
 
 // --- Helper Functions ---
@@ -46,17 +50,22 @@ async function solveCaptcha(base64Image) {
 
 // 2. Calculate Rank (Database Query)
 async function calculateRank(sgpa, collegeCode, branchCode, semester) {
-    /* 
-    In production, this queries the DB:
-    const totalStudents = await Result.countDocuments({ collegeCode, branchCode, semester });
-    const studentsAbove = await Result.countDocuments({ 
-        collegeCode, branchCode, semester, sgpa: { $gt: sgpa } 
-    });
-    return { rank: studentsAbove + 1, total: totalStudents };
-    */
-   
-    // Mocking rank for demonstration
-    return { rank: Math.floor(Math.random() * 50) + 1, total: 120 };
+    try {
+        const totalStudents = await Result.countDocuments({ collegeCode, branchCode, semester });
+        
+        // Count how many students have an SGPA strictly *greater* than this user
+        const studentsAbove = await Result.countDocuments({ 
+            collegeCode, branchCode, semester, 
+            sgpa: { $gt: sgpa } 
+        });
+        
+        // Rank is (number of students better than you) + 1
+        return { rank: studentsAbove + 1, total: totalStudents };
+        
+    } catch (error) {
+        console.error("Rank calculation error:", error);
+        return { rank: 0, total: 0 };
+    }
 }
 
 
@@ -131,8 +140,22 @@ app.post('/api/results/fetch', async (req, res) => {
         const collegeCode = usn.substring(0, 3).toUpperCase();
         const branchCode = usn.substring(5, 7).toUpperCase();
         
-        // await Result.findOneAndUpdate({ usn }, { ...extractedData, collegeCode, branchCode }, { upsert: true });
+        // Upsert (Insert if new, Update if exists) the result into MongoDB
+        await Result.findOneAndUpdate(
+            { usn: extractedData.studentDetails.usn }, 
+            { 
+                ...extractedData.studentDetails,
+                sgpa: extractedData.sgpa,
+                cgpa: extractedData.cgpa,
+                semester: extractedData.semester,
+                collegeCode, 
+                branchCode,
+                fetchedAt: Date.now()
+            }, 
+            { upsert: true, new: true }
+        );
         
+        // Calculate the dynamic class rank using the database
         const ranking = await calculateRank(extractedData.sgpa, collegeCode, branchCode, extractedData.semester);
         
         extractedData.ranking = ranking;
