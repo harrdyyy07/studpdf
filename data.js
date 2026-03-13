@@ -67,7 +67,14 @@ const siteData = {
                             { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "#", type: "Notes", essential: true }
                         ]
                     },
-                    { name: "Digital Design & Computer Organization", code: "BCS302", credits: "4 CR", slug: "digital-design-and-computer-organization-ddco-bcs302-vtu-notes", modules: [] },
+                    { name: "Digital Design & Computer Organization", code: "BCS302", credits: "4 CR", slug: "digital-design-and-computer-organization-ddco-bcs302-vtu-notes", modules: [
+                        { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1NnQ9lT6t4kXI2Z16-gE1VnnDrOtzY40G/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "https://drive.google.com/file/d/1A3WjKCOVAnRlMVD8CfQCWCu1kBEWssGq/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1LFoSffBOFTTmF6yKhqK62msyoR7WDFDc/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 4, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1yikxmdK8xOoNGkNZvhKnUYp1Lg7R8rpw/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1aN-C4Pzdk5YZGBcYvO7AupxWmxm6xcHa/view?usp=drive_link", type: "Notes", essential: true },
+                        
+                    ] },
                     { name: "Operating Systems", code: "BCS303", credits: "4 CR", slug: "operating-systems-os-bcs303-vtu-notes", modules: [] },
                     { name: "Data Structures and Applications", code: "BCS304", credits: "4 CR", slug: "data-structures-and-applications-dsa-bcs304-vtu-notes", modules: [] },
                     { name: "Data Structures Lab", code: "BCSL305", credits: "1 CR", slug: "data-structures-lab-dsl-bcsl305-vtu-notes", modules: [] },
