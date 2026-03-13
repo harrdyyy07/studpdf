@@ -62,9 +62,12 @@ const siteData = {
                 subjects: [
                     {
                         name: "Mathematics for Computer Science", code: "BCS301", credits: "4 CR", slug: "mathematics-for-computer-science-mcs-bcs301-vtu-notes", modules: [
-                            { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1LgmPpbI6THNmfL-hPTJQyc6mh9DYjZYT/view?usp=drive_link", type: "Notes", essential: true },
-                            { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "#", type: "Notes", essential: true },
-                            { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "#", type: "Notes", essential: true }
+                            { id: 1, name: "All Modules Notes", desc: "Comprehensive notes for All Modules", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1Q4T-9zN-Ga3cmZV3yVnMNwiPZVMFmk7q/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 2, name: "Module 1: Handwritten Notes", desc: "Handwritten notes for Module 1", size: "3.8 MB", date: "2024-01-18", link: "https://drive.google.com/file/d/1fA4g7ONqA4ew8R0Pd7fvxcJe-mqeADeG/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 3, name: "Module 2: Handwritten Notes", desc: "Handwritten notes for Module 2", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1bQz7WA8pM_6lYGlbf-c3PdI70cfmgxIK/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 4, name: "Module 3: Handwritten Notes", desc: "Handwritten notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1HLdUCguuucYpdfwXrq8Gifz1o-jFf3Id/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 5, name: "Module 4: Handwritten Notes", desc: "Handwritten notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1qPhVoeHmQp-5lqD5bBgJAl48AEzyLsgI/view?usp=drive_link", type: "Notes", essential: true },
+                            { id: 6, name: "Module 5: Handwritten Notes", desc: "Handwritten notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1c5UUnChePggLapdlnJrSZuUo6oJJhEho/view?usp=drive_link", type: "Notes", essential: true },
                         ]
                     },
                     { name: "Digital Design & Computer Organization", code: "BCS302", credits: "4 CR", slug: "digital-design-and-computer-organization-ddco-bcs302-vtu-notes", modules: [
