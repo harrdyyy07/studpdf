@@ -32,13 +32,136 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <nav id="navbar"></nav>
-    <main class="container" style="padding-top: 10rem; text-align: center;">
-        <h1>Exam Results</h1>
-        <p style="color: var(--text-muted); margin-top: 1rem;">Check latest VTU results and performance statistics.</p>
-        <div class="glass" style="margin-top: 3rem; padding: 4rem; border-radius: 2rem;">
-            <p>Results interface coming soon...</p>
+    <main class="container" style="padding-top: 10rem; text-align: center; max-width: 800px;">
+        <h1 style="font-size: 3rem; margin-bottom: 0.5rem;">VTU Results Explorer</h1>
+        <p style="color: var(--text-muted); margin-bottom: 2rem;">Instantly check your results and view your class rank across the network.</p>
+        
+        <div class="glass" style="margin-top: 2rem; padding: 2.5rem; border-radius: 1.5rem; margin-bottom: 3rem;">
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;">
+                <input type="text" id="usn-input" placeholder="Enter your USN (e.g., 1RV21CS001)" 
+                       style="flex: 1; padding: 1.25rem; font-size: 1.1rem; border: 2px solid var(--surface-border); border-radius: 1rem; background: var(--background); color: var(--text); outline: none; text-transform: uppercase;"
+                       maxlength="10">
+                <button id="fetch-results-btn" class="btn-primary" style="padding: 1.25rem 2rem; border: none; cursor: pointer; white-space: nowrap;">
+                    Get Results
+                </button>
+            </div>
+            <p style="text-align: left; font-size: 0.85rem; color: var(--text-muted);">
+                <span class="badge" style="background: rgba(88, 204, 2, 0.1); color: var(--accent); margin-right: 0.5rem; font-size: 0.7rem; padding: 0.2rem 0.5rem;">NEW</span> 
+                Includes automated CAPTCHA solving and real-time class ranking!
+            </p>
+        </div>
+
+        <div id="results-view" style="display: none; text-align: left; margin-bottom: 5rem;">
+            <!-- Dynamic Content Injected Here by JS -->
         </div>
     </main>
+
+    <script src="auth.js"></script>
+    <script src="nav.js"></script>
+    <script src="search.js"></script>
+
+    <!-- Results API Integration Script -->
+    <script>
+        document.getElementById('fetch-results-btn').addEventListener('click', async () => {
+            const usnInput = document.getElementById('usn-input').value.trim().toUpperCase();
+            const resultsContainer = document.getElementById('results-view');
+            const btn = document.getElementById('fetch-results-btn');
+            
+            if (!usnInput || usnInput.length !== 10) {
+                alert("Please enter a valid 10-character VTU USN.");
+                return;
+            }
+
+            // Show loading state
+            btn.innerHTML = 'Fetching...';
+            btn.disabled = true;
+            btn.style.opacity = '0.7';
+            
+            resultsContainer.innerHTML = '<div class="glass" style="text-align: center; color: var(--text-muted); padding: 3rem; border-radius: 1.5rem;"><div style="font-size: 2rem; margin-bottom: 1rem;">⚙️</div>Connecting to VTU servers, solving CAPTCHA, and fetching results... This may take up to 10 seconds.</div>';
+            resultsContainer.style.display = 'block';
+
+            try {
+                // Change URL to your actual production backend URL once deployed
+                const backendUrl = 'http://localhost:3000/api/results/fetch'; 
+                
+                const response = await fetch(backendUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ usn: usnInput })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok || !data.success) {
+                    resultsContainer.innerHTML = `<div class="glass" style="text-align: center; color: var(--accent-red); padding: 3rem; border-radius: 1.5rem; border-color: rgba(229, 62, 62, 0.3);">Error: ${data.error || 'Failed to fetch results from VTU.'}</div>`;
+                    return;
+                }
+
+                // Render Results
+                const result = data.data; 
+                
+                let marksHtml = result.marks.map(m => `
+                    <div style="display: flex; justify-content: space-between; padding: 1rem 1.5rem; border-bottom: 1px solid var(--surface-border);">
+                        <div style="flex: 1;">
+                            <div style="font-weight: 600; font-size: 0.95rem;">${m.subject}</div>
+                            <div style="color: var(--text-muted); font-size: 0.8rem; font-family: monospace;">${m.code}</div>
+                        </div>
+                        <div style="text-align: right; min-width: 120px;">
+                            <div style="font-weight: 700; font-size: 1.1rem; color: ${m.result === 'P' ? 'var(--accent)' : 'var(--accent-red)'}">${m.total} <span style="font-size:0.8rem; color:var(--text-muted);">/ 100</span></div>
+                            <div style="color: var(--text-muted); font-size: 0.75rem;">INT: ${m.int} | EXT: ${m.ext}</div>
+                        </div>
+                    </div>
+                `).join('');
+
+                resultsContainer.innerHTML = `
+                    <div class="glass" style="margin-bottom: 2rem; border-top: 4px solid var(--primary); padding: 2.5rem; border-radius: 1.5rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem;">
+                            <div>
+                                <h3 style="font-size: 1.8rem; margin-bottom: 0.25rem;">${result.studentDetails.name}</h3>
+                                <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem;">
+                                    <span class="badge" style="background: var(--surface-border); color: var(--text);">${result.studentDetails.usn}</span>
+                                    <span class="badge" style="background: rgba(99, 102, 241, 0.1); color: var(--primary);">Sem ${result.semester}</span>
+                                </div>
+                                <p style="color: var(--text-muted); font-size: 0.9rem;">${result.studentDetails.college}</p>
+                            </div>
+                            <div style="text-align: right; background: var(--background); padding: 1rem 1.5rem; border-radius: 1rem; border: 1px solid var(--surface-border);">
+                                <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary); line-height: 1;">${result.sgpa}</div>
+                                <div style="color: var(--text-muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.25rem;">SGPA</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
+                            <div style="background: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.1); padding: 1.5rem; border-radius: 1rem; text-align: center;">
+                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem;">${result.cgpa || '-'}</div>
+                                <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Cumulative GPA</div>
+                            </div>
+                            <div style="background: rgba(88, 204, 2, 0.05); border: 1px solid rgba(88, 204, 2, 0.1); padding: 1.5rem; border-radius: 1rem; text-align: center;">
+                                <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent); margin-bottom: 0.25rem;">#${result.ranking.rank}</div>
+                                <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Class Rank (of ${result.ranking.total})</div>
+                            </div>
+                        </div>
+
+                        <h4 style="margin-bottom: 1rem; font-size: 1.1rem; color: var(--text); padding-left: 0.5rem;">Marks Breakdown</h4>
+                        <div style="background: var(--background); border-radius: 1rem; border: 1px solid var(--surface-border); overflow: hidden;">
+                            ${marksHtml}
+                        </div>
+                        
+                        <div style="margin-top: 2rem; text-align: center; color: var(--text-muted); font-size: 0.75rem; padding-top: 1.5rem; border-top: 1px solid var(--surface-border);">
+                            Data directly extracted from VTU Servers via automated OCR. Rank dynamically calculated from vtuwise student network.
+                        </div>
+                    </div>
+                `;
+
+            } catch (error) {
+                console.error(error);
+                resultsContainer.innerHTML = `<div class="glass" style="text-align: center; color: var(--accent-red); padding: 3rem; border-radius: 1.5rem; border-color: rgba(229, 62, 62, 0.3);">Connection Error: Could not reach the Scraper Backend. Ensure the node server is running on port 3000.</div>`;
+            } finally {
+                btn.innerHTML = 'Get Results';
+                btn.disabled = false;
+                btn.style.opacity = '1';
+            }
+        });
+    </script>
     <script src="auth.js"></script>
     <script src="nav.js"></script>
     <script src="search.js"></script>
