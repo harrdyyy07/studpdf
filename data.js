@@ -73,8 +73,17 @@ const siteData = {
                         { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1LFoSffBOFTTmF6yKhqK62msyoR7WDFDc/view?usp=drive_link", type: "Notes", essential: true },
                         { id: 4, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1yikxmdK8xOoNGkNZvhKnUYp1Lg7R8rpw/view?usp=drive_link", type: "Notes", essential: true },
                         { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1aN-C4Pzdk5YZGBcYvO7AupxWmxm6xcHa/view?usp=drive_link", type: "Notes", essential: true },
-                        
-                    ] },
+                        { id: 6, name: "Dec/Jan 2024 Scheme of Evaluation", desc: "Dec/Jan 2024 Scheme of Evaluation", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1uGDJSB6NP2rT_VgCCjYT8N4Iic_wqNvm/view?usp=drive_link", type: "scheme", essential: true },
+                        { id: 7, name: "June/July 2024 Scheme of Evaluation", desc: "June/July 2024 Scheme of Evaluation", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1TjBjQeiOO1yYm_cEPtmkKV1_ifyCYmoV/view?usp=drive_link", type: "scheme", essential: true },
+                        { id: 8, name: "Dec/Jan 2024 Scheme of Evaluation", desc: "Dec/Jan 2025 Previous year Question Paper", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1F0VekAkiNSU2RHBV-R3DB8FqFWYick86/view?usp=drive_link", type: "PYQP", essential: true },
+                        { id: 9, name: "June/July 2024 Supplementary Exam Question Paper", desc: "June/July 2024 Supplementary Exam Question Paper", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1FChUBMTXqA3YVvJaL4Ll6Jqa4GFK11HY/view?usp=drive_link", type: "PYQP", essential: true },
+                        { id: 10, name: "Model question paper-1 Solutions", desc: "Model question paper-1 Solutions", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1tDhglDUMyrv-ozqEc28rnpAynJv4dIVt/view?usp=drive_link", type: "MQP", essential: true },
+                        { id: 11, name: "Model question paper-2", desc: "Model question paper-2", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1Xet_pdZT06JUUVDwhf-JWKtHrkmGUls6/view?usp=drive_link", type: "MQP", essential: true },
+                        { id: 12, name: "Model question paper-3", desc: "Model question paper-3", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1ha2QbSa--TtQ9sJ4wbzXodBdAC_zk9E1/view?usp=drive_link", type: "MQP", essential: true },
+
+
+                    ]
+                },
                     { name: "Operating Systems", code: "BCS303", credits: "4 CR", slug: "operating-systems-os-bcs303-vtu-notes", modules: [] },
                     { name: "Data Structures and Applications", code: "BCS304", credits: "4 CR", slug: "data-structures-and-applications-dsa-bcs304-vtu-notes", modules: [] },
                     { name: "Data Structures Lab", code: "BCSL305", credits: "1 CR", slug: "data-structures-lab-dsl-bcsl305-vtu-notes", modules: [] },
