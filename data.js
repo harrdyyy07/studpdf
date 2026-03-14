@@ -94,8 +94,20 @@ const siteData = {
 
                     ]
                 },
-                    { name: "Operating Systems", code: "BCS303", credits: "4 CR", slug: "operating-systems-os-bcs303-vtu-notes", modules: [] },
-                    { name: "Data Structures and Applications", code: "BCS304", credits: "4 CR", slug: "data-structures-and-applications-dsa-bcs304-vtu-notes", modules: [] },
+                    { name: "Operating Systems", code: "BCS303", credits: "4 CR", slug: "operating-systems-os-bcs303-vtu-notes", modules: [
+                       { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1kvrfpZ3va0-1BDIwzy2nkwn_L_U-SE8T/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "https://drive.google.com/file/d/1GP0U2AnP3Z485DKko3U6jEzWp7sTAps0/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1Rf6_UKjFcA_wpmgizw--V8bXr6gVh0Uj/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 4, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1LOyMfqV9eQ7NHOe1hDd-em4LFBmEpdIu/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1QdoEepjndnqx89tIhTB6Zgz-VgUW2osb/view?usp=drive_link", type: "Notes", essential: true }  
+                    ] },
+                    { name: "Data Structures and Applications", code: "BCS304", credits: "4 CR", slug: "data-structures-and-applications-dsa-bcs304-vtu-notes", modules: [
+                          { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1O-CkvuE_RDFIgHrlF6yM9CY4QHM2dW-I/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "https://drive.google.com/file/d/1v6qwhxqsLpItdpTmWDCX47f0X0Ew71dc/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/10md1V4iAMiAOtS6sW-URyvO_C1_EFudP/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 4, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/16Wpd_LgC9RqN3oZB48hJTnBfavK7brIC/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1UJFlJiP8CxEGrik4Tdm_6aKiErM68Z6b/view?usp=drive_link", type: "Notes", essential: true }
+                    ] },
                     { name: "Data Structures Lab", code: "BCSL305", credits: "1 CR", slug: "data-structures-lab-dsl-bcsl305-vtu-notes", modules: [] },
                     { name: "Object Oriented Programming with Java", code: "BCS306A", credits: "3 CR", slug: "object-oriented-programming-with-java-oopj-bcs306a-vtu-notes", modules: [] },
                     { name: "Object Oriented Programming with C++", code: "BCS306B", credits: "3 CR", slug: "object-oriented-programming-with-c-plus-plus-oopc-bcs306b-vtu-notes", modules: [] },
