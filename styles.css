@@ -1605,10 +1605,8 @@ footer h4 {
     transform: translateY(-2px);
 }
 
-body,
-html {
+body {
     overflow-x: hidden;
-    width: 100%;
 }
 
 @media (max-width: 768px) {

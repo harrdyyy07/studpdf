@@ -11,10 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 // --- Database Schema Setup ---
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/vtuScraper', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log('✅ MongoDB Connected'))
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/vtuScraper')
+  .then(() => console.log('✅ MongoDB Connected'))
   .catch(err => console.error('❌ MongoDB Connection Error:', err));
 
 const ResultSchema = new mongoose.Schema({
