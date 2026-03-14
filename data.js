@@ -108,10 +108,21 @@ const siteData = {
                         { id: 4, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/16Wpd_LgC9RqN3oZB48hJTnBfavK7brIC/view?usp=drive_link", type: "Notes", essential: true },
                         { id: 5, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1UJFlJiP8CxEGrik4Tdm_6aKiErM68Z6b/view?usp=drive_link", type: "Notes", essential: true }
                     ] },
-                    { name: "Data Structures Lab", code: "BCSL305", credits: "1 CR", slug: "data-structures-lab-dsl-bcsl305-vtu-notes", modules: [] },
-                    { name: "Object Oriented Programming with Java", code: "BCS306A", credits: "3 CR", slug: "object-oriented-programming-with-java-oopj-bcs306a-vtu-notes", modules: [] },
+                    { name: "Data Structures Lab", code: "BCSL305", credits: "1 CR", slug: "data-structures-lab-dsl-bcsl305-vtu-notes", modules: [
+                        { id: 1, name: "BCSL305 data structures lab manual", desc: "BCSL305 data structures lab manual", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1fXO7vclc6c3zUQr9GJMoSrm3gjyr1yX0/view?usp=drive_link", type: "Lab Manual", essential: true },
+                    ] },
+                    { name: "Object Oriented Programming with Java", code: "BCS306A", credits: "3 CR", slug: "object-oriented-programming-with-java-oopj-bcs306a-vtu-notes", modules: [
+                        { id: 1, name: "BCS306A complete notes", desc: "Complete notes for BCS306A", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/140IPS1GiFhVfrMByskDH-FZ9NeG0s_PA/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 2, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1oUrr9B5OB4VieF0o30S1cup_yGLlLBc7/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 3, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", size: "3.8 MB", date: "2024-01-18", link: "https://drive.google.com/file/d/1EWkWOkaTq2D09Omoa1QhdAH898ZtvXsf/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 4, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1_GdcH0Tx7LnPE_gzceLh8i4YZpwp4NDr/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 5, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1Nr7Fwtp1xmo_Xl1D-nFfxmfH0AlquzFG/view?usp=drive_link", type: "Notes", essential: true },
+                        { id: 6, name: "Text book pdf for oopj bcs306A", desc: "Text book pdf for oopj bcs306A", size: "3.5 MB", date: "2024-01-20", link: "https://drive.google.com/file/d/1wdB4i2v2IeQTZdfBHDxtESnUEGRAzhqF/view?usp=drive_link", type: "Textbook", essential: true }
+                    ] },
                     { name: "Object Oriented Programming with C++", code: "BCS306B", credits: "3 CR", slug: "object-oriented-programming-with-c-plus-plus-oopc-bcs306b-vtu-notes", modules: [] },
-                    { name: "Social Connect and Responsibility", code: "BSCK307", credits: "1 CR", slug: "social-connect-and-responsibility-scr-bsck307-vtu-notes", modules: [] },
+                    { name: "Social Connect and Responsibility", code: "BSCK307", credits: "1 CR", slug: "social-connect-and-responsibility-scr-bsck307-vtu-notes", modules: [
+                        { id: 1, name: "BSCK307 complete notes", desc: "Complete notes for BSCK307", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1p-LiWAcbwBr7RI-Ovma2THmyoUlfK8RZ/view?usp=drive_link", type: "Notes", essential: true },
+                    ] },
                     { name: "Data analytics with Excel", code: "BCS358A", credits: "1 CR", slug: "data-analytics-with-excel-dawe-bcs358a-vtu-notes", modules: [] },
                     { name: "R Programming", code: "BCS358B", credits: "1 CR", slug: "r-programming-rp-bcs358b-vtu-notes", modules: [] },
                     { name: "Project Management with Git", code: "BCS358C", credits: "1 CR", slug: "project-management-with-git-pmwg-bcs358c-vtu-notes", modules: [] },
@@ -122,11 +133,17 @@ const siteData = {
                 sem: 4,
                 subjects: [
                     { name: "Analysis & Design of Algorithms", code: "BCS401", credits: "4 CR", slug: "analysis-and-design-of-algorithms-ada-bcs401-vtu-notes", modules: [] },
-                    { name: "Microcontrollers", code: "BCS402", credits: "4 CR", slug: "microcontrollers-mc-bcs402-vtu-notes", modules: [] },
+                    { name: "Microcontrollers", code: "BCS402", credits: "4 CR", slug: "microcontrollers-mc-bcs402-vtu-notes", modules: [
+                        { id: 1, name: "BCS402 microcontrollers complete notes", desc: "BCS402 microcontrollers complete notes", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1j875bVkySNX3pBBzOqhbqcNPdYmJaIlH/view?usp=drive_link", type: "Notes", essential: true },
+                    ] },
                     { name: "Database Management Systems", code: "BCS403", credits: "4 CR", slug: "database-management-systems-dbms-bcs403-vtu-notes", modules: [] },
-                    { name: "ADA Lab Manual", code: "BCSL404", credits: "1 CR", slug: "ada-lab-manual-adal-bcsl404-vtu-notes", modules: [] },
+                    { name: "ADA Lab Manual", code: "BCSL404", credits: "1 CR", slug: "ada-lab-manual-adal-bcsl404-vtu-notes", modules: [
+                        { id: 1, name: "BCSL404 ada lab manual", desc: "BCSL404 ada lab manual", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1ep1apfO_U9OLONfdDu8H97ZdQGXHuRQE/view?usp=drive_link", type: "Lab Manual", essential: true },
+                    ] },
                     { name: "Discrete Mathematical Structures", code: "BCS405A", credits: "3 CR", slug: "discrete-mathematical-structures-dms-bcs405a-vtu-notes", modules: [] },
-                    { name: "Graph Theory", code: "BCS405B", credits: "3 CR", slug: "graph-theory-gt-bcs405b-vtu-notes", modules: [] },
+                    { name: "Graph Theory", code: "BCS405B", credits: "3 CR", slug: "graph-theory-gt-bcs405b-vtu-notes", modules: [
+                        { id: 1, name: "BCS405B graph theory complete notes", desc: "BCS405B graph theory complete notes", size: "4.2 MB", date: "2024-01-15", link: "https://drive.google.com/file/d/1Wj3xnWFjrqUPTiUL92iOHE5Q9l2PvjzV/view?usp=drive_link", type: "Notes", essential: true },
+                    ] },
                     { name: "Optimization Technique", code: "BCS405C", credits: "3 CR", slug: "optimization-technique-ot-bcs405c-vtu-notes", modules: [] },
                     { name: "Linear Algebra", code: "BCS405D", credits: "3 CR", slug: "linear-algebra-la-bcs405d-vtu-notes", modules: [] },
                     { name: "Biology For Computer Engineers", code: "BBOC407", credits: "3 CR", slug: "biology-for-computer-engineers-bce-bboc407-vtu-notes", modules: [] },
