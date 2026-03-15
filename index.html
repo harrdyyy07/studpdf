@@ -340,7 +340,7 @@
         // WhatsApp Popup Logic
         document.addEventListener('DOMContentLoaded', () => {
             const popup = document.getElementById('whatsapp-popup');
-            const hasClosed = localStorage.getItem('whatsappPopupClosed');
+            const hasClosed = sessionStorage.getItem('whatsappPopupClosed');
 
             if (!hasClosed && popup) {
                 // Show after 3 seconds
@@ -354,7 +354,7 @@
             const popup = document.getElementById('whatsapp-popup');
             if (popup) {
                 popup.classList.remove('active');
-                localStorage.setItem('whatsappPopupClosed', 'true');
+                sessionStorage.setItem('whatsappPopupClosed', 'true');
             }
         }
 
