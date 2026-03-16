@@ -76,24 +76,65 @@ document.addEventListener("DOMContentLoaded", () => {
         clearInterval(countdownInterval);
         adOverlay.style.display = "none";
         document.body.style.overflow = ""; // Restore scrolling
+        
         if (targetUrl) {
-            window.location.href = targetUrl;
+            // Trigger the existing iframe preview from nav.js
+            const modal = document.getElementById('pdf-preview-modal');
+            const iframe = document.getElementById('pdf-preview-iframe');
+            const spinner = document.getElementById('pdf-loading-spinner');
+            const titleEl = document.querySelector('.pdf-modal-title');
+
+            if (modal && iframe) {
+                let link = targetUrl;
+                // Format Google Drive links
+                if (link.includes('drive.google.com/file/d/')) {
+                    link = link.replace(/\/view.*?$/, '/preview');
+                }
+
+                if (titleEl && originalTitle) {
+                    titleEl.textContent = originalTitle;
+                }
+
+                iframe.src = link;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                
+                if (spinner) {
+                    spinner.style.display = 'block';
+                    iframe.onload = () => {
+                        spinner.style.display = 'none';
+                    };
+                }
+            } else {
+                // Fallback if modal isn't initialized yet
+                window.location.href = targetUrl;
+            }
         }
     }
+
+    let originalTitle = "";
 
     skipBtn.addEventListener("click", closeAd);
 
     // 4. Intercept clicks on any .btn-preview links
-    // Use event delegation for dynamically loaded content
     document.addEventListener("click", (e) => {
-        // Find closest .btn-preview in case of nested elements
         const previewBtn = e.target.closest(".btn-preview");
         if (previewBtn && previewBtn.tagName === "A") {
             e.preventDefault();
             const href = previewBtn.href;
+            
+            // Capture original title from module card if available
+            const card = previewBtn.closest('.module-card');
+            if (card) {
+                const title = card.querySelector('h3');
+                originalTitle = title ? title.textContent : "Document Preview";
+            } else {
+                originalTitle = "Document Preview";
+            }
+
             if (href) {
                 showAd(href);
             }
         }
-    });
+    }, true); // Use capture to intercept before nav.js
 });
