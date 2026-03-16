@@ -73,6 +73,7 @@ const layoutTemplate = `<!DOCTYPE html>
     <script src="../../../auth.js"></script>
     <script src="../../../nav.js"></script>
     <script src="../../../search.js"></script>
+    <script src="../../../ads.js"></script>
     <script>
         const schemeSlug = "{{SCHEME_SLUG}}";
         const cycleSlug = "{{CYCLE_SLUG}}";
@@ -158,6 +159,7 @@ const subjectTemplate = `<!DOCTYPE html>
     <script src="../../../../auth.js"></script>
     <script src="../../../../nav.js"></script>
     <script src="../../../../search.js"></script>
+    <script src="../../../../ads.js"></script>
     <script>
         const schemeSlug = "{{SCHEME_SLUG}}";
         const cycleSlug = "{{CYCLE_SLUG}}";

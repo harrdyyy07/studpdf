@@ -1400,9 +1400,9 @@ footer h4 {
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    background: var(--surface-border);
+    border: 1px solid var(--surface-border);
+    color: var(--text);
 }
 
 .file-count-card {
@@ -2509,4 +2509,104 @@ body {
     .details {
         width: 100%;
     }
+}
+
+/* --- Ad Interstitial Overlay --- */
+#ad-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85); /* Dark semi-transparent background */
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.ad-modal {
+    background: var(--surface);
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.ad-header {
+    background: var(--surface-border);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.ad-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+#ad-countdown {
+    background: var(--accent-red);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.ad-content {
+    padding: 1.5rem;
+    min-height: 250px; /* Provide space for ad */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+}
+
+/* Specific styling for the AdSense container */
+.ad-content ins.adsbygoogle {
+    width: 100%;
+    height: auto;
+}
+
+.ad-footer {
+    padding: 1rem 1.5rem;
+    background: var(--surface);
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid var(--surface-border);
+}
+
+#ad-skip-btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+#ad-skip-btn:disabled {
+    background: var(--surface-border);
+    color: var(--text-muted);
+    cursor: not-allowed;
+}
+
+#ad-skip-btn:not(:disabled) {
+    background: var(--primary);
+    color: white;
+}
+#ad-skip-btn:not(:disabled):hover {
+    background: var(--primary-hover);
 }
