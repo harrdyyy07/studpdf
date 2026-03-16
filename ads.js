@@ -24,19 +24,34 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
     document.body.appendChild(adOverlay);
 
-    // Load the ad
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    // Flag to ensure we only push once or handle multiple pushes correctly
+    let adPushed = false;
+    let skipBtn, countdownEl, targetUrl, countdownInterval;
 
-    const skipBtn = document.getElementById("ad-skip-btn");
-    const countdownEl = document.getElementById("ad-countdown");
-    let targetUrl = "";
-    let countdownInterval;
+    // Wait until elements are in DOM
+    skipBtn = document.getElementById("ad-skip-btn");
+    countdownEl = document.getElementById("ad-countdown");
+    targetUrl = "";
+    countdownInterval = null;
 
     // 2. Function to show ad and start countdown
     function showAd(url) {
         targetUrl = url;
         adOverlay.style.display = "flex";
         document.body.style.overflow = "hidden"; // Prevent scrolling
+        
+        // Trigger Google Ad push ONLY when visible
+        if (!adPushed) {
+            // Give the browser a moment to render the container as visible
+            setTimeout(() => {
+                try {
+                    (window.adsbygoogle = window.adsbygoogle || []).push({});
+                    adPushed = true;
+                } catch (e) {
+                    console.error("Adsbygoogle push error:", e);
+                }
+            }, 100);
+        }
         
         let timeLeft = 5;
         countdownEl.textContent = timeLeft;
