@@ -40,17 +40,23 @@ document.addEventListener("DOMContentLoaded", () => {
         adOverlay.style.display = "flex";
         document.body.style.overflow = "hidden"; // Prevent scrolling
         
+        console.log("Ad modal shown. Preparing to request ad...");
+
         // Trigger Google Ad push ONLY when visible
         if (!adPushed) {
-            // Give the browser a moment to render the container as visible
             setTimeout(() => {
                 try {
-                    (window.adsbygoogle = window.adsbygoogle || []).push({});
-                    adPushed = true;
+                    if (window.adsbygoogle) {
+                        console.log("Pushing ad request to Google...");
+                        (window.adsbygoogle = window.adsbygoogle || []).push({});
+                        adPushed = true;
+                    } else {
+                        console.warn("Google AdSense script (adsbygoogle.js) is not loaded or is blocked by an AdBlocker.");
+                    }
                 } catch (e) {
                     console.error("Adsbygoogle push error:", e);
                 }
-            }, 100);
+            }, 500); // 500ms delay to ensure full visibility
         }
         
         let timeLeft = 5;
