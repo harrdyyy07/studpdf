@@ -84,55 +84,75 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.overflow = ""; // Restore scrolling
         
         if (targetUrl) {
-            // Trigger the existing iframe preview from nav.js
-            const modal = document.getElementById('pdf-preview-modal');
-            const iframe = document.getElementById('pdf-preview-iframe');
-            const spinner = document.getElementById('pdf-loading-spinner');
-            const titleEl = document.querySelector('.pdf-modal-title');
+            if (currentAction === 'preview') {
+                // Trigger the existing iframe preview from nav.js
+                const modal = document.getElementById('pdf-preview-modal');
+                const iframe = document.getElementById('pdf-preview-iframe');
+                const spinner = document.getElementById('pdf-loading-spinner');
+                const titleEl = document.querySelector('.pdf-modal-title');
 
-            if (modal && iframe) {
+                if (modal && iframe) {
+                    let link = targetUrl;
+                    // Format Google Drive links
+                    if (link.includes('drive.google.com/file/d/')) {
+                        link = link.replace(/\/view.*?$/, '/preview');
+                    }
+
+                    if (titleEl && originalTitle) {
+                        titleEl.textContent = originalTitle;
+                    }
+
+                    iframe.src = link;
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                    
+                    if (spinner) {
+                        spinner.style.display = 'block';
+                        iframe.onload = () => {
+                            spinner.style.display = 'none';
+                        };
+                    }
+                } else {
+                    window.location.href = targetUrl;
+                }
+            } else if (currentAction === 'download') {
                 let link = targetUrl;
-                // Format Google Drive links
                 if (link.includes('drive.google.com/file/d/')) {
-                    link = link.replace(/\/view.*?$/, '/preview');
+                    const match = link.match(/\/d\/([a-zA-Z0-9_-]+)/);
+                    if (match && match[1]) {
+                        const fileId = match[1];
+                        link = `https://drive.google.com/uc?export=download&id=${fileId}`;
+                    }
                 }
-
-                if (titleEl && originalTitle) {
-                    titleEl.textContent = originalTitle;
-                }
-
-                iframe.src = link;
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-                
-                if (spinner) {
-                    spinner.style.display = 'block';
-                    iframe.onload = () => {
-                        spinner.style.display = 'none';
-                    };
-                }
-            } else {
-                // Fallback if modal isn't initialized yet
-                window.location.href = targetUrl;
+                window.open(link, '_blank');
             }
         }
     }
 
     let originalTitle = "";
+    let currentAction = ""; // 'preview' or 'download'
 
     skipBtn.addEventListener("click", closeAd);
 
-    // 4. Intercept clicks on any .btn-preview links
+    // 4. Intercept clicks on any .btn-preview or .btn-download links
     document.addEventListener("click", (e) => {
-        const previewBtn = e.target.closest(".btn-preview");
-        if (previewBtn && previewBtn.tagName === "A") {
+        const target = e.target.closest("a");
+        if (!target) return;
+
+        const isPreview = target.classList.contains("btn-preview");
+        const isDownload = target.classList.contains("btn-download") || 
+                           target.hasAttribute("download") || 
+                           target.textContent.trim().toLowerCase() === 'download';
+
+        if (isPreview || isDownload) {
             e.preventDefault();
-            e.stopImmediatePropagation(); // Prevent nav.js from showing the iframe modal immediately
+            e.stopImmediatePropagation(); 
             
-            const href = previewBtn.href;
+            targetUrl = target.href;
+            currentAction = isPreview ? 'preview' : 'download';
             
             // Capture original title from module card if available
-            const card = previewBtn.closest('.module-card');
+            const card = target.closest('.module-card');
             if (card) {
                 const title = card.querySelector('h3');
                 originalTitle = title ? title.textContent : "Document Preview";
@@ -140,8 +160,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 originalTitle = "Document Preview";
             }
 
-            if (href) {
-                showAd(href);
+            if (targetUrl && targetUrl !== '#' && !targetUrl.startsWith('javascript:')) {
+                showAd(targetUrl);
             }
         }
     }, true); // Use capture to intercept before nav.js
