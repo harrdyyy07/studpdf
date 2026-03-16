@@ -121,6 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const previewBtn = e.target.closest(".btn-preview");
         if (previewBtn && previewBtn.tagName === "A") {
             e.preventDefault();
+            e.stopImmediatePropagation(); // Prevent nav.js from showing the iframe modal immediately
+            
             const href = previewBtn.href;
             
             // Capture original title from module card if available
