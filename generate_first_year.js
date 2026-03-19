@@ -41,6 +41,9 @@ const layoutTemplate = `<!DOCTYPE html>
     <meta property="og:type" content="website">
     <meta property="og:title" content="vtuwise | Engineering Notes & Question Papers for VTU Students">
     <meta property="og:description" content="Discover premium notes, question banks, and academic resources tailored for VTU students. Access materials for CSE, ECE, EEE, Mechanical, and Civil branches.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles.css">
     <link rel="manifest" href="../../../manifest.json">
     <link rel="icon" type="image/png" href="../../../favicon.png">
@@ -70,10 +73,10 @@ const layoutTemplate = `<!DOCTYPE html>
     </main>
 
     <script src="../../../data.js"></script>
-    <script src="../../../auth.js"></script>
-    <script src="../../../nav.js"></script>
-    <script src="../../../search.js"></script>
-    <script src="../../../ads.js"></script>
+    <script defer src="../../../auth.js"></script>
+    <script defer src="../../../nav.js"></script>
+    <script defer src="../../../search.js"></script>
+    <script defer src="../../../ads.js"></script>
     <script>
         const schemeSlug = "{{SCHEME_SLUG}}";
         const cycleSlug = "{{CYCLE_SLUG}}";
@@ -119,6 +122,9 @@ const subjectTemplate = `<!DOCTYPE html>
     <meta property="og:type" content="website">
     <meta property="og:title" content="vtuwise | Engineering Notes & Question Papers for VTU Students">
     <meta property="og:description" content="Discover premium notes, question banks, and academic resources tailored for VTU students. Access materials for CSE, ECE, EEE, Mechanical, and Civil branches.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../../styles.css">
     <link rel="manifest" href="../../../../manifest.json">
     <link rel="icon" type="image/png" href="../../../../favicon.png">
@@ -156,10 +162,10 @@ const subjectTemplate = `<!DOCTYPE html>
     </main>
 
     <script src="../../../../data.js"></script>
-    <script src="../../../../auth.js"></script>
-    <script src="../../../../nav.js"></script>
-    <script src="../../../../search.js"></script>
-    <script src="../../../../ads.js"></script>
+    <script defer src="../../../../auth.js"></script>
+    <script defer src="../../../../nav.js"></script>
+    <script defer src="../../../../search.js"></script>
+    <script defer src="../../../../ads.js"></script>
     <script>
         const schemeSlug = "{{SCHEME_SLUG}}";
         const cycleSlug = "{{CYCLE_SLUG}}";
