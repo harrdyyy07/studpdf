@@ -315,7 +315,19 @@ const siteData = {
                 subjects: [
                     { name: "Technological Innovation and Management Entrepreneurship", code: "BEC501", credits: "3 CR", slug: "technological-innovation-and-management-entrepreneurship-time-bec501-vtu-notes", modules: [] },
                     { name: "Digital Signal Processing", code: "BEC502", credits: "4 CR", slug: "digital-signal-processing-dsp-bec502-vtu-notes", modules: [] },
-                    { name: "Digital Communication", code: "BEC503", credits: "3 CR", slug: "digital-communication-dc-bec503-vtu-notes", modules: [] },
+                    { name: "Digital Communication", code: "BEC503", credits: "3 CR", slug: "digital-communication-dc-bec503-vtu-notes", modules: [
+                         { id: 1, name: "Module 1: Handwritten Notes-1", desc: "Handwritten notes for Module 1 Notes-1", link: "https://drive.google.com/file/d/1MiHXJLH_OeBXTM42CU6zAmNsYYul3giv/view?usp=drive_link", type: "Notes" },
+                         { id: 2, name: "Module 1: Handwritten Notes-2", desc: "Handwritten notes for Module 1 Notes-2", link: "https://drive.google.com/file/d/1qN_qBCPmdpB_WlEFFVGeTFEWOjrrhtuv/view?usp=drive_link", type: "Notes" },
+                         { id: 3, name: "Module 2: Handwritten Notes-1", desc: "Handwritten notes for Module 2 Notes-1", link: "https://drive.google.com/file/d/19RAWpWUVEoIf2AFvyIw7sv1Jk-Zm9bGh/view?usp=drive_link", type: "Notes" },
+                         { id: 4, name: "Module 2: Handwritten Notes-2", desc: "Handwritten notes for Module 2 Notes-2", link: "https://drive.google.com/file/d/1ZJcWPEn_ZHQZkSbBfifhjKWaBAfsYfpB/view?usp=drive_link", type: "Notes" },
+                         { id: 5, name: "Module 2: Handwritten Notes-3", desc: "Handwritten notes for Module 2 Notes-3", link: "https://drive.google.com/file/d/1gfm05jkUIOCmZm47M9whjSRyOX-QMtlm/view?usp=drive_link", type: "Notes" },
+                         { id: 6, name: "Module 3: Handwritten Notes", desc: "Handwritten notes for Module 3", link: "https://drive.google.com/file/d/1-COeSmPcV3UpCJzkc1OrpgMU3LCc2A5S/view?usp=drive_link", type: "Notes" },
+                         { id: 7, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", link: "https://drive.google.com/file/d/1nxETU5uNyIK7buQJQpSEt0ekPxMp4CPD/view?usp=drive_link", type: "Notes" },
+                         { id: 8, name: "Module 4: Handwritten Notes", desc: "Handwritten notes for Module 4", link: "https://drive.google.com/file/d/1Lv0eRLcMw-r0juc8jYeNgCzBaZE0YkN5/view?usp=drive_link", type: "Notes" },
+                         { id: 9, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", link: "https://drive.google.com/file/d/1MJ_McxcBZDwJVGQ5J7z25v8gU067a-tE/view?usp=drive_link", type: "Notes" },
+                         { id: 10, name: "Module 5: Handwritten Notes", desc: "Handwritten notes for Module 5", link: "https://drive.google.com/file/d/1BzQDIYlesxSpc0FR8M6VIVV_6nemWxN2/view?usp=drive_link", type: "Notes" },
+                         { id: 11, name: "Scheme of Evaluation for dec/jan 2025 qp", desc: "Scheme of Evaluation for dec/jan 2025 qp", link: "https://drive.google.com/file/d/1LY6Nga938RXP7eVzIcjx1moEGp3uLGsN/view?usp=drive_link", type: "Scheme of Evaluation" },
+                    ] },
                     { name: "Digital Communication Lab", code: "BECL504", credits: "1 CR", slug: "digital-communication-lab-dcl-becl504-vtu-notes", modules: [
                         { id: 1, name: "Digital Communication Lab", desc: "Digital Communication Lab", link: "https://drive.google.com/file/d/1bed2xpW73St1pQD3rMqr7DB8PRaaPSZB/view?usp=drive_link", type: "Lab Manual" },
                     ] },
