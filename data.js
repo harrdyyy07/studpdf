@@ -280,7 +280,14 @@ const siteData = {
                              { id: 6, name: "Model question paper-1", desc: "model question paper-1 for bmatec301", link: "https://drive.google.com/file/d/1WCDzaO4KrpEu3k-UqmmKUtWeh-5kAnVa/view?usp=drive_link", type: "MQP" },
                     ] },
                     { name: "Principles of Communication Systems", code: "BEC402", credits: "4 CR", slug: "principles-of-communication-systems-pcs-bec402-vtu-notes", modules: [
-                        
+                         { id: 1, name: "Module 1: Handwritten Notes", desc: "Handwritten notes for Module 1", link: "https://drive.google.com/file/d/127n8KdZ660BVISzr_htVjKLVuu0CUU05/view?usp=drive_link", type: "Notes" },
+                         { id: 2, name: "Module 2: Handwritten Notes", desc: "Handwritten notes for Module 2", link: "https://drive.google.com/file/d/14Q40fg0qGBat5PP-DlqcysgQmUFwBTQS/view?usp=drive_link", type: "Notes" },
+                         { id: 3, name: "Module 3: Handwritten Notes", desc: "Handwritten notes for Module 3", link: "https://drive.google.com/file/d/1-COeSmPcV3UpCJzkc1OrpgMU3LCc2A5S/view?usp=drive_link", type: "Notes" },
+                         { id: 4, name: "Module 4: Handwritten Notes", desc: "Handwritten notes for Module 4", link: "https://drive.google.com/file/d/1C9A8saTc7nGnHkG89ObgvbeST4OXIT2h/view?usp=drive_link", type: "Notes" },
+                         { id: 5, name: "Module 5: Handwritten Notes", desc: "Handwritten notes for Module 5", link: "https://drive.google.com/file/d/1DSfC0eKEFbT56aHNS22Uw5u8CSSrGcta/view?usp=drive_link", type: "Notes" },
+                         { id: 6, name: "Module 5: Notes Part-1", desc: "Comprehensive notes for Module 5 Part-1", link: "https://drive.google.com/file/d/1Zr7NMQgbmTvBbfnJjbvZURS5VRCdOuQg/view?usp=drive_link", type: "Notes" },
+                         { id: 7, name: "Module 5: Notes Part-2", desc: "Comprehensive notes for Module 5 Part-2", link: "https://drive.google.com/file/d/1xgPFPKuUhXGggBjy2oR6T3YEBjg2L1is/view?usp=drive_link", type: "Notes" },
+                         { id: 8, name: "Principles of Electronic Communication Systems (Textbook) 4th Edition", desc: "Principles of Electronic Communication Systems (Textbook) 4th Edition Author(Louis E. Frenzel jr.)", link: "https://drive.google.com/file/d/1Jo3KECXw65eVwMzxeHH-8eaXdPjYIGdH/view?usp=drive_link", type: "Textbook" },
                     ] },
                     { name: "Control Systems", code: "BEC403", credits: "4 CR", slug: "control-systems-cs-bec403-vtu-notes", modules: [] },
                     { name: "Microcontrollers", code: "BEC405A", credits: "3 CR", slug: "microcontrollers-mc-bec405a-vtu-notes", modules: [
@@ -309,7 +316,9 @@ const siteData = {
                     { name: "Technological Innovation and Management Entrepreneurship", code: "BEC501", credits: "3 CR", slug: "technological-innovation-and-management-entrepreneurship-time-bec501-vtu-notes", modules: [] },
                     { name: "Digital Signal Processing", code: "BEC502", credits: "4 CR", slug: "digital-signal-processing-dsp-bec502-vtu-notes", modules: [] },
                     { name: "Digital Communication", code: "BEC503", credits: "3 CR", slug: "digital-communication-dc-bec503-vtu-notes", modules: [] },
-                    { name: "Digital Communication Lab", code: "BECL504", credits: "1 CR", slug: "digital-communication-lab-dcl-becl504-vtu-notes", modules: [] },
+                    { name: "Digital Communication Lab", code: "BECL504", credits: "1 CR", slug: "digital-communication-lab-dcl-becl504-vtu-notes", modules: [
+                        { id: 1, name: "Digital Communication Lab", desc: "Digital Communication Lab", link: "https://drive.google.com/file/d/1bed2xpW73St1pQD3rMqr7DB8PRaaPSZB/view?usp=drive_link", type: "Lab Manual" },
+                    ] },
                     { name: "Intelligent Systems and Machine Learning Algorithms", code: "BEC515A", credits: "3 CR", slug: "intelligent-systems-and-machine-learning-algorithms-ismla-bec515a-vtu-notes", modules: [] },
                     { name: "Digital Switching and Finite Automata Theory", code: "BEC515B", credits: "3 CR", slug: "digital-switching-and-finite-automata-theory-dsfat-bec515b-vtu-notes", modules: [] },
                     { name: "Data Structure using C++", code: "BEC515C", credits: "3 CR", slug: "data-structure-using-c-plus-plus-dscpp-bec515c-vtu-notes", modules: [] },
