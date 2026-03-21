@@ -550,5 +550,9 @@ const siteData = {
                 ]
             }
         ]
+    },
+    aiml: {
+        title: "Artificial Intelligence & Machine Learning",
+        semesters: []
     }
 };
