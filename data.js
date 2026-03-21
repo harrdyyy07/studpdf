@@ -261,7 +261,9 @@ const siteData = {
                             { id: 7, name: "Model question paper-2", desc: "model question paper-2 for bmatec301", link: "https://drive.google.com/file/d/1QbkLtdjAvfVNuzuCfkiBYgQM5FszHa-X/view?usp=drive_link", type: "MQP" },
                              { id: 8, name: "Handbook(formula book)", desc: "Handbook (formula book) for bmatec301 22 scheme", link: "https://drive.google.com/file/d/1RK5AdtpFsofS9k-Im56cTM61UgyJVLJ2/view?usp=drive_link", type: "Handbook" }
                     ] },
-                    { name: "Social Connect and Responsibility", code: "BSCK307", credits: "1 CR", slug: "social-connect-and-responsibility-scr-bsck307-vtu-notes", modules: [] }
+                    { name: "Social Connect and Responsibility", code: "BSCK307", credits: "1 CR", slug: "social-connect-and-responsibility-scr-bsck307-vtu-notes", modules: [
+                         { id: 1, name: "BSCK307 complete notes", desc: "Complete notes for BSCK307", link: "https://drive.google.com/file/d/1p-LiWAcbwBr7RI-Ovma2THmyoUlfK8RZ/view?usp=drive_link", type: "Notes" },
+                    ] }
                 ]
             },
             {
@@ -402,7 +404,9 @@ const siteData = {
                     { name: "Electrical Measurements and Instrumentation", code: "BEE306B", credits: "3 CR", slug: "electrical-measurements-and-instrumentation-emi-bee306b-vtu-notes", modules: [] },
                     { name: "Electromagnetic Field Theory", code: "BEE306C", credits: "3 CR", slug: "electromagnetic-field-theory-eft-bee306c-vtu-notes", modules: [] },
                     { name: "Physics of Electronic Devices", code: "BEE306D", credits: "3 CR", slug: "physics-of-electronic-devices-ped-bee306d-vtu-notes", modules: [] },
-                    { name: "Social Connect and Responsibility", code: "BSCK307", credits: "1 CR", slug: "social-connect-and-responsibility-scr-bsck307-vtu-notes", modules: [] },
+                    { name: "Social Connect and Responsibility", code: "BSCK307", credits: "1 CR", slug: "social-connect-and-responsibility-scr-bsck307-vtu-notes", modules: [
+                         { id: 1, name: "BSCK307 complete notes", desc: "Complete notes for BSCK307", link: "https://drive.google.com/file/d/1p-LiWAcbwBr7RI-Ovma2THmyoUlfK8RZ/view?usp=drive_link", type: "Notes" },
+                    ] },
                     { name: "SCI LAB/MATLAB for Transformers and Generators", code: "BEEL358A", credits: "1 CR", slug: "sci-lab-matlab-for-transformers-and-generators-slmtg-beel358a-vtu-notes", modules: [] },
                     { name: "555 IC Laboratory", code: "BEEL358B", credits: "1 CR", slug: "555-ic-laboratory-555ic-beel358b-vtu-notes", modules: [] },
                     { name: "Circuit Laboratory using P Spice", code: "BEEL358C", credits: "1 CR", slug: "circuit-laboratory-using-p-spice-clups-beel358c-vtu-notes", modules: [] },
