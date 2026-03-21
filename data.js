@@ -235,7 +235,7 @@ const siteData = {
                         { id: 4, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", link: "https://drive.google.com/file/d/1PIya4OoxJKxuwOKhOdcvuDVhELBnUC_U/view?usp=drive_link", type: "Notes" },
                         { id: 6, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", link: "https://drive.google.com/file/d/1FmBgUyRfO4-oS9hdXzCfLE2xEFdalU3Q/view?usp=drive_link", type: "Notes" },
                         { id: 7, name: "NA Previous Question Papers", desc: "NA Previous Question Papers", link: "https://drive.google.com/file/d/1UWY4uVAZEyNIbbZQe1kMhjOl-_dDV2tK/view?usp=drive_link", type: "PYQP" },
-                        { id: 8, name: "youtube links for solved question paper", desc: "youtube links for solved question paper", link: "https://drive.google.com/file/d/1aEvSuFmzH7VGzp-NjQoLI4qO-of2mpP3/view?usp=drive_link", type: "solved qp" }
+                        { id: 8, name: "youtube links for solved question paper", desc: "youtube links for solved question paper", link: "https://drive.google.com/file/d/1aEvSuFmzH7VGzp-NjQoLI4qO-of2mpP3/view?usp=drive_link", type: "youtube links" }
                     ] },
                     { name: "Electronic Devices", code: "BEC306A", credits: "3 CR", slug: "electronic-devices-ed-bec306a-vtu-notes", modules: [] },
                     { name: "Sensors and Instrumentation", code: "BEC306B", credits: "3 CR", slug: "sensors-and-instrumentation-si-bec306b-vtu-notes", modules: [
@@ -334,7 +334,19 @@ const siteData = {
                     { name: "Intelligent Systems and Machine Learning Algorithms", code: "BEC515A", credits: "3 CR", slug: "intelligent-systems-and-machine-learning-algorithms-ismla-bec515a-vtu-notes", modules: [] },
                     { name: "Digital Switching and Finite Automata Theory", code: "BEC515B", credits: "3 CR", slug: "digital-switching-and-finite-automata-theory-dsfat-bec515b-vtu-notes", modules: [] },
                     { name: "Data Structure using C++", code: "BEC515C", credits: "3 CR", slug: "data-structure-using-c-plus-plus-dscpp-bec515c-vtu-notes", modules: [] },
-                    { name: "Satellite and Optical Communication", code: "BEC515D", credits: "3 CR", slug: "satellite-and-optical-communication-soc-bec515d-vtu-notes", modules: [] },
+                    { name: "Satellite and Optical Communication", code: "BEC515D", credits: "3 CR", slug: "satellite-and-optical-communication-soc-bec515d-vtu-notes", modules: [
+                         { id: 1, name: "Module 1: Notes", desc: "Satellite Orbits and Trajectories (Module 1)", link: "https://drive.google.com/file/d/1hfOJr-1-fNCsfC8dEKytPZSbHYaNCs1N/view?usp=drive_link", type: "Notes" },
+                            { id: 2, name: "Module 2: Notes", desc: "Satellite Subsystems (Module 2)", link: "https://drive.google.com/file/d/1HjPaMCq2v3DnWfFNj4wKh46PlFETrlBR/view?usp=drive_link", type: "Notes" },
+                            { id: 3, name: "Module 2: Notes", desc: " Earth Station (Module 2)", link: "https://drive.google.com/file/d/1LS3mWlfb_ma5gyMBJOD59gpQcjlC2u7M/view?usp=drive_link", type: "Notes" },
+                            { id: 4, name: "Module 3: Notes", desc: "Communication Satellites (Module 3)", link: "https://drive.google.com/file/d/189smA7QyiZiu1xA0mws7idXR89C0iNxf/view?usp=drive_link", type: "Notes" },
+                            { id: 5, name: "Module 4: Notes", desc: "Optical Fiber Structures (Module 4)", link: "https://drive.google.com/file/d/1Eh81kPB9OxkLsaGlvAs3FWsjPbNQWFmm/view?usp=drive_link", type: "Notes" },
+                            { id: 6, name: "Module 5: Notes", desc: "Optical Sources and Detectors (Module 5)", link: "https://drive.google.com/file/d/1ye-s4eM2IYisablM05Bwjy9Id09_gfVv/view?usp=drive_link", type: "Notes" },
+                            { id: 7, name: "Module 5: Notes", desc: "Wavelength Division Multiplexing (WDM) Concepts (Module 5)", link: "https://drive.google.com/file/d/1DpdORkaJeA1INAG-MczBUmrtKmMi_3zh/view?usp=drive_link", type: "Notes" },
+                            { id: 8, name: "Previous Year Question Paper", desc: "Previous Year Question Paper", link: "https://drive.google.com/file/d/1bfFG8Uu0drZqd3070RJukI286Y2lG0po/view?usp=drive_link", type: "PYQP" },
+                            { id: 8, name: "Model Question Paper", desc: "Model Question Paper", link: "https://drive.google.com/file/d/1FZHe1ZWdpYjmM1WPzQK-n1YEob3CypWj/view?usp=drive_link", type: "MQP" },
+                            { id: 8, name: "Scheme of Evaluation for dec/jan 2025 qp", desc: "Scheme of Evaluation for dec/jan 2025 qp", link: "https://drive.google.com/file/d/1cUIFoMiLk37-BRQBB4wO3qKqWCUx2Z1Y/view?usp=drive_link", type: "Scheme of Evaluation" },
+                            { id: 8, name: "Model Question Paper Solution", desc: "Model Question Paper Solution", link: "https://drive.google.com/file/d/1K_6OeefR8yiPbnJGS6cpEQsHYX_0iyVg/view?usp=drive_link", type: "MQP" },
+                    ] },
                     { name: "Research Methodology and IPR", code: "BRMK557", credits: "2 CR", slug: "research-methodology-and-ipr-rmipr-brmk557-vtu-notes", modules: [] },
                     { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [] }
                 ]
