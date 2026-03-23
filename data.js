@@ -368,7 +368,10 @@ const siteData = {
             {
                 sem: 6,
                 subjects: [
-                    { name: "Embedded System Design", code: "BEC601", credits: "3 CR", slug: "embedded-system-design-esd-bec601-vtu-notes", modules: [] },
+                    { name: "Embedded System Design", code: "BEC601", credits: "3 CR", slug: "embedded-system-design-esd-bec601-vtu-notes", modules: [
+                        { id: 1, name: "Text book 1 ( ARM System Developers Guide)", desc: "Andrew N Sloss, Dominic System and Chris Wright,” ARM System Developers Guide”, Elsevier", link: "https://drive.google.com/file/d/1W-ykIgFSm2Me-p_IqF5CJ6g4BchQzf6v/view?usp=drive_link", type: "Textbook" },
+                        { id: 2, name: "Text book 2 (Introduction to Embedded Systems)", desc: "“Introduction to Embedded Systems”, Shibu Kizhakke Vallathia", link: "https://drive.google.com/file/d/1svibhPSaxEesiNpmPIthf24G9pFAk1C4/view?usp=drive_link", type: "Textbook" },
+                    ] },
                     { name: "VLSI Design and Testing", code: "BEC602", credits: "4 CR", slug: "vlsi-design-and-testing-vdt-bec602-vtu-notes", modules: [] },
                     { name: "VLSI Design and Testing Lab", code: "BECL606", credits: "1 CR", slug: "vlsi-design-and-testing-lab-vdtl-becl606-vtu-notes", modules: [] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
