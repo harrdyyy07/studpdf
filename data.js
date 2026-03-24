@@ -23,11 +23,7 @@ const siteData = {
                                 code: "BMATS101",
                                 credits: "4 CR",
                                 slug: "mathematics-for-cse",
-                                modules: [
-                                    { id: 1, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", link: "#", type: "Notes" },
-                                    { id: 2, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", link: "#", type: "Notes" },
-                                    { id: 3, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", link: "#", type: "Notes" }
-                                ]
+                                modules: []
                             },
                             {
                                 name: "Applied Physics For CSE",
