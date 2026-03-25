@@ -64,8 +64,8 @@ const Navigation = {
                     <li class="dropdown">
                         <span class="dropdown-toggle">Calculator</span>
                         <div class="dropdown-menu">
-                            <a href="${prefix}calculators/sgpa.html">SGPA Calculator</a>
-                            <a href="${prefix}calculators/cgpa.html">CGPA Calculator</a>
+                            <a href="${prefix}sgpa-calculator/">SGPA Calculator</a>
+                            <a href="${prefix}cgpa-calculator/">CGPA Calculator</a>
                         </div>
                     </li>
                     
