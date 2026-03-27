@@ -44,7 +44,7 @@ const Navigation = {
         const showTopBar = sessionStorage.getItem('hideTopBar') !== 'true';
         const topBarSection = showTopBar ? `
             <div class="top-bar" id="announcement-bar">
-                <span>Free VTU Study Materials, Subject wise notes and Question Papers</span>
+                <span id="exam-countdown" style="font-weight: 600; letter-spacing: 0.5px;">⏳ June/July 5th to 7th Sem Exams in: Loading...</span>
                 <button class="top-bar-close" id="close-top-bar" aria-label="Close Announcement">&times;</button>
             </div>
         ` : '';
@@ -130,6 +130,33 @@ const Navigation = {
         `;
 
         nav.innerHTML = navHtml;
+
+        // Countdown Timer Logic
+        const countdownEl = nav.querySelector('#exam-countdown');
+        if (countdownEl && showTopBar) {
+            const targetDate = new Date('2026-05-25T00:00:00').getTime();
+            
+            const updateTimer = () => {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                if (distance < 0) {
+                    countdownEl.innerHTML = "📝 Exams have started! Best of luck!";
+                    clearInterval(timerInterval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownEl.innerHTML = `⏳ June/July 5th to 7th Sem Exams in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            };
+            
+            updateTimer();
+            const timerInterval = setInterval(updateTimer, 1000);
+        }
 
         // Navigation Logic
         const menuToggle = nav.querySelector('.menu-toggle');
