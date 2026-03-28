@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "redirects": [
     {
       "source": "/cse/mathematics-for-computer-science-mcs-bcs301-vtu-notes.html",
