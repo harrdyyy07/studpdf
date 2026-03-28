@@ -56,7 +56,7 @@ const Navigation = {
                     <span class="hamburger"></span>
                 </button>
                 
-                <a href="${prefix === '' ? '/' : prefix}" class="logo">vtuwise</a>
+                <a href="${prefix === '' ? '/' : prefix}" class="logo">VTU<span>wise.</span></a>
                 
                 <ul class="nav-links">
                     <li><a href="${prefix === '' ? '/' : prefix}">Home</a></li>
@@ -314,7 +314,7 @@ const Navigation = {
         const footerHtml = `
             <div class="container footer-content">
                 <div class="footer-column brand-column">
-                <a href="${prefix === '' ? '/' : prefix}" class="logo">vtuwise</a>
+                <a href="${prefix === '' ? '/' : prefix}" class="logo">VTU<span>wise.</span></a>
                     <p class="footer-desc">
                         vtuwise: Your comprehensive academic companion. 📚 Prepare effectively with expertly curated resources, thoughtfully created by students to support student success.
                     </p>
