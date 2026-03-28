@@ -153,7 +153,14 @@ const siteData = {
             {
                 sem: 5,
                 subjects: [
-                    { name: "Software Engineering & Project Management", code: "BCS501", credits: "3 CR", slug: "software-engineering-and-project-management-sepm-bcs501-vtu-notes", modules: [] },
+                    { name: "Software Engineering & Project Management", code: "BCS501", credits: "3 CR", slug: "software-engineering-and-project-management-sepm-bcs501-vtu-notes", modules: [
+                        { id: 1, name: "BCS501 software engineering and project management complete notes", desc: "BCS501 complete notes by ATMECE", link: "https://drive.google.com/file/d/1kweLU0xAVGQoAR0p6dgP4PWoAk7tXLQ1/view?usp=drive_link", type: "Notes" },
+                        { id: 2, name: "Module 1: Notes", desc: "bec501 notes for Module 1 by SVIT", link: "https://drive.google.com/file/d/1FJhWuB8vUIatEpb0LTTKTwohzN0LzG1u/view?usp=drive_link", type: "Notes" },
+                        { id: 3, name: "Module 2: Notes", desc: "bec501 notes for Module 2 by SVIT", link: "https://drive.google.com/file/d/1hAe5kBJTAazGCmuX0OYk2IVb5eKXTjUg/view?usp=drive_link", type: "Notes" },
+                        { id: 4, name: "Module 3: Notes", desc: "bec501 notes for Module 3 by SVIT", link: "https://drive.google.com/file/d/1p3IjC6-Um1f_ADdeNytvOtcZC5Yh3Ycn/view?usp=drive_link", type: "Notes" },
+                        { id: 5, name: "Module 4: Notes", desc: "bec501 notes for Module 4 by SVIT", link: "https://drive.google.com/file/d/1VW4ADUOsQ8ueb-uI6Df1evz13qOc3Uob/view?usp=drive_link", type: "Notes" },
+                        { id: 6, name: "Module 5: Notes", desc: "bec501 notes for Module 5 by SVIT", link: "https://drive.google.com/file/d/1_JIqxXqqhI6_Pp7rX4xvLDG2EtmGMd04/view?usp=drive_link", type: "Notes" },
+                    ] },
                     { name: "Computer Networks", code: "BCS502", credits: "4 CR", slug: "computer-networks-cn-bcs502-vtu-notes", modules: [] },
                     { name: "Theory of Computation", code: "BCS503", credits: "3 CR", slug: "theory-of-computation-toc-bcs503-vtu-notes", modules: [] },
                     { name: "Web Technology Lab", code: "BCSL504", credits: "1 CR", slug: "web-technology-lab-wtl-bcsl504-vtu-notes", modules: [] },
