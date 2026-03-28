@@ -60,6 +60,7 @@ const Navigation = {
                 
                 <ul class="nav-links">
                     <li><a href="${prefix === '' ? '/' : prefix}">Home</a></li>
+                    <li><a href="${prefix}blog/">Blog</a></li>
                     
                     <li class="dropdown">
                         <span class="dropdown-toggle">Calculator</span>
