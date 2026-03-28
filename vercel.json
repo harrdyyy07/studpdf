@@ -1,0 +1,2226 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/cse/mathematics-for-computer-science-mcs-bcs301-vtu-notes.html",
+      "destination": "/cse/semester-undefined/mathematics-for-computer-science-mcs-bcs301-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/mathematics-for-computer-science-mcs-bcs301-vtu-notes",
+      "destination": "/cse/semester-undefined/mathematics-for-computer-science-mcs-bcs301-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/digital-design-and-computer-organization-ddco-bcs302-vtu-notes.html",
+      "destination": "/cse/semester-undefined/digital-design-and-computer-organization-ddco-bcs302-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/digital-design-and-computer-organization-ddco-bcs302-vtu-notes",
+      "destination": "/cse/semester-undefined/digital-design-and-computer-organization-ddco-bcs302-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/operating-systems-os-bcs303-vtu-notes.html",
+      "destination": "/cse/semester-undefined/operating-systems-os-bcs303-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/operating-systems-os-bcs303-vtu-notes",
+      "destination": "/cse/semester-undefined/operating-systems-os-bcs303-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-structures-and-applications-dsa-bcs304-vtu-notes.html",
+      "destination": "/cse/semester-undefined/data-structures-and-applications-dsa-bcs304-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-structures-and-applications-dsa-bcs304-vtu-notes",
+      "destination": "/cse/semester-undefined/data-structures-and-applications-dsa-bcs304-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-structures-lab-dsl-bcsl305-vtu-notes.html",
+      "destination": "/cse/semester-undefined/data-structures-lab-dsl-bcsl305-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-structures-lab-dsl-bcsl305-vtu-notes",
+      "destination": "/cse/semester-undefined/data-structures-lab-dsl-bcsl305-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/object-oriented-programming-with-java-oopj-bcs306a-vtu-notes.html",
+      "destination": "/cse/semester-undefined/object-oriented-programming-with-java-oopj-bcs306a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/object-oriented-programming-with-java-oopj-bcs306a-vtu-notes",
+      "destination": "/cse/semester-undefined/object-oriented-programming-with-java-oopj-bcs306a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/object-oriented-programming-with-c-plus-plus-oopc-bcs306b-vtu-notes.html",
+      "destination": "/cse/semester-undefined/object-oriented-programming-with-c-plus-plus-oopc-bcs306b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/object-oriented-programming-with-c-plus-plus-oopc-bcs306b-vtu-notes",
+      "destination": "/cse/semester-undefined/object-oriented-programming-with-c-plus-plus-oopc-bcs306b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/social-connect-and-responsibility-scr-bsck307-vtu-notes.html",
+      "destination": "/cse/semester-undefined/social-connect-and-responsibility-scr-bsck307-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/social-connect-and-responsibility-scr-bsck307-vtu-notes",
+      "destination": "/cse/semester-undefined/social-connect-and-responsibility-scr-bsck307-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-analytics-with-excel-dawe-bcs358a-vtu-notes.html",
+      "destination": "/cse/semester-undefined/data-analytics-with-excel-dawe-bcs358a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-analytics-with-excel-dawe-bcs358a-vtu-notes",
+      "destination": "/cse/semester-undefined/data-analytics-with-excel-dawe-bcs358a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/r-programming-rp-bcs358b-vtu-notes.html",
+      "destination": "/cse/semester-undefined/r-programming-rp-bcs358b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/r-programming-rp-bcs358b-vtu-notes",
+      "destination": "/cse/semester-undefined/r-programming-rp-bcs358b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/project-management-with-git-pmwg-bcs358c-vtu-notes.html",
+      "destination": "/cse/semester-undefined/project-management-with-git-pmwg-bcs358c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/project-management-with-git-pmwg-bcs358c-vtu-notes",
+      "destination": "/cse/semester-undefined/project-management-with-git-pmwg-bcs358c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-visualization-with-python-dvwp-bcs358d-vtu-notes.html",
+      "destination": "/cse/semester-undefined/data-visualization-with-python-dvwp-bcs358d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-visualization-with-python-dvwp-bcs358d-vtu-notes",
+      "destination": "/cse/semester-undefined/data-visualization-with-python-dvwp-bcs358d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/analysis-and-design-of-algorithms-ada-bcs401-vtu-notes.html",
+      "destination": "/cse/semester-undefined/analysis-and-design-of-algorithms-ada-bcs401-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/analysis-and-design-of-algorithms-ada-bcs401-vtu-notes",
+      "destination": "/cse/semester-undefined/analysis-and-design-of-algorithms-ada-bcs401-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/microcontrollers-mc-bcs402-vtu-notes.html",
+      "destination": "/cse/semester-undefined/microcontrollers-mc-bcs402-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/microcontrollers-mc-bcs402-vtu-notes",
+      "destination": "/cse/semester-undefined/microcontrollers-mc-bcs402-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/database-management-systems-dbms-bcs403-vtu-notes.html",
+      "destination": "/cse/semester-undefined/database-management-systems-dbms-bcs403-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/database-management-systems-dbms-bcs403-vtu-notes",
+      "destination": "/cse/semester-undefined/database-management-systems-dbms-bcs403-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/ada-lab-manual-adal-bcsl404-vtu-notes.html",
+      "destination": "/cse/semester-undefined/ada-lab-manual-adal-bcsl404-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/ada-lab-manual-adal-bcsl404-vtu-notes",
+      "destination": "/cse/semester-undefined/ada-lab-manual-adal-bcsl404-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/discrete-mathematical-structures-dms-bcs405a-vtu-notes.html",
+      "destination": "/cse/semester-undefined/discrete-mathematical-structures-dms-bcs405a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/discrete-mathematical-structures-dms-bcs405a-vtu-notes",
+      "destination": "/cse/semester-undefined/discrete-mathematical-structures-dms-bcs405a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/graph-theory-gt-bcs405b-vtu-notes.html",
+      "destination": "/cse/semester-undefined/graph-theory-gt-bcs405b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/graph-theory-gt-bcs405b-vtu-notes",
+      "destination": "/cse/semester-undefined/graph-theory-gt-bcs405b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/optimization-technique-ot-bcs405c-vtu-notes.html",
+      "destination": "/cse/semester-undefined/optimization-technique-ot-bcs405c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/optimization-technique-ot-bcs405c-vtu-notes",
+      "destination": "/cse/semester-undefined/optimization-technique-ot-bcs405c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/linear-algebra-la-bcs405d-vtu-notes.html",
+      "destination": "/cse/semester-undefined/linear-algebra-la-bcs405d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/linear-algebra-la-bcs405d-vtu-notes",
+      "destination": "/cse/semester-undefined/linear-algebra-la-bcs405d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/biology-for-computer-engineers-bce-bboc407-vtu-notes.html",
+      "destination": "/cse/semester-undefined/biology-for-computer-engineers-bce-bboc407-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/biology-for-computer-engineers-bce-bboc407-vtu-notes",
+      "destination": "/cse/semester-undefined/biology-for-computer-engineers-bce-bboc407-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/universal-human-values-uhv-buhk408-vtu-notes.html",
+      "destination": "/cse/semester-undefined/universal-human-values-uhv-buhk408-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/universal-human-values-uhv-buhk408-vtu-notes",
+      "destination": "/cse/semester-undefined/universal-human-values-uhv-buhk408-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/green-it-and-sustainability-gits-bcs456a-vtu-notes.html",
+      "destination": "/cse/semester-undefined/green-it-and-sustainability-gits-bcs456a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/green-it-and-sustainability-gits-bcs456a-vtu-notes",
+      "destination": "/cse/semester-undefined/green-it-and-sustainability-gits-bcs456a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/capacity-planning-for-it-cpit-bcs456b-vtu-notes.html",
+      "destination": "/cse/semester-undefined/capacity-planning-for-it-cpit-bcs456b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/capacity-planning-for-it-cpit-bcs456b-vtu-notes",
+      "destination": "/cse/semester-undefined/capacity-planning-for-it-cpit-bcs456b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/ui-ux-uiux-bcs456c-vtu-notes.html",
+      "destination": "/cse/semester-undefined/ui-ux-uiux-bcs456c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/ui-ux-uiux-bcs456c-vtu-notes",
+      "destination": "/cse/semester-undefined/ui-ux-uiux-bcs456c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/technical-writing-using-latex-twul-bcsl456d-vtu-notes.html",
+      "destination": "/cse/semester-undefined/technical-writing-using-latex-twul-bcsl456d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/technical-writing-using-latex-twul-bcsl456d-vtu-notes",
+      "destination": "/cse/semester-undefined/technical-writing-using-latex-twul-bcsl456d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/software-engineering-and-project-management-sepm-bcs501-vtu-notes.html",
+      "destination": "/cse/semester-undefined/software-engineering-and-project-management-sepm-bcs501-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/software-engineering-and-project-management-sepm-bcs501-vtu-notes",
+      "destination": "/cse/semester-undefined/software-engineering-and-project-management-sepm-bcs501-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/computer-networks-cn-bcs502-vtu-notes.html",
+      "destination": "/cse/semester-undefined/computer-networks-cn-bcs502-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/computer-networks-cn-bcs502-vtu-notes",
+      "destination": "/cse/semester-undefined/computer-networks-cn-bcs502-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/theory-of-computation-toc-bcs503-vtu-notes.html",
+      "destination": "/cse/semester-undefined/theory-of-computation-toc-bcs503-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/theory-of-computation-toc-bcs503-vtu-notes",
+      "destination": "/cse/semester-undefined/theory-of-computation-toc-bcs503-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/web-technology-lab-wtl-bcsl504-vtu-notes.html",
+      "destination": "/cse/semester-undefined/web-technology-lab-wtl-bcsl504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/web-technology-lab-wtl-bcsl504-vtu-notes",
+      "destination": "/cse/semester-undefined/web-technology-lab-wtl-bcsl504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/computer-graphics-cg-bcs515a-vtu-notes.html",
+      "destination": "/cse/semester-undefined/computer-graphics-cg-bcs515a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/computer-graphics-cg-bcs515a-vtu-notes",
+      "destination": "/cse/semester-undefined/computer-graphics-cg-bcs515a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/artificial-intelligence-ai-bcs515b-vtu-notes.html",
+      "destination": "/cse/semester-undefined/artificial-intelligence-ai-bcs515b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/artificial-intelligence-ai-bcs515b-vtu-notes",
+      "destination": "/cse/semester-undefined/artificial-intelligence-ai-bcs515b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/unix-system-programming-usp-bcs515c-vtu-notes.html",
+      "destination": "/cse/semester-undefined/unix-system-programming-usp-bcs515c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/unix-system-programming-usp-bcs515c-vtu-notes",
+      "destination": "/cse/semester-undefined/unix-system-programming-usp-bcs515c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/distributed-systems-ds-bcs515d-vtu-notes.html",
+      "destination": "/cse/semester-undefined/distributed-systems-ds-bcs515d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/distributed-systems-ds-bcs515d-vtu-notes",
+      "destination": "/cse/semester-undefined/distributed-systems-ds-bcs515d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/research-methodology-and-ipr-rmipr-brmk557-vtu-notes.html",
+      "destination": "/cse/semester-undefined/research-methodology-and-ipr-rmipr-brmk557-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/research-methodology-and-ipr-rmipr-brmk557-vtu-notes",
+      "destination": "/cse/semester-undefined/research-methodology-and-ipr-rmipr-brmk557-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/environmental-studies-es-besk508-vtu-notes.html",
+      "destination": "/cse/semester-undefined/environmental-studies-es-besk508-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/environmental-studies-es-besk508-vtu-notes",
+      "destination": "/cse/semester-undefined/environmental-studies-es-besk508-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-visualization-lab-dvl-bail504-vtu-notes.html",
+      "destination": "/cse/semester-undefined/data-visualization-lab-dvl-bail504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/data-visualization-lab-dvl-bail504-vtu-notes",
+      "destination": "/cse/semester-undefined/data-visualization-lab-dvl-bail504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/cloud-computing-cc-bcs601-vtu-notes.html",
+      "destination": "/cse/semester-undefined/cloud-computing-cc-bcs601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/cloud-computing-cc-bcs601-vtu-notes",
+      "destination": "/cse/semester-undefined/cloud-computing-cc-bcs601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/machine-learning-ml-bcs602-vtu-notes.html",
+      "destination": "/cse/semester-undefined/machine-learning-ml-bcs602-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/machine-learning-ml-bcs602-vtu-notes",
+      "destination": "/cse/semester-undefined/machine-learning-ml-bcs602-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/machine-learning-lab-mll-bcsl606-vtu-notes.html",
+      "destination": "/cse/semester-undefined/machine-learning-lab-mll-bcsl606-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/machine-learning-lab-mll-bcsl606-vtu-notes",
+      "destination": "/cse/semester-undefined/machine-learning-lab-mll-bcsl606-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/indian-knowledge-system-iks-biks609-vtu-notes.html",
+      "destination": "/cse/semester-undefined/indian-knowledge-system-iks-biks609-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/indian-knowledge-system-iks-biks609-vtu-notes",
+      "destination": "/cse/semester-undefined/indian-knowledge-system-iks-biks609-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/full-stack-development-fsd-bis601-vtu-notes.html",
+      "destination": "/cse/semester-undefined/full-stack-development-fsd-bis601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/full-stack-development-fsd-bis601-vtu-notes",
+      "destination": "/cse/semester-undefined/full-stack-development-fsd-bis601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/blockchain-technology-bt-bcs613a-vtu-notes.html",
+      "destination": "/cse/semester-undefined/blockchain-technology-bt-bcs613a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/blockchain-technology-bt-bcs613a-vtu-notes",
+      "destination": "/cse/semester-undefined/blockchain-technology-bt-bcs613a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/computer-vision-cv-bcs613b-vtu-notes.html",
+      "destination": "/cse/semester-undefined/computer-vision-cv-bcs613b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/computer-vision-cv-bcs613b-vtu-notes",
+      "destination": "/cse/semester-undefined/computer-vision-cv-bcs613b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/compiler-design-cd-bcs613c-vtu-notes.html",
+      "destination": "/cse/semester-undefined/compiler-design-cd-bcs613c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/compiler-design-cd-bcs613c-vtu-notes",
+      "destination": "/cse/semester-undefined/compiler-design-cd-bcs613c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/advanced-java-aj-bcs613d-vtu-notes.html",
+      "destination": "/cse/semester-undefined/advanced-java-aj-bcs613d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/advanced-java-aj-bcs613d-vtu-notes",
+      "destination": "/cse/semester-undefined/advanced-java-aj-bcs613d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/introduction-to-data-structures-ids-bcs654a-vtu-notes.html",
+      "destination": "/cse/semester-undefined/introduction-to-data-structures-ids-bcs654a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/introduction-to-data-structures-ids-bcs654a-vtu-notes",
+      "destination": "/cse/semester-undefined/introduction-to-data-structures-ids-bcs654a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/fundamentals-of-operating-systems-fos-bcs654b-vtu-notes.html",
+      "destination": "/cse/semester-undefined/fundamentals-of-operating-systems-fos-bcs654b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/fundamentals-of-operating-systems-fos-bcs654b-vtu-notes",
+      "destination": "/cse/semester-undefined/fundamentals-of-operating-systems-fos-bcs654b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/mobile-application-development-mad-bis654c-vtu-notes.html",
+      "destination": "/cse/semester-undefined/mobile-application-development-mad-bis654c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/mobile-application-development-mad-bis654c-vtu-notes",
+      "destination": "/cse/semester-undefined/mobile-application-development-mad-bis654c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/introduction-to-artificial-intelligence-iai-bai654d-vtu-notes.html",
+      "destination": "/cse/semester-undefined/introduction-to-artificial-intelligence-iai-bai654d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/introduction-to-artificial-intelligence-iai-bai654d-vtu-notes",
+      "destination": "/cse/semester-undefined/introduction-to-artificial-intelligence-iai-bai654d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/open-elective-subjects-mechanical-engg-oeme-vtu-notes.html",
+      "destination": "/cse/semester-undefined/open-elective-subjects-mechanical-engg-oeme-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/open-elective-subjects-mechanical-engg-oeme-vtu-notes",
+      "destination": "/cse/semester-undefined/open-elective-subjects-mechanical-engg-oeme-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/tosca-automated-software-testing-tast-bisl657a-vtu-notes.html",
+      "destination": "/cse/semester-undefined/tosca-automated-software-testing-tast-bisl657a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/tosca-automated-software-testing-tast-bisl657a-vtu-notes",
+      "destination": "/cse/semester-undefined/tosca-automated-software-testing-tast-bisl657a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/react-react-bcsl657b-vtu-notes.html",
+      "destination": "/cse/semester-undefined/react-react-bcsl657b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/react-react-bcsl657b-vtu-notes",
+      "destination": "/cse/semester-undefined/react-react-bcsl657b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/generative-ai-gai-bail657c-vtu-notes.html",
+      "destination": "/cse/semester-undefined/generative-ai-gai-bail657c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/generative-ai-gai-bail657c-vtu-notes",
+      "destination": "/cse/semester-undefined/generative-ai-gai-bail657c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/devops-devops-bcsl657d-vtu-notes.html",
+      "destination": "/cse/semester-undefined/devops-devops-bcsl657d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/cse/devops-devops-bcsl657d-vtu-notes",
+      "destination": "/cse/semester-undefined/devops-devops-bcsl657d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-system-design-using-verilog-dsdv-bec302-vtu-notes.html",
+      "destination": "/ece/semester-undefined/digital-system-design-using-verilog-dsdv-bec302-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-system-design-using-verilog-dsdv-bec302-vtu-notes",
+      "destination": "/ece/semester-undefined/digital-system-design-using-verilog-dsdv-bec302-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/electronic-principles-and-circuits-epc-bec303-vtu-notes.html",
+      "destination": "/ece/semester-undefined/electronic-principles-and-circuits-epc-bec303-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/electronic-principles-and-circuits-epc-bec303-vtu-notes",
+      "destination": "/ece/semester-undefined/electronic-principles-and-circuits-epc-bec303-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/network-analysis-na-bec304-vtu-notes.html",
+      "destination": "/ece/semester-undefined/network-analysis-na-bec304-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/network-analysis-na-bec304-vtu-notes",
+      "destination": "/ece/semester-undefined/network-analysis-na-bec304-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/electronic-devices-ed-bec306a-vtu-notes.html",
+      "destination": "/ece/semester-undefined/electronic-devices-ed-bec306a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/electronic-devices-ed-bec306a-vtu-notes",
+      "destination": "/ece/semester-undefined/electronic-devices-ed-bec306a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/sensors-and-instrumentation-si-bec306b-vtu-notes.html",
+      "destination": "/ece/semester-undefined/sensors-and-instrumentation-si-bec306b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/sensors-and-instrumentation-si-bec306b-vtu-notes",
+      "destination": "/ece/semester-undefined/sensors-and-instrumentation-si-bec306b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/computer-organization-and-architecture-coa-bec306c-vtu-notes.html",
+      "destination": "/ece/semester-undefined/computer-organization-and-architecture-coa-bec306c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/computer-organization-and-architecture-coa-bec306c-vtu-notes",
+      "destination": "/ece/semester-undefined/computer-organization-and-architecture-coa-bec306c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/applied-numerical-methods-for-ec-engineers-anme-bec306d-vtu-notes.html",
+      "destination": "/ece/semester-undefined/applied-numerical-methods-for-ec-engineers-anme-bec306d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/applied-numerical-methods-for-ec-engineers-anme-bec306d-vtu-notes",
+      "destination": "/ece/semester-undefined/applied-numerical-methods-for-ec-engineers-anme-bec306d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/labview-programming-lp-bec358a-vtu-notes.html",
+      "destination": "/ece/semester-undefined/labview-programming-lp-bec358a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/labview-programming-lp-bec358a-vtu-notes",
+      "destination": "/ece/semester-undefined/labview-programming-lp-bec358a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/matlab-programming-mp-bec358b-vtu-notes.html",
+      "destination": "/ece/semester-undefined/matlab-programming-mp-bec358b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/matlab-programming-mp-bec358b-vtu-notes",
+      "destination": "/ece/semester-undefined/matlab-programming-mp-bec358b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/c-plus-plus-basics-cpp-bec358c-vtu-notes.html",
+      "destination": "/ece/semester-undefined/c-plus-plus-basics-cpp-bec358c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/c-plus-plus-basics-cpp-bec358c-vtu-notes",
+      "destination": "/ece/semester-undefined/c-plus-plus-basics-cpp-bec358c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/iot-for-smart-infrastructure-iot-bec358d-vtu-notes.html",
+      "destination": "/ece/semester-undefined/iot-for-smart-infrastructure-iot-bec358d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/iot-for-smart-infrastructure-iot-bec358d-vtu-notes",
+      "destination": "/ece/semester-undefined/iot-for-smart-infrastructure-iot-bec358d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/analog-and-digital-systems-design-lab-adsdl-becl305-vtu-notes.html",
+      "destination": "/ece/semester-undefined/analog-and-digital-systems-design-lab-adsdl-becl305-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/analog-and-digital-systems-design-lab-adsdl-becl305-vtu-notes",
+      "destination": "/ece/semester-undefined/analog-and-digital-systems-design-lab-adsdl-becl305-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/av-mathematics-iii-for-ec-engineering-m3-bmatec301-vtu-notes.html",
+      "destination": "/ece/semester-undefined/av-mathematics-iii-for-ec-engineering-m3-bmatec301-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/av-mathematics-iii-for-ec-engineering-m3-bmatec301-vtu-notes",
+      "destination": "/ece/semester-undefined/av-mathematics-iii-for-ec-engineering-m3-bmatec301-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/social-connect-and-responsibility-scr-bsck307-vtu-notes.html",
+      "destination": "/ece/semester-undefined/social-connect-and-responsibility-scr-bsck307-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/social-connect-and-responsibility-scr-bsck307-vtu-notes",
+      "destination": "/ece/semester-undefined/social-connect-and-responsibility-scr-bsck307-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/biology-for-engineers-be-bbok407-vtu-notes.html",
+      "destination": "/ece/semester-undefined/biology-for-engineers-be-bbok407-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/biology-for-engineers-be-bbok407-vtu-notes",
+      "destination": "/ece/semester-undefined/biology-for-engineers-be-bbok407-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/electromagnetics-theory-et-bec401-vtu-notes.html",
+      "destination": "/ece/semester-undefined/electromagnetics-theory-et-bec401-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/electromagnetics-theory-et-bec401-vtu-notes",
+      "destination": "/ece/semester-undefined/electromagnetics-theory-et-bec401-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/principles-of-communication-systems-pcs-bec402-vtu-notes.html",
+      "destination": "/ece/semester-undefined/principles-of-communication-systems-pcs-bec402-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/principles-of-communication-systems-pcs-bec402-vtu-notes",
+      "destination": "/ece/semester-undefined/principles-of-communication-systems-pcs-bec402-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/control-systems-cs-bec403-vtu-notes.html",
+      "destination": "/ece/semester-undefined/control-systems-cs-bec403-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/control-systems-cs-bec403-vtu-notes",
+      "destination": "/ece/semester-undefined/control-systems-cs-bec403-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/microcontrollers-mc-bec405a-vtu-notes.html",
+      "destination": "/ece/semester-undefined/microcontrollers-mc-bec405a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/microcontrollers-mc-bec405a-vtu-notes",
+      "destination": "/ece/semester-undefined/microcontrollers-mc-bec405a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/industrial-electronics-ie-bec405b-vtu-notes.html",
+      "destination": "/ece/semester-undefined/industrial-electronics-ie-bec405b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/industrial-electronics-ie-bec405b-vtu-notes",
+      "destination": "/ece/semester-undefined/industrial-electronics-ie-bec405b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/operating-systems-os-bec405c-vtu-notes.html",
+      "destination": "/ece/semester-undefined/operating-systems-os-bec405c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/operating-systems-os-bec405c-vtu-notes",
+      "destination": "/ece/semester-undefined/operating-systems-os-bec405c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/data-structures-using-c-dsc-bec405d-vtu-notes.html",
+      "destination": "/ece/semester-undefined/data-structures-using-c-dsc-bec405d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/data-structures-using-c-dsc-bec405d-vtu-notes",
+      "destination": "/ece/semester-undefined/data-structures-using-c-dsc-bec405d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/microcontroller-lab-mcl-bec456a-vtu-notes.html",
+      "destination": "/ece/semester-undefined/microcontroller-lab-mcl-bec456a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/microcontroller-lab-mcl-bec456a-vtu-notes",
+      "destination": "/ece/semester-undefined/microcontroller-lab-mcl-bec456a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/programmable-logic-controllers-plc-bec456b-vtu-notes.html",
+      "destination": "/ece/semester-undefined/programmable-logic-controllers-plc-bec456b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/programmable-logic-controllers-plc-bec456b-vtu-notes",
+      "destination": "/ece/semester-undefined/programmable-logic-controllers-plc-bec456b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/octave-programming-op-bec456c-vtu-notes.html",
+      "destination": "/ece/semester-undefined/octave-programming-op-bec456c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/octave-programming-op-bec456c-vtu-notes",
+      "destination": "/ece/semester-undefined/octave-programming-op-bec456c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/data-structures-lab-using-c-dslc-bec456d-vtu-notes.html",
+      "destination": "/ece/semester-undefined/data-structures-lab-using-c-dslc-bec456d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/data-structures-lab-using-c-dslc-bec456d-vtu-notes",
+      "destination": "/ece/semester-undefined/data-structures-lab-using-c-dslc-bec456d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/communication-lab-cl-becl404-vtu-notes.html",
+      "destination": "/ece/semester-undefined/communication-lab-cl-becl404-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/communication-lab-cl-becl404-vtu-notes",
+      "destination": "/ece/semester-undefined/communication-lab-cl-becl404-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/universal-human-values-uhv-buhk408-vtu-notes.html",
+      "destination": "/ece/semester-undefined/universal-human-values-uhv-buhk408-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/universal-human-values-uhv-buhk408-vtu-notes",
+      "destination": "/ece/semester-undefined/universal-human-values-uhv-buhk408-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/technological-innovation-and-management-entrepreneurship-time-bec501-vtu-notes.html",
+      "destination": "/ece/semester-undefined/technological-innovation-and-management-entrepreneurship-time-bec501-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/technological-innovation-and-management-entrepreneurship-time-bec501-vtu-notes",
+      "destination": "/ece/semester-undefined/technological-innovation-and-management-entrepreneurship-time-bec501-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-signal-processing-dsp-bec502-vtu-notes.html",
+      "destination": "/ece/semester-undefined/digital-signal-processing-dsp-bec502-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-signal-processing-dsp-bec502-vtu-notes",
+      "destination": "/ece/semester-undefined/digital-signal-processing-dsp-bec502-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-communication-dc-bec503-vtu-notes.html",
+      "destination": "/ece/semester-undefined/digital-communication-dc-bec503-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-communication-dc-bec503-vtu-notes",
+      "destination": "/ece/semester-undefined/digital-communication-dc-bec503-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-communication-lab-dcl-becl504-vtu-notes.html",
+      "destination": "/ece/semester-undefined/digital-communication-lab-dcl-becl504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-communication-lab-dcl-becl504-vtu-notes",
+      "destination": "/ece/semester-undefined/digital-communication-lab-dcl-becl504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/intelligent-systems-and-machine-learning-algorithms-ismla-bec515a-vtu-notes.html",
+      "destination": "/ece/semester-undefined/intelligent-systems-and-machine-learning-algorithms-ismla-bec515a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/intelligent-systems-and-machine-learning-algorithms-ismla-bec515a-vtu-notes",
+      "destination": "/ece/semester-undefined/intelligent-systems-and-machine-learning-algorithms-ismla-bec515a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-switching-and-finite-automata-theory-dsfat-bec515b-vtu-notes.html",
+      "destination": "/ece/semester-undefined/digital-switching-and-finite-automata-theory-dsfat-bec515b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-switching-and-finite-automata-theory-dsfat-bec515b-vtu-notes",
+      "destination": "/ece/semester-undefined/digital-switching-and-finite-automata-theory-dsfat-bec515b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/data-structure-using-c-plus-plus-dscpp-bec515c-vtu-notes.html",
+      "destination": "/ece/semester-undefined/data-structure-using-c-plus-plus-dscpp-bec515c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/data-structure-using-c-plus-plus-dscpp-bec515c-vtu-notes",
+      "destination": "/ece/semester-undefined/data-structure-using-c-plus-plus-dscpp-bec515c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/satellite-and-optical-communication-soc-bec515d-vtu-notes.html",
+      "destination": "/ece/semester-undefined/satellite-and-optical-communication-soc-bec515d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/satellite-and-optical-communication-soc-bec515d-vtu-notes",
+      "destination": "/ece/semester-undefined/satellite-and-optical-communication-soc-bec515d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/research-methodology-and-ipr-rmipr-brmk557-vtu-notes.html",
+      "destination": "/ece/semester-undefined/research-methodology-and-ipr-rmipr-brmk557-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/research-methodology-and-ipr-rmipr-brmk557-vtu-notes",
+      "destination": "/ece/semester-undefined/research-methodology-and-ipr-rmipr-brmk557-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/environmental-studies-es-besk508-vtu-notes.html",
+      "destination": "/ece/semester-undefined/environmental-studies-es-besk508-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/environmental-studies-es-besk508-vtu-notes",
+      "destination": "/ece/semester-undefined/environmental-studies-es-besk508-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/embedded-system-design-esd-bec601-vtu-notes.html",
+      "destination": "/ece/semester-undefined/embedded-system-design-esd-bec601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/embedded-system-design-esd-bec601-vtu-notes",
+      "destination": "/ece/semester-undefined/embedded-system-design-esd-bec601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/vlsi-design-and-testing-vdt-bec602-vtu-notes.html",
+      "destination": "/ece/semester-undefined/vlsi-design-and-testing-vdt-bec602-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/vlsi-design-and-testing-vdt-bec602-vtu-notes",
+      "destination": "/ece/semester-undefined/vlsi-design-and-testing-vdt-bec602-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/vlsi-design-and-testing-lab-vdtl-becl606-vtu-notes.html",
+      "destination": "/ece/semester-undefined/vlsi-design-and-testing-lab-vdtl-becl606-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/vlsi-design-and-testing-lab-vdtl-becl606-vtu-notes",
+      "destination": "/ece/semester-undefined/vlsi-design-and-testing-lab-vdtl-becl606-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/indian-knowledge-system-iks-biks609-vtu-notes.html",
+      "destination": "/ece/semester-undefined/indian-knowledge-system-iks-biks609-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/indian-knowledge-system-iks-biks609-vtu-notes",
+      "destination": "/ece/semester-undefined/indian-knowledge-system-iks-biks609-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/multimedia-communication-mc-bec613a-vtu-notes.html",
+      "destination": "/ece/semester-undefined/multimedia-communication-mc-bec613a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/multimedia-communication-mc-bec613a-vtu-notes",
+      "destination": "/ece/semester-undefined/multimedia-communication-mc-bec613a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/computer-and-data-security-cds-bec613b-vtu-notes.html",
+      "destination": "/ece/semester-undefined/computer-and-data-security-cds-bec613b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/computer-and-data-security-cds-bec613b-vtu-notes",
+      "destination": "/ece/semester-undefined/computer-and-data-security-cds-bec613b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-image-processing-dip-bec613c-vtu-notes.html",
+      "destination": "/ece/semester-undefined/digital-image-processing-dip-bec613c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-image-processing-dip-bec613c-vtu-notes",
+      "destination": "/ece/semester-undefined/digital-image-processing-dip-bec613c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/fpga-system-design-using-verilog-fsdv-bec613d-vtu-notes.html",
+      "destination": "/ece/semester-undefined/fpga-system-design-using-verilog-fsdv-bec613d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/fpga-system-design-using-verilog-fsdv-bec613d-vtu-notes",
+      "destination": "/ece/semester-undefined/fpga-system-design-using-verilog-fsdv-bec613d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-system-design-using-verilog-dsdv-bec654a-vtu-notes.html",
+      "destination": "/ece/semester-undefined/digital-system-design-using-verilog-dsdv-bec654a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/digital-system-design-using-verilog-dsdv-bec654a-vtu-notes",
+      "destination": "/ece/semester-undefined/digital-system-design-using-verilog-dsdv-bec654a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/consumer-electronics-ce-bec654b-vtu-notes.html",
+      "destination": "/ece/semester-undefined/consumer-electronics-ce-bec654b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/consumer-electronics-ce-bec654b-vtu-notes",
+      "destination": "/ece/semester-undefined/consumer-electronics-ce-bec654b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/electronic-communication-systems-ecs-bec654c-vtu-notes.html",
+      "destination": "/ece/semester-undefined/electronic-communication-systems-ecs-bec654c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/electronic-communication-systems-ecs-bec654c-vtu-notes",
+      "destination": "/ece/semester-undefined/electronic-communication-systems-ecs-bec654c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/basic-vlsi-design-bvd-bec654d-vtu-notes.html",
+      "destination": "/ece/semester-undefined/basic-vlsi-design-bvd-bec654d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/basic-vlsi-design-bvd-bec654d-vtu-notes",
+      "destination": "/ece/semester-undefined/basic-vlsi-design-bvd-bec654d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/open-elective-subjects-mechanical-engg-oeme-vtu-notes.html",
+      "destination": "/ece/semester-undefined/open-elective-subjects-mechanical-engg-oeme-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/open-elective-subjects-mechanical-engg-oeme-vtu-notes",
+      "destination": "/ece/semester-undefined/open-elective-subjects-mechanical-engg-oeme-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/fpga-system-design-using-verilog-lab-fsdvl-becl657a-vtu-notes.html",
+      "destination": "/ece/semester-undefined/fpga-system-design-using-verilog-lab-fsdvl-becl657a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/fpga-system-design-using-verilog-lab-fsdvl-becl657a-vtu-notes",
+      "destination": "/ece/semester-undefined/fpga-system-design-using-verilog-lab-fsdvl-becl657a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/system-modelling-using-simulink-sms-becl657b-vtu-notes.html",
+      "destination": "/ece/semester-undefined/system-modelling-using-simulink-sms-becl657b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/system-modelling-using-simulink-sms-becl657b-vtu-notes",
+      "destination": "/ece/semester-undefined/system-modelling-using-simulink-sms-becl657b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/iot-laboratory-il-becl657c-vtu-notes.html",
+      "destination": "/ece/semester-undefined/iot-laboratory-il-becl657c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/iot-laboratory-il-becl657c-vtu-notes",
+      "destination": "/ece/semester-undefined/iot-laboratory-il-becl657c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/python-programming-for-machine-learning-applications-ppmla-becl657d-vtu-notes.html",
+      "destination": "/ece/semester-undefined/python-programming-for-machine-learning-applications-ppmla-becl657d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/ece/python-programming-for-machine-learning-applications-ppmla-becl657d-vtu-notes",
+      "destination": "/ece/semester-undefined/python-programming-for-machine-learning-applications-ppmla-becl657d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/engineering-mathematics-for-eee-em-bee301-vtu-notes.html",
+      "destination": "/eee/semester-undefined/engineering-mathematics-for-eee-em-bee301-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/engineering-mathematics-for-eee-em-bee301-vtu-notes",
+      "destination": "/eee/semester-undefined/engineering-mathematics-for-eee-em-bee301-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-circuit-analysis-eca-bee302-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electric-circuit-analysis-eca-bee302-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-circuit-analysis-eca-bee302-vtu-notes",
+      "destination": "/eee/semester-undefined/electric-circuit-analysis-eca-bee302-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/analog-electronic-circuits-aec-bee303-vtu-notes.html",
+      "destination": "/eee/semester-undefined/analog-electronic-circuits-aec-bee303-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/analog-electronic-circuits-aec-bee303-vtu-notes",
+      "destination": "/eee/semester-undefined/analog-electronic-circuits-aec-bee303-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/transformers-and-generators-tg-bee304-vtu-notes.html",
+      "destination": "/eee/semester-undefined/transformers-and-generators-tg-bee304-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/transformers-and-generators-tg-bee304-vtu-notes",
+      "destination": "/eee/semester-undefined/transformers-and-generators-tg-bee304-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/transformers-and-generators-lab-tgl-beel305-vtu-notes.html",
+      "destination": "/eee/semester-undefined/transformers-and-generators-lab-tgl-beel305-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/transformers-and-generators-lab-tgl-beel305-vtu-notes",
+      "destination": "/eee/semester-undefined/transformers-and-generators-lab-tgl-beel305-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/digital-logic-circuits-dlc-bee306a-vtu-notes.html",
+      "destination": "/eee/semester-undefined/digital-logic-circuits-dlc-bee306a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/digital-logic-circuits-dlc-bee306a-vtu-notes",
+      "destination": "/eee/semester-undefined/digital-logic-circuits-dlc-bee306a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electrical-measurements-and-instrumentation-emi-bee306b-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electrical-measurements-and-instrumentation-emi-bee306b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electrical-measurements-and-instrumentation-emi-bee306b-vtu-notes",
+      "destination": "/eee/semester-undefined/electrical-measurements-and-instrumentation-emi-bee306b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electromagnetic-field-theory-eft-bee306c-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electromagnetic-field-theory-eft-bee306c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electromagnetic-field-theory-eft-bee306c-vtu-notes",
+      "destination": "/eee/semester-undefined/electromagnetic-field-theory-eft-bee306c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/physics-of-electronic-devices-ped-bee306d-vtu-notes.html",
+      "destination": "/eee/semester-undefined/physics-of-electronic-devices-ped-bee306d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/physics-of-electronic-devices-ped-bee306d-vtu-notes",
+      "destination": "/eee/semester-undefined/physics-of-electronic-devices-ped-bee306d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/social-connect-and-responsibility-scr-bsck307-vtu-notes.html",
+      "destination": "/eee/semester-undefined/social-connect-and-responsibility-scr-bsck307-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/social-connect-and-responsibility-scr-bsck307-vtu-notes",
+      "destination": "/eee/semester-undefined/social-connect-and-responsibility-scr-bsck307-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/sci-lab-matlab-for-transformers-and-generators-slmtg-beel358a-vtu-notes.html",
+      "destination": "/eee/semester-undefined/sci-lab-matlab-for-transformers-and-generators-slmtg-beel358a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/sci-lab-matlab-for-transformers-and-generators-slmtg-beel358a-vtu-notes",
+      "destination": "/eee/semester-undefined/sci-lab-matlab-for-transformers-and-generators-slmtg-beel358a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/555-ic-laboratory-555ic-beel358b-vtu-notes.html",
+      "destination": "/eee/semester-undefined/555-ic-laboratory-555ic-beel358b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/555-ic-laboratory-555ic-beel358b-vtu-notes",
+      "destination": "/eee/semester-undefined/555-ic-laboratory-555ic-beel358b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/circuit-laboratory-using-p-spice-clups-beel358c-vtu-notes.html",
+      "destination": "/eee/semester-undefined/circuit-laboratory-using-p-spice-clups-beel358c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/circuit-laboratory-using-p-spice-clups-beel358c-vtu-notes",
+      "destination": "/eee/semester-undefined/circuit-laboratory-using-p-spice-clups-beel358c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electrical-hardware-laboratory-ehl-beel358d-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electrical-hardware-laboratory-ehl-beel358d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electrical-hardware-laboratory-ehl-beel358d-vtu-notes",
+      "destination": "/eee/semester-undefined/electrical-hardware-laboratory-ehl-beel358d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-motors-em-bee401-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electric-motors-em-bee401-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-motors-em-bee401-vtu-notes",
+      "destination": "/eee/semester-undefined/electric-motors-em-bee401-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/transmission-and-distribution-td-bee402-vtu-notes.html",
+      "destination": "/eee/semester-undefined/transmission-and-distribution-td-bee402-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/transmission-and-distribution-td-bee402-vtu-notes",
+      "destination": "/eee/semester-undefined/transmission-and-distribution-td-bee402-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/microcontrollers-mc-bee403-vtu-notes.html",
+      "destination": "/eee/semester-undefined/microcontrollers-mc-bee403-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/microcontrollers-mc-bee403-vtu-notes",
+      "destination": "/eee/semester-undefined/microcontrollers-mc-bee403-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-motors-lab-eml-beel404-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electric-motors-lab-eml-beel404-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-motors-lab-eml-beel404-vtu-notes",
+      "destination": "/eee/semester-undefined/electric-motors-lab-eml-beel404-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electrical-power-generation-and-economics-epge-bee405a-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electrical-power-generation-and-economics-epge-bee405a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electrical-power-generation-and-economics-epge-bee405a-vtu-notes",
+      "destination": "/eee/semester-undefined/electrical-power-generation-and-economics-epge-bee405a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/op-amp-and-lic-oal-bee405b-vtu-notes.html",
+      "destination": "/eee/semester-undefined/op-amp-and-lic-oal-bee405b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/op-amp-and-lic-oal-bee405b-vtu-notes",
+      "destination": "/eee/semester-undefined/op-amp-and-lic-oal-bee405b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/engineering-materials-em-bee405c-vtu-notes.html",
+      "destination": "/eee/semester-undefined/engineering-materials-em-bee405c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/engineering-materials-em-bee405c-vtu-notes",
+      "destination": "/eee/semester-undefined/engineering-materials-em-bee405c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/object-oriented-programming-oop-bee405d-vtu-notes.html",
+      "destination": "/eee/semester-undefined/object-oriented-programming-oop-bee405d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/object-oriented-programming-oop-bee405d-vtu-notes",
+      "destination": "/eee/semester-undefined/object-oriented-programming-oop-bee405d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/biology-for-engineers-bfe-bbok407-vtu-notes.html",
+      "destination": "/eee/semester-undefined/biology-for-engineers-bfe-bbok407-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/biology-for-engineers-bfe-bbok407-vtu-notes",
+      "destination": "/eee/semester-undefined/biology-for-engineers-bfe-bbok407-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/universal-human-values-uhv-buhk408-vtu-notes.html",
+      "destination": "/eee/semester-undefined/universal-human-values-uhv-buhk408-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/universal-human-values-uhv-buhk408-vtu-notes",
+      "destination": "/eee/semester-undefined/universal-human-values-uhv-buhk408-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/basics-of-vhdl-lab-bvl-beel456a-vtu-notes.html",
+      "destination": "/eee/semester-undefined/basics-of-vhdl-lab-bvl-beel456a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/basics-of-vhdl-lab-bvl-beel456a-vtu-notes",
+      "destination": "/eee/semester-undefined/basics-of-vhdl-lab-bvl-beel456a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/sci-lab-matlab-for-electrical-and-electronic-measurements-slme-beel456b-vtu-notes.html",
+      "destination": "/eee/semester-undefined/sci-lab-matlab-for-electrical-and-electronic-measurements-slme-beel456b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/sci-lab-matlab-for-electrical-and-electronic-measurements-slme-beel456b-vtu-notes",
+      "destination": "/eee/semester-undefined/sci-lab-matlab-for-electrical-and-electronic-measurements-slme-beel456b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/pcb-design-laboratory-pdl-beel456c-vtu-notes.html",
+      "destination": "/eee/semester-undefined/pcb-design-laboratory-pdl-beel456c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/pcb-design-laboratory-pdl-beel456c-vtu-notes",
+      "destination": "/eee/semester-undefined/pcb-design-laboratory-pdl-beel456c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/aurdino-and-rasberry-pi-based-projects-arpbp-beel456d-vtu-notes.html",
+      "destination": "/eee/semester-undefined/aurdino-and-rasberry-pi-based-projects-arpbp-beel456d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/aurdino-and-rasberry-pi-based-projects-arpbp-beel456d-vtu-notes",
+      "destination": "/eee/semester-undefined/aurdino-and-rasberry-pi-based-projects-arpbp-beel456d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/engineering-management-and-entrepreneurship-eme-bee501-vtu-notes.html",
+      "destination": "/eee/semester-undefined/engineering-management-and-entrepreneurship-eme-bee501-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/engineering-management-and-entrepreneurship-eme-bee501-vtu-notes",
+      "destination": "/eee/semester-undefined/engineering-management-and-entrepreneurship-eme-bee501-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/signals-and-dsp-sdsp-bee502-vtu-notes.html",
+      "destination": "/eee/semester-undefined/signals-and-dsp-sdsp-bee502-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/signals-and-dsp-sdsp-bee502-vtu-notes",
+      "destination": "/eee/semester-undefined/signals-and-dsp-sdsp-bee502-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/power-electronics-pe-bee503-vtu-notes.html",
+      "destination": "/eee/semester-undefined/power-electronics-pe-bee503-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/power-electronics-pe-bee503-vtu-notes",
+      "destination": "/eee/semester-undefined/power-electronics-pe-bee503-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/power-electronics-lab-pel-beel504-vtu-notes.html",
+      "destination": "/eee/semester-undefined/power-electronics-lab-pel-beel504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/power-electronics-lab-pel-beel504-vtu-notes",
+      "destination": "/eee/semester-undefined/power-electronics-lab-pel-beel504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/research-methodology-and-ipr-rmipr-brmk557-vtu-notes.html",
+      "destination": "/eee/semester-undefined/research-methodology-and-ipr-rmipr-brmk557-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/research-methodology-and-ipr-rmipr-brmk557-vtu-notes",
+      "destination": "/eee/semester-undefined/research-methodology-and-ipr-rmipr-brmk557-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/environmental-studies-es-besk508-vtu-notes.html",
+      "destination": "/eee/semester-undefined/environmental-studies-es-besk508-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/environmental-studies-es-besk508-vtu-notes",
+      "destination": "/eee/semester-undefined/environmental-studies-es-besk508-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/high-voltage-engineering-hve-bee515a-vtu-notes.html",
+      "destination": "/eee/semester-undefined/high-voltage-engineering-hve-bee515a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/high-voltage-engineering-hve-bee515a-vtu-notes",
+      "destination": "/eee/semester-undefined/high-voltage-engineering-hve-bee515a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/power-electronics-for-renewable-energy-systems-peres-bee515b-vtu-notes.html",
+      "destination": "/eee/semester-undefined/power-electronics-for-renewable-energy-systems-peres-bee515b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/power-electronics-for-renewable-energy-systems-peres-bee515b-vtu-notes",
+      "destination": "/eee/semester-undefined/power-electronics-for-renewable-energy-systems-peres-bee515b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-vehicle-fundamentals-evf-bee515c-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electric-vehicle-fundamentals-evf-bee515c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-vehicle-fundamentals-evf-bee515c-vtu-notes",
+      "destination": "/eee/semester-undefined/electric-vehicle-fundamentals-evf-bee515c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/fundamentals-of-vlsi-design-fvd-bee515d-vtu-notes.html",
+      "destination": "/eee/semester-undefined/fundamentals-of-vlsi-design-fvd-bee515d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/fundamentals-of-vlsi-design-fvd-bee515d-vtu-notes",
+      "destination": "/eee/semester-undefined/fundamentals-of-vlsi-design-fvd-bee515d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/power-system-analysis-i-psa1-bee601-vtu-notes.html",
+      "destination": "/eee/semester-undefined/power-system-analysis-i-psa1-bee601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/power-system-analysis-i-psa1-bee601-vtu-notes",
+      "destination": "/eee/semester-undefined/power-system-analysis-i-psa1-bee601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/control-systems-cs-bee602-vtu-notes.html",
+      "destination": "/eee/semester-undefined/control-systems-cs-bee602-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/control-systems-cs-bee602-vtu-notes",
+      "destination": "/eee/semester-undefined/control-systems-cs-bee602-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/control-system-lab-csl-beel606-vtu-notes.html",
+      "destination": "/eee/semester-undefined/control-system-lab-csl-beel606-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/control-system-lab-csl-beel606-vtu-notes",
+      "destination": "/eee/semester-undefined/control-system-lab-csl-beel606-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/indian-knowledge-system-iks-biks609-vtu-notes.html",
+      "destination": "/eee/semester-undefined/indian-knowledge-system-iks-biks609-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/indian-knowledge-system-iks-biks609-vtu-notes",
+      "destination": "/eee/semester-undefined/indian-knowledge-system-iks-biks609-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/medium-voltage-substation-design-mvsd-bee613a-vtu-notes.html",
+      "destination": "/eee/semester-undefined/medium-voltage-substation-design-mvsd-bee613a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/medium-voltage-substation-design-mvsd-bee613a-vtu-notes",
+      "destination": "/eee/semester-undefined/medium-voltage-substation-design-mvsd-bee613a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/embedded-system-design-esd-bee613b-vtu-notes.html",
+      "destination": "/eee/semester-undefined/embedded-system-design-esd-bee613b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/embedded-system-design-esd-bee613b-vtu-notes",
+      "destination": "/eee/semester-undefined/embedded-system-design-esd-bee613b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/facts-and-hvdc-transmission-fht-bee613c-vtu-notes.html",
+      "destination": "/eee/semester-undefined/facts-and-hvdc-transmission-fht-bee613c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/facts-and-hvdc-transmission-fht-bee613c-vtu-notes",
+      "destination": "/eee/semester-undefined/facts-and-hvdc-transmission-fht-bee613c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-motor-and-drive-systems-for-electric-vehicles-emdsev-bee613d-vtu-notes.html",
+      "destination": "/eee/semester-undefined/electric-motor-and-drive-systems-for-electric-vehicles-emdsev-bee613d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/electric-motor-and-drive-systems-for-electric-vehicles-emdsev-bee613d-vtu-notes",
+      "destination": "/eee/semester-undefined/electric-motor-and-drive-systems-for-electric-vehicles-emdsev-bee613d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/utilization-of-electrical-power-uep-bee654a-vtu-notes.html",
+      "destination": "/eee/semester-undefined/utilization-of-electrical-power-uep-bee654a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/utilization-of-electrical-power-uep-bee654a-vtu-notes",
+      "destination": "/eee/semester-undefined/utilization-of-electrical-power-uep-bee654a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/technologies-of-renewable-energy-sources-tres-bee654b-vtu-notes.html",
+      "destination": "/eee/semester-undefined/technologies-of-renewable-energy-sources-tres-bee654b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/technologies-of-renewable-energy-sources-tres-bee654b-vtu-notes",
+      "destination": "/eee/semester-undefined/technologies-of-renewable-energy-sources-tres-bee654b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/industrial-servo-control-systems-iscs-bee654c-vtu-notes.html",
+      "destination": "/eee/semester-undefined/industrial-servo-control-systems-iscs-bee654c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/industrial-servo-control-systems-iscs-bee654c-vtu-notes",
+      "destination": "/eee/semester-undefined/industrial-servo-control-systems-iscs-bee654c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/semiconductor-devices-sd-bee654d-vtu-notes.html",
+      "destination": "/eee/semester-undefined/semiconductor-devices-sd-bee654d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/semiconductor-devices-sd-bee654d-vtu-notes",
+      "destination": "/eee/semester-undefined/semiconductor-devices-sd-bee654d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/open-elective-subjects-mechanical-engg-oeme-vtu-notes.html",
+      "destination": "/eee/semester-undefined/open-elective-subjects-mechanical-engg-oeme-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/open-elective-subjects-mechanical-engg-oeme-vtu-notes",
+      "destination": "/eee/semester-undefined/open-elective-subjects-mechanical-engg-oeme-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/energy-management-in-electric-vehicles-emev-bee657a-vtu-notes.html",
+      "destination": "/eee/semester-undefined/energy-management-in-electric-vehicles-emev-bee657a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/energy-management-in-electric-vehicles-emev-bee657a-vtu-notes",
+      "destination": "/eee/semester-undefined/energy-management-in-electric-vehicles-emev-bee657a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/simulation-of-control-of-power-electronics-circuits-scpec-beel657b-vtu-notes.html",
+      "destination": "/eee/semester-undefined/simulation-of-control-of-power-electronics-circuits-scpec-beel657b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/simulation-of-control-of-power-electronics-circuits-scpec-beel657b-vtu-notes",
+      "destination": "/eee/semester-undefined/simulation-of-control-of-power-electronics-circuits-scpec-beel657b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/energy-audit-project-eap-beel657c-vtu-notes.html",
+      "destination": "/eee/semester-undefined/energy-audit-project-eap-beel657c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/energy-audit-project-eap-beel657c-vtu-notes",
+      "destination": "/eee/semester-undefined/energy-audit-project-eap-beel657c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/project-on-renewable-energy-sources-pres-beel657d-vtu-notes.html",
+      "destination": "/eee/semester-undefined/project-on-renewable-energy-sources-pres-beel657d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/eee/project-on-renewable-energy-sources-pres-beel657d-vtu-notes",
+      "destination": "/eee/semester-undefined/project-on-renewable-energy-sources-pres-beel657d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/strength-of-materials-som-bcv301-vtu-notes.html",
+      "destination": "/civil/semester-undefined/strength-of-materials-som-bcv301-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/strength-of-materials-som-bcv301-vtu-notes",
+      "destination": "/civil/semester-undefined/strength-of-materials-som-bcv301-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/engineering-survey-es-bcv302-vtu-notes.html",
+      "destination": "/civil/semester-undefined/engineering-survey-es-bcv302-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/engineering-survey-es-bcv302-vtu-notes",
+      "destination": "/civil/semester-undefined/engineering-survey-es-bcv302-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/engineering-geology-eg-bcv303-vtu-notes.html",
+      "destination": "/civil/semester-undefined/engineering-geology-eg-bcv303-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/engineering-geology-eg-bcv303-vtu-notes",
+      "destination": "/civil/semester-undefined/engineering-geology-eg-bcv303-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/water-supply-and-waste-water-engineering-wswwe-bcv304-vtu-notes.html",
+      "destination": "/civil/semester-undefined/water-supply-and-waste-water-engineering-wswwe-bcv304-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/water-supply-and-waste-water-engineering-wswwe-bcv304-vtu-notes",
+      "destination": "/civil/semester-undefined/water-supply-and-waste-water-engineering-wswwe-bcv304-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/computer-aided-building-planning-and-drawing-cabpd-bcv305-vtu-notes.html",
+      "destination": "/civil/semester-undefined/computer-aided-building-planning-and-drawing-cabpd-bcv305-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/computer-aided-building-planning-and-drawing-cabpd-bcv305-vtu-notes",
+      "destination": "/civil/semester-undefined/computer-aided-building-planning-and-drawing-cabpd-bcv305-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/rural-urban-planning-and-architecture-rupa-bcv306a-vtu-notes.html",
+      "destination": "/civil/semester-undefined/rural-urban-planning-and-architecture-rupa-bcv306a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/rural-urban-planning-and-architecture-rupa-bcv306a-vtu-notes",
+      "destination": "/civil/semester-undefined/rural-urban-planning-and-architecture-rupa-bcv306a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/geospatial-techniques-in-practice-gtp-bcv306b-vtu-notes.html",
+      "destination": "/civil/semester-undefined/geospatial-techniques-in-practice-gtp-bcv306b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/geospatial-techniques-in-practice-gtp-bcv306b-vtu-notes",
+      "destination": "/civil/semester-undefined/geospatial-techniques-in-practice-gtp-bcv306b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/sustainable-design-concept-for-building-services-sdcbs-bcv306c-vtu-notes.html",
+      "destination": "/civil/semester-undefined/sustainable-design-concept-for-building-services-sdcbs-bcv306c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/sustainable-design-concept-for-building-services-sdcbs-bcv306c-vtu-notes",
+      "destination": "/civil/semester-undefined/sustainable-design-concept-for-building-services-sdcbs-bcv306c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/fire-safety-in-buildings-fsb-bcv306d-vtu-notes.html",
+      "destination": "/civil/semester-undefined/fire-safety-in-buildings-fsb-bcv306d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/fire-safety-in-buildings-fsb-bcv306d-vtu-notes",
+      "destination": "/civil/semester-undefined/fire-safety-in-buildings-fsb-bcv306d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/data-analytics-with-excel-dawe-bcvl358a-vtu-notes.html",
+      "destination": "/civil/semester-undefined/data-analytics-with-excel-dawe-bcvl358a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/data-analytics-with-excel-dawe-bcvl358a-vtu-notes",
+      "destination": "/civil/semester-undefined/data-analytics-with-excel-dawe-bcvl358a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/smart-urban-infrastructure-sui-bcv358b-vtu-notes.html",
+      "destination": "/civil/semester-undefined/smart-urban-infrastructure-sui-bcv358b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/smart-urban-infrastructure-sui-bcv358b-vtu-notes",
+      "destination": "/civil/semester-undefined/smart-urban-infrastructure-sui-bcv358b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/problem-solving-with-python-psp-bcvl358c-vtu-notes.html",
+      "destination": "/civil/semester-undefined/problem-solving-with-python-psp-bcvl358c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/problem-solving-with-python-psp-bcvl358c-vtu-notes",
+      "destination": "/civil/semester-undefined/problem-solving-with-python-psp-bcvl358c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/personality-development-for-civil-engineers-pdce-bcv358d-vtu-notes.html",
+      "destination": "/civil/semester-undefined/personality-development-for-civil-engineers-pdce-bcv358d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/personality-development-for-civil-engineers-pdce-bcv358d-vtu-notes",
+      "destination": "/civil/semester-undefined/personality-development-for-civil-engineers-pdce-bcv358d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/analysis-of-structures-aos-bcv401-vtu-notes.html",
+      "destination": "/civil/semester-undefined/analysis-of-structures-aos-bcv401-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/analysis-of-structures-aos-bcv401-vtu-notes",
+      "destination": "/civil/semester-undefined/analysis-of-structures-aos-bcv401-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/fluid-mechanics-and-hydraulics-fmh-bcv402-vtu-notes.html",
+      "destination": "/civil/semester-undefined/fluid-mechanics-and-hydraulics-fmh-bcv402-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/fluid-mechanics-and-hydraulics-fmh-bcv402-vtu-notes",
+      "destination": "/civil/semester-undefined/fluid-mechanics-and-hydraulics-fmh-bcv402-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/transportation-engineering-te-bcv403-vtu-notes.html",
+      "destination": "/civil/semester-undefined/transportation-engineering-te-bcv403-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/transportation-engineering-te-bcv403-vtu-notes",
+      "destination": "/civil/semester-undefined/transportation-engineering-te-bcv403-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/building-materials-testing-lab-bmtl-bcvl404-vtu-notes.html",
+      "destination": "/civil/semester-undefined/building-materials-testing-lab-bmtl-bcvl404-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/building-materials-testing-lab-bmtl-bcvl404-vtu-notes",
+      "destination": "/civil/semester-undefined/building-materials-testing-lab-bmtl-bcvl404-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/finance-for-professionals-ffp-bcv405a-vtu-notes.html",
+      "destination": "/civil/semester-undefined/finance-for-professionals-ffp-bcv405a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/finance-for-professionals-ffp-bcv405a-vtu-notes",
+      "destination": "/civil/semester-undefined/finance-for-professionals-ffp-bcv405a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/construction-equipment-plants-and-machinery-cepm-bcv405b-vtu-notes.html",
+      "destination": "/civil/semester-undefined/construction-equipment-plants-and-machinery-cepm-bcv405b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/construction-equipment-plants-and-machinery-cepm-bcv405b-vtu-notes",
+      "destination": "/civil/semester-undefined/construction-equipment-plants-and-machinery-cepm-bcv405b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/concreting-techniques-and-practices-ctp-bcv405c-vtu-notes.html",
+      "destination": "/civil/semester-undefined/concreting-techniques-and-practices-ctp-bcv405c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/concreting-techniques-and-practices-ctp-bcv405c-vtu-notes",
+      "destination": "/civil/semester-undefined/concreting-techniques-and-practices-ctp-bcv405c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/watershed-management-wm-bcv405d-vtu-notes.html",
+      "destination": "/civil/semester-undefined/watershed-management-wm-bcv405d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/watershed-management-wm-bcv405d-vtu-notes",
+      "destination": "/civil/semester-undefined/watershed-management-wm-bcv405d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/biology-for-engineers-bfe-bbok407-vtu-notes.html",
+      "destination": "/civil/semester-undefined/biology-for-engineers-bfe-bbok407-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/biology-for-engineers-bfe-bbok407-vtu-notes",
+      "destination": "/civil/semester-undefined/biology-for-engineers-bfe-bbok407-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/universal-human-values-uhv-buhk408-vtu-notes.html",
+      "destination": "/civil/semester-undefined/universal-human-values-uhv-buhk408-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/universal-human-values-uhv-buhk408-vtu-notes",
+      "destination": "/civil/semester-undefined/universal-human-values-uhv-buhk408-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/building-information-modelling-in-civil-engineering-bimce-bcvl456a-vtu-notes.html",
+      "destination": "/civil/semester-undefined/building-information-modelling-in-civil-engineering-bimce-bcvl456a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/building-information-modelling-in-civil-engineering-bimce-bcvl456a-vtu-notes",
+      "destination": "/civil/semester-undefined/building-information-modelling-in-civil-engineering-bimce-bcvl456a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/gis-with-quantum-gis-gqg-bcv456b-vtu-notes.html",
+      "destination": "/civil/semester-undefined/gis-with-quantum-gis-gqg-bcv456b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/gis-with-quantum-gis-gqg-bcv456b-vtu-notes",
+      "destination": "/civil/semester-undefined/gis-with-quantum-gis-gqg-bcv456b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/electronic-waste-management-ewm-bcv456c-vtu-notes.html",
+      "destination": "/civil/semester-undefined/electronic-waste-management-ewm-bcv456c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/electronic-waste-management-ewm-bcv456c-vtu-notes",
+      "destination": "/civil/semester-undefined/electronic-waste-management-ewm-bcv456c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/technical-writing-skills-tws-bcv456d-vtu-notes.html",
+      "destination": "/civil/semester-undefined/technical-writing-skills-tws-bcv456d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/technical-writing-skills-tws-bcv456d-vtu-notes",
+      "destination": "/civil/semester-undefined/technical-writing-skills-tws-bcv456d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/construction-management-and-entrepreneurship-cme-bcv501-vtu-notes.html",
+      "destination": "/civil/semester-undefined/construction-management-and-entrepreneurship-cme-bcv501-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/construction-management-and-entrepreneurship-cme-bcv501-vtu-notes",
+      "destination": "/civil/semester-undefined/construction-management-and-entrepreneurship-cme-bcv501-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/geotechnical-engineering-ge-bcv502-vtu-notes.html",
+      "destination": "/civil/semester-undefined/geotechnical-engineering-ge-bcv502-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/geotechnical-engineering-ge-bcv502-vtu-notes",
+      "destination": "/civil/semester-undefined/geotechnical-engineering-ge-bcv502-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/concrete-technology-ct-bcv503-vtu-notes.html",
+      "destination": "/civil/semester-undefined/concrete-technology-ct-bcv503-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/concrete-technology-ct-bcv503-vtu-notes",
+      "destination": "/civil/semester-undefined/concrete-technology-ct-bcv503-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/environmental-engineering-lab-eel-bcvl504-vtu-notes.html",
+      "destination": "/civil/semester-undefined/environmental-engineering-lab-eel-bcvl504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/environmental-engineering-lab-eel-bcvl504-vtu-notes",
+      "destination": "/civil/semester-undefined/environmental-engineering-lab-eel-bcvl504-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/numerical-methods-in-civil-engineering-nmce-bcv515a-vtu-notes.html",
+      "destination": "/civil/semester-undefined/numerical-methods-in-civil-engineering-nmce-bcv515a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/numerical-methods-in-civil-engineering-nmce-bcv515a-vtu-notes",
+      "destination": "/civil/semester-undefined/numerical-methods-in-civil-engineering-nmce-bcv515a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/occupational-safety-and-health-monitoring-oshm-bcv515b-vtu-notes.html",
+      "destination": "/civil/semester-undefined/occupational-safety-and-health-monitoring-oshm-bcv515b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/occupational-safety-and-health-monitoring-oshm-bcv515b-vtu-notes",
+      "destination": "/civil/semester-undefined/occupational-safety-and-health-monitoring-oshm-bcv515b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/solid-waste-management-swm-bcv515c-vtu-notes.html",
+      "destination": "/civil/semester-undefined/solid-waste-management-swm-bcv515c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/solid-waste-management-swm-bcv515c-vtu-notes",
+      "destination": "/civil/semester-undefined/solid-waste-management-swm-bcv515c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/remote-sensing-and-gis-rsg-bcv515d-vtu-notes.html",
+      "destination": "/civil/semester-undefined/remote-sensing-and-gis-rsg-bcv515d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/remote-sensing-and-gis-rsg-bcv515d-vtu-notes",
+      "destination": "/civil/semester-undefined/remote-sensing-and-gis-rsg-bcv515d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/research-methodology-and-ipr-rmipr-brmk557-vtu-notes.html",
+      "destination": "/civil/semester-undefined/research-methodology-and-ipr-rmipr-brmk557-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/research-methodology-and-ipr-rmipr-brmk557-vtu-notes",
+      "destination": "/civil/semester-undefined/research-methodology-and-ipr-rmipr-brmk557-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/environmental-studies-es-besk508-vtu-notes.html",
+      "destination": "/civil/semester-undefined/environmental-studies-es-besk508-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/environmental-studies-es-besk508-vtu-notes",
+      "destination": "/civil/semester-undefined/environmental-studies-es-besk508-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/design-of-rcc-structures-drs-bcv601-vtu-notes.html",
+      "destination": "/civil/semester-undefined/design-of-rcc-structures-drs-bcv601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/design-of-rcc-structures-drs-bcv601-vtu-notes",
+      "destination": "/civil/semester-undefined/design-of-rcc-structures-drs-bcv601-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/irrigation-engineering-and-hydraulic-structures-iehs-bcv602-vtu-notes.html",
+      "destination": "/civil/semester-undefined/irrigation-engineering-and-hydraulic-structures-iehs-bcv602-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/irrigation-engineering-and-hydraulic-structures-iehs-bcv602-vtu-notes",
+      "destination": "/civil/semester-undefined/irrigation-engineering-and-hydraulic-structures-iehs-bcv602-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/software-application-lab-sal-bcvl606-vtu-notes.html",
+      "destination": "/civil/semester-undefined/software-application-lab-sal-bcvl606-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/software-application-lab-sal-bcvl606-vtu-notes",
+      "destination": "/civil/semester-undefined/software-application-lab-sal-bcvl606-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/indian-knowledge-system-iks-biks609-vtu-notes.html",
+      "destination": "/civil/semester-undefined/indian-knowledge-system-iks-biks609-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/indian-knowledge-system-iks-biks609-vtu-notes",
+      "destination": "/civil/semester-undefined/indian-knowledge-system-iks-biks609-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/design-of-bridges-db-bcv613a-vtu-notes.html",
+      "destination": "/civil/semester-undefined/design-of-bridges-db-bcv613a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/design-of-bridges-db-bcv613a-vtu-notes",
+      "destination": "/civil/semester-undefined/design-of-bridges-db-bcv613a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/design-of-formwork-and-scaffolding-dfs-bcv613b-vtu-notes.html",
+      "destination": "/civil/semester-undefined/design-of-formwork-and-scaffolding-dfs-bcv613b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/design-of-formwork-and-scaffolding-dfs-bcv613b-vtu-notes",
+      "destination": "/civil/semester-undefined/design-of-formwork-and-scaffolding-dfs-bcv613b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/applied-geotechnical-engineering-age-bcv613c-vtu-notes.html",
+      "destination": "/civil/semester-undefined/applied-geotechnical-engineering-age-bcv613c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/applied-geotechnical-engineering-age-bcv613c-vtu-notes",
+      "destination": "/civil/semester-undefined/applied-geotechnical-engineering-age-bcv613c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/design-and-construction-of-highway-pavements-dchp-bcv613d-vtu-notes.html",
+      "destination": "/civil/semester-undefined/design-and-construction-of-highway-pavements-dchp-bcv613d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/design-and-construction-of-highway-pavements-dchp-bcv613d-vtu-notes",
+      "destination": "/civil/semester-undefined/design-and-construction-of-highway-pavements-dchp-bcv613d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/water-conservation-and-rainwater-harvesting-wcrh-bcv654a-vtu-notes.html",
+      "destination": "/civil/semester-undefined/water-conservation-and-rainwater-harvesting-wcrh-bcv654a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/water-conservation-and-rainwater-harvesting-wcrh-bcv654a-vtu-notes",
+      "destination": "/civil/semester-undefined/water-conservation-and-rainwater-harvesting-wcrh-bcv654a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/geographic-information-systems-gis-bcv654b-vtu-notes.html",
+      "destination": "/civil/semester-undefined/geographic-information-systems-gis-bcv654b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/geographic-information-systems-gis-bcv654b-vtu-notes",
+      "destination": "/civil/semester-undefined/geographic-information-systems-gis-bcv654b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/integrated-waste-management-for-a-smart-city-iwmsc-bcv654c-vtu-notes.html",
+      "destination": "/civil/semester-undefined/integrated-waste-management-for-a-smart-city-iwmsc-bcv654c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/integrated-waste-management-for-a-smart-city-iwmsc-bcv654c-vtu-notes",
+      "destination": "/civil/semester-undefined/integrated-waste-management-for-a-smart-city-iwmsc-bcv654c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/sustainable-development-goals-sdg-bcv654d-vtu-notes.html",
+      "destination": "/civil/semester-undefined/sustainable-development-goals-sdg-bcv654d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/sustainable-development-goals-sdg-bcv654d-vtu-notes",
+      "destination": "/civil/semester-undefined/sustainable-development-goals-sdg-bcv654d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/open-elective-subjects-mechanical-engg-oeme-vtu-notes.html",
+      "destination": "/civil/semester-undefined/open-elective-subjects-mechanical-engg-oeme-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/open-elective-subjects-mechanical-engg-oeme-vtu-notes",
+      "destination": "/civil/semester-undefined/open-elective-subjects-mechanical-engg-oeme-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/building-information-modelling-advanced-bima-bcv657a-vtu-notes.html",
+      "destination": "/civil/semester-undefined/building-information-modelling-advanced-bima-bcv657a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/building-information-modelling-advanced-bima-bcv657a-vtu-notes",
+      "destination": "/civil/semester-undefined/building-information-modelling-advanced-bima-bcv657a-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/structural-health-monitoring-using-sensors-shms-bcv657b-vtu-notes.html",
+      "destination": "/civil/semester-undefined/structural-health-monitoring-using-sensors-shms-bcv657b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/structural-health-monitoring-using-sensors-shms-bcv657b-vtu-notes",
+      "destination": "/civil/semester-undefined/structural-health-monitoring-using-sensors-shms-bcv657b-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/data-analytics-for-civil-engineers-dace-bcv657c-vtu-notes.html",
+      "destination": "/civil/semester-undefined/data-analytics-for-civil-engineers-dace-bcv657c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/data-analytics-for-civil-engineers-dace-bcv657c-vtu-notes",
+      "destination": "/civil/semester-undefined/data-analytics-for-civil-engineers-dace-bcv657c-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/quality-control-and-quality-assurance-qcqa-bcv657d-vtu-notes.html",
+      "destination": "/civil/semester-undefined/quality-control-and-quality-assurance-qcqa-bcv657d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/civil/quality-control-and-quality-assurance-qcqa-bcv657d-vtu-notes",
+      "destination": "/civil/semester-undefined/quality-control-and-quality-assurance-qcqa-bcv657d-vtu-notes/",
+      "permanent": true
+    },
+    {
+      "source": "/firstyear/mathematics-for-cse.html",
+      "destination": "/first-year/22-scheme/p-cycle/mathematics-for-cse/",
+      "permanent": true
+    },
+    {
+      "source": "/first-year/mathematics-for-cse.html",
+      "destination": "/first-year/22-scheme/p-cycle/mathematics-for-cse/",
+      "permanent": true
+    },
+    {
+      "source": "/firstyear/applied-physics.html",
+      "destination": "/first-year/22-scheme/p-cycle/applied-physics/",
+      "permanent": true
+    },
+    {
+      "source": "/first-year/applied-physics.html",
+      "destination": "/first-year/22-scheme/p-cycle/applied-physics/",
+      "permanent": true
+    },
+    {
+      "source": "/firstyear/programming-c.html",
+      "destination": "/first-year/22-scheme/p-cycle/programming-c/",
+      "permanent": true
+    },
+    {
+      "source": "/first-year/programming-c.html",
+      "destination": "/first-year/22-scheme/p-cycle/programming-c/",
+      "permanent": true
+    }
+  ]
+}
