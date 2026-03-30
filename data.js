@@ -128,7 +128,13 @@ const siteData = {
             {
                 sem: 4,
                 subjects: [
-                    { name: "Analysis & Design of Algorithms", code: "BCS401", credits: "4 CR", slug: "analysis-and-design-of-algorithms-ada-bcs401-vtu-notes", modules: [] },
+                    { name: "Analysis & Design of Algorithms", code: "BCS401", credits: "4 CR", slug: "analysis-and-design-of-algorithms-ada-bcs401-vtu-notes", modules: [
+                        { id: 1, name: "BCS401 ada module-1 notes", desc: "BCS401 ada module-1 notes", link: "https://drive.google.com/file/d/1zCWG04FchYYkTQMZju3q_zkvyNmxNgj_/view?usp=drive_link", type: "Notes" },
+                        { id: 2, name: "BCS401 ada module-2 notes", desc: "BCS401 ada module-2 notes", link: "https://drive.google.com/file/d/185NXHKcdYSdk-YvB-aN91S33NNfq-MEf/view?usp=drive_link", type: "Notes" },
+                        { id: 3, name: "BCS401 ada module-3 notes", desc: "BCS401 ada module-3 notes", link: "https://drive.google.com/file/d/1PcBdnnlSvCI4GnKs5By5hC6OFMNV6ywL/view?usp=drive_link", type: "Notes" },
+                        { id: 4, name: "BCS401 ada module-4 notes", desc: "BCS401 ada module-4 notes", link: "https://drive.google.com/file/d/1_40_UD0FO0HWdvXloIBfOw5sMFfgaSZt/view?usp=drive_link", type: "Notes" },
+                        { id: 5, name: "BCS401 ada module-5 notes", desc: "BCS401 ada module-5 notes", link: "https://drive.google.com/file/d/1v5I4SpPDiT12odu2YqhCUlCFRmjZgeWo/view?usp=drive_link", type: "Notes" },
+                    ] },
                     { name: "Microcontrollers", code: "BCS402", credits: "4 CR", slug: "microcontrollers-mc-bcs402-vtu-notes", modules: [
                         { id: 1, name: "BCS402 microcontrollers complete notes", desc: "BCS402 microcontrollers complete notes", link: "https://drive.google.com/file/d/1j875bVkySNX3pBBzOqhbqcNPdYmJaIlH/view?usp=drive_link", type: "Notes" },
                     ] },
