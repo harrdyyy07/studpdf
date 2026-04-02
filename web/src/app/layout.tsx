@@ -3,6 +3,7 @@ import { Inter, Marck_Script } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -46,6 +47,12 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${marckScript.variable}`} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.png" />
+        <Script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5780720681894064" 
+          crossOrigin="anonymous" 
+          strategy="afterInteractive"
+        />
       </head>
       <body>
         <Navbar />
