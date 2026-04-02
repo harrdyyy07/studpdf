@@ -30,15 +30,15 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
   
-  /* Semester Colors */
-  --s1-bg: linear-gradient(135deg, #4f46e5, #4338ca);
-  --s2-bg: linear-gradient(135deg, #7c3aed, #6d28d9);
-  --s3-bg: linear-gradient(135deg, #3b82f6, #2563eb);
-  --s4-bg: linear-gradient(135deg, #ec4899, #db2777);
-  --s5-bg: linear-gradient(135deg, #f59e0b, #d97706);
-  --s6-bg: linear-gradient(135deg, #10b981, #059669);
-  --s7-bg: linear-gradient(135deg, #ef4444, #dc2626);
-  --s8-bg: linear-gradient(135deg, #1e293b, #0f172a);
+  /* Semester Colors - Premium Blue/Purple/Cyan Palette */
+  --s1-bg: linear-gradient(135deg, #1e293b, #0f172a); /* Indigo */
+  --s2-bg: linear-gradient(135deg, #1e293b, #0f172a); /* Purple */
+  --s3-bg: linear-gradient(135deg, #1e293b, #0f172a); /* Blue */
+  --s4-bg: linear-gradient(135deg, #1e293b, #0f172a); /* Sky Blue */
+  --s5-bg: linear-gradient(135deg, #1e293b, #0f172a); /* Cyan */
+  --s6-bg: linear-gradient(135deg, #1e293b, #0f172a); /* Indigo-Blue */
+  --s7-bg: linear-gradient(135deg, #1e293b, #0f172a); /* Violet */
+  --s8-bg: linear-gradient(135deg, #1e293b, #0f172a); /* Midnight */
 }
 
 main {
@@ -456,77 +456,166 @@ footer,
   gap: 2rem;
 }
 
-.branch-card {
-  background: var(--surface);
+.branch-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-decoration: none;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.branch-card-wrapper:hover {
+  transform: translateY(-12px);
+}
+
+.branch-card-visual {
+  height: 220px;
+  position: relative;
+  background: var(--primary);
   border-radius: var(--radius-xl);
   overflow: hidden;
-  border: 1px solid var(--surface-border);
-  box-shadow: var(--card-shadow);
-  text-decoration: none;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.branch-card:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--hover-shadow);
-}
-
-.branch-thumb {
-  height: 200px;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  z-index: 1;
 }
 
-.branch-badge {
+.branch-card-wrapper:hover .branch-card-visual {
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.25);
+}
+
+/* Premium Hero-inspired Layers */
+.branch-pattern-grid {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
-  background: rgba(255, 255, 255, 0.2);
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.branch-card-blobs {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(40px);
+  opacity: 0.6;
+}
+
+.card-blob {
+  position: absolute;
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  animation: blob-float 10s infinite alternate ease-in-out;
+}
+
+.card-blob.blob-1 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, transparent 70%);
+  top: -50px;
+  right: -30px;
+}
+
+.card-blob.blob-2 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  bottom: -20px;
+  left: -20px;
+  animation-delay: -3s;
+}
+
+.card-blob.blob-3 {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+  top: 40%;
+  left: 20%;
+  animation-delay: -6s;
+}
+
+@keyframes blob-float {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(10px, 15px) scale(1.1); }
+  100% { transform: translate(-5px, -10px) scale(0.9); }
+}
+
+.branch-badge-v2 {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(8px);
+  color: #1e293b;
   padding: 0.4rem 0.8rem;
-  border-radius: 2rem;
-  color: white;
+  border-radius: 0.6rem;
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.branch-card-wrapper:hover .branch-badge-v2 {
+  transform: translateY(-2px);
+  background: white;
+}
+
+.branch-card-content {
+  position: relative;
   z-index: 5;
-}
-
-.thumb-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
-}
-
-.thumb-text {
+  text-align: center;
   color: white;
-  font-size: 2.5rem;
+  padding: 1.5rem;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.branch-card-wrapper:hover .branch-card-content {
+  transform: scale(1.1);
+}
+
+.branch-main-text {
+  font-size: clamp(1rem, 5vw, 2rem);
   font-weight: 900;
-  letter-spacing: -0.05em;
-  z-index: 5;
-  opacity: 0.8;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.branch-secondary-text {
+  font-size: 0.5rem;
+  font-weight: 700;
+  opacity: 0.9;
+  letter-spacing: 0.05em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.branch-card-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text);
+  padding: 0.5rem 0.25rem 0;
+  transition: color 0.3s ease;
+}
+
+.branch-card-wrapper:hover .branch-card-title {
+  color: var(--primary);
 }
 
 @media (max-width: 768px) {
-  .thumb-text {
-    font-size: 1.5rem;
-  }
-}
-
-.branch-info {
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.branch-info h3 {
-  font-size: 1.25rem;
-  color: var(--text);
-  font-weight: 700;
+  .branch-card-visual { height: 180px; }
+  .branch-main-text { font-size: 2rem; }
+  .branch-card-blobs { opacity: 0.4; }
 }
 
 /* Base Pill/Badges */

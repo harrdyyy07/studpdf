@@ -8,7 +8,8 @@ export default function Home() {
       slug: "first-year",
       badge: "P & C Cycle",
       bg: "linear-gradient(135deg, #0f0c29 0%, #302b11 100%)",
-      thumbText: "FIRST YEAR"
+      thumbText: "FIRST YEAR",
+      secondaryText: "1 & 2 Sem"
     },
     {
       title: "CSE-ISE",
