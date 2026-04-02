@@ -1127,7 +1127,8 @@ footer {
     background: var(--surface);
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1rem;
+    align-items: stretch; /* Overrides the desktop center alignment */
+    gap: 0; /* Remove gap to reduce excess vertical spacing */
     transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     z-index: 3000;
     padding: 1.5rem;
@@ -1149,6 +1150,88 @@ footer {
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--surface-border);
     margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-links li a:not(.btn-join-mobile) {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  
+  .nav-links li a:not(.btn-join-mobile):hover {
+    background: rgba(79, 70, 229, 0.05);
+    color: var(--primary);
+  }
+
+  .nav-links .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+  }
+
+  .nav-links .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding-left: 1.5rem;
+    background: transparent;
+    display: none;
+    transform: none !important;
+    left: 0 !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  .nav-links li:hover .dropdown-menu,
+  .nav-links li.mobile-open .dropdown-menu {
+    display: block;
+  }
+
+  .btn-join-mobile {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: var(--primary);
+    color: white !important;
+    text-align: center;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .btn-join-mobile:hover {
+    background: var(--primary-hover);
+  }
+
+  .mobile-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 2999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-overlay.active {
+    opacity: 1;
+    visibility: visible;
   }
 
   .drawer-close {

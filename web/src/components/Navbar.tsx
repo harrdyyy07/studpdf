@@ -8,6 +8,7 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [isMobileCalcOpen, setIsMobileCalcOpen] = useState(false);
     const [theme, setTheme] = useState('light');
     const [showTopBar, setShowTopBar] = useState(true);
 
@@ -78,8 +79,10 @@ const Navbar = () => {
                     <li><Link href="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
                     <li><Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
                     
-                    <li className="dropdown">
-                        <span className="dropdown-toggle">Calculator <span className="dropdown-arrow">▾</span></span>
+                    <li className={`dropdown ${isMobileCalcOpen ? 'mobile-open' : ''}`}>
+                        <span className="dropdown-toggle" onClick={() => setIsMobileCalcOpen(!isMobileCalcOpen)}>
+                            Calculator <span className="dropdown-arrow">▾</span>
+                        </span>
                         <div className="dropdown-menu">
                             <Link href="/sgpa-calculator" onClick={() => setIsMenuOpen(false)}>SGPA Calculator</Link>
                             <Link href="/cgpa-calculator" onClick={() => setIsMenuOpen(false)}>CGPA Calculator</Link>
