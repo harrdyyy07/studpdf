@@ -15,9 +15,19 @@ interface SubjectViewProps {
 
 const typeLabels: Record<string, string> = {
     'Notes': 'Notes',
-    'PYQP': 'Question Papers',
-    'MQP': 'Model Papers',
-    'scheme': 'Scheme of Evaluation'
+    'notes': 'Notes',
+    'PYQP': 'Question Paper',
+    'MQP': 'Model Paper',
+    'scheme': 'Scheme of Evaluation',
+    'Scheme of Evaluation': 'Scheme of Evaluation',
+    'question bank': 'Question Bank',
+    'Lab Manual': 'Lab Manual',
+    'Textbook': 'Textbook',
+    'textbook': 'Textbook',
+    'PYQP & MQP': 'PYQP & MQP',
+    'youtube links': 'YouTube Links',
+    'Handbook': 'Handbook',
+    'Solved PYQP': 'Solved PYQP'
 };
 
 const getPreviewLink = (url: string) => {
@@ -43,13 +53,17 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
 
     useEffect(() => {
         setMounted(true);
-    }, []);    // Sort filters to put 'Notes' and 'PYQP' early if they exist
+    }, []);
+
+    // Sort filters to put 'Notes' and 'PYQP' early if they exist
     const filters = ['All', ...availableTypes.sort((a, b) => {
-        if (a === 'Notes') return -1;
-        if (b === 'Notes') return 1;
-        if (a === 'PYQP') return -1;
-        if (b === 'PYQP') return 1;
-        return a.localeCompare(b);
+        const aLabel = typeLabels[a] || a;
+        const bLabel = typeLabels[b] || b;
+        if (aLabel === 'Notes') return -1;
+        if (bLabel === 'Notes') return 1;
+        if (aLabel === 'Question Paper') return -1;
+        if (bLabel === 'Question Paper') return 1;
+        return aLabel.localeCompare(bLabel);
     })];
 
     const filteredModules = activeFilter === 'All' 
@@ -101,7 +115,9 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
                         <div>
                             <div className="module-header">
                                 <div className="module-icon-box">📄</div>
-                                <span className="module-type-badge">{mod.type === 'PYQP' ? 'QUESTION PAPER' : 'NOTES'}</span>
+                                <span className="module-type-badge">
+                                    {(typeLabels[mod.type] || mod.type).toUpperCase()}
+                                </span>
                             </div>
                             <h3>{mod.name}</h3>
                             <p>{mod.desc}</p>

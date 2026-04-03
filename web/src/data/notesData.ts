@@ -432,7 +432,11 @@ export const siteData: SiteData = {
                     { name: "VLSI Design and Testing", code: "BEC602", credits: "4 CR", slug: "vlsi-design-and-testing-vdt-bec602-vtu-notes", modules: [] },
                     { name: "VLSI Design and Testing Lab", code: "BECL606", credits: "1 CR", slug: "vlsi-design-and-testing-lab-vdtl-becl606-vtu-notes", modules: [] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
-                    { name: "Multimedia Communication", code: "BEC613A", credits: "3 CR", slug: "multimedia-communication-mc-bec613a-vtu-notes", modules: [] },
+                    { name: "Multimedia Communication", code: "BEC613A", credits: "3 CR", slug: "multimedia-communication-mc-bec613a-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes ( Multimedia Communication)", desc: "Multimedia Communication", link: "https://drive.google.com/file/d/1xxPrTUneyuNOQW7DGSxYhezj0ovJQ_J6/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes (Multimedia Communication)", desc: "Multimedia Communication", link: "https://drive.google.com/file/d/1qlixhZHPWIW_pjlPaoR_7g5MuHvpZwc-/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "MMC Module wise Question Bank", desc: "Multimedia Communication Module wise Question Bank", link: "https://drive.google.com/file/d/1NengaXAMThwqg7iLyKbn2QDPh1ZxKyV-/view?usp=drive_link", type: "question bank" },
+                    ] },
                     { name: "Computer and Data Security", code: "BEC613B", credits: "3 CR", slug: "computer-and-data-security-cds-bec613b-vtu-notes", modules: [] },
                     { name: "Digital Image Processing", code: "BEC613C", credits: "3 CR", slug: "digital-image-processing-dip-bec613c-vtu-notes", modules: [] },
                     { name: "FPGA System Design using Verilog", code: "BEC613D", credits: "3 CR", slug: "fpga-system-design-using-verilog-fsdv-bec613d-vtu-notes", modules: [] },
