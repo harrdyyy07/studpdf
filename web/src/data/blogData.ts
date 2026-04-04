@@ -230,7 +230,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     author: "vtuwise Team",
     tag: "Scholarships",
-    imageBg: "linear-gradient(135deg, #4facfe, #00f2fe)",
+    imageBg: "linear-gradient(135deg, #2b1055, #7597de)",
     content: `
         <p>The SSP (State Scholarship Portal) is a one-stop platform for students in Karnataka to apply for various scholarships. Whether you are a pre-matric or post-matric student, this guide will help you with registration and login.</p>
 
