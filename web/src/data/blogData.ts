@@ -13,7 +13,64 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
-        id: "1",
+    id: "1",
+    slug: "how-to-crack-vtu-exams",
+    title: "How to Crack VTU Exams Without Stress (Complete Guide)",
+    description: "Struggling with VTU exams? Learn smart study techniques, time management, and last-minute tips to score high without stress.",
+    date: "Nov 10, 2023",
+    readTime: "6 min read",
+    author: "vtuwise Team",
+    tag: "Academics",
+    imageBg: "linear-gradient(135deg, #1f4037, #99f2c8)",
+    content: `
+        <p>VTU exams can feel overwhelming, especially with vast syllabi and limited time. But the truth is—you don’t need to study 12 hours a day to score well. You just need the right strategy.</p>
+        
+        <p>In this guide, we’ll break down simple and effective techniques to help you crack VTU exams without stress.</p>
+
+        <h2>1. Understand the Syllabus & Exam Pattern</h2>
+        <p>Before starting preparation, go through the syllabus and identify important modules. VTU exams often follow patterns, so understanding weightage helps you focus on what matters most.</p>
+
+        <h2>2. Use Previous Year Question Papers</h2>
+        <p>One of the smartest ways to prepare is by solving previous year papers. Many questions are repeated or follow similar patterns.</p>
+        <p><strong>Tip:</strong> Practice at least 5 years of question papers before exams.</p>
+
+        <h2>3. Focus on Important Modules</h2>
+        <p>You don’t always need to study everything in depth. Identify high-weightage modules and master them first. This ensures you can score even if time is limited.</p>
+
+        <h2>4. Make Short Notes</h2>
+        <p>Create concise notes for formulas, definitions, and key concepts. These are extremely useful during last-minute revision.</p>
+
+        <h2>5. Follow the 3-Stage Study Method</h2>
+        <p>
+        <strong>Stage 1:</strong> Understand concepts<br>
+        <strong>Stage 2:</strong> Practice questions<br>
+        <strong>Stage 3:</strong> Revise multiple times
+        </p>
+
+        <h2>6. Last 1-Day Strategy</h2>
+        <p>On the day before the exam:</p>
+        <ul>
+            <li>Revise important questions</li>
+            <li>Go through formulas and diagrams</li>
+            <li>Avoid starting new topics</li>
+        </ul>
+
+        <h2>7. Presentation Matters in VTU</h2>
+        <p>Even if your answer is correct, poor presentation can reduce marks. Always:</p>
+        <ul>
+            <li>Write neat and structured answers</li>
+            <li>Underline key points</li>
+            <li>Draw diagrams wherever possible</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>Cracking VTU exams is not about studying harder—it's about studying smarter. With the right approach, consistent revision, and practice, you can score high without stress.</p>
+        
+        <p>Stay consistent, believe in your preparation, and give your best in the exam!</p>
+    `
+},
+    {
+        id: "2",
         slug: "which-engineering-branch-to-choose",
         title: "Which Engineering Branch Should You Choose After 12th?",
         description: "Confused about which engineering branch to pick? Read our comprehensive guide on the scope, subjects, and career opportunities of top engineering branches.",
@@ -52,7 +109,7 @@ export const blogPosts: BlogPost[] = [
         `
     },
     {
-        id: "2",
+        id: "3",
         slug: "kcet-round-1-cutoff-2025",
         title: "KCET Round 1 Cutoff 2025 PDF download",
         description: "Check out the latest KCET Round 1 cutoff list for 2025. Download PDFs for Engineering, Agriculture, PharmD, and more.",
@@ -103,7 +160,7 @@ export const blogPosts: BlogPost[] = [
         `
     },
     {
-        id: "3",
+        id: "4",
         slug: "how-to-score-high-marks-in-vtu",
         title: "5 Proven Strategies to Score High Marks in VTU Exams",
         description: "Learn the exact study techniques and exam presentation formats that top-tier engineering students use to score 9.0+ SGPA.",
@@ -135,7 +192,7 @@ export const blogPosts: BlogPost[] = [
         `
     },
     {
-        id: "4",
+        id: "5",
         slug: "vtu-2022-scheme-passing-marks",
         title: "VTU 2022 Scheme Passing Marks & Rules Explained",
         description: "Confused by the new VTU 2022 scheme? We break down exactly how many internal and external marks you need to pass your semester.",
@@ -163,5 +220,68 @@ export const blogPosts: BlogPost[] = [
 
             <p>Knowing these rules early in the semester helps you plan your preparation and ensures you don't fall short of the requirements at the last minute.</p>
         `
-    }
+    },
+    {
+    id: "6",
+    slug: "ssp-scholarship-login",
+    title: "SSP Scholarship Login 2025-26: Registration & Login link",
+    description: "Complete guide to SSP Scholarship login, registration process, and direct links for pre-matric and post-matric students.",
+    date: "Dec 8, 2023",
+    readTime: "5 min read",
+    author: "vtuwise Team",
+    tag: "Scholarships",
+    imageBg: "linear-gradient(135deg, #4facfe, #00f2fe)",
+    content: `
+        <p>The SSP (State Scholarship Portal) is a one-stop platform for students in Karnataka to apply for various scholarships. Whether you are a pre-matric or post-matric student, this guide will help you with registration and login.</p>
+
+        <h2>What is SSP Scholarship?</h2>
+        <p>SSP is a government portal that provides financial assistance to students from different categories.</p>
+
+        <h2>SSP Registration (New Users)</h2>
+        <p>If you are a new user, follow these steps:</p>
+        <ul>
+            <li>Visit the official portal</li>
+            <li>Click on "Create Account"</li>
+            <li>Enter Aadhaar details</li>
+            <li>Verify using OTP</li>
+        </ul>
+
+        <h2>SSP Login Links</h2>
+
+        <h3>Post-Matric Login (2025-26)</h3>
+        <p>
+            <a href="https://ssp.postmatric.karnataka.gov.in/post_sa/signin.aspx" target="_blank">
+                Click here to login for 2025-26 Post-Matric Scholarship
+            </a>
+        </p>
+
+        <h3>Post-Matric Login (2024-25)</h3>
+        <p>
+            <a href="https://ssp.postmatric.karnataka.gov.in/2425_sa/signin.aspx" target="_blank">
+                Click here to login for 2024-25 Post-Matric Scholarship
+            </a>
+        </p>
+
+        <h3>Pre-Matric Login (2025-26)</h3>
+        <p>
+            <a href="https://ssp.postmatric.karnataka.gov.in/ssppre/" target="_blank">
+                Click here to login for Pre-Matric Scholarship
+            </a>
+        </p>
+
+        <h2>Important Tips</h2>
+        <ul>
+            <li>Always select the correct academic year</li>
+            <li>Keep Aadhaar-linked mobile active</li>
+            <li>Check application status regularly</li>
+        </ul>
+
+        <h2>Common Issues & Solutions</h2>
+        <p><strong>Forgot Password?</strong> Use the “Forgot Password” option.</p>
+        <p><strong>Login Error?</strong> Double-check credentials and year selection.</p>
+
+        <h2>Conclusion</h2>
+        <p>The SSP portal simplifies scholarship applications. Use the correct links above and apply before deadlines.</p>
+    `
+}
 ];
