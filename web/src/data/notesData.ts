@@ -439,8 +439,11 @@ export const siteData: SiteData = {
                         { id: 5, name: "VLSI Module-2 Printed notes", desc: "VLSI Module-2 Printed notes", link: "https://drive.google.com/file/d/1xnGHCtB5CAigchiUySGODS4aRHefFP5s/view?usp=drive_link", type: "notes" },
                         { id: 7, name: "VLSI Module-4 notes", desc: "VLSI Module-4 notes by Rajesh Kumar Kaushal, Asst. Prof., ECE, Dr T.T.I.T., K.G.F", link: "https://drive.google.com/file/d/1Bt6BCREpoW_asfUvbuD6aFGmxaimviTJ/view?usp=drive_link", type: "notes" },
                         { id: 8, name: "VLSI Module-5 notes", desc: "VLSI Module-5 notes by Rajesh Kumar Kaushal, Asst. Prof., ECE, Dr T.T.I.T., K.G.F", link: "https://drive.google.com/file/d/1fVssBSxBZ64uAh2puPA825FOLPz2tNuF/view?usp=drive_link", type: "notes" },
+                        { id: 9, name: "VLSI Solved model question paper", desc: "VLSI Solved model question paper", link: "https://drive.google.com/file/d/1dRfHqHrxM5Fug3uMbFN30PRcp29NKTmK/view?usp=drive_link", type: "solved mqp" },
                     ] },
-                    { name: "VLSI Design and Testing Lab", code: "BECL606", credits: "1 CR", slug: "vlsi-design-and-testing-lab-vdtl-becl606-vtu-notes", modules: [] },
+                    { name: "VLSI Design and Testing Lab", code: "BECL606", credits: "1 CR", slug: "vlsi-design-and-testing-lab-vdtl-becl606-vtu-lab-manual", modules: [
+                        { id: 1, name: "VLSI Design and Testing Lab Manual", desc: "VLSI Design and Testing Lab Manual by SJC Institute of Technology, Chickballapur", link: "https://drive.google.com/file/d/1GE7yNse9F3raZ8qUNdkaGQGa6PSABS_w/view?usp=drive_link", type: "lab-manual" },
+                    ] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
                     { name: "Multimedia Communication", code: "BEC613A", credits: "3 CR", slug: "multimedia-communication-mmc-bec613a-vtu-notes", modules: [
                         { id: 1, name: "Module-1  Notes-1  ( Multimedia Communication)", desc: "Multimedia Communication Module-1 Notes-1", link: "https://drive.google.com/file/d/1xxPrTUneyuNOQW7DGSxYhezj0ovJQ_J6/view?usp=drive_link", type: "notes" },
@@ -461,7 +464,6 @@ export const siteData: SiteData = {
                     { name: "Consumer Electronics", code: "BEC654B", credits: "3 CR", slug: "consumer-electronics-ce-bec654b-vtu-notes", modules: [] },
                     { name: "Electronic Communication Systems", code: "BEC654C", credits: "3 CR", slug: "electronic-communication-systems-ecs-bec654c-vtu-notes", modules: [] },
                     { name: "Basic VLSI Design", code: "BEC654D", credits: "3 CR", slug: "basic-vlsi-design-bvd-bec654d-vtu-notes", modules: [] },
-                    { name: "Open Elective Subjects Mechanical Engg", code: "", credits: "3 CR", slug: "open-elective-subjects-mechanical-engg-oeme-vtu-notes", modules: [] },
                     { name: "FPGA System Design using Verilog Lab", code: "BECL657A", credits: "1 CR", slug: "fpga-system-design-using-verilog-lab-fsdvl-becl657a-vtu-notes", modules: [] },
                     { name: "System Modelling using Simulink", code: "BECL657B", credits: "1 CR", slug: "system-modelling-using-simulink-sms-becl657b-vtu-notes", modules: [] },
                     { name: "IoT Laboratory", code: "BECL657C", credits: "1 CR", slug: "iot-laboratory-il-becl657c-vtu-notes", modules: [] },
