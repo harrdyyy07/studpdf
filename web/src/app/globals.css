@@ -301,6 +301,52 @@ footer,
   border-color: white;
 }
 
+/* Whole slide is clickable */
+.hero-slide.slide-clickable {
+  cursor: pointer;
+}
+
+.hero-slide.slide-clickable:hover .btn-download-slider {
+  background: white;
+  color: var(--primary);
+  border-color: white;
+}
+
+/* PWA Install Button */
+.btn-install-pwa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-install-pwa:hover:not(:disabled) {
+  background: white;
+  color: var(--primary);
+  border-color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-install-pwa:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.btn-install-pwa.installed {
+  background: rgba(88, 204, 2, 0.2);
+  border-color: rgba(88, 204, 2, 0.6);
+  color: #a3e635;
+}
+
+.btn-install-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+
 .slide-footer-meta {
   font-size: 0.75rem;
   font-weight: 700;
