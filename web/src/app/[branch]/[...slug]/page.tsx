@@ -18,8 +18,9 @@ export async function generateMetadata({ params }: { params: Promise<{ branch: s
 
     // Case 1: Branch/Semester or Branch/Scheme
     if (slug.length === 1) {
-        const semNum = parseInt(slug[0]);
-        if (!isNaN(semNum)) {
+        const isNumeric = /^\d+$/.test(slug[0]);
+        if (isNumeric) {
+            const semNum = parseInt(slug[0]);
             const title = `Semester ${semNum} - ${branch.toUpperCase()} | VTUwise`;
             const description = `Download free VTU notes, question papers, and syllabus for ${branch.toUpperCase()} Semester ${semNum}. Focus entirely on exams with curated premium materials.`;
             return { 
@@ -37,8 +38,9 @@ export async function generateMetadata({ params }: { params: Promise<{ branch: s
 
     // Case 2: Branch/Semester/Subject or Branch/Scheme/Cycle
     if (slug.length === 2) {
-        const semNum = parseInt(slug[0]);
-        if (!isNaN(semNum)) {
+        const isNumeric = /^\d+$/.test(slug[0]);
+        if (isNumeric) {
+            const semNum = parseInt(slug[0]);
             const semester = branchData.semesters?.find((s) => s.sem === semNum);
             const subject = semester?.subjects.find((s) => s.slug === slug[1]);
             if (subject) {
@@ -80,8 +82,9 @@ export default async function DynamicPage({ params }: { params: Promise<{ branch
 
     // Case 1: Branch/Semester or Branch/Scheme
     if (slug.length === 1) {
-        const semNum = parseInt(slug[0]);
-        if (!isNaN(semNum)) {
+        const isNumeric = /^\d+$/.test(slug[0]);
+        if (isNumeric) {
+            const semNum = parseInt(slug[0]);
             const semester = branchData.semesters?.find((s) => s.sem === semNum);
             if (!semester) notFound();
             return <SemesterView branch={branch} branchTitle={branchData.title} semester={semester} />;
@@ -90,8 +93,9 @@ export default async function DynamicPage({ params }: { params: Promise<{ branch
 
     // Case 2: Branch/Semester/Subject or Branch/Scheme/Cycle
     if (slug.length === 2) {
-        const semNum = parseInt(slug[0]);
-        if (!isNaN(semNum)) {
+        const isNumeric = /^\d+$/.test(slug[0]);
+        if (isNumeric) {
+            const semNum = parseInt(slug[0]);
             const semester = branchData.semesters?.find((s) => s.sem === semNum);
             const subject = semester?.subjects.find((s) => s.slug === slug[1]);
             if (!subject) notFound();

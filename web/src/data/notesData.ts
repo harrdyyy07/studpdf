@@ -43,14 +43,73 @@ export interface SiteData {
 
 export const siteData: SiteData = {
     firstyear: {
-        title: "First Year (P & C Cycle)",
+        title: "First Year",
         schemes: [
             {
                 name: "25 Scheme",
                 slug: "25-scheme",
                 cycles: [
-                    { name: "Physics (P) Cycle", slug: "p-cycle", subjects: [] },
-                    { name: "Chemistry (C) Cycle", slug: "c-cycle", subjects: [] }
+                    { name: "P-Cycle vtu notes (25 Scheme)", slug: "p-cycle", subjects: [
+                         {
+                                name: "Calculus and Linear Algebra: CSE Stream - 1BMATS101",
+                                code: "1BMATS101",
+                                credits: "4 CR",
+                                slug: "calculus-and-linear-algebra-cse-stream-1bmats101-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Module-1: Calculus ",
+                                        desc: "1bmats101 module 1 notes",
+                                        link: "https://drive.google.com/file/d/1gIMrj7TtAZd7XBaolnLOfSSZepf0mKtO/view?usp=drive_link",
+                                        type: "pdf"
+                                    }
+                                ]
+                            },
+                            {
+                                name: "PYTHON PROGRAMMING  - 1BPLC105B/205B ",
+                                code: "1BPLC105B/205B",
+                                credits: "4 CR",
+                                slug: "python-programming-1BPLC105B-205B-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Module-1",
+                                        desc: "PYTHON PROGRAMMING 1BPLC105B/205B module 1 notes",
+                                        link: "https://drive.google.com/file/d/1epECbODaSmR9gEHsws2j4eeLONHXzOLS/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2",
+                                        desc: "PYTHON PROGRAMMING 1BPLC105B/205B module 2 notes",
+                                        link: "https://drive.google.com/file/d/1J9VlWGJq5veC4hJ8kSP1hJvl1zImBwmr/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3",
+                                        desc: "PYTHON PROGRAMMING 1BPLC105B/205B module 3 notes",
+                                        link: "https://drive.google.com/file/d/14FRqf74zIgXAn5fNw2WGVgQ45U2CKiW5/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4",
+                                        desc: "PYTHON PROGRAMMING 1BPLC105B/205B module 4 notes",
+                                        link: "https://drive.google.com/file/d/1MnA4EV2T39rRC_8svy82DghG7xkl3BAE/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-5",
+                                        desc: "PYTHON PROGRAMMING 1BPLC105B/205B module 5 notes",
+                                        link: "https://drive.google.com/file/d/1UcGLvryyeyeHNtzOumRFCmoVjs2gA0kh/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+                                ]
+                            },
+                    ] },
+                    { name: "C-Cycle vtu notes (25 Scheme)", slug: "c-cycle", subjects: [] }
                 ]
             },
             {
@@ -58,34 +117,152 @@ export const siteData: SiteData = {
                 slug: "22-scheme",
                 cycles: [
                     {
-                        name: "Physics (P) Cycle",
+                        name: "P-Cycle vtu notes (22 Scheme)",
                         slug: "p-cycle",
                         subjects: [
                             {
-                                name: "Mathematics For CSE",
+                                name: "Mathematics-I for CSE",
                                 code: "BMATS101",
                                 credits: "4 CR",
-                                slug: "mathematics-for-cse",
-                                modules: []
+                                slug: "mathematics-i-for-cse-bmats101",
+                                modules: [{
+                                        id: 1,
+                                        name: "Module-1: Calculus ",
+                                        desc: "bmats101 module 1 notes",
+                                        link: "https://drive.google.com/file/d/1gIMrj7TtAZd7XBaolnLOfSSZepf0mKtO/view?usp=drive_link",
+                                        type: "pdf"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2: Series Expansion and Multivariable Calculus ",
+                                        desc: "bmats101 module 2 notes",
+                                        link: "https://drive.google.com/file/d/10ma7Sd3fmY7MacqrfCO0KUS4bn4sDV1p/view?usp=drive_link",
+                                        type: "pdf"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3:  Ordinary Differential Equations (ODEs) of First Order  ",
+                                        desc: "bmats101 module 3 notes",
+                                        link: "https://drive.google.com/file/d/1gh1rd0iVizvWSra7IZ_NikdUbxjteHmw/view?usp=drive_link",
+                                        type: "pdf"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4:  Modular Arithmetic ",
+                                        desc: "bmats101 module 4 notes",
+                                        link: "https://drive.google.com/file/d/17h3VjhLq6OZ72OFrav-8s6EVEfriBjLO/view?usp=drive_link",
+                                        type: "pdf"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-5:  Linear Algebra   ",
+                                        desc: "bmats101 module 5 notes",
+                                        link: "https://drive.google.com/file/d/1nyNf7Q3tSoYfWu3ffy6ziwQwxkogeo8u/view?usp=drive_link",
+                                        type: "pdf"
+                                    }]
                             },
                             {
-                                name: "Applied Physics For CSE",
-                                code: "BPHYS102/202",
-                                credits: "3 CR",
-                                slug: "applied-physics",
-                                modules: []
-                            },
-                            {
-                                name: "Principle of Programming Using C",
-                                code: "BPOP103/203",
+                                name: "Mathematics-II for CSE",
+                                code: "BMATS201",
                                 credits: "4 CR",
-                                slug: "programming-c",
+                                slug: "mathematics-ii-for-cse-bmats201",
+                                modules: []
+                            },
+                            {
+                                name: "Principles of Programming using C",
+                                code: "BPOPS103",
+                                credits: "4 CR",
+                                slug: "principles-of-programming-using-c-bpops103",
+                                modules: []
+                            },
+                            {
+                                name: "Applied Physics for CSE",
+                                code: "BPHYS102",
+                                credits: "4 CR",
+                                slug: "applied-physics-for-cse-bphys102",
+                                modules: []
+                            },
+                            {
+                                name: "Chemistry for CSE",
+                                code: "BCHES202",
+                                credits: "4 CR",
+                                slug: "chemistry-for-cse-bches202",
+                                modules: []
+                            },
+                            {
+                                name: "Intro to Electrical Engineering",
+                                code: "BESCK104B",
+                                credits: "3 CR",
+                                slug: "intro-to-electrical-engineering-besck104b",
+                                modules: []
+                            },
+                            {
+                                name: "Intro to Electronics & Communication",
+                                code: "BESCK104C",
+                                credits: "3 CR",
+                                slug: "intro-to-electronics-communication-besck104c",
+                                modules: []
+                            },
+                            {
+                                name: "Intro to Python Programming",
+                                code: "BPLCK105B",
+                                credits: "3 CR",
+                                slug: "intro-to-python-programming-bplck105b",
+                                modules: []
+                            },
+                            {
+                                name: "Intro to Cyber Security",
+                                code: "BETCK105I",
+                                credits: "3 CR",
+                                slug: "intro-to-cyber-security-betck105i",
+                                modules: []
+                            },
+                            {
+                                name: "Innovation & Design Thinking",
+                                code: "BIDTK258",
+                                credits: "1 CR",
+                                slug: "innovation-design-thinking-bidtk258",
+                                modules: []
+                            },
+                            {
+                                name: "Communicative English",
+                                code: "BENGK206",
+                                credits: "1 CR",
+                                slug: "communicative-english-bengk206",
+                                modules: []
+                            },
+                            {
+                                name: "Indian Constitution",
+                                code: "BICOK207",
+                                credits: "1 CR",
+                                slug: "indian-constitution-bicok207",
+                                modules: []
+                            },
+                            {
+                                name: "Professional Writing Skills in English",
+                                code: "BPWSK106",
+                                credits: "1 CR",
+                                slug: "professional-writing-skills-in-english-bpwsk106",
+                                modules: []
+                            },
+                            {
+                                name: "Samskrutika Kannada",
+                                code: "BKSKK107",
+                                credits: "1 CR",
+                                slug: "samskrutika-kannada-bkskk107",
+                                modules: []
+                            },
+                            {
+                                name: "Scientific Foundations for Health",
+                                code: "BSFHK158",
+                                credits: "1 CR",
+                                slug: "scientific-foundations-for-health-bsfhk158",
                                 modules: []
                             }
                         ]
                     },
                     {
-                        name: "Chemistry (C) Cycle",
+                        name: "C-Cycle",
                         slug: "c-cycle",
                         subjects: []
                     }

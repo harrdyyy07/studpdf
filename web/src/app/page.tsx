@@ -6,7 +6,7 @@ export default function Home() {
   const branches = [
     {
       title: "First Year",
-      slug: "first-year",
+      slug: "firstyear",
       badge: "P & C Cycle",
       bg: "linear-gradient(135deg, #0f0c29 0%, #302b11 100%)",
       thumbText: "FIRST YEAR",
