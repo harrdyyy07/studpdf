@@ -72,6 +72,13 @@ export const siteData: SiteData = {
                                 slug: "python-programming-1BPLC105B-205B-vtu-notes",
                                 modules: [
                                     {
+                                        id: 0,
+                                        name: "PYTHON PROGRAMMING 1BPLC105B/205B syllabus",
+                                        desc: "PYTHON PROGRAMMING 1BPLC105B/205B syllabus",
+                                        link: "https://drive.google.com/file/d/1E8FUG_qppuTXR5FVAn7H4anBfGS6KFgv/view?usp=drive_link",
+                                        type: "syllabus"
+                                    },
+                                    {
                                         id: 1,
                                         name: "Module-1",
                                         desc: "PYTHON PROGRAMMING 1BPLC105B/205B module 1 notes",
