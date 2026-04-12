@@ -115,6 +115,63 @@ export const siteData: SiteData = {
                                     }
                                 ]
                             },
+                            {
+                                name: "Quantum Physics and Applications (CSE stream)",
+                                code: "1BPHYS102/202 ",
+                                credits: "4 CR",
+                                slug: "quantum-physics-and-applications-1bphys102-202-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 0,
+                                        name: "Quantum Physics and Applications (CSE stream) syllabus",
+                                        desc: "Quantum Physics and Applications (CSE stream)-1bphys102/202 syllabus",
+                                        link: "https://drive.google.com/file/d/1C6wFfbfhcCdVjYukXt8QQB9zdXmTORem/view?usp=drive_link",
+                                        type: "syllabus"
+                                    },
+                                    {
+                                        id: 1,
+                                        name: "1bphys102/202 complete notes",
+                                        desc: "complete notes for Quantum Physics and Applications (CSE stream)-1bphys102/202",
+                                        link: "https://drive.google.com/file/d/1Zdh9Cs6YwfhL4wfT7rlcM3_cKGCauBLF/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 1,
+                                        name: "Module-1 Quantum Mechanics",
+                                        desc: "Quantum Physics and Applications (CSE stream)-1bphys102/202 module 1 notes",
+                                        link: "https://drive.google.com/file/d/1OShYVacx96b7ej4puQ2hybp-7QQ6XSzG/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2 Electrical Properties of Metals and Semiconductors",
+                                        desc: "Quantum Physics and Applications (CSE stream)-1bphys102/202 module 2 notes",
+                                        link: "https://drive.google.com/file/d/1_Nf_uYuqn2fr7IAfTf1dzIuVPPfIxUhW/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3 Superconductivity",
+                                        desc: "Quantum Physics and Applications (CSE stream)-1bphys102/202 module 3 notes",
+                                        link: "https://drive.google.com/file/d/1o8ah9n27GWzTjhlphqnlYq_2o4kTsN2R/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4 Photonics",
+                                        desc: "Quantum Physics and Applications (CSE stream)-1bphys102/202 module 4 notes",
+                                        link: "https://drive.google.com/file/d/1ufNjm04Vmx80rzR17xTOY1K9wgc3Hrnh/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-5 Quantum Computing",
+                                        desc: "",
+                                        link: "",
+                                        type: "notes"
+                                    }
+                                ]
+                            },
                     ] },
                     { name: "C-Cycle vtu notes (25 Scheme)", slug: "c-cycle", subjects: [] }
                 ]
