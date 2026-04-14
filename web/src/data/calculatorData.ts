@@ -6,12 +6,359 @@ export interface CalcSubject {
 
 export interface SchemeData {
     [branch: string]: {
-        [semester: number]: CalcSubject[];
+        [semester: string]: CalcSubject[];
     };
 }
 
 export const calculatorData: { [scheme: string]: SchemeData } = {
-    "2022 Scheme": {
+    "2025 Scheme": {
+    "Computer Science and Engineering (CS)": {
+    "P CYCLE": [
+      { code: "1BMATS101", name: "Mathematics-I for CSE Stream", credits: 4 },
+      { code: "1BPHYS102", name: "Quantum Physics and Applications", credits: 4 },
+      { code: "1BCEDS103", name: "CAED for CSE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEIT105", name: "Programming in C (PSC)", credits: 3 },
+      { code: "1BPOPL107", name: "C Programming Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATS101/1BMATS201", name: "Mathematics-I/II for CSE Stream", credits: 4 },
+      { code: "1BCHES102", name: "Applied Chemistry for Smart Systems", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105B", name: "Python Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Information Science and Engineering (IS)": {
+    "P CYCLE": [
+      { code: "1BMATS101", name: "Mathematics-I for CSE Stream", credits: 4 },
+      { code: "1BPHYS102", name: "Quantum Physics and Applications", credits: 4 },
+      { code: "1BCEDS103", name: "CAED for CSE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEIT105", name: "Programming in C (PSC)", credits: 3 },
+      { code: "1BPOPL107", name: "C Programming Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATS101/1BMATS201", name: "Mathematics-I/II for CSE Stream", credits: 4 },
+      { code: "1BCHES102", name: "Applied Chemistry for Smart Systems", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105B", name: "Python Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Artificial Intelligence and Machine Learning (AI)": {
+    "P CYCLE": [
+      { code: "1BMATS101", name: "Mathematics-I for CSE Stream", credits: 4 },
+      { code: "1BPHYS102", name: "Quantum Physics and Applications", credits: 4 },
+      { code: "1BCEDS103", name: "CAED for CSE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEIT105", name: "Programming in C (PSC)", credits: 3 },
+      { code: "1BPOPL107", name: "C Programming Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATS101/1BMATS201", name: "Mathematics-I/II for CSE Stream", credits: 4 },
+      { code: "1BCHES102", name: "Applied Chemistry for Smart Systems", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105B", name: "Python Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Electronics and Communication Engineering (EC)": {
+    "P CYCLE": [
+      { code: "1BMATE101", name: "Differential Calculus and Linear Algebra: EEE Stream", credits: 4 },
+      { code: "1BPHEC102", name: "Quantum Physics and Electronic Sensors", credits: 4 },
+      { code: "1BCEDEC103", name: "CAED for ECE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BECE105", name: "Fundamentals of Electronics & Communication Engg (PSC)", credits: 3 },
+      { code: "1BECEL107", name: "Fundamentals of E&C Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATE101/1BMATE201", name: "Mathematics-I/II for EEE Stream", credits: 4 },
+      { code: "1BCHEE102", name: "Applied Chemistry for Emerging Electronics", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105E", name: "Introduction to C Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Electrical and Electronic Engineering (EE)": {
+    "P CYCLE": [
+      { code: "1BMATE101", name: "Differential Calculus and Linear Algebra: EEE Stream", credits: 4 },
+      { code: "1BPHEE102", name: "Physics of Electrical Engineering Materials", credits: 4 },
+      { code: "1BCEDE103", name: "CAED for EEE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BBEE105", name: "Basics of Electrical Engineering (PSC)", credits: 3 },
+      { code: "1BBEEL107", name: "Basic Electrical Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATE101/1BMATE201", name: "Mathematics-I/II for EEE Stream", credits: 4 },
+      { code: "1BCHEE102", name: "Applied Chemistry for Emerging Electronics", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105E", name: "Introduction to C Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Civil Engineering (CV)": {
+    "P CYCLE": [
+      { code: "1BMATC101", name: "Differential Calculus and Linear Algebra: CV Stream", credits: 4 },
+      { code: "1BPHYC102", name: "Physics for Sustainable Structural Systems", credits: 4 },
+      { code: "1BCEDC103", name: "CAED for CV Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BCIV105", name: "Engineering Mechanics (PSC)", credits: 3 },
+      { code: "1BMEML107", name: "Mechanics and Materials Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATC101/1BMATC201", name: "Mathematics-I/II for CV Stream", credits: 4 },
+      { code: "1BCHEC102", name: "Applied Chemistry for Sustainable Structure", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105E", name: "Introduction to C Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Mechanical Engineering (ME)": {
+    "P CYCLE": [
+      { code: "1BMATM101", name: "Differential Calculus and Linear Algebra: ME Stream", credits: 4 },
+      { code: "1BPHYM102", name: "Physics of Materials", credits: 4 },
+      { code: "1BCEDM103", name: "CAED for ME Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEME105", name: "Elements of Mechanical Engineering (PSC)", credits: 3 },
+      { code: "1BEMEL107", name: "Elements of Mechanical Engineering Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATM101/1BMATM201", name: "Mathematics-I/II for ME Stream", credits: 4 },
+      { code: "1BCHEM102", name: "Applied Chemistry for Advanced Metal Protection", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105E", name: "Introduction to C Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "CSE (Cyber Security) (CY)": {
+    "P CYCLE": [
+      { code: "1BMATS101", name: "Mathematics-I for CSE Stream", credits: 4 },
+      { code: "1BPHYS102", name: "Quantum Physics and Applications", credits: 4 },
+      { code: "1BCEDS103", name: "CAED for CSE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEIT105", name: "Programming in C (PSC)", credits: 3 },
+      { code: "1BPOPL107", name: "C Programming Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATS101/1BMATS201", name: "Mathematics-I/II for CSE Stream", credits: 4 },
+      { code: "1BCHES102", name: "Applied Chemistry for Smart Systems", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105B", name: "Python Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Aeronautical Engineering (AE)": {
+    "P CYCLE": [
+      { code: "1BMATM101", name: "Differential Calculus and Linear Algebra: ME Stream", credits: 4 },
+      { code: "1BPHYM102", name: "Physics of Materials", credits: 4 },
+      { code: "1BCEDM103", name: "CAED for ME Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEAE105", name: "Elements of Aeronautical Engineering (PSC)", credits: 3 },
+      { code: "1BEAEL107", name: "Elements of Aeronautical Engineering Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATM101/1BMATM201", name: "Mathematics-I/II for ME Stream", credits: 4 },
+      { code: "1BCHEM102", name: "Applied Chemistry for Advanced Metal Protection", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105E", name: "Introduction to C Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Robotics & Artificial Intelligence (RI)": {
+    "P CYCLE": [
+      { code: "1BMATM101", name: "Differential Calculus and Linear Algebra: ME Stream", credits: 4 },
+      { code: "1BPHYM102", name: "Physics of Materials", credits: 4 },
+      { code: "1BCEDM103", name: "CAED for ME Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEME105", name: "Elements of Mechanical Engineering (Allied) (PSC)", credits: 3 },
+      { code: "1BEMEL107", name: "Elements of Mechanical Engineering Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATM101/1BMATM201", name: "Mathematics-I/II for ME Stream", credits: 4 },
+      { code: "1BCHEM102", name: "Applied Chemistry for Advanced Metal Protection", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105E", name: "Introduction to C Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Biotechnology (BT)": {
+    "P CYCLE": [
+      { code: "1BMATS101", name: "Mathematics-I for CSE Stream", credits: 4 },
+      { code: "1BPHYS102", name: "Quantum Physics and Applications", credits: 4 },
+      { code: "1BCEDS103", name: "CAED for CSE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEBT105", name: "Elements of Biotechnology and Biomimetics (PSC)", credits: 3 },
+      { code: "1BEBTL107", name: "Elements of Biotechnology Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATS101/1BMATS201", name: "Mathematics-I/II for CSE Stream", credits: 4 },
+      { code: "1BCHES102", name: "Applied Chemistry for Smart Systems", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105B", name: "Python Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Computer Science and Business System (CB)": {
+    "P CYCLE": [
+      { code: "1BMATS101", name: "Mathematics-I for CSE Stream", credits: 4 },
+      { code: "1BPHYS102", name: "Quantum Physics and Applications", credits: 4 },
+      { code: "1BCEDS103", name: "CAED for CSE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEIT105", name: "Programming in C (PSC)", credits: 3 },
+      { code: "1BPOPL107", name: "C Programming Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATS101/1BMATS201", name: "Mathematics-I/II for CSE Stream", credits: 4 },
+      { code: "1BCHES102", name: "Applied Chemistry for Smart Systems", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105B", name: "Python Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Artificial Intelligence & Data Science (AD)": {
+    "P CYCLE": [
+      { code: "1BMATS101", name: "Mathematics-I for CSE Stream", credits: 4 },
+      { code: "1BPHYS102", name: "Quantum Physics and Applications", credits: 4 },
+      { code: "1BCEDS103", name: "CAED for CSE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEIT105", name: "Programming in C (PSC)", credits: 3 },
+      { code: "1BPOPL107", name: "C Programming Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATS101/1BMATS201", name: "Mathematics-I/II for CSE Stream", credits: 4 },
+      { code: "1BCHES102", name: "Applied Chemistry for Smart Systems", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105B", name: "Python Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Computer Science and Engineering (IoT) (CO)": {
+    "P CYCLE": [
+      { code: "1BMATS101", name: "Mathematics-I for CSE Stream", credits: 4 },
+      { code: "1BPHYS102", name: "Quantum Physics and Applications", credits: 4 },
+      { code: "1BCEDS103", name: "CAED for CSE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BEIT105", name: "Programming in C (PSC)", credits: 3 },
+      { code: "1BPOPL107", name: "C Programming Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATS101/1BMATS201", name: "Mathematics-I/II for CSE Stream", credits: 4 },
+      { code: "1BCHES102", name: "Applied Chemistry for Smart Systems", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105B", name: "Python Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  },
+  "Electronics and Computer Engineering (UE)": {
+    "P CYCLE": [
+      { code: "1BMATE101", name: "Differential Calculus and Linear Algebra: EEE Stream", credits: 4 },
+      { code: "1BPHEC102", name: "Quantum Physics and Electronic Sensors", credits: 4 },
+      { code: "1BCEDEC103", name: "CAED for ECE Stream", credits: 3 },
+      { code: "1BESC104x", name: "Engineering Science Course-I", credits: 3 },
+      { code: "1BECE105", name: "Fundamentals of Electronics & Communication Engg (PSC)", credits: 3 },
+      { code: "1BECEL107", name: "Fundamentals of E&C Lab", credits: 1 },
+      { code: "1BSKS106", name: "Soft Skills", credits: 0 },
+      { code: "1BIDTL158", name: "Innovation and Design Thinking Lab", credits: 1 },
+      { code: "1BKSK109/1BKBK109", name: "Samskrutika / Balake Kannada", credits: 1 }
+    ],
+    "C CYCLE": [
+      { code: "1BMATE101/1BMATE201", name: "Mathematics-I/II for EEE Stream", credits: 4 },
+      { code: "1BCHEE102", name: "Applied Chemistry for Emerging Electronics", credits: 4 },
+      { code: "1BAIA103", name: "Introduction to AI and Applications", credits: 3 },
+      { code: "1BESC104x/1BESC204x", name: "Engineering Science Course-I/II", credits: 3 },
+      { code: "1BPLC105E", name: "Introduction to C Programming (PLC)", credits: 4 },
+      { code: "1BENG106", name: "Communicative English", credits: 1 },
+      { code: "1BICO107", name: "Indian Constitution & Engineering Ethics", credits: 0 },
+      { code: "1BPRJ258", name: "Interdisciplinary Project-Based Learning", credits: 1 }
+    ]
+  }
+  },
+  "2022 Scheme": {
         CSE: {
             1: [
                 {code: "BMATS101", name: "Mathematics-I for CSE Stream", credits: 4},
