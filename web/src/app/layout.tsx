@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import Preloader from "@/components/Preloader";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -90,6 +91,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
+        <Preloader />
         <noscript>
           <iframe 
             src="https://www.googletagmanager.com/ns.html?id=GTM-PFXKL7BH"
