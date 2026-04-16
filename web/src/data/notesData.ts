@@ -61,7 +61,172 @@ export const siteData: SiteData = {
                                         name: "Module-1: Calculus ",
                                         desc: "1bmats101 module 1 notes",
                                         link: "https://drive.google.com/file/d/1gIMrj7TtAZd7XBaolnLOfSSZepf0mKtO/view?usp=drive_link",
-                                        type: "pdf"
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 1,
+                                        name: "Module-1: Calculus ",
+                                        desc: "1bmats101 module 1 notes",
+                                        link: "https://drive.google.com/file/d/19gjY3FqIAn58vYPxQufAyqJ3-wgj4ovy/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2:  Power series Expansions, indeterminate forms and multivariable calculus ",
+                                        desc: "1bmats101 module 2 notes",
+                                        link: "https://drive.google.com/file/d/1zy9MBQonnEUxihUBehq6X24NBOFyPc96/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3:  Ordinary Differential Equations (ODE) of first order and first degree and nonlinear ODE ",
+                                        desc: "1bmats101 module 3 notes",
+                                        link: "https://drive.google.com/file/d/1VVtFcdZGgJFMYWwdpLRfhGrdq0gWoGLm/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4:  Ordinary differential equations of higher Order  ",
+                                        desc: "1bmats101 module 4 notes",
+                                        link: "https://drive.google.com/file/d/1sUe7PzgQzU58tszx5gtiZcnjrn0hW5yW/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-5:  Linear Algebra ",
+                                        desc: "1bmats101 module 5 notes",
+                                        link: "https://drive.google.com/file/d/178hkdgzwxr8FChct-VoHSxZWznyCCkYv/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+
+                                ]
+                            },
+                            {
+                                name: "Differential Calculus and Linear Algebra: ECE Stream - 1BMATE101",
+                                code: "1BMATE101",
+                                credits: "4 CR",
+                                slug: "differential-calculus-and-linear-algebra-ece-stream-1bmate101-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Module-1:  Differential Calculus ",
+                                        desc: "1bmate101 module 1 notes",
+                                        link: "https://drive.google.com/file/d/19gjY3FqIAn58vYPxQufAyqJ3-wgj4ovy/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2:  Power series Expansions, indeterminate forms and multivariable calculus ",
+                                        desc: "1bmate101 module 2 notes",
+                                        link: "https://drive.google.com/file/d/1zy9MBQonnEUxihUBehq6X24NBOFyPc96/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3:  Ordinary Differential Equations (ODE) of first order and first degree and nonlinear ODE ",
+                                        desc: "1bmate101 module 3 notes",
+                                        link: "https://drive.google.com/file/d/1VVtFcdZGgJFMYWwdpLRfhGrdq0gWoGLm/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4:  Ordinary differential equations of higher Order  ",
+                                        desc: "1bmate101 module 4 notes",
+                                        link: "https://drive.google.com/file/d/1sUe7PzgQzU58tszx5gtiZcnjrn0hW5yW/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-5:  Linear Algebra ",
+                                        desc: "1bmate101 module 5 notes",
+                                        link: "https://drive.google.com/file/d/178hkdgzwxr8FChct-VoHSxZWznyCCkYv/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+                                ]
+                            },
+                            {
+                                name: "Differential Calculus and Linear Algebra: ME Stream - 1BMATM101",
+                                code: "1BMATM101",
+                                credits: "4 CR",
+                                slug: "differential-calculus-and-linear-algebra-me-stream-1bmatm101-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Module-1:  Polar Curves and Curvature  ",
+                                        desc: "1bmatm101 module 1 notes",
+                                        link: "https://drive.google.com/file/d/19gjY3FqIAn58vYPxQufAyqJ3-wgj4ovy/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2:  Power series Expansions, indeterminate forms and multivariable calculus ",
+                                        desc: "1bmatm101 module 2 notes",
+                                        link: "https://drive.google.com/file/d/1zy9MBQonnEUxihUBehq6X24NBOFyPc96/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3:  Ordinary Differential Equations (ODE) of first order and first degree and nonlinear ODE ",
+                                        desc: "1bmatm101 module 3 notes",
+                                        link: "https://drive.google.com/file/d/1VVtFcdZGgJFMYWwdpLRfhGrdq0gWoGLm/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4:  Linear Algebra -1 ",
+                                        desc: "1bmatm101 module 4 notes",
+                                        link: "https://drive.google.com/file/d/11Fo68zOE3MybVVgFCIzRbKg-J2xMgQKo/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-5:  Linear Algebra -2 ",
+                                        desc: "1bmatm101 module 5 notes",
+                                        link: "https://drive.google.com/file/d/178hkdgzwxr8FChct-VoHSxZWznyCCkYv/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+                                ]
+                            },
+                            {
+                                name: "Differential Calculus and Linear Algebra: CV Stream - 1BMATM101",
+                                code: "1BMATC101",
+                                credits: "4 CR",
+                                slug: "differential-calculus-and-linear-algebra-cv-stream-1bmatc101-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Module-1:  Polar Curves and Curvature ",
+                                        desc: "1bmatc101 module 1 notes",
+                                        link: "https://drive.google.com/file/d/19gjY3FqIAn58vYPxQufAyqJ3-wgj4ovy/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2:  Power series Expansions, indeterminate forms and multivariable calculus ",
+                                        desc: "1bmatc101 module 2 notes",
+                                        link: "https://drive.google.com/file/d/1zy9MBQonnEUxihUBehq6X24NBOFyPc96/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3:  Ordinary Differential Equations (ODE) of first order and first degree and nonlinear ODE ",
+                                        desc: "1bmatc101 module 3 notes",
+                                        link: "https://drive.google.com/file/d/1VVtFcdZGgJFMYWwdpLRfhGrdq0gWoGLm/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4:  Ordinary Differential Equations of Higher Order  ",
+                                        desc: "1bmatc101 module 4 notes",
+                                        link: "https://drive.google.com/file/d/1sUe7PzgQzU58tszx5gtiZcnjrn0hW5yW/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-5:  Linear Algebra -2 ",
+                                        desc: "1bmatc101 module 5 notes",
+                                        link: "https://drive.google.com/file/d/178hkdgzwxr8FChct-VoHSxZWznyCCkYv/view?usp=drive_link",
+                                        type: "notes"
                                     }
                                 ]
                             },
@@ -583,6 +748,16 @@ export const siteData: SiteData = {
             {
                 sem: 3,
                 subjects: [
+                    { name: "AV Mathematics-III for EC Engineering", code: "BMATEC301", credits: "4 CR", slug: "av-mathematics-iii-for-ec-engineering-m3-bmatec301-vtu-notes", modules: [
+                            { id: 1, name: "Module 1: Handwritten Notes", desc: "Comprehensive notes for Module 1", link: "https://drive.google.com/file/d/1kaz3h_Lmbb6OyDETufigEEhBAu8e8z_z/view?usp=drive_link", type: "Notes" },
+                            { id: 2, name: "Module 2: Handwritten Notes", desc: "Comprehensive notes for Module 2", link: "https://drive.google.com/file/d/1baJVLK9PCc7BQI9E_RS6tOyczr59pkTk/view?usp=drive_link", type: "Notes" },
+                            { id: 3, name: "Module 3: Handwritten Notes", desc: "Comprehensive notes for Module 3", link: "https://drive.google.com/file/d/1IAHpQ-QPu1UEtkU2SAXTMsVarZvidOX_/view?usp=drive_link", type: "Notes" },
+                            { id: 4, name: "Module 4: Handwritten Notes", desc: "Comprehensive notes for Module 4", link: "https://drive.google.com/file/d/1dhhOhZPFZsPRbON10lgUc14GYyw5CeXt/view?usp=drive_link", type: "Notes" },
+                            { id: 5, name: "Module 5: Handwritten Notes", desc: "Comprehensive notes for Module 5", link: "https://drive.google.com/file/d/1wyR-4fsZU1IlUXbN_a-tPC-MQZFENntJ/view?usp=drive_link", type: "Notes" },
+                            { id: 6, name: "Model question paper-1", desc: "model question paper-1 for bmatec301", link: "https://drive.google.com/file/d/1GzbE5H9DOPzCH6RES_dDuBQp8bKAxAbv/view?usp=drive_link", type: "MQP" },
+                            { id: 7, name: "Model question paper-2", desc: "model question paper-2 for bmatec301", link: "https://drive.google.com/file/d/1QbkLtdjAvfVNuzuCfkiBYgQM5FszHa-X/view?usp=drive_link", type: "MQP" },
+                             { id: 8, name: "Handbook(formula book)", desc: "Handbook (formula book) for bmatec301 22 scheme", link: "https://drive.google.com/file/d/1RK5AdtpFsofS9k-Im56cTM61UgyJVLJ2/view?usp=drive_link", type: "Handbook" }
+                    ] },
                     {
                         name: "Digital System Design using Verilog", code: "BEC302", credits: "4 CR", slug: "digital-system-design-using-verilog-dsdv-bec302-vtu-notes", modules: [
                             { id: 1, name: "Module 1: Handwritten Notes", desc: "Comprehensive notes for Module 1", link: "https://drive.google.com/file/d/19aG_zj14r3KY3ZY8ioCW2ppiVNGYzVwR/view?usp=drive_link", type: "Notes" },
@@ -633,16 +808,6 @@ export const siteData: SiteData = {
                     { name: "C++ Basics", code: "BEC358C", credits: "1 CR", slug: "c-plus-plus-basics-cpp-bec358c-vtu-notes", modules: [] },
                     { name: "IOT for Smart Infrastructure", code: "BEC358D", credits: "1 CR", slug: "iot-for-smart-infrastructure-iot-bec358d-vtu-notes", modules: [] },
                     { name: "Analog and Digital Systems Design Lab", code: "BECL305", credits: "1 CR", slug: "analog-and-digital-systems-design-lab-adsdl-becl305-vtu-notes", modules: [] },
-                    { name: "AV Mathematics-III for EC Engineering", code: "BMATEC301", credits: "4 CR", slug: "av-mathematics-iii-for-ec-engineering-m3-bmatec301-vtu-notes", modules: [
-                            { id: 1, name: "Module 1: Handwritten Notes", desc: "Comprehensive notes for Module 1", link: "https://drive.google.com/file/d/1kaz3h_Lmbb6OyDETufigEEhBAu8e8z_z/view?usp=drive_link", type: "Notes" },
-                            { id: 2, name: "Module 2: Handwritten Notes", desc: "Comprehensive notes for Module 2", link: "https://drive.google.com/file/d/1baJVLK9PCc7BQI9E_RS6tOyczr59pkTk/view?usp=drive_link", type: "Notes" },
-                            { id: 3, name: "Module 3: Handwritten Notes", desc: "Comprehensive notes for Module 3", link: "https://drive.google.com/file/d/1IAHpQ-QPu1UEtkU2SAXTMsVarZvidOX_/view?usp=drive_link", type: "Notes" },
-                            { id: 4, name: "Module 4: Handwritten Notes", desc: "Comprehensive notes for Module 4", link: "https://drive.google.com/file/d/1dhhOhZPFZsPRbON10lgUc14GYyw5CeXt/view?usp=drive_link", type: "Notes" },
-                            { id: 5, name: "Module 5: Handwritten Notes", desc: "Comprehensive notes for Module 5", link: "https://drive.google.com/file/d/1wyR-4fsZU1IlUXbN_a-tPC-MQZFENntJ/view?usp=drive_link", type: "Notes" },
-                            { id: 6, name: "Model question paper-1", desc: "model question paper-1 for bmatec301", link: "https://drive.google.com/file/d/1GzbE5H9DOPzCH6RES_dDuBQp8bKAxAbv/view?usp=drive_link", type: "MQP" },
-                            { id: 7, name: "Model question paper-2", desc: "model question paper-2 for bmatec301", link: "https://drive.google.com/file/d/1QbkLtdjAvfVNuzuCfkiBYgQM5FszHa-X/view?usp=drive_link", type: "MQP" },
-                             { id: 8, name: "Handbook(formula book)", desc: "Handbook (formula book) for bmatec301 22 scheme", link: "https://drive.google.com/file/d/1RK5AdtpFsofS9k-Im56cTM61UgyJVLJ2/view?usp=drive_link", type: "Handbook" }
-                    ] },
                     { name: "Social Connect and Responsibility", code: "BSCK307", credits: "1 CR", slug: "social-connect-and-responsibility-scr-bsck307-vtu-notes", modules: [
                          { id: 1, name: "BSCK307 complete notes", desc: "Complete notes for BSCK307", link: "https://drive.google.com/file/d/1p-LiWAcbwBr7RI-Ovma2THmyoUlfK8RZ/view?usp=drive_link", type: "Notes" },
                     ] }

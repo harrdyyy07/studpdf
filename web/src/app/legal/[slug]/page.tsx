@@ -66,7 +66,7 @@ const legalContent: Record<string, LegalPage> = {
             {
                 heading: '7. Contact Us',
                 content: (
-                    <p>If you have any questions about this Privacy Policy, please email us at <a href="mailto:contact@vtuwise.in"><strong>contact@vtuwise.in</strong></a>.</p>
+                    <p>If you have any questions about this Privacy Policy, please email us at <a href="mailto:vtuwisenotes@gmail.com"><strong>vtuwisenotes@gmail.com</strong></a>.</p>
                 )
             },
         ]
@@ -181,7 +181,7 @@ const legalContent: Record<string, LegalPage> = {
                             <li>Proof of copyright ownership.</li>
                             <li>A formal request for removal.</li>
                         </ul>
-                        <p>Email your request to <a href="mailto:contact@vtuwise.in"><strong>contact@vtuwise.in</strong></a>. We will take immediate action upon verification.</p>
+                        <p>Email your request to <a href="mailto:vtuwisenotes@gmail.com"><strong>vtuwisenotes@gmail.com</strong></a>. We will take immediate action upon verification.</p>
                     </>
                 )
             },
@@ -240,7 +240,7 @@ const legalContent: Record<string, LegalPage> = {
             {
                 heading: '6. Contact',
                 content: (
-                    <p>Have feedback or want to collaborate? Reach us at <a href="mailto:contact@vtuwise.in"><strong>contact@vtuwise.in</strong></a> or join our <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" rel="noopener noreferrer"><strong>WhatsApp community</strong></a> for the latest updates.</p>
+                    <p>Have feedback or want to collaborate? Reach us at <a href="mailto:vtuwisenotes@gmail.com"><strong>vtuwisenotes@gmail.com</strong></a> or join our <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" rel="noopener noreferrer"><strong>WhatsApp community</strong></a> for the latest updates.</p>
                 )
             },
         ]
@@ -252,14 +252,14 @@ const legalContent: Record<string, LegalPage> = {
             {
                 heading: '1. General Enquiries',
                 content: (
-                    <p>For general questions about VTUwise, its features, or content, please email us at <a href="mailto:contact@vtuwise.in"><strong>contact@vtuwise.in</strong></a>. We typically respond within 24–48 hours on working days.</p>
+                    <p>For general questions about VTUwise, its features, or content, please email us at <a href="mailto:vtuwisenotes@gmail.com"><strong>vtuwisenotes@gmail.com</strong></a>. We typically respond within 24–48 hours on working days.</p>
                 )
             },
             {
                 heading: '2. Copyright Removal Requests',
                 content: (
                     <>
-                        <p>If you believe any material on VTUwise infringes your copyright, please email <a href="mailto:contact@vtuwise.in"><strong>contact@vtuwise.in</strong></a> with:</p>
+                        <p>If you believe any material on VTUwise infringes your copyright, please email <a href="mailto:vtuwisenotes@gmail.com"><strong>vtuwisenotes@gmail.com</strong></a> with:</p>
                         <ul>
                             <li>Your full name and contact details.</li>
                             <li>The URL(s) of the content in question.</li>
@@ -285,7 +285,7 @@ const legalContent: Record<string, LegalPage> = {
             {
                 heading: '5. Feature Requests & Bug Reports',
                 content: (
-                    <p>Found a bug or have an idea? Send your thoughts to <a href="mailto:contact@vtuwise.in"><strong>contact@vtuwise.in</strong></a> with the subject line <em>&quot;Feature Request&quot;</em> or <em>&quot;Bug Report&quot;</em>.</p>
+                    <p>Found a bug or have an idea? Send your thoughts to <a href="mailto:vtuwisenotes@gmail.com"><strong>vtuwisenotes@gmail.com</strong></a> with the subject line <em>&quot;Feature Request&quot;</em> or <em>&quot;Bug Report&quot;</em>.</p>
                 )
             },
         ]
@@ -321,7 +321,7 @@ const legalContent: Record<string, LegalPage> = {
             {
                 heading: '5. I found outdated or incorrect content. What should I do?',
                 content: (
-                    <p>Please email us at <a href="mailto:contact@vtuwise.in"><strong>contact@vtuwise.in</strong></a> mentioning the specific subject and the inaccuracy. We will review and update it promptly.</p>
+                    <p>Please email us at <a href="mailto:vtuwisenotes@gmail.com"><strong>vtuwisenotes@gmail.com</strong></a> mentioning the specific subject and the inaccuracy. We will review and update it promptly.</p>
                 )
             },
             {
