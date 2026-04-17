@@ -337,8 +337,244 @@ export const siteData: SiteData = {
                                     }
                                 ]
                             },
+                            {
+                                name: "Computer Aided Engineering and Drawing",
+                                code: "1BCEDS103/203",
+                                credits: "3 CR",
+                                slug: "computer-aided-engineering-and-drawing-1bceds103-203-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Module-1",
+                                        desc: "Computer Aided Engineering and Drawing-1bceds103/203 module 1 notes",
+                                        link: "https://drive.google.com/file/d/1kEvK_TUxx3okf0uk8EPu1Le4h4R1H5Qf/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2",
+                                        desc: "Computer Aided Engineering and Drawing-1bceds103/203 module 2 notes",
+                                        link: "https://drive.google.com/file/d/1acYzhsBUaz_XEjorlLk5ffxsooQ4rDCV/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3",
+                                        desc: "Computer Aided Engineering and Drawing-1bceds103/203 module 3 notes",
+                                        link: "https://drive.google.com/file/d/1wtUvEloXQj2LIzJLEwJgzYaaT9FH-ITW/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4",
+                                        desc: "Computer Aided Engineering and Drawing-1bceds103/203 module 4 notes",
+                                        link: "https://drive.google.com/file/d/1FDq2RWoZL6tM9LiQvq0JJ5TBgflB65ln/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-5",
+                                        desc: "Computer Aided Engineering and Drawing-1bceds103/203 module 5 notes",
+                                        link: "https://drive.google.com/file/d/1MHUbmY_NdBKqzV-GoMG7oixAyF8hIuG6/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+                                ]
+                            }
                     ] },
-                    { name: "C-Cycle vtu notes (25 Scheme)", slug: "c-cycle", subjects: [] }
+                    { name: "C-Cycle vtu notes (25 Scheme)", slug: "c-cycle", subjects: [
+                        {
+                            name: "Introduction to AI and Applications",
+                            code: "1BAIA103/203",
+                            credits: "3 CR",
+                            slug: "introduction-to-ai-and-applications-1baia103-203-vtu-notes",
+                            modules: [
+                                {
+                                    id: 1,
+                                    name: "Syllabus for Introduction to AI and Applications",
+                                    desc: "",
+                                    link: "https://drive.google.com/file/d/1yVYP4FYEWgxo1QeU-_-Vkwe8Ae-aHcuO/view?usp=drive_link",
+                                    type: "syllabus"
+                                },
+                                {
+                                    id: 2,
+                                    name: "Module-1",
+                                    desc: "Introduction to AI and Applications-1baia103/203 module 1 notes",
+                                    link: "https://drive.google.com/file/d/1kk3VnjXPeADlzpnHlb6DJjmp7KjVyHvt/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 3,
+                                    name: "Module-2",
+                                    desc: "Introduction to AI and Applications-1baia103/203 module 2 notes",
+                                    link: "https://drive.google.com/file/d/1M4wLyNht7OmVCrAJgweU8sxw71s4vVpx/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 4,
+                                    name: "Module-3",
+                                    desc: "Introduction to AI and Applications-1baia103/203 module 3 notes",
+                                    link: "https://drive.google.com/file/d/1K_p6tF-o8UCfIhEqryHw6DK7z6YjLJya/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 5,
+                                    name: "Module-4 PPT",
+                                    desc: "Introduction to AI and Applications-1baia103/203 module 4 notes",
+                                    link: "https://drive.google.com/file/d/1vTKHjeOMLjTxIOJ6j_9ITHH0CDxg6oHj/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 6,
+                                    name: "Module-4",
+                                    desc: "Introduction to AI and Applications-1baia103/203 module 4 notes",
+                                    link: "https://drive.google.com/file/d/19k7a5_9DhpoSqdYh-Cv-G-m1A-dn9Lp4/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 7,
+                                    name: "Module-5 PPT",
+                                    desc: "Introduction to AI and Applications-1baia103/203 module 5 notes",
+                                    link: "https://drive.google.com/file/d/1b3eFl3-ErZdN3nS69iR43qprMfq_LyDs/view?usp=drive_link",
+                                    type: "notes"
+                                }
+                            ]
+                        },
+                        {
+                            name: "BUILDING SCIENCE AND MECHANICS",
+                            code: "1BESC104A/204A",
+                            credits: "3 CR",
+                            slug: "building-science-and-mechanics-1besc104a-204a-vtu-notes",
+                            modules: [
+                                {
+                                    id: 1,
+                                    name: "Syllabus for Building Science and Mechanics",
+                                    desc: "",
+                                    link: "https://drive.google.com/file/d/1fcZKL_LCGbad0WdTA5uBeKkzPYf7fWmB/view?usp=drive_link",
+                                    type: "syllabus"
+                                },
+                                {
+                                    id: 2,
+                                    name: "Module-1 Notes-1",
+                                    desc: "Building Science and Mechanics-1besc104a/204a module 1 notes",
+                                    link: "https://drive.google.com/file/d/1GjPMaQy-zzVub5fu_qQavRDo62hYtsRx/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 3,
+                                    name: "Module-1 Notes-2",
+                                    desc: "Building Science and Mechanics-1besc104a/204a module 1 notes",
+                                    link: "https://drive.google.com/file/d/1XuE41btkWIqLJcrY6PkwrT8D6k2RBehi/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 4,
+                                    name: "Module-2 Notes-1",
+                                    desc: "Building Science and Mechanics-1besc104a/204a module 2 notes",
+                                    link: "https://drive.google.com/file/d/1hsY2Z9iMWo1S0RR_KJe4csa8CLjZOUWA/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 5,
+                                    name: "Module-2 Notes-2",
+                                    desc: "Building Science and Mechanics-1besc104a/204a module 2 notes",
+                                    link: "https://drive.google.com/file/d/1ERzJRV_PPvJ-2LkyphEqtXPnAAdf2uxT/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 6,
+                                    name: "Module-3",
+                                    desc: "Building Science and Mechanics-1besc104a/204a module 3 notes",
+                                    link: "https://drive.google.com/file/d/1eitKozV93RwkzAH4YW4bnEJRGkOv8PWK/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 7,
+                                    name: "Module-4",
+                                    desc: "Building Science and Mechanics-1besc104a/204a module 4 notes",
+                                    link: "https://drive.google.com/file/d/1nHGmkSSP-F2v_o9PC7BuS_Z3blcNp-l5/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 8,
+                                    name: "Module-5",
+                                    desc: "Building Science and Mechanics-1besc104a/204a module 5 notes",
+                                    link: "https://drive.google.com/file/d/1--M_g18XJwv--iUCDtdFbVrY25VVscYY/view?usp=drive_link",
+                                    type: "notes"
+                                }
+                            ]
+                        },
+                        {
+                            name: "Introduction to Electrical Engineering",
+                            code: "1BESC104B/204B",
+                            credits: "3 CR",
+                            slug: "introduction-to-electrical-engineering-1besc104b-204b-vtu-notes",
+                            modules: [
+                                {
+                                    id: 1,
+                                    name: "Syllabus for Introduction to Electrical Engineering",
+                                    desc: "",
+                                    link: "https://drive.google.com/file/d/1fXUhM3uvqcl-d_TOk_ZFkVZpLheUVhRF/view?usp=drive_link",
+                                    type: "syllabus"
+                                },
+                                {
+                                    id: 2,
+                                    name: "Module-1",
+                                    desc: "Introduction to Electrical Engineering-1besc104b/204b module 1 notes",
+                                    link: "https://drive.google.com/file/d/1r_E2Sn59sCjXhgU_xWiRdxdcJ3UsMyX_/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 3,
+                                    name: "Module-2 Notes-1",
+                                    desc: "Introduction to Electrical Engineering-1besc104b/204b module 2 notes",
+                                    link: "https://drive.google.com/file/d/1r_6-Gaq1JWT6Tf3PE0nHaT0KfrMeIaZB/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 4,
+                                    name: "Module-2 Notes-2",
+                                    desc: "Introduction to Electrical Engineering-1besc104b/204b module 2 notes",
+                                    link: "https://drive.google.com/file/d/1Y_YQ1pnIRC1K6r8NrWcDgK3M-YLx2qja/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 5,
+                                    name: "Module-3 Notes-1",
+                                    desc: "Introduction to Electrical Engineering-1besc104b/204b module 3 notes",
+                                    link: "https://drive.google.com/file/d/1FBQNH8HJ4j8fuhVb5FDbr6GTyzqNgsEX/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 6,
+                                    name: "Module-3 Notes-2",
+                                    desc: "Introduction to Electrical Engineering-1besc104b/204b module 3 notes",
+                                    link: "https://drive.google.com/file/d/1dFQGfSCztS0HtwqCX1YvVWylX5O4Zy5t/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 7,
+                                    name: "Module-4 Notes-1",
+                                    desc: "Introduction to Electrical Engineering-1besc104b/204b module 4 notes",
+                                    link: "https://drive.google.com/file/d/1YBbHmOKnzhsVhfq46Qhpq5FmXkQwfPTz/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 8,
+                                    name: "Module-4 Notes-2",
+                                    desc: "Introduction to Electrical Engineering-1besc104b/204b module 4 notes",
+                                    link: "https://drive.google.com/file/d/1UDn0wzTt-rM37GfEh65Skh-mNW9h-lmg/view?usp=drive_link",
+                                    type: "notes"
+                                },
+                                {
+                                    id: 9,
+                                    name: "Module-5",
+                                    desc: "Introduction to Electrical Engineering-1besc104b/204b module 5 notes",
+                                    link: "https://drive.google.com/file/d/1EBYRpRCKHU4vndzeSv95xczrW8vo46LY/view?usp=drive_link",
+                                    type: "notes"
+                                }
+                            ]
+                        }
+                    ] }
                 ]
             },
             {
