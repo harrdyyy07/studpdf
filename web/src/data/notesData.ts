@@ -379,6 +379,78 @@ export const siteData: SiteData = {
                                         type: "notes"
                                     }
                                 ]
+                            },
+                            {
+                                name: "Introduction to Electronics and Communication Engineering",
+                                code: "1BESC104C/204C",
+                                credits: "3 CR",
+                                slug: "introduction-to-electronics-and-communication-engineering-1besc104c-204c-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Syllabus for Introduction to Electronics and Communication Engineering",
+                                        desc: "",
+                                        link: "https://drive.google.com/file/d/1gBdC1frZTUSCX0CNtDcMy5q-fI_sM2Kh/view?usp=drive_link",
+                                        type: "syllabus"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-1",
+                                        desc: "Introduction to Electronics and Communication Engineering-1besc104c-204c module 1 notes",
+                                        link: "https://drive.google.com/file/d/1JLfqU_U3Br-ngCtgGByMPI3Npu41giJx/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-2",
+                                        desc: "Introduction to Electronics and Communication Engineering-1besc104c-204c module 2 notes",
+                                        link: "https://drive.google.com/file/d/1Gnai6Qen7K_BITySQER9RVRody4ANsc3/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-3",
+                                        desc: "Introduction to Electronics and Communication Engineering-1besc104c-204c module 3 notes",
+                                        link: "https://drive.google.com/file/d/1CqyVi5Tq19lZnGKWyA4vfl4Iu-S3hqrt/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-4 Notes-1",
+                                        desc: "Introduction to Electronics and Communication Engineering-1besc104c-204c module 4 notes",
+                                        link: "https://drive.google.com/file/d/1FQ1LUfPHJIwqLwmTI1t-0WG97nx10Hxt/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 6,
+                                        name: "Module-4 Notes-2",
+                                        desc: "Introduction to Electronics and Communication Engineering-1besc104c-204c module 4 notes",
+                                        link: "https://drive.google.com/file/d/1rHqgfGGqvQB2f6n-Zn2McVoaXipgdWGx/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 7,
+                                        name: "Module-5 Hand Written Notes",
+                                        desc: "Introduction to Electronics and Communication Engineering-1besc104c-204c module 5 notes",
+                                        link: "https://drive.google.com/file/d/1XwRl1C51AwPYC_-CPB3jJjYGu6T0t0Nh/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 8,
+                                        name: "Module-5 by SVIT",
+                                        desc: "Introduction to Electronics and Communication Engineering-1besc104c-204c module 5 notes by SVIT Banglore",
+                                        link: "https://drive.google.com/file/d/1zCw6oedPxBhytm4gqi5oGkuQIPXuPP_k/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 9,
+                                        name: "Module-5",
+                                        desc: "Introduction to Electronics and Communication Engineering-1besc104c-204c module 5 notes",
+                                        link: "https://drive.google.com/file/d/1W3sTBAxV5T9jEX14UDmUQGEZmVle3mBu/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+
+                                ]
                             }
                     ] },
                     { name: "C-Cycle vtu notes (25 Scheme)", slug: "c-cycle", subjects: [
