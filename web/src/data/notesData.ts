@@ -451,6 +451,42 @@ export const siteData: SiteData = {
                                     }
 
                                 ]
+                            },
+                            {
+                                name: "Problem Solving Through Programming",
+                                code: "1BPSP105",
+                                credits: "3 CR",
+                                slug: "problem-solving-through-programming-psp-1bpsp105-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Module-1",
+                                        desc: "Problem Solving Through Programming-1bpsp105 Module-1 Notes",
+                                        link: "https://drive.google.com/file/d/1jPr-H0Yya8C8SEQeOmuU8U3pUpAY-Dg2/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2",
+                                        desc: "Problem Solving Through Programming-1bpsp105 Module-2 Notes",
+                                        link: "https://drive.google.com/file/d/1PNDN6OJsc6PoSMXTX4AujhINM6X-8clT/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3",
+                                        desc: "Problem Solving Through Programming-1bpsp105 Module-3 Notes",
+                                        link: "https://drive.google.com/file/d/16FdnqXO21bDLtWnYK48y0XKWbxal5xFu/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-4",
+                                        desc: "Problem Solving Through Programming-1bpsp105 Module-4 Notes",
+                                        link: "https://drive.google.com/file/d/1KOXH2b8X4eNK4vU4oHhqqU1PUjdKc5A1/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+                                ]
                             }
                     ] },
                     { name: "C-Cycle vtu notes (25 Scheme)", slug: "c-cycle", subjects: [
@@ -645,7 +681,43 @@ export const siteData: SiteData = {
                                     type: "notes"
                                 }
                             ]
-                        }
+                        },
+                        {
+                               name: "INTRODUCTION TO MECHANICAL ENGINEERING",
+                                code: "1BESC104D/204D",
+                                credits: "3 CR",
+                                slug: "introduction-to-mechanical-engineering-ime-1BESC104D-204D-vtu-notes",
+                                modules: [
+                                    {
+                                    id: 1,
+                                    name: "Syllabus for INTRODUCTION TO MECHANICAL ENGINEERING-1BESC104D/204D",
+                                    desc: "",
+                                    link: "https://drive.google.com/file/d/1T-tx276X12UMIiDC4dDBLEfecDNd-wMi/view?usp=drive_link",
+                                    type: "syllabus"
+                                    },
+                                    {
+                                        id: 1,
+                                        name: "Module-1",
+                                        desc: "INTRODUCTION TO MECHANICAL ENGINEERING-1BESC104D/204D Module-1 Notes",
+                                        link: "https://drive.google.com/file/d/1r5JKA3J3FLUyMNbLTfR5ae_NBddZo9sa/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-2",
+                                        desc: "INTRODUCTION TO MECHANICAL ENGINEERING-1BESC104D/204D Module-2 Notes",
+                                        link: "https://drive.google.com/file/d/17UeyOCU62uBnBpqSCq7eErILyC0IT095/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-3",
+                                        desc: "INTRODUCTION TO MECHANICAL ENGINEERING-1BESC104D/204D Module-3 Notes",
+                                        link: "https://drive.google.com/file/d/1tcPyhRdyAAoPOvnhrg4N29_mCDypky6E/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+                                ] 
+                            }
                     ] }
                 ]
             },
