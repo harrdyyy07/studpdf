@@ -1033,7 +1033,13 @@ export const siteData: SiteData = {
                     ] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
                     { name: "Full Stack Development", code: "BIS601", credits: "3 CR", slug: "full-stack-development-fsd-bis601-vtu-notes", modules: [] },
-                    { name: "Blockchain Technology", code: "BCS613A", credits: "3 CR", slug: "blockchain-technology-bt-bcs613a-vtu-notes", modules: [] },
+                    { name: "Blockchain Technology", code: "BCS613A", credits: "3 CR", slug: "blockchain-technology-bt-bcs613a-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Blockchain Technology-bcs613a Module-1 notes", link: "https://drive.google.com/file/d/1wMETlVhRqOMdYFBgcibXQU18nLuXGyk1/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 notes", desc: "Blockchain Technology-bcs613a Module-2 notes", link: "https://drive.google.com/file/d/1UKfiLMdxk4DFnY_MxVmXw7OhLxlzqzdR/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 notes", desc: "Blockchain Technology-bcs613a Module-3 notes", link: "https://drive.google.com/file/d/1sw7BAS5c6kB3JqGw_5rsBFJq6sU9LSly/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 notes", desc: "Blockchain Technology-bcs613a Module-4 notes", link: "https://drive.google.com/file/d/1bblvNAGV9kWpNrnXfV0NkBeN9PVYfOwD/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 notes", desc: "Blockchain Technology-bcs613a Module-5 notes", link: "https://drive.google.com/file/d/1kmbrjTABN1W9SzPZlmvYudGb79EE_f66/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Computer Vision", code: "BCS613B", credits: "3 CR", slug: "computer-vision-cv-bcs613b-vtu-notes", modules: [] },
                     { name: "Compiler Design", code: "BCS613C", credits: "3 CR", slug: "compiler-design-cd-bcs613c-vtu-notes", modules: [] },
                     { name: "Advanced Java", code: "BCS613D", credits: "3 CR", slug: "advanced-java-aj-bcs613d-vtu-notes", modules: [] },
