@@ -1065,7 +1065,11 @@ export const siteData: SiteData = {
                         { id: 4, name: "Dec/Jan 2025 question paper Scheme of Evaluation", desc: "Dec/Jan 2025 question paper Scheme of Evaluation", link: "https://drive.google.com/file/d/1wGMuFz7PX6wwW8djyeETdMwONtO64wAI/view?usp=drive_link", type: "Scheme of Evaluation" },
                         { id: 5, name: "PYQP & MQP", desc: "Previous year question paper & Model question paper", link: "https://drive.google.com/file/d/1Tk1MlqDUbOnEXalQQbyXm_2AeBkxVvD9/view?usp=drive_link", type: "PYQP & MQP" },
                     ] },
-                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [] },
+                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [
+                        { id: 1, name: "EVS Complete Notes", desc: "Complete notes for EVS-besk508", link: "https://drive.google.com/file/d/1UEHjDdBI9BsYUsUtkRXuF714EGmfvNPv/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "EVS Question bank All Modules", desc: "Question bank for EVS-besk508", link: "https://drive.google.com/file/d/17eLPACpQyad8pywRFHo1DADw42FtdVDp/view?usp=drive_link", type: "question bank" },
+                        { id: 3, name: "EVS Model Question Paper", desc: "Model question paper for EVS-besk508", link: "https://drive.google.com/file/d/1UrNkB2kH694YIMo45UktaIPT2hEcEeBa/view?usp=drive_link", type: "MQP" }
+                    ] },
                     { name: "Data Visualization Lab", code: "BAIL504", credits: "1 CR", slug: "data-visualization-lab-dvl-bail504-vtu-notes", modules: [] }
                 ]
             },
@@ -1340,10 +1344,15 @@ export const siteData: SiteData = {
                             { id: 9, name: "Module 4: Notes", desc: "Notes for Module 4 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/117ZDYOIqOXBXtfNc9LQSZjCH1yIf226q/view?usp=drive_link", type: "Notes" },
                             { id: 10, name: "Module 5: Notes", desc: "Notes for Module 5 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/1WScqBzQelRuJbQinkMUS4PhJE4dXgBDo/view?usp=drive_link", type: "Notes" },
                     ] },   
-                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [] }
-                ]
-            },
-            {
+                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [
+                        { id: 1, name: "EVS Complete Notes", desc: "Complete notes for EVS-besk508", link: "https://drive.google.com/file/d/1UEHjDdBI9BsYUsUtkRXuF714EGmfvNPv/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "EVS Question bank All Modules", desc: "Question bank for EVS-besk508", link: "https://drive.google.com/file/d/17eLPACpQyad8pywRFHo1DADw42FtdVDp/view?usp=drive_link", type: "question bank" },
+                        { id: 3, name: "EVS Model Question Paper", desc: "Model question paper for EVS-besk508", link: "https://drive.google.com/file/d/1UrNkB2kH694YIMo45UktaIPT2hEcEeBa/view?usp=drive_link", type: "MQP" }
+                    ]
+                }
+            ]
+        },
+        {
                 sem: 6,
                 subjects: [
                     { name: "Embedded System Design", code: "BEC601", credits: "3 CR", slug: "embedded-system-design-esd-bec601-vtu-notes", modules: [
@@ -1470,7 +1479,7 @@ export const siteData: SiteData = {
                         { id: 8, name: "Module 4: Nature-Bio Inspired Materials and Mechanisms. (notes-2)", desc: "BBOK407 Module-4 Notes by SVIT", link: "https://drive.google.com/file/d/1e81Ew-svatK4-Bo87i0N9v42tz2GbQ0P/view?usp=drive_link", type: "Notes" },
                         { id: 9, name: "Module 5: Trends in bioengineering (notes-1)", desc: "BBOK407 Module-5 Notes by RV Institute of Technology and Management", link: "https://drive.google.com/file/d/12fcJyfZwsEDQt16kOS_XY6CIfCF-owhh/view?usp=drive_link", type: "Notes" },
                         { id: 10, name: "Module 5: Trends in bioengineering (notes-2)", desc: "BBOK407 Module-5 Notes by SVIT", link: "https://drive.google.com/file/d/1tDH7DjIKKzcvs6Vd7qnWK-2Lb9pa9wcj/view?usp=drive_link", type: "Notes" },
-                        { id: 11, name: "bbok407 QUESTION BANK", desc: "bbok407 QUESTION BANK", link: "https://drive.google.com/file/d/12pDGS24Y3vuPQs6tk5GpHztaMxYZtZhf/view?usp=drive_linkn", type: "question bank" },
+                        { id: 11, name: "bbok407 QUESTION BANK", desc: "bbok407 QUESTION BANK", link: "https://drive.google.com/file/d/12pDGS24Y3vuPQs6tk5GpHztaMxYZtZhf/view?usp=drive_linkn", type: "question bank" }
                     ] },
                     { name: "Universal Human Values", code: "BUHK408", credits: "1 CR", slug: "universal-human-values-uhv-buhk408-vtu-notes", modules: [] },
                     { name: "Basics of VHDL Lab", code: "BEEL456A", credits: "1 CR", slug: "basics-of-vhdl-lab-bvl-beel456a-vtu-notes", modules: [] },
@@ -1496,9 +1505,13 @@ export const siteData: SiteData = {
                             { id: 7, name: "Module 2: Notes", desc: "Notes for Module 2 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/10ip6yTP22Mm1asXjPhfDzl3N5TMhu40-/view?usp=drive_link", type: "Notes" },
                             { id: 8, name: "Module 3: Notes", desc: "Notes for Module 3 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/116h8OALGr6Bov6pDYtwD5DVEDAXzC8xo/view?usp=drive_link", type: "Notes" },
                             { id: 9, name: "Module 4: Notes", desc: "Notes for Module 4 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/117ZDYOIqOXBXtfNc9LQSZjCH1yIf226q/view?usp=drive_link", type: "Notes" },
-                            { id: 10, name: "Module 5: Notes", desc: "Notes for Module 5 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/1WScqBzQelRuJbQinkMUS4PhJE4dXgBDo/view?usp=drive_link", type: "Notes" },
+                            { id: 10, name: "Module 5: Notes", desc: "Notes for Module 5 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/1WScqBzQelRuJbQinkMUS4PhJE4dXgBDo/view?usp=drive_link", type: "Notes" }
                     ] },
-                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [] },
+                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [
+                        { id: 1, name: "EVS Complete Notes", desc: "Complete notes for EVS-besk508", link: "https://drive.google.com/file/d/1UEHjDdBI9BsYUsUtkRXuF714EGmfvNPv/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "EVS Question bank All Modules", desc: "Question bank for EVS-besk508", link: "https://drive.google.com/file/d/17eLPACpQyad8pywRFHo1DADw42FtdVDp/view?usp=drive_link", type: "question bank" },
+                        { id: 3, name: "EVS Model Question Paper", desc: "Model question paper for EVS-besk508", link: "https://drive.google.com/file/d/1UrNkB2kH694YIMo45UktaIPT2hEcEeBa/view?usp=drive_link", type: "MQP" }
+                    ] },
                     { name: "High Voltage Engineering", code: "BEE515A", credits: "3 CR", slug: "high-voltage-engineering-hve-bee515a-vtu-notes", modules: [] },
                     { name: "Power Electronics for Renewable Energy Systems", code: "BEE515B", credits: "3 CR", slug: "power-electronics-for-renewable-energy-systems-peres-bee515b-vtu-notes", modules: [] },
                     { name: "Electric Vehicle Fundamentals", code: "BEE515C", credits: "3 CR", slug: "electric-vehicle-fundamentals-evf-bee515c-vtu-notes", modules: [] },
@@ -1605,7 +1618,11 @@ export const siteData: SiteData = {
                             { id: 9, name: "Module 4: Notes", desc: "Notes for Module 4 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/117ZDYOIqOXBXtfNc9LQSZjCH1yIf226q/view?usp=drive_link", type: "Notes" },
                             { id: 10, name: "Module 5: Notes", desc: "Notes for Module 5 by Dr. Suresha V, Professor, Dept. of E&C. K V G C E, Sullia", link: "https://drive.google.com/file/d/1WScqBzQelRuJbQinkMUS4PhJE4dXgBDo/view?usp=drive_link", type: "Notes" },
                     ] },
-                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [] }
+                    { name: "Environmental Studies", code: "BESK508", credits: "1 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [
+                        { id: 1, name: "EVS Complete Notes", desc: "Complete notes for EVS-besk508", link: "https://drive.google.com/file/d/1UEHjDdBI9BsYUsUtkRXuF714EGmfvNPv/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "EVS Question bank All Modules", desc: "Question bank for EVS-besk508", link: "https://drive.google.com/file/d/17eLPACpQyad8pywRFHo1DADw42FtdVDp/view?usp=drive_link", type: "question bank" },
+                        { id: 3, name: "EVS Model Question Paper", desc: "Model question paper for EVS-besk508", link: "https://drive.google.com/file/d/1UrNkB2kH694YIMo45UktaIPT2hEcEeBa/view?usp=drive_link", type: "MQP" }
+                    ] }
                 ]
             },
             {
@@ -1637,4 +1654,3 @@ export const siteData: SiteData = {
         semesters: []
     }
 };
-;
