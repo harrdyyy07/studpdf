@@ -1370,7 +1370,8 @@ export const siteData: SiteData = {
                         { id: 9, name: "VLSI Solved model question paper", desc: "VLSI Solved model question paper", link: "https://drive.google.com/file/d/1dRfHqHrxM5Fug3uMbFN30PRcp29NKTmK/view?usp=drive_link", type: "solved mqp" },
                     ] },
                     { name: "VLSI Design and Testing Lab", code: "BECL606", credits: "1 CR", slug: "vlsi-design-and-testing-lab-vdtl-becl606-vtu-lab-manual", modules: [
-                        { id: 1, name: "VLSI Design and Testing Lab Manual", desc: "VLSI Design and Testing Lab Manual by SJC Institute of Technology, Chickballapur", link: "https://drive.google.com/file/d/1GE7yNse9F3raZ8qUNdkaGQGa6PSABS_w/view?usp=drive_link", type: "lab-manual" },
+                        { id: 1, name: "VLSI Design and Testing Lab Manual", desc: "VLSI Design and Testing Lab Manual", link: "https://drive.google.com/file/d/1Fc8sDzfypq4LalAvFTnch8nK3OXSPOZN/view?usp=drive_link", type: "lab-manual" },
+                        { id: 2, name: "VLSI Design and Testing Lab Manual", desc: "VLSI Design and Testing Lab Manual by SJC Institute of Technology, Chickballapur", link: "https://drive.google.com/file/d/1GE7yNse9F3raZ8qUNdkaGQGa6PSABS_w/view?usp=drive_link", type: "lab-manual" },
                     ] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
                     { name: "Multimedia Communication", code: "BEC613A", credits: "3 CR", slug: "multimedia-communication-mmc-bec613a-vtu-notes", modules: [
