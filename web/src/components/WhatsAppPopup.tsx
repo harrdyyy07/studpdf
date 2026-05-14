@@ -10,12 +10,14 @@ const WhatsAppPopup = () => {
     useEffect(() => {
         setHasMounted(true);
         
-        // Check if the user has already joined or dismissed recently
-        const dismissedAt = localStorage.getItem('whatsapp_popup_dismissed');
-        const now = new Date().getTime();
+        // Check if the user has already joined (Permanent)
+        const isJoined = localStorage.getItem('whatsapp_joined') === 'true';
         
-        // Show if not dismissed or dismissed more than 3 days ago
-        if (!dismissedAt || (now - parseInt(dismissedAt)) > 3 * 24 * 60 * 60 * 1000) {
+        // Check if the user has dismissed it in THIS session (Temporary)
+        const dismissedInSession = sessionStorage.getItem('whatsapp_popup_dismissed_session') === 'true';
+        
+        // Show if they haven't joined AND haven't dismissed it in this session
+        if (!isJoined && !dismissedInSession) {
             const timer = setTimeout(() => {
                 setIsVisible(true);
                 document.body.classList.add('no-scroll');
@@ -33,11 +35,18 @@ const WhatsAppPopup = () => {
         window.open("https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X", "_blank");
     };
 
+    const handleContinue = () => {
+        setIsVisible(false);
+        document.body.classList.remove('no-scroll');
+        // If they click continue, we assume they joined and we won't show it again (Permanent)
+        localStorage.setItem('whatsapp_joined', 'true');
+    };
+
     const closePopup = () => {
         setIsVisible(false);
         document.body.classList.remove('no-scroll');
-        // Save dismissal time to localStorage
-        localStorage.setItem('whatsapp_popup_dismissed', new Date().getTime().toString());
+        // Save dismissal for THIS session only
+        sessionStorage.setItem('whatsapp_popup_dismissed_session', 'true');
     };
 
     if (!hasMounted || !isVisible) return null;
@@ -79,7 +88,7 @@ const WhatsAppPopup = () => {
                     
                     {hasJoined && (
                         <button 
-                            onClick={closePopup}
+                            onClick={handleContinue}
                             className="whatsapp-continue-btn"
                         >
                             I have joined, Continue to Site
