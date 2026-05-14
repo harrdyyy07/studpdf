@@ -1435,7 +1435,13 @@ export const siteData: SiteData = {
             {
                 sem: 3,
                 subjects: [
-                    { name: "Engineering Mathematics for EEE", code: "BEE301", credits: "4 CR", slug: "engineering-mathematics-for-eee-em-bee301-vtu-notes", modules: [] },
+                    { name: "Engineering Mathematics for EEE", code: "BEE301", credits: "4 CR", slug: "engineering-mathematics-for-eee-em-bee301-vtu-notes", modules: [
+                        { id: 1, name: "Bee301 Module-1 Handwritten Notes", desc: "Bee301 Module-1 Handwritten Notes", link: "https://drive.google.com/file/d/1t9Er6dB6WRnOpiFHtMJ7oN2geJyl7sZX/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Bee301 Module-2 Handwritten Notes", desc: "Bee301 Module-2 Handwritten Notes", link: "https://drive.google.com/file/d/1b3pc0I3BHI108KN5lr6efzm-xQpWilZD/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Bee301 Module-3 Handwritten Notes", desc: "Bee301 Module-3 Handwritten Notes", link: "https://drive.google.com/file/d/1lNmR4NuCrBTmm5AXUZtgUrnSqfJTO4kN/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Bee301 Module-4 Handwritten Notes", desc: "Bee301 Module-4 Handwritten Notes", link: "https://drive.google.com/file/d/1LFK1J9d7IFin-AV0abmdYHmdB9z6Ecs5/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Bee301 Module-5 Handwritten Notes", desc: "Bee301 Module-5 Handwritten Notes", link: "https://drive.google.com/file/d/1tBdgArJGRVFomQ6aAG-BQu19rNqYDshn/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Electric Circuit Analysis", code: "BEE302", credits: "4 CR", slug: "electric-circuit-analysis-eca-bee302-vtu-notes", modules: [] },
                     { name: "Analog Electronic Circuits", code: "BEE303", credits: "4 CR", slug: "analog-electronic-circuits-aec-bee303-vtu-notes", modules: [] },
                     { name: "Transformers and Generators", code: "BEE304", credits: "4 CR", slug: "transformers-and-generators-tg-bee304-vtu-notes", modules: [] },
@@ -1521,7 +1527,17 @@ export const siteData: SiteData = {
             {
                 sem: 6,
                 subjects: [
-                    { name: "Power System Analysis - I", code: "BEE601", credits: "4 CR", slug: "power-system-analysis-i-psa1-bee601-vtu-notes", modules: [] },
+                    { name: "Power System Analysis - I", code: "BEE601", credits: "4 CR", slug: "power-system-analysis-i-psa1-bee601-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 PSA-I ", desc: "Module-1 Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/12eMAiqii_w5odJVPSXLWeqZ_IR02JD2L/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-1 Handwritten Notes PSA-I ", desc: "Module-1 Handwritten Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/1VwA-JifaAqZFTlcdf2XsnlVYDn4fGhSP/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-2 PSA-I ", desc: "Module-2 Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/1TQqugWLDem7QJSTFv7Dj96y7Etsn3YyH/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-2 Handwritten Notes PSA-I ", desc: "Module-2 Handwritten Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/1Zt1it5R3YsowSfLHH4EeBiLmFudsvko2/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-3 PSA-I ", desc: "Module-3 Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/1Ld1Wk-EeqWdupvHtDWrajdz_OwbHO4Iy/view?usp=drive_link", type: "notes" },
+                        { id: 6, name: "Module-3 Handwritten Notes PSA-I ", desc: "Module-3 Handwritten Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/15-7CxDUbp2e4ftqb4TII5DrvtSTPnfLt/view?usp=drive_link", type: "notes" },
+                        { id: 7, name: "Module-4 PSA-I ", desc: "Module-4 Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/1A9YKhA6_T-xmkrzfgWgDqAFX4FlMlxsu/view?usp=drive_link", type: "notes" },
+                        { id: 8, name: "Module-5 PSA-I ", desc: "Module-5 Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/1zRPHXorVwlxJJj92Wpyc6Yc8CK8IbRPN/view?usp=drive_link", type: "notes" },
+                        { id: 9, name: "Module-5 Handwritten Notes PSA-I ", desc: "Module-5 Handwritten Notes for Power System Analysis - I", link: "https://drive.google.com/file/d/1nPdZGlvWvr4e4RJAuRy1XXBLZNsX94Xf/view?usp=drive_link", type: "notes" },
+                    ] },
                     { name: "Control Systems", code: "BEE602", credits: "4 CR", slug: "control-systems-cs-bee602-vtu-notes", modules: [] },
                     { name: "Control System Lab", code: "BEEL606", credits: "1 CR", slug: "control-system-lab-csl-beel606-vtu-notes", modules: [] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
@@ -1542,7 +1558,65 @@ export const siteData: SiteData = {
             }
         ]
     },
-    mech: { title: "Mechanical Engineering", semesters: [] },
+    mech: { title: "Mechanical Engineering", semesters: [
+        {
+            sem: 3,
+            subjects: [
+                { name: "Mechanics of Materials", code: "BME301", credits: "3 CR", slug: "mechanics-of-materials-mom-bme301-vtu-notes", modules: [] },
+                { name: "Manufacturing Process", code: "BME302", credits: "4 CR", slug: "manufacturing-process-mp-bme302-vtu-notes", modules: [] },
+                { name: "Material Science and Engineering", code: "BME303", credits: "4 CR", slug: "material-science-and-engineering-mse-bme303-vtu-notes", modules: [] },
+                { name: "Basic Thermodynamics", code: "BME304", credits: "3 CR", slug: "basic-thermodynamics-bt-bme304-vtu-notes", modules: [] },
+                { name: "Introduction to Modelling and Design for Manufacturing (Lab)", code: "BME305", credits: "1 CR", slug: "introduction-to-modelling-and-design-for-manufacturing-lab-imdm-bme305-vtu-labmanual", modules: [] },
+                { name: "Electrical And Hybrid Vehicle Technology", code: "BME306A", credits: "3 CR", slug: "electrical-and-hybrid-vehicle-technology-ehvt-bme306a-vtu-notes", modules: [] },
+                { name: "Smart Materials and Systems", code: "BME306B", credits: "3 CR", slug: "smart-materials-and-systems-sms-bme306b-vtu-notes", modules: [] },
+                { name: "Internet of Things", code: "BME306C", credits: "3 CR", slug: "internet-of-things-iot-bme306c-vtu-notes", modules: [] },
+                { name: "Social Connect and Responsibility", code: "BSCK307", credits: "1 CR", slug: "social-connect-and-responsibility-scr-bsck307-vtu-notes", modules: [] },
+                { name: "Yoga", code: "BYOK359", credits: "0 CR", slug: "yoga-byok359-vtu-notes", modules: [] }
+            ]
+        },
+        {
+            sem: 4,
+            subjects: [
+                { name: "Applied Thermodynamics", code: "BME401", credits: "3 CR", slug: "applied-thermodynamics-at-bme401-vtu-notes", modules: [] },
+                { name: "Machining Science & Metrology", code: "BME402", credits: "4 CR", slug: "machining-science-metrology-msm-bme402-vtu-notes", modules: [] },
+                { name: "Fluid Mechanics", code: "BME403", credits: "4 CR", slug: "fluid-mechanics-fm-bme403-vtu-notes", modules: [] },
+                { name: "Mechanical Measurements and Metrology Lab", code: "BME404", credits: "1 CR", slug: "mechanical-measurements-and-metrology-lab-mmml-bme404-vtu-notes", modules: [] },
+                { name: "ESC / ETC / PLC (Elective)", code: "BME405x", credits: "3 CR", slug: "esc-etc-plc-elective-bme405x-vtu-notes", modules: [] },
+                { name: "Ability / Skill Enhancement Course – IV", code: "BME456x", credits: "1 CR", slug: "ability-skill-enhancement-course-iv-asec-bme456x-vtu-notes", modules: [] },
+                { name: "Biology for Engineers", code: "BBOK407", credits: "3 CR", slug: "biology-for-engineers-bfe-bbok407-vtu-notes", modules: [] },
+                { name: "Universal Human Values", code: "BUHK408", credits: "1 CR", slug: "universal-human-values-uhv-buhk408-vtu-notes", modules: [] },
+                { name: "NSS / Physical Education / Yoga", code: "BNSK459", credits: "0 CR", slug: "nss-physical-education-yoga-nss-bnsk459-vtu-notes", modules: [] }
+            ]
+        },
+        {
+            sem: 5,
+            subjects: [
+                { name: "Industrial Management & Entrepreneurship", code: "BME501", credits: "3 CR", slug: "industrial-management-entrepreneurship-ime-bme501-vtu-notes", modules: [] },
+                { name: "Turbo Machines", code: "BME502", credits: "4 CR", slug: "turbo-machines-tm-bme502-vtu-notes", modules: [] },
+                { name: "Theory of Machines", code: "BME503", credits: "4 CR", slug: "theory-of-machines-tom-bme503-vtu-notes", modules: [] },
+                { name: "CNC Programming and 3D Printing Lab", code: "BME504", credits: "1 CR", slug: "cnc-programming-and-3d-printing-lab-cnc-bme504-vtu-notes", modules: [] },
+                { name: "Professional Elective – I", code: "BME515x", credits: "3 CR", slug: "professional-elective-i-pe1-bme515x-vtu-notes", modules: [] },
+                { name: "Mini Project", code: "BME586", credits: "2 CR", slug: "mini-project-mp-bme586-vtu-notes", modules: [] },
+                { name: "Research Methodology & IPR", code: "BRMK557", credits: "3 CR", slug: "research-methodology-ipr-rmipr-brmk557-vtu-notes", modules: [] },
+                { name: "Environmental Studies", code: "BESK508", credits: "2 CR", slug: "environmental-studies-es-besk508-vtu-notes", modules: [] },
+                { name: "NSS / Physical Education / Yoga", code: "BNSK559", credits: "0 CR", slug: "nss-physical-education-yoga-nss-bnsk559-vtu-notes", modules: [] }
+            ]
+        },
+        {
+            sem: 6,
+            subjects: [
+                { name: "Heat Transfer", code: "BME601", credits: "4 CR", slug: "heat-transfer-ht-bme601-vtu-notes", modules: [] },
+                { name: "Machine Design", code: "BME602", credits: "4 CR", slug: "machine-design-md-bme602-vtu-notes", modules: [] },
+                { name: "Professional Elective – II", code: "BME613x", credits: "3 CR", slug: "professional-elective-ii-pe2-bme613x-vtu-notes", modules: [] },
+                { name: "Open Elective – I", code: "BME654x", credits: "3 CR", slug: "open-elective-i-oe1-bme654x-vtu-notes", modules: [] },
+                { name: "Major Project Phase – I", code: "BME685", credits: "2 CR", slug: "major-project-phase-i-mpp1-bme685-vtu-notes", modules: [] },
+                { name: "Design Lab", code: "BMEL606", credits: "1 CR", slug: "design-lab-dl-bmel606-vtu-notes", modules: [] },
+                { name: "Ability / Skill Enhancement Course – V", code: "BME657x", credits: "1 CR", slug: "ability-skill-enhancement-course-v-asec-bme657x-vtu-notes", modules: [] },
+                { name: "NSS / Physical Education / Yoga", code: "BNSK658", credits: "0 CR", slug: "nss-physical-education-yoga-nss-bnsk658-vtu-notes", modules: [] },
+                { name: "Indian Knowledge System", code: "BIKS609", credits: "0 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] }
+            ]
+        }
+    ] },
     civil: {
         title: "Civil Engineering",
         semesters: [
