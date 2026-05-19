@@ -1134,7 +1134,14 @@ export const siteData: SiteData = {
                          { id: 2, name: "bcs606 Machine Learning Lab manual", desc: "Machine Learning Lab-bcsl606 Lab Manual by CIT,Gubbi.", link: "https://drive.google.com/file/d/1eDNHL2R1AsiHAQ52FiyUpSIFlE3NDQVw/view?usp=drive_link", type: "labmanual" },
                     ] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
-                    { name: "Full Stack Development", code: "BIS601", credits: "3 CR", slug: "full-stack-development-fsd-bis601-vtu-notes", modules: [] },
+                    { name: "Full Stack Development", code: "BIS601", credits: "3 CR", slug: "full-stack-development-fsd-bis601-vtu-notes", modules: [
+                        {id: 1, name: "Module-1 notes", desc: "Full Stack Development-bis601 Module-1 notes", link: "https://drive.google.com/file/d/1l89e8Okw0S3x0UU39A53pAlkgGl_PhYH/view?usp=drive_link", type: "notes" },
+                        {id: 2, name: "Module-2 notes", desc: "Full Stack Development-bis601 Module-2 notes", link: "https://drive.google.com/file/d/1l7FDAbv-_IOusN02X5nlkJJfpM-PKRKT/view?usp=drive_link", type: "notes" },
+                        {id: 3, name: "Module-3 notes", desc: "Full Stack Development-bis601 Module-3 notes", link: "https://drive.google.com/file/d/1aQshqm8m03nHVtddg6A0qUGkUR5KP5nl/view?usp=drive_link", type: "notes" },
+                        {id: 4, name: "Module-4 notes", desc: "Full Stack Development-bis601 Module-4 notes", link: "https://drive.google.com/file/d/1CrqQf31e58OX4jTGPQyl32T5yypvLrr9/view?usp=drive_link", type: "notes" },
+                        {id: 5, name: "Module-5 notes", desc: "Full Stack Development-bis601 Module-5 notes", link: "https://drive.google.com/file/d/128HOUGQ8Rdn8Uw_OzCAkjUJZ_tXzBvAq/view?usp=drive_link", type: "notes" },
+                        {id: 6, name: "bis601 Lab Manual", desc: "Full Stack Development-bis601 Lab Manual", link: "https://drive.google.com/file/d/1fKfby_TaOiV4Xki1-C9-wdnh2FGxhgM0/view?usp=drive_link", type: "labmanual" },
+                    ] },
                     { name: "Blockchain Technology", code: "BCS613A", credits: "3 CR", slug: "blockchain-technology-bt-bcs613a-vtu-notes", modules: [
                         { id: 1, name: "Module-1 notes", desc: "Blockchain Technology-bcs613a Module-1 notes", link: "https://drive.google.com/file/d/1wMETlVhRqOMdYFBgcibXQU18nLuXGyk1/view?usp=drive_link", type: "notes" },
                         { id: 2, name: "Module-2 notes", desc: "Blockchain Technology-bcs613a Module-2 notes", link: "https://drive.google.com/file/d/1UKfiLMdxk4DFnY_MxVmXw7OhLxlzqzdR/view?usp=drive_link", type: "notes" },
@@ -1142,7 +1149,13 @@ export const siteData: SiteData = {
                         { id: 4, name: "Module-4 notes", desc: "Blockchain Technology-bcs613a Module-4 notes", link: "https://drive.google.com/file/d/1bblvNAGV9kWpNrnXfV0NkBeN9PVYfOwD/view?usp=drive_link", type: "notes" },
                         { id: 5, name: "Module-5 notes", desc: "Blockchain Technology-bcs613a Module-5 notes", link: "https://drive.google.com/file/d/1kmbrjTABN1W9SzPZlmvYudGb79EE_f66/view?usp=drive_link", type: "notes" }
                     ] },
-                    { name: "Computer Vision", code: "BCS613B", credits: "3 CR", slug: "computer-vision-cv-bcs613b-vtu-notes", modules: [] },
+                    { name: "Computer Vision", code: "BCS613B", credits: "3 CR", slug: "computer-vision-cv-bcs613b-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "Module-1 Notes for Computer Vision", link: "https://drive.google.com/file/d/1xDfBJgnZlck7TbnuzS16Io9LMKjz2o-4/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "Module-2 Notes for Computer Vision", link: "https://drive.google.com/file/d/1we6wO0cF6UKoTdXFEASoNiTjC4Gk5RTf/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "Module-3 Notes for Computer Vision", link: "https://drive.google.com/file/d/1KY-i-L7kZwlX1BKjR93CfYSc3ffaEedy/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "Module-4 Notes for Computer Vision", link: "https://drive.google.com/file/d/1_QFh_DOekoatBSENlSzltUkpVlu5jHmR/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "Module-5 Notes for Computer Vision", link: "https://drive.google.com/file/d/15J_dSMxBRarXF5CDTpVxs23GQsPZ5qVo/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Compiler Design", code: "BCS613C", credits: "3 CR", slug: "compiler-design-cd-bcs613c-vtu-notes", modules: [
                         { id: 1, name: "Module-1 Notes", desc: "Module-1 Notes for Compiler Design", link: "https://drive.google.com/file/d/1MtoM3n199O9AQf5ELsRDLTexcF1KIyYP/view?usp=drive_link", type: "notes" },
                         { id: 2, name: "Module-2 Notes", desc: "Module-2 Notes for Compiler Design", link: "https://drive.google.com/file/d/1WErTs78gZp2befcmKc3S589lf5Gauwe6/view?usp=drive_link", type: "notes" },
@@ -1181,6 +1194,21 @@ export const siteData: SiteData = {
                     { name: "React", code: "BCSL657B", credits: "1 CR", slug: "react-react-bcsl657b-vtu-notes", modules: [] },
                     { name: "Generative AI", code: "BAIL657C", credits: "1 CR", slug: "generative-ai-gai-bail657c-vtu-notes", modules: [] },
                     { name: "Devops", code: "BCSL657D", credits: "1 CR", slug: "devops-devops-bcsl657d-vtu-notes", modules: [] }
+                ]
+                
+            },
+            {
+                sem: 7,
+                subjects: [
+                    { name: "Internet of Things", code: "BCS701", credits: "4 CR", slug: "internet-of-things-iot-bcs701-vtu-notes", modules: [
+                        
+                    ] },
+                    { name: "Parallel Computing", code: "BCS702", credits: "3 CR", slug: "parallel-computing-pc-bcs702-vtu-notes", modules: [] },
+                    { name: "Cryptography & Network Security", code: "BCS703", credits: "3 CR", slug: "cryptography-network-security-cns-bcs703-vtu-notes", modules: [] },
+                    { name: "Deep Learning", code: "BCS714A ", credits: "3 CR", slug: "deep-learning-dl-bcs714a-vtu-notes", modules: [] },
+                    { name: "Natural Language Processing", code: "BCS714B", credits: "3 CR", slug: "natural-language-processing-nlp-bcs714b-vtu-notes", modules: [] },
+                    { name: "Big Data Analytics", code: "BCS714D", credits: "3 CR", slug: "advanced-algorithms-aa-bcs714b-vtu-notes", modules: [] },
+                    { name: "SOFTWARE ENGINEERING AND PROJECT MANAGEMENT", code: "BCS755C", credits: "3 CR", slug: "software-engineering-and-project-management-bcs755c-vtu-notes", modules: [] }
                 ]
             }
         ]
@@ -1330,8 +1358,23 @@ export const siteData: SiteData = {
             {
                 sem: 5,
                 subjects: [
-                    { name: "Technological Innovation and Management Entrepreneurship", code: "BEC501", credits: "3 CR", slug: "technological-innovation-and-management-entrepreneurship-time-bec501-vtu-notes", modules: [] },
-                    { name: "Digital Signal Processing", code: "BEC502", credits: "4 CR", slug: "digital-signal-processing-dsp-bec502-vtu-notes", modules: [] },
+                    { name: "Technological Innovation and Management Entrepreneurship", code: "BEC501", credits: "3 CR", slug: "technological-innovation-and-management-entrepreneurship-time-bec501-vtu-notes", modules: [
+                        { id: 1, name: "Module 1: Notes-1", desc: "TIME -BEC501 Module 1 Notes", link: "https://drive.google.com/file/d/1wnUmmRFyWaSkXEaZyBlp0Sl3TsBOl7VN/view?usp=drive_link", type: "Notes" },
+                        { id: 2, name: "Module 1: Notes-2", desc: "TIME -BEC501 Module 1 Notes", link: "https://drive.google.com/file/d/1m7YGJUO50H7cBdEo49a-lIJ7-7bQQa7q/view?usp=drive_link", type: "Notes" },
+                        { id: 3, name: "Module 2: Notes-1", desc: "TIME -BEC501 Module 2 Notes", link: "https://drive.google.com/file/d/1Alb8qq4clJfFwrcjBTQ25pNutkGIPsBb/view?usp=drive_link", type: "Notes" },
+                        { id: 4, name: "Module 2: Notes-2", desc: "TIME -BEC501 Module 2 Notes", link: "https://drive.google.com/file/d/14nXb3O0ESH8UcnTg-oqHZmzKRRJO_46J/view?usp=drive_link", type: "Notes" },
+                        { id: 5, name: "Module 3: Notes", desc: "TIME -BEC501 Module 3 Notes", link: "https://drive.google.com/file/d/1zcuohDZCSmV-jLMS6saNtvD_8QBHrlwI/view?usp=drive_link", type: "Notes" },
+                        { id: 6, name: "Module 4: Notes", desc: "TIME -BEC501 Module 4 Notes", link: "https://drive.google.com/file/d/1QsZ6oo7NAMMMoCfEPllyjCC9fFDlOy8G/view?usp=drive_link", type: "Notes" },
+                        { id: 7, name: "Module 5: Notes", desc: "TIME -BEC501 Module 5 Notes", link: "https://drive.google.com/file/d/1H-8M2AYnpXcplzl735nFz7dQEkkCgX9u/view?usp=drive_link", type: "Notes" }
+                    ] },
+                    { name: "Digital Signal Processing", code: "BEC502", credits: "4 CR", slug: "digital-signal-processing-dsp-bec502-vtu-notes", modules: [
+                        { id: 1, name: "DSP Module 1 and 2 Merged Notes", desc: "DSP -BEC502 Module 1 and 2 Merged Notes", link: "https://drive.google.com/file/d/1Y5Moc9fzmL-x_HzQOmHMKQdgdv2J1nXt/view?usp=drive_link", type: "Notes" },
+                        { id: 1, name: "Module 1: Handwritten Notes", desc: "DSP -BEC502 notes for Module 1", link: "https://drive.google.com/file/d/1GyMhysUTk84c8m9I1fBF6g4XYPSuxErw/view?usp=drive_link", type: "Notes" },
+                        { id: 2, name: "Module 2: Handwritten Notes", desc: "DSP -BEC502 notes for Module 2", link: "https://drive.google.com/file/d/1QTAzBGcHYNOvPHmiDOPRvtDT4KrRpKWY/view?usp=drive_link", type: "Notes" },
+                        { id: 3, name: "Module 3: Handwritten Notes", desc: "DSP -BEC502 notes for Module 3", link: "https://drive.google.com/file/d/1HgpNWvh0KwxVupZLnJLfrpwm-UYBz3vx/view?usp=drive_link", type: "Notes" },
+                        { id: 4, name: "Module 4: Handwritten Notes", desc: "DSP -BEC502 notes for Module 4", link: "https://drive.google.com/file/d/1asm2dmYOXxo2upCvOooSvtHFNpla8V0g/view?usp=drive_link", type: "Notes" },
+                        { id: 5, name: "Module 5: Handwritten Notes", desc: "DSP -BEC502 notes for Module 5", link: "https://drive.google.com/file/d/1NW6y9cEQOzOHpRkLSx9uKPCJJ8u2oDpF/view?usp=drive_link", type: "Notes" }
+                    ] },
                     { name: "Digital Communication", code: "BEC503", credits: "3 CR", slug: "digital-communication-dc-bec503-vtu-notes", modules: [
                          { id: 1, name: "Module 1: Handwritten Notes-1", desc: "Handwritten notes for Module 1 Notes-1", link: "https://drive.google.com/file/d/1MiHXJLH_OeBXTM42CU6zAmNsYYul3giv/view?usp=drive_link", type: "Notes" },
                          { id: 2, name: "Module 1: Handwritten Notes-2", desc: "Handwritten notes for Module 1 Notes-2", link: "https://drive.google.com/file/d/1qN_qBCPmdpB_WlEFFVGeTFEWOjrrhtuv/view?usp=drive_link", type: "Notes" },
@@ -1348,9 +1391,16 @@ export const siteData: SiteData = {
                     { name: "Digital Communication Lab", code: "BECL504", credits: "1 CR", slug: "digital-communication-lab-dcl-becl504-vtu-notes", modules: [
                         { id: 1, name: "Digital Communication Lab", desc: "Digital Communication Lab", link: "https://drive.google.com/file/d/1bed2xpW73St1pQD3rMqr7DB8PRaaPSZB/view?usp=drive_link", type: "Lab Manual" },
                     ] },
-                    { name: "Intelligent Systems and Machine Learning Algorithms", code: "BEC515A", credits: "3 CR", slug: "intelligent-systems-and-machine-learning-algorithms-ismla-bec515a-vtu-notes", modules: [] },
-                    { name: "Digital Switching and Finite Automata Theory", code: "BEC515B", credits: "3 CR", slug: "digital-switching-and-finite-automata-theory-dsfat-bec515b-vtu-notes", modules: [] },
-                    { name: "Data Structure using C++", code: "BEC515C", credits: "3 CR", slug: "data-structure-using-c-plus-plus-dscpp-bec515c-vtu-notes", modules: [] },
+                    { name: "Intelligent Systems and Machine Learning Algorithms", code: "BEC515A", credits: "3 CR", slug: "intelligent-systems-and-machine-learning-algorithms-ismla-bec515a-vtu-notes", modules: [
+                        { id: 1, name: "ISMLA Complete Handwritten Notes", desc: "ISMLA -BEC515A Complete Handwritten Notes", link: "https://drive.google.com/file/d/156Iu_JEH0e5Fv8Mq9DSVUj9jp8buLL2K/view?usp=drive_link", type: "Notes" },
+
+                    ] },
+                    { name: "Digital Switching and Finite Automata Theory", code: "BEC515B", credits: "3 CR", slug: "digital-switching-and-finite-automata-theory-dsfat-bec515b-vtu-notes", modules: [
+                        {id: 1, name: "Textbook for BEC515B", desc: "Digital Switching and Finite Automata Theory-bec515b-textbook", link: "https://drive.google.com/file/d/1T5kgHdodD5vrhF7-P2pjRqZ2mE0DX0pP/view?usp=drive_link", type: "textbook"}
+                    ] },
+                    { name: "Data Structure using C++", code: "BEC515C", credits: "3 CR", slug: "data-structure-using-c-plus-plus-dscpp-bec515c-vtu-notes", modules: [
+                        { id: 1, name: "Complete Notes for BEC515C", desc: "Complete Notes for Data Structure using C++ - BEC515C", link: "https://drive.google.com/file/d/1nd5RH3kvrLvahF4vdpqJQ9wG7q0ZADza/view?usp=drive_link", type: "Notes" },
+                    ] },
                     { name: "Satellite and Optical Communication", code: "BEC515D", credits: "3 CR", slug: "satellite-and-optical-communication-soc-bec515d-vtu-notes", modules: [
                          { id: 1, name: "Module 1: Notes", desc: "Satellite Orbits and Trajectories (Module 1)", link: "https://drive.google.com/file/d/1hfOJr-1-fNCsfC8dEKytPZSbHYaNCs1N/view?usp=drive_link", type: "Notes" },
                             { id: 2, name: "Module 2: Notes", desc: "Satellite Subsystems (Module 2)", link: "https://drive.google.com/file/d/1HjPaMCq2v3DnWfFNj4wKh46PlFETrlBR/view?usp=drive_link", type: "Notes" },
@@ -1577,7 +1627,9 @@ export const siteData: SiteData = {
                         { id: 4, name: "Module-4 Control Systems", desc: "Module-4 Notes for Control Systems", link: "https://drive.google.com/file/d/13-LD-3J5ZuU2ffhubcNBP-PP-uwTCCsj/view?usp=drive_link", type: "notes" },
                         { id: 5, name: "Module-5 Control Systems", desc: "Module-5 Notes for Control Systems", link: "https://drive.google.com/file/d/19omgsj1BwWG4ssHPbzXaQOrCb0CadoiY/view?usp=drive_link", type: "notes" },
                     ] },
-                    { name: "Control System Lab", code: "BEEL606", credits: "1 CR", slug: "control-system-lab-csl-beel606-vtu-notes", modules: [] },
+                    { name: "Control System Lab", code: "BEEL606", credits: "1 CR", slug: "control-system-lab-csl-beel606-vtu-notes", modules: [
+                         {id: 1, name: "Lab Manual BEEL606", desc: "Lab Manual for Control System Lab -BEEL606", link: "https://drive.google.com/file/d/1EJ0kvQyF0C269wMEa3MlEPARaH-uDcp1/view?usp=drive_link", type: "labmanual" },
+                    ] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
                     { name: "Medium Voltage Substation Design", code: "BEE613A", credits: "3 CR", slug: "medium-voltage-substation-design-mvsd-bee613a-vtu-notes", modules: [] },
                     { name: "Embedded System Design", code: "BEE613B", credits: "3 CR", slug: "embedded-system-design-esd-bee613b-vtu-notes", modules: [] },
