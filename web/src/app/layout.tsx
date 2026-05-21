@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Script from "next/script";
 import Preloader from "@/components/Preloader";
 import WhatsAppPopup from "@/components/WhatsAppPopup";
+import WhatsAppFloating from "@/components/WhatsAppFloating";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -104,6 +105,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <WhatsAppPopup />
+        <WhatsAppFloating />
         <Footer />
       </body>
     </html>
