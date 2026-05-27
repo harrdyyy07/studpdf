@@ -1584,6 +1584,7 @@ export const siteData: SiteData = {
                             { id: 5, name: "Module-3 notes for BEC601 (Embedded System Design)", desc: "Module-3 notes for BEC601 (Embedded System Design) by AMTECE Mysuru", link: "https://drive.google.com/file/d/1QabyTmpVGnAHBNLiD_WfAlqvrTE5GIzY/view?usp=drive_link", type: "notes" },
                             { id: 6, name: "Module-4 notes for BEC601 (Embedded System Design)", desc: "Module-4 notes for BEC601 (Embedded System Design)", link: "https://drive.google.com/file/d/1EGiqSHXWF--txpeV5swkON1GIxYpoW51/view?usp=drive_link", type: "notes" },
                             { id: 7, name: "Module-5 notes for BEC601 (Embedded System Design)", desc: "Module-5 notes for BEC601 (Embedded System Design)", link: "https://drive.google.com/file/d/18nNUQ5UhfR4Wx-dptO1Dz98JBxCzzgdf/view?usp=drive_link", type: "notes" },
+                            { id: 8, name: "June/July 2026 Question Paper for BEC601 (Embedded System Design)", desc: "June/July 2026 Question Paper for BEC601 (Embedded System Design)", link: "https://drive.google.com/file/d/18nNUQ5UhfR4Wx-dptO1Dz98JBxCzzgdf/view?usp=drive_link", type: "Question Paper" },
                         ]
                     },
                     {
@@ -1967,7 +1968,13 @@ export const siteData: SiteData = {
                 sem: 6,
                 subjects: [
                     { name: "Design of RCC Structures", code: "BCV601", credits: "4 CR", slug: "design-of-rcc-structures-drs-bcv601-vtu-notes", modules: [] },
-                    { name: "Irrigation Engineering and Hydraulic Structures", code: "BCV602", credits: "4 CR", slug: "irrigation-engineering-and-hydraulic-structures-iehs-bcv602-vtu-notes", modules: [] },
+                    { name: "Irrigation Engineering and Hydraulic Structures", code: "BCV602", credits: "4 CR", slug: "irrigation-engineering-and-hydraulic-structures-iehs-bcv602-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes for BCV602", desc: "Notes for Module-1 of BCV602-Irrigation Engineering and Hydraulic Structures", link: "https://drive.google.com/file/d/1DyVEoCgW30y7fpZpN85fziajAmcUQyI4/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes for BCV602", desc: "Notes for Module-2 of BCV602-Irrigation Engineering and Hydraulic Structures", link: "https://drive.google.com/file/d/1zeEWqZSNrVu-R0emzlDE7Erdv8nBlWkW/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes for BCV602", desc: "Notes for Module-3 of BCV602-Irrigation Engineering and Hydraulic Structures", link: "https://drive.google.com/file/d/1_3w5JTO0nRBGqzCya8BzgbwWpgjP_4Vq/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes for BCV602", desc: "Notes for Module-4 of BCV602-Irrigation Engineering and Hydraulic Structures", link: "https://drive.google.com/file/d/1IP7JAjzJrptbSrhqg2gL6_DJqGqzOp0p/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes for BCV602", desc: "Notes for Module-5 of BCV602-Irrigation Engineering and Hydraulic Structures", link: "https://drive.google.com/file/d/1WVSUE6SOtotSYk0-9UpWQPezeCkKbe7i/view?usp=drive_link", type: "notes" },
+                    ] },
                     { name: "Software Application Lab", code: "BCVL606", credits: "1 CR", slug: "software-application-lab-sal-bcvl606-vtu-notes", modules: [] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
                     { name: "Design of Bridges", code: "BCV613A", credits: "3 CR", slug: "design-of-bridges-db-bcv613a-vtu-notes", modules: [] },
