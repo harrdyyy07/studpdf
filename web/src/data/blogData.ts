@@ -12,8 +12,292 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+
+{
+    id: "8",
+    slug: "resume-mistakes-that-reject-freshers",
+    title: "Resume Mistakes That Reject Freshers",
+    description: "Making small resume mistakes can cost you placements and internships. Learn the most common fresher resume errors and how to avoid them.",
+    date: "May 30, 2026",
+    readTime: "6 min read",
+    author: "vtuwise Team",
+    tag: "Placements",
+    imageBg: "linear-gradient(135deg, #232526, #414345)",
+    content: `
+        <p>Your resume is often the first impression you make on recruiters. Even if you have good skills, small mistakes in your resume can reduce your chances of getting shortlisted.</p>
+
+        <p>Many freshers lose opportunities because of avoidable resume errors. In this guide, we’ll look at the most common mistakes and how you can fix them.</p>
+
+        <h2>1. Using a Complicated Resume Design</h2>
+        <p>Many students use flashy templates with too many colors, graphics, or complex layouts. Recruiters usually prefer simple and clean resumes.</p>
+
+        <p><strong>Tip:</strong> Keep your resume professional, neat, and easy to read.</p>
+
+        <h2>2. Writing Long Paragraphs</h2>
+        <p>Recruiters spend only a few seconds scanning resumes. Large paragraphs make it difficult to quickly understand your profile.</p>
+
+        <p>Use:</p>
+
+        <ul>
+            <li>Bullet points</li>
+            <li>Short sentences</li>
+            <li>Clear headings</li>
+        </ul>
+
+        <h2>3. Adding Irrelevant Information</h2>
+        <p>Freshers often include unnecessary details like:</p>
+
+        <ul>
+            <li>Full home address</li>
+            <li>Irrelevant hobbies</li>
+            <li>School achievements unrelated to the job</li>
+        </ul>
+
+        <p>Focus on information that adds value to your profile.</p>
+
+        <h2>4. No Projects or Practical Work</h2>
+        <p>Companies want proof of your skills. A resume with only academic details looks weak.</p>
+
+        <p>Add:</p>
+
+        <ul>
+            <li>Mini projects</li>
+            <li>Internships</li>
+            <li>Certifications</li>
+            <li>Hackathons</li>
+            <li>Technical skills</li>
+        </ul>
+
+        <h2>5. Spelling & Grammar Mistakes</h2>
+        <p>Even small spelling mistakes can create a negative impression. It shows lack of attention to detail.</p>
+
+        <p>Always proofread your resume before sending it.</p>
+
+        <h2>6. Using the Same Resume for Every Job</h2>
+        <p>One common mistake is sending the same resume everywhere.</p>
+
+        <p>Different companies look for different skills. Customize your resume slightly based on the role you are applying for.</p>
+
+        <h2>7. Weak Career Objective</h2>
+        <p>Generic objectives like “Seeking a challenging position in a reputed company” are overused and boring.</p>
+
+        <p>Write a short and specific objective that matches your interests and skills.</p>
+
+        <h2>8. Poor Resume Formatting</h2>
+        <p>Bad spacing, inconsistent fonts, and cluttered sections make resumes look unprofessional.</p>
+
+        <p>Maintain:</p>
+
+        <ul>
+            <li>Consistent font sizes</li>
+            <li>Proper spacing</li>
+            <li>Clean alignment</li>
+            <li>Simple formatting</li>
+        </ul>
+
+        <h2>9. Fake Skills or Exaggeration</h2>
+        <p>Never mention skills you cannot explain in interviews. Recruiters can easily identify fake claims.</p>
+
+        <p>Be honest about your skill level and focus on continuous learning.</p>
+
+        <h2>10. Making the Resume Too Long</h2>
+        <p>For freshers, a one-page resume is usually enough.</p>
+
+        <p>Keep it concise and focus only on your strongest achievements and skills.</p>
+
+        <h2>Conclusion</h2>
+        <p>A good resume does not need fancy designs or complicated language. It should clearly show your skills, projects, and potential.</p>
+
+        <p>Avoid these common mistakes, keep improving your profile, and make your resume simple, clean, and professional.</p>
+
+        <p>Remember: Your resume is your first opportunity to impress recruiters—make it count.</p>
+    `
+},
+
     {
     id: "1",
+    slug: "is-cgpa-really-important",
+    title: "Is CGPA Really Important? The Truth Every Student Should Know",
+    description: "Wondering if CGPA really matters? Learn where CGPA helps, where skills matter more, and how to balance both for a successful career.",
+    date: "May 27, 2026",
+    readTime: "5 min read",
+    author: "vtuwise Team",
+    tag: "Career",
+    imageBg: "linear-gradient(135deg, #4b6cb7, #182848)",
+    content: `
+        <p>One of the most common questions students ask is: “Does CGPA really matter?” The answer is yes—but not always in the way people think.</p>
+
+        <p>CGPA is important in certain situations, but it is not the only factor that decides your future. Skills, projects, communication, and practical knowledge also play a huge role in career success.</p>
+
+        <h2>1. CGPA Matters for Placements</h2>
+        <p>Many companies use CGPA as a filtering criterion during campus placements. A good CGPA increases your chances of getting shortlisted for interviews.</p>
+
+        <p><strong>Tip:</strong> Try to maintain at least a decent CGPA to stay eligible for more opportunities.</p>
+
+        <h2>2. Higher Studies & Abroad Applications</h2>
+        <p>If you are planning for M.Tech, MBA, MS abroad, or government exams, your academic performance becomes important. Universities often consider CGPA during admissions.</p>
+
+        <h2>3. Skills Matter More in the Long Run</h2>
+        <p>While CGPA helps you enter opportunities, skills help you survive and grow. Companies today value:</p>
+        <ul>
+            <li>Problem-solving ability</li>
+            <li>Projects and internships</li>
+            <li>Communication skills</li>
+            <li>Technical knowledge</li>
+        </ul>
+
+        <p>A student with strong skills and an average CGPA can still achieve great success.</p>
+
+        <h2>4. Don’t Compare Yourself with Others</h2>
+        <p>Some students score high CGPA naturally, while others excel in practical skills, creativity, or leadership. Everyone has different strengths.</p>
+
+        <p>Your CGPA does not define your intelligence or future potential.</p>
+
+        <h2>5. Balance Academics and Skills</h2>
+        <p>The best approach is to maintain a balanced profile:</p>
+        <ul>
+            <li>Keep your CGPA reasonably good</li>
+            <li>Build projects and practical skills</li>
+            <li>Participate in internships and hackathons</li>
+            <li>Improve communication and confidence</li>
+        </ul>
+
+        <h2>6. What Is a Good CGPA?</h2>
+        <p>There is no perfect number, but generally:</p>
+        <ul>
+            <li>8+ CGPA is considered strong</li>
+            <li>7+ CGPA is decent for most opportunities</li>
+            <li>Below 6.5 may limit some placement options</li>
+        </ul>
+
+        <p>However, real-world skills can often compensate for average academics.</p>
+
+        <h2>Conclusion</h2>
+        <p>CGPA is important, especially during the early stages of your career. But it is not everything.</p>
+
+        <p>Focus on learning, building skills, gaining experience, and improving consistently. A strong combination of academics and practical knowledge will always give you the best results.</p>
+
+        <p>Remember: Your success depends more on your growth mindset and effort than just a number on your marks card.</p>
+    `
+},
+    {
+    id: "2",
+    slug: "top-career-options-after-engineering",
+    title: "Top Career Options After Engineering",
+    description: "Confused about what to do after engineering? Explore the best career options including IT jobs, higher studies, MBA, government jobs, startups, and more.",
+    date: "May 30, 2026",
+    readTime: "7 min read",
+    author: "vtuwise Team",
+    tag: "Career",
+    imageBg: "linear-gradient(135deg, #141e30, #243b55)",
+    content: `
+        <p>Engineering opens the door to many career opportunities beyond just getting a traditional job. Today, students can explore careers in technology, management, government sectors, entrepreneurship, and even creative industries.</p>
+
+        <p>If you are confused about what to do after engineering, this guide will help you understand some of the best career options available.</p>
+
+        <h2>1. Software Engineer / IT Jobs</h2>
+        <p>One of the most popular career paths after engineering is entering the IT industry. Companies hire engineers for roles such as:</p>
+
+        <ul>
+            <li>Software Developer</li>
+            <li>Web Developer</li>
+            <li>Data Analyst</li>
+            <li>Cloud Engineer</li>
+            <li>Cybersecurity Specialist</li>
+            <li>AI/ML Engineer</li>
+        </ul>
+
+        <p>Even students from non-CS branches can enter IT by learning programming and building projects.</p>
+
+        <h2>2. Higher Studies (M.Tech / MS)</h2>
+        <p>Many students choose higher education to specialize in a particular field.</p>
+
+        <p><strong>M.Tech in India:</strong> Good for students interested in research, teaching, or core engineering jobs.</p>
+
+        <p><strong>MS Abroad:</strong> Provides international exposure, better research opportunities, and global career options.</p>
+
+        <h2>3. MBA & Management Careers</h2>
+        <p>If you are interested in business, leadership, or management roles, MBA is a strong option.</p>
+
+        <p>After MBA, students can work in:</p>
+
+        <ul>
+            <li>Marketing</li>
+            <li>Finance</li>
+            <li>Consulting</li>
+            <li>Product Management</li>
+            <li>Human Resources</li>
+        </ul>
+
+        <h2>4. Government Jobs</h2>
+        <p>Engineering students are eligible for many government sector opportunities such as:</p>
+
+        <ul>
+            <li>UPSC</li>
+            <li>SSC</li>
+            <li>Banking Exams</li>
+            <li>PSU Jobs through GATE</li>
+            <li>Railways</li>
+        </ul>
+
+        <p>Government jobs offer stability, benefits, and work-life balance.</p>
+
+        <h2>5. Entrepreneurship & Startups</h2>
+        <p>Many students now choose to build startups or freelance businesses instead of traditional jobs.</p>
+
+        <p>You can start:</p>
+
+        <ul>
+            <li>Tech Startups</li>
+            <li>Digital Agencies</li>
+            <li>EdTech Platforms</li>
+            <li>SaaS Products</li>
+            <li>Freelancing Services</li>
+        </ul>
+
+        <h2>6. Core Engineering Jobs</h2>
+        <p>Students can also continue careers in their core branches such as Mechanical, Civil, Electrical, or Electronics Engineering.</p>
+
+        <p>Core companies value internships, practical skills, and technical knowledge.</p>
+
+        <h2>7. Freelancing & Remote Work</h2>
+        <p>Freelancing is becoming a huge opportunity for students and freshers.</p>
+
+        <p>Popular freelance skills include:</p>
+
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Video Editing</li>
+            <li>UI/UX Design</li>
+            <li>Content Writing</li>
+        </ul>
+
+        <h2>8. Data Science & Artificial Intelligence</h2>
+        <p>AI and Data Science are among the fastest-growing career fields today.</p>
+
+        <p>Students interested in coding, analytics, and problem-solving can explore this domain.</p>
+
+        <h2>9. Teaching & Research</h2>
+        <p>If you enjoy academics and teaching, careers in education and research can be rewarding.</p>
+
+        <p>Options include becoming a professor, researcher, online educator, or technical trainer.</p>
+
+        <h2>10. Content Creation & Personal Branding</h2>
+        <p>Today, many students build careers through YouTube, blogging, LinkedIn, and educational content creation.</p>
+
+        <p>Building a personal brand can create long-term opportunities and income sources.</p>
+
+        <h2>Conclusion</h2>
+        <p>There is no single “best” career option after engineering. The right path depends on your interests, strengths, and goals.</p>
+
+        <p>Keep learning, build practical skills, explore opportunities, and choose a career that genuinely excites you.</p>
+
+        <p>Engineering is just the beginning—your future can go in many amazing directions.</p>
+    `
+},
+    {
+    id: "3",
     slug: "how-to-crack-vtu-exams",
     title: "How to Crack VTU Exams Without Stress (Complete Guide)",
     description: "Struggling with VTU exams? Learn smart study techniques, time management, and last-minute tips to score high without stress.",
@@ -69,8 +353,9 @@ export const blogPosts: BlogPost[] = [
         <p>Stay consistent, believe in your preparation, and give your best in the exam!</p>
     `
 },
+
     {
-        id: "2",
+        id: "4",
         slug: "which-engineering-branch-to-choose",
         title: "Which Engineering Branch Should You Choose After 12th?",
         description: "Confused about which engineering branch to pick? Read our comprehensive guide on the scope, subjects, and career opportunities of top engineering branches.",
@@ -109,7 +394,7 @@ export const blogPosts: BlogPost[] = [
         `
     },
     {
-        id: "3",
+        id: "5",
         slug: "kcet-round-1-cutoff-2025",
         title: "KCET Round 1 Cutoff 2025 PDF download",
         description: "Check out the latest KCET Round 1 cutoff list for 2025. Download PDFs for Engineering, Agriculture, PharmD, and more.",
@@ -160,7 +445,7 @@ export const blogPosts: BlogPost[] = [
         `
     },
     {
-        id: "4",
+        id: "6",
         slug: "how-to-score-high-marks-in-vtu",
         title: "5 Proven Strategies to Score High Marks in VTU Exams",
         description: "Learn the exact study techniques and exam presentation formats that top-tier engineering students use to score 9.0+ SGPA.",
@@ -192,7 +477,7 @@ export const blogPosts: BlogPost[] = [
         `
     },
     {
-        id: "5",
+        id: "7",
         slug: "vtu-2022-scheme-passing-marks",
         title: "VTU 2022 Scheme Passing Marks & Rules Explained",
         description: "Confused by the new VTU 2022 scheme? We break down exactly how many internal and external marks you need to pass your semester.",
@@ -222,7 +507,7 @@ export const blogPosts: BlogPost[] = [
         `
     },
     {
-    id: "6",
+    id: "8",
     slug: "ssp-scholarship-login",
     title: "SSP Scholarship Login 2025-26: Registration & Login link",
     description: "Complete guide to SSP Scholarship login, registration process, and direct links for pre-matric and post-matric students.",
