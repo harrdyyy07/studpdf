@@ -96,7 +96,7 @@ const Navbar = () => {
                         </div>
                     </li>
                     
-                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScKC-kBx14KBBDuFFzf2vltOMgVUz1L8mSDospLws4R2AOZJg/viewform" target="_blank" rel="noopener noreferrer">Upload</a></li>
+                    <li><Link href="/upload/" onClick={() => setIsMenuOpen(false)}>Upload</Link></li>
                     <li><a href="https://results.vtu.ac.in/" target="_blank" rel="noopener noreferrer">Results</a></li>
                     <li><a href="https://vtu.ac.in/en/category/examination/" target="_blank" rel="noopener noreferrer">Academics</a></li>
                     <li><Link href="/legal" onClick={() => setIsMenuOpen(false)}>Legal</Link></li>

@@ -273,7 +273,7 @@ const legalContent: Record<string, LegalPage> = {
             {
                 heading: '3. Content Contributions',
                 content: (
-                    <p>Want to share your notes with thousands of VTU students? Use the <strong>&quot;Upload&quot;</strong> button in the navigation bar to submit your materials via our Google Form. Our team will review and publish high-quality submissions.</p>
+                    <p>Want to share your notes with thousands of VTU students? Use the <strong>&quot;Upload&quot;</strong> button in the navigation bar to submit your materials via our Upload page. Our team will review and publish high-quality submissions.</p>
                 )
             },
             {
@@ -315,7 +315,7 @@ const legalContent: Record<string, LegalPage> = {
             {
                 heading: '4. How do I contribute my notes?',
                 content: (
-                    <p>Click the <strong>&quot;Upload&quot;</strong> button in the navigation bar and fill in the Google Form with your details and file link. Our moderators will review and publish high-quality submissions.</p>
+                    <p>Click the <strong>&quot;Upload&quot;</strong> button in the navigation bar and fill in the form on our Upload page with your details and files. Our moderators will review and publish high-quality submissions.</p>
                 )
             },
             {
