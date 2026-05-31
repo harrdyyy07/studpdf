@@ -2139,26 +2139,62 @@ footer {
 /* AdSense Side Rails */
 .ad-rail {
   position: fixed;
-  top: 120px;
-  width: 160px;
+  top: 130px;
   height: 600px;
   z-index: 40;
   display: none;
   pointer-events: auto;
   overflow: hidden;
+  background: rgba(120, 120, 120, 0.03);
+  border: 1px dashed var(--surface-border);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+}
+
+[data-theme='dark'] .ad-rail {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.ad-rail::before {
+  content: 'Advertisement';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 .ad-rail-left {
-  right: calc(50% + 610px);
+  left: 10px;
 }
 
 .ad-rail-right {
-  left: calc(50% + 610px);
+  right: 10px;
 }
 
-@media (min-width: 1560px) and (min-height: 750px) {
+/* Medium-Large screens (e.g. 1080p screen with scaling) */
+@media (min-width: 1440px) and (min-height: 700px) {
   .ad-rail {
     display: block;
+    width: 120px;
+  }
+}
+
+/* Extra-Large screens */
+@media (min-width: 1600px) and (min-height: 700px) {
+  .ad-rail {
+    display: block;
+    width: 160px;
   }
 }
 
