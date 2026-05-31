@@ -2136,3 +2136,29 @@ footer {
   }
 }
 
+/* AdSense Side Rails */
+.ad-rail {
+  position: fixed;
+  top: 120px;
+  width: 160px;
+  height: 600px;
+  z-index: 40;
+  display: none;
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.ad-rail-left {
+  right: calc(50% + 610px);
+}
+
+.ad-rail-right {
+  left: calc(50% + 610px);
+}
+
+@media (min-width: 1560px) and (min-height: 750px) {
+  .ad-rail {
+    display: block;
+  }
+}
+
