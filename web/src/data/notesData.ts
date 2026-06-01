@@ -1087,7 +1087,13 @@ export const siteData: SiteData = {
                             { id: 3, name: "Module 1: Notes", desc: "bec503 notes for Module 1", link: "https://drive.google.com/file/d/19n93Dy7de2nVcU20uJDEZZcxbWYMhLGz/view?usp=drive_link", type: "Notes" },
                             { id: 4, name: "Module 2: Notes", desc: "bec503 notes for Module 2", link: "https://drive.google.com/file/d/1CTnU_sIyhNibjO-l_nra4GcJTXe0DHza/view?usp=drive_link", type: "Notes" },
                             { id: 5, name: "Module 3: Notes", desc: "bec503 notes for Module 3", link: "https://drive.google.com/file/d/10LhdgD2FQXTqn7I7c_sk_9WMLichmxDb/view?usp=drive_link", type: "Notes" },
-                            { id: 6, name: "Module 5: Notes", desc: "bec503 notes for Module 5", link: "https://drive.google.com/file/d/1I36e4tnhRuWIWa9TNKdPmeLD_JRfidby/view?usp=drive_link", type: "Notes" },
+                            { id: 6, name: "Module 4: Handwritten Notes", desc: "bec503 Handwritten notes for Module 4", link: "https://drive.google.com/file/d/1hrpnRKp_tzYDuL5eJ1f_FLu-Js9cOJmf/view?usp=drive_link", type: "Notes" },
+                            { id: 7, name: "Module 4: Handwritten Notes", desc: "bec503 Handwritten notes for Module 4", link: "https://drive.google.com/file/d/1V1pHhUEbIB9la5j4JOKFBqUnKB6aYmj8/view?usp=drive_link", type: "Notes" },
+                            { id: 8, name: "Module 5: Notes", desc: "bec503 notes for Module 5", link: "https://drive.google.com/file/d/1I36e4tnhRuWIWa9TNKdPmeLD_JRfidby/view?usp=drive_link", type: "Notes" },
+                            { id: 9, name: "Module 5: Handwritten Notes", desc: "bec503 Handwritten notes for Module 5", link: "https://drive.google.com/file/d/1a35Z3U1gkibhbMgmVaDYYvvkogLslEUt/view?usp=drive_link", type: "Notes" },
+                            { id: 10, name: "Solved Model Question Paper-1", desc: "bec503 solved model question paper-1", link: "https://drive.google.com/file/d/1a35Z3U1gkibhbMgmVaDYYvvkogLslEUt/view?usp=drive_link", type: "solved qp" },
+                            { id: 11, name: "Solved Model Question Paper-2", desc: "bec503 solved model question paper-2", link: "https://drive.google.com/file/d/166XxYvN55qg-fj4jeJ1jlXpzz6mxB2gy/view?usp=drive_link", type: "solved qp" },
+                            { id: 12, name: "Solved Dec 2024- Jan 2025 Question Paper", desc: "Solved Dec 2024- Jan 2025 Question Paper", link: "https://drive.google.com/file/d/1o053L2BoB6ArnY8SOKY2e9rLdAZUb_Df/view?usp=drive_link", type: "solved qp" },
                         ]
                     },
                     {
@@ -1800,7 +1806,11 @@ export const siteData: SiteData = {
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
                     { name: "Medium Voltage Substation Design", code: "BEE613A", credits: "3 CR", slug: "medium-voltage-substation-design-mvsd-bee613a-vtu-notes", modules: [] },
                     { name: "Embedded System Design", code: "BEE613B", credits: "3 CR", slug: "embedded-system-design-esd-bee613b-vtu-notes", modules: [] },
-                    { name: "FACTS and HVDC Transmission", code: "BEE613C", credits: "3 CR", slug: "facts-and-hvdc-transmission-fht-bee613c-vtu-notes", modules: [] },
+                    {
+                        name: "FACTS and HVDC Transmission", code: "BEE613C", credits: "3 CR", slug: "facts-and-hvdc-transmission-fht-bee613c-vtu-notes", modules: [
+                            { id: 1, name: "Complete Notes For FACTS and HVDC Transmission", desc: "Complete Notes for FACTS and HVDC Transmission", link: "https://drive.google.com/file/d/10tXEypkZkePv2GO1H9sGesZQ5ecwbqLh/view?usp=drive_link", type: "notes" },
+                        ]
+                    },
                     { name: "Electric Motor and Drive Systems for Electric Vehicles", code: "BEE613D", credits: "3 CR", slug: "electric-motor-and-drive-systems-for-electric-vehicles-emdsev-bee613d-vtu-notes", modules: [] },
                     { name: "Utilization of Electrical Power", code: "BEE654A", credits: "3 CR", slug: "utilization-of-electrical-power-uep-bee654a-vtu-notes", modules: [] },
                     { name: "Technologies of Renewable Energy Sources", code: "BEE654B", credits: "3 CR", slug: "technologies-of-renewable-energy-sources-tres-bee654b-vtu-notes", modules: [] },

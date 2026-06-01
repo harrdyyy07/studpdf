@@ -2183,13 +2183,13 @@ footer {
 
 /* Medium-Large screens: Show 120px wide skyscraper ads */
 .ad-rail {
-  width: 120px;
+  width: 130px;
 }
 
 /* Extra-Large screens: Show full 160px wide skyscraper ads */
 @media (min-width: 1600px) {
   .ad-rail {
-    width: 160px;
+    width: 170px;
   }
 }
 
