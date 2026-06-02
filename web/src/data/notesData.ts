@@ -1653,7 +1653,12 @@ export const siteData: SiteData = {
                             { id: 6, name: "Module-5 Notes Digital Image Processing-bec613c", desc: "Digital Image Processing-bec613c Module-5 Notes by ATMECE , MYSURU", link: "https://drive.google.com/file/d/10AV5UlyLeGQeqPtcpW1_sJKUOQkiqmku/view?usp=drive_link", type: "notes" }
                         ]
                     },
-                    { name: "FPGA System Design using Verilog", code: "BEC613D", credits: "3 CR", slug: "fpga-system-design-using-verilog-fsdv-bec613d-vtu-notes", modules: [] },
+                    { name: "FPGA System Design using Verilog", code: "BEC613D", credits: "3 CR", slug: "fpga-system-design-using-verilog-fsdv-bec613d-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes-1 FPGA System Design using Verilog-bec613d", desc: "FPGA System Design using Verilog-bec613d Module-1 Notes", link: "https://drive.google.com/file/d/1LBI4ClAstdwgP3N2BnhNPDA18utQaLOa/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes FPGA System Design using Verilog-bec613d", desc: "FPGA System Design using Verilog-bec613d Module-2 Notes", link: "https://drive.google.com/file/d/1uwsNma2k5FZ2SJBwkhJ_s1K_OgfMH0gj/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-4 Notes FPGA System Design using Verilog-bec613d", desc: "FPGA System Design using Verilog-bec613d Module-4 Notes", link: "https://drive.google.com/file/d/1EFt78lF4aRHYcWprAhTKiY1xbc3t6W-j/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-5 Notes FPGA System Design using Verilog-bec613d", desc: "FPGA System Design using Verilog-bec613d Module-5 Notes", link: "https://drive.google.com/file/d/1jfgczyFbfeyvZdtc3LWunfOfTt9ZQb66/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Digital System Design using Verilog", code: "BEC654A", credits: "3 CR", slug: "digital-system-design-using-verilog-dsdv-bec654a-vtu-notes", modules: [] },
                     { name: "Consumer Electronics", code: "BEC654B", credits: "3 CR", slug: "consumer-electronics-ce-bec654b-vtu-notes", modules: [] },
                     { name: "Electronic Communication Systems", code: "BEC654C", credits: "3 CR", slug: "electronic-communication-systems-ecs-bec654c-vtu-notes", modules: [] },
