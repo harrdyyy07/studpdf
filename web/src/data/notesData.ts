@@ -1824,13 +1824,25 @@ export const siteData: SiteData = {
                             { id: 1, name: "Complete Notes For FACTS and HVDC Transmission", desc: "Complete Notes for FACTS and HVDC Transmission", link: "https://drive.google.com/file/d/10tXEypkZkePv2GO1H9sGesZQ5ecwbqLh/view?usp=drive_link", type: "notes" },
                         ]
                     },
-                    { name: "Electric Motor and Drive Systems for Electric Vehicles", code: "BEE613D", credits: "3 CR", slug: "electric-motor-and-drive-systems-for-electric-vehicles-emdsev-bee613d-vtu-notes", modules: [] },
+                    {
+                        name: "Electric Motor and Drive Systems for Electric Vehicles", code: "BEE613D", credits: "3 CR", slug: "electric-motor-and-drive-systems-for-electric-vehicles-emdsev-bee613d-vtu-notes", modules: [
+                            { id: 1, name: "Module-1 Notes for BEE613D", desc: "Module-1 Notes for BEE613D Electric Motor and Drive Systems for Electric Vehicles", link: "https://drive.google.com/file/d/1BuAImVl7guEcGhzND3A2AgoURuOkLRp4/view?usp=drive_link", type: "notes" },
+                            { id: 2, name: "Module-2 Notes for BEE613D", desc: "Module-2 Notes for BEE613D Electric Motor and Drive Systems for Electric Vehicles", link: "https://drive.google.com/file/d/1RI3pTn3kVEWET1Jz6DBBy3LVPeESfKhI/view?usp=drive_link", type: "notes" },
+                            { id: 3, name: "Module-3 Notes for BEE613D", desc: "Module-3 Notes for BEE613D Electric Motor and Drive Systems for Electric Vehicles", link: "https://drive.google.com/file/d/10nIxEBFXyqbzUe7AAp4G0Ayidf387QVh/view?usp=drive_link", type: "notes" },
+                            { id: 4, name: "Module-4 Notes for BEE613D", desc: "Module-4 Notes for BEE613D Electric Motor and Drive Systems for Electric Vehicles", link: "https://drive.google.com/file/d/1VMELAuf6FO3Lg70nNbYSAEqOX9qUqsMV/view?usp=drive_link", type: "notes" },
+                            { id: 5, name: "Module-5 Notes for BEE613D", desc: "Module-5 Notes for BEE613D Electric Motor and Drive Systems for Electric Vehicles", link: "https://drive.google.com/file/d/1StV59sbutOokeHoz7c9pT5mQUokxLsOh/view?usp=drive_link", type: "notes" },
+                        ]
+                    },
                     { name: "Utilization of Electrical Power", code: "BEE654A", credits: "3 CR", slug: "utilization-of-electrical-power-uep-bee654a-vtu-notes", modules: [] },
                     {
                         name: "Technologies of Renewable Energy Sources", code: "BEE654B", credits: "3 CR", slug: "technologies-of-renewable-energy-sources-tres-bee654b-vtu-notes", modules: [
                             { id: 1, name: "Module-1 Notes for BEE654B", desc: "Module-1 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/16iNEnjMHW13DOLl5oPfGzXJRwJVwwk9-/view?usp=drive_link", type: "notes" },
-                            { id: 1, name: "Module-2 Notes for BEE654B", desc: "Module-2 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1y57qfRCi4RaGUpYD-Js_L2oos-pdyM5G/view?usp=drive_link", type: "notes" },
-                            { id: 1, name: "Module-3 Notes for BEE654B", desc: "Module-3 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1wRz_qBEj6Slxnfc3qeddpadrLUMo694a/view?usp=drive_link", type: "notes" }
+                            { id: 2, name: "Module-1 Notes for BEE654B", desc: "Module-1 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1gX3ro-fqwQCXh3HNDcGyEelRjaddjRJA/view?usp=drive_link", type: "notes" },
+                            { id: 3, name: "Module-2 Notes for BEE654B", desc: "Module-2 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1y57qfRCi4RaGUpYD-Js_L2oos-pdyM5G/view?usp=drive_link", type: "notes" },
+                            { id: 4, name: "Module-2 Notes for BEE654B", desc: "Module-2 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1YSIqRjRk8EsXALZNLw9gYd6e1kbRAbmw/view?usp=drive_link", type: "notes" },
+                            { id: 5, name: "Module-3 Notes for BEE654B", desc: "Module-3 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1pBKgxhIZILBuUcM0kw67pP9ZCeaL4SpU/view?usp=drive_link", type: "notes" },
+                            { id: 6, name: "Module-4 Notes for BEE654B", desc: "Module-4 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1CgrGtVOurAtR4VjjYintE8iIn8QqCEU-/view?usp=drive_link", type: "notes" },
+                            { id: 6, name: "Module-5 Notes for BEE654B", desc: "Module-5 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1AvA740QdAUlrxC5toCyfT1ph_x27tmTR/view?usp=drive_link", type: "notes" }
                         ]
                     },
                     { name: "Industrial Servo Control Systems", code: "BEE654C", credits: "3 CR", slug: "industrial-servo-control-systems-iscs-bee654c-vtu-notes", modules: [] },
