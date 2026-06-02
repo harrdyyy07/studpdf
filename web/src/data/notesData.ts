@@ -1810,7 +1810,15 @@ export const siteData: SiteData = {
                     },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "1 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] },
                     { name: "Medium Voltage Substation Design", code: "BEE613A", credits: "3 CR", slug: "medium-voltage-substation-design-mvsd-bee613a-vtu-notes", modules: [] },
-                    { name: "Embedded System Design", code: "BEE613B", credits: "3 CR", slug: "embedded-system-design-esd-bee613b-vtu-notes", modules: [] },
+                    {
+                        name: "Embedded System Design", code: "BEE613B", credits: "3 CR", slug: "embedded-system-design-esd-bee613b-vtu-notes", modules: [
+                            { id: 1, name: "Module-1 Notes for BEE613B", desc: "Module-1 Notes for BEE613B6 Embedded System Design", link: "https://drive.google.com/file/d/1g7Dp1tE06US0X7Ms09dROyEkWzCWRAMU/view?usp=drive_link", type: "notes" },
+                            { id: 2, name: "Module-2 Notes for BEE613B", desc: "Module-2 Notes for BEE613B6 Embedded System Design", link: "https://drive.google.com/file/d/12KYCF1B_cLt5cbnjIdHmV--FSq3fYlMD/view?usp=drive_link", type: "notes" },
+                            { id: 3, name: "Module-3 Notes for BEE613B", desc: "Module-3 Notes for BEE613B6 Embedded System Design", link: "https://drive.google.com/file/d/1wRz_qBEj6Slxnfc3qeddpadrLUMo694a/view?usp=drive_link", type: "notes" },
+                            { id: 3, name: "June-July 2025 Qp Solved for BEE613B", desc: "June-July 2025 Qp Solved for BEE613B6 Embedded System Design", link: "https://drive.google.com/file/d/1z8sXMHF8vybl6XAMXkOpsA6rp6WB6Xgk/view?usp=drive_link", type: "Solved qp" }
+
+                        ]
+                    },
                     {
                         name: "FACTS and HVDC Transmission", code: "BEE613C", credits: "3 CR", slug: "facts-and-hvdc-transmission-fht-bee613c-vtu-notes", modules: [
                             { id: 1, name: "Complete Notes For FACTS and HVDC Transmission", desc: "Complete Notes for FACTS and HVDC Transmission", link: "https://drive.google.com/file/d/10tXEypkZkePv2GO1H9sGesZQ5ecwbqLh/view?usp=drive_link", type: "notes" },
@@ -1818,7 +1826,13 @@ export const siteData: SiteData = {
                     },
                     { name: "Electric Motor and Drive Systems for Electric Vehicles", code: "BEE613D", credits: "3 CR", slug: "electric-motor-and-drive-systems-for-electric-vehicles-emdsev-bee613d-vtu-notes", modules: [] },
                     { name: "Utilization of Electrical Power", code: "BEE654A", credits: "3 CR", slug: "utilization-of-electrical-power-uep-bee654a-vtu-notes", modules: [] },
-                    { name: "Technologies of Renewable Energy Sources", code: "BEE654B", credits: "3 CR", slug: "technologies-of-renewable-energy-sources-tres-bee654b-vtu-notes", modules: [] },
+                    {
+                        name: "Technologies of Renewable Energy Sources", code: "BEE654B", credits: "3 CR", slug: "technologies-of-renewable-energy-sources-tres-bee654b-vtu-notes", modules: [
+                            { id: 1, name: "Module-1 Notes for BEE654B", desc: "Module-1 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/16iNEnjMHW13DOLl5oPfGzXJRwJVwwk9-/view?usp=drive_link", type: "notes" },
+                            { id: 1, name: "Module-2 Notes for BEE654B", desc: "Module-2 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1y57qfRCi4RaGUpYD-Js_L2oos-pdyM5G/view?usp=drive_link", type: "notes" },
+                            { id: 1, name: "Module-3 Notes for BEE654B", desc: "Module-3 Notes for BEE654B Technologies of Renewable Energy Sources", link: "https://drive.google.com/file/d/1wRz_qBEj6Slxnfc3qeddpadrLUMo694a/view?usp=drive_link", type: "notes" }
+                        ]
+                    },
                     { name: "Industrial Servo Control Systems", code: "BEE654C", credits: "3 CR", slug: "industrial-servo-control-systems-iscs-bee654c-vtu-notes", modules: [] },
                     { name: "Semiconductor Devices", code: "BEE654D", credits: "3 CR", slug: "semiconductor-devices-sd-bee654d-vtu-notes", modules: [] },
                     { name: "Open Elective Subjects Mechanical Engg", code: "", credits: "3 CR", slug: "open-elective-subjects-mechanical-engg-oeme-vtu-notes", modules: [] },
