@@ -70,7 +70,7 @@ const Navbar = () => {
             <div className="container nav-content">
                 <button 
                     className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} 
-                    aria-label="Open Menu"
+                    aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
                     onClick={toggleMenu}
                 >
                     <span className="hamburger"></span>
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     <div className="mobile-drawer-header">
                         <Link href="/" className="logo" onClick={() => setIsMenuOpen(false)}>VTU<span> wise.</span></Link>
-                        <button className="drawer-close" onClick={toggleMenu}>&times;</button>
+                        <button className="drawer-close" onClick={toggleMenu} aria-label="Close Menu">&times;</button>
                     </div>
                     <li><Link href="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
                     <li><Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
@@ -102,11 +102,11 @@ const Navbar = () => {
                     <li><Link href="/legal" onClick={() => setIsMenuOpen(false)}>Legal</Link></li>
                     
                     <li className="mobile-only-action">
-                        <div className="theme-switch" role="button" aria-label="Toggle Theme" onClick={toggleTheme}>
+                        <button className="theme-switch" aria-label="Toggle Theme" onClick={toggleTheme}>
                             <svg className="icon-moon-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                             <div className="switch-knob"></div>
                             <svg className="icon-sun-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                        </div>
+                        </button>
                     </li>
                     <li className="mobile-only-action">
                         <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" rel="noopener noreferrer" className="btn-join-mobile">Join Us</a>
@@ -120,11 +120,11 @@ const Navbar = () => {
                     
                     <div className="nav-separator"></div>
 
-                    <div className="theme-switch" role="button" aria-label="Toggle Theme" onClick={toggleTheme}>
+                    <button className="theme-switch" aria-label="Toggle Theme" onClick={toggleTheme}>
                         <svg className="icon-moon-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                         <div className="switch-knob"></div>
                         <svg className="icon-sun-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                    </div>
+                    </button>
                     
                     <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" rel="noopener noreferrer" className="btn-join">Join Us</a>
                 </div>

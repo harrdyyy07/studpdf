@@ -262,7 +262,7 @@ footer,
   transform: translateX(-50px) scale(1.05);
 }
 
-.hero-slide h1 {
+.hero-slide h2 {
   font-size: clamp(1.8rem, 8vw, 3.8rem);
   line-height: 1.1;
   margin-bottom: 1rem;
@@ -270,7 +270,7 @@ footer,
   letter-spacing: -0.02em;
 }
 
-.hero-slide h1 span {
+.hero-slide h2 span {
   opacity: 0.85;
 }
 
@@ -2220,6 +2220,22 @@ footer {
   background: #dc2626;
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.6);
+}
+
+@media print {
+  .no-print,
+  .ad-rail,
+  .ad-rail-left,
+  .ad-rail-right,
+  .whatsapp-float,
+  .whatsapp-popup-overlay,
+  .back-to-top,
+  .navbar,
+  .top-bar,
+  #announcement-bar,
+  footer {
+    display: none !important;
+  }
 }
 
 

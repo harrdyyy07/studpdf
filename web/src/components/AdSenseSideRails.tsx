@@ -77,7 +77,7 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
   return (
     <>
       {/* Left Side Rail Ad */}
-      <div className="ad-rail ad-rail-left" aria-hidden="true">
+      <div className="ad-rail ad-rail-left no-print" aria-hidden="true">
         <ins
           className="adsbygoogle"
           style={{ display: 'block', width: '100%', height: '100%' }}
@@ -89,7 +89,7 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
       </div>
 
       {/* Right Side Rail Ad */}
-      <div className="ad-rail ad-rail-right" aria-hidden="true">
+      <div className="ad-rail ad-rail-right no-print" aria-hidden="true">
         <button 
           onClick={handleClose} 
           className="ad-rail-close" 

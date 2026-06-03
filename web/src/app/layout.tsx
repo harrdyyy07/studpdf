@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://vtuwise.in'),
   title: "VTU Notes, Previous Question Papers & Study Materials for VTU Students | vtuwise",
   description: "Get premium engineering notes, previous year question papers, syllabus, and model papers for all branches. Designed exclusively for VTU students to excel in exams.",
-  keywords: ["VTU", "VTU notes", "VTU question papers", "engineering notes", "VTU syllabus", "model question papers", "vtuwise"],
+  keywords: ["VTU", "VTU notes", "VTU question papers", "engineering notes", "VTU syllabus", "model question papers", "vtuwise", "vtu 25 scheme notes", "vtu 22 scheme notes", "vtu code", "VTU question papers", "VTU study materials", "VTU syllabus", "engineering notes", "vtu pyq", "vtu study material", "vtu resources", "vtu student community", "vtu engineering notes", "Visvesvaraya Technological University"],
   openGraph: {
     title: "VTUwise | Premium Engineering Resources",
     description: "Get premium engineering notes, previous year question papers, syllabus, and model papers for all branches.",
@@ -70,9 +70,9 @@ export default function RootLayout({
           async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5780720681894064" 
           crossOrigin="anonymous" 
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

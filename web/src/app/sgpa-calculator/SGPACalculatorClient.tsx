@@ -175,7 +175,7 @@ const SGPACalculator = () => {
                                     </div>
                                     <div className="print-date">Generated on {generationDate}</div>
                                 </div>
-                                <h1 className="print-main-title">Academic SGPA Report</h1>
+                                <h2 className="print-main-title">Academic SGPA Report</h2>
                                 <div className="print-header-divider" />
                             </div>
 

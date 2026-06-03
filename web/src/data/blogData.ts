@@ -558,21 +558,21 @@ export const blogPosts: BlogPost[] = [
 
         <h3>Post-Matric Login (2025-26)</h3>
         <p>
-            <a href="https://ssp.postmatric.karnataka.gov.in/post_sa/signin.aspx" target="_blank">
+            <a href="https://ssp.postmatric.karnataka.gov.in/post_sa/signin.aspx" target="_blank" rel="noopener noreferrer">
                 Click here to login for 2025-26 Post-Matric Scholarship
             </a>
         </p>
 
         <h3>Post-Matric Login (2024-25)</h3>
         <p>
-            <a href="https://ssp.postmatric.karnataka.gov.in/2425_sa/signin.aspx" target="_blank">
+            <a href="https://ssp.postmatric.karnataka.gov.in/2425_sa/signin.aspx" target="_blank" rel="noopener noreferrer">
                 Click here to login for 2024-25 Post-Matric Scholarship
             </a>
         </p>
 
         <h3>Pre-Matric Login (2025-26)</h3>
         <p>
-            <a href="https://ssp.postmatric.karnataka.gov.in/ssppre/" target="_blank">
+            <a href="https://ssp.postmatric.karnataka.gov.in/ssppre/" target="_blank" rel="noopener noreferrer">
                 Click here to login for Pre-Matric Scholarship
             </a>
         </p>

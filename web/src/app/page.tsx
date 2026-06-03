@@ -58,6 +58,7 @@ export default function Home() {
 
   return (
     <>
+      <h1 className="sr-only">VTU Notes, Previous Question Papers & Study Materials | vtuwise</h1>
       <HeroSlider />
       
 

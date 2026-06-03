@@ -98,7 +98,7 @@ const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
 
     return (
         <div className={`search-overlay ${isOpen ? 'active' : ''}`}>
-            <button className="search-close-large" onClick={onClose}>&times;</button>
+            <button className="search-close-large" onClick={onClose} aria-label="Close Search">&times;</button>
             
             <div className="search-container">
                 <div className="search-input-wrapper">
@@ -110,6 +110,7 @@ const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose }) => {
                         onChange={(e) => setQuery(e.target.value)}
                         placeholder="Search notes, subjects, or codes..." 
                         className="search-input"
+                        aria-label="Search notes, subjects, or codes"
                     />
                 </div>
 
