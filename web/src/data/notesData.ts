@@ -2057,7 +2057,13 @@ export const siteData: SiteData = {
                             { id: 6, name: "Module-5 Notes Integrated Waste Management for a Smart City-bcv654c", desc: "Integrated Waste Management for a Smart City Module-5 Notes", link: "https://drive.google.com/file/d/1BOvYV2X4Y5RwOpOMLiS-mqjx1kCgpQ-v/view?usp=drive_link", type: "notes" }
                         ]
                     },
-                    { name: "Sustainable Development Goals", code: "BCV654D", credits: "3 CR", slug: "sustainable-development-goals-sdg-bcv654d-vtu-notes", modules: [] },
+                    { name: "Sustainable Development Goals", code: "BCV654D", credits: "3 CR", slug: "sustainable-development-goals-sdg-bcv654d-vtu-notes", modules: [
+                        { id:1, name:"Module-1 Notes SDG-bcv654d", desc:"Sustainable Development Goals Module-1 notes", link:"https://drive.google.com/file/d/1tjHb6XxMfi-TEq_kPD6MDmmhS-7j-g0j/view?usp=drive_link", type:"notes"},
+                        { id:2, name:"Module-2 Notes SDG-bcv654d", desc:"Sustainable Development Goals Module-2 notes", link:"https://drive.google.com/file/d/1TE3oAu3xiHllPFhiMD3iyCwPJXf-nNxD/view?usp=drive_link", type:"notes"},
+                        { id:3, name:"Module-3 Notes SDG-bcv654d", desc:"Sustainable Development Goals Module-3 notes", link:"https://drive.google.com/file/d/1yof_SsSKHDZZb4nuXb9lpPxvmAJKUf_y/view?usp=drive_link", type:"notes"},
+                        { id:4, name:"Module-4 Notes SDG-bcv654d", desc:"Sustainable Development Goals Module-4 notes", link:"https://drive.google.com/file/d/1WsxuOWWlIhealyTx341eeK3UutEkt-ml/view?usp=drive_link", type:"notes"},
+                        { id:5, name:"Module-5 Notes SDG-bcv654d", desc:"Sustainable Development Goals Module-5 notes", link:"https://drive.google.com/file/d/1DdpovSEns0yvFZX2_b5Ur_7KYl0X2kS4/view?usp=drive_link", type:"notes"}
+                    ] },
                     { name: "Open Elective Subjects Mechanical Engg", code: "", credits: "3 CR", slug: "open-elective-subjects-mechanical-engg-oeme-vtu-notes", modules: [] },
                     { name: "Building Information Modelling - Advanced", code: "BCV657A", credits: "1 CR", slug: "building-information-modelling-advanced-bima-bcv657a-vtu-notes", modules: [] },
                     { name: "Structural Health Monitoring Using Sensors", code: "BCV657B", credits: "1 CR", slug: "structural-health-monitoring-using-sensors-shms-bcv657b-vtu-notes", modules: [] },
