@@ -1914,7 +1914,20 @@ export const siteData: SiteData = {
             {
                 sem: 6,
                 subjects: [
-                    { name: "Heat Transfer", code: "BME601", credits: "4 CR", slug: "heat-transfer-ht-bme601-vtu-notes", modules: [] },
+                    { name: "Heat Transfer", code: "BME601", credits: "4 CR", slug: "heat-transfer-ht-bme601-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Heat Transfer-bme601 Module-1 notes", link: "https://drive.google.com/file/d/1VmNFbJIttDzN_yRVT9K0MJmsbqxAdX6v/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-1 Handwritten notes", desc: "Heat Transfer-bme601 Module-1 Handwritten notes", link: "https://drive.google.com/file/d/1iYC9A0jg8aeW-mEWR8PL28rMq9yPj42J/view?usp=drive_link", type: "handwritten notes" },
+                        { id: 2, name: "Module 1&2 Problems", desc: "Heat Transfer-bme601 Module 1&2 Problems", link: "https://drive.google.com/file/d/1_zVI5TL8LolTkUCvH6YcsZ4AaDEisbKy/view?usp=drive_link", type: "problems" },
+                        { id: 3, name: "Module-2 notes", desc: "Heat Transfer-bme601 Module-2 notes", link: "https://drive.google.com/file/d/1eCfeERVG3lO8wQhVZ1vwgxyDexErXNXv/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Handwritten notes", desc: "Heat Transfer-bme601 Module-2 Handwritten notes", link: "https://drive.google.com/file/d/19SoY6MtEr0Lls2IkMJE0_5FwrIWigeUx/view?usp=drive_link", type: "handwritten notes" },
+                        { id: 4, name: "Module-3 Problems", desc: "Heat Transfer-bme601 Module-3 notes", link: "https://drive.google.com/file/d/14H_ATJG6xsOLsrGVzRSD6XSBKIJVx1Wb/view?usp=drive_link", type: "problems" },
+                        { id: 5, name: "Module-4 notes", desc: "Heat Transfer-bme601 Module-4 notes", link: "https://drive.google.com/file/d/1rKgojbWB9MiC1ixyPA3nBuvbu1KUvKh5/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-4 Handwritten notes", desc: "Heat Transfer-bme601 Module-4 Handwritten notes", link: "https://drive.google.com/file/d/1kPUQkeaOIlQMe1QyKs_sTqMoXf07H6I-/view?usp=drive_link", type: "handwritten notes" },
+                        { id: 6, name: "Module 4 Problems", desc: "Heat Transfer-bme601 Module-4 Problems", link: "https://drive.google.com/file/d/1BRtJu8mwq-0RSSfWg882-IVRY8GZRYbq/view?usp=drive_link", type: "problems" },
+                        { id: 6, name: "Module-5 notes", desc: "Heat Transfer-bme601 Module-5 notes", link: "https://drive.google.com/file/d/1A8AHARgAX_Qnlc5gk51DUY5CffXg_M5U/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-5 notes", desc: "Heat Transfer-bme601 Module-5 notes", link: "https://drive.google.com/file/d/1bNV_zPjVZqR1lUcSiBMXGBFTxl9HoijE/view?usp=drive_link", type: "notes" },
+                        { id: 7, name: "Module 5 Problems", desc: "Heat Transfer-bme601 Module-5 Problems", link: "https://drive.google.com/file/d/1XKNMzYkaxNT44J6Yymwfo4g_c9pZs1PH/view?usp=drive_link", type: "problems" },
+                    ] },
                     { name: "Machine Design", code: "BME602", credits: "4 CR", slug: "machine-design-md-bme602-vtu-notes", modules: [] },
                     { name: "Professional Elective – II", code: "BME613x", credits: "3 CR", slug: "professional-elective-ii-pe2-bme613x-vtu-notes", modules: [] },
                     { name: "Open Elective – I", code: "BME654x", credits: "3 CR", slug: "open-elective-i-oe1-bme654x-vtu-notes", modules: [] },
