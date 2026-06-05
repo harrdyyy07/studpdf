@@ -1236,10 +1236,15 @@ export const siteData: SiteData = {
                         name: "Advanced Java", code: "BCS613D", credits: "3 CR", slug: "advanced-java-aj-bcs613d-vtu-notes", modules: [
                             { id: 1, name: "Advanced Java-bcs613d ppt notes", desc: "Advanced Java-bcs613d ppt notes", link: "https://drive.google.com/file/d/1ZtTklfoXcumvNYMoH0JfrHjRxfME2bOm/view?usp=drive_link", type: "notes" },
                             { id: 2, name: "Module-1 notes", desc: "Advanced Java-bcs613d Module-1 notes", link: "https://drive.google.com/file/d/14MUaKn0qRG_umXXZlc3esiq9jGIbid0S/view?usp=drive_link", type: "notes" },
-                            { id: 3, name: "Module-2 notes", desc: "Advanced Java-bcs613d Module-2 notes", link: "https://drive.google.com/file/d/1i5Uemx5y--uv0mDhZVJMEoh9G9JRwZwa/view?usp=drive_link", type: "notes" },
-                            { id: 4, name: "Module-3 notes", desc: "Advanced Java-bcs613d Module-3 notes", link: "https://drive.google.com/file/d/1XVEHJjNVQTqFfN4D_nCW3qUS-zm6tqRP/view?usp=drive_link", type: "notes" },
-                            { id: 5, name: "Module-4 notes", desc: "Advanced Java-bcs613d Module-4 notes", link: "https://drive.google.com/file/d/1NM6zgL-9ZPmiuy7ATYG9hF8Urooeqc6B/view?usp=drive_link", type: "notes" },
-                            { id: 6, name: "Module-5 notes", desc: "Advanced Java-bcs613d Module-5 notes", link: "https://drive.google.com/file/d/1DD_mN2-bRszeDGY4kHQOjxuMNCA-10N5/view?usp=drive_link", type: "notes" }
+                            { id: 3, name: "Module-1 notes", desc: "Advanced Java-bcs613d Module-1 notes", link: "https://drive.google.com/file/d/1yN3xhKFDOImmpnTRZskXK8oyMvImt1LI/view?usp=drive_link", type: "notes" },
+                            { id: 4, name: "Module-2 notes", desc: "Advanced Java-bcs613d Module-2 notes", link: "https://drive.google.com/file/d/1i5Uemx5y--uv0mDhZVJMEoh9G9JRwZwa/view?usp=drive_link", type: "notes" },
+                            { id: 5, name: "Module-2 notes", desc: "Advanced Java-bcs613d Module-2 notes", link: "https://drive.google.com/file/d/1rKgojbWB9MiC1ixyPA3nBuvbu1KUvKh5/view?usp=drive_link", type: "notes" },
+                            { id: 6, name: "Module-3 notes", desc: "Advanced Java-bcs613d Module-3 notes", link: "https://drive.google.com/file/d/1XVEHJjNVQTqFfN4D_nCW3qUS-zm6tqRP/view?usp=drive_link", type: "notes" },
+                            { id: 7, name: "Module-3 notes", desc: "Advanced Java-bcs613d Module-3 notes", link: "https://drive.google.com/file/d/1Rzsj1c29_IjUwFFjlwgtq6daqRt03IR5/view?usp=drive_link", type: "notes" },
+                            { id: 8, name: "Module-4 notes", desc: "Advanced Java-bcs613d Module-4 notes", link: "https://drive.google.com/file/d/1NM6zgL-9ZPmiuy7ATYG9hF8Urooeqc6B/view?usp=drive_link", type: "notes" },
+                            { id: 9, name: "Module-4 notes", desc: "Advanced Java-bcs613d Module-4 notes", link: "https://drive.google.com/file/d/1iME381FaupNWAJNNKfKc6UhyC7A5uIPf/view?usp=drive_link", type: "notes" },
+                            { id: 10, name: "Module-5 notes", desc: "Advanced Java-bcs613d Module-5 notes", link: "https://drive.google.com/file/d/1DD_mN2-bRszeDGY4kHQOjxuMNCA-10N5/view?usp=drive_link", type: "notes" },
+                            { id: 11, name: "Module-5 notes", desc: "Advanced Java-bcs613d Module-5 notes", link: "https://drive.google.com/file/d/1o7_2JlRL8-OcSffj78WOKecyBXR6BLnq/view?usp=drive_link", type: "notes" }
                         ]
                     },
                     {
@@ -1660,7 +1665,12 @@ export const siteData: SiteData = {
                         { id: 4, name: "Module-5 Notes FPGA System Design using Verilog-bec613d", desc: "FPGA System Design using Verilog-bec613d Module-5 Notes", link: "https://drive.google.com/file/d/1jfgczyFbfeyvZdtc3LWunfOfTt9ZQb66/view?usp=drive_link", type: "notes" }
                     ] },
                     { name: "Digital System Design using Verilog", code: "BEC654A", credits: "3 CR", slug: "digital-system-design-using-verilog-dsdv-bec654a-vtu-notes", modules: [] },
-                    { name: "Consumer Electronics", code: "BEC654B", credits: "3 CR", slug: "consumer-electronics-ce-bec654b-vtu-notes", modules: [] },
+                    { name: "Consumer Electronics", code: "BEC654B", credits: "3 CR", slug: "consumer-electronics-ce-bec654b-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes Consumer Electronics-bec654b", desc: "Consumer Electronics-bec654b Module-1 Notes", link: "https://drive.google.com/file/d/192AYOTDTjkT9Q-ESM_Fqz1jcc0qLahNF/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes Consumer Electronics-bec654b", desc: "Consumer Electronics-bec654b Module-2 Notes", link: "https://drive.google.com/file/d/1SJLqA9mf_nIc_JJlqgFwyecuggicjUfF/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes Consumer Electronics-bec654b", desc: "Consumer Electronics-bec654b Module-3 Notes", link: "https://drive.google.com/file/d/1cUWX3eoDcu4_oYfX28aOJr7kzLMmBDy4/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes Consumer Electronics-bec654b", desc: "Consumer Electronics-bec654b Module-4 Notes", link: "https://drive.google.com/file/d/1jfe1OnR0s3FlA0ywL2cYVMdbf5iv8By9/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Electronic Communication Systems", code: "BEC654C", credits: "3 CR", slug: "electronic-communication-systems-ecs-bec654c-vtu-notes", modules: [] },
                     { name: "Basic VLSI Design", code: "BEC654D", credits: "3 CR", slug: "basic-vlsi-design-bvd-bec654d-vtu-notes", modules: [] },
                     { name: "FPGA System Design using Verilog Lab", code: "BECL657A", credits: "1 CR", slug: "fpga-system-design-using-verilog-lab-fsdvl-becl657a-vtu-notes", modules: [] },
