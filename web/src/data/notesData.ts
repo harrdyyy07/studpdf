@@ -1705,7 +1705,13 @@ export const siteData: SiteData = {
                         { id: 4, name: "Module-4 Notes Consumer Electronics-bec654b", desc: "Consumer Electronics-bec654b Module-4 Notes", link: "https://drive.google.com/file/d/1jfe1OnR0s3FlA0ywL2cYVMdbf5iv8By9/view?usp=drive_link", type: "notes" }
                     ] },
                     { name: "Electronic Communication Systems", code: "BEC654C", credits: "3 CR", slug: "electronic-communication-systems-ecs-bec654c-vtu-notes", modules: [] },
-                    { name: "Basic VLSI Design", code: "BEC654D", credits: "3 CR", slug: "basic-vlsi-design-bvd-bec654d-vtu-notes", modules: [] },
+                    { name: "Basic VLSI Design", code: "BEC654D", credits: "3 CR", slug: "basic-vlsi-design-bvd-bec654d-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "Basic VLSI Design-BEC654D Module-1 Notes", link: "https://drive.google.com/file/d/10hMqjqhZ3L5Cgo27cZrKfRzJ5Eh-NcCo/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "Basic VLSI Design-BEC654D Module-2 Notes", link: "https://drive.google.com/file/d/1_us2ngYHM0lZ76tQ_z428GfkfuwL0SSi/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "Basic VLSI Design-BEC654D Module-3 Notes", link: "https://drive.google.com/file/d/1cSXjNBWKuV30Fa6m4J6qsckVaY2fd-Ya/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "Basic VLSI Design-BEC654D Module-4 Notes", link: "https://drive.google.com/file/d/1deibycAVQNYET2YnSxdTmm8e9EUrHAlA/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "Basic VLSI Design-BEC654D Module-5 Notes", link: "https://drive.google.com/file/d/1AmXy8V_yfhzsFkPiJouwEoWZxYrG1FVm/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "FPGA System Design using Verilog Lab", code: "BECL657A", credits: "1 CR", slug: "fpga-system-design-using-verilog-lab-fsdvl-becl657a-vtu-notes", modules: [] },
                     { name: "System Modelling using Simulink", code: "BECL657B", credits: "1 CR", slug: "system-modelling-using-simulink-sms-becl657b-vtu-notes", modules: [] },
                     { name: "IoT Laboratory", code: "BECL657C", credits: "1 CR", slug: "iot-laboratory-il-becl657c-vtu-notes", modules: [] },
