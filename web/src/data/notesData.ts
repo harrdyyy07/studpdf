@@ -1272,7 +1272,7 @@ export const siteData: SiteData = {
                         { id: 5, name: "Module-5 notes", desc: "Fundamentals of Operating Systems-bcs654b Module-5 notes", link: "https://drive.google.com/file/d/1-nnk_1syYQKHfGGqOGk7g2jIvljRTRH7/view?usp=drive_link", type: "notes" },
                     ] },
                     { name: "Mobile Application Development", code: "BCS654C", credits: "3 CR", slug: "mobile-application-development-mad-bcs654c-vtu-notes", modules: [
-                        { id: 1, name: "Module-1 notes", desc: "Mobile Application Development-bcs654c All Module Notes", link: "https://drive.google.com/file/d/1Ak10iOhB-pnKlqNqDSL0VoT4Ld2sJUDn/view?usp=drive_link", type: "notes" },
+                        { id: 1, name: "Complete notes", desc: "Mobile Application Development-bcs654c All Module Notes", link: "https://drive.google.com/file/d/1Ak10iOhB-pnKlqNqDSL0VoT4Ld2sJUDn/view?usp=drive_link", type: "notes" },
                     ] },
                     { name: "Mobile Application Development", code: "BIS654C", credits: "3 CR", slug: "mobile-application-development-mad-bis654c-vtu-notes", modules: [] },
                     { name: "Introduction to Artificial Intelligence", code: "BAI654D", credits: "3 CR", slug: "introduction-to-artificial-intelligence-iai-bai654d-vtu-notes", modules: [] },
