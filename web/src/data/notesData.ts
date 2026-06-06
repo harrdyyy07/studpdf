@@ -1264,10 +1264,32 @@ export const siteData: SiteData = {
                             { id: 11, name: "Module-5 notes", desc: "Introduction to Data Structures-bcs654a Module-5 notes", link: "https://drive.google.com/file/d/1WreMPfeHgqMOvfMEJMhY8ItcwF10TYT6/view?usp=drive_link", type: "notes" }
                         ]
                     },
-                    { name: "Fundamentals of Operating Systems", code: "BCS654B", credits: "3 CR", slug: "fundamentals-of-operating-systems-fos-bcs654b-vtu-notes", modules: [] },
+                    { name: "Fundamentals of Operating Systems", code: "BCS654B", credits: "3 CR", slug: "fundamentals-of-operating-systems-fos-bcs654b-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Fundamentals of Operating Systems-bcs654b Module-1 notes", link: "https://drive.google.com/file/d/1iphaCcRCzJdrHiLBMzQvzVL75e6xESG5/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 notes", desc: "Fundamentals of Operating Systems-bcs654b Module-2 notes", link: "https://drive.google.com/file/d/1QnFTQpIlofNgMZCW83f9ED04kXVcDlHF/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 notes", desc: "Fundamentals of Operating Systems-bcs654b Module-3 notes", link: "https://drive.google.com/file/d/1xdhFmtz9qMdwYiKXyoKU-WUhd8iexpcC/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 notes", desc: "Fundamentals of Operating Systems-bcs654b Module-4 notes", link: "https://drive.google.com/file/d/1hs27i0UamM9ymMBKVAPWe3JiV0A-yMFp/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 notes", desc: "Fundamentals of Operating Systems-bcs654b Module-5 notes", link: "https://drive.google.com/file/d/1-nnk_1syYQKHfGGqOGk7g2jIvljRTRH7/view?usp=drive_link", type: "notes" },
+                    ] },
+                    { name: "Mobile Application Development", code: "BCS654C", credits: "3 CR", slug: "mobile-application-development-mad-bcs654c-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Mobile Application Development-bcs654c All Module Notes", link: "https://drive.google.com/file/d/1Ak10iOhB-pnKlqNqDSL0VoT4Ld2sJUDn/view?usp=drive_link", type: "notes" },
+                    ] },
                     { name: "Mobile Application Development", code: "BIS654C", credits: "3 CR", slug: "mobile-application-development-mad-bis654c-vtu-notes", modules: [] },
                     { name: "Introduction to Artificial Intelligence", code: "BAI654D", credits: "3 CR", slug: "introduction-to-artificial-intelligence-iai-bai654d-vtu-notes", modules: [] },
-                    { name: "Open Elective Subjects Mechanical Engg", code: "", credits: "3 CR", slug: "open-elective-subjects-mechanical-engg-oeme-vtu-notes", modules: [] },
+                     { name: "Project Management", code: "BME654A", credits: "3 CR", slug: "project-management-pm-bme654a-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Project Management-bme654a Module-1 notes", link: "https://drive.google.com/file/d/118E8xbCpRaQdYL59MG0334bnYmgBE4gT/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 notes", desc: "Project Management-bme654a Module-2 notes", link: "https://drive.google.com/file/d/1WwORBdHymJhZuuALKTKL0ILm2LeWDX7e/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 notes", desc: "Project Management-bme654a Module-3 notes", link: "https://drive.google.com/file/d/1CvnlAJoVxeFCR1HqvlStNuM5XMiIiFub/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 notes", desc: "Project Management-bme654a Module-4 notes", link: "https://drive.google.com/file/d/1J5qMu_XSWq78g8DCQAiefk3AuzgwD-88/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 notes", desc: "Project Management-bme654a Module-5 notes", link: "https://drive.google.com/file/d/1WfVdYweUJNK53L6FbwGVGDHv-k4CDF8X/view?usp=drive_link", type: "notes" }
+                    ] },
+                    { name: "Renewable Energy Power Plants", code: "BME654b", credits: "1 CR", slug: "renewable-energy-power-plants-repp-bme654b-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Renewable Energy Power Plants-bme654b Module-1 notes", link: "https://drive.google.com/file/d/1X8Tk7tYHB5Unnq3UlF4kK6Jj78iO-10S/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 notes", desc: "Renewable Energy Power Plants-bme654b Module-2 notes", link: "https://drive.google.com/file/d/1hDBeW7iU9rqBrh4rTglXlPeOdd0gz_BZ/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 notes", desc: "Renewable Energy Power Plants-bme654b Module-3 notes", link: "https://drive.google.com/file/d/1R7E0-L742-5LRVwpXICkxGFv4R2uWb4C/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 notes", desc: "Renewable Energy Power Plants-bme654b Module-4 notes", link: "https://drive.google.com/file/d/1Lmn-8LoJKy4Wr7CB0fiPxjZRKCdYEw--/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 notes", desc: "Renewable Energy Power Plants-bme654b Module-5 notes", link: "https://drive.google.com/file/d/1aeGJVm9mXn7Dh9jLmQaHl7opcmIwvHEz/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Tosca - Automated Software testing", code: "BISL657A", credits: "1 CR", slug: "tosca-automated-software-testing-tast-bisl657a-vtu-notes", modules: [] },
                     { name: "React", code: "BCSL657B", credits: "1 CR", slug: "react-react-bcsl657b-vtu-notes", modules: [] },
                     { name: "Generative AI", code: "BAIL657C", credits: "1 CR", slug: "generative-ai-gai-bail657c-vtu-notes", modules: [] },
@@ -1930,7 +1952,20 @@ export const siteData: SiteData = {
                     ] },
                     { name: "Machine Design", code: "BME602", credits: "4 CR", slug: "machine-design-md-bme602-vtu-notes", modules: [] },
                     { name: "Professional Elective – II", code: "BME613x", credits: "3 CR", slug: "professional-elective-ii-pe2-bme613x-vtu-notes", modules: [] },
-                    { name: "Open Elective – I", code: "BME654x", credits: "3 CR", slug: "open-elective-i-oe1-bme654x-vtu-notes", modules: [] },
+                    { name: "Project Management", code: "BME654A", credits: "3 CR", slug: "project-management-pm-bme654a-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Project Management-bme654a Module-1 notes", link: "https://drive.google.com/file/d/118E8xbCpRaQdYL59MG0334bnYmgBE4gT/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 notes", desc: "Project Management-bme654a Module-2 notes", link: "https://drive.google.com/file/d/1WwORBdHymJhZuuALKTKL0ILm2LeWDX7e/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 notes", desc: "Project Management-bme654a Module-3 notes", link: "https://drive.google.com/file/d/1CvnlAJoVxeFCR1HqvlStNuM5XMiIiFub/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 notes", desc: "Project Management-bme654a Module-4 notes", link: "https://drive.google.com/file/d/1J5qMu_XSWq78g8DCQAiefk3AuzgwD-88/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 notes", desc: "Project Management-bme654a Module-5 notes", link: "https://drive.google.com/file/d/1WfVdYweUJNK53L6FbwGVGDHv-k4CDF8X/view?usp=drive_link", type: "notes" }
+                    ] },
+                    { name: "Renewable Energy Power Plants", code: "BME654b", credits: "1 CR", slug: "renewable-energy-power-plants-repp-bme654b-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Renewable Energy Power Plants-bme654b Module-1 notes", link: "https://drive.google.com/file/d/1X8Tk7tYHB5Unnq3UlF4kK6Jj78iO-10S/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 notes", desc: "Renewable Energy Power Plants-bme654b Module-2 notes", link: "https://drive.google.com/file/d/1hDBeW7iU9rqBrh4rTglXlPeOdd0gz_BZ/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 notes", desc: "Renewable Energy Power Plants-bme654b Module-3 notes", link: "https://drive.google.com/file/d/1R7E0-L742-5LRVwpXICkxGFv4R2uWb4C/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 notes", desc: "Renewable Energy Power Plants-bme654b Module-4 notes", link: "https://drive.google.com/file/d/1Lmn-8LoJKy4Wr7CB0fiPxjZRKCdYEw--/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 notes", desc: "Renewable Energy Power Plants-bme654b Module-5 notes", link: "https://drive.google.com/file/d/1aeGJVm9mXn7Dh9jLmQaHl7opcmIwvHEz/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Major Project Phase – I", code: "BME685", credits: "2 CR", slug: "major-project-phase-i-mpp1-bme685-vtu-notes", modules: [] },
                     { name: "Design Lab", code: "BMEL606", credits: "1 CR", slug: "design-lab-dl-bmel606-vtu-notes", modules: [] },
                     { name: "Ability / Skill Enhancement Course – V", code: "BME657x", credits: "1 CR", slug: "ability-skill-enhancement-course-v-asec-bme657x-vtu-notes", modules: [] },
