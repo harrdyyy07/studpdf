@@ -12,6 +12,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+    
 
 {
     id: "8",
