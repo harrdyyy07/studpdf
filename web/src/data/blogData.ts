@@ -443,15 +443,11 @@ export const blogPosts: BlogPost[] = [
                     <tbody>
                         <tr>
                             <td>Engineering (General)</td>
-                            <td><a href="https://drive.google.com/file/d/1XSaGkAcyCSYOIr_LwZkSauW9e4IFr8J3/view?usp=drive_link">Engineering Round 1 Cutoff 2025</a></td>
+                            <td><a href="https://drive.google.com/file/d/1yQQWcXPmYjtm4fz55Uv83mAGHYp7K-AZ/view?usp=drive_link">Engineering Round 1 Cutoff 2025</a></td>
                         </tr>
                         <tr>
                             <td>Agriculture (Practical)</td>
-                            <td><a href="https://drive.google.com/file/d/1YSaGkAcyCSYOIr_LwZkSauW9e4IFr8J3/view?usp=drive_link">Agri (Practical) Cutoff 2025</a></td>
-                        </tr>
-                        <tr>
-                            <td>Medical / Dental</td>
-                            <td><a href="https://drive.google.com/file/d/1ZSaGkAcyCSYOIr_LwZkSauW9e4IFr8J3/view?usp=drive_link">Medical Round 1 Cutoff 2025</a></td>
+                            <td><a href="https://drive.google.com/file/d/1M68L3jlHajChGLyQMsrX7lvCNmY3WBy8/view?usp=drive_link">Agri (Practical) Cutoff 2025</a></td>
                         </tr>
                         <tr>
                             <td>Nursing</td>
@@ -460,6 +456,10 @@ export const blogPosts: BlogPost[] = [
                         <tr>
                             <td>B.Pharma</td>
                             <td><a href="https://drive.google.com/file/d/1DHlmHbf0IDxMPXpqjj8ptLv5XHDw6TPz/view?usp=drive_link">B.Pharma Round 1 Cutoff 2025</a></td>
+                        </tr>
+                        <tr>
+                            <td>D.Pharma</td>
+                            <td><a href="https://drive.google.com/file/d/186gZq2Ds8sxfRTXOp1fuuOSNG7hTGvfG/view?usp=drive_link">D.Pharma Round 1 Cutoff 2025</a></td>
                         </tr>
                     </tbody>
                 </table>
