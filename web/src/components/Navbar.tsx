@@ -61,7 +61,7 @@ const Navbar = () => {
             {showTopBar && (
                 <div className="top-bar" id="announcement-bar">
                     <span style={{ fontWeight: 600, letterSpacing: '0.5px' }}>
-                        ⏳ June/July Exams are near! Prepare well!
+                        🚀 All Semester Resources Are Live — Notes, PYQs, Labs & Calculators Available Now!
                     </span>
                     <button className="top-bar-close" onClick={closeTopBar} aria-label="Close Announcement">&times;</button>
                 </div>

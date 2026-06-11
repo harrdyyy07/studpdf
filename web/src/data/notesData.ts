@@ -1757,9 +1757,28 @@ export const siteData: SiteData = {
             {
                 sem: 4,
                 subjects: [
-                    { name: "Electric Motors", code: "BEE401", credits: "4 CR", slug: "electric-motors-em-bee401-vtu-notes", modules: [] },
-                    { name: "Transmission and Distribution", code: "BEE402", credits: "4 CR", slug: "transmission-and-distribution-td-bee402-vtu-notes", modules: [] },
-                    { name: "Microcontrollers", code: "BEE403", credits: "4 CR", slug: "microcontrollers-mc-bee403-vtu-notes", modules: [] },
+                    { name: "Electric Motors", code: "BEE401", credits: "4 CR", slug: "electric-motors-em-bee401-vtu-notes", modules: [
+                        { id: 1, name: "BEE401 Module-1 Notes", desc: "BEE401 Module-1 Notes", link: "https://drive.google.com/file/d/1YzSLlqpZ-ljd-Pbbhb7PrgwMKS6BM83R/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "BEE401 Module-2 Notes", desc: "BEE401 Module-2 Notes", link: "https://drive.google.com/file/d/1Sxx370xAjroRKIr0PQ9hXxPj8JUStAfU/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "BEE401 Module-3 Notes", desc: "BEE401 Module-3 Notes", link: "https://drive.google.com/file/d/1kq-PfyxepAzGleutE303trhU14mOLSeJ/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "BEE401 Module-4 Notes", desc: "BEE401 Module-4 Notes", link: "https://drive.google.com/file/d/1syUshotCdvkwQIFcg-faFdcJF_uKlhPB/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "BEE401 Module-5 Notes", desc: "BEE401 Module-5 Notes", link: "https://drive.google.com/file/d/1LiW79FxnIoMgCwpTV34oECIbiwwYjWK5/view?usp=drive_link", type: "notes" },
+                        { id: 6, name: "BEE401 All Module Handwritten Notes", desc: "BEE401 All Module Handwritten Notes", link: "https://drive.google.com/file/d/1YNctek0tk6CLCSMJ2quyJffQAnVJFjKe/view?usp=drive_link", type: "notes" },
+                    ] },
+                    { name: "Transmission and Distribution", code: "BEE402", credits: "4 CR", slug: "transmission-and-distribution-td-bee402-vtu-notes", modules: [
+                        { id: 1, name: "BEE402 Module-1 Premium Notes for free", desc: "BEE402 Module-1 Premium Notes", link: "https://drive.google.com/file/d/1jxovGYExDlwfaIhKG4I5SZ9BMpsboGxe/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "BEE402 Module-2 Premium Notes for free", desc: "BEE402 Module-2 Premium Notes", link: "https://drive.google.com/file/d/17AdDehm7mM_-owptWRXTqJbeBYZcjlkp/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "BEE402 Module-3 Premium Notes for free", desc: "BEE402 Module-3 Premium Notes", link: "https://drive.google.com/file/d/1RfxzsWaBmyhZew3XhXEFca93ID_KkDIS/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "BEE402 Module-4 Premium Notes for free", desc: "BEE402 Module-4 Premium Notes", link: "https://drive.google.com/file/d/1cwlUAnogGKqSY5JqhbztaCEpLQAhhURy/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "BEE402 Module-5 Premium Notes for free", desc: "BEE402 Module-5 Premium Notes", link: "https://drive.google.com/file/d/15of99YwMU2GpVbK23wBCOh5bArbNzJSw/view?usp=drive_link", type: "notes" }
+                    ] },
+                    { name: "Microcontrollers", code: "BEE403", credits: "4 CR", slug: "microcontrollers-mc-bee403-vtu-notes", modules: [
+                        { id: 1, name: "BEE403 Module-1 Notes", desc: "BEE403 Module-1 Notes", link: "https://drive.google.com/file/d/1vEMqgvvTg6pILoaFAGnRbAuFQO7jj7OH/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "BEE403 Module-2 Notes", desc: "BEE403 Module-2 Notes", link: "https://drive.google.com/file/d/1D4jJrm_E0wS7ZBAe_4FlC46gUcdzURnp/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "BEE403 Module-3 Notes", desc: "BEE403 Module-3 Notes", link: "https://drive.google.com/file/d/1mQrdMvu_NkVLFQDl8qsvG-aOK0oLmjsE/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "BEE403 Module-4 Notes", desc: "BEE403 Module-4 Notes", link: "https://drive.google.com/file/d/1AKuLE3niVqqTohND7GI9NZoNAQ0dq73Z/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "BEE403 Module-5 Notes", desc: "BEE403 Module-5 Notes", link: "https://drive.google.com/file/d/1BVy5ic7709w5J0ta0pwejQ17UaodDCAB/view?usp=drive_link", type: "notes" },
+                    ] },
                     {
                         name: "Microcontrollers Lab", code: "BEE-403", credits: "4 CR", slug: "microcontrollers-lab-mc-bee403-vtu-labmanual", modules: [
                             { id: 1, name: "Microcontrollers Lab", desc: "Microcontrollers Lab by CIT,GUBBI", link: "https://drive.google.com/file/d/153kPyAs6vy_ccrIRJaV0YpyVO1CwYe-v/view?usp=drive_link", type: "lab manual" },
@@ -1767,7 +1786,18 @@ export const siteData: SiteData = {
                         ]
                     },
                     { name: "Electric Motors Lab", code: "BEEL404", credits: "1 CR", slug: "electric-motors-lab-eml-beel404-vtu-notes", modules: [] },
-                    { name: "Electrical Power Generation and Economics", code: "BEE405A", credits: "3 CR", slug: "electrical-power-generation-and-economics-epge-bee405a-vtu-notes", modules: [] },
+                    { name: "Electrical Power Generation and Economics", code: "BEE405A", credits: "3 CR", slug: "electrical-power-generation-and-economics-epge-bee405a-vtu-notes", modules: [
+                        { id: 1, name: "BEE405A Module-1 Notes", desc: "BEE405A Module-1 Notes", link: "https://drive.google.com/file/d/1a1KJXkaWfFfRlq5h8rj_yoN70AoXa8f6/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "BEE405A Module-1 Handwritten Notes", desc: "BEE405A Module-1 Handwritten Notes", link: "https://drive.google.com/file/d/1asCZybh2wjbOd-YxeaRJozs2vOP1xcfK/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "BEE405A Module-2 Notes", desc: "BEE405A Module-2 Notes", link: "https://drive.google.com/file/d/152444RyLTAIRUJc1aoTTD4bk6kIJp2CL/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "BEE405A Module-2 Handwritten Notes", desc: "BEE405A Module-2 Handwritten Notes", link: "https://drive.google.com/file/d/1__wiUBYllD7Pt6fLeCGjzVXc8UuTIEe0/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "BEE405A Module-3 Notes", desc: "BEE405A Module-3 Notes", link: "https://drive.google.com/file/d/1ZCowGVGHxP-L1BxR0ykKOv-I7OspR9AD/view?usp=drive_link", type: "notes" },
+                        { id: 6, name: "BEE405A Module-3 Handwritten Notes", desc: "BEE405A Module-3 Handwritten Notes", link: "https://drive.google.com/file/d/1iWbzI1052d3NdxXSPny_EmgeTV7R8AmK/view?usp=drive_link", type: "notes" },
+                        { id: 7, name: "BEE405A Module-4 Notes", desc: "BEE405A Module-4 Notes", link: "https://drive.google.com/file/d/1TZ5oF3YzIQgPtW8RAzQ3ms0t9Fcocroo/view?usp=drive_link", type: "notes" },
+                        { id: 8, name: "BEE405A Module-4 Handwritten Notes", desc: "BEE405A Module-4 Handwritten Notes", link: "https://drive.google.com/file/d/14S2Mo6u7VSW8A_PThyM3_lxQwsS_STN_/view?usp=drive_link", type: "notes" },
+                        { id: 9, name: "BEE405A Module-5 Notes", desc: "BEE405A Module-5 Notes", link: "https://drive.google.com/file/d/1CTfPEUiRzZP11s1plf74TAj8m4YBTXlf/view?usp=drive_link", type: "notes" },
+                        { id: 10, name: "BEE405A Module-5 Handwritten Notes", desc: "BEE405A Module-5 Handwritten Notes", link: "https://drive.google.com/file/d/1Ebu9_75jlXl1x0n4EU7tKmpZO347EaL4/view?usp=drive_link", type: "notes" },
+                    ] },
                     { name: "Op-Amp and LIC", code: "BEE405B", credits: "3 CR", slug: "op-amp-and-lic-oal-bee405b-vtu-notes", modules: [] },
                     { name: "Engineering Materials", code: "BEE405C", credits: "3 CR", slug: "engineering-materials-em-bee405c-vtu-notes", modules: [] },
                     { name: "Object Oriented Programming", code: "BEE405D", credits: "3 CR", slug: "object-oriented-programming-oop-bee405d-vtu-notes", modules: [] },
