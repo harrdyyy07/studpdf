@@ -2046,8 +2046,23 @@ export const siteData: SiteData = {
             {
                 sem: 4,
                 subjects: [
-                    { name: "Analysis of Structures", code: "BCV401", credits: "4 CR", slug: "analysis-of-structures-aos-bcv401-vtu-notes", modules: [] },
-                    { name: "Fluid Mechanics and Hydraulics", code: "BCV402", credits: "4 CR", slug: "fluid-mechanics-and-hydraulics-fmh-bcv402-vtu-notes", modules: [] },
+                    { name: "Analysis of Structures", code: "BCV401", credits: "4 CR", slug: "analysis-of-structures-aos-bcv401-vtu-notes", modules: [
+                        {id:1,name:"Module-1 notes", desc:"Analysis of Structures-bcv401 Module-1 notes", link:"https://drive.google.com/file/d/1OjTZj2VVJacIrdS10KofWfspQgYjq64_/view?usp=drive_link", type:"notes"},
+                        {id:2,name:"Module-2 notes", desc:"Analysis of Structures-bcv401 Module-2 notes", link:"https://drive.google.com/file/d/1j-oN6n1VZJdG5YboXUuWR-hnlm34Kt79/view?usp=drive_link", type:"notes"},
+                        {id:3,name:"Module-3 notes", desc:"Analysis of Structures-bcv401 Module-3 notes", link:"https://drive.google.com/file/d/1JFNVz0oz-9K6Zk6Emg8glxr0JDn77lYk/view?usp=drive_link", type:"notes"},
+                        {id:4,name:"Module-4 notes", desc:"Analysis of Structures-bcv401 Module-4 notes", link:"https://drive.google.com/file/d/1_OahWOdr-7CrSlAnyjxJ3ghDVye_HF7c/view?usp=drive_link", type:"notes"},
+                        {id:5,name:"Module-5 notes", desc:"Analysis of Structures-bcv401 Module-5 notes", link:"https://drive.google.com/file/d/1ap9iiNTJbuoAyT-KrDOQ5TKoV6JwfBJQ/view?usp=drive_link", type:"notes"}
+                    ] },
+                    { name: "Fluid Mechanics and Hydraulics", code: "BCV402", credits: "4 CR", slug: "fluid-mechanics-and-hydraulics-fmh-bcv402-vtu-notes", modules: [
+                        {id:1,name:"Module-1 notes", desc:"Fluid Mechanics and Hydraulics-bcv402 Module-1 notes", link:"https://drive.google.com/file/d/1Hn8gelkHu-UH2P6tUhnJQ74PCQt_2Kl5/view?usp=drive_link", type:"notes"},
+                        {id:2,name:"Module-2 notes", desc:"Fluid Mechanics and Hydraulics-bcv402 Module-2 notes", link:"https://drive.google.com/file/d/1MaPQWBKYxHsHvuwydSurBUtA0eq6pnWN/view?usp=drive_link", type:"notes"},
+                        {id:3,name:"Module-3 notes", desc:"Fluid Mechanics and Hydraulics-bcv402 Module-3 notes", link:"https://drive.google.com/file/d/1Awf4cxssZiOn2Z81IW7cb-4m573CJsMr/view?usp=drive_link", type:"notes"},
+                        {id:4,name:"Module-4 notes", desc:"Fluid Mechanics and Hydraulics-bcv402 Module-4 notes", link:"https://drive.google.com/file/d/1Fcw5RWHx8b2FZWn3d95pX1byKzIHGrKA/view?usp=drive_link", type:"notes"},
+                        {id:5,name:"Module-5 notes", desc:"Fluid Mechanics and Hydraulics-bcv402 Module-5 notes", link:"https://drive.google.com/file/d/1sXgmmJxRMtNeghsTU_g_c6g7MqSnm7a8/view?usp=drive_link", type:"notes"},
+                        {id:6,name:"Complete Notes", desc:"Fluid Mechanics and Hydraulics-bcv402 notes", link:"https://drive.google.com/file/d/1K_QZS3iaYaBaT7fHwzFuZ40nAjzQIji5/view?usp=drive_link", type:"notes"},
+                        {id:7,name:"Lab Manual", desc:"Fluid Mechanics and Hydraulics-bcv402 lab manual", link:"https://drive.google.com/file/d/1Z5KpL_1P_RPJHSKziycHnYqmWh7JH-gX/view?usp=drive_link", type:"labmanual"},
+
+                    ] },
                     { name: "Transportation Engineering", code: "BCV403", credits: "4 CR", slug: "transportation-engineering-te-bcv403-vtu-notes", modules: [] },
                     { name: "Building Materials Testing Lab", code: "BCVL404", credits: "1 CR", slug: "building-materials-testing-lab-bmtl-bcvl404-vtu-notes", modules: [] },
                     { name: "Finance for Professionals", code: "BCV405A", credits: "3 CR", slug: "finance-for-professionals-ffp-bcv405a-vtu-notes", modules: [] },
