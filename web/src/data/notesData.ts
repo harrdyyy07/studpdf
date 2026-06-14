@@ -1955,7 +1955,10 @@ export const siteData: SiteData = {
             {
                 sem: 4,
                 subjects: [
-                    { name: "Applied Thermodynamics", code: "BME401", credits: "3 CR", slug: "applied-thermodynamics-at-bme401-vtu-notes", modules: [] },
+                    { name: "Applied Thermodynamics", code: "BME401", credits: "3 CR", slug: "applied-thermodynamics-at-bme401-vtu-notes", modules: [
+                        { id: 1, name: "Complete Notes for Applied Thermodynamics", desc: "Complete Notes for Applied Thermodynamics-BME401", link: "https://drive.google.com/file/d/1PLB4J6n3H0YxoFV7tyqhgZPWPVCXLv3t/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Handwritten Notes for Applied Thermodynamics", desc: "Handwritten Notes for Applied Thermodynamics-BME401", link: "https://drive.google.com/file/d/1sODMtu_xiuRQz9hqMODrtImP0ncgC9YA/view?usp=drive_link", type: "notes" },
+                    ] },
                     { name: "Machining Science & Metrology", code: "BME402", credits: "4 CR", slug: "machining-science-metrology-msm-bme402-vtu-notes", modules: [] },
                     { name: "Fluid Mechanics", code: "BME403", credits: "4 CR", slug: "fluid-mechanics-fm-bme403-vtu-notes", modules: [] },
                     { name: "Mechanical Measurements and Metrology Lab", code: "BME404", credits: "1 CR", slug: "mechanical-measurements-and-metrology-lab-mmml-bme404-vtu-notes", modules: [] },
