@@ -1444,15 +1444,15 @@ export const siteData: SiteData = {
                     },
                     {
                         name: "Electromagnetics Theory", code: "BEC401", credits: "3 CR", slug: "electromagnetics-theory-et-bec401-vtu-notes", modules: [
-                            { id: 1, name: "BEC401 electromagnetics theory complete notes", desc: "BEC401 electromagnetics theory complete notes", link: "https://drive.google.com/file/d/1N-Iaa2YzaAhDk0aRuoliQvfZV7CcPhP_/view?usp=drive_link", type: "Notes" },
-                            { id: 2, name: "Module 1: Handwritten Notes", desc: "Comprehensive notes for Module 1", link: "https://drive.google.com/file/d/167hNdXEvJQi6hp7DxJtL5kC37fsCEePb/view?usp=drive_link", type: "Notes" },
-                            { id: 3, name: "Module 1: Notes", desc: "Comprehensive notes for Module 1", link: "https://drive.google.com/file/d/1bo8Bh2o0jwBX5uOUUGr_NndO0u-cHsiM/view?usp=drive_link", type: "Notes" },
-                            { id: 4, name: "Module 2: Notes", desc: "Comprehensive notes for Module 2", link: "https://drive.google.com/file/d/1ImjSwzEC0yTsL_0K73CsRnVfDdJdcNjt/view?usp=drive_link", type: "Notes" },
-                            { id: 5, name: "Module 3: Notes", desc: "Comprehensive notes for Module 3", link: "https://drive.google.com/file/d/18Mvn9DCH-AWM4L0YA36Tswed_V_ERKIi/view?usp=drive_link", type: "Notes" },
-                            { id: 6, name: "Module 4: Notes", desc: "Comprehensive notes for Module 4", link: "https://drive.google.com/file/d/16cGfkHZPEvgWjwW1Zg3AYOWIkyCJGo7_/view?usp=drive_link", type: "Notes" },
-                            { id: 7, name: "Module 5: Notes", desc: "Comprehensive notes for Module 5", link: "https://drive.google.com/file/d/1bNKJ5bwMDuk5NSrP8KYZ1vL-AFAGXiYP/view?usp=drive_link", type: "Notes" },
+                            { id: 1, name: "BEC401 electromagnetics theory complete notes", desc: "BEC401 electromagnetics theory complete notes", link: "https://drive.google.com/file/d/1iuctkVlgiq6F0UjAFiXlK_4AsZQpsIRo/view?usp=drive_link", type: "Notes" },
+                            { id: 2, name: "Module 1: Handwritten Notes", desc: "Electromagnetics Theory-BEC401 notes for Module 1", link: "https://drive.google.com/file/d/138x6DuDIPZq_tYVkTt6iiksfuoVaH4kf/view?usp=drive_link", type: "Notes" },
+                            { id: 3, name: "Module 1: Notes", desc: "Electromagnetics Theory-BEC401 notes for Module 1", link: "https://drive.google.com/file/d/1bOGjKbB7Jmvne9OADjqoFlnrnv-qoZuc/view?usp=drive_link", type: "Notes" },
+                            { id: 4, name: "Module 2: Notes", desc: "Electromagnetics Theory-BEC401 notes for Module 2", link: "https://drive.google.com/file/d/1D8Hvv8Dd8ASu2Oad29pvwOZT5h5yDLzJ/view?usp=drive_link", type: "Notes" },
+                            { id: 5, name: "Module 3: Notes", desc: "Electromagnetics Theory-BEC401 notes for Module 3", link: "https://drive.google.com/file/d/1UGosc3LRTOZUnQ--aBe3prrxK6KMwNid/view?usp=drive_link", type: "Notes" },
+                            { id: 6, name: "Module 4: Notes", desc: "Electromagnetics Theory-BEC401 notes for Module 4", link: "https://drive.google.com/file/d/1-j4t4lOnm7OiFGfTRHiO9kZBa6zBScI4/view?usp=drive_link", type: "Notes" },
+                            { id: 7, name: "Module 5: Notes", desc: "Electromagnetics Theory-BEC401 notes for Module 5", link: "https://drive.google.com/file/d/1Bw56rlkrGgQxH3VzEqojNbFyReybzMXF/view?usp=drive_link", type: "Notes" },
                             { id: 8, name: "engineering electromagnetics 9th ed 9nbsped compressed pdf", desc: "engineering electromagnetics 9th ed 9nbsped compressed pdf", link: "https://drive.google.com/file/d/1Uzwcq4ux5RswFGfjxhqtMxaJm8ueAIHo/view?usp=drive_link", type: "Textbook" },
-                            { id: 9, name: "Model question paper-1", desc: "model question paper-1 for bmatec301", link: "https://drive.google.com/file/d/1WCDzaO4KrpEu3k-UqmmKUtWeh-5kAnVa/view?usp=drive_link", type: "MQP" },
+                            { id: 9, name: "Model question paper-1", desc: "model question paper-1 for bec401", link: "https://drive.google.com/file/d/1WCDzaO4KrpEu3k-UqmmKUtWeh-5kAnVa/view?usp=drive_link", type: "MQP" },
                         ]
                     },
                     {
@@ -1969,7 +1969,13 @@ export const siteData: SiteData = {
                         { id: 7, name: "Module-5 Notes", desc: "Module-5 Notes for Machining Science & Metrology-BME402", link: "https://drive.google.com/file/d/18zsOhcMvbviPRE80Buon2hMyFj1ei-mY/view?usp=drive_link", type: "notes" },
                         { id: 8, name: "Lab Manual", desc: "Lab Manual for Machining Science & Metrology-BME402", link: "https://drive.google.com/file/d/1b1vSn7Tmo-bwq8xkO8xdpJqqe69QtT42/view?usp=drive_link", type: "notes" },
                     ] },
-                    { name: "Fluid Mechanics", code: "BME403", credits: "4 CR", slug: "fluid-mechanics-fm-bme403-vtu-notes", modules: [] },
+                    { name: "Fluid Mechanics", code: "BME403", credits: "4 CR", slug: "fluid-mechanics-fm-bme403-vtu-notes", modules: [
+                        { id: 1, name: "Module 1", desc: "Module-1 Notes for Fluid Mechanics-BME403", link: "https://drive.google.com/file/d/1-D6kd8W0_9oNDES-yiwebNb65qLoKrAk/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module 2", desc: "Module-2 Notes for Fluid Mechanics-BME403", link: "https://drive.google.com/file/d/1vPodcRZT-1tfvxsrXDmCSvQHtCR6z-mg/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module 3", desc: "Module-3 Notes for Fluid Mechanics-BME403", link: "https://drive.google.com/file/d/1jVtGaXzSKH9uf1ffilyOCMM_zGmDUonZ/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module 4", desc: "Module-4 Notes for Fluid Mechanics-BME403", link: "https://drive.google.com/file/d/1PmZK2eUFrXavRUigAPEcusvNT0kz7Gm1/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module 5", desc: "Module-5 Notes for Fluid Mechanics-BME403", link: "https://drive.google.com/file/d/1rTNrhMO_g1tob4rF_7GLIQdkDV1jKlEP/view?usp=drive_link", type: "notes" },
+                    ] },
                     { name: "Mechanical Measurements and Metrology Lab", code: "BME404", credits: "1 CR", slug: "mechanical-measurements-and-metrology-lab-mmml-bme404-vtu-notes", modules: [] },
                     { name: "ESC / ETC / PLC (Elective)", code: "BME405x", credits: "3 CR", slug: "esc-etc-plc-elective-bme405x-vtu-notes", modules: [] },
                     { name: "Ability / Skill Enhancement Course – IV", code: "BME456x", credits: "1 CR", slug: "ability-skill-enhancement-course-iv-asec-bme456x-vtu-notes", modules: [] },
