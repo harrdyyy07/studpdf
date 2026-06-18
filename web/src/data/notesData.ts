@@ -636,48 +636,55 @@ export const siteData: SiteData = {
                                     },
                                     {
                                         id: 3,
+                                        name: "Module-1 Handwritten Notes",
+                                        desc: "Introduction to Electrical Engineering-1besc104b/204b module 1 Handwritten notes",
+                                        link: "https://drive.google.com/file/d/1Sb1DjvxTloeVO5qBbQxh2AXmvKzY9IuC/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
                                         name: "Module-2 Notes-1",
                                         desc: "Introduction to Electrical Engineering-1besc104b/204b module 2 notes",
                                         link: "https://drive.google.com/file/d/1r_6-Gaq1JWT6Tf3PE0nHaT0KfrMeIaZB/view?usp=drive_link",
                                         type: "notes"
                                     },
                                     {
-                                        id: 4,
+                                        id: 5,
                                         name: "Module-2 Notes-2",
                                         desc: "Introduction to Electrical Engineering-1besc104b/204b module 2 notes",
                                         link: "https://drive.google.com/file/d/1Y_YQ1pnIRC1K6r8NrWcDgK3M-YLx2qja/view?usp=drive_link",
                                         type: "notes"
                                     },
                                     {
-                                        id: 5,
+                                        id: 6,
                                         name: "Module-3 Notes-1",
                                         desc: "Introduction to Electrical Engineering-1besc104b/204b module 3 notes",
                                         link: "https://drive.google.com/file/d/1FBQNH8HJ4j8fuhVb5FDbr6GTyzqNgsEX/view?usp=drive_link",
                                         type: "notes"
                                     },
                                     {
-                                        id: 6,
+                                        id: 7,
                                         name: "Module-3 Notes-2",
                                         desc: "Introduction to Electrical Engineering-1besc104b/204b module 3 notes",
                                         link: "https://drive.google.com/file/d/1dFQGfSCztS0HtwqCX1YvVWylX5O4Zy5t/view?usp=drive_link",
                                         type: "notes"
                                     },
                                     {
-                                        id: 7,
+                                        id: 8,
                                         name: "Module-4 Notes-1",
                                         desc: "Introduction to Electrical Engineering-1besc104b/204b module 4 notes",
                                         link: "https://drive.google.com/file/d/1YBbHmOKnzhsVhfq46Qhpq5FmXkQwfPTz/view?usp=drive_link",
                                         type: "notes"
                                     },
                                     {
-                                        id: 8,
+                                        id: 9,
                                         name: "Module-4 Notes-2",
                                         desc: "Introduction to Electrical Engineering-1besc104b/204b module 4 notes",
                                         link: "https://drive.google.com/file/d/1UDn0wzTt-rM37GfEh65Skh-mNW9h-lmg/view?usp=drive_link",
                                         type: "notes"
                                     },
                                     {
-                                        id: 9,
+                                        id: 10,
                                         name: "Module-5",
                                         desc: "Introduction to Electrical Engineering-1besc104b/204b module 5 notes",
                                         link: "https://drive.google.com/file/d/1EBYRpRCKHU4vndzeSv95xczrW8vo46LY/view?usp=drive_link",
