@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Subject } from '@/data/notesData';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { getSubjectBlog } from '@/data/subjectBlogsData';
 
 interface SubjectViewProps {
     branch: string;
@@ -50,6 +51,9 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
     const [activeFilter, setActiveFilter] = useState('All');
     const [previewContent, setPreviewContent] = useState<{url: string, title: string} | null>(null);
     const [mounted, setMounted] = useState(false);
+    const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+    const blog = getSubjectBlog(subject.code, subject.name, subject.modules);
 
     useEffect(() => {
         setMounted(true);
@@ -139,6 +143,58 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
                 <div className="text-center py-24 opacity-30 italic">No resources found for this category.</div>
             )}
 
+            {blog && (
+                <div className="subject-blog-section mt-16 pt-12 border-t border-surface-border">
+                    <div className="subject-blog-card">
+                        <div className="subject-blog-badge">📚 STUDY GUIDE & EXAM STRATEGY</div>
+                        <h2 className="subject-blog-title">{blog.title}</h2>
+                        <div className="subject-blog-content" dangerouslySetInnerHTML={{ __html: blog.content }} />
+                    </div>
+
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <div className="subject-faq-section mt-16">
+                            <h2 className="section-title text-left mb-8">Frequently Asked Questions</h2>
+                            <div className="faq-list">
+                                {blog.faqs.map((faq, idx) => (
+                                    <div key={idx} className="faq-item">
+                                        <button 
+                                            className="faq-question"
+                                            onClick={() => setOpenFaqIndex(openFaqIndex === idx ? null : idx)}
+                                        >
+                                            <span>{faq.question}</span>
+                                            <span className={`faq-icon ${openFaqIndex === idx ? 'open' : ''}`}>▼</span>
+                                        </button>
+                                        <div className={`faq-answer-wrapper ${openFaqIndex === idx ? 'open' : ''}`}>
+                                            <div className="faq-answer">{faq.answer}</div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                    
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <script
+                            type="application/ld+json"
+                            dangerouslySetInnerHTML={{
+                                __html: JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "FAQPage",
+                                    "mainEntity": blog.faqs.map(faq => ({
+                                        "@type": "Question",
+                                        "name": faq.question,
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": faq.answer
+                                        }
+                                    }))
+                                })
+                            }}
+                        />
+                    )}
+                </div>
+            )}
+
             {mounted && previewContent && createPortal(
                 <div className="fixed inset-0 z-[10000] flex items-center justify-center p-4 sm:p-6 md:p-12 bg-black/90 backdrop-blur-sm"
                     onClick={() => setPreviewContent(null)}>
@@ -167,6 +223,154 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
                 </div>,
                 document.body
             )}
+
+            <style>{`
+                /* Subject Blog Styling */
+                .subject-blog-section {
+                    max-width: 850px;
+                    margin: 4rem auto 0;
+                }
+                .subject-blog-card {
+                    background: var(--surface);
+                    border: 1px solid var(--surface-border);
+                    border-radius: var(--radius-xl);
+                    padding: 2.5rem;
+                    box-shadow: var(--card-shadow);
+                    text-align: left;
+                }
+                .subject-blog-badge {
+                    display: inline-block;
+                    font-size: 0.75rem;
+                    font-weight: 800;
+                    color: var(--primary);
+                    background: rgba(79, 70, 229, 0.08);
+                    padding: 0.4rem 1rem;
+                    border-radius: 2rem;
+                    letter-spacing: 0.05em;
+                    margin-bottom: 1.5rem;
+                }
+                .subject-blog-title {
+                    font-size: clamp(1.8rem, 4vw, 2.5rem);
+                    font-weight: 900;
+                    line-height: 1.2;
+                    letter-spacing: -0.03em;
+                    color: var(--text);
+                    margin-bottom: 2rem;
+                    text-align: left;
+                }
+                .subject-blog-content {
+                    font-size: 1rem;
+                    line-height: 1.8;
+                    color: var(--text-muted);
+                    text-align: left;
+                }
+                .subject-blog-content p {
+                    margin-bottom: 1.25rem;
+                }
+                .subject-blog-content h2 {
+                    font-size: 1.35rem;
+                    font-weight: 800;
+                    color: var(--text);
+                    margin: 2.5rem 0 1rem;
+                    padding-left: 0.75rem;
+                    border-left: 4px solid var(--primary);
+                    text-align: left;
+                }
+                .subject-blog-content h3 {
+                    font-size: 1.15rem;
+                    font-weight: 700;
+                    color: var(--text);
+                    margin: 1.75rem 0 0.75rem;
+                    text-align: left;
+                }
+                .subject-blog-content ul, .subject-blog-content ol {
+                    margin: 1rem 0 1.5rem;
+                    padding-left: 1.25rem;
+                }
+                .subject-blog-content li {
+                    margin-bottom: 0.5rem;
+                    text-align: left;
+                }
+                .subject-blog-content strong {
+                    color: var(--text);
+                }
+                .subject-blog-content .syllabus-modules-list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    margin: 1.5rem 0;
+                }
+                .subject-blog-content .syllabus-module-item {
+                    background: var(--background);
+                    border: 1px solid var(--surface-border);
+                    border-radius: var(--radius-md);
+                    padding: 1.25rem 1.5rem;
+                    text-align: left;
+                }
+                .subject-blog-content .syllabus-module-item h3 {
+                    margin-top: 0;
+                    margin-bottom: 0.5rem;
+                    color: var(--text);
+                }
+
+                /* FAQ Accordion Styling */
+                .faq-list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    margin-bottom: 3rem;
+                }
+                .faq-item {
+                    background: var(--surface);
+                    border: 1px solid var(--surface-border);
+                    border-radius: var(--radius-md);
+                    overflow: hidden;
+                    transition: all 0.3s ease;
+                }
+                .faq-item:hover {
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+                    border-color: var(--primary);
+                }
+                .faq-question {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding: 1.25rem 1.5rem;
+                    background: none;
+                    border: none;
+                    text-align: left;
+                    font-size: 1.05rem;
+                    font-weight: 700;
+                    color: var(--text);
+                    cursor: pointer;
+                }
+                .faq-icon {
+                    font-size: 0.75rem;
+                    color: var(--text-muted);
+                    transition: transform 0.3s ease;
+                }
+                .faq-icon.open {
+                    transform: rotate(180deg);
+                    color: var(--primary);
+                }
+                .faq-answer-wrapper {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+                }
+                .faq-answer-wrapper.open {
+                    max-height: 1000px;
+                    transition: max-height 0.5s ease-in-out;
+                }
+                .faq-answer {
+                    padding: 0 1.5rem 1.5rem;
+                    font-size: 0.95rem;
+                    line-height: 1.7;
+                    color: var(--text-muted);
+                    text-align: left;
+                }
+            `}</style>
         </div>
     );
 };

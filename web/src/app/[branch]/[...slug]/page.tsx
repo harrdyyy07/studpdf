@@ -5,6 +5,7 @@ import { Metadata } from 'next';
 import BranchCard from '@/components/BranchCard';
 import SubjectView from '@/components/SubjectView';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { getSubjectBlog } from '@/data/subjectBlogsData';
 
 const subjectColors = [
     'var(--s1-bg)', 'var(--s2-bg)', 'var(--s3-bg)', 'var(--s4-bg)',
@@ -44,8 +45,9 @@ export async function generateMetadata({ params }: { params: Promise<{ branch: s
             const semester = branchData.semesters?.find((s) => s.sem === semNum);
             const subject = semester?.subjects.find((s) => s.slug === slug[1]);
             if (subject) {
-                const title = `${subject.name} - ${subject.code} | VTUwise`;
-                const description = `Download ${subject.name} (${subject.code}) VTU notes, past question papers, models and syllabus for ${branch.toUpperCase()} Sem ${semNum}.`;
+                const blog = getSubjectBlog(subject.code, subject.name, subject.modules);
+                const title = `${subject.name} (${subject.code}) Notes & Study Guide | VTUwise`;
+                const description = blog.description;
                 return { title, description, openGraph: { title, description } };
             }
         } else {
@@ -65,8 +67,9 @@ export async function generateMetadata({ params }: { params: Promise<{ branch: s
         const cycle = scheme?.cycles.find((c) => c.slug === slug[1]);
         const subject = cycle?.subjects.find((s) => s.slug === slug[2]);
         if (subject) {
-            const title = `${subject.name} - ${subject.code} | VTUwise`;
-            const description = `Download ${subject.name} (${subject.code}) VTU notes and question papers for First Year ${cycle?.name} (${scheme?.name}).`;
+            const blog = getSubjectBlog(subject.code, subject.name, subject.modules);
+            const title = `${subject.name} (${subject.code}) Notes & Study Guide | VTUwise`;
+            const description = blog.description;
             return { title, description, openGraph: { title, description } };
         }
     }
