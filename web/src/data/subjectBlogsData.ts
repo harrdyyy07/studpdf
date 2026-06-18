@@ -272,3 +272,173 @@ export function getSubjectBlog(subjectCode: string, subjectName: string, modules
         faqs
     };
 }
+
+export interface BranchBlog {
+    title: string;
+    description: string;
+    content: string;
+    faqs?: { question: string; answer: string; }[];
+}
+
+export interface SemesterBlog {
+    title: string;
+    description: string;
+    content: string;
+    faqs?: { question: string; answer: string; }[];
+}
+
+export function getBranchBlog(branchCode: string, branchTitle: string, semesters?: any[], schemes?: any[]): BranchBlog {
+    const title = `${branchTitle} VTU Notes, Syllabus & Passing Guides | VTUwise`;
+    const description = `Download complete VTU notes, past question papers, and syllabus for all semesters of ${branchTitle}. Find structural study guides and passing strategies.`;
+    
+    let structureHtml = '';
+    if (semesters && semesters.length > 0) {
+        structureHtml += `
+            <h2>Course Structure & Semesters</h2>
+            <p>The ${branchTitle} program is organized into ${semesters.length} semesters. Each semester covers fundamental and advanced engineering concepts:</p>
+            <ul>
+        `;
+        semesters.forEach((sem: any) => {
+            structureHtml += `
+                <li><strong>Semester ${sem.sem}:</strong> Focuses on ${sem.subjects.length} core and elective subjects including notes, question papers, and lab manuals.</li>
+            `;
+        });
+        structureHtml += `</ul>`;
+    }
+
+    const content = `
+        <p>Studying <strong>${branchTitle} (${branchCode.toUpperCase()})</strong> under Visvesvaraya Technological University (VTU) requires consistent effort and a structured approach. The engineering curriculum is designed to build a solid foundation of theoretical principles paired with hands-on laboratory experience. To support your studies, VTUwise compiles all essential resources into a single dashboard.</p>
+        
+        <h2>VTU Passing Rules and Evaluation</h2>
+        <p>VTU employs the Choice Based Credit System (CBCS) across its schemes (2018, 2021, and the latest 2022 scheme). To pass any theory course in ${branchTitle}:</p>
+        <ul>
+            <li><strong>Continuous Internal Evaluation (CIE):</strong> Secure at least 40% (20 out of 50 marks) in internal college assessments to remain eligible to write final exams.</li>
+            <li><strong>Semester End Examination (SEE):</strong> Score at least 35% (35 out of 100 marks) in the final university theory exam.</li>
+            <li><strong>Overall Passing Aggregate:</strong> Your total CIE and SEE combined score must be at least 40% of the total marks.</li>
+        </ul>
+
+        ${structureHtml}
+
+        <h2>Study Tips for ${branchTitle} Students</h2>
+        <ol>
+            <li><strong>Start Early with Core Subjects:</strong> High-credit courses like core programming, hardware circuits, and structural design require early conceptual learning. Do not leave them for the last week.</li>
+            <li><strong>Reference Official Syllabus:</strong> Always verify topics against the official VTU syllabus. This keeps you focused on high-yield exam sections.</li>
+            <li><strong>Practice Past 5 Years Papers:</strong> Evaluators tend to repeat structural math and derivation patterns. Solving previous year papers helps you build speed and presentation style.</li>
+        </ol>
+    `;
+
+    const faqs = [
+        {
+            question: `How many semesters are there in VTU ${branchTitle}?`,
+            answer: `There are 8 semesters (4 years) in the Bachelor of Engineering (B.E.) program for ${branchTitle} under Visvesvaraya Technological University.`
+        },
+        {
+            question: `Where can I download notes and question papers for VTU ${branchTitle}?`,
+            answer: `VTUwise offers semester-wise and subject-wise notes, model papers, and solved question papers for all branches including ${branchTitle} completely for free.`
+        },
+        {
+            question: `How does VTU calculate CGPA for ${branchCode.toUpperCase()}?`,
+            answer: `VTU calculates CGPA based on the SGPA (Semester Grade Point Average) of each individual semester weighted against course credits. You can use our SGPA/CGPA Calculators in the main menu for precise calculations.`
+        }
+    ];
+
+    return { title, description, content, faqs };
+}
+
+export function getSemesterBlog(branchCode: string, branchTitle: string, semNum: number, subjects: any[]): SemesterBlog {
+    const title = `Semester ${semNum} - ${branchTitle} VTU Notes & Study Guide | VTUwise`;
+    const description = `Download syllabus-aligned VTU notes and solved question papers for ${branchTitle} Semester ${semNum}. Read study strategies for core subjects.`;
+
+    let subjectsListHtml = '';
+    if (subjects && subjects.length > 0) {
+        subjectsListHtml = `
+            <h2>Syllabus Overview for Semester ${semNum}</h2>
+            <p>Here are the primary subjects you will study this semester. Click on any subject card above to download module-wise resources:</p>
+            <ul>
+        `;
+        subjects.forEach((sub: any) => {
+            subjectsListHtml += `
+                <li><strong>${sub.name} (${sub.code})</strong>: ${sub.credits || '3/4 Credits'} subject. Focuses on core concepts and structural applications.</li>
+            `;
+        });
+        subjectsListHtml += `</ul>`;
+    }
+
+    const content = `
+        <p>Welcome to <strong>Semester ${semNum}</strong> of <strong>${branchTitle}</strong> engineering under Visvesvaraya Technological University (VTU). This semester introduces crucial core subjects that serve as direct prerequisites for your engineering projects and placement drives.</p>
+        
+        ${subjectsListHtml}
+
+        <h2>Study Guide & Passing Strategy for Sem ${semNum}</h2>
+        <p>Success in Semester ${semNum} requires balancing theory derivations with practical lab tasks. Follow these key steps:</p>
+        <ol>
+            <li><strong>Analyze Credit Weightage:</strong> Allocate more time to subjects carrying 4 credits, as they affect your SGPA calculations the most.</li>
+            <li><strong>Master CIE Internals early:</strong> Securing 30+ marks in internals significantly reduces the pressure to score high on the 100-mark Semester End Exam (SEE).</li>
+            <li><strong>Utilize Module-wise Notes:</strong> Rather than reading heavy textbooks last minute, study with verified, structured notes divided precisely by syllabus modules.</li>
+        </ol>
+    `;
+
+    const faqs = [
+        {
+            question: `How many subjects are in VTU ${branchTitle} Semester ${semNum}?`,
+            answer: `Typically, a semester contains 5 to 7 theory subjects along with laboratory classes and seminar sessions. Check the subjects list above for the exact list.`
+        },
+        {
+            question: `What is the passing criteria for 4-credit subjects in Semester ${semNum}?`,
+            answer: `The passing criteria is identical for all credit courses: a minimum of 40% in Continuous Internal Evaluation (20/50 marks) and 35% in Semester End Examination (35/100 marks), with an overall 40% aggregate.`
+        },
+        {
+            question: `Where can I get previous year papers for Semester ${semNum}?`,
+            answer: `You can access past papers and model question papers by clicking on each subject card listed on this page.`
+        }
+    ];
+
+    return { title, description, content, faqs };
+}
+
+export function getCycleBlog(branchCode: string, branchTitle: string, schemeSlug: string, cycleName: string, subjects: any[]): SemesterBlog {
+    const title = `${cycleName} - ${schemeSlug.toUpperCase()} Scheme VTU Notes | VTUwise`;
+    const description = `VTU Notes and resources for First Year ${cycleName} under the ${schemeSlug.toUpperCase()} scheme. Download syllabus-aligned study guides.`;
+
+    let subjectsListHtml = '';
+    if (subjects && subjects.length > 0) {
+        subjectsListHtml = `
+            <h2>Syllabus Overview for ${cycleName}</h2>
+            <p>Here are the primary subjects covered in this first-year cycle. Click on any subject card above to download module-wise resources:</p>
+            <ul>
+        `;
+        subjects.forEach((sub: any) => {
+            subjectsListHtml += `
+                <li><strong>${sub.name} (${sub.code})</strong>: A key credit subject in the engineering foundation curriculum.</li>
+            `;
+        });
+        subjectsListHtml += `</ul>`;
+    }
+
+    const content = `
+        <p>Welcome to the first year of engineering. The <strong>${cycleName}</strong> under the <strong>${schemeSlug.toUpperCase()} Scheme</strong> at Visvesvaraya Technological University (VTU) is designed to establish a solid foundation in basic mathematics, sciences, and fundamental engineering concepts.</p>
+        
+        ${subjectsListHtml}
+
+        <h2>Tips for First-Year Engineering Students</h2>
+        <p>First-year cycles can be a transition challenge for many students. Here is how to navigate it successfully:</p>
+        <ol>
+            <li><strong>Understand the Cycle Split:</strong> Students are split into Physics Cycle and Chemistry Cycle. Make sure you are downloading the correct notes for your current term.</li>
+            <li><strong>Focus on Basics:</strong> Concepts learned in Calculus, Elements of Mechanical Engineering, and Basic Electronics will return in later years of your branch.</li>
+            <li><strong>Use Solved Model Papers:</strong> VTU issues model question papers specifically for new schemes. They are the best way to understand the question paper patterns.</li>
+        </ol>
+    `;
+
+    const faqs = [
+        {
+            question: `What is the difference between P-Cycle and C-Cycle in VTU?`,
+            answer: `P-Cycle (Physics Cycle) and C-Cycle (Chemistry Cycle) divide first-year engineering students to distribute lab load. One half of the students studies the Physics subjects in the first semester while the other half studies the Chemistry subjects, and they swap in the second semester.`
+        },
+        {
+            question: `Is first-year marks included in final CGPA?`,
+            answer: `Yes, under all VTU choice-based credit schemes, the marks/grades you secure in the first year (both semesters) are fully included in the calculation of your final CGPA.`
+        }
+    ];
+
+    return { title, description, content, faqs };
+}

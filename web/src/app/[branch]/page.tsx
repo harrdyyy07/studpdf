@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import BranchCard from '@/components/BranchCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { getBranchBlog } from '@/data/subjectBlogsData';
 
 const semColors: { [key: number]: string } = {
     1: 'var(--s1-bg)', 2: 'var(--s2-bg)', 3: 'var(--s3-bg)', 4: 'var(--s4-bg)',
@@ -17,9 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ branch: s
     
     if (!data) return { title: 'Not Found | VTUwise' };
     
+    const blog = getBranchBlog(branch, data.title, data.semesters, data.schemes);
     return {
-        title: `${data.title} | VTUwise`,
-        description: `Access comprehensive engineering notes, previous year question papers, and study resources for ${data.title}.`
+        title: blog.title,
+        description: blog.description,
+        openGraph: { title: blog.title, description: blog.description }
     };
 }
 
@@ -30,6 +33,8 @@ export default async function BranchPage({ params }: { params: Promise<{ branch:
     if (!data) {
         notFound();
     }
+
+    const blog = getBranchBlog(branch, data.title, data.semesters, data.schemes);
 
     const breadcrumbs = [
         { label: branch.toUpperCase(), href: '#' }
@@ -74,6 +79,55 @@ export default async function BranchPage({ params }: { params: Promise<{ branch:
                             </div>
                         </div>
                     ))}
+                </div>
+            )}
+
+            {blog && (
+                <div className="subject-blog-section mt-16 pt-12 border-t border-surface-border">
+                    <div className="subject-blog-card">
+                        <div className="subject-blog-badge">🎓 DEPARTMENT PROFILE</div>
+                        <h2 className="subject-blog-title">{blog.title}</h2>
+                        <div className="subject-blog-content" dangerouslySetInnerHTML={{ __html: blog.content }} />
+                    </div>
+
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <div className="subject-faq-section mt-16">
+                            <h2 className="section-title text-left mb-8">Frequently Asked Questions</h2>
+                            <div className="faq-list">
+                                {blog.faqs.map((faq, idx) => (
+                                    <details key={idx} className="faq-item-details group">
+                                        <summary className="faq-question-summary">
+                                            <span>{faq.question}</span>
+                                            <span className="faq-icon-summary">▼</span>
+                                        </summary>
+                                        <div className="faq-answer-details">
+                                            {faq.answer}
+                                        </div>
+                                    </details>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                    
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <script
+                            type="application/ld+json"
+                            dangerouslySetInnerHTML={{
+                                __html: JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "FAQPage",
+                                    "mainEntity": blog.faqs.map(faq => ({
+                                        "@type": "Question",
+                                        "name": faq.question,
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": faq.answer
+                                        }
+                                    }))
+                                })
+                            }}
+                        />
+                    )}
                 </div>
             )}
         </div>

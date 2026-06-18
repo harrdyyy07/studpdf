@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import BranchCard from '@/components/BranchCard';
 import SubjectView from '@/components/SubjectView';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { getSubjectBlog } from '@/data/subjectBlogsData';
+import { getSubjectBlog, getSemesterBlog, getCycleBlog } from '@/data/subjectBlogsData';
 
 const subjectColors = [
     'var(--s1-bg)', 'var(--s2-bg)', 'var(--s3-bg)', 'var(--s4-bg)',
@@ -22,11 +22,13 @@ export async function generateMetadata({ params }: { params: Promise<{ branch: s
         const isNumeric = /^\d+$/.test(slug[0]);
         if (isNumeric) {
             const semNum = parseInt(slug[0]);
-            const title = `Semester ${semNum} - ${branch.toUpperCase()} | VTUwise`;
-            const description = `Download free VTU notes, question papers, and syllabus for ${branch.toUpperCase()} Semester ${semNum}. Focus entirely on exams with curated premium materials.`;
+            const semester = branchData.semesters?.find((s) => s.sem === semNum);
+            const subjects = semester?.subjects || [];
+            const blog = getSemesterBlog(branch, branchData.title, semNum, subjects);
             return { 
-                title, description,
-                openGraph: { title, description }
+                title: blog.title, 
+                description: blog.description,
+                openGraph: { title: blog.title, description: blog.description }
             };
         }
         const scheme = branchData.schemes?.find((s) => s.slug === slug[0]);
@@ -54,9 +56,12 @@ export async function generateMetadata({ params }: { params: Promise<{ branch: s
             const scheme = branchData.schemes?.find((s) => s.slug === slug[0]);
             const cycle = scheme?.cycles.find((c) => c.slug === slug[1]);
             if (cycle) {
-                const title = `${cycle.name} - ${scheme?.name} | VTUwise`;
-                const description = `VTU Notes and resources for First Year ${cycle.name} under ${scheme?.name} scheme.`;
-                return { title, description, openGraph: { title, description } };
+                const blog = getCycleBlog(branch, branchData.title, scheme?.name || slug[0], cycle.name, cycle.subjects);
+                return { 
+                    title: blog.title, 
+                    description: blog.description, 
+                    openGraph: { title: blog.title, description: blog.description } 
+                };
             }
         }
     }
@@ -129,6 +134,8 @@ function SemesterView({ branch, branchTitle, semester }: { branch: string, branc
         { label: `Sem ${semester.sem}`, href: '#' }
     ];
 
+    const blog = getSemesterBlog(branch, branchTitle, semester.sem, semester.subjects);
+
     return (
         <div className="container py-8">
             <Breadcrumbs items={breadcrumbs} />
@@ -145,6 +152,55 @@ function SemesterView({ branch, branchTitle, semester }: { branch: string, branc
                     />
                 ))}
             </div>
+
+            {blog && (
+                <div className="subject-blog-section mt-16 pt-12 border-t border-surface-border">
+                    <div className="subject-blog-card">
+                        <div className="subject-blog-badge">📚 SEMESTER GUIDE</div>
+                        <h2 className="subject-blog-title">{blog.title}</h2>
+                        <div className="subject-blog-content" dangerouslySetInnerHTML={{ __html: blog.content }} />
+                    </div>
+
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <div className="subject-faq-section mt-16">
+                            <h2 className="section-title text-left mb-8">Frequently Asked Questions</h2>
+                            <div className="faq-list">
+                                {blog.faqs.map((faq, idx) => (
+                                    <details key={idx} className="faq-item-details group">
+                                        <summary className="faq-question-summary">
+                                            <span>{faq.question}</span>
+                                            <span className="faq-icon-summary">▼</span>
+                                        </summary>
+                                        <div className="faq-answer-details">
+                                            {faq.answer}
+                                        </div>
+                                    </details>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                    
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <script
+                            type="application/ld+json"
+                            dangerouslySetInnerHTML={{
+                                __html: JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "FAQPage",
+                                    "mainEntity": blog.faqs.map(faq => ({
+                                        "@type": "Question",
+                                        "name": faq.question,
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": faq.answer
+                                        }
+                                    }))
+                                })
+                            }}
+                        />
+                    )}
+                </div>
+            )}
         </div>
     );
 }
@@ -154,6 +210,8 @@ function CycleView({ branch, branchTitle, scheme, cycle }: { branch: string, bra
         { label: branch.toUpperCase(), href: `/${branch}` },
         { label: cycle.name, href: '#' }
     ];
+
+    const blog = getCycleBlog(branch, branchTitle, scheme, cycle.name, cycle.subjects);
 
     return (
         <div className="container py-8">
@@ -171,6 +229,55 @@ function CycleView({ branch, branchTitle, scheme, cycle }: { branch: string, bra
                     />
                 ))}
             </div>
+
+            {blog && (
+                <div className="subject-blog-section mt-16 pt-12 border-t border-surface-border">
+                    <div className="subject-blog-card">
+                        <div className="subject-blog-badge">📚 STUDY CYCLE GUIDE</div>
+                        <h2 className="subject-blog-title">{blog.title}</h2>
+                        <div className="subject-blog-content" dangerouslySetInnerHTML={{ __html: blog.content }} />
+                    </div>
+
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <div className="subject-faq-section mt-16">
+                            <h2 className="section-title text-left mb-8">Frequently Asked Questions</h2>
+                            <div className="faq-list">
+                                {blog.faqs.map((faq, idx) => (
+                                    <details key={idx} className="faq-item-details group">
+                                        <summary className="faq-question-summary">
+                                            <span>{faq.question}</span>
+                                            <span className="faq-icon-summary">▼</span>
+                                        </summary>
+                                        <div className="faq-answer-details">
+                                            {faq.answer}
+                                        </div>
+                                    </details>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+                    
+                    {blog.faqs && blog.faqs.length > 0 && (
+                        <script
+                            type="application/ld+json"
+                            dangerouslySetInnerHTML={{
+                                __html: JSON.stringify({
+                                    "@context": "https://schema.org",
+                                    "@type": "FAQPage",
+                                    "mainEntity": blog.faqs.map(faq => ({
+                                        "@type": "Question",
+                                        "name": faq.question,
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": faq.answer
+                                        }
+                                    }))
+                                })
+                            }}
+                        />
+                    )}
+                </div>
+            )}
         </div>
     );
 }
