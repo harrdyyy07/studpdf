@@ -12,10 +12,98 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
-    
+    {
+        id: "11",
+        slug: "kcet-2026-option-entry-link",
+        title: "KCET 2026 Option Entry Begins: A Complete Guide for Engineering, Agriculture, Nursing, Farm Science & B.V.Sc Aspirants",
+        description: "The Karnataka Examinations Authority (KEA) has officially enabled the UGCET 2026 Option Entry. Follow our step-by-step guide to log in, prioritize, and submit your college preferences.",
+        date: "June 20, 2026",
+        readTime: "6 min read",
+        author: "vtuwise Team",
+        tag: "KCET Updates",
+        imageBg: "linear-gradient(135deg, #1e3c72, #2a5298)",
+        content: `
+            <p>The Karnataka Examinations Authority (KEA) has officially enabled the UGCET 2026 Option Entry process for students seeking admission to professional courses across Karnataka. Candidates can now enter their preferred colleges and courses through the KEA counselling portal for Engineering, Agriculture, Nursing, Farm Science, and Veterinary Science (B.V.Sc) programs.</p>
 
+            <h2>What is KCET Option Entry?</h2>
+            <p>Option Entry is one of the most crucial stages of the KCET counselling process. During this phase, candidates prioritize their preferred colleges and courses based on their rank, category, career goals, and seat availability. The choices submitted by students will be used during seat allotment rounds conducted by KEA.</p>
+
+            <h2>Courses Currently Available for Option Entry</h2>
+            <p>KEA has enabled option entry for the following streams:</p>
+            <ul>
+                <li>Engineering</li>
+                <li>Agriculture</li>
+                <li>Nursing</li>
+                <li>Farm Science</li>
+                <li>Bachelor of Veterinary Science (B.V.Sc)</li>
+            </ul>
+            <p>Students interested in these programs can immediately begin filling their options through the official counselling portal. NEET-related courses will follow a separate schedule.</p>
+
+            <h2>Official KCET 2026 Option Entry Links</h2>
+            <p>KEA has provided multiple access points for candidates:</p>
+            <ul>
+                <li><a href="https://keaonline.karnataka.gov.in/main/index.php" target="_blank" rel="noopener noreferrer">UGCET 2026 Option Entry Link – 1</a></li>
+                <li><a href="https://keaonline.karnataka.gov.in/main/index.php" target="_blank" rel="noopener noreferrer">UGCET 2026 Option Entry Link – 2</a></li>
+                <li>Official KEA Portal: <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" rel="noopener noreferrer">https://cetonline.karnataka.gov.in/kea/</a></li>
+            </ul>
+            <p>Candidates should use only official KEA websites to complete the counselling process.</p>
+
+            <h2>Step-by-Step Guide to Enter Options</h2>
+            
+            <h3>Step 1: Login to the KEA Portal</h3>
+            <p>Visit the official KEA counselling website and log in using your application credentials.</p>
+
+            <h3>Step 2: Access the Option Entry Section</h3>
+            <p>Click on the UGCET 2026 Option Entry link available on the dashboard.</p>
+
+            <h3>Step 3: Browse Available Colleges and Courses</h3>
+            <p>Review the complete list of participating colleges, seat matrices, and available programs.</p>
+
+            <h3>Step 4: Prioritize Your Choices</h3>
+            <p>Arrange colleges and courses in the exact order of preference. The system will consider the highest available option during allotment.</p>
+
+            <h3>Step 5: Save and Review</h3>
+            <p>Double-check all selections before final submission. Ensure that your most preferred options are placed at the top.</p>
+
+            <h3>Step 6: Lock and Submit</h3>
+            <p>Finalize your choices before the deadline announced by KEA.</p>
+
+            <h2>Important Tips for Students</h2>
+            
+            <h3>Research Before Filling Options</h3>
+            <p>Do not rush. Analyze previous year cutoffs, college infrastructure, placements, faculty quality, and location before making decisions.</p>
+
+            <h3>Fill Maximum Possible Options</h3>
+            <p>Adding more valid choices improves your chances of securing a seat while still preserving your preferences.</p>
+
+            <h3>Prioritize Dream Colleges First</h3>
+            <p>Always arrange options according to genuine preference rather than predicted availability.</p>
+
+            <h3>Keep Track of Mock Allotment</h3>
+            <p>Mock allotment helps students understand the likely outcome of their current option list and make adjustments before final allotment.</p>
+
+            <h2>Key Documents to Keep Ready</h2>
+            <p>Before beginning option entry, students should keep the following documents available:</p>
+            <ul>
+                <li>KCET Rank Card</li>
+                <li>Verification Slip</li>
+                <li>Class 10 Marksheet</li>
+                <li>Class 12 Marksheet</li>
+                <li>Category Certificate (if applicable)</li>
+                <li>Income Certificate (if applicable)</li>
+            </ul>
+            <p>Having these documents ready will make the process smoother.</p>
+
+            <h2>Why Option Entry Matters</h2>
+            <p>Many students focus solely on KCET ranks, but option entry is equally important. A well-planned preference list can significantly influence the final seat allotment outcome. Even candidates with similar ranks may receive different colleges depending on how intelligently they arrange their options.</p>
+
+            <h2>Final Thoughts</h2>
+            <p>The commencement of KCET 2026 Option Entry marks the beginning of the admission journey for thousands of aspirants across Karnataka. Whether you are targeting Engineering, Agriculture, Nursing, Farm Science, or Veterinary Science, careful planning and informed decision-making can greatly improve your admission prospects.</p>
+            <p>Take time to research colleges, compare courses, review fee structures, and prioritize your options wisely. Most importantly, complete your option entry before the deadline and regularly monitor KEA announcements for updates regarding mock allotment and seat allotment rounds.</p>
+        `
+    },
 {
-    id: "8",
+    id: "12",
     slug: "resume-mistakes-that-reject-freshers",
     title: "Resume Mistakes That Reject Freshers",
     description: "Making small resume mistakes can cost you placements and internships. Learn the most common fresher resume errors and how to avoid them.",
