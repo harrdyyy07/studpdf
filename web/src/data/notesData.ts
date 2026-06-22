@@ -579,6 +579,21 @@ export const siteData: SiteData = {
                                 ]
                             },
                             {
+                                name: "APPLIED CHEMISTRY FOR CIVIL ENGINEERING STREAM",
+                                code: "1BCHEC102/202",
+                                credits: "3 CR",
+                                slug: "applied-chemistry-for-civil-engineering-stream-1bchec102-202-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Complete Notes",
+                                        desc: "APPLIED CHEMISTRY FOR CIVIL ENGINEERING STREAM-1BCHEC102/202 complete notes",
+                                        link: "https://drive.google.com/file/d/1wyxtN_f-JTxWguqOq8Mqx-fljTxGqbFt/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+                                ]
+                            },
+                            {
                                 name: "Introduction to AI and Applications",
                                 code: "1BAIA103/203",
                                 credits: "3 CR",
