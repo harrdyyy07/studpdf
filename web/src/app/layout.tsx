@@ -8,6 +8,7 @@ import Preloader from "@/components/Preloader";
 import WhatsAppPopup from "@/components/WhatsAppPopup";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 import AdSenseSideRails from "@/components/AdSenseSideRails";
+import SupportPopup from "@/components/SupportPopup";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -108,6 +109,7 @@ export default function RootLayout({
         <AdSenseSideRails />
         <WhatsAppPopup />
         <WhatsAppFloating />
+        <SupportPopup />
         <Footer />
       </body>
     </html>

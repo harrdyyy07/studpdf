@@ -494,6 +494,91 @@ export const siteData: SiteData = {
                     {
                         name: "C-Cycle vtu notes (25 Scheme)", slug: "c-cycle", subjects: [
                             {
+                                name: "Applied Chemistry for Smart Systems (CSE) (1BCHES102/202)",
+                                code: "1BCHES102/202",
+                                credits: "3 CR",
+                                slug: "applied-chemistry-for-smart-systems-1bches102-202-vtu-notes",
+                                modules: [
+                                    {
+                                        id: 1,
+                                        name: "Syllabus for Applied Chemistry for Smart Systems (CSE)",
+                                        desc: "",
+                                        link: "https://drive.google.com/file/d/1JoMULg0Ess0dMqQd2ZGpjrH0tQ617STr/view?usp=drive_link",
+                                        type: "syllabus"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-1",
+                                        desc: "Functional Materials for Memory and Display Systems-1bches102-202 module 1 notes",
+                                        link: "https://drive.google.com/file/d/1wpGey01Qzv4Lq5iOp3f-x7VkbADRao0i/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 2,
+                                        name: "Module-1 Notes-2",
+                                        desc: "Functional Materials for Memory and Display Systems-1bches102-202 module 1 notes-2",
+                                        link: "https://drive.google.com/file/d/1zDTqNo-GRdDjoPX-9pe8fh8Q3Rd5RNkB/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 3,
+                                        name: "Module-2",
+                                        desc: "Quantum Materials and Polymers-1bches102-202 module 2 notes",
+                                        link: "https://drive.google.com/file/d/1wufDRFRaSkBG9ipfBiSas-SDKab4ns_M/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 4,
+                                        name: "Module-2 Notes-2",
+                                        desc: "Quantum Materials and Polymers-1bches102-202 module 2 notes",
+                                        link: "https://drive.google.com/file/d/1aPufsvTHv2gG191RlnDE2RAp3b1T4VjV/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 5,
+                                        name: "Module-3",
+                                        desc: "Sustainable Chemistry for Energy Devices-1bches102-202 module 3 notes",
+                                        link: "https://drive.google.com/file/d/1zJHzcwlWD8dW8NukfQOd5-wci6tAXFJs/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 6,
+                                        name: "Module-3 Notes-2",
+                                        desc: "Sustainable Chemistry for Energy Devices-1bches102-202 module 3 notes-2",
+                                        link: "https://drive.google.com/file/d/1DJxo47xg1ONA5__FoJbD3R1quPbGAn2H/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 7,
+                                        name: "Module-4",
+                                        desc: "Chemical Sensors and Corrosion Control-1bches102-202 module 4 notes",
+                                        link: "https://drive.google.com/file/d/19FL2edEkAbRmEiyxNqGds95wBNVPYYCq/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 8,
+                                        name: "Module-4 Notes-2",
+                                        desc: "Chemical Sensors and Corrosion Control-1bches102-202 module 4 notes-2",
+                                        link: "https://drive.google.com/file/d/1e6Q7ipdQkhN1PR_JKFbYqvK9elPuidMS/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 9,
+                                        name: "Module-5",
+                                        desc: "Green Materials and E-Waste Management-1bches102-202 module 5 notes",
+                                        link: "https://drive.google.com/file/d/1rsplhbEqbhkgNsm5WOsXbwb58aNtiCFu/view?usp=drive_link",
+                                        type: "notes"
+                                    },
+                                    {
+                                        id: 10,
+                                        name: "Module-5 Notes-2",
+                                        desc: "Green Materials and E-Waste Management-1bches102-202 module 5 notes-2",
+                                        link: "https://drive.google.com/file/d/1iY8vFq55Hv4uL96HqVTfNvOP-GYIUdo7/view?usp=drive_link",
+                                        type: "notes"
+                                    }
+                                ]
+                            },
+                            {
                                 name: "Introduction to AI and Applications",
                                 code: "1BAIA103/203",
                                 credits: "3 CR",

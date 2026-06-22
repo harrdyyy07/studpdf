@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
+import Link from 'next/link';
 import { Subject } from '@/data/notesData';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getSubjectBlog } from '@/data/subjectBlogsData';
@@ -138,6 +139,22 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
                     </div>
                 ))}
             </div>
+
+            {filteredModules.length > 0 && (
+                <div className="support-callout-card glass mt-8 p-6 text-center flex flex-col md:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
+                    <div className="text-left">
+                        <h3 className="text-lg font-bold text-text mb-1 flex items-center gap-2">
+                            <span>❤️</span> Support VTUwise
+                        </h3>
+                        <p className="text-sm text-text-muted">
+                            If you find these notes and resources helpful, please consider supporting us. Your contributions help keep this platform free and ad-free!
+                        </p>
+                    </div>
+                    <Link href="/support" className="btn-download-solid shrink-0 px-6 py-2.5 font-bold text-sm rounded-xl text-center inline-block hover:scale-[1.02] transition-transform">
+                        Support Us
+                    </Link>
+                </div>
+            )}
             
             {filteredModules.length === 0 && (
                 <div className="text-center py-24 opacity-30 italic">No resources found for this category.</div>
