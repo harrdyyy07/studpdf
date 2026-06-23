@@ -1091,11 +1091,12 @@ export const siteData: SiteData = {
                     {
                         name: "Microcontrollers", code: "BCS402", credits: "4 CR", slug: "microcontrollers-mc-bcs402-vtu-notes", modules: [
                             { id: 1, name: "BCS402 microcontrollers complete notes", desc: "BCS402 microcontrollers complete notes", link: "https://drive.google.com/file/d/1j875bVkySNX3pBBzOqhbqcNPdYmJaIlH/view?usp=drive_link", type: "Notes" },
-                            { id: 2, name: "BCS402 microcontrollers module-1 notes", desc: "BCS402 microcontrollers module-1 notes", link: "https://drive.google.com/file/d/13gLdVQPh1pepWYOpGaUUPTTt65BrHAGA/view?usp=drive_link", type: "Notes" },
-                            { id: 3, name: "BCS402 microcontrollers module-2 notes", desc: "BCS402 microcontrollers module-2 notes", link: "https://drive.google.com/file/d/11MHZNf1lBhwYEjDMWAjXAxDIn83eCyXV/view?usp=drive_link", type: "Notes" },
-                            { id: 4, name: "BCS402 microcontrollers module-3 notes", desc: "BCS402 microcontrollers module-3 notes", link: "https://drive.google.com/file/d/1HQowFylipBsltEPEJRkQ-zVIe1jlv7Ia/view?usp=drive_link", type: "Notes" },
-                            { id: 5, name: "BCS402 microcontrollers module-4 notes", desc: "BCS402 microcontrollers module-4 notes", link: "https://drive.google.com/file/d/1PJ8fQD3V1d_ahs2xefXHYfS5PkdqRDkm/view?usp=drive_link", type: "Notes" },
-                            { id: 6, name: "BCS402 microcontrollers module-5 notes", desc: "BCS402 microcontrollers module-5 notes", link: "https://drive.google.com/file/d/1qtHKl3Txg35XXMX4fJB7g01Jya61Ny0C/view?usp=drive_link", type: "Notes" }
+                            { id: 2, name: "BCS402 microcontrollers complete notes", desc: "BCS402 microcontrollers complete notes by ATMECE, Mysuru", link: "https://drive.google.com/file/d/1JPbdZFIVXJUHqspp9n12uidYtJJ-ePAJ/view?usp=drive_link", type: "Notes" },
+                            { id: 3, name: "BCS402 microcontrollers module-1 notes", desc: "BCS402 microcontrollers module-1 notes", link: "https://drive.google.com/file/d/13gLdVQPh1pepWYOpGaUUPTTt65BrHAGA/view?usp=drive_link", type: "Notes" },
+                            { id: 4, name: "BCS402 microcontrollers module-2 notes", desc: "BCS402 microcontrollers module-2 notes", link: "https://drive.google.com/file/d/11MHZNf1lBhwYEjDMWAjXAxDIn83eCyXV/view?usp=drive_link", type: "Notes" },
+                            { id: 5, name: "BCS402 microcontrollers module-3 notes", desc: "BCS402 microcontrollers module-3 notes", link: "https://drive.google.com/file/d/1HQowFylipBsltEPEJRkQ-zVIe1jlv7Ia/view?usp=drive_link", type: "Notes" },
+                            { id: 6, name: "BCS402 microcontrollers module-4 notes", desc: "BCS402 microcontrollers module-4 notes", link: "https://drive.google.com/file/d/1PJ8fQD3V1d_ahs2xefXHYfS5PkdqRDkm/view?usp=drive_link", type: "Notes" },
+                            { id: 7, name: "BCS402 microcontrollers module-5 notes", desc: "BCS402 microcontrollers module-5 notes", link: "https://drive.google.com/file/d/1qtHKl3Txg35XXMX4fJB7g01Jya61Ny0C/view?usp=drive_link", type: "Notes" }
                         ]
                     },
                     {
