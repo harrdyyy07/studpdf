@@ -104,9 +104,7 @@ export default function SupportPage() {
                             <p className="text-text-muted text-sm leading-relaxed mb-6">
                                 Click the button below to contribute securely. We support UPI (PhonePe, GPay, Paytm), Cards, NetBanking, and Wallets.
                             </p>
-                            <div className="my-8 flex justify-center items-center w-full min-h-[80px] p-4 rounded-xl bg-background border border-surface-border shadow-sm">
-                                <RazorpayButton buttonId="pl_Rm25t9s2iYqB1t" />
-                            </div>
+                            
                         </div>
                         <div className="w-full pt-6 border-t border-surface-border mt-8 text-xs text-text-muted flex items-center justify-center gap-2">
                             <svg className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
