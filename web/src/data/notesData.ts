@@ -1085,12 +1085,17 @@ export const siteData: SiteData = {
                             { id: 2, name: "BCS401 ada module-2 notes", desc: "BCS401 ada module-2 notes", link: "https://drive.google.com/file/d/185NXHKcdYSdk-YvB-aN91S33NNfq-MEf/view?usp=drive_link", type: "Notes" },
                             { id: 3, name: "BCS401 ada module-3 notes", desc: "BCS401 ada module-3 notes", link: "https://drive.google.com/file/d/1PcBdnnlSvCI4GnKs5By5hC6OFMNV6ywL/view?usp=drive_link", type: "Notes" },
                             { id: 4, name: "BCS401 ada module-4 notes", desc: "BCS401 ada module-4 notes", link: "https://drive.google.com/file/d/1_40_UD0FO0HWdvXloIBfOw5sMFfgaSZt/view?usp=drive_link", type: "Notes" },
-                            { id: 5, name: "BCS401 ada module-5 notes", desc: "BCS401 ada module-5 notes", link: "https://drive.google.com/file/d/1v5I4SpPDiT12odu2YqhCUlCFRmjZgeWo/view?usp=drive_link", type: "Notes" },
+                            { id: 5, name: "BCS401 ada module-5 notes", desc: "BCS401 ada module-5 notes", link: "https://drive.google.com/file/d/1v5I4SpPDiT12odu2YqhCUlCFRmjZgeWo/view?usp=drive_link", type: "Notes" }
                         ]
                     },
                     {
                         name: "Microcontrollers", code: "BCS402", credits: "4 CR", slug: "microcontrollers-mc-bcs402-vtu-notes", modules: [
                             { id: 1, name: "BCS402 microcontrollers complete notes", desc: "BCS402 microcontrollers complete notes", link: "https://drive.google.com/file/d/1j875bVkySNX3pBBzOqhbqcNPdYmJaIlH/view?usp=drive_link", type: "Notes" },
+                            { id: 2, name: "BCS402 microcontrollers module-1 notes", desc: "BCS402 microcontrollers module-1 notes", link: "https://drive.google.com/file/d/13gLdVQPh1pepWYOpGaUUPTTt65BrHAGA/view?usp=drive_link", type: "Notes" },
+                            { id: 3, name: "BCS402 microcontrollers module-2 notes", desc: "BCS402 microcontrollers module-2 notes", link: "https://drive.google.com/file/d/11MHZNf1lBhwYEjDMWAjXAxDIn83eCyXV/view?usp=drive_link", type: "Notes" },
+                            { id: 4, name: "BCS402 microcontrollers module-3 notes", desc: "BCS402 microcontrollers module-3 notes", link: "https://drive.google.com/file/d/1HQowFylipBsltEPEJRkQ-zVIe1jlv7Ia/view?usp=drive_link", type: "Notes" },
+                            { id: 5, name: "BCS402 microcontrollers module-4 notes", desc: "BCS402 microcontrollers module-4 notes", link: "https://drive.google.com/file/d/1PJ8fQD3V1d_ahs2xefXHYfS5PkdqRDkm/view?usp=drive_link", type: "Notes" },
+                            { id: 6, name: "BCS402 microcontrollers module-5 notes", desc: "BCS402 microcontrollers module-5 notes", link: "https://drive.google.com/file/d/1qtHKl3Txg35XXMX4fJB7g01Jya61Ny0C/view?usp=drive_link", type: "Notes" }
                         ]
                     },
                     {
@@ -1892,7 +1897,11 @@ export const siteData: SiteData = {
                             { id: 2, name: "Microcontrollers Lab", desc: "Microcontrollers Lab by ATMECE, Mysuru ", link: "https://drive.google.com/file/d/1JCgp1-N3tJccZso8FMs_hVR8MXOJj_0d/view?usp=drive_link", type: "lab manual" },
                         ]
                     },
-                    { name: "Electric Motors Lab", code: "BEEL404", credits: "1 CR", slug: "electric-motors-lab-eml-beel404-vtu-notes", modules: [] },
+                    {
+                        name: "Electric Motors Lab", code: "BEEL404", credits: "1 CR", slug: "electric-motors-lab-eml-beel404-vtu-notes", modules: [
+                            { id: 1, name: "Electric Motors Lab", desc: "Electric Motors Lab-beel404", link: "https://drive.google.com/file/d/1b8KTAN0_W8GnemF5IXFiHYPnzzwNwp6f/view?usp=drive_link", type: "lab manual" },
+                        ]
+                    },
                     { name: "Electrical Power Generation and Economics", code: "BEE405A", credits: "3 CR", slug: "electrical-power-generation-and-economics-epge-bee405a-vtu-notes", modules: [
                         { id: 1, name: "BEE405A Module-1 Notes", desc: "BEE405A Module-1 Notes", link: "https://drive.google.com/file/d/1a1KJXkaWfFfRlq5h8rj_yoN70AoXa8f6/view?usp=drive_link", type: "notes" },
                         { id: 2, name: "BEE405A Module-1 Handwritten Notes", desc: "BEE405A Module-1 Handwritten Notes", link: "https://drive.google.com/file/d/1asCZybh2wjbOd-YxeaRJozs2vOP1xcfK/view?usp=drive_link", type: "notes" },
