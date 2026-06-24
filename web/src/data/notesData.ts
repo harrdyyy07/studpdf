@@ -501,10 +501,10 @@ export const siteData: SiteData = {
                                 modules: [
                                     {
                                         id: 1,
-                                        name: "Syllabus for Applied Chemistry for Smart Systems (CSE)",
+                                        name: "Model Question Paper for Applied Chemistry for Smart Systems (CSE)",
                                         desc: "",
                                         link: "https://drive.google.com/file/d/1JoMULg0Ess0dMqQd2ZGpjrH0tQ617STr/view?usp=drive_link",
-                                        type: "syllabus"
+                                        type: "Model question paper"
                                     },
                                     {
                                         id: 2,
