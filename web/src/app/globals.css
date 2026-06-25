@@ -5,6 +5,8 @@
 }
 
 :root {
+  --font-inter: 'Inter', sans-serif;
+  --font-marck-script: 'Marck Script', cursive;
   --primary: #4F46E5;
   --primary-hover: #4338ca;
   --accent: #58CC02;

@@ -9,6 +9,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isMobileCalcOpen, setIsMobileCalcOpen] = useState(false);
+    const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false);
     const [theme, setTheme] = useState('light');
     const [showTopBar, setShowTopBar] = useState(true);
 
@@ -93,6 +94,19 @@ const Navbar = () => {
                         <div className="dropdown-menu">
                             <Link href="/sgpa-calculator" onClick={() => setIsMenuOpen(false)}>SGPA Calculator</Link>
                             <Link href="/cgpa-calculator" onClick={() => setIsMenuOpen(false)}>CGPA Calculator</Link>
+                        </div>
+                    </li>
+
+                    <li className={`dropdown ${isMobileToolsOpen ? 'mobile-open' : ''}`}>
+                        <span className="dropdown-toggle" onClick={() => setIsMobileToolsOpen(!isMobileToolsOpen)}>
+                            Tools <span className="dropdown-arrow">▾</span>
+                        </span>
+                        <div className="dropdown-menu">
+                            <Link href="/student-tools" onClick={() => setIsMenuOpen(false)}>All Tools</Link>
+                            <Link href="/student-tools/resume-builder" onClick={() => setIsMenuOpen(false)}>Resume Builder</Link>
+                            <Link href="/student-tools/code-practice" onClick={() => setIsMenuOpen(false)}>Code Practice</Link>
+                            <Link href="/student-tools/quiz" onClick={() => setIsMenuOpen(false)}>Quiz Arena</Link>
+                            <Link href="/student-tools/typing-test" onClick={() => setIsMenuOpen(false)}>Typing Test</Link>
                         </div>
                     </li>
                     

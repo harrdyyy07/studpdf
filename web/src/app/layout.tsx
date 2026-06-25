@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter, Marck_Script } from 'next/font/google';
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,19 +8,6 @@ import WhatsAppPopup from "@/components/WhatsAppPopup";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 import AdSenseSideRails from "@/components/AdSenseSideRails";
 import SupportPopup from "@/components/SupportPopup";
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
-
-const marckScript = Marck_Script({
-  weight: '400',
-  subsets: ['latin'],
-  variable: '--font-marck-script',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vtuwise.in'),
@@ -49,8 +35,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${marckScript.variable}`} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Marck+Script&display=swap" rel="stylesheet" />
         <link rel="icon" href="/favicon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#4F46E5" />
