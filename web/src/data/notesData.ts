@@ -2198,7 +2198,17 @@ export const siteData: SiteData = {
                         {id:7,name:"Lab Manual", desc:"Fluid Mechanics and Hydraulics-bcv402 lab manual", link:"https://drive.google.com/file/d/1Z5KpL_1P_RPJHSKziycHnYqmWh7JH-gX/view?usp=drive_link", type:"labmanual"},
 
                     ] },
-                    { name: "Transportation Engineering", code: "BCV403", credits: "4 CR", slug: "transportation-engineering-te-bcv403-vtu-notes", modules: [] },
+                    { name: "Transportation Engineering", code: "BCV403", credits: "4 CR", slug: "transportation-engineering-te-bcv403-vtu-notes", modules: [
+                        {id:1,name:"Module-1", desc:"Module-1 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1aZwVoL8fBQCtHWXBZ23-Yjq4HzQ3rdsx/view?usp=drive_link", type:"notes"},
+                        {id:1,name:"Module-1", desc:"Module-1 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1rqQyqhUccOF9VSCV9JFpb3smwhrEIDcv/view?usp=drive_link", type:"notes"},
+                        {id:1,name:"Module-2", desc:"Module-2 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1oGSKcIWz2BxsY3lYtJ4qcp0_lNNekvpk/view?usp=drive_link", type:"notes"},
+                        {id:1,name:"Module-2", desc:"Module-2 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1WSWqbFMJAcdV35nDCypo5oeLbOLGTLy2/view?usp=drive_link", type:"notes"},
+                        {id:1,name:"Module-3", desc:"Module-3 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1eNo9cpg2jMV-YsXR79teBJE4lqHcQXwv/view?usp=drive_link", type:"notes"},
+                        {id:1,name:"Module-3", desc:"Module-3 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1nkq7jJFYtAxnknLtbtTknYZCiCQBRFLV/view?usp=drive_link", type:"notes"},
+                        {id:1,name:"Module-4", desc:"Module-4 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1dZJdnwo-vlBmuyM3FLnflQSPTMqMzf2y/view?usp=drive_link", type:"notes"},
+                        {id:1,name:"Module-5", desc:"Module-5 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1fKXW9-5fT-VgN1VPNEpYccOAYdq-_ShQ/view?usp=drive_link", type:"notes"},
+                        {id:1,name:"Module-5", desc:"Module-5 Notes Transportation Engineering bcv403", link:"https://drive.google.com/file/d/1Pdy7xmxcq1-Uvma-pPfheu2KiTqlmB18/view?usp=drive_link", type:"notes"}
+                    ] },
                     { name: "Building Materials Testing Lab", code: "BCVL404", credits: "1 CR", slug: "building-materials-testing-lab-bmtl-bcvl404-vtu-notes", modules: [] },
                     { name: "Finance for Professionals", code: "BCV405A", credits: "3 CR", slug: "finance-for-professionals-ffp-bcv405a-vtu-notes", modules: [] },
                     { name: "Construction Equipment, Plants and Machinery", code: "BCV405B", credits: "3 CR", slug: "construction-equipment-plants-and-machinery-cepm-bcv405b-vtu-notes", modules: [] },
