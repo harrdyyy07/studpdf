@@ -921,6 +921,12 @@ footer,
   padding-left: 0;
 }
 
+@media (min-width: 992px) {
+  .logo {
+    margin-left: -1.5rem;
+  }
+}
+
 .dropdown-arrow {
   display: inline-block;
   margin-left: 0.25rem;
