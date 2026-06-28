@@ -1,6 +1,7 @@
 import HeroSlider from "@/components/HeroSlider";
 import BranchCard from "@/components/BranchCard";
 import HomeDisclaimer from "@/components/HomeDisclaimer";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   const branches = [
@@ -73,6 +74,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       <HomeDisclaimer />
     </>
