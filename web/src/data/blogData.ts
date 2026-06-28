@@ -13,6 +13,245 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "14",
+        slug: "argentina-vs-jordan-world-cup-2026-messi-record",
+        title: "Argentina vs. Jordan: Messi Makes History Again as La Albiceleste Coast into Round of 32",
+        description: "Discover how Lionel Messi broke another FIFA World Cup record in Argentina's 3-1 victory over Jordan in the 2026 group stage finale at AT&T Stadium.",
+        date: "June 28, 2026",
+        readTime: "6 min read",
+        author: "vtuwise Team",
+        tag: "Sports Updates",
+        imageBg: "linear-gradient(135deg, #1e3a8a, #0284c7, #0369a1)",
+        content: `
+            <p>The 2026 FIFA World Cup has been full of surprises, but Argentina's sheer dominance in Group J has been a constant. The reigning world champions wrapped up a flawless group stage campaign with a comfortable 3-1 victory over tournament debutants Jordan on Saturday at the Dallas Stadium in Arlington, Texas.</p>
+
+            <p>While the match was essentially a dead rubber for Argentina—who had already secured the top spot in their group—it provided another unforgettable chapter in the legendary career of Lionel Messi.</p>
+
+            <p>Here is a detailed breakdown of how the action unfolded, what it means for both teams, and why this match has taken the footballing world by storm.</p>
+
+            <h2>1. First Half: Argentina’s Depth on Display</h2>
+            <p>With qualification to the Round of 32 already guaranteed, Argentina's manager Lionel Scaloni made a massive nine changes to his starting XI. This meant resting key players, including their talismanic captain, Lionel Messi. However, Argentina’s squad depth proved far too much for Jordan to handle.</p>
+            <ul>
+                <li><strong>19th Minute (Lo Celso's Stunner):</strong> After dominating possession early on, Argentina found their breakthrough via Giovani Lo Celso. Making his first World Cup start, the midfielder curled a stunning free-kick from 20 yards out past Jordan's goalkeeper Yazeed Abulaila.</li>
+                <li><strong>31st Minute (Martínez Converts):</strong> Shortly after rattling the crossbar, Lautaro Martínez doubled Argentina's lead. Following a VAR review that penalized a foul on Julian Alvarez, Martínez calmly converted the resulting penalty kick.</li>
+            </ul>
+            <p>By halftime, Argentina held a comfortable 2-0 lead, having completely dictated the tempo of the game.</p>
+
+            <h2>2. Second Half: A Spirited Jordan and Messi's Arrival</h2>
+            <p>Despite the gulf in quality and their impending elimination, Jordan refused to roll over. The second half saw them fight back with incredible spirit, a testament to why they earned their spot in this World Cup.</p>
+            <ul>
+                <li><strong>55th Minute (Jordan Strikes Back):</strong> A swift attacking move resulted in a brilliant low cross from Ihsan Haddad. Substitute Musa Al-Taamari was perfectly positioned at the far post to tap the ball past Emiliano Martínez, reducing the deficit to 2-1 and giving the Jordanian fans a moment of pure euphoria.</li>
+                <li><strong>60th Minute (The Maestro Enters):</strong> Recognizing the shift in momentum, Scaloni introduced Lionel Messi to a deafening roar from the Dallas crowd.</li>
+            </ul>
+
+            <h2>3. The 80th Minute: Messi Rewrites the Record Books</h2>
+            <p>It didn’t take long for the 39-year-old maestro to leave his mark. In the 80th minute, Argentina was awarded a free-kick just outside the box.</p>
+            <p>Stepping up with his trademark left foot, Messi whipped the ball around the wall, bending it perfectly into the back of the net to seal the 3-1 victory. This wasn't just an insurance goal; it was a historic milestone.</p>
+
+            <p><strong>The Records Broken:</strong></p>
+            <ul>
+                <li><strong>7 Consecutive Matches:</strong> Messi became the first male player in history to score in seven consecutive FIFA World Cup matches (a streak dating back to the Round of 16 in the 2022 tournament).</li>
+                <li><strong>19 Career World Cup Goals:</strong> He extended his all-time men's tournament scoring record, pulling further ahead of legends like Miroslav Klose and Kylian Mbappé.</li>
+                <li><strong>Golden Boot Race:</strong> This marked his 6th goal of the 2026 tournament, cementing his place at the top of the Golden Boot standings.</li>
+            </ul>
+
+            <h2>What’s Next for Both Teams?</h2>
+
+            <h3>🇦🇷 Argentina: Eyes on the Prize</h3>
+            <p>Argentina exits Group J with a perfect nine points, maintaining their momentum as heavy favorites to defend their crown. They will now travel to Miami for a Round of 32 clash against Cape Verde on July 4th. With their squad fully rotated and their star player in record-breaking form, La Albiceleste looks incredibly dangerous.</p>
+
+            <h3>🇯🇴 Jordan: A Proud Debut</h3>
+            <p>While Jordan leaves the tournament with zero points from three defeats, they depart with their heads held high. In their first-ever FIFA World Cup appearance, they managed to score in all three of their group-stage matches against formidable opposition. The experience gained in 2026 will undoubtedly serve as a foundation for the future of Jordanian football.</p>
+        `
+    },
+    {
+        id: "13",
+        slug: "ind-w-vs-aus-w-t20-world-cup-2026-updates-scorecard",
+        title: "India Women vs Australia Women: IND-W vs AUS-W Match Scorecard, Highlights & ICC Women's T20 World Cup 2026 Updates",
+        description: "Follow the live updates, scorecard, head-to-head records, and points table standings of the India Women vs Australia Women clash in the ICC Women's T20 World Cup 2026.",
+        date: "June 28, 2026",
+        readTime: "5 min read",
+        author: "vtuwise Team",
+        tag: "Sports Updates",
+        imageBg: "linear-gradient(135deg, #0f172a, #047857, #15803d)",
+        content: `
+            <p>The clash between <strong>India Women (IND-W)</strong> and <strong>Australia Women (AUS-W)</strong> is always one of the most anticipated fixtures in international cricket. Whether it's the ICC Women's T20 World Cup, bilateral series, or knockout encounters, the rivalry consistently delivers thrilling performances, memorable moments, and world-class cricket.</p>
+
+            <p>Fans searching for <strong>India vs Australia Women live score</strong>, <strong>IND-W vs AUS-W scorecard</strong>, <strong>Australia Women's National Cricket Team vs India Women's National Cricket Team standings</strong>, and <strong>Women's T20 World Cup 2026 schedule</strong> are eager to follow every update from this blockbuster contest.</p>
+
+            <h2>India Women vs Australia Women Match Overview</h2>
+            <ul>
+                <li><strong>Match:</strong> India Women vs Australia Women</li>
+                <li><strong>Tournament:</strong> ICC Women's T20 World Cup 2026</li>
+                <li><strong>Format:</strong> Women's T20 International (WT20I)</li>
+                <li><strong>Teams:</strong> India Women (IND-W) vs Australia Women (AUS-W)</li>
+                <li><strong>Venue:</strong> To be updated</li>
+                <li><strong>Match Status:</strong> Live / Completed (Update as applicable)</li>
+            </ul>
+            <p>The encounter carries significant importance as both teams aim to strengthen their position in the Women's T20 World Cup standings.</p>
+
+            <h2>IND-W vs AUS-W Match Scorecard</h2>
+
+            <h3>Australia Women Innings</h3>
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Batter</th>
+                            <th>Runs</th>
+                            <th>Balls</th>
+                            <th>4s</th>
+                            <th>6s</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Phoebe Litchfield</td>
+                            <td>XX</td>
+                            <td>XX</td>
+                            <td>X</td>
+                            <td>X</td>
+                        </tr>
+                        <tr>
+                            <td>Others</td>
+                            <td>To be updated</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>India Women Bowling</h3>
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Bowler</th>
+                            <th>Overs</th>
+                            <th>Wickets</th>
+                            <th>Economy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>To be updated</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr />
+
+            <h3>India Women Innings</h3>
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Batter</th>
+                            <th>Runs</th>
+                            <th>Balls</th>
+                            <th>4s</th>
+                            <th>6s</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>To be updated</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Australia Women Bowling</h3>
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Bowler</th>
+                            <th>Overs</th>
+                            <th>Wickets</th>
+                            <th>Economy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>To be updated</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Phoebe Litchfield Impresses Again</h2>
+            <p>Australia's young batting sensation <strong>Phoebe Litchfield</strong> once again demonstrated why she is regarded as one of the brightest talents in women's cricket. Her composed innings helped Australia build momentum and put pressure on the Indian bowling attack.</p>
+            <p>Litchfield's ability to rotate strike while accelerating during the middle overs continues to make her a key player for Australia in ICC tournaments.</p>
+
+            <h2>India Women's Performance</h2>
+            <p>India entered the contest with confidence after consistent performances in recent international matches. The batting unit looked to build partnerships while the bowlers focused on restricting Australia's aggressive lineup.</p>
+            <p>Key players from India aimed to deliver match-winning performances as the team chased another memorable victory against the reigning powerhouse.</p>
+
+            <h2>Australia Women Continue Their Dominance</h2>
+            <p>Australia remain one of the strongest teams in world cricket. Their balanced squad, featuring experienced campaigners and emerging stars, has made them consistent title contenders in every ICC Women's T20 World Cup.</p>
+            <p>Their disciplined bowling attack and explosive batting lineup continue to challenge every opponent.</p>
+
+            <h2>Australia Women's National Cricket Team vs India Women's National Cricket Team Standings</h2>
+            <p>Both teams are expected to remain among the top contenders in the ICC Women's T20 World Cup 2026 points table.</p>
+            <p>Current standings depend on:</p>
+            <ul>
+                <li>Matches Played</li>
+                <li>Wins</li>
+                <li>Net Run Rate (NRR)</li>
+                <li>Points</li>
+            </ul>
+            <p>A victory in this high-profile clash could prove decisive in securing a semifinal berth.</p>
+
+            <h2>ICC Women's T20 World Cup 2026 Schedule</h2>
+            <p>The ICC Women's T20 World Cup 2026 features the world's best teams competing for the prestigious trophy.</p>
+            <p>Major fixtures include:</p>
+            <ul>
+                <li>India Women vs Australia Women</li>
+                <li>England Women vs South Africa Women</li>
+                <li>New Zealand Women vs Pakistan Women</li>
+                <li>West Indies Women vs Sri Lanka Women</li>
+            </ul>
+            <p>The tournament promises exciting cricket, fierce rivalries, and unforgettable performances.</p>
+
+            <h2>IND-W vs AUS-W Head-to-Head</h2>
+            <p>India and Australia have met several times in Women's T20 Internationals.</p>
+            <ul>
+                <li>Australia have historically enjoyed the upper hand.</li>
+                <li>India have produced memorable victories in ICC events and bilateral series.</li>
+                <li>Every encounter adds another exciting chapter to one of women's cricket's biggest rivalries.</li>
+            </ul>
+
+            <h2>Where to Follow Women's Cricket Live Score</h2>
+            <p>Fans can stay updated with:</p>
+            <ul>
+                <li>Live scorecards</li>
+                <li>Ball-by-ball commentary</li>
+                <li>Match highlights</li>
+                <li>Player statistics</li>
+                <li>ICC Women's T20 World Cup points table</li>
+                <li>Tournament schedule</li>
+            </ul>
+
+            <h2>Final Thoughts</h2>
+            <p>The <strong>India Women vs Australia Women</strong> rivalry continues to showcase the highest level of women's cricket. Whether you're searching for the <strong>IND-W vs AUS-W scorecard</strong>, <strong>India vs Australia Women live score</strong>, <strong>Women's T20 World Cup 2026 schedule</strong>, or updates on <strong>Phoebe Litchfield</strong>, this fixture remains one of the biggest attractions of the tournament.</p>
+            <p>As the ICC Women's T20 World Cup 2026 progresses, both India and Australia will look to maintain winning momentum and strengthen their chances of lifting the coveted trophy.</p>
+        `
+    },
+    {
         id: "11",
         slug: "kcet-2026-option-entry-link",
         title: "KCET 2026 Option Entry Begins: A Complete Guide for Engineering, Agriculture, Nursing, Farm Science & B.V.Sc Aspirants",

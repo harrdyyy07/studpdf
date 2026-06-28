@@ -13,6 +13,7 @@ const tagEmoji: Record<string, string> = {
     'KCET Updates': '📄',
     'Study Tips': '🎯',
     'VTU Rules': '📖',
+    'Sports Updates': '🏏',
 };
 
 const tagColor: Record<string, string> = {
@@ -20,6 +21,7 @@ const tagColor: Record<string, string> = {
     'KCET Updates': '#2563eb',
     'Study Tips': '#d97706',
     'VTU Rules': '#dc2626',
+    'Sports Updates': '#047857',
 };
 
 export default function BlogIndex() {
