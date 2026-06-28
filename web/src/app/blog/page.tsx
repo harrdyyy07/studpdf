@@ -14,6 +14,7 @@ const tagEmoji: Record<string, string> = {
     'Study Tips': '🎯',
     'VTU Rules': '📖',
     'Sports Updates': '🏏',
+    'Exam Updates': '📢',
 };
 
 const tagColor: Record<string, string> = {
@@ -22,6 +23,7 @@ const tagColor: Record<string, string> = {
     'Study Tips': '#d97706',
     'VTU Rules': '#dc2626',
     'Sports Updates': '#047857',
+    'Exam Updates': '#2563eb',
 };
 
 export default function BlogIndex() {

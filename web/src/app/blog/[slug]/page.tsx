@@ -21,6 +21,7 @@ const tagColor: Record<string, string> = {
     'Study Tips':      '#d97706',
     'VTU Rules':       '#dc2626',
     'Sports Updates':  '#047857',
+    'Exam Updates':    '#2563eb',
 };
 
 const tagEmoji: Record<string, string> = {
@@ -29,6 +30,7 @@ const tagEmoji: Record<string, string> = {
     'Study Tips':      '🎯',
     'VTU Rules':       '📖',
     'Sports Updates':  '🏏',
+    'Exam Updates':    '📢',
 };
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -242,6 +244,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     text-align: left;
                 }
                 .post-content th { background: var(--surface); color: var(--text); font-weight: 700; }
+                .post-content img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 0.75rem;
+                    margin: 1.5rem 0;
+                    display: block;
+                    box-shadow: var(--card-shadow);
+                }
 
                 /* cta box */
                 .post-cta {

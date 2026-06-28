@@ -13,6 +13,63 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "15",
+        slug: "cbse-class-10-second-board-exam-result-2026-updates",
+        title: "CBSE Class 10 Second Board Exam Result 2026: Check Date, Links & Best of Two Rule",
+        description: "CBSE is expected to declare Class 10 Second Board Exam Result 2026 by June 30, 2026. Learn how to check scores, download marksheet, and how Best of Two rule works.",
+        date: "June 28, 2026",
+        readTime: "4 min read",
+        author: "vtuwise Team",
+        tag: "Exam Updates",
+        imageBg: "linear-gradient(135deg, #1e3c72, #2a5298)",
+        content: `
+            <p>The Central Board of Secondary Education (CBSE) is expected to declare the <strong>Class 10 Second Board Exam Result 2026</strong> very soon, likely by <strong>June 30, 2026</strong>. The exams were conducted between May 15 and May 21, 2026, and over 6.68 lakh students participated.</p>
+
+            <p>Here is everything you need to know about checking your scores and how the new two-board exam system works.</p>
+            <img src="/images/results.png" alt="results" />
+
+
+            <h2>Where to Check Your Results</h2>
+            <p>Once the results are officially announced, you can access your scorecard through the following official channels:</p>
+
+            <h3>Official Websites:</h3>
+            <ul>
+                <li><a href="https://www.cbse.gov.in" target="_blank" rel="noopener noreferrer">cbse.gov.in</a></li>
+                <li><a href="https://cbseresults.nic.in" target="_blank" rel="noopener noreferrer">cbseresults.nic.in</a></li>
+                <li><a href="https://results.cbse.nic.in" target="_blank" rel="noopener noreferrer">results.cbse.nic.in</a></li>
+            </ul>
+
+            <h3>Alternative Platforms:</h3>
+            <ul>
+                <li><strong>DigiLocker:</strong> You can access your digitally signed marksheet via the website (<a href="https://results.digilocker.gov.in" target="_blank" rel="noopener noreferrer">results.digilocker.gov.in</a>) or the mobile app using your school-issued 6-digit security PIN.</li>
+                <li><strong>UMANG App:</strong> Available on Android and iOS.</li>
+                <li><strong>SMS & IVRS:</strong> For students without reliable internet access, CBSE typically activates SMS and call services.</li>
+            </ul>
+
+            <h2>Credentials Required to Login</h2>
+            <p>Keep your Phase 2 admit card (hall ticket) handy, as you will need the following details to check your result:</p>
+            <ul>
+                <li>Roll Number</li>
+                <li>School Number</li>
+                <li>Admit Card ID</li>
+                <li>Date of Birth (in DD/MM/YYYY format)</li>
+            </ul>
+
+            <h2>How to Download Your Scorecard Online</h2>
+            <ol>
+                <li>Visit any of the official result portals (e.g., <a href="https://cbseresults.nic.in" target="_blank" rel="noopener noreferrer">cbseresults.nic.in</a>).</li>
+                <li>Click on the link that reads <strong>"CBSE Class 10 Second Board Result 2026"</strong> or <strong>"Secondary School Examination Results 2026 (Phase II)"</strong>.</li>
+                <li>Enter your required credentials exactly as they appear on your admit card.</li>
+                <li>Submit the details to view your result on the screen.</li>
+                <li>Download the provisional marksheet and print a hard copy for your records (your school will provide the original physical marksheet later).</li>
+            </ol>
+
+            <h2>The New \"Best of Two\" Rule</h2>
+            <p>The 2026 academic year marks the first time CBSE has implemented the new two-board-exam system. This optional Phase 2 exam was designed to give students a chance to improve their scores without having to wait a full year.</p>
+            <p>When calculating your final results, <strong>CBSE will consider the higher marks obtained in either Phase 1 (April) or Phase 2 (June).</strong> You will simply receive marks for the better of your two attempts, ensuring your final grade reflects your best performance.</p>
+        `
+    },
+    {
         id: "14",
         slug: "argentina-vs-jordan-world-cup-2026-messi-record",
         title: "Argentina vs. Jordan: Messi Makes History Again as La Albiceleste Coast into Round of 32",
