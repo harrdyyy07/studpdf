@@ -1608,7 +1608,14 @@ export const siteData: SiteData = {
                         ]
                     },
                     { name: "Industrial Electronics", code: "BEC405B", credits: "3 CR", slug: "industrial-electronics-ie-bec405b-vtu-notes", modules: [] },
-                    { name: "Operating Systems", code: "BEC405C", credits: "3 CR", slug: "operating-systems-os-bec405c-vtu-notes", modules: [] },
+                    { name: "Operating Systems", code: "BEC405C", credits: "3 CR", slug: "operating-systems-os-bec405c-vtu-notes", modules: [
+                            { id: 1, name: "Module 1: Notes", desc: "operating system-bec405c notes for Module 1", link: "https://drive.google.com/file/d/1pVHfgIHbGtXfqcsoQYQZtFsSGzjeBFBu/view?usp=drive_link", type: "Notes" },
+                            { id: 2, name: "Module 2: Notes", desc: "operating system-bec405c notes for Module 2", link: "https://drive.google.com/file/d/1J8HoC5RbPgXAwr-2tJpcYVnrqwGRvUhe/view?usp=drive_link", type: "Notes" },
+                            { id: 3, name: "Module 3: Notes", desc: "operating system-bec405c notes for Module 3", link: "https://drive.google.com/file/d/1SZBIx8yLHnQ0a36ZadnNBqqRO56xuxLI/view?usp=drive_link", type: "Notes" },
+                            { id: 4, name: "Module 4: Notes", desc: "operating system-bec405c notes for Module 4", link: "https://drive.google.com/file/d/1h_LwsYuWXG2Q22GJaCj4XVAMV3yR8JD6/view?usp=drive_link", type: "Notes" },
+                            { id: 5, name: "Module 5: Notes", desc: "operating system-bec405c notes for Module 5", link: "https://drive.google.com/file/d/1VCxMvVBEl4Mac_nHdnNvnfXMZKx-P8qD/view?usp=drive_link", type: "Notes" },
+                            { id: 6, name: "Textbook", desc: "operating system-bec405c Textbook", link: "https://drive.google.com/file/d/1dsgVzhPLv-VkBHq-YuDuVMezv0KZUBa8/view?usp=drive_link", type: "textbook" }
+                    ] },
                     { name: "Data Structures using C", code: "BEC405D", credits: "3 CR", slug: "data-structures-using-c-dsc-bec405d-vtu-notes", modules: [] },
                     { name: "Microcontroller Lab", code: "BEC456A", credits: "1 CR", slug: "microcontroller-lab-mcl-bec456a-vtu-notes", modules: [] },
                     { name: "Programmable Logic Controllers", code: "BEC456B", credits: "1 CR", slug: "programmable-logic-controllers-plc-bec456b-vtu-notes", modules: [] },
