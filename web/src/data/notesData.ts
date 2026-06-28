@@ -1144,7 +1144,13 @@ export const siteData: SiteData = {
                         ]
                     },
                     { name: "Optimization Technique", code: "BCS405C", credits: "3 CR", slug: "optimization-technique-ot-bcs405c-vtu-notes", modules: [] },
-                    { name: "Linear Algebra", code: "BCS405D", credits: "3 CR", slug: "linear-algebra-la-bcs405d-vtu-notes", modules: [] },
+                    { name: "Linear Algebra", code: "BCS405D", credits: "3 CR", slug: "linear-algebra-la-bcs405d-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "linear algebra-BCS405D Module-1 Notes", link: "https://drive.google.com/file/d/1AzHYWChCcaWLmuzEti8119k_iqjt-5Zl/view?usp=drive_link", type: "Notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "linear algebra-BCS405D Module-2 Notes", link: "https://drive.google.com/file/d/1lNOyt2r43kAl2XyuliKNBCJ0bggPG4Pp/view?usp=drive_link", type: "Notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "linear algebra-BCS405D Module-3 Notes", link: "https://drive.google.com/file/d/1T13tbv5lpZbyuNXENQ-CNNF_LhcYRGrL/view?usp=drive_link", type: "Notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "linear algebra-BCS405D Module-4 Notes", link: "https://drive.google.com/file/d/15tqM3a8pBHBM3XBhUWDiKA90e2n-Kz3b/view?usp=drive_link", type: "Notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "linear algebra-BCS405D Module-5 Notes", link: "https://drive.google.com/file/d/19hGS1CNZdE5wr7ijGiiEnC45vepqb7la/view?usp=drive_link", type: "Notes" },
+                    ] },
                     {
                         name: "Biology For Computer Engineers", code: "BBOC407", credits: "3 CR", slug: "biology-for-computer-engineers-bce-bboc407-vtu-notes", modules: [
                             { id: 1, name: "Module 1: Introduction to Biology (notes-1)", desc: "BBOC407 Module-1 Notes by RV Institute of Technology and Management", link: "https://drive.google.com/file/d/10QbZqN8HiRyy7V-FjYcRz_ByAZnJOLF1/view?usp=drive_link", type: "Notes" },
