@@ -2107,7 +2107,14 @@ export const siteData: SiteData = {
                         { id: 5, name: "Module 5", desc: "Module-5 Notes for Fluid Mechanics-BME403", link: "https://drive.google.com/file/d/1rTNrhMO_g1tob4rF_7GLIQdkDV1jKlEP/view?usp=drive_link", type: "notes" },
                     ] },
                     { name: "Mechanical Measurements and Metrology Lab", code: "BME404", credits: "1 CR", slug: "mechanical-measurements-and-metrology-lab-mmml-bme404-vtu-notes", modules: [] },
-                    { name: "ESC / ETC / PLC (Elective)", code: "BME405x", credits: "3 CR", slug: "esc-etc-plc-elective-bme405x-vtu-notes", modules: [] },
+                    { name: "Non Traditional Machining", code: "BME405A", credits: "3 CR", slug: "non-traditional-machining-ntm-bme405a-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "Non Traditional Machining-BME405A Module-1 Notes", link: "https://drive.google.com/file/d/190grJjvjBi3_5BFM1lSoRvd1NqlhSyPE/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "Non Traditional Machining-BME405A Module-2 Notes", link: "https://drive.google.com/file/d/1RsmYO-lQ0fcGCu3cZOjg9masY56NFkv7/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "Non Traditional Machining-BME405A Module-3 Notes", link: "https://drive.google.com/file/d/1Psp3XzXcfYGgc0NO4s-oDezuxGU2xjoX/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "Non Traditional Machining-BME405A Module-4 Notes", link: "https://drive.google.com/file/d/1Nn--IRDe2At6oERhuzjl_ZMaVoNhQBQp/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "Non Traditional Machining-BME405A Module-5 Notes", link: "https://drive.google.com/file/d/1rkV4T4Tp5jv71ilemXnqLOgpQOS_0BqY/view?usp=drive_link", type: "notes" },
+                        { id: 6, name: "Complete Notes", desc: "Non Traditional Machining-BME405A Complete Notes", link: "https://drive.google.com/file/d/1NuwCXHQGLmmEKs9c8hgMZchJYIYF6INH/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Ability / Skill Enhancement Course – IV", code: "BME456x", credits: "1 CR", slug: "ability-skill-enhancement-course-iv-asec-bme456x-vtu-notes", modules: [] },
                     { name: "Biology for Engineers", code: "BBOK407", credits: "3 CR", slug: "biology-for-engineers-bfe-bbok407-vtu-notes", modules: [] },
                     { name: "Universal Human Values", code: "BUHK408", credits: "1 CR", slug: "universal-human-values-uhv-buhk408-vtu-notes", modules: [] },
