@@ -13,6 +13,131 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "17",
+        slug: "vtu-updates-academic-calendar-internship-guidelines-2026-27",
+        title: "VTU Updates: Academic Calendar & Internship Guidelines for VII & IX Semesters (2026-27)",
+        description: "VTU has officially released the academic calendar for the upcoming Odd Semester (2026-27). Read about key academic dates, the 2022 scheme swap option, and the internship portal guidelines.",
+        date: "July 1, 2026",
+        readTime: "5 min read",
+        author: "vtuwise Team",
+        tag: "VTU Updates",
+        imageBg: "linear-gradient(135deg, #4f46e5, #7c3aed)",
+        content: `
+            <p>Visvesvaraya Technological University (VTU) has officially released the academic calendar for the upcoming Odd Semester. Dated June 30, 2026, this notification outlines the schedule for the VII semester of B.E./B.Tech., B.Arch., B.Plan., and B.Sc. programs, as well as the IX semester for the B.Arch. program.</p>
+
+            <p>Whether you are gearing up for classes, planning your internship, or wondering about exam dates, here is everything you need to know to stay on track.</p>
+
+            <h2>📅 Key Academic Dates at a Glance</h2>
+
+            <p>To help you plan your semester, here are the critical dates for your respective programs:</p>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>VII Sem B.E./B.Tech & B.Arch</th>
+                            <th>VII Sem B.Plan.</th>
+                            <th>VII Sem B.Sc.</th>
+                            <th>IX Sem B.Arch</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Commencement of Semester</strong></td>
+                            <td>20.07.2026</td>
+                            <td>06.07.2026</td>
+                            <td>06.07.2026</td>
+                            <td>20.07.2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Internship/Induction</strong></td>
+                            <td>N/A</td>
+                            <td>06.07.2026 to 15.08.2026</td>
+                            <td>06.07.2026 to 31.07.2026</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Commencement of Classes</strong></td>
+                            <td>20.07.2026</td>
+                            <td>17.08.2026</td>
+                            <td>03.08.2026</td>
+                            <td>20.07.2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Last Working Day</strong></td>
+                            <td>09.11.2026</td>
+                            <td>30.11.2026</td>
+                            <td>21.11.2026</td>
+                            <td>09.11.2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Theory Examinations</strong></td>
+                            <td>14.11.2026 to 04.12.2026</td>
+                            <td>05.12.2026 to 18.12.2026</td>
+                            <td>26.11.2026 to 11.12.2026</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Practical Examinations</strong></td>
+                            <td>07.12.2026 to 18.12.2026</td>
+                            <td>21.12.2026 to 26.12.2026</td>
+                            <td>14.12.2026 to 18.12.2026</td>
+                            <td>14.11.2026 to 19.11.2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Next Semester Begins</strong></td>
+                            <td>21.12.2026</td>
+                            <td>28.12.2026</td>
+                            <td>21.12.2026</td>
+                            <td>21.12.2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <blockquote>
+                <strong>Important Note:</strong> Colleges may schedule extra sessions on weekdays, Saturdays, and Sundays to ensure all academic hours are completed if necessary.
+            </blockquote>
+
+            <h2>🔄 The 2022 Scheme: Swapping Semesters VII and VIII</h2>
+
+            <p>One of the most significant updates for students under the 2022 Scheme is the flexibility to swap Semesters VII and VIII. This initiative is designed to help students secure genuine internship opportunities during both ODD and EVEN semesters.</p>
+
+            <ul>
+                <li><strong>Option A (Swap):</strong> Students can choose to complete their VIII Semester components (which include the Internship, Professional Elective Course, and Open Elective Course) during the ODD semester. They would then complete the VII Semester components (Project Work, Integrated Professional Core Course, Professional Core Course, and Electives) during the subsequent EVEN semester.</li>
+                <li><strong>Option B (Regular Sequence):</strong> Students can continue with the standard sequence of pursuing the VII and VIII semesters exactly as prescribed in the syllabus.</li>
+                <li><strong>Mentorship:</strong> It is the responsibility of student mentors to guide those wishing to utilize this swapping option, and the final list of these students must be communicated to the Registrar (Evaluation) before the semester begins.</li>
+            </ul>
+
+            <h2>💼 A Quick Guide to the VTU Internship Portal</h2>
+
+            <p>Internships are a core component of the curriculum, and VTU has provided ample time following the VI semester for students to register on the University's Internship Platform.</p>
+
+            <p>Here is how to get started on the portal (<a href="https://vtu.internyet.in/register" target="_blank" rel="noopener noreferrer">vtu.internyet.in/register</a>):</p>
+
+            <ul>
+                <li><strong>Registration:</strong> New students must use the "Student Registration" option, as the Employer option is strictly for companies.</li>
+                <li><strong>Basic Details & Verification:</strong> Enter your name, mobile number, and email, followed by OTP verification.</li>
+                <li><strong>Profile Setup:</strong> Create a secure password, fill out your personal information, enter your academic details, and upload your resume.</li>
+                <li><strong>Applying:</strong> Once registered, log in to browse available internships by domain, company, duration, or location, and hit "Apply" for the ones that fit your eligibility.</li>
+            </ul>
+
+            <h3>Understanding Your Internship Application Status</h3>
+
+            <p>When applying through the portal, you will encounter different status updates. Here is what they mean:</p>
+
+            <ul>
+                <li><strong>Applied:</strong> You have successfully submitted your application.</li>
+                <li><strong>Shortlisted:</strong> The company has selected you for the next stage of the process (Note: You are not an official intern yet).</li>
+                <li><strong>Offer Released:</strong> The organization has issued you an internship offer (Note: You are still not an official intern yet).</li>
+                <li><strong>Ongoing:</strong> You have accepted the offer, and your internship has officially started, meaning you are now recognized as an official intern by the company.</li>
+            </ul>
+
+            <p>College Internship Coordinators are available to help students with any platform difficulties and will brief everyone on procedures like maintaining an internship diary and reporting progress. Ensure you follow all guidelines and have a productive semester ahead!</p>
+        `
+    },
+    {
         id: "16",
         slug: "vtu-creates-new-record-by-declaring-6th-semester-results-in-just-5-minutes",
         title: "VTU Creates History Again: 6th Semester Results Released in Just 5 Minutes!",

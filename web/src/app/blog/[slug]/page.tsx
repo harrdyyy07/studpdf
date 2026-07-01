@@ -22,6 +22,7 @@ const tagColor: Record<string, string> = {
     'VTU Rules':       '#dc2626',
     'Sports Updates':  '#047857',
     'Exam Updates':    '#2563eb',
+    'VTU Updates':     '#dc2626',
 };
 
 const tagEmoji: Record<string, string> = {
@@ -31,6 +32,7 @@ const tagEmoji: Record<string, string> = {
     'VTU Rules':       '📖',
     'Sports Updates':  '🏏',
     'Exam Updates':    '📢',
+    'VTU Updates':     '📢',
 };
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
