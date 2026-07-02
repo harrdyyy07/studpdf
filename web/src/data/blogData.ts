@@ -13,6 +13,355 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "18",
+        slug: "sbi-po-apply-online-2026",
+        title: "SBI PO Apply Online 2026 Begins for 1,500 Vacancies: Direct Application Link, Important Dates, Fees & Step-by-Step Process",
+        description: "State Bank of India (SBI) has officially started the SBI PO Apply Online 2026 process for 1,500 Probationary Officer (PO) vacancies. Apply online from 18 June to 8 July 2026.",
+        date: "July 2, 2026",
+        readTime: "7 min read",
+        author: "vtuwise Team",
+        tag: "Exam Updates",
+        imageBg: "linear-gradient(135deg, #0a3d62, #3c6382)",
+        content: `
+            <img src="/images/sbipo.png" alt="sbi po" />
+            <p>The <strong>State Bank of India (SBI)</strong> has officially started the <strong>SBI PO Apply Online 2026</strong> process for <strong>1,500 Probationary Officer (PO)</strong> vacancies. Graduates aspiring to build a rewarding career in the banking sector can now submit their online applications through the official SBI Careers portal or directly through the IBPS registration portal.</p>
+
+            <p><strong>📌 Direct Apply Link:</strong> <a href="https://ibpsreg.ibps.in/sbipojun26/" target="_blank" rel="noopener noreferrer">https://ibpsreg.ibps.in/sbipojun26/</a></p>
+
+            <p>The online application window is open from <strong>18 June 2026 to 8 July 2026</strong>. Interested candidates should complete their registration before the deadline to avoid last-minute technical issues.</p>
+
+            <p>In this article, you'll find complete details about the SBI PO 2026 online application process, including important dates, application fees, required documents, image specifications, step-by-step registration process, and common mistakes to avoid.</p>
+
+            <hr />
+
+            <h2>SBI PO Apply Online 2026 Starts</h2>
+
+            <p>The <strong>SBI PO Recruitment 2026</strong> is one of the most awaited banking recruitment drives in India. Every year, lakhs of candidates compete for the prestigious <strong>Probationary Officer (PO)</strong> post because of the attractive salary package, career growth, job security, and excellent promotion opportunities offered by the State Bank of India.</p>
+
+            <p>Candidates can submit their applications <strong>only through online mode</strong>. No offline applications will be accepted.</p>
+
+            <p>Those who meet the eligibility criteria should complete their registration well before the closing date.</p>
+
+            <h2>SBI PO 2026 Important Dates</h2>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Online Application Starts</strong></td>
+                            <td>18 June 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Last Date to Apply Online</strong></td>
+                            <td>8 July 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Last Date to Pay Application Fee</strong></td>
+                            <td>8 July 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SBI PO Preliminary Exam</strong></td>
+                            <td>August 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>SBI PO Main Exam</strong></td>
+                            <td>September 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>SBI PO Apply Online 2026 Direct Link</h2>
+
+            <p>Candidates can apply online using either the official SBI Careers website or the direct IBPS registration portal.</p>
+
+            <h3>Official Application Link</h3>
+            <p>👉 <strong><a href="https://ibpsreg.ibps.in/sbipojun26/" target="_blank" rel="noopener noreferrer">https://ibpsreg.ibps.in/sbipojun26/</a></strong></p>
+
+            <p>It is recommended to complete the application process as early as possible to avoid heavy website traffic during the final days.</p>
+
+            <h2>SBI PO 2026 Vacancy Details</h2>
+
+            <p>The State Bank of India has announced <strong>1,500 vacancies</strong> for the post of <strong>Probationary Officer (PO)</strong>.</p>
+
+            <p>This recruitment provides an excellent opportunity for graduates looking to join India's largest public sector bank and build a long-term banking career.</p>
+
+            <h2>SBI PO 2026 Application Fee</h2>
+
+            <p>Candidates are required to pay the application fee online through Debit Card, Credit Card, Internet Banking, UPI, or other available online payment methods.</p>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Application Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>SC/ST/PwBD</strong></td>
+                            <td>Nil</td>
+                        </tr>
+                        <tr>
+                            <td><strong>General/OBC/EWS/Others</strong></td>
+                            <td>₹750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <blockquote>
+                <strong>Note:</strong> Once the application fee is paid, it will not be refunded under any circumstances.
+            </blockquote>
+
+            <h2>Documents Required for SBI PO 2026 Online Application</h2>
+
+            <p>Before starting the registration process, candidates should keep the following documents ready.</p>
+
+            <ul>
+                <li>Aadhaar Card</li>
+                <li>PAN Card</li>
+                <li>Class 10 Certificate</li>
+                <li>Graduation Degree/Marksheet</li>
+                <li>Valid Email ID</li>
+                <li>Active Mobile Number</li>
+                <li>Passport-size Photograph</li>
+                <li>Signature</li>
+                <li>Left Thumb Impression</li>
+                <li>Handwritten Declaration</li>
+                <li>Category Certificate (if applicable)</li>
+                <li>EWS Certificate (if applicable)</li>
+                <li>PwBD Certificate (if applicable)</li>
+                <li>Ex-Serviceman Certificate (if applicable)</li>
+                <li>Online Payment Method</li>
+            </ul>
+
+            <h2>SBI PO Photograph & Document Specifications</h2>
+
+            <p>Candidates must upload scanned copies of documents in the prescribed format.</p>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Document</th>
+                            <th>Dimensions</th>
+                            <th>File Size</th>
+                            <th>Format</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Passport Photograph</strong></td>
+                            <td>200 × 230 Pixels</td>
+                            <td>20 KB – 50 KB</td>
+                            <td>JPG/JPEG</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Signature</strong></td>
+                            <td>140 × 60 Pixels</td>
+                            <td>10 KB – 20 KB</td>
+                            <td>JPG/JPEG</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Left Thumb Impression</strong></td>
+                            <td>240 × 240 Pixels</td>
+                            <td>20 KB – 50 KB</td>
+                            <td>JPG/JPEG</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Handwritten Declaration</strong></td>
+                            <td>800 × 400 Pixels</td>
+                            <td>50 KB – 100 KB</td>
+                            <td>JPG/JPEG</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Ensure all images are clear, properly cropped, and within the prescribed file size.</p>
+
+            <h2>How to Apply Online for SBI PO 2026?</h2>
+
+            <p>Follow these steps to complete your application successfully.</p>
+
+            <h3>Step 1: Visit the Official Website</h3>
+            <p>Open the official application portal: <strong><a href="https://ibpsreg.ibps.in/sbipojun26/" target="_blank" rel="noopener noreferrer">https://ibpsreg.ibps.in/sbipojun26/</a></strong></p>
+            <p>Click on <strong>New Registration</strong>.</p>
+
+            <h3>Step 2: Complete Registration</h3>
+            <p>Enter your basic details including:</p>
+            <ul>
+                <li>Full Name</li>
+                <li>Mobile Number</li>
+                <li>Email Address</li>
+            </ul>
+            <p>After verification, click <strong>Save & Next</strong>.</p>
+
+            <h3>Step 3: Upload Photograph & Signature</h3>
+            <p>Upload your recent passport-size photograph and signature according to the prescribed specifications.</p>
+            <p>Make sure:</p>
+            <ul>
+                <li>Background is white</li>
+                <li>Image is clear</li>
+                <li>Signature is not in capital letters</li>
+                <li>File size matches the guidelines</li>
+            </ul>
+
+            <h3>Step 4: Fill Personal Details</h3>
+            <p>Provide accurate information such as:</p>
+            <ul>
+                <li>Father's Name</li>
+                <li>Mother's Name</li>
+                <li>Date of Birth</li>
+                <li>Gender</li>
+                <li>Nationality</li>
+                <li>Marital Status</li>
+                <li>Correspondence Address</li>
+                <li>Permanent Address</li>
+            </ul>
+            <p>Ensure all details match your official documents.</p>
+
+            <h3>Step 5: Enter Category & Other Details</h3>
+            <p>Fill in the required information regarding:</p>
+            <ul>
+                <li>Category (General/OBC/SC/ST/EWS)</li>
+                <li>Disability Status (if applicable)</li>
+                <li>Aadhaar Number</li>
+                <li>PAN Number</li>
+                <li>Previous SBI Employment</li>
+                <li>Loan/Credit-related Information</li>
+                <li>Number of Previous SBI PO Attempts</li>
+            </ul>
+
+            <h3>Step 6: Select Examination Centres</h3>
+            <p>Choose your preferred:</p>
+            <ul>
+                <li>Preliminary Examination Centre</li>
+                <li>Main Examination Centre</li>
+            </ul>
+            <p>Select carefully, as requests for changing centres may not be entertained later.</p>
+
+            <h3>Step 7: Fill Educational Qualifications</h3>
+            <p>Enter details regarding your:</p>
+            <ul>
+                <li>Graduation Degree</li>
+                <li>University Name</li>
+                <li>Passing Year</li>
+                <li>Percentage/CGPA</li>
+                <li>Stream</li>
+            </ul>
+            <p>Double-check all information before proceeding.</p>
+
+            <h3>Step 8: Pre-Examination Training</h3>
+            <p>Candidates belonging to eligible reserved categories can opt for SBI's Pre-Examination Training.</p>
+            <p>If interested, select your preferred training centre.</p>
+
+            <h3>Step 9: Upload Remaining Documents</h3>
+            <p>Upload:</p>
+            <ul>
+                <li>Left Thumb Impression</li>
+                <li>Handwritten Declaration</li>
+                <li>Category Certificate (if applicable)</li>
+                <li>Other supporting documents</li>
+            </ul>
+            <p>Ensure all files are uploaded in the prescribed format.</p>
+
+            <h3>Step 10: Pay the Application Fee</h3>
+            <p>Pay the application fee through any of the available online payment methods:</p>
+            <ul>
+                <li>Debit Card</li>
+                <li>Credit Card</li>
+                <li>UPI</li>
+                <li>Internet Banking</li>
+            </ul>
+            <p>Wait until the payment confirmation page appears before closing the browser.</p>
+
+            <h3>Step 11: Final Submission</h3>
+            <p>Review every detail carefully.</p>
+            <p>Accept the declaration and click <strong>Submit</strong>.</p>
+            <p>After successful submission:</p>
+            <ul>
+                <li>Registration Number will be generated.</li>
+                <li>Password will be sent to your registered mobile number and email address.</li>
+                <li>Download and print the application form for future reference.</li>
+            </ul>
+
+            <h2>Common Mistakes to Avoid</h2>
+
+            <p>Many candidates lose their opportunity due to simple mistakes while filling the application form. Avoid these common errors:</p>
+            <ul>
+                <li>Uploading blurred or incorrectly sized photographs</li>
+                <li>Incorrect signature format</li>
+                <li>Wrong Date of Birth</li>
+                <li>Name mismatch with Aadhaar or PAN</li>
+                <li>Incorrect educational details</li>
+                <li>Selecting the wrong examination centre</li>
+                <li>Forgetting registration credentials</li>
+                <li>Closing the payment page before confirmation</li>
+                <li>Submitting the form without reviewing all details</li>
+            </ul>
+            <p>Always preview your application before final submission.</p>
+
+            <h2>Tips for a Smooth SBI PO Application Process</h2>
+
+            <ul>
+                <li>Apply using a laptop or desktop.</li>
+                <li>Use a stable internet connection.</li>
+                <li>Keep scanned documents ready beforehand.</li>
+                <li>Use an active email ID and mobile number.</li>
+                <li>Complete registration before the last date.</li>
+                <li>Save your Registration Number and Password safely.</li>
+                <li>Download the submitted application form immediately.</li>
+            </ul>
+
+            <h2>SBI PO 2026 Exam Preparation Tips</h2>
+
+            <p>After successfully completing the online application process, candidates should immediately begin their preparation for the examination. Focus on the following subjects:</p>
+            <ul>
+                <li>Quantitative Aptitude</li>
+                <li>Reasoning Ability</li>
+                <li>English Language</li>
+                <li>General Awareness</li>
+                <li>Banking Awareness</li>
+                <li>Computer Aptitude</li>
+                <li>Descriptive English (Mains)</li>
+            </ul>
+            <p>Regular practice through mock tests, previous year question papers, and sectional quizzes will help improve both speed and accuracy.</p>
+            <p>Creating a daily study schedule and revising important banking and current affairs topics can significantly improve your chances of clearing both the Preliminary and Main examinations.</p>
+
+            <h2>Why Choose SBI PO?</h2>
+
+            <p>The SBI Probationary Officer post is among the most sought-after banking jobs because it offers:</p>
+            <ul>
+                <li>Attractive salary and allowances</li>
+                <li>Fast career growth</li>
+                <li>Job security</li>
+                <li>Leadership opportunities</li>
+                <li>Nationwide postings</li>
+                <li>Training and professional development</li>
+                <li>Opportunities for promotion to senior management positions</li>
+            </ul>
+
+            <h2>Final Words</h2>
+
+            <p>The <strong>SBI PO Apply Online 2026</strong> process has officially begun for <strong>1,500 Probationary Officer vacancies</strong>, making it an excellent opportunity for graduates looking to secure a prestigious banking career. Eligible candidates should complete their application before <strong>8 July 2026</strong> to avoid last-minute issues.</p>
+
+            <p><strong>👉 Direct Apply Link:</strong> <a href="https://ibpsreg.ibps.in/sbipojun26/" target="_blank" rel="noopener noreferrer">https://ibpsreg.ibps.in/sbipojun26/</a></p>
+
+            <p>Before submitting your application, carefully verify all personal details, educational qualifications, uploaded documents, and payment information. Once your application is successfully submitted, start your preparation immediately to maximize your chances of clearing the SBI PO 2026 examination.</p>
+
+            <p>Apply early, prepare consistently, and take the first step toward a successful career with the State Bank of India.</p>
+        `
+    },
+    {
         id: "17",
         slug: "vtu-updates-academic-calendar-internship-guidelines-2026-27",
         title: "VTU Updates: Academic Calendar & Internship Guidelines for VII & IX Semesters (2026-27)",
