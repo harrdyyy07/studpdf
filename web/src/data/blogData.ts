@@ -13,6 +13,62 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "19",
+        slug: "belgium-vs-senegal-world-cup-2026-comeback",
+        title: "Belgium vs Senegal 3-2: A Captain’s View on Our Epic World Cup Comeback",
+        description: "Read Kevin De Bruyne's first-hand account of the Belgium vs Senegal 2026 World Cup match. Discover the stats, lineups, and how we completed a stunning 3-2 comeback.",
+        date: "July 2, 2026",
+        readTime: "5 min read",
+        author: "Kevin De Bruyne",
+        tag: "Sports Updates",
+        imageBg: "linear-gradient(135deg, #1e3a8a, #0284c7, #0369a1)",
+        content: `
+            <img src="/images/bel.webp" alt="bel" />
+            <p>Hey everyone, Kevin here. What a night in Seattle. When we stepped onto the pitch for the <strong>Belgium vs Senegal</strong> Round of 32 clash, we knew we were in for an absolute battle. The <strong>Senegal FIFA ranking</strong> proves they are a world-class side, and despite our own <strong>Belgium FIFA ranking</strong>, we found ourselves under immense pressure right from the kickoff.</p>
+
+            <h3>A Tough Start Against a Fierce Opponent</h3>
+
+            <p><strong>Sadio Mané</strong> was relentless from the start. Any pre-match <strong>Belgium vs Senegal prediction</strong> that underestimated the Lions of Teranga was quickly proven wrong. In the 24th minute, Habib Diarra gave them the lead after <strong>Thibaut Courtois</strong> made a great initial save against a shot from <strong>Mane</strong>. Early in the second half, Ismaïla Sarr doubled their advantage to 2-0 with an incredible volley.</p>
+
+            <p>I was out there in the midfield trying to unlock a very compact defense, playing alongside <strong>Jérémy Doku</strong>, <strong>Arthur Theate</strong>, and <strong>Timothy Castagne</strong>. Every time we pushed forward, players like <strong>Pathé Ciss</strong> and <strong>Ismail Jakobs</strong> were there to shut us down. Things looked incredibly grim for <strong>Belgium</strong>.</p>
+
+            <h3>The Substitutions and the Turning Point</h3>
+
+            <p>Around the 55th minute, the manager made some crucial tactical decisions. I was substituted for Nicolas Raskin, while Doku made way for Dodi Lukébakio. It is never easy watching from the sidelines, but football is a squad game, and the fresh legs completely changed the dynamic of this <strong>Bel vs Sen</strong> encounter. The introduction of players like <strong>Diego Moreira</strong> and, later in extra time, <strong>Amadou Onana</strong>, gave us the creative spark and physical presence we desperately needed.</p>
+
+            <h3>Lukaku and Tielemans: The Heroes of Belgium v Senegal</h3>
+
+            <p>As the clock ticked past the 85th minute, many fans tuning in from around the world—perhaps frantically searching <em>“where to watch Belgium national football team vs Senegal national football team”</em>—probably thought our World Cup dream was over. But <strong>Romelu Lukaku</strong> (the ultimate <strong>Lukaku Belgium</strong> legend) had other plans. Coming off the bench, <strong>Lukaku</strong> slotted home a beautiful first-time finish in the 86th minute to make it 2-1.</p>
+
+            <p>Just three minutes later, my long-time midfield partner <strong>Youri Tielemans</strong> headed the ball into the back of the net to level the score at 2-2. The stadium erupted. We had forced extra time in a <strong>Senegal vs Belgium</strong> match that looked completely lost just moments prior.</p>
+
+            <h3>Extra Time Drama and the Winning Penalty</h3>
+
+            <p>The extra 30 minutes of this <strong>Belgium Senegal</strong> clash were purely nerve-wracking. <strong>Senegal FC</strong> (their national squad) brought on players like <strong>Bara Sapoko Ndiaye</strong> and Nicolas Jackson to try and find a winner and exploit our tired legs.</p>
+
+            <p>Then, in the 120th minute, the ultimate climax: Lamine Camara brought down Tielemans in the box. After a VAR review, we were awarded a penalty. Youri stepped up with absolute ice in his veins. In the 125th minute, he converted the spot-kick to secure a historic 3-2 victory for the <strong>Belgium national football team</strong>.</p>
+
+            <h2>Match Facts & Stats</h2>
+
+            <p>To sum it up for the analysts looking for the official <strong>Belgium national football team vs Senegal national football team stats</strong>, here is how the numbers fell:</p>
+
+            <ul>
+                <li><strong>Final Score:</strong> Belgium 3 - 2 Senegal (AET)</li>
+                <li><strong>Belgium Goalscorers:</strong> Romelu Lukaku (86'), Youri Tielemans (89', 120+5' PEN)</li>
+                <li><strong>Senegal Goalscorers:</strong> Habib Diarra (24'), Ismaïla Sarr (51')</li>
+            </ul>
+
+            <p>Here is a quick look at the <strong>Belgium national football team vs Senegal national football team lineups</strong> from the start of the match:</p>
+
+            <ul>
+                <li><strong>Belgium (4-2-3-1):</strong> Thibaut Courtois, Timothy Castagne, Brandon Mechele, Arthur Theate, Maxim De Cuyper, Hans Vanaken, Youri Tielemans, Jérémy Doku, Kevin De Bruyne, Leandro Trossard, Charles De Ketelaere.</li>
+                <li><strong>Senegal (4-3-3):</strong> Mory Diaw, Krépin Diatta, Pathé Ciss, Moussa Niakhaté, Ismail Jakobs, Habib Diarra, Idrissa Gueye, Pape Gueye, Iliman Ndiaye, Ismaïla Sarr, Sadio Mané.</li>
+            </ul>
+
+            <p>What a game. This <strong>Senegal vs Belgium</strong> match will undoubtedly go down in our national history. Thank you to all the fans who believed in us. We march on to the Round of 16!</p>
+        `
+    },
+    {
         id: "18",
         slug: "sbi-po-apply-online-2026",
         title: "SBI PO Apply Online 2026 Begins for 1,500 Vacancies: Direct Application Link, Important Dates, Fees & Step-by-Step Process",
