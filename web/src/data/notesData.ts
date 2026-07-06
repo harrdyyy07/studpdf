@@ -1843,6 +1843,13 @@ export const siteData: SiteData = {
                     { name: "IoT Laboratory", code: "BECL657C", credits: "1 CR", slug: "iot-laboratory-il-becl657c-vtu-notes", modules: [] },
                     { name: "Python Programming for Machine Learning Applications", code: "BECL657D", credits: "1 CR", slug: "python-programming-for-machine-learning-applications-ppmla-becl657d-vtu-notes", modules: [] }
                 ]
+            },
+            {
+                sem: 7,
+                subjects: [
+                    {name:"Microwave Engineering and Antenna Theory", code: "BEC701", credits: "3 CR", slug: "microwave-engineering-and-antenna-theory-meat-bec701-vtu-notes", modules: []},
+                    {name:"Computer Networks and Protocols", code: "BEC702", credits: "3 CR", slug: "renewable-energy-sources-res-bee702-vtu-notes", modules: []}
+                ]
             }
         ]
     },

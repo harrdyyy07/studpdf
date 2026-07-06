@@ -38,6 +38,14 @@ const ToolCard = ({ title, description, icon, path, badge, gradient }: ToolCardP
 export default function StudentToolsDashboard() {
     const tools = [
         {
+            title: 'VTU Results Portal',
+            description: 'Check your semester results instantly, view color-coded marksheets, solve captcha authentications for live scraping, and analyze your CGPA trend.',
+            icon: '🎓',
+            path: '/student-tools/vtu-results',
+            badge: 'Live',
+            gradient: 'linear-gradient(135deg, #a855f7 0%, #6366f1 100%)'
+        },
+        {
             title: 'Resume Builder',
             description: 'Create a clean, single-page, ATS-friendly engineering resume. Fill out standard templates, preview instantly, and print/export to PDF.',
             icon: '📄',
