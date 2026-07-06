@@ -1847,8 +1847,14 @@ export const siteData: SiteData = {
             {
                 sem: 7,
                 subjects: [
-                    {name:"Microwave Engineering and Antenna Theory", code: "BEC701", credits: "3 CR", slug: "microwave-engineering-and-antenna-theory-meat-bec701-vtu-notes", modules: []},
-                    {name:"Computer Networks and Protocols", code: "BEC702", credits: "3 CR", slug: "renewable-energy-sources-res-bee702-vtu-notes", modules: []}
+                    {name:"Microwave Engineering and Antenna Theory", code: "BEC701", credits: "3 CR", slug: "microwave-engineering-and-antenna-theory-meat-bec701-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-1 Notes", link: "https://drive.google.com/file/d/1sE7ltjc0xaTt_3K6CNDn8aJ-Zo8KgHQV/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-2 Notes", link: "https://drive.google.com/file/d/1CEVCxlMWANLA8IAB91BtxrzFkc8WZp8X/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-3 Notes", link: "https://drive.google.com/file/d/1blVkSm-whvLfrqdKjBCrMRrdTtpMM9Wr/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-4 Notes", link: "https://drive.google.com/file/d/1esaatSJPLO48Xpg6mVID_4duyPU4J5Ix/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-5 Notes", link: "https://drive.google.com/file/d/12xHQo4KDL0jR3ULWgaO5beHjOZVnS0xU/view?usp=drive_link", type: "notes" }
+                    ]},
+                    {name:"Computer Networks and Protocols", code: "BEC702", credits: "3 CR", slug: "computer-networks-and-protocols-cnp-bec702-vtu-notes", modules: []}
                 ]
             }
         ]

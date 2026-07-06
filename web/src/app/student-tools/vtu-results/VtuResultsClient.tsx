@@ -78,34 +78,127 @@ function guessSubjectCredits(code: string): number {
   return 3;
 }
 
-// Convert VTU grades to grade points
-function getGradePoints(grade: string): number {
-  const g = grade.toUpperCase().trim();
-  switch (g) {
-    case 'O':
-    case 'S':
-    case 'S+':
-      return 10;
-    case 'A+':
-    case 'A':
-      return 9;
-    case 'B+':
-    case 'B':
-      return 8;
-    case 'C+':
-    case 'C':
-      return 7;
-    case 'D+':
-    case 'D':
-      return 6;
-    case 'E':
-      return 4;
-    case 'F':
-    case 'AB':
-    case 'W':
-    default:
-      return 0;
+// Helper to derive grades from total marks for CBCS schemes
+function deriveGradeFromTotal(total: number, year: number): { grade: string; points: number } {
+  if (total < 40) {
+    return { grade: 'F', points: 0 };
   }
+
+  if (year >= 18) {
+    // 2018, 2021, and 2022 schemes
+    if (total >= 90) return { grade: 'O', points: 10 };
+    if (total >= 80) return { grade: 'A+', points: 9 };
+    if (total >= 70) return { grade: 'A', points: 8 };
+    if (total >= 60) return { grade: 'B+', points: 7 };
+    if (total >= 55) return { grade: 'B', points: 6 };
+    if (total >= 50) return { grade: 'C', points: 5 };
+    return { grade: 'P', points: 4 };
+  } else {
+    // 2015 and 2017 schemes
+    if (total >= 90) return { grade: 'S+', points: 10 };
+    if (total >= 80) return { grade: 'S', points: 9 };
+    if (total >= 70) return { grade: 'A', points: 8 };
+    if (total >= 60) return { grade: 'B', points: 7 };
+    if (total >= 50) return { grade: 'C', points: 6 };
+    if (total >= 45) return { grade: 'D', points: 5 };
+    return { grade: 'E', points: 4 };
+  }
+}
+
+// Convert VTU grades to grade points or derive them if the grade field is invalid/broken
+function getGradeAndPointsForSubject(sub: SubjectResult, usn: string): { grade: string; points: number } {
+  // If result indicates failure, it's always F and 0 points
+  if (sub.result && sub.result.toUpperCase() === 'F') {
+    return { grade: 'F', points: 0 };
+  }
+  
+  // If result indicates absent
+  if (sub.result && (sub.result.toUpperCase() === 'A' || sub.result.toUpperCase() === 'AB')) {
+    return { grade: 'AB', points: 0 };
+  }
+
+  // Extract admission year from USN (characters 3 and 4)
+  let year = 22; // default fallback to 2022 scheme
+  if (usn && usn.length >= 5) {
+    const yearStr = usn.substring(3, 5);
+    const parsedYear = parseInt(yearStr);
+    if (!isNaN(parsedYear)) {
+      year = parsedYear;
+    }
+  }
+
+  const rawGrade = sub.grade ? sub.grade.toUpperCase().trim() : '';
+  const validGrades = ['O', 'S+', 'S', 'A+', 'A', 'B+', 'B', 'C+', 'C', 'D+', 'D', 'E', 'P', 'F', 'AB', 'W'];
+  
+  const totalMarks = parseInt(sub.total);
+  const parsedTotal = isNaN(totalMarks) ? 0 : totalMarks;
+
+  // If grade is absent, invalid, or is a date-prefix (like "2026-"), compute from total marks
+  if (!rawGrade || !validGrades.includes(rawGrade) || rawGrade.includes('-') || /^\d/.test(rawGrade)) {
+    return deriveGradeFromTotal(parsedTotal, year);
+  }
+
+  // If the grade is valid, map it to points using scheme-aware logic
+  let points = 0;
+  if (rawGrade === 'F' || rawGrade === 'AB' || rawGrade === 'W') {
+    points = 0;
+  } else if (year >= 18) {
+    // 2018, 2021, 2022 schemes
+    switch (rawGrade) {
+      case 'O':
+        points = 10;
+        break;
+      case 'A+':
+        points = 9;
+        break;
+      case 'A':
+        points = 8;
+        break;
+      case 'B+':
+        points = 7;
+        break;
+      case 'B':
+        points = 6;
+        break;
+      case 'C':
+        points = 5;
+        break;
+      case 'P':
+        points = 4;
+        break;
+      default:
+        return deriveGradeFromTotal(parsedTotal, year);
+    }
+  } else {
+    // 2015, 2017 schemes
+    switch (rawGrade) {
+      case 'S+':
+        points = 10;
+        break;
+      case 'S':
+        points = 9;
+        break;
+      case 'A':
+        points = 8;
+        break;
+      case 'B':
+        points = 7;
+        break;
+      case 'C':
+        points = 6;
+        break;
+      case 'D':
+        points = 5;
+        break;
+      case 'E':
+        points = 4;
+        break;
+      default:
+        return deriveGradeFromTotal(parsedTotal, year);
+    }
+  }
+
+  return { grade: rawGrade, points };
 }
 
 export default function VtuResultsClient() {
@@ -120,6 +213,12 @@ export default function VtuResultsClient() {
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [expandedSems, setExpandedSems] = useState<string[]>([]);
   const [subjectSearch, setSubjectSearch] = useState('');
+  
+  const [scrapeToken, setScrapeToken] = useState('');
+  const [sessionId, setSessionId] = useState('');
+  const [indexPage, setIndexPage] = useState('');
+  const [importModalOpen, setImportModalOpen] = useState(false);
+  const [selectedCycle, setSelectedCycle] = useState('D5J6');
 
   // Load history from localStorage
   useEffect(() => {
@@ -207,14 +306,22 @@ export default function VtuResultsClient() {
   };
 
   // Step 2: Fetch Captcha from API
-  const fetchCaptcha = async () => {
-    setError(null);
+  const fetchCaptcha = async (cycle?: string, keepError = false) => {
+    if (!keepError) {
+      setError(null);
+    }
+    setCaptchaImg('');
+    setCaptchaVal('');
     setIsFetching(true);
     try {
-      const res = await fetch('/api/student-tools/vtu-results/captcha');
+      const url = cycle ? `/api/student-tools/vtu-results/captcha?cycle=${cycle}` : '/api/student-tools/vtu-results/captcha';
+      const res = await fetch(url);
       const data = await res.json();
-      if (data.success && data.captcha) {
-        setCaptchaImg(data.captcha);
+      if (data.success && data.captcha_image) {
+        setCaptchaImg(data.captcha_image);
+        setScrapeToken(data.token || '');
+        setSessionId(data.sessionId || '');
+        setIndexPage(data.indexPage || '');
         setRequireCaptcha(true);
         setCaptchaVal('');
       } else {
@@ -242,27 +349,45 @@ export default function VtuResultsClient() {
       const res = await fetch('/api/student-tools/vtu-results/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ usn, captcha: captchaVal })
+        body: JSON.stringify({ usn, captcha: captchaVal, token: scrapeToken, sessionId, indexPage })
       });
       const data = await res.json();
 
       if (data.success && data.data) {
-        setResultData({
-          success: true,
-          source: 'scrape',
-          data: data.data
+        // Merge Semesters if same USN, else overwrite
+        setResultData(prev => {
+          if (prev && prev.data.student.usn.toUpperCase() === data.data.student.usn.toUpperCase()) {
+            const mergedSemesters = { ...prev.data.semesters, ...data.data.semesters };
+            return {
+              ...prev,
+              source: 'scrape',
+              data: {
+                ...prev.data,
+                semesters: mergedSemesters
+              }
+            };
+          }
+          return {
+            success: true,
+            source: 'scrape',
+            data: data.data
+          };
         });
+
         addToHistory(data.data.student);
         setRequireCaptcha(false);
-        // Expand the latest semester by default
-        const sems = Object.keys(data.data.semesters).sort((a, b) => Number(b) - Number(a));
-        if (sems.length > 0) {
-          setExpandedSems([sems[0]]);
+        setImportModalOpen(false);
+
+        // Expand the newly imported semester
+        const newSems = Object.keys(data.data.semesters);
+        if (newSems.length > 0) {
+          setExpandedSems(prev => Array.from(new Set([...prev, ...newSems])));
         }
       } else {
-        // If fail, reload captcha
-        setError(data.message || data.error || 'Verification failed. Please enter the captcha code again.');
-        await fetchCaptcha();
+        // If fail, reload captcha but preserve error message
+        const errMsg = data.message || data.error || 'Verification failed. Please enter the captcha code again.';
+        setError(errMsg);
+        await fetchCaptcha(importModalOpen ? selectedCycle : undefined, true);
       }
     } catch (err: any) {
       console.error(err);
@@ -288,9 +413,9 @@ export default function VtuResultsClient() {
 
     subjects.forEach(sub => {
       const credits = guessSubjectCredits(sub.subject_code);
-      const points = getGradePoints(sub.grade);
+      const { grade, points } = getGradeAndPointsForSubject(sub, resultData?.data?.student?.usn || usn);
       
-      if (sub.result.toUpperCase() === 'F') {
+      if (sub.result.toUpperCase() === 'F' || grade === 'F') {
         hasBacklog = true;
       }
 
@@ -323,9 +448,9 @@ export default function VtuResultsClient() {
 
       subjects.forEach(sub => {
         const credits = guessSubjectCredits(sub.subject_code);
-        const points = getGradePoints(sub.grade);
+        const { grade, points } = getGradeAndPointsForSubject(sub, resultData.data.student.usn);
         
-        if (sub.result.toUpperCase() === 'F' || sub.grade.toUpperCase() === 'F') {
+        if (sub.result.toUpperCase() === 'F' || grade === 'F') {
           backlogs++;
         }
         
@@ -477,9 +602,42 @@ export default function VtuResultsClient() {
             </div>
 
             {error && (
-              <div className="error-banner animate-slide-up">
-                <span className="error-icon">⚠️</span>
-                <p className="error-msg">{error}</p>
+              <div className="error-banner animate-slide-up" style={{ flexDirection: 'column', alignItems: 'flex-start' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <span className="error-icon">⚠️</span>
+                  <p className="error-msg">{error}</p>
+                </div>
+                {(error.includes('captcha') || error.includes('portal') || error.includes('initiating') || error.includes('fetch')) && (
+                  <div className="error-action-hint" style={{ marginTop: '0.75rem', borderTop: '1px solid rgba(244, 63, 94, 0.15)', paddingTop: '0.75rem', fontSize: '0.85rem', color: '#fca5a5' }}>
+                    <p style={{ margin: '0 0 0.5rem 0' }}>
+                      The upstream live-scraping service is currently offline or down.
+                    </p>
+                    <p style={{ margin: '0 0 0.75rem 0' }}>
+                      You can still check results for already cached USNs (e.g. <code>2RV21CS054</code>). For new results, please query the official VTU portal directly:
+                    </p>
+                    <a
+                      href="https://results.vtu.ac.in"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-error-link"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.25rem',
+                        background: '#e11d48',
+                        color: '#fff',
+                        padding: '0.4rem 0.8rem',
+                        borderRadius: '0.375rem',
+                        textDecoration: 'none',
+                        fontWeight: '700',
+                        fontSize: '0.8rem',
+                        transition: 'background 0.2s'
+                      }}
+                    >
+                      Go to results.vtu.ac.in &rarr;
+                    </a>
+                  </div>
+                )}
               </div>
             )}
 
@@ -552,7 +710,7 @@ export default function VtuResultsClient() {
                     ) : (
                       <div className="captcha-placeholder">Loading image...</div>
                     )}
-                    <button type="button" onClick={fetchCaptcha} className="btn-refresh" title="Reload Captcha" disabled={isFetching}>
+                    <button type="button" onClick={() => fetchCaptcha()} className="btn-refresh" title="Reload Captcha" disabled={isFetching}>
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                         <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67" />
                       </svg>
@@ -594,9 +752,42 @@ export default function VtuResultsClient() {
             </div>
 
             {error && (
-              <div className="error-banner animate-slide-up">
-                <span className="error-icon">⚠️</span>
-                <p className="error-msg">{error}</p>
+              <div className="error-banner animate-slide-up" style={{ flexDirection: 'column', alignItems: 'flex-start' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                  <span className="error-icon">⚠️</span>
+                  <p className="error-msg">{error}</p>
+                </div>
+                {(error.includes('captcha') || error.includes('portal') || error.includes('initiating') || error.includes('fetch')) && (
+                  <div className="error-action-hint" style={{ marginTop: '0.75rem', borderTop: '1px solid rgba(244, 63, 94, 0.15)', paddingTop: '0.75rem', fontSize: '0.85rem', color: '#fca5a5' }}>
+                    <p style={{ margin: '0 0 0.5rem 0' }}>
+                      The upstream live-scraping service is currently offline or down.
+                    </p>
+                    <p style={{ margin: '0 0 0.75rem 0' }}>
+                      You can still check results for already cached USNs (e.g. <code>2RV21CS054</code>). For new results, please query the official VTU portal directly:
+                    </p>
+                    <a
+                      href="https://results.vtu.ac.in"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-error-link"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.25rem',
+                        background: '#e11d48',
+                        color: '#fff',
+                        padding: '0.4rem 0.8rem',
+                        borderRadius: '0.375rem',
+                        textDecoration: 'none',
+                        fontWeight: '700',
+                        fontSize: '0.8rem',
+                        transition: 'background 0.2s'
+                      }}
+                    >
+                      Go to results.vtu.ac.in &rarr;
+                    </a>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -617,10 +808,25 @@ export default function VtuResultsClient() {
               >
                 &larr; Back to Search
               </button>
-              <div className="toolbar-right">
+              <div className="toolbar-right" style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <span className={`source-tag tag-${resultData.source}`}>
                   {resultData.source === 'cache' ? '⚡ Database Cache' : '🌐 Live Scraped'}
                 </span>
+                <button
+                  className="btn-print"
+                  onClick={() => {
+                    setSelectedCycle('D5J6');
+                    setImportModalOpen(true);
+                    fetchCaptcha('D5J6');
+                  }}
+                  style={{
+                    background: 'var(--accent-primary)',
+                    borderColor: 'var(--accent-primary)',
+                    boxShadow: '0 4px 6px -1px rgba(99, 102, 241, 0.2)'
+                  }}
+                >
+                  <span>📥 Import Semester</span>
+                </button>
                 <button className="btn-print" onClick={() => window.print()}>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <polyline points="6 9 6 2 18 2 18 9" />
@@ -849,8 +1055,9 @@ export default function VtuResultsClient() {
                                 </thead>
                                 <tbody>
                                   {filteredSubjects.map((sub, idx) => {
-                                    const isFail = sub.result.toUpperCase() === 'F';
-                                    const isAbsent = sub.result.toUpperCase() === 'A' || sub.grade.toUpperCase() === 'AB';
+                                    const { grade } = getGradeAndPointsForSubject(sub, resultData?.data?.student?.usn || usn);
+                                    const isFail = sub.result.toUpperCase() === 'F' || grade === 'F';
+                                    const isAbsent = sub.result.toUpperCase() === 'A' || grade === 'AB';
                                     const credits = guessSubjectCredits(sub.subject_code);
                                     
                                     return (
@@ -862,8 +1069,8 @@ export default function VtuResultsClient() {
                                         <td className="text-center">{sub.external || '0'}</td>
                                         <td className="text-center font-bold">{sub.total || '0'}</td>
                                         <td className="text-center">
-                                          <span className={`grade-badge grade-${sub.grade.toUpperCase()}`}>
-                                            {sub.grade}
+                                          <span className={`grade-badge grade-${grade.toUpperCase()}`}>
+                                            {grade}
                                           </span>
                                         </td>
                                         <td className="text-center">
@@ -883,6 +1090,162 @@ export default function VtuResultsClient() {
                     );
                   })}
               </div>
+            </div>
+          </div>
+        )}
+
+        {/* Import Modal */}
+        {importModalOpen && (
+          <div className="modal-overlay" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0,0,0,0.6)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+            backdropFilter: 'blur(4px)'
+          }}>
+            <div className="modal-content glass-card animate-scale-in" style={{
+              width: '90%',
+              maxWidth: '450px',
+              padding: '2rem',
+              borderRadius: '1.25rem',
+              boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)',
+              position: 'relative'
+            }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#fff' }}>
+                Import Previous Semesters
+              </h3>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.4' }}>
+                Select an exam cycle to scrape results for your other semesters. The parsed marks will be added to your current dashboard.
+              </p>
+              
+              <form onSubmit={handleCaptchaSubmit}>
+                <div className="form-group" style={{ marginBottom: '1.25rem' }}>
+                  <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>
+                    Exam Cycle
+                  </label>
+                  <select
+                    value={selectedCycle}
+                    onChange={(e) => {
+                      setSelectedCycle(e.target.value);
+                      fetchCaptcha(e.target.value);
+                    }}
+                    style={{
+                      width: '100%',
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      borderRadius: '0.5rem',
+                      padding: '0.75rem',
+                      color: '#fff',
+                      fontSize: '0.9rem',
+                      outline: 'none'
+                    }}
+                  >
+                    <option value="MJ26" style={{ background: '#1e293b' }}>May/June 2026 (Sem 6/etc)</option>
+                    <option value="D5J6" style={{ background: '#1e293b' }}>Dec 2025 / Jan 2026 (Sem 5/etc)</option>
+                    <option value="JJ25" style={{ background: '#1e293b' }}>June / July 2025 (Sem 4/etc)</option>
+                    <option value="D4J5" style={{ background: '#1e293b' }}>Dec 2024 / Jan 2025 (Sem 3/etc)</option>
+                    <option value="JJ24" style={{ background: '#1e293b' }}>June / July 2024 (Sem 2/etc)</option>
+                  </select>
+                </div>
+
+                <div className="form-group" style={{ marginBottom: '1.5rem' }}>
+                  <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>
+                    Security CAPTCHA
+                  </label>
+                  <div className="captcha-container" style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(255,255,255,0.02)', padding: '0.75rem', borderRadius: '0.75rem', border: '1px solid rgba(255,255,255,0.05)', marginBottom: '0.75rem' }}>
+                    {captchaImg ? (
+                      <img src={captchaImg} alt="CAPTCHA" style={{ height: '40px', borderRadius: '0.375rem' }} />
+                    ) : (
+                      <div className="captcha-loader" style={{ height: '40px', width: '120px', background: 'rgba(255,255,255,0.05)', borderRadius: '0.375rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <span className="spinner-inline" />
+                      </div>
+                    )}
+                    <button
+                      type="button"
+                      className="btn-refresh"
+                      onClick={() => fetchCaptcha(selectedCycle)}
+                      disabled={isFetching}
+                      style={{
+                        background: 'none',
+                        border: 'none',
+                        color: 'var(--accent-primary)',
+                        cursor: 'pointer',
+                        fontSize: '1.25rem'
+                      }}
+                    >
+                      🔄
+                    </button>
+                  </div>
+                  <input
+                    type="text"
+                    value={captchaVal}
+                    onChange={(e) => setCaptchaVal(e.target.value)}
+                    placeholder="Enter CAPTCHA Code"
+                    className="input-field"
+                    style={{
+                      width: '100%',
+                      background: 'rgba(255,255,255,0.05)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      borderRadius: '0.5rem',
+                      padding: '0.75rem',
+                      color: '#fff',
+                      fontSize: '0.9rem',
+                      textAlign: 'center',
+                      fontWeight: 'bold',
+                      letterSpacing: '0.1em'
+                    }}
+                    required
+                  />
+                </div>
+
+                {error && (
+                  <div className="error-banner" style={{ padding: '0.75rem', borderRadius: '0.5rem', background: 'rgba(244,63,94,0.1)', border: '1px solid rgba(244,63,94,0.2)', marginBottom: '1.25rem' }}>
+                    <p style={{ color: '#fca5a5', fontSize: '0.8rem', margin: 0 }}>{error}</p>
+                  </div>
+                )}
+
+                <div className="modal-actions" style={{ display: 'flex', justifyContent: 'flex-end', gap: '0.75rem' }}>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setImportModalOpen(false);
+                      setError(null);
+                    }}
+                    style={{
+                      background: 'rgba(255,255,255,0.05)',
+                      color: '#fff',
+                      padding: '0.5rem 1rem',
+                      borderRadius: '0.5rem',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="btn-primary"
+                    disabled={isFetching}
+                    style={{
+                      background: 'var(--accent-primary)',
+                      color: '#fff',
+                      padding: '0.5rem 1.25rem',
+                      borderRadius: '0.5rem',
+                      border: 'none',
+                      cursor: 'pointer',
+                      fontWeight: 700
+                    }}
+                  >
+                    {isFetching ? <span className="spinner-inline" /> : 'Import'}
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         )}
