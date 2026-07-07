@@ -13,6 +13,415 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "20",
+        slug: "weather-forecast-july-8-2026-imd-heavy-rain-alert",
+        title: "Weather Forecast for July 8, 2026: IMD Issues Heavy Rain Alert for 13 States, Thunderstorms with Winds up to 85 km/h",
+        description: "India Meteorological Department (IMD) has issued a weather alert for July 8, 2026, warning of heavy rain, thunderstorms, lightning, and strong winds up to 85 km/h in 13 states.",
+        date: "July 7, 2026",
+        readTime: "5 min read",
+        author: "vtuwise Team",
+        tag: "VTU Updates",
+        imageBg: "linear-gradient(135deg, #0f172a, #1e293b, #334155)",
+        content: `
+            <img src="/images/weather_alert_banner.png" alt="IMD Heavy Rain Alert July 8 2026" />
+            <p>India is witnessing an intense phase of the southwest monsoon, with heavy rainfall affecting several regions across the country. The <strong>India Meteorological Department (IMD)</strong> has issued a weather alert for <strong>July 8, 2026</strong>, warning of heavy rain, thunderstorms, lightning, and strong winds reaching speeds of <strong>up to 85 km/h</strong> in multiple states.</p>
+
+            <p>According to the IMD, the next 12 hours are expected to be particularly challenging for parts of North and East India, where severe weather conditions could disrupt normal life. Residents are advised to remain cautious, while farmers and fishermen have been urged to take necessary safety precautions.</p>
+
+            <h2>Southwest Monsoon Advances Further</h2>
+
+            <p>The southwest monsoon has progressed into additional parts of the northern Arabian Sea, the remaining areas of Gujarat, and parts of Rajasthan and Haryana. A cyclonic circulation persists over southwest Rajasthan and adjoining regions in the lower tropospheric levels, contributing to widespread rainfall activity across the country.</p>
+
+            <h2>Heavy Rain Alert Issued for 13 States</h2>
+
+            <p>The IMD has issued heavy rain and thunderstorm warnings for the following states:</p>
+
+            <ul>
+                <li>Uttar Pradesh</li>
+                <li>Delhi</li>
+                <li>Bihar</li>
+                <li>Haryana</li>
+                <li>Uttarakhand</li>
+                <li>Himachal Pradesh</li>
+                <li>Jammu & Kashmir</li>
+                <li>Jharkhand</li>
+                <li>West Bengal</li>
+                <li>Odisha</li>
+                <li>Madhya Pradesh</li>
+                <li>Chhattisgarh</li>
+                <li>Kerala</li>
+            </ul>
+
+            <p>Strong wind gusts, lightning, and localized flooding are expected in several districts.</p>
+
+            <h2>Delhi Weather Forecast – July 8</h2>
+
+            <p>Delhi is likely to experience heavy rainfall accompanied by thunderstorms and strong winds ranging between <strong>70 and 80 km/h</strong>.</p>
+
+            <p><strong>Temperature Forecast:</strong></p>
+            <ul>
+                <li>Maximum: <strong>29°C</strong></li>
+                <li>Minimum: <strong>27°C</strong></li>
+            </ul>
+
+            <p>Residents should prepare for waterlogging, traffic disruptions, and reduced visibility during heavy showers.</p>
+
+            <h2>Uttar Pradesh Weather Forecast</h2>
+
+            <p>Heavy rain and thunderstorms are expected in the following districts:</p>
+
+            <ul>
+                <li>Mathura</li>
+                <li>Bulandshahr</li>
+                <li>Firozabad</li>
+                <li>Jhansi</li>
+                <li>Mahoba</li>
+                <li>Hamirpur</li>
+                <li>Lalitpur</li>
+                <li>Jalaun</li>
+                <li>Aligarh</li>
+                <li>Kanpur</li>
+                <li>Amroha (Jyotiba Phule Nagar)</li>
+                <li>Varanasi</li>
+                <li>Prayagraj</li>
+                <li>Ayodhya</li>
+                <li>Deoria</li>
+            </ul>
+
+            <p>Wind speeds may reach <strong>80 km/h</strong>.</p>
+
+            <p><strong>Lucknow Temperature:</strong></p>
+            <ul>
+                <li>Maximum: <strong>31°C</strong></li>
+                <li>Minimum: <strong>28°C</strong></li>
+            </ul>
+
+            <h2>Bihar Weather Forecast</h2>
+
+            <p>Heavy rain and thunderstorms are likely in:</p>
+
+            <ul>
+                <li>Patna</li>
+                <li>Gaya</li>
+                <li>Saran</li>
+                <li>Siwan</li>
+                <li>Buxar</li>
+                <li>Vaishali</li>
+                <li>Muzaffarpur</li>
+                <li>Samastipur</li>
+                <li>Darbhanga</li>
+                <li>Madhubani</li>
+                <li>Purnia</li>
+                <li>Katihar</li>
+                <li>Bhagalpur</li>
+                <li>Munger</li>
+                <li>Khagaria</li>
+                <li>Araria</li>
+                <li>Kishanganj</li>
+                <li>Begusarai</li>
+            </ul>
+
+            <p>Strong winds of up to <strong>70 km/h</strong> are expected.</p>
+
+            <p><strong>Patna Temperature:</strong></p>
+            <ul>
+                <li>Maximum: <strong>33°C</strong></li>
+                <li>Minimum: <strong>28°C</strong></li>
+            </ul>
+
+            <h2>Jharkhand Weather Forecast</h2>
+
+            <p>Districts expected to receive heavy rain include:</p>
+
+            <ul>
+                <li>Palamu</li>
+                <li>Garhwa</li>
+                <li>Ranchi</li>
+                <li>Dumka</li>
+                <li>Jamshedpur</li>
+                <li>Hazaribagh</li>
+                <li>Deoghar</li>
+                <li>Latehar</li>
+                <li>Khunti</li>
+                <li>Seraikela</li>
+                <li>Ramgarh</li>
+                <li>Simdega</li>
+                <li>Godda</li>
+                <li>Jamtara</li>
+                <li>Pakur</li>
+            </ul>
+
+            <p>Wind speeds may range between <strong>60 and 65 km/h</strong>.</p>
+
+            <p><strong>Ranchi Temperature:</strong></p>
+            <ul>
+                <li>Maximum: <strong>29°C</strong></li>
+                <li>Minimum: <strong>25°C</strong></li>
+            </ul>
+
+            <h2>Uttarakhand Weather Forecast</h2>
+
+            <p>Heavy rainfall is expected in:</p>
+
+            <ul>
+                <li>Pithoragarh</li>
+                <li>Nainital</li>
+                <li>Almora</li>
+                <li>Pauri Garhwal</li>
+                <li>Haridwar</li>
+                <li>Chamoli</li>
+                <li>Rishikesh</li>
+            </ul>
+
+            <p>Wind speeds may reach <strong>65–70 km/h</strong>.</p>
+
+            <p><strong>Dehradun Temperature:</strong></p>
+            <ul>
+                <li>Maximum: <strong>25°C</strong></li>
+                <li>Minimum: <strong>24°C</strong></li>
+            </ul>
+
+            <h2>Himachal Pradesh Weather Forecast</h2>
+
+            <p>Light to moderate rainfall with thunderstorms is expected in:</p>
+
+            <ul>
+                <li>Shimla</li>
+                <li>Solan</li>
+                <li>Sirmaur</li>
+                <li>Kullu</li>
+                <li>Una</li>
+                <li>Bilaspur</li>
+                <li>Kangra</li>
+                <li>Kinnaur</li>
+                <li>Chamba</li>
+            </ul>
+
+            <p>Wind speeds could range between <strong>60 and 70 km/h</strong>.</p>
+
+            <p><strong>Manali Temperature:</strong></p>
+            <ul>
+                <li>Maximum: <strong>14°C</strong></li>
+                <li>Minimum: <strong>11°C</strong></li>
+            </ul>
+
+            <h2>Jammu & Kashmir Weather Forecast</h2>
+
+            <p>Heavy rain is expected in:</p>
+
+            <ul>
+                <li>Kishtwar</li>
+                <li>Kathua</li>
+                <li>Udhampur</li>
+                <li>Jammu</li>
+                <li>Rajouri</li>
+                <li>Anantnag</li>
+                <li>Samba</li>
+                <li>Poonch</li>
+                <li>Ramban</li>
+                <li>Budgam</li>
+                <li>Ganderbal</li>
+                <li>Kulgam</li>
+            </ul>
+
+            <p>Wind speeds may reach <strong>60–65 km/h</strong>.</p>
+
+            <p><strong>Srinagar Temperature:</strong></p>
+            <ul>
+                <li>Around <strong>29–31°C</strong></li>
+            </ul>
+
+            <h2>West Bengal Weather Forecast</h2>
+
+            <p>Rain and thunderstorms are likely in:</p>
+
+            <ul>
+                <li>Kolkata</li>
+                <li>Howrah</li>
+                <li>Hooghly</li>
+                <li>Malda</li>
+                <li>Durgapur</li>
+                <li>Nadia</li>
+                <li>Darjeeling</li>
+                <li>North 24 Parganas</li>
+                <li>South 24 Parganas</li>
+                <li>Alipurduar</li>
+                <li>Cooch Behar</li>
+                <li>Purba Medinipur</li>
+            </ul>
+
+            <p><strong>Kolkata Temperature:</strong></p>
+            <ul>
+                <li>Maximum: <strong>32°C</strong></li>
+                <li>Minimum: <strong>28°C</strong></li>
+            </ul>
+
+            <h2>Punjab Weather Forecast</h2>
+
+            <p>Heavy rainfall is expected in:</p>
+
+            <ul>
+                <li>Faridkot</li>
+                <li>Jalandhar</li>
+                <li>Rupnagar</li>
+                <li>Gurdaspur</li>
+                <li>Patiala</li>
+                <li>Amritsar</li>
+                <li>Kapurthala</li>
+                <li>Sangrur</li>
+                <li>Bathinda</li>
+                <li>Ludhiana</li>
+            </ul>
+
+            <p>Light rain may also provide relief from the prevailing heat.</p>
+
+            <h2>Rajasthan Weather Forecast</h2>
+
+            <p>Heavy rainfall is likely in:</p>
+
+            <ul>
+                <li>Jaipur</li>
+                <li>Ajmer</li>
+                <li>Kota</li>
+                <li>Bikaner</li>
+                <li>Bundi</li>
+                <li>Jhalawar</li>
+                <li>Banswara</li>
+                <li>Udaipur</li>
+                <li>Jaisalmer</li>
+                <li>Anupgarh</li>
+                <li>Alwar</li>
+                <li>Karauli</li>
+                <li>Jodhpur</li>
+                <li>Dungarpur</li>
+            </ul>
+
+            <p>Wind speeds of <strong>50–60 km/h</strong> are expected.</p>
+
+            <p><strong>Jaipur Temperature:</strong></p>
+            <ul>
+                <li>Maximum: <strong>31°C</strong></li>
+                <li>Minimum: <strong>27°C</strong></li>
+            </ul>
+
+            <h2>Madhya Pradesh Weather Forecast</h2>
+
+            <p>Heavy rainfall is expected in:</p>
+
+            <ul>
+                <li>Satna</li>
+                <li>Guna</li>
+                <li>Gwalior</li>
+                <li>Ujjain</li>
+                <li>Khargone</li>
+                <li>Morena</li>
+                <li>Indore</li>
+                <li>Chhatarpur</li>
+                <li>Balaghat</li>
+                <li>Vidisha</li>
+                <li>Seoni</li>
+                <li>Rewa</li>
+                <li>Dewas</li>
+                <li>Mandla</li>
+                <li>Khandwa</li>
+                <li>Chhindwara</li>
+            </ul>
+
+            <p><strong>Bhopal Temperature:</strong></p>
+            <ul>
+                <li>Maximum: <strong>27°C</strong></li>
+                <li>Minimum: <strong>24°C</strong></li>
+            </ul>
+
+            <h2>Major Cities Temperature Forecast for July 8</h2>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Maximum</th>
+                            <th>Minimum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Delhi</strong></td>
+                            <td>29°C</td>
+                            <td>27°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mumbai</strong></td>
+                            <td>29°C</td>
+                            <td>28°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chennai</strong></td>
+                            <td>37°C</td>
+                            <td>29°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kolkata</strong></td>
+                            <td>32°C</td>
+                            <td>28°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lucknow</strong></td>
+                            <td>32°C</td>
+                            <td>28°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Patna</strong></td>
+                            <td>33°C</td>
+                            <td>28°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ranchi</strong></td>
+                            <td>29°C</td>
+                            <td>25°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bhopal</strong></td>
+                            <td>27°C</td>
+                            <td>24°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Jaipur</strong></td>
+                            <td>31°C</td>
+                            <td>27°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shimla</strong></td>
+                            <td>23°C</td>
+                            <td>19°C</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nainital</strong></td>
+                            <td>24°C</td>
+                            <td>21°C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Safety Advisory</h2>
+
+            <p>The IMD advises residents in affected regions to:</p>
+
+            <ul>
+                <li>Stay indoors during thunderstorms and strong winds.</li>
+                <li>Avoid standing under trees or near electric poles during lightning.</li>
+                <li>Farmers should protect crops and livestock.</li>
+                <li>Fishermen should avoid venturing into the sea until conditions improve.</li>
+                <li>Follow local weather updates and official advisories for the latest information.</li>
+            </ul>
+
+            <h2>Final Outlook</h2>
+
+            <p>The monsoon is expected to remain active across much of India on <strong>July 8, 2026</strong>, bringing widespread rainfall, thunderstorms, and strong winds. Several northern and eastern states are likely to experience the most severe conditions. Residents are encouraged to remain alert, plan travel carefully, and follow safety guidelines issued by local authorities.</p>
+        `
+    },
+    {
         id: "19",
         slug: "belgium-vs-senegal-world-cup-2026-comeback",
         title: "Belgium vs Senegal 3-2: A Captain’s View on Our Epic World Cup Comeback",
