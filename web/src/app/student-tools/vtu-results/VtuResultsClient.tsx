@@ -659,7 +659,7 @@ export default function VtuResultsClient() {
                   <p className="error-msg">{error}</p>
                 </div>
                 {(error.includes('captcha') || error.includes('portal') || error.includes('initiating') || error.includes('fetch')) && (
-                  <div className="error-action-hint" style={{ marginTop: '0.75rem', borderTop: '1px solid rgba(244, 63, 94, 0.15)', paddingTop: '0.75rem', fontSize: '0.85rem', color: '#fca5a5' }}>
+                  <div className="error-action-hint">
                     <p style={{ margin: '0 0 0.5rem 0' }}>
                       The upstream live-scraping service is currently offline or down.
                     </p>
@@ -809,7 +809,7 @@ export default function VtuResultsClient() {
                   <p className="error-msg">{error}</p>
                 </div>
                 {(error.includes('captcha') || error.includes('portal') || error.includes('initiating') || error.includes('fetch')) && (
-                  <div className="error-action-hint" style={{ marginTop: '0.75rem', borderTop: '1px solid rgba(244, 63, 94, 0.15)', paddingTop: '0.75rem', fontSize: '0.85rem', color: '#fca5a5' }}>
+                  <div className="error-action-hint">
                     <p style={{ margin: '0 0 0.5rem 0' }}>
                       The upstream live-scraping service is currently offline or down.
                     </p>
@@ -871,8 +871,8 @@ export default function VtuResultsClient() {
                     fetchCaptcha('D5J6');
                   }}
                   style={{
-                    background: 'var(--accent-primary)',
-                    borderColor: 'var(--accent-primary)',
+                    background: 'var(--primary)',
+                    borderColor: 'var(--primary)',
                     boxShadow: '0 4px 6px -1px rgba(99, 102, 241, 0.2)'
                   }}
                 >
@@ -1168,7 +1168,7 @@ export default function VtuResultsClient() {
               boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)',
               position: 'relative'
             }}>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: '#fff' }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem', color: 'var(--text)' }}>
                 Import Previous Semesters
               </h3>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '1.5rem', lineHeight: '1.4' }}>
@@ -1188,20 +1188,20 @@ export default function VtuResultsClient() {
                     }}
                     style={{
                       width: '100%',
-                      background: 'rgba(255,255,255,0.05)',
-                      border: '1px solid rgba(255,255,255,0.1)',
+                      background: 'var(--surface)',
+                      border: '1px solid var(--surface-border)',
                       borderRadius: '0.5rem',
                       padding: '0.75rem',
-                      color: '#fff',
+                      color: 'var(--text)',
                       fontSize: '0.9rem',
                       outline: 'none'
                     }}
                   >
-                    <option value="MJ26" style={{ background: '#1e293b' }}>May/June 2026 (Sem 6/etc)</option>
-                    <option value="D5J6" style={{ background: '#1e293b' }}>Dec 2025 / Jan 2026 (Sem 5/etc)</option>
-                    <option value="JJ25" style={{ background: '#1e293b' }}>June / July 2025 (Sem 4/etc)</option>
-                    <option value="D4J5" style={{ background: '#1e293b' }}>Dec 2024 / Jan 2025 (Sem 3/etc)</option>
-                    <option value="JJ24" style={{ background: '#1e293b' }}>June / July 2024 (Sem 2/etc)</option>
+                    <option value="MJ26" style={{ background: 'var(--surface)', color: 'var(--text)' }}>May/June 2026 (Sem 6/etc)</option>
+                    <option value="D5J6" style={{ background: 'var(--surface)', color: 'var(--text)' }}>Dec 2025 / Jan 2026 (Sem 5/etc)</option>
+                    <option value="JJ25" style={{ background: 'var(--surface)', color: 'var(--text)' }}>June / July 2025 (Sem 4/etc)</option>
+                    <option value="D4J5" style={{ background: 'var(--surface)', color: 'var(--text)' }}>Dec 2024 / Jan 2025 (Sem 3/etc)</option>
+                    <option value="JJ24" style={{ background: 'var(--surface)', color: 'var(--text)' }}>June / July 2024 (Sem 2/etc)</option>
                   </select>
                 </div>
 
@@ -1209,11 +1209,11 @@ export default function VtuResultsClient() {
                   <label style={{ display: 'block', fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '0.5rem', color: 'var(--text-muted)' }}>
                     Security CAPTCHA
                   </label>
-                  <div className="captcha-container" style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(255,255,255,0.02)', padding: '0.75rem', borderRadius: '0.75rem', border: '1px solid rgba(255,255,255,0.05)', marginBottom: '0.75rem' }}>
+                  <div className="captcha-container" style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'var(--surface)', padding: '0.75rem', borderRadius: '0.75rem', border: '1px solid var(--surface-border)', marginBottom: '0.75rem' }}>
                     {captchaImg ? (
                       <img src={captchaImg} alt="CAPTCHA" style={{ height: '40px', borderRadius: '0.375rem' }} />
                     ) : (
-                      <div className="captcha-loader" style={{ height: '40px', width: '120px', background: 'rgba(255,255,255,0.05)', borderRadius: '0.375rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <div className="captcha-loader" style={{ height: '40px', width: '120px', background: 'rgba(0,0,0,0.05)', borderRadius: '0.375rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <span className="spinner-inline" />
                       </div>
                     )}
@@ -1225,7 +1225,7 @@ export default function VtuResultsClient() {
                       style={{
                         background: 'none',
                         border: 'none',
-                        color: 'var(--accent-primary)',
+                        color: 'var(--primary)',
                         cursor: 'pointer',
                         fontSize: '1.25rem'
                       }}
@@ -1241,11 +1241,11 @@ export default function VtuResultsClient() {
                     className="input-field"
                     style={{
                       width: '100%',
-                      background: 'rgba(255,255,255,0.05)',
-                      border: '1px solid rgba(255,255,255,0.1)',
+                      background: 'var(--surface)',
+                      border: '1px solid var(--surface-border)',
                       borderRadius: '0.5rem',
                       padding: '0.75rem',
-                      color: '#fff',
+                      color: 'var(--text)',
                       fontSize: '0.9rem',
                       textAlign: 'center',
                       fontWeight: 'bold',
@@ -1256,8 +1256,8 @@ export default function VtuResultsClient() {
                 </div>
 
                 {error && (
-                  <div className="error-banner" style={{ padding: '0.75rem', borderRadius: '0.5rem', background: 'rgba(244,63,94,0.1)', border: '1px solid rgba(244,63,94,0.2)', marginBottom: '1.25rem' }}>
-                    <p style={{ color: '#fca5a5', fontSize: '0.8rem', margin: 0 }}>{error}</p>
+                  <div className="error-banner" style={{ padding: '0.75rem', borderRadius: '0.5rem', marginBottom: '1.25rem' }}>
+                    <p className="error-msg" style={{ fontSize: '0.8rem', margin: 0 }}>{error}</p>
                   </div>
                 )}
 
@@ -1269,11 +1269,11 @@ export default function VtuResultsClient() {
                       setError(null);
                     }}
                     style={{
-                      background: 'rgba(255,255,255,0.05)',
-                      color: '#fff',
+                      background: 'var(--surface)',
+                      color: 'var(--text)',
                       padding: '0.5rem 1rem',
                       borderRadius: '0.5rem',
-                      border: '1px solid rgba(255,255,255,0.1)',
+                      border: '1px solid var(--surface-border)',
                       cursor: 'pointer'
                     }}
                   >
@@ -1284,7 +1284,7 @@ export default function VtuResultsClient() {
                     className="btn-primary"
                     disabled={isFetching}
                     style={{
-                      background: 'var(--accent-primary)',
+                      background: 'var(--primary)',
                       color: '#fff',
                       padding: '0.5rem 1.25rem',
                       borderRadius: '0.5rem',
@@ -1350,11 +1350,16 @@ export default function VtuResultsClient() {
           width: 100%;
           height: 100%;
           background-image: 
-            linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
           background-size: 40px 40px;
           pointer-events: none;
           z-index: 0;
+        }
+        [data-theme="dark"] .decor-grid {
+          background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
         }
 
         .content-container {
@@ -1392,13 +1397,13 @@ export default function VtuResultsClient() {
 
         /* ═════════ GLASS CARD ═════════ */
         .glass-card {
-          background: rgba(30, 41, 59, 0.5);
+          background: var(--glass);
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          border: 1px solid var(--glass-border);
           border-radius: 1.5rem;
           padding: 2rem;
-          box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+          box-shadow: var(--card-shadow);
           transition: border-color 0.3s, transform 0.3s;
         }
 
@@ -1408,19 +1413,29 @@ export default function VtuResultsClient() {
           margin-bottom: 3rem;
         }
         .hero-badge {
-          background: rgba(79, 70, 229, 0.1);
-          color: #a5b4fc;
+          background: rgba(79, 70, 229, 0.08);
+          color: var(--primary);
           padding: 0.4rem 1rem;
           border-radius: 2rem;
           font-size: 0.75rem;
           font-weight: 700;
           letter-spacing: 0.05em;
           text-transform: uppercase;
-          border: 1px solid rgba(165, 180, 252, 0.2);
+          border: 1px solid rgba(79, 70, 229, 0.15);
           display: inline-block;
           margin-bottom: 1.25rem;
         }
+        [data-theme="dark"] .hero-badge {
+          background: rgba(79, 70, 229, 0.1);
+          color: #a5b4fc;
+          border-color: rgba(165, 180, 252, 0.2);
+        }
         .hero-badge.badge-alert {
+          background: rgba(244, 63, 94, 0.08);
+          color: #e11d48;
+          border-color: rgba(244, 63, 94, 0.15);
+        }
+        [data-theme="dark"] .hero-badge.badge-alert {
           background: rgba(244, 63, 94, 0.1);
           color: #fca5a5;
           border-color: rgba(244, 63, 94, 0.2);
@@ -1428,7 +1443,7 @@ export default function VtuResultsClient() {
         .hero-title {
           font-size: clamp(2rem, 6vw, 3.2rem);
           font-weight: 900;
-          color: #fff;
+          color: var(--text);
           margin-bottom: 1rem;
           line-height: 1.15;
           letter-spacing: -0.03em;
@@ -1482,16 +1497,20 @@ export default function VtuResultsClient() {
         }
         .input-wrapper input {
           width: 100%;
-          background: rgba(15, 23, 42, 0.6);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.6);
+          border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: 1rem;
           padding: 1.1rem 1rem 1.1rem 3.2rem;
-          color: #fff;
+          color: var(--text);
           font-family: inherit;
           font-size: 1.05rem;
           font-weight: 600;
           letter-spacing: 0.05em;
           transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        [data-theme="dark"] .input-wrapper input {
+          background: rgba(15, 23, 42, 0.6);
+          border-color: rgba(255, 255, 255, 0.1);
         }
         .input-wrapper input:focus {
           outline: none;
@@ -1555,13 +1574,17 @@ export default function VtuResultsClient() {
         .error-banner {
           max-width: 650px;
           margin: 0 auto 2rem;
-          background: rgba(244, 63, 94, 0.1);
-          border: 1px solid rgba(244, 63, 94, 0.2);
+          background: rgba(244, 63, 94, 0.08);
+          border: 1px solid rgba(244, 63, 94, 0.15);
           border-radius: 1rem;
           padding: 1rem 1.5rem;
           display: flex;
           align-items: center;
           gap: 0.75rem;
+        }
+        [data-theme="dark"] .error-banner {
+          background: rgba(244, 63, 94, 0.1);
+          border-color: rgba(244, 63, 94, 0.2);
         }
         .error-icon {
           font-size: 1.2rem;
@@ -1569,6 +1592,19 @@ export default function VtuResultsClient() {
         .error-msg {
           font-size: 0.92rem;
           font-weight: 600;
+          color: #e11d48;
+        }
+        [data-theme="dark"] .error-msg {
+          color: #fca5a5;
+        }
+        .error-action-hint {
+          margin-top: 0.75rem;
+          border-top: 1px solid rgba(244, 63, 94, 0.15);
+          padding-top: 0.75rem;
+          font-size: 0.85rem;
+          color: #b91c1c;
+        }
+        [data-theme="dark"] .error-action-hint {
           color: #fca5a5;
         }
 
@@ -1606,8 +1642,8 @@ export default function VtuResultsClient() {
           gap: 0.75rem;
         }
         .history-item {
-          background: rgba(15, 23, 42, 0.3);
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          background: rgba(255, 255, 255, 0.4);
+          border: 1px solid rgba(0, 0, 0, 0.05);
           border-radius: 0.75rem;
           padding: 0.85rem 1.25rem;
           display: flex;
@@ -1616,9 +1652,16 @@ export default function VtuResultsClient() {
           cursor: pointer;
           transition: background 0.2s, border-color 0.2s;
         }
+        [data-theme="dark"] .history-item {
+          background: rgba(15, 23, 42, 0.3);
+          border-color: rgba(255, 255, 255, 0.05);
+        }
         .history-item:hover {
-          background: rgba(15, 23, 42, 0.6);
+          background: rgba(255, 255, 255, 0.8);
           border-color: rgba(99, 102, 241, 0.3);
+        }
+        [data-theme="dark"] .history-item:hover {
+          background: rgba(15, 23, 42, 0.6);
         }
         .history-info {
           display: flex;
@@ -1628,7 +1671,7 @@ export default function VtuResultsClient() {
         .history-name {
           font-size: 0.9rem;
           font-weight: 700;
-          color: #fff;
+          color: var(--text);
         }
         .history-usn {
           font-family: monospace;
@@ -1665,12 +1708,16 @@ export default function VtuResultsClient() {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: rgba(15, 23, 42, 0.8);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.08);
           border-radius: 1rem;
           padding: 1rem;
           position: relative;
           min-height: 80px;
+        }
+        [data-theme="dark"] .captcha-image-wrapper {
+          background: rgba(15, 23, 42, 0.8);
+          border-color: rgba(255, 255, 255, 0.08);
         }
         .captcha-img {
           max-height: 60px;
@@ -1684,9 +1731,9 @@ export default function VtuResultsClient() {
         .btn-refresh {
           position: absolute;
           right: 1rem;
-          background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          color: #fff;
+          background: rgba(0, 0, 0, 0.03);
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          color: var(--text);
           border-radius: 0.5rem;
           width: 32px;
           height: 32px;
@@ -1696,7 +1743,15 @@ export default function VtuResultsClient() {
           justify-content: center;
           transition: background 0.2s;
         }
+        [data-theme="dark"] .btn-refresh {
+          background: rgba(255, 255, 255, 0.05);
+          border-color: rgba(255, 255, 255, 0.08);
+          color: #fff;
+        }
         .btn-refresh:hover {
+          background: rgba(0, 0, 0, 0.06);
+        }
+        [data-theme="dark"] .btn-refresh:hover {
           background: rgba(255, 255, 255, 0.1);
         }
         .btn-refresh svg {
@@ -1705,16 +1760,20 @@ export default function VtuResultsClient() {
         }
         .captcha-input-group input {
           width: 100%;
-          background: rgba(15, 23, 42, 0.6);
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.6);
+          border: 1px solid rgba(0, 0, 0, 0.1);
           border-radius: 0.75rem;
           padding: 0.9rem;
-          color: #fff;
+          color: var(--text);
           font-size: 1.1rem;
           font-weight: 700;
           text-align: center;
           letter-spacing: 0.2em;
           transition: border-color 0.3s;
+        }
+        [data-theme="dark"] .captcha-input-group input {
+          background: rgba(15, 23, 42, 0.6);
+          border-color: rgba(255, 255, 255, 0.1);
         }
         .captcha-input-group input:focus {
           outline: none;
@@ -1737,9 +1796,9 @@ export default function VtuResultsClient() {
           transition: opacity 0.2s;
         }
         .btn-secondary {
-          background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          color: #fff;
+          background: rgba(0, 0, 0, 0.03);
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          color: var(--text);
           border-radius: 0.75rem;
           padding: 0.9rem;
           font-size: 0.95rem;
@@ -1747,7 +1806,15 @@ export default function VtuResultsClient() {
           cursor: pointer;
           transition: background 0.2s;
         }
+        [data-theme="dark"] .btn-secondary {
+          background: rgba(255, 255, 255, 0.05);
+          border-color: rgba(255, 255, 255, 0.08);
+          color: #fff;
+        }
         .btn-secondary:hover {
+          background: rgba(0, 0, 0, 0.06);
+        }
+        [data-theme="dark"] .btn-secondary:hover {
           background: rgba(255, 255, 255, 0.1);
         }
 
@@ -1771,7 +1838,7 @@ export default function VtuResultsClient() {
           gap: 0.35rem;
         }
         .btn-back:hover {
-          color: #fff;
+          color: var(--text);
         }
         .toolbar-right {
           display: flex;
@@ -1788,18 +1855,24 @@ export default function VtuResultsClient() {
         }
         .tag-cache {
           background: rgba(16, 185, 129, 0.1);
-          color: #34d399;
+          color: #10b981;
           border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+        [data-theme="dark"] .tag-cache {
+          color: #34d399;
         }
         .tag-scrape {
           background: rgba(6, 182, 212, 0.1);
-          color: #22d3ee;
+          color: #0891b2;
           border: 1px solid rgba(6, 182, 212, 0.2);
         }
+        [data-theme="dark"] .tag-scrape {
+          color: #22d3ee;
+        }
         .btn-print {
-          background: rgba(255, 255, 255, 0.05);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          color: #fff;
+          background: rgba(0, 0, 0, 0.03);
+          border: 1px solid rgba(0, 0, 0, 0.08);
+          color: var(--text);
           padding: 0.55rem 1rem;
           border-radius: 0.75rem;
           font-size: 0.88rem;
@@ -1810,7 +1883,15 @@ export default function VtuResultsClient() {
           gap: 0.5rem;
           transition: background 0.2s;
         }
+        [data-theme="dark"] .btn-print {
+          background: rgba(255, 255, 255, 0.05);
+          border-color: rgba(255, 255, 255, 0.08);
+          color: #fff;
+        }
         .btn-print:hover {
+          background: rgba(0, 0, 0, 0.06);
+        }
+        [data-theme="dark"] .btn-print:hover {
           background: rgba(255, 255, 255, 0.1);
         }
         .btn-print svg {
@@ -1835,7 +1916,7 @@ export default function VtuResultsClient() {
         .student-name {
           font-size: 1.8rem;
           font-weight: 900;
-          color: #fff;
+          color: var(--text);
           letter-spacing: -0.03em;
           margin-bottom: 1.5rem;
         }
@@ -1843,7 +1924,7 @@ export default function VtuResultsClient() {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
           gap: 1.5rem;
-          border-top: 1px solid rgba(255, 255, 255, 0.06);
+          border-top: 1px solid var(--surface-border);
           padding-top: 1.5rem;
         }
         .profile-meta {
@@ -1860,12 +1941,15 @@ export default function VtuResultsClient() {
         .meta-val {
           font-size: 1.05rem;
           font-weight: 700;
-          color: #fff;
+          color: var(--text);
         }
         .highlight-usn {
           font-family: monospace;
-          color: #a5b4fc;
+          color: var(--primary);
           letter-spacing: 0.05em;
+        }
+        [data-theme="dark"] .highlight-usn {
+          color: #a5b4fc;
         }
 
         /* ═════════ ANALYTICS GRID ═════════ */
@@ -1915,8 +1999,11 @@ export default function VtuResultsClient() {
         }
         .gauge-bg {
           fill: none;
-          stroke: rgba(255, 255, 255, 0.05);
+          stroke: rgba(0, 0, 0, 0.05);
           stroke-width: 8;
+        }
+        [data-theme="dark"] .gauge-bg {
+          stroke: rgba(255, 255, 255, 0.05);
         }
         .gauge-progress {
           fill: none;
@@ -1935,7 +2022,7 @@ export default function VtuResultsClient() {
         .gauge-val .num {
           font-size: 1.7rem;
           font-weight: 900;
-          color: #fff;
+          color: var(--text);
           line-height: 1.1;
         }
         .gauge-val .lbl {
@@ -1959,13 +2046,19 @@ export default function VtuResultsClient() {
           max-height: 140px;
         }
         .chart-grid-line {
-          stroke: rgba(255, 255, 255, 0.04);
+          stroke: rgba(0, 0, 0, 0.05);
           stroke-width: 1;
         }
+        [data-theme="dark"] .chart-grid-line {
+          stroke: rgba(255, 255, 255, 0.04);
+        }
         .chart-vertical-grid {
-          stroke: rgba(255, 255, 255, 0.02);
+          stroke: rgba(0, 0, 0, 0.02);
           stroke-width: 1.5;
           stroke-dasharray: 2 4;
+        }
+        [data-theme="dark"] .chart-vertical-grid {
+          stroke: rgba(255, 255, 255, 0.02);
         }
         .chart-grid-text {
           fill: var(--text-muted);
@@ -1997,7 +2090,7 @@ export default function VtuResultsClient() {
           cursor: pointer;
         }
         .chart-point-label {
-          fill: #fff;
+          fill: var(--text);
           font-size: 9px;
           font-weight: 700;
           text-anchor: middle;
@@ -2038,8 +2131,11 @@ export default function VtuResultsClient() {
           justify-content: space-between;
           font-size: 0.82rem;
           font-weight: 600;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.05);
           padding-bottom: 0.5rem;
+        }
+        [data-theme="dark"] .stat-row {
+          border-bottom-color: rgba(255, 255, 255, 0.04);
         }
         .stat-row:last-child {
           border-bottom: none;
@@ -2049,7 +2145,7 @@ export default function VtuResultsClient() {
           color: var(--text-muted);
         }
         .stat-row .val {
-          color: #fff;
+          color: var(--text);
           font-weight: 700;
         }
         .color-rose {
@@ -2077,15 +2173,19 @@ export default function VtuResultsClient() {
           align-items: center;
         }
         .subject-search-input {
-          background: rgba(15, 23, 42, 0.5);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(255, 255, 255, 0.6);
+          border: 1px solid rgba(0, 0, 0, 0.08);
           border-radius: 0.75rem;
           padding: 0.55rem 2.2rem 0.55rem 1rem;
-          color: #fff;
+          color: var(--text);
           font-size: 0.85rem;
           width: 260px;
           font-weight: 500;
           transition: border-color 0.2s;
+        }
+        [data-theme="dark"] .subject-search-input {
+          background: rgba(15, 23, 42, 0.5);
+          border-color: rgba(255, 255, 255, 0.08);
         }
         .subject-search-input:focus {
           outline: none;
@@ -2116,14 +2216,20 @@ export default function VtuResultsClient() {
           justify-content: space-between;
           align-items: center;
           cursor: pointer;
-          background: rgba(30, 41, 59, 0.2);
+          background: rgba(0, 0, 0, 0.02);
           transition: background 0.2s;
         }
+        [data-theme="dark"] .accordion-trigger {
+          background: rgba(30, 41, 59, 0.2);
+        }
         .accordion-trigger:hover {
+          background: rgba(0, 0, 0, 0.04);
+        }
+        [data-theme="dark"] .accordion-trigger:hover {
           background: rgba(30, 41, 59, 0.4);
         }
         .sem-accordion-card.expanded .accordion-trigger {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          border-bottom: 1px solid var(--surface-border);
         }
         .trigger-left {
           display: flex;
@@ -2141,7 +2247,7 @@ export default function VtuResultsClient() {
         .trigger-left h4 {
           font-size: 1.15rem;
           font-weight: 800;
-          color: #fff;
+          color: var(--text);
         }
         .trigger-right {
           display: flex;
@@ -2157,7 +2263,7 @@ export default function VtuResultsClient() {
           border: 1px solid rgba(255, 255, 255, 0.04);
         }
         .sem-summary-badge strong {
-          color: #fff;
+          color: var(--text);
           font-weight: 700;
           margin-left: 0.15rem;
         }
@@ -2180,6 +2286,9 @@ export default function VtuResultsClient() {
 
         .accordion-content {
           padding: 1.75rem;
+          background: rgba(255, 255, 255, 0.2);
+        }
+        [data-theme="dark"] .accordion-content {
           background: rgba(15, 23, 42, 0.15);
         }
         .table-responsive {
@@ -2198,17 +2307,20 @@ export default function VtuResultsClient() {
           letter-spacing: 0.05em;
           color: var(--text-muted);
           padding: 0.75rem 1rem;
-          border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+          border-bottom: 2px solid var(--surface-border);
         }
         .marks-table td {
           padding: 0.9rem 1rem;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-          color: rgba(255, 255, 255, 0.9);
+          border-bottom: 1px solid var(--surface-border);
+          color: var(--text);
         }
         .marks-table tr:last-child td {
           border-bottom: none;
         }
         .marks-table tbody tr:hover td {
+          background: rgba(0, 0, 0, 0.01);
+        }
+        [data-theme="dark"] .marks-table tbody tr:hover td {
           background: rgba(255, 255, 255, 0.02);
         }
         
@@ -2216,6 +2328,9 @@ export default function VtuResultsClient() {
           background: rgba(244, 63, 94, 0.02);
         }
         .row-failed .subject-name-cell {
+          color: #e11d48;
+        }
+        [data-theme="dark"] .row-failed .subject-name-cell {
           color: #fda4af;
         }
 
@@ -2244,13 +2359,21 @@ export default function VtuResultsClient() {
           display: inline-block;
           min-width: 28px;
         }
-        .grade-O, .grade-S { background: rgba(16, 185, 129, 0.15); color: #34d399; }
-        .grade-A, .grade-A\+ { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
-        .grade-B, .grade-B\+ { background: rgba(139, 92, 246, 0.15); color: #a78bfa; }
-        .grade-C, .grade-C\+ { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
-        .grade-D, .grade-D\+ { background: rgba(251, 146, 60, 0.15); color: #fdba74; }
-        .grade-E { background: rgba(156, 163, 175, 0.15); color: #d1d5db; }
-        .grade-F, .grade-AB { background: rgba(244, 63, 94, 0.15); color: #f87171; }
+        .grade-O, .grade-S { background: rgba(16, 185, 129, 0.12); color: #065f46; }
+        .grade-A, .grade-A\+ { background: rgba(59, 130, 246, 0.12); color: #1e40af; }
+        .grade-B, .grade-B\+ { background: rgba(139, 92, 246, 0.12); color: #5b21b6; }
+        .grade-C, .grade-C\+ { background: rgba(245, 158, 11, 0.12); color: #92400e; }
+        .grade-D, .grade-D\+ { background: rgba(251, 146, 60, 0.12); color: #c2410c; }
+        .grade-E { background: rgba(156, 163, 175, 0.12); color: #374151; }
+        .grade-F, .grade-AB { background: rgba(244, 63, 94, 0.12); color: #991b1b; }
+
+        [data-theme="dark"] .grade-O, [data-theme="dark"] .grade-S { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+        [data-theme="dark"] .grade-A, [data-theme="dark"] .grade-A\+ { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+        [data-theme="dark"] .grade-B, [data-theme="dark"] .grade-B\+ { background: rgba(139, 92, 246, 0.15); color: #a78bfa; }
+        [data-theme="dark"] .grade-C, [data-theme="dark"] .grade-C\+ { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+        [data-theme="dark"] .grade-D, [data-theme="dark"] .grade-D\+ { background: rgba(251, 146, 60, 0.15); color: #fdba74; }
+        [data-theme="dark"] .grade-E { background: rgba(156, 163, 175, 0.15); color: #d1d5db; }
+        [data-theme="dark"] .grade-F, [data-theme="dark"] .grade-AB { background: rgba(244, 63, 94, 0.15); color: #f87171; }
 
         /* Status Badges */
         .result-badge {
@@ -2261,30 +2384,50 @@ export default function VtuResultsClient() {
           letter-spacing: 0.05em;
         }
         .status-P {
-          background: rgba(16, 185, 129, 0.1);
-          color: #34d399;
-          border: 1px solid rgba(16, 185, 129, 0.2);
+          background: rgba(16, 185, 129, 0.08);
+          color: #065f46;
+          border: 1px solid rgba(16, 185, 129, 0.15);
         }
         .status-F {
-          background: rgba(244, 63, 94, 0.1);
-          color: #ef4444;
-          border: 1px solid rgba(244, 63, 94, 0.2);
+          background: rgba(244, 63, 94, 0.08);
+          color: #991b1b;
+          border: 1px solid rgba(244, 63, 94, 0.15);
         }
         .status-A {
+          background: rgba(251, 146, 60, 0.08);
+          color: #c2410c;
+          border: 1px solid rgba(251, 146, 60, 0.15);
+        }
+
+        [data-theme="dark"] .status-P {
+          background: rgba(16, 185, 129, 0.1);
+          color: #34d399;
+          border-color: rgba(16, 185, 129, 0.2);
+        }
+        [data-theme="dark"] .status-F {
+          background: rgba(244, 63, 94, 0.1);
+          color: #ef4444;
+          border-color: rgba(244, 63, 94, 0.2);
+        }
+        [data-theme="dark"] .status-A {
           background: rgba(251, 146, 60, 0.1);
           color: #fb923c;
-          border: 1px solid rgba(251, 146, 60, 0.2);
+          border-color: rgba(251, 146, 60, 0.2);
         }
 
         /* ═════════ UTILS / ANIMATIONS ═════════ */
         .spinner-inline {
           width: 18px;
           height: 18px;
-          border: 2px solid rgba(255,255,255,0.3);
+          border: 2px solid rgba(0, 0, 0, 0.15);
           border-radius: 50%;
-          border-top-color: #fff;
+          border-top-color: var(--primary);
           animation: spin 0.8s linear infinite;
           display: inline-block;
+        }
+        [data-theme="dark"] .spinner-inline {
+          border-color: rgba(255, 255, 255, 0.3);
+          border-top-color: #fff;
         }
         
         @keyframes spin {
