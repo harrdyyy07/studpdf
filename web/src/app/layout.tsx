@@ -43,6 +43,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#4F46E5" />
+        <meta name="monetag" content="f742637c8e38e1b97a1d2a49930d2b82" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
