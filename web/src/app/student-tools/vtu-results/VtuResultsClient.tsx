@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { calculatorData } from '@/data/calculatorData';
 
 interface StudentInfo {
   name: string;
@@ -76,6 +77,56 @@ function guessSubjectCredits(code: string): number {
     return 4;
   }
   return 3;
+}
+
+// Helper to match wildcard codes
+function matchWildcardCode(subCode: string, targetCode: string): boolean {
+  const s = subCode.toUpperCase().trim();
+  const t = targetCode.toUpperCase().trim();
+  
+  if (s === t) return true;
+  
+  if (s.includes('/')) {
+    const parts = s.split('/');
+    return parts.some(part => matchWildcardCode(part, t));
+  }
+  
+  const escaped = s.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const regexStr = '^' + escaped.replace(/X/g, '[A-Z0-9]?') + '$';
+  const regex = new RegExp(regexStr);
+  return regex.test(t);
+}
+
+// Helper to look up subject credits in calculatorData
+function lookupSubjectCredits(code: string): number | null {
+  const cleanCode = code.toUpperCase().trim();
+  if (!cleanCode) return null;
+
+  for (const scheme in calculatorData) {
+    const branches = calculatorData[scheme];
+    for (const branch in branches) {
+      const sems = branches[branch];
+      for (const sem in sems) {
+        const subjects = sems[sem];
+        for (const sub of subjects) {
+          if (matchWildcardCode(sub.code, cleanCode)) {
+            return sub.credits;
+          }
+        }
+      }
+    }
+  }
+
+  return null;
+}
+
+// Main credit getter with fallback
+function getSubjectCredits(code: string): number {
+  const lookup = lookupSubjectCredits(code);
+  if (lookup !== null) {
+    return lookup;
+  }
+  return guessSubjectCredits(code);
 }
 
 // Helper to derive grades from total marks for CBCS schemes
@@ -412,7 +463,7 @@ export default function VtuResultsClient() {
     let hasBacklog = false;
 
     subjects.forEach(sub => {
-      const credits = guessSubjectCredits(sub.subject_code);
+      const credits = getSubjectCredits(sub.subject_code);
       const { grade, points } = getGradeAndPointsForSubject(sub, resultData?.data?.student?.usn || usn);
       
       if (sub.result.toUpperCase() === 'F' || grade === 'F') {
@@ -447,7 +498,7 @@ export default function VtuResultsClient() {
       let semCredits = 0;
 
       subjects.forEach(sub => {
-        const credits = guessSubjectCredits(sub.subject_code);
+        const credits = getSubjectCredits(sub.subject_code);
         const { grade, points } = getGradeAndPointsForSubject(sub, resultData.data.student.usn);
         
         if (sub.result.toUpperCase() === 'F' || grade === 'F') {
@@ -1058,7 +1109,7 @@ export default function VtuResultsClient() {
                                     const { grade } = getGradeAndPointsForSubject(sub, resultData?.data?.student?.usn || usn);
                                     const isFail = sub.result.toUpperCase() === 'F' || grade === 'F';
                                     const isAbsent = sub.result.toUpperCase() === 'A' || grade === 'AB';
-                                    const credits = guessSubjectCredits(sub.subject_code);
+                                    const credits = getSubjectCredits(sub.subject_code);
                                     
                                     return (
                                       <tr key={idx} className={isFail ? 'row-failed' : ''}>
