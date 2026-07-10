@@ -1956,7 +1956,8 @@ export const siteData: SiteData = {
                             { id: 8, name: "Module 4: Nature-Bio Inspired Materials and Mechanisms. (notes-2)", desc: "BBOK407 Module-4 Notes by SVIT", link: "https://drive.google.com/file/d/1e81Ew-svatK4-Bo87i0N9v42tz2GbQ0P/view?usp=drive_link", type: "Notes" },
                             { id: 9, name: "Module 5: Trends in bioengineering (notes-1)", desc: "BBOK407 Module-5 Notes by RV Institute of Technology and Management", link: "https://drive.google.com/file/d/12fcJyfZwsEDQt16kOS_XY6CIfCF-owhh/view?usp=drive_link", type: "Notes" },
                             { id: 10, name: "Module 5: Trends in bioengineering (notes-2)", desc: "BBOK407 Module-5 Notes by SVIT", link: "https://drive.google.com/file/d/1tDH7DjIKKzcvs6Vd7qnWK-2Lb9pa9wcj/view?usp=drive_link", type: "Notes" },
-                            { id: 11, name: "bbok407 QUESTION BANK", desc: "bbok407 QUESTION BANK", link: "https://drive.google.com/file/d/12pDGS24Y3vuPQs6tk5GpHztaMxYZtZhf/view?usp=drive_linkn", type: "question bank" }
+                            { id: 11, name: "BIO NOTES Exam Targeted Handmade by SANVI S BANAKAR from R.Y.M.E.C", desc: "BBOK407 BIO NOTES Exam Targeted Handmade by SANVI S BANAKAR from R.Y.M.E.C", link: "https://drive.google.com/file/d/1tDH7DjIKKzcvs6Vd7qnWK-2Lb9pa9wcj/view?usp=drive_link", type: "Notes" },
+                            { id: 12, name: "bbok407 QUESTION BANK", desc: "bbok407 QUESTION BANK", link: "https://drive.google.com/file/d/12pDGS24Y3vuPQs6tk5GpHztaMxYZtZhf/view?usp=drive_linkn", type: "question bank" }
                         ]
                     },
                     { name: "Universal Human Values", code: "BUHK408", credits: "1 CR", slug: "universal-human-values-uhv-buhk408-vtu-notes", modules: [] },
@@ -2259,7 +2260,8 @@ export const siteData: SiteData = {
                             { id: 8, name: "Module 4: Nature-Bio Inspired Materials and Mechanisms. (notes-2)", desc: "BBOK407 Module-4 Notes by SVIT", link: "https://drive.google.com/file/d/1e81Ew-svatK4-Bo87i0N9v42tz2GbQ0P/view?usp=drive_link", type: "Notes" },
                             { id: 9, name: "Module 5: Trends in bioengineering (notes-1)", desc: "BBOK407 Module-5 Notes by RV Institute of Technology and Management", link: "https://drive.google.com/file/d/12fcJyfZwsEDQt16kOS_XY6CIfCF-owhh/view?usp=drive_link", type: "Notes" },
                             { id: 10, name: "Module 5: Trends in bioengineering (notes-2)", desc: "BBOK407 Module-5 Notes by SVIT", link: "https://drive.google.com/file/d/1tDH7DjIKKzcvs6Vd7qnWK-2Lb9pa9wcj/view?usp=drive_link", type: "Notes" },
-                            { id: 11, name: "bbok407 QUESTION BANK", desc: "bbok407 QUESTION BANK", link: "https://drive.google.com/file/d/12pDGS24Y3vuPQs6tk5GpHztaMxYZtZhf/view?usp=drive_linkn", type: "question bank" },
+                            { id: 11, name: "BIO NOTES Exam Targeted Handmade by SANVI S BANAKAR from R.Y.M.E.C", desc: "BBOK407 BIO NOTES Exam Targeted Handmade by SANVI S BANAKAR from R.Y.M.E.C", link: "https://drive.google.com/file/d/1tDH7DjIKKzcvs6Vd7qnWK-2Lb9pa9wcj/view?usp=drive_link", type: "Notes" },
+                            { id: 12, name: "bbok407 QUESTION BANK", desc: "bbok407 QUESTION BANK", link: "https://drive.google.com/file/d/12pDGS24Y3vuPQs6tk5GpHztaMxYZtZhf/view?usp=drive_linkn", type: "question bank" },
                         ]
                     },
                     { name: "Universal Human Values", code: "BUHK408", credits: "1 CR", slug: "universal-human-values-uhv-buhk408-vtu-notes", modules: [] },
