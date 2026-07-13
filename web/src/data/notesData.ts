@@ -1854,7 +1854,13 @@ export const siteData: SiteData = {
                         { id: 4, name: "Module-4 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-4 Notes", link: "https://drive.google.com/file/d/1esaatSJPLO48Xpg6mVID_4duyPU4J5Ix/view?usp=drive_link", type: "notes" },
                         { id: 5, name: "Module-5 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-5 Notes", link: "https://drive.google.com/file/d/12xHQo4KDL0jR3ULWgaO5beHjOZVnS0xU/view?usp=drive_link", type: "notes" }
                     ]},
-                    {name:"Computer Networks and Protocols", code: "BEC702", credits: "3 CR", slug: "computer-networks-and-protocols-cnp-bec702-vtu-notes", modules: []}
+                    {name:"Computer Networks and Protocols", code: "BEC702", credits: "3 CR", slug: "computer-networks-and-protocols-cnp-bec702-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "Computer Networks and Protocols-BEC702 Module-1 Notes", link: "https://drive.google.com/file/d/11UvpMnSMLXb9g1whG6rxkZhq4klp_XC1/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "Computer Networks and Protocols-BEC702 Module-2 Notes", link: "https://drive.google.com/file/d/17HuYRq9C-dwnelne4WHq25yv6C9sayqt/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "Computer Networks and Protocols-BEC702 Module-3 Notes", link: "https://drive.google.com/file/d/13jg70DD1dnwBhKFah5xHFDvAxz0in9Bw/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "Computer Networks and Protocols-BEC702 Module-4 Notes", link: "https://drive.google.com/file/d/1WffObmmJLr3MAVPBLrbMsoFAG5-7KZWe/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "Computer Networks and Protocols-BEC702 Module-5 Notes", link: "https://drive.google.com/file/d/18yU86vx3cTVFdwWBIdWd2_QcHiNQaT93/view?usp=drive_link", type: "notes" }
+                    ]}
                 ]
             }
         ]

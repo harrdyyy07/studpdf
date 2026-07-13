@@ -13,6 +13,106 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "21",
+        slug: "kcet-2026-first-round-provisional-seat-allotment-result-released",
+        title: "KCET 2026 First Round Provisional Seat Allotment Result Released: Direct Link to Check KEA Allotment",
+        description: "Check the KCET 2026 First Round Provisional Seat Allotment Result online on the official KEA portal. Find the direct result link, step-by-step instructions, and FAQs here.",
+        date: "July 14, 2026",
+        readTime: "4 min read",
+        author: "vtuwise Team",
+        tag: "KCET Updates",
+        imageBg: "linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa)",
+        content: `
+            <p>The <strong>Karnataka Examinations Authority (KEA)</strong> has officially released the <strong>KCET 2026 First Round Provisional Seat Allotment Result</strong> for candidates who participated in the UGCET counselling process. Students who registered and submitted their options can now check their provisional allotment status online through the official KEA result portal.</p>
+
+            <p>According to the official counselling schedule, this provisional allotment is based on candidates' KCET rank, reservation category, and the choices/options entered during the option entry phase.</p>
+             <img src="/images/kcet_1st_round_seat_allotment.webp" alt="KCET 2026 1st Round Seat Allotment" />
+
+            <h2>KCET 2026 First Round Provisional Seat Allotment Result Link</h2>
+            
+            <p>Candidates can check their provisional allotment results by visiting the official KEA result page link below:</p>
+
+            <div class="blog-important-link" style="margin: 20px 0; padding: 15px; background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; border-radius: 4px;">
+                <strong>Direct Result Link:</strong> 
+                <a href="https://keaonline.karnataka.gov.in/main/checkresult.php" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; font-weight: 600; margin-left: 5px;">
+                    Check KCET 2026 Round 1 Provisional Seat Allotment Status
+                </a>
+            </div>
+
+            <h2>How to Check KCET First Round Provisional Seat Allotment</h2>
+
+            <p>Follow these simple steps to access your result:</p>
+            <ol>
+                <li>Visit the official KEA provisional allotment result page: <a href="https://keaonline.karnataka.gov.in/main/checkresult.php" target="_blank" rel="noopener noreferrer">KEA Result Portal</a>.</li>
+                <li>Enter your <strong>CET Number</strong> and other required login credentials as prompted.</li>
+                <li>Click on the <strong>Submit</strong> button.</li>
+                <li>Your provisional seat allotment result will be displayed on the screen.</li>
+                <li>Download and print/save the allotment details for future reference.</li>
+            </ol>
+
+            <h2>Details Mentioned in the Allotment Result</h2>
+
+            <p>Once you access your provisional allotment, make sure to verify the following details:</p>
+            <ul>
+                <li>Candidate's Name</li>
+                <li>CET Number</li>
+                <li>KCET Rank</li>
+                <li>Allotted College</li>
+                <li>Allotted Course/Branch</li>
+                <li>Category under which seat is allotted</li>
+                <li>Allotment Status</li>
+            </ul>
+
+            <h2>What is a Provisional Seat Allotment?</h2>
+
+            <p>The provisional seat allotment is a <strong>temporary allotment list</strong> released by KEA before publishing the final first-round allotment. It serves as an opportunity for candidates to verify whether their allotted college, course, reservation category, and other details are correct and reflect their rank and submitted options accurately.</p>
+
+            <p>If any discrepancies or errors are found in the allotment, candidates should follow the instructions issued by KEA to raise objections within the prescribed timeline. The <strong>final first-round seat allotment</strong> will be released after KEA considers and processes valid corrections and objections, if applicable.</p>
+
+            <h2>What to Do After Checking the Result?</h2>
+
+            <p>After checking your provisional allotment result, you should:</p>
+            <ul>
+                <li>Verify all personal and allotment details carefully.</li>
+                <li>Wait for the official announcement of the final Round 1 seat allotment.</li>
+                <li>Follow the KEA counselling schedule closely for fee payment, option confirmation (Choice 1, 2, 3, or 4), and document verification.</li>
+                <li>Download the final allotment order once it is formally released by KEA.</li>
+            </ul>
+
+            <h2>Important Documents to Keep Ready</h2>
+
+            <p>After the final allotment is announced, candidates who choose to accept their seats will need the following documents for verification and college reporting:</p>
+            <ul>
+                <li>KCET Admit Card</li>
+                <li>KCET Rank Card</li>
+                <li>Class 10 and Class 12 Marks Cards</li>
+                <li>Study Certificates (minimum 7 years in Karnataka)</li>
+                <li>Caste/Income Certificate (if applicable for reservation claims)</li>
+                <li>Aadhaar Card</li>
+                <li>Passport-size Photographs</li>
+                <li>Final Seat Allotment Letter</li>
+            </ul>
+
+            <h2>KCET 2026 Counselling</h2>
+
+            <p>The KCET counselling process is a multi-step procedure that includes online registration, document verification, option entry, provisional and final seat allotment, fee payment, option confirmation, and reporting to the allotted college. Candidates are strongly advised to regularly monitor the official KEA website for the latest updates regarding the final seat allotment schedule and admission deadlines.</p>
+
+            <h2>Frequently Asked Questions (FAQs)</h2>
+
+            <p><strong>Q1. Has KEA released the KCET 2026 First Round Provisional Seat Allotment Result?</strong><br/>
+            Yes. KEA has published the First Round Provisional Seat Allotment Result on its official portal.</p>
+
+            <p><strong>Q2. Where can I check the KCET provisional allotment result?</strong><br/>
+            Candidates can check their result on the official KEA portal at: <a href="https://keaonline.karnataka.gov.in/main/checkresult.php" target="_blank" rel="noopener noreferrer">https://keaonline.karnataka.gov.in/main/checkresult.php</a>.</p>
+
+            <p><strong>Q3. Is the provisional allotment final?</strong><br/>
+            No. It is a temporary allotment released before the final Round 1 seat allotment. Candidates should wait for the final allotment before completing college admission formalities.</p>
+
+            <p><strong>Q4. What credentials are required to check the result?</strong><br/>
+            Candidates need their <strong>CET Number</strong> and any other required login credentials specified by KEA on the login page.</p>
+        `
+    },
+    {
         id: "20",
         slug: "weather-forecast-july-8-2026-imd-heavy-rain-alert",
         title: "Weather Forecast for July 8, 2026: IMD Issues Heavy Rain Alert for 13 States, Thunderstorms with Winds up to 85 km/h",
