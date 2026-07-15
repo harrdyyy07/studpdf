@@ -13,6 +13,239 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "23",
+        slug: "kcet-2026-round-1-choice-selection-begins-on-july-16",
+        title: "KCET 2026 Round 1 Choice Selection Begins on July 16: Know Choice 1, 2, 3 & 4 Before You Decide",
+        description: "Karnataka Examinations Authority (KEA) starts the KCET 2026 Round 1 Choice Selection process on July 16, 2026. Understand Choice 1, 2, 3 & 4, direct link, dates, and instructions.",
+        date: "July 15, 2026",
+        readTime: "5 min read",
+        author: "vtuwise Team",
+        tag: "KCET Updates",
+        imageBg: "linear-gradient(135deg, #1e3a8a, #3b82f6, #60a5fa)",
+        // SEO Keywords: KCET Choice Selection 2026, KCET Choice Entry 2026, KCET Round 1 Choice 1 2 3 4, KCET Seat Allotment Choice Selection, KEA Choice Entry Procedure, KCET Counselling 2026, KCET Round 1 Options, KCET Choice Selection July 16
+        content: `
+            <p>The <strong>Karnataka Examinations Authority (KEA)</strong> has started the <strong>KCET 2026 Round 1 Choice Selection process</strong> from <strong>July 16, 2026</strong>, for candidates who have been allotted seats in the first round of counselling.</p>
+
+            <p>Candidates who received a seat in the <strong>KCET Round 1 Final Seat Allotment Result</strong> must log in to the official KEA counselling portal and select one of the <strong>four available choices</strong>. Your selected choice will determine whether you confirm your admission, participate in the next counselling round, or exit the counselling process.</p>
+
+            <p>Choosing the correct option is extremely important, as it directly affects your eligibility for future counselling rounds.</p>
+
+            <img src="/images/choice_entry.webp" alt="KCET 2026 Round 1 Choice Selection" />
+
+            <h2>KCET 2026 Choice Selection Date</h2>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>KCET Round 1 Final Seat Allotment Result</td>
+                            <td>15 July 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Choice Selection Starts</strong></td>
+                            <td><strong>16 July 2026</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Fee Payment</td>
+                            <td>As per KEA Schedule</td>
+                        </tr>
+                        <tr>
+                            <td>Reporting to College</td>
+                            <td>As notified by KEA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Direct Link for KCET Choice Selection</h2>
+
+            <p>Candidates can complete the choice selection through the official KEA counselling portal after logging in with their CET credentials.</p>
+
+            <div class="blog-important-link" style="margin: 20px 0; padding: 15px; background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; border-radius: 4px;">
+                <strong>Official Website:</strong> 
+                <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; font-weight: 600; margin-left: 5px;">
+                    https://cetonline.karnataka.gov.in/kea/
+                </a>
+            </div>
+
+            <h2>How to Complete KCET Choice Selection 2026</h2>
+
+            <p>Follow these steps:</p>
+            <ol>
+                <li>Visit the official KEA counselling website.</li>
+                <li>Log in using your <strong>CET Number</strong> and password.</li>
+                <li>Check your allotted college and branch.</li>
+                <li>Read all four choices carefully.</li>
+                <li>Select the appropriate option.</li>
+                <li>Confirm your choice.</li>
+                <li>Download and save the confirmation receipt.</li>
+            </ol>
+
+            <h2>KCET Choice 1 – Accept the Seat and Exit Counselling</h2>
+
+            <p>Choose <strong>Choice 1</strong> if you are satisfied with the allotted college and course and do not want to participate in any further counselling rounds.</p>
+
+            <h3>What happens if you select Choice 1?</h3>
+            <ul>
+                <li>Accept the allotted seat.</li>
+                <li>Pay the prescribed admission fee.</li>
+                <li>Download the admission order.</li>
+                <li>Report to the allotted college within the deadline.</li>
+                <li>Confirm your joining through the KEA portal.</li>
+            </ul>
+
+            <h3>Important</h3>
+            <ul>
+                <li>You <strong>will not be considered</strong> for any further counselling rounds.</li>
+                <li>If you fail to report to the college within the specified time, your seat will be cancelled.</li>
+                <li>The admission fee may be forfeited as per KEA rules.</li>
+            </ul>
+
+            <p><strong>Best for:</strong> Candidates who have received their preferred college and branch.</p>
+
+            <h2>KCET Choice 2 – Accept the Seat and Wait for a Better Option</h2>
+
+            <p>Choose <strong>Choice 2</strong> if you are satisfied with your current allotment but still wish to participate in the next counselling round for a higher-preference college or branch.</p>
+
+            <h3>What happens?</h3>
+            <ul>
+                <li>Pay the admission fee.</li>
+                <li>Keep the currently allotted seat reserved.</li>
+                <li>Participate in the next counselling round.</li>
+            </ul>
+
+            <p>If you get a better option in the next round:</p>
+            <ul>
+                <li>Your current seat will be cancelled automatically.</li>
+                <li>The newly allotted seat will become your admission seat.</li>
+            </ul>
+
+            <p>If no better option is allotted:</p>
+            <ul>
+                <li>You will retain your existing seat.</li>
+            </ul>
+
+            <p><strong>Best for:</strong> Candidates who are happy with their current seat but want a chance to upgrade.</p>
+
+            <h2>KCET Choice 3 – Reject the Seat and Participate in the Next Round</h2>
+
+            <p>Candidates selecting <strong>Choice 3</strong> reject the allotted seat and participate in the next counselling round.</p>
+
+            <h3>What happens?</h3>
+            <ul>
+                <li>The current allotted seat is surrendered.</li>
+                <li>You remain eligible for the next round.</li>
+                <li>You may reorder your previously entered options.</li>
+            </ul>
+
+            <h3>Important</h3>
+            <p>Once you surrender your seat:</p>
+            <ul>
+                <li>It cannot be reclaimed.</li>
+                <li>There is <strong>no guarantee</strong> that you will get the same or a better seat in the next round.</li>
+                <li>Seat allotment will depend on merit, preferences, and seat availability.</li>
+            </ul>
+
+            <p><strong>Best for:</strong> Candidates who are not satisfied with the allotted college or branch and are willing to take the risk of getting a different seat.</p>
+
+            <h2>KCET Choice 4 – Exit the Counselling Process</h2>
+
+            <p>Choose <strong>Choice 4</strong> if you no longer wish to continue with KCET counselling or have already secured admission elsewhere.</p>
+
+            <h3>What happens?</h3>
+            <ul>
+                <li>Your allotted seat will be cancelled.</li>
+                <li>You will not be considered in any subsequent counselling rounds.</li>
+            </ul>
+
+            <p><strong>Best for:</strong> Candidates who have joined another college or no longer want admission through KCET.</p>
+
+            <h2>What Happens If You Do Not Select Any Choice?</h2>
+
+            <p>Candidates who fail to exercise any of the four choices within the prescribed deadline will have their allotted seat <strong>cancelled automatically</strong>.</p>
+
+            <p>They <strong>will not be allowed to participate in further counselling rounds</strong>.</p>
+
+            <p>Therefore, candidates should complete the choice selection before the deadline announced by KEA.</p>
+
+            <h2>What If No Seat Is Allotted?</h2>
+
+            <p>Candidates who were <strong>not allotted any seat</strong> in Round 1 <strong>do not need to submit any choice selection</strong>.</p>
+
+            <p>They will remain eligible to participate in the next counselling round.</p>
+
+            <h2>Which KCET Choice Should You Select?</h2>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Choice</th>
+                            <th>Meaning</th>
+                            <th>Eligible for Next Round</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Choice 1</td>
+                            <td>Accept seat and join</td>
+                            <td>❌ No</td>
+                        </tr>
+                        <tr>
+                            <td>Choice 2</td>
+                            <td>Accept seat and wait for upgrade</td>
+                            <td>✅ Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Choice 3</td>
+                            <td>Reject seat and try again</td>
+                            <td>✅ Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Choice 4</td>
+                            <td>Exit counselling</td>
+                            <td>❌ No</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Important Instructions</h2>
+
+            <ul>
+                <li>Read all options carefully before submitting your choice.</li>
+                <li>Once confirmed, your choice may not be changeable after the deadline.</li>
+                <li>Complete fee payment on time if required.</li>
+                <li>Download and keep a copy of the confirmation page.</li>
+                <li>Follow the official KEA schedule for admission and reporting.</li>
+            </ul>
+
+            <h2>FAQs</h2>
+
+            <p><strong>Q1. When does KCET 2026 Choice Selection start?</strong><br/>
+            The <strong>KCET Round 1 Choice Selection process begins on 16 July 2026</strong>.</p>
+
+            <p><strong>Q2. Which is the best choice after KCET seat allotment?</strong><br/>
+            It depends on your situation. If you are completely satisfied with your allotted seat, <strong>Choice 1</strong> is suitable. If you want to retain your current seat while trying for a better option, <strong>Choice 2</strong> is generally the preferred choice.</p>
+
+            <p><strong>Q3. What happens if I choose Choice 3?</strong><br/>
+            Your current seat will be surrendered, and you will participate in the next counselling round. However, there is no guarantee that you will receive the same or a better seat.</p>
+
+            <p><strong>Q4. What if I do not submit any choice?</strong><br/>
+            If you do not exercise any choice within the stipulated period, <strong>your allotted seat will be cancelled automatically</strong>, and you will not be eligible for further counselling rounds.</p>
+
+            <h2>Final Words</h2>
+
+            <p>The <strong>KCET 2026 Round 1 Choice Selection</strong>, starting on <strong>16 July 2026</strong>, is one of the most important stages of the counselling process. Before selecting <strong>Choice 1, Choice 2, Choice 3, or Choice 4</strong>, understand the implications of each option carefully. Selecting the right choice will help you secure your admission or improve your chances of getting a better college or branch in the subsequent counselling rounds.</p>
+        `
+    },
+    {
         id: "22",
         slug: "kcet-2026-first-round-final-seat-allotment-result-on-july-15",
         title: "KCET 2026 First Round Final Seat Allotment Result on July 15 – Check KEA Round 1 Allotment, Direct Link & Latest Updates",
