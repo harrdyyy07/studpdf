@@ -152,7 +152,10 @@ export async function POST(req: Request) {
     const folderPath = indexPage ? indexPage.replace('index.php', '') : '/MJ26cbcs/';
     const resultPagePath = `${folderPath}resultpage.php`;
 
-    const postData = `Token=${encodeURIComponent(token)}&lns=${encodeURIComponent(usn.toUpperCase())}&captchacode=${encodeURIComponent(captcha)}`;
+    const year = new Date().getFullYear();
+    const jsToken = Buffer.from(`student_access_${year}`).toString('base64');
+
+    const postData = `js_token=${encodeURIComponent(jsToken)}&Token=${encodeURIComponent(token)}&lns=${encodeURIComponent(usn.toUpperCase())}&captchacode=${encodeURIComponent(captcha)}`;
 
     console.log('Submitting request to official VTU path:', resultPagePath);
     const res = await request({

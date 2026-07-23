@@ -6,6 +6,16 @@ import { useRouter } from 'next/navigation';
 const slides = [
     {
         id: 1,
+        title: "Check VTU Results",
+        desc: "Check your semester results instantly, view detailed marksheets and analyze your performance.",
+        btnText: "CHECK RESULTS",
+        btnLink: "/student-tools/vtu-results",
+        bg: "linear-gradient(135deg, #7C3AED, #4338CA)",
+        bgText: "RESULTS",
+        isInstall: false,
+    },
+    {
+        id: 2,
         title: "Download VTU wise. App",
         desc: "Get instant access to VTU Notes, Papers, and updates on your phone.",
         btnText: "GET APP",
@@ -15,7 +25,7 @@ const slides = [
         isInstall: true,
     },
     {
-        id: 2,
+        id: 3,
         title: "Calculate Your SGPA",
         desc: "Easily calculate your Semester Grade Point Average with our modern calculator.",
         btnText: "CALCULATE SGPA",
@@ -25,7 +35,7 @@ const slides = [
         isInstall: false,
     },
     {
-        id: 3,
+        id: 4,
         title: "Previous Year Question Papers",
         desc: "Practice with officially solved previous year question papers to score high in exams.",
         btnText: "EXPLORE PAPERS",

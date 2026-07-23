@@ -1976,7 +1976,13 @@ export const siteData: SiteData = {
             {
                 sem: 5,
                 subjects: [
-                    { name: "Engineering Management and Entrepreneurship", code: "BEE501", credits: "4 CR", slug: "engineering-management-and-entrepreneurship-eme-bee501-vtu-notes", modules: [] },
+                    { name: "Engineering Management and Entrepreneurship", code: "BEE501", credits: "4 CR", slug: "engineering-management-and-entrepreneurship-eme-bee501-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "Engineering Management and Entrepreneurship-BEE501 Module-1 Notes", link: "https://drive.google.com/file/d/1q0jEqkfDXs00eHB1FT8QAlakljXyyp2S/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "Engineering Management and Entrepreneurship-BEE501 Module-2 Notes", link: "https://drive.google.com/file/d/1efRaSMisLzKzBKs-ioU4AOYgd9bEZGhY/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "Engineering Management and Entrepreneurship-BEE501 Module-3 Notes", link: "https://drive.google.com/file/d/1C0IU8GUanVg_R5E4XzEv3Fn7rx6yVM6J/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "Engineering Management and Entrepreneurship-BEE501 Module-4 Notes", link: "https://drive.google.com/file/d/1K2ANJFjpJ65z_xgLaOdjfNZ3DuOK8uWo/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "Engineering Management and Entrepreneurship-BEE501 Module-5 Notes", link: "https://drive.google.com/file/d/1DvcbSKZaSft4NA3kUOICdYHYyF35Lg3R/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Signals & DSP", code: "BEE502", credits: "4 CR", slug: "signals-and-dsp-sdsp-bee502-vtu-notes", modules: [] },
                     { name: "Power Electronics", code: "BEE503", credits: "4 CR", slug: "power-electronics-pe-bee503-vtu-notes", modules: [] },
                     { name: "Power Electronics Lab", code: "BEEL504", credits: "1 CR", slug: "power-electronics-lab-pel-beel504-vtu-notes", modules: [] },
