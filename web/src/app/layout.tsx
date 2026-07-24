@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -63,6 +64,12 @@ export default function RootLayout({
           crossOrigin="anonymous" 
           strategy="lazyOnload"
         />
+        <Script
+          async
+          src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"
+          custom-element="amp-auto-ads"
+          strategy="afterInteractive"
+        />
         <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
@@ -85,6 +92,11 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
+        {/* AMP Auto Ads */}
+        {React.createElement('amp-auto-ads', {
+          type: 'adsense',
+          'data-ad-client': 'ca-pub-5780720681894064',
+        })}
         <Preloader />
         <noscript>
           <iframe 
