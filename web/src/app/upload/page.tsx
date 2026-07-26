@@ -567,6 +567,40 @@ export default function UploadPage() {
                         <div className="form-group" id="files">
                             <label className="form-label font-bold">Upload the notes / materials <span className="required">*</span></label>
                             <p className="upload-tip">Maximum 5 PDF files allowed and Each file must be 15MB or smaller</p>
+
+                            <div style={{
+                                background: 'linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(56, 189, 248, 0.08) 100%)',
+                                border: '1px solid rgba(99, 102, 241, 0.25)',
+                                borderRadius: '12px',
+                                padding: '0.85rem 1.25rem',
+                                marginBottom: '1rem',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                flexWrap: 'wrap',
+                                gap: '0.75rem'
+                            }}>
+                                <div style={{ fontSize: '0.88rem', color: 'var(--text)' }}>
+                                    💡 <strong>Need to merge or compress your PDF before uploading?</strong> Use <span style={{ color: '#4f46e5', fontWeight: 800 }}>Seal PDF</span> — free, fast & zero limits!
+                                </div>
+                                <a 
+                                    href="https://seal-pdf.com/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        background: 'linear-gradient(135deg, #4f46e5, #06b6d4)',
+                                        color: '#ffffff',
+                                        padding: '0.45rem 1rem',
+                                        borderRadius: '20px',
+                                        fontSize: '0.82rem',
+                                        fontWeight: 800,
+                                        textDecoration: 'none',
+                                        whiteSpace: 'nowrap'
+                                    }}
+                                >
+                                    Open Seal PDF 🚀
+                                </a>
+                            </div>
                             
                             <div 
                                 className={`drag-drop-zone ${isDragActive ? 'active' : ''} ${errors.files ? 'has-error' : ''}`}

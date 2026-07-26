@@ -10,9 +10,33 @@ interface ToolCardProps {
     path: string;
     badge?: string;
     gradient: string;
+    isExternal?: boolean;
 }
 
-const ToolCard = ({ title, description, icon, path, badge, gradient }: ToolCardProps) => {
+const ToolCard = ({ title, description, icon, path, badge, gradient, isExternal }: ToolCardProps) => {
+    if (isExternal) {
+        return (
+            <a href={path} target="_blank" rel="noopener noreferrer" className="tools-card seal-featured-card">
+                <div className="tools-card-bg" style={{ background: gradient }} />
+                <div className="tools-card-inner">
+                    <div className="tools-card-header">
+                        <span className="tools-card-icon">{icon}</span>
+                        {badge && <span className="tools-card-badge" style={{ background: 'linear-gradient(135deg, #ef4444, #f97316)', color: '#ffffff' }}>{badge}</span>}
+                    </div>
+                    <h3 className="tools-card-title">{title}</h3>
+                    <p className="tools-card-desc">{description}</p>
+                    <div className="tools-card-footer">
+                        <span>Launch Seal PDF 🚀</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        );
+    }
+
     return (
         <Link href={path} className="tools-card">
             <div className="tools-card-bg" style={{ background: gradient }} />
@@ -37,6 +61,15 @@ const ToolCard = ({ title, description, icon, path, badge, gradient }: ToolCardP
 
 export default function StudentToolsDashboard() {
     const tools = [
+        {
+            title: 'Seal PDF — Free PDF Toolkit',
+            description: 'Merge multiple PDFs, compress document file size, convert PDF to Word/Images, split, protect and edit PDFs online for free with zero limits.',
+            icon: '🦭',
+            path: 'https://seal-pdf.com/',
+            badge: '🔥 FREE PDF SUITE',
+            gradient: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #8b5cf6 100%)',
+            isExternal: true
+        },
         {
             title: 'VTU Results Portal',
             description: 'Check your semester results instantly, view color-coded marksheets, solve captcha authentications for live scraping, and analyze your CGPA trend.',

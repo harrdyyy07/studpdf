@@ -2150,7 +2150,13 @@ export const siteData: SiteData = {
             {
                 sem: 5,
                 subjects: [
-                    { name: "Industrial Management & Entrepreneurship", code: "BME501", credits: "3 CR", slug: "industrial-management-entrepreneurship-ime-bme501-vtu-notes", modules: [] },
+                    { name: "Industrial Management & Entrepreneurship", code: "BME501", credits: "3 CR", slug: "industrial-management-entrepreneurship-ime-bme501-vtu-notes", modules: [
+                        { id: 1, name: "Module-1", desc: "Industrial Management and Entrepreneurship – BME501 Module-1 Notes", link: "https://drive.google.com/file/d/1Txr3U_jpTQoGilrDzNQ97iPT0eYUyWwN/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2", desc: "Industrial Management and Entrepreneurship – BME501 Module-2 Notes", link: "https://drive.google.com/file/d/11jCb8hb5hgLcKFMtEh9Z4bLmPrO6uaqA/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3", desc: "Industrial Management and Entrepreneurship – BME501 Module-3 Notes", link: "https://drive.google.com/file/d/148x4eKPsc23Jq8GddDOkxbwHzIAMJ3mA/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4", desc: "Industrial Management and Entrepreneurship – BME501 Module-4 Notes", link: "https://drive.google.com/file/d/18OS5zDxGM9zP2ANg6gxJbTGiJJtueQ42/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5", desc: "Industrial Management and Entrepreneurship – BME501 Module-5 Notes", link: "https://drive.google.com/file/d/1gq-xPokr-OwPGFZJzPPqIGkm3q4yiDaC/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Turbo Machines", code: "BME502", credits: "4 CR", slug: "turbo-machines-tm-bme502-vtu-notes", modules: [] },
                     { name: "Theory of Machines", code: "BME503", credits: "4 CR", slug: "theory-of-machines-tom-bme503-vtu-notes", modules: [] },
                     { name: "CNC Programming and 3D Printing Lab", code: "BME504", credits: "1 CR", slug: "cnc-programming-and-3d-printing-lab-cnc-bme504-vtu-notes", modules: [] },

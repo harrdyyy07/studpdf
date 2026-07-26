@@ -62,8 +62,6 @@ export default function Home() {
       <h1 className="sr-only">VTU Notes, Previous Question Papers & Study Materials | vtuwise</h1>
       <HeroSlider />
       
-
-
       <section id="branches" className="branches">
         <div className="container">
           <h2 className="section-title">Select Your Branch</h2>

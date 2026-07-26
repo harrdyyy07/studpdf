@@ -9,6 +9,7 @@ import WhatsAppPopup from "@/components/WhatsAppPopup";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 import AdSenseSideRails from "@/components/AdSenseSideRails";
 import SupportPopup from "@/components/SupportPopup";
+import SealPdfFloatingBanner from "@/components/SealPdfFloatingBanner";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vtuwise.in'),
@@ -112,6 +113,7 @@ export default function RootLayout({
         <WhatsAppPopup />
         <WhatsAppFloating />
         <SupportPopup />
+        <SealPdfFloatingBanner />
         <Footer />
       </body>
     </html>

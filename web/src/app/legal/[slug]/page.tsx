@@ -336,6 +336,12 @@ const legalContent: Record<string, LegalPage> = {
                     <p>We do not have a dedicated native app yet. However, our website is fully optimized for mobile devices. You can add <strong>vtuwise.in</strong> to your phone&apos;s home screen for an app-like experience.</p>
                 )
             },
+            {
+                heading: '8. Why do you add watermarks to PDF study materials and notes?',
+                content: (
+                    <p>Watermarks are added to study materials and notes on VTUwise to safeguard content integrity, prevent unauthorized commercial redistribution or piracy, credit original student &amp; faculty contributors, and maintain academic authenticity across our platform. If you wish to protect or watermark your personal study files and PDFs, you can use tools like <a href="https://seal-pdf.com/" target="_blank" rel="noopener noreferrer"><strong>Seal PDF</strong></a>.</p>
+                )
+            },
         ]
     }
 };
