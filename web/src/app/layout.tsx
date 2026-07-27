@@ -71,6 +71,18 @@ export default function RootLayout({
           custom-element="amp-auto-ads"
           strategy="afterInteractive"
         />
+        {/* Yandex Autoplacement 19658567 */}
+        <Script
+          async
+          src="https://yandex.ru/ads/system/context.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          async
+          data-page-id="19658567"
+          src="https://yandex.ru/ads/system/ap-loader.js"
+          strategy="afterInteractive"
+        />
         <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
