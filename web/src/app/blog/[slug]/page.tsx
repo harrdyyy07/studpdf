@@ -224,8 +224,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     border-left: 3px solid var(--post-accent, var(--primary));
                 }
                 .post-content strong { color: var(--text); font-weight: 700; }
-                .post-content a { color: var(--primary); text-decoration: none; font-weight: 600; }
-                .post-content a:hover { text-decoration: underline; }
+                .post-content a { color: #2563eb; text-decoration: underline; font-weight: 600; word-break: break-all; }
+                .post-content a:hover { color: #1d4ed8; text-decoration: underline; }
                 .post-content ul {
                     list-style: none; padding: 0; margin: 0.5rem 0 1rem;
                 }

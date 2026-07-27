@@ -13,6 +13,148 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "25",
+        slug: "karnataka-civil-police-constable-admit-card-2026-download-hall-ticket-exam-schedule",
+        title: "Karnataka Civil Police Constable Admit Card 2026: Download Hall Ticket, Exam Schedule & Important Instructions",
+        description: "Download Karnataka Civil Police Constable (CPC) Admit Card 2026 for August 2 exam. Check KEA hall ticket download link, exam schedule, RPC & KK timings, and dress code.",
+        date: "July 28, 2026",
+        readTime: "5 min read",
+        author: "vtuwise Team",
+        tag: "Exams & Recruitment",
+        imageBg: "linear-gradient(135deg, #1e3a8a, #0d9488, #2563eb)",
+        content: `
+            <p>The <strong>Karnataka Civil Police Constable (CPC) Recruitment Examination 2026</strong> is scheduled to be conducted on <strong>Sunday, 2 August 2026</strong>. Candidates appearing for the examination must download their <strong>admission ticket (hall ticket)</strong> from the official Karnataka Examinations Authority (KEA) portal before the exam date.</p>
+
+            <p>Before downloading the admit card, candidates should carefully select the appropriate exam type and enter their application details correctly.</p>
+
+            <h2>Official KEA Website & Direct Hall Ticket Download Link</h2>
+
+            <p>Direct Candidate Portal Login Link to download Admit Card / Hall Ticket:</p>
+            <p><a href="https://www.cetonline.karnataka.gov.in/KEA_EXAM_PORTAL/Forms/Candidates/Login" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;"><strong>https://www.cetonline.karnataka.gov.in/KEA_EXAM_PORTAL/Forms/Candidates/Login</strong></a></p>
+
+            <p>Visit the official KEA website for hall ticket download, bell timings, exam notifications, and other important updates:</p>
+            <img src="/images/police-admit-card.webp" alt="Karnataka Civil Police Constable Admit Card 2026">
+
+            <p><a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;"><strong>https://cetonline.karnataka.gov.in/kea/</strong></a></p>
+
+            <p>Candidates are advised to rely only on official KEA portals for authentic information regarding the examination.</p>
+
+            <h2>How to Download the Karnataka Civil Police Constable Admit Card 2026</h2>
+
+            <p>Follow these steps to download your admission ticket:</p>
+
+            <ol>
+                <li>Visit the <a href="https://www.cetonline.karnataka.gov.in/KEA_EXAM_PORTAL/Forms/Candidates/Login" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;"><strong>KEA Candidate Login Portal</strong></a>.</li>
+                <li>Select the appropriate <strong>Exam Type</strong>.</li>
+                <li>Enter your <strong>Application Number / Enrollment ID</strong> accurately.</li>
+                <li>Enter the <strong>first four letters of the candidate's name</strong> exactly as entered in the application form.</li>
+                <li>Verify the details and submit.</li>
+                <li>Download and print your admission ticket for future reference.</li>
+            </ol>
+
+            <h2>Karnataka Civil Police Constable Exam Schedule 2026</h2>
+
+            <p>The examination will be conducted on <strong>Sunday, 2 August 2026</strong>, as per the following schedule:</p>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Examination</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Civil Police Constable (RPC) – General Knowledge</td>
+                            <td>2 August 2026 (Sunday)</td>
+                            <td>10:30 AM – 12:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Civil Police Constable (KK) – General Knowledge</td>
+                            <td>2 August 2026 (Sunday)</td>
+                            <td>2:30 PM – 4:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Candidates should arrive at the examination centre well before the reporting time to complete the verification process smoothly.</p>
+
+            <h2>Bell Timings</h2>
+
+            <p>KEA will publish the detailed <strong>bell timings</strong>, reporting schedule, gate closing time, and examination instructions on its official website.</p>
+
+            <p>Candidates should regularly check the KEA portal to avoid missing any important announcements.</p>
+
+            <h2>Dress Code Guidelines</h2>
+
+            <p>All candidates must strictly follow the <strong>dress code prescribed by KEA</strong>. Failure to comply with the dress code may result in delays during security checks or denial of entry into the examination centre.</p>
+
+            <p>Candidates should carefully read the dress code instructions available on the official KEA website before the examination day.</p>
+
+            <h2>Details Required to Download the Hall Ticket</h2>
+
+            <p>Keep the following information ready before accessing the admit card portal:</p>
+
+            <ul>
+                <li>Application Number or Enrollment ID</li>
+                <li>First four letters of the candidate's name (exactly as entered during registration)</li>
+                <li>Stable internet connection</li>
+                <li>Printer (recommended for a hard copy)</li>
+            </ul>
+
+            <h2>Important Instructions for Candidates</h2>
+
+            <ul>
+                <li>Select the correct examination type before downloading the hall ticket.</li>
+                <li>Enter your application details carefully to avoid login errors.</li>
+                <li>Verify all personal and examination details printed on the admit card.</li>
+                <li>Carry a printed copy of the admission ticket to the examination centre.</li>
+                <li>Reach the exam venue well before the reporting time.</li>
+                <li>Follow all examination guidelines issued by KEA.</li>
+                <li>Adhere to the prescribed dress code and security instructions.</li>
+                <li>Keep a valid photo identity proof ready for verification.</li>
+            </ul>
+
+            <h2>Common Errors While Downloading the Admit Card</h2>
+
+            <p>If you are unable to download your hall ticket, check the following:</p>
+
+            <ul>
+                <li>Incorrect Application Number or Enrollment ID</li>
+                <li>Incorrect first four letters of your name</li>
+                <li>Wrong exam type selected</li>
+                <li>Browser cache or connectivity issues</li>
+                <li>High server traffic during peak hours</li>
+            </ul>
+
+            <p>If the issue persists, contact KEA through the official website for assistance.</p>
+
+            <h2>Frequently Asked Questions (FAQs)</h2>
+
+            <h3>When is the Karnataka Civil Police Constable Exam 2026?</h3>
+            <p>The examination will be held on <strong>Sunday, 2 August 2026</strong>.</p>
+
+            <h3>What is the exam timing for the RPC examination?</h3>
+            <p>The <strong>Civil Police Constable (RPC)</strong> examination will be conducted from <strong>10:30 AM to 12:00 PM</strong>.</p>
+
+            <h3>What is the timing for the KK examination?</h3>
+            <p>The <strong>Civil Police Constable (KK)</strong> examination will be conducted from <strong>2:30 PM to 4:00 PM</strong>.</p>
+
+            <h3>What details are required to download the admit card?</h3>
+            <p>Candidates need their <strong>Application Number or Enrollment ID</strong> and the <strong>first four letters of their name</strong>, exactly as entered during registration.</p>
+
+            <h3>Is following the dress code mandatory?</h3>
+            <p>Yes. Candidates must follow the official KEA dress code and examination guidelines published on the KEA website.</p>
+
+            <h2>Conclusion</h2>
+
+            <p>Candidates appearing for the <strong>Karnataka Civil Police Constable Recruitment Examination 2026</strong> should download their admission ticket as early as possible and carefully verify all the information printed on it. Ensure that you carry the hall ticket along with a valid photo ID, follow the prescribed dress code, and arrive at the examination centre well before the scheduled reporting time. Regularly visit the official KEA website for the latest updates regarding bell timings, examination instructions, and any important announcements.</p>
+        `
+    },
+    {
         id: "24",
         slug: "why-we-add-watermarks-to-vtu-notes-pdf-study-materials-guide",
         title: "Why We Add Watermarks to Study Notes & How to Protect Your Academic PDFs",
