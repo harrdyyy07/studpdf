@@ -1,4 +1,6 @@
 import { MetadataRoute } from 'next';
+
+export const dynamic = 'force-static';
 import { siteData } from '@/data/notesData';
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -4,6 +4,8 @@
   "description": "",
   "main": "auth.js",
   "scripts": {
+    "build": "npm --prefix web run build",
+    "deploy": "npm run build && wrangler deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
