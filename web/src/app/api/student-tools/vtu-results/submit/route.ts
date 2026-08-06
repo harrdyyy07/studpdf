@@ -1,6 +1,4 @@
 import { NextResponse } from 'next/server';
-
-export const dynamic = 'force-static';
 import https from 'https';
 
 interface SubjectResult {

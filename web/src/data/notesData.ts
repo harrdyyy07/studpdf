@@ -1860,6 +1860,17 @@ export const siteData: SiteData = {
                         { id: 3, name: "Module-3 Notes", desc: "Computer Networks and Protocols-BEC702 Module-3 Notes", link: "https://drive.google.com/file/d/13jg70DD1dnwBhKFah5xHFDvAxz0in9Bw/view?usp=drive_link", type: "notes" },
                         { id: 4, name: "Module-4 Notes", desc: "Computer Networks and Protocols-BEC702 Module-4 Notes", link: "https://drive.google.com/file/d/1WffObmmJLr3MAVPBLrbMsoFAG5-7KZWe/view?usp=drive_link", type: "notes" },
                         { id: 5, name: "Module-5 Notes", desc: "Computer Networks and Protocols-BEC702 Module-5 Notes", link: "https://drive.google.com/file/d/18yU86vx3cTVFdwWBIdWd2_QcHiNQaT93/view?usp=drive_link", type: "notes" }
+                    ]},
+                    {name:"Wireless Communication Systems", code: "BEC703", credits: "3 CR", slug: "wireless-communication-systems-wcs-bec703-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "Wireless Communication Systems-BEC703 Module-1 Notes", link: "https://drive.google.com/file/d/1dJZpHM4ggpduV0Ubk9kgAMbRNECn0xBF/view?usp=drive_link", type: "notes" },
+                        { id: 1, name: "Module-1 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-1 Notes-2", link: "https://drive.google.com/file/d/1HXzj88P1yIw6lddxOaUsEuDBhjYTJN0L/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "Wireless Communication Systems-BEC703 Module-2 Notes", link: "https://drive.google.com/file/d/1_gfH8TqFNsPbKvLBgHNMpWHFZfb4yiTJ/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-2 Notes-2", link: "https://drive.google.com/file/d/1TTvCisvRRLgUnV4m1s52KmQ3JJcLtoNT/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "Wireless Communication Systems-BEC703 Module-3 Notes", link: "https://drive.google.com/file/d/14jofm7P1zOsOOHWNIVqUfOox0bzH4hD3/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-3 Notes-2", link: "https://drive.google.com/file/d/1eLsQ0C7uJLIEROWmmLG4D0uJC2XWgdaZ/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "Wireless Communication Systems-BEC703 Module-4 Notes", link: "https://drive.google.com/file/d/1af2prl4rAuyNBwC-kDVs4nodbRIHgNYe/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-4 Notes-2", link: "https://drive.google.com/file/d/1FZU60esTPnId0J9ndm4BXxYfCfb1Ncld/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "Wireless Communication Systems-BEC703 Module-5 Notes", link: "https://drive.google.com/file/d/1W39GDwJmXmlV4nK4wFZlHnBCoZhrEAOP/view?usp=drive_link", type: "notes" }
                     ]}
                 ]
             }

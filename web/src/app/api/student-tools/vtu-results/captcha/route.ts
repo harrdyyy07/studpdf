@@ -1,6 +1,4 @@
 import { NextResponse } from 'next/server';
-
-export const dynamic = 'force-static';
 import https from 'https';
 
 function request(options: https.RequestOptions, postData: string | null = null): Promise<{ statusCode?: number, headers: any, body: Buffer }> {
