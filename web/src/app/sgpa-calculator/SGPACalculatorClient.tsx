@@ -5,23 +5,23 @@ import { calculatorData } from '@/data/calculatorData';
 
 const getGradeAndPoints = (marks: number) => {
     if (marks < 40) return { grade: 'F', points: 0 };
-    if (marks >= 90) return { grade: 'S+', points: 10 };
-    if (marks >= 80) return { grade: 'S', points: 9 };
+    if (marks >= 90) return { grade: 'O', points: 10 };
+    if (marks >= 80) return { grade: 'A+', points: 9 };
     if (marks >= 70) return { grade: 'A', points: 8 };
-    if (marks >= 60) return { grade: 'B', points: 7 };
-    if (marks >= 50) return { grade: 'C', points: 6 };
-    if (marks >= 45) return { grade: 'D', points: 5 };
-    return { grade: 'E', points: 4 };
+    if (marks >= 60) return { grade: 'B+', points: 7 };
+    if (marks >= 55) return { grade: 'B', points: 6 };
+    if (marks >= 50) return { grade: 'C', points: 5 };
+    return { grade: 'P', points: 4 };
 };
 
 const gradeTable = [
-    { range: 'M ≥ 90', grade: 'S+ (Outstanding)', pts: 10, color: '#10b981' },
-    { range: '80 ≤ M < 90', grade: 'S (Excellent)', pts: 9, color: '#3b82f6' },
+    { range: 'M ≥ 90', grade: 'O (Outstanding)', pts: 10, color: '#10b981' },
+    { range: '80 ≤ M < 90', grade: 'A+ (Excellent)', pts: 9, color: '#3b82f6' },
     { range: '70 ≤ M < 80', grade: 'A (Very Good)', pts: 8, color: '#6366f1' },
-    { range: '60 ≤ M < 70', grade: 'B (Good)', pts: 7, color: '#8b5cf6' },
-    { range: '50 ≤ M < 60', grade: 'C (Average)', pts: 6, color: '#f59e0b' },
-    { range: '45 ≤ M < 50', grade: 'D (Satisfactory)', pts: 5, color: '#f97316' },
-    { range: '40 ≤ M < 45', grade: 'E (Pass)', pts: 4, color: '#ef4444' },
+    { range: '60 ≤ M < 70', grade: 'B+ (Good)', pts: 7, color: '#8b5cf6' },
+    { range: '55 ≤ M < 60', grade: 'B (Above Avg)', pts: 6, color: '#8b5cf6' },
+    { range: '50 ≤ M < 55', grade: 'C (Average)', pts: 5, color: '#f59e0b' },
+    { range: '40 ≤ M < 50', grade: 'P (Pass)', pts: 4, color: '#f97316' },
     { range: 'M < 40', grade: 'F (Fail)', pts: 0, color: '#dc2626' },
 ];
 
@@ -71,9 +71,13 @@ const SGPACalculator = () => {
                     <div className="calc-hero-blob-a" />
                     <div className="calc-hero-blob-b" />
                     <div className="calc-hero-inner">
-                        <div className="calc-eyebrow">📐 VTUwise Calculators</div>
-                        <h1 className="calc-hero-title">SGPA Calculator</h1>
-                        <p className="calc-hero-sub">Calculate your Semester Grade Point Average for any VTU scheme, branch, and semester — instantly.</p>
+                        <div className="calc-eyebrow">📐 VTUwise Calculators • 2022 & 2025 Scheme</div>
+                        <h1 className="calc-hero-title">VTU SGPA Calculator</h1>
+                        <p className="calc-hero-sub">Calculate your Semester Grade Point Average (SGPA) for VTU 2022 scheme and 2025 scheme across all engineering branches and semesters — instantly and accurately.</p>
+                        <div className="calc-hero-badges">
+                            <span className="calc-hero-badge">✨ VTU SGPA Cal for 2022 Scheme</span>
+                            <span className="calc-hero-badge">⚡ VTU SGPA Cal for 2025 Scheme</span>
+                        </div>
                         <button className="calc-grade-btn" onClick={() => setShowModal(true)}>
                             View Grading System ↗
                         </button>
@@ -247,6 +251,57 @@ const SGPACalculator = () => {
                             </div>
                         </div>
                     )}
+
+                    {/* ── SEO & Guide Section ───────────────────────────── */}
+                    <div className="calc-card calc-info-section no-print">
+                        <h2 className="calc-info-title">
+                            📚 VTU SGPA Calculator for 2022 Scheme & 2025 Scheme
+                        </h2>
+                        <p className="calc-info-text">
+                            Welcome to the official <strong>VTUwise SGPA Calculator</strong> — tailored for Visvesvaraya Technological University (VTU) engineering students. Whether you need a <strong>vtu sgpa cal for 2022 scheme</strong> or <strong>vtu sgpa cal for 2025 scheme</strong>, our calculator provides accurate, credit-weighted semester grade calculations across all B.E. / B.Tech branches.
+                        </p>
+
+                        <div className="calc-info-grid">
+                            <div className="calc-info-box">
+                                <h3>🎯 VTU SGPA Cal for 2022 Scheme</h3>
+                                <p>
+                                    Supports all 1st to 8th semester subjects under the 2022 Choice Based Credit System (CBCS), including Computer Science, AI & ML, ECE, EEE, Civil, and Mechanical streams.
+                                </p>
+                            </div>
+                            <div className="calc-info-box">
+                                <h3>🚀 VTU SGPA Cal for 2025 Scheme</h3>
+                                <p>
+                                    Features updated 2025 scheme curriculum for Physics (P) and Chemistry (C) cycles, including core Engineering Science, Python, C programming, Emerging Tech, and Soft Skills modules.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="calc-faq-block">
+                            <h3>Frequently Asked Questions (VTU SGPA Calculation)</h3>
+                            <div className="calc-faq-item">
+                                <h4>How to calculate VTU SGPA for 2022 & 2025 Scheme?</h4>
+                                <p>
+                                    Select your scheme (2022 Scheme or 2025 Scheme), branch, and semester, enter your subject marks out of 100, and click <strong>Calculate SGPA</strong>. The formula used is:
+                                    <br />
+                                    <code>SGPA = Sum(Grade Points × Credits) / Total Credits</code>
+                                </p>
+                            </div>
+                            <div className="calc-faq-item">
+                                <h4>How to convert VTU SGPA to Percentage?</h4>
+                                <p>
+                                    As per VTU regulations, SGPA can be converted to percentage using the formula:
+                                    <br />
+                                    <code>Percentage (%) = (SGPA - 0.75) × 10</code>
+                                </p>
+                            </div>
+                            <div className="calc-faq-item">
+                                <h4>What is the VTU Grading Scale?</h4>
+                                <p>
+                                    VTU uses a 10-point grading system for 2022/2025 scheme: <strong>O (90-100% = 10 pts)</strong>, <strong>A+ (80-89% = 9 pts)</strong>, <strong>A (70-79% = 8 pts)</strong>, <strong>B+ (60-69% = 7 pts)</strong>, <strong>B (55-59% = 6 pts)</strong>, <strong>C (50-54% = 5 pts)</strong>, <strong>P (40-49% = 4 pts)</strong>, and <strong>F (&lt;40% = 0 pts)</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -310,8 +365,16 @@ const SGPACalculator = () => {
                 }
                 .calc-hero-sub {
                     color: rgba(199,210,254,0.75);
-                    font-size: 1rem; max-width: 500px; line-height: 1.7;
-                    margin-bottom: 1.5rem;
+                    font-size: 1rem; max-width: 550px; line-height: 1.7;
+                    margin-bottom: 1.25rem;
+                }
+                .calc-hero-badges {
+                    display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem;
+                }
+                .calc-hero-badge {
+                    background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+                    color: rgba(224,231,255,0.95); font-size: 0.75rem; font-weight: 700;
+                    padding: 0.35rem 0.85rem; border-radius: 999px; backdrop-filter: blur(4px);
                 }
                 .calc-grade-btn {
                     display: inline-flex; align-items: center; gap: 0.4rem;
@@ -321,6 +384,29 @@ const SGPACalculator = () => {
                     transition: background 0.2s; backdrop-filter: blur(6px);
                 }
                 .calc-grade-btn:hover { background: rgba(255,255,255,0.22); }
+
+                /* SEO info section */
+                .calc-info-section { margin-top: 1rem; }
+                .calc-info-title { font-size: 1.25rem; font-weight: 900; color: var(--text); margin-bottom: 0.75rem; letter-spacing: -0.02em; }
+                .calc-info-text { font-size: 0.9rem; line-height: 1.6; color: var(--text-muted); margin-bottom: 1.5rem; }
+                .calc-info-text strong { color: var(--text); }
+                .calc-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.75rem; }
+                @media (max-width: 640px) { .calc-info-grid { grid-template-columns: 1fr; } }
+                .calc-info-box {
+                    background: var(--background); border: 1px solid var(--surface-border);
+                    border-radius: 1rem; padding: 1.25rem;
+                }
+                .calc-info-box h3 { font-size: 0.95rem; font-weight: 800; color: var(--text); margin-bottom: 0.5rem; }
+                .calc-info-box p { font-size: 0.825rem; line-height: 1.55; color: var(--text-muted); }
+                .calc-faq-block { display: flex; flex-direction: column; gap: 1rem; border-top: 1px solid var(--surface-border); padding-top: 1.5rem; }
+                .calc-faq-block h3 { font-size: 1.05rem; font-weight: 800; color: var(--text); margin-bottom: 0.25rem; }
+                .calc-faq-item {
+                    background: var(--background); border: 1px solid var(--surface-border);
+                    border-radius: 0.9rem; padding: 1rem 1.25rem;
+                }
+                .calc-faq-item h4 { font-size: 0.875rem; font-weight: 800; color: var(--primary); margin-bottom: 0.35rem; }
+                .calc-faq-item p { font-size: 0.825rem; line-height: 1.5; color: var(--text-muted); }
+                .calc-faq-item code { background: rgba(99,102,241,0.1); color: var(--primary); padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; }
 
                 /* body */
                 .calc-body {

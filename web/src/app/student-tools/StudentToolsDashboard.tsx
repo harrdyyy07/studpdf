@@ -111,10 +111,11 @@ export default function StudentToolsDashboard() {
             gradient: 'linear-gradient(135deg, #8b5cf6 0%, #d946ef 100%)'
         },
         {
-            title: 'SGPA Calculator',
-            description: 'Input your VTU semester grades and credits to compute your Semester Grade Point Average accurately and instantly.',
+            title: 'VTU SGPA Calculator',
+            description: 'Calculate your VTU SGPA for 2022 scheme and 2025 scheme across all engineering branches and semesters accurately and instantly.',
             icon: '📈',
             path: '/sgpa-calculator',
+            badge: '2022 & 2025 Scheme',
             gradient: 'linear-gradient(135deg, #f59e0b 0%, #d97706 100%)'
         },
         {
