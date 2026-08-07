@@ -1,43 +1,14 @@
 import { NextResponse } from 'next/server';
 
-export const dynamic = 'force-static';
-import https from 'https';
-
-function request(options: https.RequestOptions, postData: string | null = null): Promise<{ statusCode?: number, headers: any, body: Buffer }> {
-  return new Promise((resolve, reject) => {
-    const req = https.request(options, (res) => {
-      let data: Buffer[] = [];
-      res.on('data', (chunk) => data.push(chunk));
-      res.on('end', () => {
-        resolve({
-          statusCode: res.statusCode,
-          headers: res.headers,
-          body: Buffer.concat(data)
-        });
-      });
-    });
-    req.on('error', reject);
-    if (postData) {
-      req.write(postData);
-    }
-    req.end();
-  });
-}
-
 // Dynamically discover subpage index path for a given exam cycle index page
 async function getIndexPageForCycle(cycleFile: string): Promise<string> {
   const agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
   
-  const res = await request({
-    hostname: 'results.vtu.ac.in',
-    port: 443,
-    path: `/${cycleFile}`,
-    method: 'GET',
-    headers: { 'User-Agent': agent },
-    rejectUnauthorized: false
+  const res = await fetch(`https://results.vtu.ac.in/${cycleFile}`, {
+    headers: { 'User-Agent': agent }
   });
 
-  const html = res.body.toString();
+  const html = await res.text();
   // Search for the first CBCS/index subpage link, e.g. D25J26Ecbcs/index.php
   const cbcsMatch = html.match(/window\.open\s*\(\s*['"]([a-zA-Z0-9_]+\/index\.php)['"]\s*,\s*['"]result['"]/i);
   if (cbcsMatch) {
@@ -66,16 +37,11 @@ async function findActivePaths(targetCycle: string | null): Promise<{ indexPage:
       cycleFile = `index${targetCycle}.php`;
     } else {
       // Fetch main portal index to get latest
-      const res1 = await request({
-        hostname: 'results.vtu.ac.in',
-        port: 443,
-        path: '/index.php',
-        method: 'GET',
-        headers: { 'User-Agent': agent },
-        rejectUnauthorized: false
+      const res1 = await fetch('https://results.vtu.ac.in/index.php', {
+        headers: { 'User-Agent': agent }
       });
       
-      const html1 = res1.body.toString();
+      const html1 = await res1.text();
       const indexMatch = html1.match(/window\.open\s*\(\s*['"](index[a-zA-Z0-9]+\.php)['"]\s*,\s*['"]result['"]/i);
       cycleFile = indexMatch ? indexMatch[1] : 'indexMJ26.php';
     }
@@ -105,20 +71,17 @@ export async function GET(req: Request) {
     const { indexPage } = await findActivePaths(cycle);
     console.log('Using active index page path:', indexPage);
 
-    const res1 = await request({
-      hostname: 'results.vtu.ac.in',
-      port: 443,
-      path: indexPage,
-      method: 'GET',
-      headers: { 'User-Agent': agent },
-      rejectUnauthorized: false
+    const res1 = await fetch(`https://results.vtu.ac.in${indexPage}`, {
+      headers: { 'User-Agent': agent }
     });
 
-    const html = res1.body.toString();
+    const html = await res1.text();
 
-    // Get cookie
-    const setCookie = res1.headers['set-cookie'] || [];
-    const cookiesList = setCookie.map((c: string) => c.split(';')[0]);
+    // Get cookie header
+    const getSetCookie = (res1.headers as any).getSetCookie ? (res1.headers as any).getSetCookie() : [];
+    const setCookieHeader = res1.headers.get('set-cookie');
+    const rawCookies: string[] = getSetCookie.length > 0 ? getSetCookie : (setCookieHeader ? [setCookieHeader] : []);
+    const cookiesList = rawCookies.map((c: string) => c.split(';')[0]);
     const sessCookie = cookiesList.find((c: string) => c.startsWith('VISRE='));
 
     if (!sessCookie) {
@@ -144,20 +107,16 @@ export async function GET(req: Request) {
     }
 
     // Fetch Captcha Image
-    const res2 = await request({
-      hostname: 'results.vtu.ac.in',
-      port: 443,
-      path: captchaPath,
-      method: 'GET',
+    const res2 = await fetch(`https://results.vtu.ac.in${captchaPath}`, {
       headers: {
         'User-Agent': agent,
         'Cookie': sessCookie,
         'Referer': `https://results.vtu.ac.in${indexPage}`
-      },
-      rejectUnauthorized: false
+      }
     });
 
-    const base64 = res2.body.toString('base64');
+    const arrayBuffer = await res2.arrayBuffer();
+    const base64 = Buffer.from(arrayBuffer).toString('base64');
     const captchaDataUrl = `data:image/png;base64,${base64}`;
 
     return NextResponse.json({
@@ -172,3 +131,4 @@ export async function GET(req: Request) {
     return NextResponse.json({ success: false, error: error.message || 'Internal server error' }, { status: 500 });
   }
 }
+

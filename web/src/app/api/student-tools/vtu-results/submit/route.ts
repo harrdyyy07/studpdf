@@ -1,8 +1,5 @@
 import { NextResponse } from 'next/server';
 
-export const dynamic = 'force-static';
-import https from 'https';
-
 interface SubjectResult {
   subject_code: string;
   subject_name: string;
@@ -11,27 +8,6 @@ interface SubjectResult {
   total: string;
   result: string;
   grade: string;
-}
-
-function request(options: https.RequestOptions, postData: string | null = null): Promise<{ statusCode?: number, headers: any, body: Buffer }> {
-  return new Promise((resolve, reject) => {
-    const req = https.request(options, (res) => {
-      let data: Buffer[] = [];
-      res.on('data', (chunk) => data.push(chunk));
-      res.on('end', () => {
-        resolve({
-          statusCode: res.statusCode,
-          headers: res.headers,
-          body: Buffer.concat(data)
-        });
-      });
-    });
-    req.on('error', reject);
-    if (postData) {
-      req.write(postData);
-    }
-    req.end();
-  });
 }
 
 function cleanText(html: string): string {
@@ -160,22 +136,18 @@ export async function POST(req: Request) {
     const postData = `js_token=${encodeURIComponent(jsToken)}&Token=${encodeURIComponent(token)}&lns=${encodeURIComponent(usn.toUpperCase())}&captchacode=${encodeURIComponent(captcha)}`;
 
     console.log('Submitting request to official VTU path:', resultPagePath);
-    const res = await request({
-      hostname: 'results.vtu.ac.in',
-      port: 443,
-      path: resultPagePath,
+    const res = await fetch(`https://results.vtu.ac.in${resultPagePath}`, {
       method: 'POST',
       headers: {
         'User-Agent': agent,
         'Cookie': sessionId,
         'Referer': `https://results.vtu.ac.in${indexPage || '/MJ26cbcs/index.php'}`,
         'Content-Type': 'application/x-www-form-urlencoded',
-        'Content-Length': Buffer.byteLength(postData)
       },
-      rejectUnauthorized: false
-    }, postData);
+      body: postData,
+    });
 
-    const html = res.body.toString();
+    const html = await res.text();
     const parsedData = parseVtuHtml(html);
 
     return NextResponse.json({
