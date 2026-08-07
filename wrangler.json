@@ -7,6 +7,9 @@
   "assets": {
     "directory": "web/.open-next/assets",
     "binding": "ASSETS"
+  },
+  "vars": {
+    "UPLOADTHING_TOKEN": "eyJhcGlLZXkiOiJza19saXZlXzAwNWNiN2YwMzc2ZDFhZGU5ZjBhOWM5NzdkMTA2ODc2NTIwZjkyMGIxY2JjYTg3Y2VlM2Y4NWQ2ZWNhYjRiZWYiLCJhcHBJZCI6ImhmMXA4b2E1bzYiLCJyZWdpb25zIjpbInNlYTEiXX0=",
+    "GOOGLE_SHEET_WEBHOOK_URL": "https://script.google.com/macros/s/AKfycbxMcAAgcAZfPldSYOW63dBZBCO7u7zkLNs2RaGecM9oI7HMQXM_K-EgQGJKwbx3epf7/exec"
   }
 }
-

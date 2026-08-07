@@ -3,9 +3,9 @@ import { NextResponse } from 'next/server';
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const webhookUrl = process.env.GOOGLE_SHEET_WEBHOOK_URL;
+    const webhookUrl = process.env.GOOGLE_SHEET_WEBHOOK_URL || "https://script.google.com/macros/s/AKfycbxMcAAgcAZfPldSYOW63dBZBCO7u7zkLNs2RaGecM9oI7HMQXM_K-EgQGJKwbx3epf7/exec";
 
-    if (!webhookUrl || webhookUrl === 'your_apps_script_web_app_url_here') {
+    if (!webhookUrl) {
       return NextResponse.json({ 
         success: false, 
         error: 'GOOGLE_SHEET_WEBHOOK_URL is not configured on the server. Please check your .env file.' 
