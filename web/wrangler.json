@@ -1,12 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "studpdf",
-  "main": "web/.open-next/worker.js",
+  "main": ".open-next/worker.js",
   "compatibility_date": "2026-01-01",
   "compatibility_flags": ["nodejs_compat"],
   "assets": {
-    "directory": "web/.open-next/assets",
+    "directory": ".open-next/assets",
     "binding": "ASSETS"
   }
 }
-
