@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 interface AdSenseSideRailsProps {
   client?: string;
@@ -11,6 +12,7 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
   client = 'ca-pub-5780720681894064',
   slot = '7758281762'
 }) => {
+  const pathname = usePathname();
   const [shouldShow, setShouldShow] = useState(false);
   const [isClosedByUser, setIsClosedByUser] = useState(false);
 
@@ -34,8 +36,8 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
     if (typeof window === 'undefined') return;
 
     const checkSize = () => {
-      const matchesWidth = window.innerWidth >= 1440;
-      const matchesHeight = window.innerHeight >= 700;
+      const matchesWidth = window.innerWidth >= 1200;
+      const matchesHeight = window.innerHeight >= 600;
       setShouldShow(matchesWidth && matchesHeight);
     };
 
@@ -47,19 +49,20 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
   }, []);
 
   useEffect(() => {
-    if (!shouldShow) return;
+    if (!shouldShow || isClosedByUser) return;
 
     // Small delay to ensure the elements are fully paint-rendered in the DOM tree
     const timer = setTimeout(() => {
       try {
-        const adsbygoogle = (window as any).adsbygoogle || [];
+        // Ensure window.adsbygoogle is defined directly on the window object
+        (window as any).adsbygoogle = (window as any).adsbygoogle || [];
         
         // Find all ins.adsbygoogle elements that have not been processed yet
         const unprocessed = document.querySelectorAll('ins.adsbygoogle:not([data-adsbygoogle-status])');
         
         unprocessed.forEach(() => {
           try {
-            adsbygoogle.push({});
+            (window as any).adsbygoogle.push({});
           } catch (pushErr) {
             console.error('AdSense push error:', pushErr);
           }
@@ -67,17 +70,17 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
       } catch (err) {
         console.error('AdSense side rails push error:', err);
       }
-    }, 150);
+    }, 200);
 
     return () => clearTimeout(timer);
-  }, [shouldShow]);
+  }, [shouldShow, isClosedByUser, pathname]);
 
   if (!shouldShow || isClosedByUser) return null;
 
   return (
     <>
       {/* Left Side Rail Ad */}
-      <div className="ad-rail ad-rail-left no-print" aria-hidden="true">
+      <div className="ad-rail ad-rail-left no-print">
         <ins
           className="adsbygoogle"
           style={{ display: 'block', width: '100%', height: '100%' }}
@@ -89,7 +92,7 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
       </div>
 
       {/* Right Side Rail Ad */}
-      <div className="ad-rail ad-rail-right no-print" aria-hidden="true">
+      <div className="ad-rail ad-rail-right no-print">
         <button 
           onClick={handleClose} 
           className="ad-rail-close" 
