@@ -70,7 +70,7 @@ export const blogPosts: BlogPost[] = [
                         </tr>
                         <tr>
                             <td><strong>Official Website</strong></td>
-                            <td>KEA UGCET 2026 Portal</td>
+                            <td>KEA UGCET 2026 Portal </td>
                         </tr>
                     </tbody>
                 </table>
