@@ -13,6 +13,143 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "26",
+        slug: "ugcet-2026-second-round-mock-seat-allotment-results-announced",
+        title: "UGCET-2026 Second Round Mock Seat Allotment Results Announced: Check Result Link",
+        description: "The Karnataka Examinations Authority (KEA) has announced the UGCET/UGNEET-2026 Second Round Mock Seat Allotment Results on August 17, 2026. Check the direct result link, key details, and next steps.",
+        date: "August 17, 2026",
+        readTime: "4 min read",
+        author: "vtuwise Team",
+        tag: "KCET Updates",
+        imageBg: "linear-gradient(135deg, #1e3a8a, #0d9488, #2563eb)",
+        content: `
+            <p>The <strong>Karnataka Examinations Authority (KEA)</strong> has announced the <strong>UGCET/UGNEET-2026 Second Round Mock Seat Allotment Results</strong> on <strong>August 17, 2026</strong>. Candidates who participated in the second-round counselling and completed their option entry can now check their tentative seat allotment through the official KEA portal.</p>
+
+            <p>The mock allotment is intended to help candidates understand the likely college and course they may receive based on their <strong>rank, category, available seats and options entered during counselling</strong>. KEA has also published the notification for the second-round mock allotment on its official UGCET-2026 admission page.</p>
+
+            <p style="text-align: center; margin: 20px 0;">
+                <a href="https://keaonline.karnataka.gov.in/main/checkresult.php" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/kcet 2nd round.webp" alt="KCET 2026 Second Round Mock Seat Allotment Result" style="max-width: 100%; height: auto; border-radius: 8px; cursor: pointer;" />
+                </a>
+            </p>
+
+            <h2>UGCET 2026 Second Round Mock Allotment Result: Key Details</h2>
+
+            <div class="table-container">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th>Particular</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Counselling</strong></td>
+                            <td>UGCET/UGNEET 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Round</strong></td>
+                            <td>Second Round</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Result Type</strong></td>
+                            <td>Mock Seat Allotment</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Result Date</strong></td>
+                            <td>August 17, 2026</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Conducting Authority</strong></td>
+                            <td>Karnataka Examinations Authority (KEA)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mode</strong></td>
+                            <td>Online</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Official Website</strong></td>
+                            <td>KEA UGCET 2026 Portal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Direct Link to Check UGCET-2026 Mock Allotment Result</h2>
+
+            <p>Candidates can check their second-round mock seat allotment result using the official KEA result portal:</p>
+
+            <div class="blog-important-link" style="margin: 20px 0; padding: 15px; background: rgba(59, 130, 246, 0.1); border-left: 4px solid #3b82f6; border-radius: 4px;">
+                <strong>Direct Result Link:</strong> 
+                <a href="https://keaonline.karnataka.gov.in/main/checkresult.php" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; font-weight: 600; margin-left: 5px;">
+                    Check UGCET-2026 Second Round Mock Seat Allotment Result
+                </a>
+            </div>
+
+            <p>The official KEA UGCET-2026 page confirms that the <strong>UGCET/UGNEET-2026 second-round mock seat allotment notification was issued on August 17, 2026</strong>.</p>
+
+            <h2>How to Check UGCET-2026 Second Round Mock Seat Allotment Result</h2>
+
+            <p>Candidates can follow these steps to view their tentative allotment:</p>
+
+            <ol>
+                <li>Visit the official KEA result portal (<a href="https://keaonline.karnataka.gov.in/main/checkresult.php" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">KEA Result Portal</a>).</li>
+                <li>Open the <strong>UGCET/UGNEET-2026 Second Round Mock Seat Allotment</strong> result link.</li>
+                <li>Enter the required login/application details.</li>
+                <li>Submit the details.</li>
+                <li>Your mock seat allotment result will appear on the screen.</li>
+                <li>Check the allotted <strong>college, course and other details</strong> carefully.</li>
+                <li>Download or save a copy of the result for future reference.</li>
+            </ol>
+
+            <h2>What Does the Mock Seat Allotment Mean?</h2>
+
+            <p>The second-round mock allotment is <strong>not the final seat allotment</strong>. It gives candidates an indication of the seat they may receive based on the options they have entered and the availability of seats.</p>
+
+            <p>Candidates should carefully review their mock allotment and use the information to evaluate their college and course preferences before the final allotment process.</p>
+
+            <p>The KCET/UGCET 2026 counselling process includes option entry, mock allotment and subsequent provisional seat allotment. Current counselling information indicates that the <strong>UGCET Round 2 provisional/final seat allotment is scheduled for August 19, 2026, after 10:00 AM</strong>.</p>
+
+            <h2>UGCET 2026 Mock Allotment: What Candidates Should Do Next?</h2>
+
+            <p>After checking the mock allotment, candidates should:</p>
+
+            <ul>
+                <li>Review the allotted college and course.</li>
+                <li>Compare the allotment with their preferred options.</li>
+                <li>Check the <strong>second-round mock cutoff</strong> released by KEA.</li>
+                <li>Make any permitted changes to their option priorities within the prescribed window.</li>
+                <li>Keep checking the official KEA website for the final/provisional Round 2 seat allotment.</li>
+                <li>Do not treat the mock allotment as confirmation of admission.</li>
+            </ul>
+
+            <p>The second-round mock cutoff can also help candidates understand the likely closing-rank trends for different courses and colleges.</p>
+
+            <h2>UGCET-2026 Round 2 Seat Allotment</h2>
+
+            <p>The second round of UGCET counselling is being conducted to fill available seats and process candidates according to the options entered during counselling. KEA had released the second-round provisional seat matrix and opened the relevant option-entry process earlier in August.</p>
+
+            <p>Candidates are advised to rely on the <strong>official KEA portal</strong> for all final allotment, option-entry, fee-payment and admission-related instructions.</p>
+
+            <h3>Important Links</h3>
+
+            <ul>
+                <li><strong>UGCET-2026 Official KEA Portal:</strong> <a href="https://cetonline.karnataka.gov.in/KEA/ugcet2026" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">KEA UGCET-2026 Official Portal</a></li>
+                <li><strong>Second Round Mock Allotment Result:</strong> <a href="https://keaonline.karnataka.gov.in/main/checkresult.php" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Check Mock Seat Allotment Result</a></li>
+                <li><strong>KEA Main Website:</strong> <a href="https://cetonline.karnataka.gov.in/kea/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">Karnataka Examinations Authority</a></li>
+            </ul>
+
+            <h2>Conclusion</h2>
+
+            <p>The <strong>UGCET-2026 Second Round Mock Seat Allotment Result has been announced on August 17, 2026</strong>. Candidates can now check their tentative allotment online and review their college and course preferences before the final Round 2 allotment.</p>
+
+            <p><strong>Important:</strong> The mock allotment is only indicative and should not be considered a final confirmation of a seat. Candidates should wait for KEA's official provisional/final Round 2 allotment result and follow the instructions published on the official portal.</p>
+
+            <p><strong>Bookmark this page for further updates on UGCET/KCET 2026 Round 2 seat allotment, cutoff, option entry and admission dates.</strong></p>
+        `
+    },
+    {
         id: "25",
         slug: "karnataka-civil-police-constable-admit-card-2026-download-hall-ticket-exam-schedule",
         title: "Karnataka Civil Police Constable Admit Card 2026: Download Hall Ticket, Exam Schedule & Important Instructions",
