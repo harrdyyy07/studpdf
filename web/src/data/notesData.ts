@@ -2108,7 +2108,7 @@ export const siteData: SiteData = {
                         { id: 2, name: "Module-2 Notes for BEE701", desc: "Module-2 Notes for BEE701 Switchgear and Protection", link: "https://drive.google.com/file/d/1yWrqKT-_wrSbjJX2dOnvKfwZJ0YHDhw6/view?usp=drive_link", type: "notes" },
                         { id: 3, name: "Module-3 Notes for BEE701", desc: "Module-3 Notes for BEE701 Switchgear and Protection", link: "https://drive.google.com/file/d/1T24ey2S7JEv3C0lWWbWjrvUg5Y_Z_US3/view?usp=drive_link", type: "notes" },
                         { id: 4, name: "Module-4 Notes for BEE701", desc: "Module-4 Notes for BEE701 Switchgear and Protection", link: "https://drive.google.com/file/d/1_-3pj5o8-zYw3SBYqfLy2B_0LnpFBwYO/view?usp=drive_link", type: "notes" },
-                        { id: 5, name: "Module-5 Notes for BEE701", desc: "Module-5 Notes for BEE701 Switchgear and Protection", link: "https://drive.google.com/file/d/1mdfRHJHzx7pxhXIzbnxLsWz6xPSWxXY4/view?usp=drive_link", type: "notes" }
+                        { id: 5, name: "Module-5 Notes for BEE701", desc: "Module-5 Notes for BEE701 Switchgear and Protection", link: "https://drive.google.com/file/d/1mdfRHJHzx7pxhXIzbnxLsWz6xPSWxXY4/view?usp=drive_link", type: "notes" } 
                     ] },
                     {name:"Industrial Drives and Applications", code: "BEE702", credits: "4 CR", slug: "industrial-drives-and-applications-ida-bee702-vtu-notes", modules: [] },
                     {name:"Power System Analysis – II", code: "BEE703", credits: "3 CR", slug: "power-system-analysis-ii-psa-ii-bee703-vtu-notes", modules: [] },

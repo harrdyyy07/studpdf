@@ -51,7 +51,7 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
   useEffect(() => {
     if (!shouldShow || isClosedByUser) return;
 
-    // Small delay to ensure the elements are fully paint-rendered in the DOM tree
+    // Small delay to ensure the elements are fully paint-rendered in the DOM trees
     const timer = setTimeout(() => {
       try {
         // Ensure window.adsbygoogle is defined directly on the window object
