@@ -11,7 +11,7 @@ import AdSenseSideRails from "@/components/AdSenseSideRails";
 import SupportPopup from "@/components/SupportPopup";
 import SealPdfFloatingBanner from "@/components/SealPdfFloatingBanner";
 
-
+ 
 export const metadata: Metadata = {
   metadataBase: new URL('https://vtuwise.in'),
   title: "VTU Notes, Previous Question Papers & Study Materials for VTU Students | vtuwise",
