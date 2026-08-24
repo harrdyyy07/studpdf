@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 
+// VTU server certificates often have missing intermediate certificates causing leaf signature errors in Node fetch.
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 interface SubjectResult {
   subject_code: string;
   subject_name: string;

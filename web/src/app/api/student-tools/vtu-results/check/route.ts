@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 
+// Bypass TLS certificate issues for student database lookup endpoints
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);

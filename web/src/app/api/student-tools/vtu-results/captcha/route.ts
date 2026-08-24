@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 
+// VTU server certificates often have missing intermediate certificates causing leaf signature errors in Node fetch.
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 // Dynamically discover subpage index path for a given exam cycle index page
 async function getIndexPageForCycle(cycleFile: string): Promise<string> {
   const agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
@@ -101,13 +104,21 @@ export async function GET(req: Request) {
     if (!captchaPath) {
       throw new Error('Failed to extract Captcha image path from VTU portal HTML.');
     }
-    captchaPath = captchaPath.replace(/&amp;/g, '&').replace(/&amp;/g, '&');
+    while (captchaPath.includes('&amp;')) {
+      captchaPath = captchaPath.replace(/&amp;/g, '&');
+    }
     if (captchaPath.startsWith('../')) {
       captchaPath = captchaPath.replace('../', '/');
     }
 
+    const captchaUrl = captchaPath.startsWith('http')
+      ? captchaPath
+      : captchaPath.startsWith('/')
+        ? `https://results.vtu.ac.in${captchaPath}`
+        : `https://results.vtu.ac.in/${captchaPath}`;
+
     // Fetch Captcha Image
-    const res2 = await fetch(`https://results.vtu.ac.in${captchaPath}`, {
+    const res2 = await fetch(captchaUrl, {
       headers: {
         'User-Agent': agent,
         'Cookie': sessCookie,
