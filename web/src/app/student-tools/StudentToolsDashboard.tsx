@@ -71,6 +71,14 @@ export default function StudentToolsDashboard() {
             isExternal: true
         },
         {
+            title: 'Placement Aptitude Test',
+            description: 'Practice company placement questions for TCS, Infosys, Accenture, Wipro, Cognizant, & Amazon. Timed mock exams with auto-sync to Google Sheets.',
+            icon: '🎯',
+            path: '/student-tools/aptitude-test',
+            badge: '🔥 PLACEMENT SPECIAL',
+            gradient: 'linear-gradient(135deg, #f43f5e 0%, #e11d48 50%, #be123c 100%)'
+        },
+        {
             title: 'VTU Results Portal',
             description: 'Check your semester results instantly, view color-coded marksheets, solve captcha authentications for live scraping, and analyze your CGPA trend.',
             icon: '🎓',
