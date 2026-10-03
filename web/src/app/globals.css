@@ -143,9 +143,9 @@ footer,
   height: 480px;
   overflow: hidden;
   border-radius: var(--radius-xl);
-  background: #000;
-  box-shadow: 0 25px 50px -12px rgba(79, 70, 229, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #090d16;
+  box-shadow: 0 25px 50px -12px rgba(79, 70, 229, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .slider-track {
@@ -159,13 +159,951 @@ footer,
   min-width: 0;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
   position: relative;
   color: white;
-  padding: 4rem;
+  padding: 3rem 4rem;
   overflow: hidden;
   z-index: 1;
+}
+
+.slide-content-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.slide-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.slide-pill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #fbbf24;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 4.2vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-desc {
+  font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.75rem;
+  max-width: 480px;
+}
+
+.hero-btn-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-download-slider {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  background: white;
+  color: #312e81;
+  border: 2px solid white;
+  border-radius: 0.85rem;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-download-slider .arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.btn-download-slider:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background: #f8fafc;
+  color: #4338ca;
+}
+
+.btn-download-slider:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.hero-slide.slide-clickable {
+  cursor: pointer;
+}
+
+.btn-install-pwa {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.btn-install-pwa:hover:not(:disabled) {
+  background: white;
+  color: #312e81;
+  border-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-install-pwa:disabled {
+  opacity: 0.8;
+  cursor: default;
+}
+
+.btn-install-pwa.installed {
+  background: rgba(34, 197, 94, 0.2);
+  border-color: rgba(34, 197, 94, 0.6);
+  color: #4ade80;
+}
+
+.btn-install-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.slide-illustration-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-illustration {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: float-illustration 6s ease-in-out infinite;
+}
+
+@keyframes float-illustration {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes badge-pulse {
+  0%, 100% { transform: rotate(4deg) scale(1); }
+  50% { transform: rotate(4deg) scale(1.06); }
+}
+
+/* 1. Marksheet Illustration */
+.glass-card.marksheet-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.marksheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 0.75rem;
+}
+
+.marksheet-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.05em;
+}
+
+.logo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6366f1;
+  box-shadow: 0 0 8px #6366f1;
+}
+
+.marksheet-badge-live {
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.5);
+  color: #4ade80;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.marksheet-student-info {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.info-bar {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0.04em;
+}
+
+.marksheet-table {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 55px 1fr 35px;
+  font-size: 0.68rem;
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  align-items: center;
+}
+
+.table-row.head {
+  background: transparent;
+  font-weight: 800;
+  opacity: 0.6;
+  font-size: 0.6rem;
+}
+
+.sub-code {
+  font-weight: 700;
+  color: #a5b4fc;
+}
+
+.grade-pill {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 20px;
+  border-radius: 4px;
+  font-weight: 900;
+  font-size: 0.65rem;
+}
+
+.grade-o {
+  background: rgba(234, 179, 8, 0.25);
+  color: #fde047;
+  border: 1px solid rgba(234, 179, 8, 0.5);
+}
+
+.grade-a {
+  background: rgba(99, 102, 241, 0.25);
+  color: #c7d2fe;
+  border: 1px solid rgba(99, 102, 241, 0.5);
+}
+
+.floating-sgpa-badge {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  color: #0f172a;
+  padding: 0.6rem 0.9rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 12px 25px rgba(217, 119, 6, 0.5);
+  font-weight: 900;
+  text-align: center;
+  border: 2px solid #fef08a;
+  transform: rotate(4deg);
+  animation: badge-pulse 3s infinite ease-in-out;
+  z-index: 5;
+}
+
+.badge-sparkle {
+  font-size: 0.7rem;
+  margin-bottom: -2px;
+}
+
+.badge-val {
+  font-size: 1.35rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+}
+
+.badge-lbl {
+  font-size: 0.5rem;
+  letter-spacing: 0.08em;
+  font-weight: 900;
+  color: #451a03;
+}
+
+.marksheet-stamp {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: #4ade80;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+}
+
+/* 2. Phone Illustration */
+.phone-mockup {
+  width: 175px;
+  height: 310px;
+  background: #090d16;
+  border: 4px solid rgba(255, 255, 255, 0.25);
+  border-radius: 2.2rem;
+  padding: 8px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  border-top-width: 8px;
+  border-bottom-width: 8px;
+}
+
+.phone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 14px;
+  background: #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 10;
+}
+
+.phone-screen {
+  background: linear-gradient(180deg, #1e1b4b 0%, #0f172a 100%);
+  height: 100%;
+  border-radius: 1.6rem;
+  padding: 1.2rem 0.6rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 0.75rem;
+}
+
+.app-logo span {
+  color: #818cf8;
+}
+
+.app-banner {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  border-radius: 10px;
+  padding: 8px;
+  color: white;
+  text-align: center;
+}
+
+.app-banner-title {
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.app-banner-sub {
+  font-size: 0.55rem;
+  opacity: 0.8;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.app-card-mini {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 6px;
+  text-align: center;
+  color: white;
+  font-size: 0.55rem;
+  font-weight: 700;
+}
+
+.app-icon {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.app-cta-btn {
+  margin-top: auto;
+  background: #fbbf24;
+  color: #000;
+  font-size: 0.55rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.floating-app-badge {
+  position: absolute;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.float-item-1 {
+  top: 20px;
+  left: -25px;
+  transform: rotate(-6deg);
+}
+
+.float-item-2 {
+  bottom: 30px;
+  right: -25px;
+  transform: rotate(6deg);
+}
+
+/* 3. SGPA Calculator Illustration */
+.glass-card.calc-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.calc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.calc-title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #a5b4fc;
+  letter-spacing: 0.05em;
+}
+
+.calc-scheme-pill {
+  background: rgba(99, 102, 241, 0.25);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  color: #c7d2fe;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.calc-inputs-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+
+.calc-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 0.68rem;
+}
+
+.course-name {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.credit-pill {
+  background: rgba(255, 255, 255, 0.1);
+  color: #93c5fd;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.grade-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.grade-s {
+  background: rgba(99, 102, 241, 0.25);
+  color: #c7d2fe;
+  border: 1px solid rgba(99, 102, 241, 0.4);
+}
+
+.calc-result-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+
+.result-circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, rgba(79, 70, 229, 0.85) 100%);
+  border: 3px solid #818cf8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.6);
+  animation: pulse-glow 3s infinite ease-in-out;
+}
+
+.result-num {
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.result-lbl {
+  font-size: 0.5rem;
+  font-weight: 800;
+  color: #c7d2fe;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+
+/* 5. Aptitude Test Illustration */
+.glass-card.aptitude-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.aptitude-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.aptitude-title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #fbbf24;
+  letter-spacing: 0.05em;
+}
+
+.aptitude-timer {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fca5a5;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.aptitude-question-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border-left: 3px solid #818cf8;
+}
+
+.q-num-tag {
+  font-size: 0.55rem;
+  font-weight: 800;
+  color: #a5b4fc;
+  margin-bottom: 2px;
+}
+
+.q-text-demo {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: white;
+}
+
+.aptitude-options {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.opt-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.opt-row.selected {
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.5);
+  color: #4ade80;
+  font-weight: 700;
+}
+
+.opt-key {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 0.6rem;
+}
+
+.opt-row.selected .opt-key {
+  background: #22c55e;
+  color: #000;
+}
+
+.opt-check {
+  margin-left: auto;
+  font-weight: 900;
+}
+
+.floating-aptitude-badge {
+  position: absolute;
+  bottom: -12px;
+  right: -10px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #34d399;
+  box-shadow: 0 10px 20px rgba(5, 150, 105, 0.4);
+  transform: rotate(3deg);
+}
+
+/* 6. Resume Builder Illustration */
+.glass-card.resume-card {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.resume-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border: 1.5px solid #818cf8;
+}
+
+.resume-user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-name {
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: white;
+}
+
+.resume-role {
+  font-size: 0.6rem;
+  color: #a5b4fc;
+  font-weight: 600;
+}
+
+.resume-ats-pill {
+  margin-left: auto;
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.5);
+  color: #4ade80;
+  font-size: 0.58rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.resume-section-mini {
+  margin-bottom: 0.6rem;
+}
+
+.sec-title {
+  font-size: 0.55rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.skill-chip {
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #c7d2fe;
+  font-size: 0.58rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.project-preview {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.65rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.proj-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #38bdf8;
+}
+
+.floating-resume-tag {
+  position: absolute;
+  bottom: -12px;
+  left: -10px;
+  background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #818cf8;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.4);
+  transform: rotate(-3deg);
+}
+
+/* 4. Question Papers Illustration */
+.paper-stack {
+  position: relative;
+  width: 280px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper-sheet {
+  position: absolute;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.paper-layer-3 {
+  width: 230px;
+  height: 210px;
+  transform: rotate(-8deg) translateY(12px);
+  opacity: 0.5;
+}
+
+.paper-layer-2 {
+  width: 250px;
+  height: 220px;
+  transform: rotate(5deg) translateY(6px);
+  opacity: 0.75;
+}
+
+.paper-layer-1 {
+  width: 270px;
+  height: 230px;
+  transform: rotate(0deg);
+  background: rgba(30, 27, 75, 0.85);
+  border: 1px solid rgba(129, 140, 248, 0.3);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.paper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  padding-bottom: 6px;
+}
+
+.paper-vtulogo {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #a5b4fc;
+  letter-spacing: 0.05em;
+}
+
+.paper-year-badge {
+  background: #e11d48;
+  color: white;
+  font-size: 0.55rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.paper-title-demo {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: white;
+  margin: 6px 0;
+}
+
+.paper-questions-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.q-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.paper-footer-badge {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.pdf-badge {
+  background: rgba(99, 102, 241, 0.25);
+  border: 1px solid rgba(129, 140, 248, 0.4);
+  color: #c7d2fe;
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.floating-paper-tag {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+  color: white;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #818cf8;
+  box-shadow: 0 10px 20px rgba(67, 56, 202, 0.4);
+  transform: rotate(-3deg);
 }
 
 .slide-blobs {
@@ -235,16 +1173,6 @@ footer,
   pointer-events: none;
 }
 
-.slide-content-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  z-index: 10;
-}
-
 .slide-bg-text {
   position: absolute;
   right: -5%;
@@ -264,97 +1192,14 @@ footer,
   transform: translateX(-50px) scale(1.05);
 }
 
-.hero-slide h2 {
-  font-size: clamp(1.8rem, 8vw, 3.8rem);
-  line-height: 1.1;
-  margin-bottom: 1rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.hero-slide h2 span {
-  opacity: 0.85;
-}
-
-.hero-slide p {
-  font-size: 1rem;
-  opacity: 0.8;
-  margin-bottom: 2rem;
-  line-height: 1.5;
-}
-
-.btn-download-slider {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  border-radius: 0.75rem;
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  transition: all 0.3s ease;
-}
-
-.btn-download-slider:hover {
-  background: white;
-  color: var(--primary);
-  border-color: white;
-}
-
-/* Whole slide is clickable */
-.hero-slide.slide-clickable {
-  cursor: pointer;
-}
-
-.hero-slide.slide-clickable:hover .btn-download-slider {
-  background: white;
-  color: var(--primary);
-  border-color: white;
-}
-
-/* PWA Install Button */
-.btn-install-pwa {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.12);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-.btn-install-pwa:hover:not(:disabled) {
-  background: white;
-  color: var(--primary);
-  border-color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.btn-install-pwa:disabled {
-  opacity: 0.7;
-  cursor: default;
-}
-
-.btn-install-pwa.installed {
-  background: rgba(88, 204, 2, 0.2);
-  border-color: rgba(88, 204, 2, 0.6);
-  color: #a3e635;
-}
-
-.btn-install-icon {
-  font-size: 1rem;
-  line-height: 1;
-}
-
-
 .slide-footer-meta {
-  font-size: 0.75rem;
-  font-weight: 700;
+  position: absolute;
+  bottom: 1rem;
+  left: 4rem;
+  font-size: 0.7rem;
+  font-weight: 800;
   letter-spacing: 0.2em;
-  opacity: 0.5;
-  text-align: center;
+  opacity: 0.4;
 }
 
 /* Slider Arrows */
@@ -390,7 +1235,7 @@ footer,
 /* Mobile Slider Adjustments */
 @media (max-width: 768px) {
   .hero-slider {
-    height: 250px;
+    height: 380px;
     border-radius: 1.25rem;
   }
 
@@ -398,22 +1243,36 @@ footer,
     padding: 1.5rem;
   }
 
-  .slide-main-content h1 {
-    font-size: 1.8rem;
-    font-weight: 800;
-    line-height: 1.1;
-    margin-bottom: 0.5rem;
+  .slide-content-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
-  .slide-main-content p,
-  .btn-download-slider {
+  .slide-illustration-col {
     display: none;
   }
 
+  .hero-title {
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-desc {
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .btn-download-slider {
+    padding: 0.65rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
   .slide-footer-meta {
-    font-size: 0.65rem;
-    opacity: 0.5;
-    bottom: 1.5rem;
+    font-size: 0.6rem;
+    opacity: 0.4;
+    bottom: 0.75rem;
     left: 1.5rem;
   }
 
@@ -441,7 +1300,7 @@ footer,
   }
 
   .slider-dots {
-    bottom: 1rem;
+    bottom: 0.75rem;
   }
 
   .slide-bg-text {
