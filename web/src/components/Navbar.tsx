@@ -62,7 +62,7 @@ const Navbar = () => {
             {showTopBar && (
                 <div className="top-bar" id="announcement-bar">
                     <span style={{ fontWeight: 600, letterSpacing: '0.5px' }}>
-                        🦭 Free Online PDF Tools — Merge, Compress, Convert & Edit PDFs with Zero Limits at <a href="https://seal-pdf.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#fbbf24', textDecoration: 'underline', fontWeight: 800, marginLeft: '4px' }}>Seal-PDF.com ➔</a>
+                        📢 VTU Semester Results & SGPA/CGPA Calculators Updated — <Link href="/student-tools/vtu-results" style={{ color: '#fbbf24', textDecoration: 'underline', fontWeight: 800, marginLeft: '4px' }}>Check Yours Now ➔</Link>
                     </span>
                     <button className="top-bar-close" onClick={closeTopBar} aria-label="Close Announcement">&times;</button>
                 </div>
