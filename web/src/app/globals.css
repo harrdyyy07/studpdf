@@ -44,7 +44,7 @@
 }
 
 main {
-  padding-top: var(--header-height);
+  padding-top: 0;
   min-height: 80vh;
   transition: padding-top 0.3s ease;
 }
@@ -133,7 +133,7 @@ footer,
 
 /* Hero Section */
 .hero-section {
-  padding: 0.5rem 0 2rem;
+  padding: 1rem 0 2.5rem;
 }
 
 .hero-slider {
@@ -1234,6 +1234,10 @@ footer,
 
 /* Mobile Slider Adjustments */
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 0.75rem 0 1.5rem;
+  }
+
   .hero-slider {
     height: 380px;
     border-radius: 1.25rem;
@@ -1708,7 +1712,7 @@ footer,
 
 /* Navbar Styles */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
