@@ -1871,6 +1871,13 @@ export const siteData: SiteData = {
                         { id: 4, name: "Module-4 Notes", desc: "Wireless Communication Systems-BEC703 Module-4 Notes", link: "https://drive.google.com/file/d/1af2prl4rAuyNBwC-kDVs4nodbRIHgNYe/view?usp=drive_link", type: "notes" },
                         { id: 4, name: "Module-4 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-4 Notes-2", link: "https://drive.google.com/file/d/1FZU60esTPnId0J9ndm4BXxYfCfb1Ncld/view?usp=drive_link", type: "notes" },
                         { id: 5, name: "Module-5 Notes", desc: "Wireless Communication Systems-BEC703 Module-5 Notes", link: "https://drive.google.com/file/d/1W39GDwJmXmlV4nK4wFZlHnBCoZhrEAOP/view?usp=drive_link", type: "notes" }
+                    ]},
+                    {name:"Computer and Network Security", code: "BEC714B", credits: "3 CR", slug: "computer-and-network-security-cns-bec714b-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 Notes", desc: "Computer and Network Security-BEC714B Module-1 Notes", link: "https://drive.google.com/file/d/1TeV1XxXB7F91bVSzsz9-6V4wIdTCTj8s/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 Notes", desc: "Computer and Network Security-BEC714B Module-2 Notes", link: "https://drive.google.com/file/d/1gqDoUjQ02KfgEIWAjUBf0-GJeuE0Fu1Q/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 Notes", desc: "Computer and Network Security-BEC714B Module-3 Notes", link: "https://drive.google.com/file/d/1RXP3c7Cw4U1hU_hvtFVmnpfE13_s81bN/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 Notes", desc: "Computer and Network Security-BEC714B Module-4 Notes", link: "https://drive.google.com/file/d/1V8AlxkTEbhTHGopdsQrndLYp8bZbXWt8/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 Notes", desc: "Computer and Network Security-BEC714B Module-5 Notes", link: "https://drive.google.com/file/d/1YavUsdHcUPaZBvQTzSO7leH8-xDS9gcu/view?usp=drive_link", type: "notes" }
                     ]}
                 ]
             }
