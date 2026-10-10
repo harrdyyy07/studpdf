@@ -10,6 +10,7 @@ const Navbar = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isMobileCalcOpen, setIsMobileCalcOpen] = useState(false);
     const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false);
+    const [isMobileLegalOpen, setIsMobileLegalOpen] = useState(false);
     const [theme, setTheme] = useState('light');
     const [showTopBar, setShowTopBar] = useState(true);
 
@@ -128,7 +129,19 @@ const Navbar = () => {
                     <li><Link href="/upload" onClick={() => setIsMenuOpen(false)}>Upload</Link></li>
                     <li><Link href="/student-tools/vtu-results" onClick={() => setIsMenuOpen(false)}>Results</Link></li>
                     <li><a href="https://vtu.ac.in/en/category/examination/" target="_blank" rel="noopener noreferrer">Academics</a></li>
-                    <li><Link href="/legal" onClick={() => setIsMenuOpen(false)}>Legal</Link></li>
+                    <li className={`dropdown ${isMobileLegalOpen ? 'mobile-open' : ''}`}>
+                        <span className="dropdown-toggle" onClick={() => setIsMobileLegalOpen(!isMobileLegalOpen)}>
+                            Legal <span className="dropdown-arrow">▾</span>
+                        </span>
+                        <div className="dropdown-menu">
+                            <Link href="/legal/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+                            <Link href="/legal/privacy" onClick={() => setIsMenuOpen(false)}>Privacy Policy</Link>
+                            <Link href="/legal/terms" onClick={() => setIsMenuOpen(false)}>Terms &amp; Conditions</Link>
+                            <Link href="/legal/disclaimer" onClick={() => setIsMenuOpen(false)}>Disclaimer</Link>
+                            <Link href="/legal/faqs" onClick={() => setIsMenuOpen(false)}>FAQs</Link>
+                            <Link href="/legal/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+                        </div>
+                    </li>
                     
                     <li className="mobile-only-action">
                         <button className="theme-switch" aria-label="Toggle Theme" onClick={toggleTheme}>

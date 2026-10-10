@@ -8,7 +8,6 @@ import Preloader from "@/components/Preloader";
 import WhatsAppPopup from "@/components/WhatsAppPopup";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 import AdSenseSideRails from "@/components/AdSenseSideRails";
-import SupportPopup from "@/components/SupportPopup";
 import SealPdfFloatingBanner from "@/components/SealPdfFloatingBanner";
 
   
@@ -125,7 +124,6 @@ export default function RootLayout({
         <AdSenseSideRails />
         <WhatsAppPopup />
         <WhatsAppFloating />
-        <SupportPopup />
         <SealPdfFloatingBanner />
         <Footer />
       </body>
