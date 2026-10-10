@@ -21,10 +21,20 @@ const WhatsAppPopup = () => {
             const timer = setTimeout(() => {
                 setIsVisible(true);
                 document.body.classList.add('no-scroll');
-            }, 5000); // Show after 5 seconds
+            }, 12000); // Show after 12 seconds to prevent immediate interruption
+
+            const handleKeyDown = (e: KeyboardEvent) => {
+                if (e.key === 'Escape') {
+                    setIsVisible(false);
+                    document.body.classList.remove('no-scroll');
+                    sessionStorage.setItem('whatsapp_popup_dismissed_session', 'true');
+                }
+            };
+            window.addEventListener('keydown', handleKeyDown);
 
             return () => {
                 clearTimeout(timer);
+                window.removeEventListener('keydown', handleKeyDown);
                 document.body.classList.remove('no-scroll');
             };
         }

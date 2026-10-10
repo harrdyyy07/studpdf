@@ -126,8 +126,8 @@ export default function AptitudeClient() {
     // Calculate Final Score & Category Stats
     const testResults = useMemo(() => {
         let score = 0;
-        let total = activeQuestions.length;
-        let categoryStats: Record<string, { correct: number; total: number }> = {};
+        const total = activeQuestions.length;
+        const categoryStats: Record<string, { correct: number; total: number }> = {};
 
         activeQuestions.forEach(q => {
             if (!categoryStats[q.category]) {

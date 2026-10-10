@@ -130,13 +130,24 @@ export async function POST(req: Request) {
       return NextResponse.json({ success: false, error: 'USN, captcha, token, and sessionId are required' }, { status: 400 });
     }
 
-    const folderPath = indexPage ? indexPage.replace('index.php', '') : '/MJ26cbcs/';
+    // Validate USN format (e.g. 1RV21CS001)
+    const sanitizedUsn = usn.trim().toUpperCase();
+    if (!/^[0-9][A-Z]{2}[0-9]{2}[A-Z]{2,3}[0-9]{2,3}$/.test(sanitizedUsn)) {
+      return NextResponse.json({ success: false, error: 'Invalid USN format' }, { status: 400 });
+    }
+
+    // Sanitize and whitelist indexPage to prevent SSRF and Path Traversal
+    let safeIndexPage = '/MJ26cbcs/index.php';
+    if (typeof indexPage === 'string' && /^\/[a-zA-Z0-9_-]+\/index\.php$/i.test(indexPage.trim())) {
+      safeIndexPage = indexPage.trim();
+    }
+    const folderPath = safeIndexPage.replace('index.php', '');
     const resultPagePath = `${folderPath}resultpage.php`;
 
     const year = new Date().getFullYear();
     const jsToken = Buffer.from(`student_access_${year}`).toString('base64');
 
-    const postData = `js_token=${encodeURIComponent(jsToken)}&Token=${encodeURIComponent(token)}&lns=${encodeURIComponent(usn.toUpperCase())}&captchacode=${encodeURIComponent(captcha)}`;
+    const postData = `js_token=${encodeURIComponent(jsToken)}&Token=${encodeURIComponent(token)}&lns=${encodeURIComponent(sanitizedUsn)}&captchacode=${encodeURIComponent(captcha)}`;
 
     console.log('Submitting request to official VTU path:', resultPagePath);
     const res = await fetch(`https://results.vtu.ac.in${resultPagePath}`, {

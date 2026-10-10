@@ -125,7 +125,7 @@ const Navbar = () => {
                         </div>
                     </li>
                     
-                    <li><Link href="/upload/" onClick={() => setIsMenuOpen(false)}>Upload</Link></li>
+                    <li><Link href="/upload" onClick={() => setIsMenuOpen(false)}>Upload</Link></li>
                     <li><Link href="/student-tools/vtu-results" onClick={() => setIsMenuOpen(false)}>Results</Link></li>
                     <li><a href="https://vtu.ac.in/en/category/examination/" target="_blank" rel="noopener noreferrer">Academics</a></li>
                     <li><Link href="/legal" onClick={() => setIsMenuOpen(false)}>Legal</Link></li>

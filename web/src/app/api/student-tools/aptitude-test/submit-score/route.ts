@@ -4,14 +4,14 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     
-    // Support custom webhook URL sent from client or fallback to server env
-    const webhookUrl = body.customWebhookUrl || process.env.GOOGLE_SHEET_WEBHOOK_URL || "https://script.google.com/macros/s/AKfycbz2mhTGASB3y78ueo1lGov5_WyJvQ3jZbufn-VOd8DAZdbzxHn9cG5VKXvUtTyt166RBw/exec";
+    // Use server-configured Google Sheet webhook URL (prevent SSRF by disallowing client-supplied URLs)
+    const webhookUrl = process.env.GOOGLE_SHEET_WEBHOOK_URL || "https://script.google.com/macros/s/AKfycbz2mhTGASB3y78ueo1lGov5_WyJvQ3jZbufn-VOd8DAZdbzxHn9cG5VKXvUtTyt166RBw/exec";
 
     if (!webhookUrl) {
       return NextResponse.json({ 
         success: false, 
         error: 'Google Sheet Webhook URL is not configured. Please check your server .env file.' 
-      }, { status: 400 });
+      }, { status: 500 });
     }
 
     const payload = {

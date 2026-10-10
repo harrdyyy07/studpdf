@@ -3,10 +3,13 @@ const path = require('path');
 const vm = require('vm');
 
 const rootDir = __dirname;
-const dataJsPath = path.join(rootDir, 'data.js');
-const dataJsContent = fs.readFileSync(dataJsPath, 'utf8');
+const notesDataPath = path.join(rootDir, 'web', 'src', 'data', 'notesData.ts');
+let notesDataContent = fs.readFileSync(notesDataPath, 'utf8');
 
-const script = new vm.Script(dataJsContent + '; siteData;');
+// Strip TypeScript interfaces and export statement
+notesDataContent = notesDataContent.replace(/export\s+interface[\s\S]*?export\s+const\s+siteData:\s*SiteData\s*=\s*/, 'const siteData = ');
+
+const script = new vm.Script(notesDataContent + '; siteData;');
 const siteData = script.runInNewContext();
 
 const redirects = [];
@@ -16,12 +19,12 @@ for (const [branchKey, branchData] of Object.entries(siteData)) {
 
     if (branchData.semesters) {
         branchData.semesters.forEach(sem => {
-            const semUrlPart = sem.url || `semester-${sem.number}`;
-            if (sem.subjects) {
+            const semNum = sem.sem !== undefined ? sem.sem : sem.number;
+            if (sem.subjects && semNum) {
                 sem.subjects.forEach(sub => {
                     if (sub.slug) {
                         const oldUrl = `/${branchKey}/${sub.slug}.html`;
-                        const newUrl = `/${branchKey}/${semUrlPart}/${sub.slug}/`;
+                        const newUrl = `/${branchKey}/${semNum}/${sub.slug}`;
                         
                         redirects.push({
                             source: oldUrl,
@@ -42,7 +45,7 @@ for (const [branchKey, branchData] of Object.entries(siteData)) {
     }
 }
 
-// First year handling mapping old to new if possible
+// First year handling mapping old to new
 if (siteData.firstyear && siteData.firstyear.schemes) {
     siteData.firstyear.schemes.forEach(scheme => {
         if (scheme.cycles) {
@@ -53,7 +56,7 @@ if (siteData.firstyear && siteData.firstyear.schemes) {
                     cycle.subjects.forEach(sub => {
                         if (sub.slug) {
                             const oldUrl = `/firstyear/${sub.slug}.html`;
-                            const newUrl = `/first-year/${schemeSlug}/${cycleSlug}/${sub.slug}/`;
+                            const newUrl = `/firstyear/${schemeSlug}/${cycleSlug}/${sub.slug}`;
                             
                             redirects.push({
                                 source: oldUrl,
@@ -65,6 +68,11 @@ if (siteData.firstyear && siteData.firstyear.schemes) {
                                 destination: newUrl,
                                 permanent: true
                             });
+                            redirects.push({
+                                source: `/first-year/${sub.slug}`,
+                                destination: newUrl,
+                                permanent: true
+                            });
                         }
                     });
                 }
@@ -73,15 +81,16 @@ if (siteData.firstyear && siteData.firstyear.schemes) {
     });
 }
 
-// Ensure 301 redirects from root .html pages if any exist and need cleaning explicitly
-// Not strictly necessary due to cleanUrls, but good for custom maps.
-
 const vercelConfig = {
   cleanUrls: true,
-  trailingSlash: false, // The user requested NO trailing slash for blogs, and current subject pages will just serve folder index.html fine.
+  trailingSlash: false,
   redirects: redirects
 };
 
 fs.writeFileSync(path.join(rootDir, 'vercel.json'), JSON.stringify(vercelConfig, null, 2));
+const webVercelPath = path.join(rootDir, 'web', 'vercel.json');
+if (fs.existsSync(path.join(rootDir, 'web'))) {
+  fs.writeFileSync(webVercelPath, JSON.stringify(vercelConfig, null, 2));
+}
 
 console.log(`Successfully generated vercel.json with cleanUrls and ${redirects.length} redirects.`);

@@ -159,7 +159,7 @@ export default function UploadPage() {
                 setUploadedFilesList(list);
                 
                 try {
-                    const response = await fetch('/api/submit-form/', {
+                    const response = await fetch('/api/submit-form', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -237,16 +237,20 @@ export default function UploadPage() {
         }
 
         setErrors(tempErrors);
-        return Object.keys(tempErrors).length === 0;
+        const errorKeys = Object.keys(tempErrors);
+        return {
+            isValid: errorKeys.length === 0,
+            firstErrorKey: errorKeys[0] || null
+        };
     };
 
     // Handle form submission
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (!validateForm()) {
-            // Scroll to the first error
-            const firstErrorKey = Object.keys(errors)[0];
+        const { isValid, firstErrorKey } = validateForm();
+        if (!isValid) {
+            // Scroll to the first error directly
             if (firstErrorKey) {
                 const element = document.getElementById(firstErrorKey);
                 element?.scrollIntoView({ behavior: 'smooth', block: 'center' });

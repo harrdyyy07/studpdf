@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 interface TextPool {
     id: string;
@@ -102,12 +102,17 @@ export default function TypingTestClient() {
     const inputRef = useRef<HTMLTextAreaElement>(null);
     const timerIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
-    // Initial text loader
-    useEffect(() => {
-        loadRandomText(selectedPoolId);
-    }, [selectedPoolId]);
+    const resetTest = useCallback((_customText?: string) => {
+        setUserInput('');
+        setStarted(false);
+        setTimeLeft(duration);
+        setIsCompleted(false);
+        setTotalTyped(0);
+        setErrors(0);
+        if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
+    }, [duration]);
 
-    const loadRandomText = (poolId: string) => {
+    const loadRandomText = useCallback((poolId: string) => {
         const pool = TEXT_POOLS.find(p => p.id === poolId) || TEXT_POOLS[0];
         const texts = pool.texts;
         if (texts.length <= 1) {
@@ -126,18 +131,12 @@ export default function TypingTestClient() {
         
         setTargetText(rand);
         resetTest(rand);
-    };
+    }, [targetText, resetTest]);
 
-    const resetTest = (customText?: string) => {
-        const text = customText || targetText;
-        setUserInput('');
-        setStarted(false);
-        setTimeLeft(duration);
-        setIsCompleted(false);
-        setTotalTyped(0);
-        setErrors(0);
-        if (timerIntervalRef.current) clearInterval(timerIntervalRef.current);
-    };
+    // Initial text loader
+    useEffect(() => {
+        loadRandomText(selectedPoolId);
+    }, [selectedPoolId, loadRandomText]);
 
     // Update duration selector
     const handleDurationChange = (secs: number) => {

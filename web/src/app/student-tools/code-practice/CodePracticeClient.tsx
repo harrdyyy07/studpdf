@@ -20,7 +20,7 @@ interface Challenge {
     cppBoilerplate: string;
     javaBoilerplate: string;
     testCases: TestSuite[];
-    verifyJS: (fn: Function) => { passed: boolean; got: any; error?: string }[];
+    verifyJS: (fn: (...args: any[]) => any) => { passed: boolean; got: any; error?: string }[];
 }
 
 const CHALLENGES: Challenge[] = [

@@ -68,7 +68,7 @@ const Testimonials: React.FC = () => {
                   </div>
                   <p className="testimonial-name">{item.name}</p>
                   <p className="testimonial-dept">{item.dept}</p>
-                  <p className="testimonial-text">"{item.text}"</p>
+                  <p className="testimonial-text">&ldquo;{item.text}&rdquo;</p>
                 </div>
               </div>
             ))}

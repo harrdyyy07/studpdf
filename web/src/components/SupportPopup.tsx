@@ -13,11 +13,11 @@ const SupportPopup = () => {
         // Check if the user has dismissed it in THIS session (Temporary)
         const dismissed = sessionStorage.getItem('support_popup_dismissed_session') === 'true';
         
-        // Show if not dismissed, after a delay (e.g. 7 seconds)
+        // Show if not dismissed, after a comfortable reading delay (20 seconds)
         if (!dismissed) {
             const timer = setTimeout(() => {
                 setIsVisible(true);
-            }, 7000);
+            }, 20000);
 
             return () => clearTimeout(timer);
         }

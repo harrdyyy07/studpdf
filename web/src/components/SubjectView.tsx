@@ -60,6 +60,22 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
         setMounted(true);
     }, []);
 
+    useEffect(() => {
+        if (previewContent) {
+            document.body.style.overflow = 'hidden';
+            const handleKeyDown = (e: KeyboardEvent) => {
+                if (e.key === 'Escape') setPreviewContent(null);
+            };
+            window.addEventListener('keydown', handleKeyDown);
+            return () => {
+                document.body.style.overflow = '';
+                window.removeEventListener('keydown', handleKeyDown);
+            };
+        } else {
+            document.body.style.overflow = '';
+        }
+    }, [previewContent]);
+
     // Sort filters to put 'Notes' and 'PYQP' early if they exist
     const filters = ['All', ...availableTypes.sort((a, b) => {
         const aLabel = typeLabels[a] || a;
