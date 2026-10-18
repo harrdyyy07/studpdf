@@ -92,7 +92,15 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
 
     const breadcrumbItems = [
         { label: branch.toUpperCase(), href: `/${branch}` },
-        { label: `Sem ${sem}`, href: `/${branch}/${sem}` },
+        ...(cycle 
+            ? [
+                { label: String(sem).replace(/-/g, ' ').toUpperCase(), href: `/${branch}` },
+                { label: cycle.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()), href: `/${branch}/${sem}/${cycle}` }
+              ]
+            : [
+                { label: isNaN(Number(sem)) ? String(sem) : `Sem ${sem}`, href: `/${branch}/${sem}` }
+              ]
+        ),
         { label: subject.name, href: '#' }
     ];
 

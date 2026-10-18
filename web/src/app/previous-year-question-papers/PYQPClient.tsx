@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const pyqpData = [
     {
@@ -80,11 +81,7 @@ const PYQPClient = () => {
     return (
         <div className="container py-24 mt-16 max-w-4xl mx-auto px-4">
             <header className="mb-12">
-                <div className="breadcrumb flex items-center gap-2 text-sm opacity-60 mb-8">
-                    <Link href="/">🏠</Link>
-                    <span>/</span>
-                    <span>Previous Year Question Papers</span>
-                </div>
+                <Breadcrumbs items={[{ label: 'Previous Year Question Papers', href: '#' }]} />
                 
                 <div className="badge bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold w-fit mb-4">Resources</div>
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-800 dark:text-white mb-2">VTUwise Previous Year Question Papers</h1>

@@ -1523,10 +1523,250 @@ footer,
   color: var(--primary);
 }
 
-@media (max-width: 768px) {
-  .branch-card-visual { height: 180px; }
-  .branch-main-text { font-size: 2rem; }
-  .branch-card-blobs { opacity: 0.4; }
+/* ═══════════════════════════════════════════════════════════════
+   PREMIUM BREADCRUMB NAVIGATION
+   ═══════════════════════════════════════════════════════════════ */
+.vtu-breadcrumb-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+.vtu-breadcrumb-bar {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  border-radius: 9999px;
+  box-shadow: 0 2px 10px -2px rgba(15, 23, 42, 0.04), 0 1px 3px -1px rgba(15, 23, 42, 0.02);
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vtu-breadcrumb-bar::-webkit-scrollbar {
+  display: none;
+}
+
+[data-theme="dark"] .vtu-breadcrumb-bar {
+  background: rgba(24, 27, 38, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.45), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Home Icon Pill */
+.vtu-breadcrumb-home {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  color: var(--text-muted);
+  background: transparent;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.vtu-breadcrumb-home:hover {
+  color: var(--primary);
+  background: rgba(79, 70, 229, 0.1);
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .vtu-breadcrumb-home:hover {
+  color: #818cf8;
+  background: rgba(99, 102, 241, 0.18);
+}
+
+.vtu-breadcrumb-home:active {
+  transform: scale(0.92);
+}
+
+/* Chevron Separator */
+.vtu-breadcrumb-sep {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  opacity: 0.4;
+  flex-shrink: 0;
+  user-select: none;
+  margin: 0 0.05rem;
+}
+
+/* Branch Tag (e.g. CIVIL, CSE, AIML) */
+.vtu-breadcrumb-branch {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.6rem;
+  border-radius: 9999px;
+  background: #EEF2FF;
+  color: #4338CA;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.vtu-breadcrumb-branch:hover {
+  background: #E0E7FF;
+  border-color: rgba(99, 102, 241, 0.4);
+  color: #3730A3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.15);
+}
+
+[data-theme="dark"] .vtu-breadcrumb-branch {
+  background: rgba(79, 70, 229, 0.18);
+  color: #A5B4FC;
+  border: 1px solid rgba(129, 140, 248, 0.28);
+}
+
+[data-theme="dark"] .vtu-breadcrumb-branch:hover {
+  background: rgba(79, 70, 229, 0.32);
+  color: #C7D2FE;
+  border-color: rgba(129, 140, 248, 0.45);
+  box-shadow: 0 2px 10px rgba(99, 102, 241, 0.3);
+}
+
+/* Standard Link (e.g. Sem 7) */
+.vtu-breadcrumb-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.22rem 0.55rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.vtu-breadcrumb-link:hover {
+  color: var(--primary);
+  background: rgba(79, 70, 229, 0.08);
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .vtu-breadcrumb-link:hover {
+  color: #C7D2FE;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Current Destination (e.g. Estimation and Contract Management) */
+.vtu-breadcrumb-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text);
+  padding: 0.22rem 0.55rem;
+  border-radius: 9999px;
+  max-width: 240px;
+  flex-shrink: 1;
+}
+
+@media (min-width: 640px) {
+  .vtu-breadcrumb-current {
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vtu-breadcrumb-current {
+    max-width: 520px;
+  }
+}
+
+.vtu-breadcrumb-current-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Glowing dot for current active location */
+.vtu-breadcrumb-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.7);
+  flex-shrink: 0;
+  animation: vtu-breadcrumb-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes vtu-breadcrumb-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.85);
+  }
+}
+
+/* Quick Share / Copy URL button */
+.vtu-breadcrumb-divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(226, 232, 240, 0.8);
+  margin: 0 0.15rem;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .vtu-breadcrumb-divider {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.vtu-breadcrumb-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  height: 26px;
+  padding: 0 0.5rem;
+  border-radius: 9999px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.vtu-breadcrumb-action:hover {
+  color: var(--primary);
+  background: rgba(79, 70, 229, 0.08);
+}
+
+[data-theme="dark"] .vtu-breadcrumb-action:hover {
+  color: #818cf8;
+  background: rgba(99, 102, 241, 0.18);
+}
+
+.vtu-breadcrumb-action.copied {
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.1);
 }
 
 /* Base Pill/Badges */
@@ -3813,6 +4053,7 @@ margin: 1.75rem 0 0.75rem;
   margin: 0;
   background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -3902,6 +4143,7 @@ margin: 1.75rem 0 0.75rem;
   margin: 0 0 0.75rem;
   background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

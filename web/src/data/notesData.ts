@@ -2398,11 +2398,27 @@ export const siteData: SiteData = {
                         { id:4, name:"Module-4 Notes SDG-bcv654d", desc:"Sustainable Development Goals Module-4 notes", link:"https://drive.google.com/file/d/1WsxuOWWlIhealyTx341eeK3UutEkt-ml/view?usp=drive_link", type:"notes"},
                         { id:5, name:"Module-5 Notes SDG-bcv654d", desc:"Sustainable Development Goals Module-5 notes", link:"https://drive.google.com/file/d/1DdpovSEns0yvFZX2_b5Ur_7KYl0X2kS4/view?usp=drive_link", type:"notes"}
                     ] },
-                    { name: "Open Elective Subjects Mechanical Engg", code: "", credits: "3 CR", slug: "open-elective-subjects-mechanical-engg-oeme-vtu-notes", modules: [] },
                     { name: "Building Information Modelling - Advanced", code: "BCV657A", credits: "1 CR", slug: "building-information-modelling-advanced-bima-bcv657a-vtu-notes", modules: [] },
                     { name: "Structural Health Monitoring Using Sensors", code: "BCV657B", credits: "1 CR", slug: "structural-health-monitoring-using-sensors-shms-bcv657b-vtu-notes", modules: [] },
                     { name: "Data Analytics for Civil Engineers", code: "BCV657C", credits: "1 CR", slug: "data-analytics-for-civil-engineers-dace-bcv657c-vtu-notes", modules: [] },
                     { name: "Quality Control and Quality Assurance", code: "BCV657D", credits: "1 CR", slug: "quality-control-and-quality-assurance-qcqa-bcv657d-vtu-notes", modules: [] }
+                ]
+            },
+            {
+                sem:7,
+                subjects:[
+                    {name:"Design of Steel Structures", code:"BCV701", credits:"3 CR", slug:"design-of-steel-structures-dos-bcv701-vtu-notes", modules:[
+                        {id:1, name:"All module Notes BCV701", desc:"Design of Steel Structures All Module notes", link:"https://drive.google.com/file/d/18xgqN54E1LIG9C1dLrtdkV7ii30_uoMy/view?usp=drive_link", type:"notes"},
+                        {id:2, name:"All Module Handwritten Notes BCV701", desc:"Design of Steel Structures All Module Handwritten notes", link:"https://drive.google.com/file/d/1rNM-eLuDTdqa105lUTkcT3fOBNiV94KF/view?usp=drive_link", type:"notes"}
+                    ]},
+                    { name:"Estimation and Contract Management", code:"BCV702", credits:"4 CR", slug:"estimation-and-contract-management-ecm-bcv702-vtu-notes", modules:[
+                        {id:1, name:"Module-1 Notes BCV702", desc:"Estimation and Contract Management Module 1 notes", link:"https://drive.google.com/file/d/1NAVT9gIoUUHBM1If0SksSupbHz90lrvS/view?usp=drive_link", type:"notes"},
+                        {id:2, name:"Module-2 Notes BCV702", desc:"Estimation and Contract Management Module 2 notes", link:"https://drive.google.com/file/d/1z07EZKqdMrbuw0uufwgjdQpxHJqLXR2J/view?usp=drive_link", type:"notes"},
+                        {id:3, name:"Module-3 Notes BCV702", desc:"Estimation and Contract Management Module 3 notes", link:"https://drive.google.com/file/d/1scvxTG-ocWSJcutWEO6kinTBOGPIQNJI/view?usp=drive_link", type:"notes"},
+                        {id:4, name:"Module-4 Notes BCV702", desc:"Estimation and Contract Management Module 4 notes", link:"https://drive.google.com/file/d/1mB6HUSwpFm9biK_TPYm0q158kHEzLqlT/view?usp=drive_link", type:"notes"},
+                        {id:5, name:"Module-5 Notes BCV702", desc:"Estimation and Contract Management Module 5 notes", link:"https://drive.google.com/file/d/1WybHHKYNPDbDtrpK6Gv1LyKQtSosGpr8/view?usp=drive_link", type:"notes"}
+                    ]},
+                    
                 ]
             }
         ]
