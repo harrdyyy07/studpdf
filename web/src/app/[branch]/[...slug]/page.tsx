@@ -131,7 +131,7 @@ export default async function DynamicPage({ params }: { params: Promise<{ branch
 function SemesterView({ branch, branchTitle, semester }: { branch: string, branchTitle: string, semester: Semester }) {
     const breadcrumbs = [
         { label: branch.toUpperCase(), href: `/${branch}` },
-        { label: `Sem ${semester.sem}`, href: '#' }
+        { label: `Sem ${semester.sem}`, href: `/${branch}/${semester.sem}` }
     ];
 
     const blog = getSemesterBlog(branch, branchTitle, semester.sem, semester.subjects);
@@ -208,7 +208,7 @@ function SemesterView({ branch, branchTitle, semester }: { branch: string, branc
 function CycleView({ branch, branchTitle, scheme, cycle }: { branch: string, branchTitle: string, scheme: string, cycle: Cycle }) {
     const breadcrumbs = [
         { label: branch.toUpperCase(), href: `/${branch}` },
-        { label: cycle.name, href: '#' }
+        { label: cycle.name, href: `/${branch}/${scheme}/${cycle.slug}` }
     ];
 
     const blog = getCycleBlog(branch, branchTitle, scheme, cycle.name, cycle.subjects);

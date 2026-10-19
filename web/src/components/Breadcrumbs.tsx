@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export interface BreadcrumbItem {
     label: string;
-    href: string;
+    href?: string;
 }
 
 export interface BreadcrumbsProps {
@@ -314,6 +314,15 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, showShareButton = true
     if (!items || items.length === 0) return null;
 
     // Structured data for SEO (Schema.org BreadcrumbList)
+    const BASE_URL = 'https://vtuwise.in';
+
+    const getAbsoluteUrl = (href?: string): string | undefined => {
+        if (!href || href === '#' || href.trim() === '') return undefined;
+        if (href.startsWith('http://') || href.startsWith('https://')) return href;
+        const cleanPath = href.startsWith('/') ? href : `/${href}`;
+        return `${BASE_URL}${cleanPath}`;
+    };
+
     const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'BreadcrumbList',
@@ -322,14 +331,18 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, showShareButton = true
                 '@type': 'ListItem',
                 'position': 1,
                 'name': 'Home',
-                'item': typeof window !== 'undefined' ? window.location.origin : 'https://vtuwise.com'
+                'item': BASE_URL
             },
-            ...items.map((item, index) => ({
-                '@type': 'ListItem',
-                'position': index + 2,
-                'name': item.label,
-                ...(item.href && item.href !== '#' ? { 'item': item.href } : {})
-            }))
+            ...items.map((item, index) => {
+                const isCurrent = index === items.length - 1;
+                const itemUrl = getAbsoluteUrl(item.href) || (!isCurrent ? BASE_URL : undefined);
+                return {
+                    '@type': 'ListItem',
+                    'position': index + 2,
+                    'name': item.label,
+                    ...(itemUrl ? { 'item': itemUrl } : {})
+                };
+            })
         ]
     };
 
@@ -396,7 +409,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, showShareButton = true
                                 </span>
                             ) : isBranch ? (
                                 <Link
-                                    href={item.href}
+                                    href={item.href || '#'}
                                     className="vtu-breadcrumb-branch"
                                     title={`View ${item.label} engineering`}
                                 >
@@ -404,7 +417,7 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ items, showShareButton = true
                                 </Link>
                             ) : (
                                 <Link
-                                    href={item.href}
+                                    href={item.href || '#'}
                                     className="vtu-breadcrumb-link"
                                     title={item.label}
                                 >

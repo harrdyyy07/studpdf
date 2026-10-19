@@ -37,7 +37,7 @@ export default async function BranchPage({ params }: { params: Promise<{ branch:
     const blog = getBranchBlog(branch, data.title, data.semesters, data.schemes);
 
     const breadcrumbs = [
-        { label: branch.toUpperCase(), href: '#' }
+        { label: branch.toUpperCase(), href: `/${branch}` }
     ];
 
     return (

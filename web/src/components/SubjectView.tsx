@@ -101,7 +101,12 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
                 { label: isNaN(Number(sem)) ? String(sem) : `Sem ${sem}`, href: `/${branch}/${sem}` }
               ]
         ),
-        { label: subject.name, href: '#' }
+        { 
+            label: subject.name, 
+            href: cycle 
+                ? `/${branch}/${sem}/${cycle}/${subject.slug}` 
+                : `/${branch}/${sem}/${subject.slug}` 
+        }
     ];
 
     return (
