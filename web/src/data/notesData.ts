@@ -1446,7 +1446,13 @@ export const siteData: SiteData = {
                             { id: 5, name: "Module-5 notes", desc: "Cryptography & Network Security-bcs703 Module-5 notes", link: "https://drive.google.com/file/d/1gD_sx34IGov6IMCTqp2qapXRm5iRiDSv/view?usp=drive_link", type: "notes" }
                         ]
                     },
-                    { name: "Deep Learning", code: "BCS714A ", credits: "3 CR", slug: "deep-learning-dl-bcs714a-vtu-notes", modules: [] },
+                    { name: "Deep Learning", code: "BCS714A ", credits: "3 CR", slug: "deep-learning-dl-bcs714a-vtu-notes", modules: [
+                        { id: 1, name: "Module-1 notes", desc: "Deep Learning-bcs714a Module-1 notes", link: "https://drive.google.com/file/d/1yfNJE3fNkRkPW-VyqN8qudzOjJrWiHq8/view?usp=drive_link", type: "notes" },
+                        { id: 2, name: "Module-2 notes", desc: "Deep Learning-bcs714a Module-2 notes", link: "https://drive.google.com/file/d/10SysFvVyE47UzpDhYb1KlH3-rmpq4x1Y/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-3 notes", desc: "Deep Learning-bcs714a Module-3 notes", link: "https://drive.google.com/file/d/1z5jmWxwZgg9u-TS_gHEtW-JAyjhPAT8E/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-4 notes", desc: "Deep Learning-bcs714a Module-4 notes", link: "https://drive.google.com/file/d/19cIm2g-SIp9UDuDyymBL0vMi_rBEJ-N6/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-5 notes", desc: "Deep Learning-bcs714a Module-5 notes", link: "https://drive.google.com/file/d/1EVGZUh5EApJVqeuM9KN92bkyWSnFp1W6/view?usp=drive_link", type: "notes" }
+                    ] },
                     { name: "Natural Language Processing", code: "BCS714B", credits: "3 CR", slug: "natural-language-processing-nlp-bcs714b-vtu-notes", modules: [] },
                     {
                         name: "Big Data Analytics", code: "BCS714D", credits: "3 CR", slug: "advanced-algorithms-aa-bcs714b-vtu-notes", modules: [
@@ -1849,10 +1855,14 @@ export const siteData: SiteData = {
                 subjects: [
                     {name:"Microwave Engineering and Antenna Theory", code: "BEC701", credits: "3 CR", slug: "microwave-engineering-and-antenna-theory-meat-bec701-vtu-notes", modules: [
                         { id: 1, name: "Module-1 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-1 Notes", link: "https://drive.google.com/file/d/1sE7ltjc0xaTt_3K6CNDn8aJ-Zo8KgHQV/view?usp=drive_link", type: "notes" },
-                        { id: 2, name: "Module-2 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-2 Notes", link: "https://drive.google.com/file/d/1CEVCxlMWANLA8IAB91BtxrzFkc8WZp8X/view?usp=drive_link", type: "notes" },
-                        { id: 3, name: "Module-3 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-3 Notes", link: "https://drive.google.com/file/d/1blVkSm-whvLfrqdKjBCrMRrdTtpMM9Wr/view?usp=drive_link", type: "notes" },
-                        { id: 4, name: "Module-4 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-4 Notes", link: "https://drive.google.com/file/d/1esaatSJPLO48Xpg6mVID_4duyPU4J5Ix/view?usp=drive_link", type: "notes" },
-                        { id: 5, name: "Module-5 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-5 Notes", link: "https://drive.google.com/file/d/12xHQo4KDL0jR3ULWgaO5beHjOZVnS0xU/view?usp=drive_link", type: "notes" }
+                        { id: 2, name: "Module-1 Notes-2", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-1 Notes-2", link: "https://drive.google.com/file/d/1sANtouLaDkeGNBYv-xV8dtpfY5dBhEYF/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-2 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-2 Notes", link: "https://drive.google.com/file/d/1CEVCxlMWANLA8IAB91BtxrzFkc8WZp8X/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-2 Notes-2", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-2 Notes-2", link: "https://drive.google.com/file/d/1pt9fkBRz9RinM_rJC6Y7yAwuZPI0Lyyi/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-3 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-3 Notes", link: "https://drive.google.com/file/d/1blVkSm-whvLfrqdKjBCrMRrdTtpMM9Wr/view?usp=drive_link", type: "notes" },
+                        { id: 6, name: "Module-3 Notes-2", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-3 Notes-2", link: "https://drive.google.com/file/d/1OH8HMxrtH-KUHLtfdfl7BShpWzSwlRHx/view?usp=drive_link", type: "notes" },
+                        { id: 7, name: "Module-4 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-4 Notes", link: "https://drive.google.com/file/d/1esaatSJPLO48Xpg6mVID_4duyPU4J5Ix/view?usp=drive_link", type: "notes" },
+                        { id: 8, name: "Module-4 Notes-2", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-4 Notes-2", link: "https://drive.google.com/file/d/1tBtCgrUQtfOF0DLfW_mM2zI06OUGqgk8/view?usp=drive_link", type: "notes" },
+                        { id: 9, name: "Module-5 Notes", desc: "Microwave Engineering and Antenna Theory-BEC701 Module-5 Notes", link: "https://drive.google.com/file/d/12xHQo4KDL0jR3ULWgaO5beHjOZVnS0xU/view?usp=drive_link", type: "notes" }
                     ]},
                     {name:"Computer Networks and Protocols", code: "BEC702", credits: "3 CR", slug: "computer-networks-and-protocols-cnp-bec702-vtu-notes", modules: [
                         { id: 1, name: "Module-1 Notes", desc: "Computer Networks and Protocols-BEC702 Module-1 Notes", link: "https://drive.google.com/file/d/11UvpMnSMLXb9g1whG6rxkZhq4klp_XC1/view?usp=drive_link", type: "notes" },
@@ -1863,14 +1873,17 @@ export const siteData: SiteData = {
                     ]},
                     {name:"Wireless Communication Systems", code: "BEC703", credits: "3 CR", slug: "wireless-communication-systems-wcs-bec703-vtu-notes", modules: [
                         { id: 1, name: "Module-1 Notes", desc: "Wireless Communication Systems-BEC703 Module-1 Notes", link: "https://drive.google.com/file/d/1dJZpHM4ggpduV0Ubk9kgAMbRNECn0xBF/view?usp=drive_link", type: "notes" },
-                        { id: 1, name: "Module-1 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-1 Notes-2", link: "https://drive.google.com/file/d/1HXzj88P1yIw6lddxOaUsEuDBhjYTJN0L/view?usp=drive_link", type: "notes" },
-                        { id: 2, name: "Module-2 Notes", desc: "Wireless Communication Systems-BEC703 Module-2 Notes", link: "https://drive.google.com/file/d/1_gfH8TqFNsPbKvLBgHNMpWHFZfb4yiTJ/view?usp=drive_link", type: "notes" },
-                        { id: 2, name: "Module-2 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-2 Notes-2", link: "https://drive.google.com/file/d/1TTvCisvRRLgUnV4m1s52KmQ3JJcLtoNT/view?usp=drive_link", type: "notes" },
-                        { id: 3, name: "Module-3 Notes", desc: "Wireless Communication Systems-BEC703 Module-3 Notes", link: "https://drive.google.com/file/d/14jofm7P1zOsOOHWNIVqUfOox0bzH4hD3/view?usp=drive_link", type: "notes" },
-                        { id: 3, name: "Module-3 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-3 Notes-2", link: "https://drive.google.com/file/d/1eLsQ0C7uJLIEROWmmLG4D0uJC2XWgdaZ/view?usp=drive_link", type: "notes" },
-                        { id: 4, name: "Module-4 Notes", desc: "Wireless Communication Systems-BEC703 Module-4 Notes", link: "https://drive.google.com/file/d/1af2prl4rAuyNBwC-kDVs4nodbRIHgNYe/view?usp=drive_link", type: "notes" },
-                        { id: 4, name: "Module-4 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-4 Notes-2", link: "https://drive.google.com/file/d/1FZU60esTPnId0J9ndm4BXxYfCfb1Ncld/view?usp=drive_link", type: "notes" },
-                        { id: 5, name: "Module-5 Notes", desc: "Wireless Communication Systems-BEC703 Module-5 Notes", link: "https://drive.google.com/file/d/1W39GDwJmXmlV4nK4wFZlHnBCoZhrEAOP/view?usp=drive_link", type: "notes" }
+                        { id: 2, name: "Module-1 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-1 Notes-2", link: "https://drive.google.com/file/d/1HXzj88P1yIw6lddxOaUsEuDBhjYTJN0L/view?usp=drive_link", type: "notes" },
+                        { id: 3, name: "Module-2 Notes", desc: "Wireless Communication Systems-BEC703 Module-2 Notes", link: "https://drive.google.com/file/d/1_gfH8TqFNsPbKvLBgHNMpWHFZfb4yiTJ/view?usp=drive_link", type: "notes" },
+                        { id: 4, name: "Module-2 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-2 Notes-2", link: "https://drive.google.com/file/d/1TTvCisvRRLgUnV4m1s52KmQ3JJcLtoNT/view?usp=drive_link", type: "notes" },
+                        { id: 5, name: "Module-3 Notes", desc: "Wireless Communication Systems-BEC703 Module-3 Notes", link: "https://drive.google.com/file/d/14jofm7P1zOsOOHWNIVqUfOox0bzH4hD3/view?usp=drive_link", type: "notes" },
+                        { id: 6, name: "Module-3 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-3 Notes-2", link: "https://drive.google.com/file/d/1eLsQ0C7uJLIEROWmmLG4D0uJC2XWgdaZ/view?usp=drive_link", type: "notes" },
+                        { id: 7, name: "Module-3 Notes-3", desc: "Wireless Communication Systems-BEC703 Module-3 Notes-3", link: "https://drive.google.com/file/d/1Jpf9g3phimg9eK7ASPKfDzOxH-qkD1WZ/view?usp=drive_link", type: "notes" },
+                        { id: 8, name: "Module-4 Notes", desc: "Wireless Communication Systems-BEC703 Module-4 Notes", link: "https://drive.google.com/file/d/1af2prl4rAuyNBwC-kDVs4nodbRIHgNYe/view?usp=drive_link", type: "notes" },
+                        { id: 9, name: "Module-4 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-4 Notes-2", link: "https://drive.google.com/file/d/1FZU60esTPnId0J9ndm4BXxYfCfb1Ncld/view?usp=drive_link", type: "notes" },
+                        { id: 10, name: "Module-4 Notes-3", desc: "Wireless Communication Systems-BEC703 Module-4 Notes-3", link: "https://drive.google.com/file/d/1ecQp6z7-DAv6_dGJ5dKaOuhJAuQ9w3Gu/view?usp=drive_link", type: "notes" },
+                        { id: 11, name: "Module-5 Notes", desc: "Wireless Communication Systems-BEC703 Module-5 Notes", link: "https://drive.google.com/file/d/1W39GDwJmXmlV4nK4wFZlHnBCoZhrEAOP/view?usp=drive_link", type: "notes" },
+                        { id: 12, name: "Module-5 Notes-2", desc: "Wireless Communication Systems-BEC703 Module-5 Notes-2", link: "https://drive.google.com/file/d/1FvDpYuitHXb66K9ch64eghK-78YN45pI/view?usp=drive_link", type: "notes" }
                     ]},
                     {name:"Computer and Network Security", code: "BEC714B", credits: "3 CR", slug: "computer-and-network-security-cns-bec714b-vtu-notes", modules: [
                         { id: 1, name: "Module-1 Notes", desc: "Computer and Network Security-BEC714B Module-1 Notes", link: "https://drive.google.com/file/d/1TeV1XxXB7F91bVSzsz9-6V4wIdTCTj8s/view?usp=drive_link", type: "notes" },
@@ -1878,6 +1891,13 @@ export const siteData: SiteData = {
                         { id: 3, name: "Module-3 Notes", desc: "Computer and Network Security-BEC714B Module-3 Notes", link: "https://drive.google.com/file/d/1RXP3c7Cw4U1hU_hvtFVmnpfE13_s81bN/view?usp=drive_link", type: "notes" },
                         { id: 4, name: "Module-4 Notes", desc: "Computer and Network Security-BEC714B Module-4 Notes", link: "https://drive.google.com/file/d/1V8AlxkTEbhTHGopdsQrndLYp8bZbXWt8/view?usp=drive_link", type: "notes" },
                         { id: 5, name: "Module-5 Notes", desc: "Computer and Network Security-BEC714B Module-5 Notes", link: "https://drive.google.com/file/d/1YavUsdHcUPaZBvQTzSO7leH8-xDS9gcu/view?usp=drive_link", type: "notes" }
+                    ]},
+                    {name:"ELECTRIC VEHICLE TECHNOLOGIES", code:"BEE755A", credits: "3 CR", slug: "electric-vehicle-technologies-evt-bee755a-vtu-notes", modules: [
+                        {id:1, name:"Module-1 Notes", desc:"Module-1 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1iC-Z3zvnKH0PPyY85vCMsllkTUFGgq0S/view?usp=drive_link", type:"notes"},
+                        {id:2, name:"Module-2 Notes", desc:"Module-2 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1mTJgD14UYLj4CMfJBD-utQ7GbM34-wGY/view?usp=drive_link", type:"notes"},
+                        {id:3, name:"Module-3 Notes", desc:"Module-3 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1gnJ6_FnHSiykiwvIDmcggRus68LkZ7Bb/view?usp=drive_link", type:"notes"},
+                        {id:4, name:"Module-4 Notes", desc:"Module-4 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/18isZq_07awhtSJTSCn3d0M7WejspPdh8/view?usp=drive_link", type:"notes"},
+                        {id:5, name:"Module-5 Notes", desc:"Module-5 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1Ujvrt1JrMKf0rD9h0tnM9NqfeetX32dP/view?usp=drive_link", type:"notes"},
                     ]}
                 ]
             }
@@ -2126,6 +2146,14 @@ export const siteData: SiteData = {
                     ] },
                     {name:"Power System Analysis – II", code: "BEE703", credits: "3 CR", slug: "power-system-analysis-ii-psa-ii-bee703-vtu-notes", modules: [] },
                     {name:"Big Data Analytics in Power Systems", code: "BEE704", credits: "3 CR", slug: "big-data-analytics-in-power-systems-bda-bee704-vtu-notes", modules: [] },
+                    {name:"ELECTRIC VEHICLE TECHNOLOGIES", code:"BEE755A", credits: "3 CR", slug: "electric-vehicle-technologies-evt-bee755a-vtu-notes", modules: [
+                        {id:1, name:"Module-1 Notes", desc:"Module-1 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1iC-Z3zvnKH0PPyY85vCMsllkTUFGgq0S/view?usp=drive_link", type:"notes"},
+                        {id:2, name:"Module-2 Notes", desc:"Module-2 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1mTJgD14UYLj4CMfJBD-utQ7GbM34-wGY/view?usp=drive_link", type:"notes"},
+                        {id:3, name:"Module-3 Notes", desc:"Module-3 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1gnJ6_FnHSiykiwvIDmcggRus68LkZ7Bb/view?usp=drive_link", type:"notes"},
+                        {id:4, name:"Module-4 Notes", desc:"Module-4 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/18isZq_07awhtSJTSCn3d0M7WejspPdh8/view?usp=drive_link", type:"notes"},
+                        {id:5, name:"Module-5 Notes", desc:"Module-5 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1Ujvrt1JrMKf0rD9h0tnM9NqfeetX32dP/view?usp=drive_link", type:"notes"},
+                    ]},
+                    
                 ]
             }
         ]
