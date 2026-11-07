@@ -2144,8 +2144,21 @@ export const siteData: SiteData = {
                         { id: 4, name: "Module-4 Notes for BEE702", desc: "Module-4 Notes for BEE702 Industrial Drives and Applications", link: "https://drive.google.com/file/d/1e9ylngGLbNvHoMMwJAsEnQ38tWa16nF_/view?usp=drive_link", type: "notes" },
                         { id: 5, name: "Module-5 Notes for BEE702", desc: "Module-5 Notes for BEE702 Industrial Drives and Applications", link: "https://drive.google.com/file/d/1qX5tE1kKRgUXGqYH7dLzmoOMV3i0vHTI/view?usp=drive_link", type: "notes" }
                     ] },
-                    {name:"Power System Analysis – II", code: "BEE703", credits: "3 CR", slug: "power-system-analysis-ii-psa-ii-bee703-vtu-notes", modules: [] },
-                    {name:"Big Data Analytics in Power Systems", code: "BEE704", credits: "3 CR", slug: "big-data-analytics-in-power-systems-bda-bee704-vtu-notes", modules: [] },
+                    {name:"Power System Analysis – II", code: "BEE703", credits: "3 CR", slug: "power-system-analysis-ii-psa-ii-bee703-vtu-notes", modules: [
+                        {id:1, name:"Module-1 Notes-1", desc:"Module-1 Notes for BEE703 Power System Analysis – II", link:"https://drive.google.com/file/d/1E2x2KwFPTKXz5hGN_3ArVoOqidghH0QR/view?usp=drive_link", type:"notes"},
+                        {id:2, name:"Module-1 Notes-2", desc:"Module-1 Notes for BEE703 Power System Analysis – II", link:"https://drive.google.com/file/d/1M8BbC39WbcsFDWX43hLZyOqiApDCLxEO/view?usp=drive_link", type:"notes"},
+                        {id:3, name:"Module-2 Notes", desc:"Module-2 Notes for BEE703 Power System Analysis – II", link:"https://drive.google.com/file/d/17hpFnp2_54n2Ie58C6SrmVRZOHQi_Uti/view?usp=drive_link", type:"notes"},
+                        {id:4, name:"Module-3 Notes", desc:"Module-3 Notes for BEE703 Power System Analysis – II", link:"https://drive.google.com/file/d/1EWmV5cFK_UcjZqrnnYkUrEwe54SlZXL_/view?usp=drive_link", type:"notes"},
+                        {id:5, name:"Module-4 Notes", desc:"Module-4 Notes for BEE703 Power System Analysis – II", link:"https://drive.google.com/file/d/1PFzFOkIWdpUjySyL2FjiDhhGUOirxUNQ/view?usp=drive_link", type:"notes"},
+                        {id:6, name:"Module-5 Notes", desc:"Module-5 Notes for BEE703 Power System Analysis – II", link:"https://drive.google.com/file/d/1hyU17veyzN8mLsoC6wbeL-qxYYgblH3Y/view?usp=drive_link", type:"notes"}
+                    ] },
+                    {name:"Power System Operation and Control", code: "BEE714A", credits: "3 CR", slug: "power-system-operation-and-control-psoc-bee714a-vtu-notes", modules: [
+                        {id:1, name:"Module-1 Notes", desc:"Module-1 Notes for BEE714A Power System Operation and Control", link:"https://drive.google.com/file/d/1vSe36luyu9Pd6cwFvD0HUud5FivXP2YB/view?usp=drive_link", type:"notes"},
+                        {id:2, name:"Module-2 Notes", desc:"Module-2 Notes for BEE714A Power System Operation and Control", link:"https://drive.google.com/file/d/11NfumI6R7fTFdrrV3mpbE2K3HHURlrC8/view?usp=drive_link", type:"notes"},
+                        {id:3, name:"Module-3 Notes", desc:"Module-3 Notes for BEE714A Power System Operation and Control", link:"https://drive.google.com/file/d/1bovChAaXbqEo7mgJSEXMUs2Y6-5t3v7d/view?usp=drive_link", type:"notes"},
+                        {id:4, name:"Module-4 Notes", desc:"Module-4 Notes for BEE714A Power System Operation and Control", link:"https://drive.google.com/file/d/1AWqG-EXfE6eegnJXONFuZoxyinwz2-gV/view?usp=drive_link", type:"notes"},
+                        {id:5, name:"Module-5 Notes", desc:"Module-5 Notes for BEE714A Power System Operation and Control", link:"https://drive.google.com/file/d/19N24qoAWUFpeRqg943XvF1vjWMobxy_s/view?usp=drive_link", type:"notes"},
+                    ] },
                     {name:"ELECTRIC VEHICLE TECHNOLOGIES", code:"BEE755A", credits: "3 CR", slug: "electric-vehicle-technologies-evt-bee755a-vtu-notes", modules: [
                         {id:1, name:"Module-1 Notes", desc:"Module-1 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1iC-Z3zvnKH0PPyY85vCMsllkTUFGgq0S/view?usp=drive_link", type:"notes"},
                         {id:2, name:"Module-2 Notes", desc:"Module-2 Notes for BEE755A ELECTRIC VEHICLE TECHNOLOGIES", link:"https://drive.google.com/file/d/1mTJgD14UYLj4CMfJBD-utQ7GbM34-wGY/view?usp=drive_link", type:"notes"},
