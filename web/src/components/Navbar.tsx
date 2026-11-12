@@ -104,20 +104,6 @@ const Navbar = () => {
                             Tools <span className="dropdown-arrow">▾</span>
                         </span>
                         <div className="dropdown-menu">
-                            <a 
-                                href="https://seal-pdf.com/" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                onClick={() => setIsMenuOpen(false)}
-                                style={{ 
-                                    fontWeight: 800, 
-                                    color: '#4f46e5',
-                                    background: 'rgba(79, 70, 229, 0.08)',
-                                    borderRadius: '8px'
-                                }}
-                            >
-                                🦭 Seal PDF Suite (Free) 🔥
-                            </a>
                             <Link href="/student-tools" onClick={() => setIsMenuOpen(false)}>All Tools</Link>
                             <Link href="/student-tools/resume-builder" onClick={() => setIsMenuOpen(false)}>Resume Builder</Link>
                             <Link href="/student-tools/code-practice" onClick={() => setIsMenuOpen(false)}>Code Practice</Link>

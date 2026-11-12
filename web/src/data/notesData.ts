@@ -2286,6 +2286,26 @@ export const siteData: SiteData = {
                     { name: "NSS / Physical Education / Yoga", code: "BNSK658", credits: "0 CR", slug: "nss-physical-education-yoga-nss-bnsk658-vtu-notes", modules: [] },
                     { name: "Indian Knowledge System", code: "BIKS609", credits: "0 CR", slug: "indian-knowledge-system-iks-biks609-vtu-notes", modules: [] }
                 ]
+            },
+            {
+                sem: 7,
+                subjects: [
+              { name: "FINITE ELEMENT METHODS", code: "BME701", credits: "4 CR", slug: "finite-element-methods-fem-bme701-vtu-notes", modules: [
+                      {id: 1, name: "Module-1 notes", desc: "Finite Element Methods bme701 Module-1 Notes", link:"https://drive.google.com/file/d/1korb1b7K_UXFqyWAL7sKRh1t6DHcnkaL/view?usp=drive_link", type:"notes"},
+                      {id: 2, name: "Module-2 notes", desc: "Finite Element Methods bme701 Module-2 Notes", link:"https://drive.google.com/file/d/1BXP_j09LkYpycX9tOuygC16A9SbiGoy_/view?usp=drive_link", type:"notes"},  
+                      {id: 3, name: "Module-3 notes", desc: "Finite Element Methods bme701 Module-3 Notes", link:"https://drive.google.com/file/d/1dsXK2sY8YB2U4h4i8hSHj5Lce0ex4cTc/view?usp=drive_link", type:"notes"}, 
+                      {id: 4, name: "Module-4 notes", desc: "Finite Element Methods bme701 Module-4 Notes", link:"https://drive.google.com/file/d/18y3mgAuBfh4iLAh7mdETUaAc1PuBaiG4/view?usp=drive_link", type:"notes"}, 
+                      {id: 5, name: "Module-5 notes", desc: "Finite Element Methods bme701 Module-5 Notes", link:"https://drive.google.com/file/d/1Us0MTHUricAosZTljqk_EI_W3MiWnhPE/view?usp=drive_link", type:"notes"}              
+              ] },
+              { name: "Hydraulics & Pneumatics", code: "BME702", credits: "4 CR", slug: "hydraulics-and-pneumatics-hp-bme702-vtu-notes", modules: [
+                      {id: 1, name: "Module-1 notes", desc: "Hydraulics & Pneumatics bme702 Module-1 Notes", link:"https://drive.google.com/file/d/1WQLwLxW-WxO4eJGdLEuFYIVS06XJgmqk/view?usp=drive_link", type:"notes"},
+                      {id: 2, name: "Module-2 notes", desc: "Hydraulics & Pneumatics bme702 Module-2 Notes", link:"https://drive.google.com/file/d/1S9p0R8vdI1MHvBneMfqWKy2D8mV3E_TU/view?usp=drive_link", type:"notes"},  
+                      {id: 3, name: "Module-3 notes", desc: "Hydraulics & Pneumatics bme702 Module-3 Notes", link:"https://drive.google.com/file/d/1Kvg84uTY59pUD1J9qbPZoOGnu-WWsyWk/view?usp=drive_link", type:"notes"}, 
+                      {id: 4, name: "Module-4 notes", desc: "Hydraulics & Pneumatics bme702 Module-4 Notes", link:"https://drive.google.com/file/d/1jSQuNZzuaK2YXJwVgnCNuXCap-OFb5kS/view?usp=drive_link", type:"notes"}, 
+                      {id: 5, name: "Module-5 notes", desc: "Hydraulics & Pneumatics bme702 Module-5 Notes", link:"https://drive.google.com/file/d/16tlL2hbCGQVs3T2TCVCJcOQM576PBxPK/view?usp=drive_link", type:"notes"}              
+              ] },
+                     
+                ]
             }
         ]
     },

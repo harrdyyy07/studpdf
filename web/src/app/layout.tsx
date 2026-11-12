@@ -8,7 +8,6 @@ import Preloader from "@/components/Preloader";
 import WhatsAppPopup from "@/components/WhatsAppPopup";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
 import AdSenseSideRails from "@/components/AdSenseSideRails";
-import SealPdfFloatingBanner from "@/components/SealPdfFloatingBanner";
 
   
 export const metadata: Metadata = {
@@ -124,7 +123,6 @@ export default function RootLayout({
         <AdSenseSideRails />
         <WhatsAppPopup />
         <WhatsAppFloating />
-        <SealPdfFloatingBanner />
         <Footer />
       </body>
     </html>
