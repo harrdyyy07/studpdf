@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Subject } from '@/data/notesData';
+import { Subject, siteData } from '@/data/notesData';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import { getSubjectBlog } from '@/data/subjectBlogsData';
+import SubjectNavigation from '@/components/SubjectNavigation';
 
 interface SubjectViewProps {
     branch: string;
@@ -12,6 +13,10 @@ interface SubjectViewProps {
     sem: number | string;
     subject: Subject;
     cycle?: string;
+    prevSubject?: Subject | null;
+    nextSubject?: Subject | null;
+    currentIndex?: number;
+    totalSubjects?: number;
 }
 
 const typeLabels: Record<string, string> = {
@@ -46,7 +51,70 @@ const getDownloadLink = (url: string) => {
     return url;
 };
 
-const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, subject, cycle }) => {
+const SubjectView: React.FC<SubjectViewProps> = ({ 
+    branch, 
+    branchTitle, 
+    sem, 
+    subject, 
+    cycle,
+    prevSubject: initialPrevSubject,
+    nextSubject: initialNextSubject,
+    currentIndex: initialCurrentIndex,
+    totalSubjects: initialTotalSubjects
+}) => {
+    // Fallback or explicit calculation if not passed
+    let computedPrevSubject = initialPrevSubject;
+    let computedNextSubject = initialNextSubject;
+    let computedCurrentIndex = initialCurrentIndex;
+    let computedTotalSubjects = initialTotalSubjects;
+
+    if (computedPrevSubject === undefined || computedNextSubject === undefined) {
+        const branchData = siteData[branch];
+        if (branchData) {
+            let subjectsList: Subject[] = [];
+            if (cycle && branchData.schemes) {
+                const scheme = branchData.schemes.find(s => s.slug === String(sem));
+                const cycleObj = scheme?.cycles.find(c => c.slug === cycle);
+                if (cycleObj) subjectsList = cycleObj.subjects;
+            } else if (branchData.semesters) {
+                const semObj = branchData.semesters.find(s => s.sem === Number(sem));
+                if (semObj) subjectsList = semObj.subjects;
+            }
+
+            if (subjectsList.length > 1) {
+                const idx = subjectsList.findIndex(s => s.slug === subject.slug);
+                if (idx !== -1) {
+                    computedCurrentIndex = idx;
+                    computedTotalSubjects = subjectsList.length;
+                    const prevIdx = (idx - 1 + subjectsList.length) % subjectsList.length;
+                    const nextIdx = (idx + 1) % subjectsList.length;
+                    computedPrevSubject = subjectsList[prevIdx];
+                    computedNextSubject = subjectsList[nextIdx];
+                }
+            }
+        }
+    }
+
+    const isCycle = Boolean(cycle);
+    const semesterHref = isCycle
+        ? `/${branch}/${sem}/${cycle}`
+        : `/${branch}/${sem}`;
+    const semesterLabel = isCycle
+        ? `${cycle?.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}`
+        : (isNaN(Number(sem)) ? String(sem) : `Semester ${sem}`);
+
+    const prevHref = computedPrevSubject 
+        ? (isCycle 
+            ? `/${branch}/${sem}/${cycle}/${computedPrevSubject.slug}` 
+            : `/${branch}/${sem}/${computedPrevSubject.slug}`) 
+        : undefined;
+
+    const nextHref = computedNextSubject 
+        ? (isCycle 
+            ? `/${branch}/${sem}/${cycle}/${computedNextSubject.slug}` 
+            : `/${branch}/${sem}/${computedNextSubject.slug}`) 
+        : undefined;
+
     const availableTypes = Array.from(new Set(subject.modules.map(mod => mod.type)));
     const [activeFilter, setActiveFilter] = useState('All');
     const [previewContent, setPreviewContent] = useState<{url: string, title: string} | null>(null);
@@ -171,6 +239,14 @@ const SubjectView: React.FC<SubjectViewProps> = ({ branch, branchTitle, sem, sub
             {filteredModules.length === 0 && (
                 <div className="text-center py-24 opacity-30 italic">No resources found for this category.</div>
             )}
+
+            {/* Previous & Next Subject Navigation immediately after module notes cards */}
+            <SubjectNavigation 
+                prevSubject={computedPrevSubject || null}
+                nextSubject={computedNextSubject || null}
+                prevHref={prevHref}
+                nextHref={nextHref}
+            />
 
             {blog && (
                 <div className="subject-blog-section mt-16 pt-12 border-t border-surface-border">

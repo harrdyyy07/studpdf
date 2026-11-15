@@ -105,9 +105,32 @@ export default async function DynamicPage({ params }: { params: Promise<{ branch
         if (isNumeric) {
             const semNum = parseInt(slug[0]);
             const semester = branchData.semesters?.find((s) => s.sem === semNum);
-            const subject = semester?.subjects.find((s) => s.slug === slug[1]);
-            if (!subject) notFound();
-            return <SubjectView branch={branch} branchTitle={branchData.title} sem={semNum} subject={subject} />;
+            const subjects = semester?.subjects || [];
+            const currentIndex = subjects.findIndex((s) => s.slug === slug[1]);
+            if (currentIndex === -1) notFound();
+            const subject = subjects[currentIndex];
+
+            let prevSubject: Subject | null = null;
+            let nextSubject: Subject | null = null;
+            if (subjects.length > 1) {
+                const prevIndex = (currentIndex - 1 + subjects.length) % subjects.length;
+                const nextIndex = (currentIndex + 1) % subjects.length;
+                prevSubject = subjects[prevIndex];
+                nextSubject = subjects[nextIndex];
+            }
+
+            return (
+                <SubjectView 
+                    branch={branch} 
+                    branchTitle={branchData.title} 
+                    sem={semNum} 
+                    subject={subject}
+                    prevSubject={prevSubject}
+                    nextSubject={nextSubject}
+                    currentIndex={currentIndex}
+                    totalSubjects={subjects.length}
+                />
+            );
         } else {
             const scheme = branchData.schemes?.find((s) => s.slug === slug[0]);
             const cycle = scheme?.cycles.find((c) => c.slug === slug[1]);
@@ -120,9 +143,33 @@ export default async function DynamicPage({ params }: { params: Promise<{ branch
     if (slug.length === 3) {
         const scheme = branchData.schemes?.find((s) => s.slug === slug[0]);
         const cycle = scheme?.cycles.find((c) => c.slug === slug[1]);
-        const subject = cycle?.subjects.find((s) => s.slug === slug[2]);
-        if (!subject) notFound();
-        return <SubjectView branch={branch} branchTitle={branchData.title} sem={slug[0]} subject={subject} cycle={slug[1]} />;
+        const subjects = cycle?.subjects || [];
+        const currentIndex = subjects.findIndex((s) => s.slug === slug[2]);
+        if (currentIndex === -1) notFound();
+        const subject = subjects[currentIndex];
+
+        let prevSubject: Subject | null = null;
+        let nextSubject: Subject | null = null;
+        if (subjects.length > 1) {
+            const prevIndex = (currentIndex - 1 + subjects.length) % subjects.length;
+            const nextIndex = (currentIndex + 1) % subjects.length;
+            prevSubject = subjects[prevIndex];
+            nextSubject = subjects[nextIndex];
+        }
+
+        return (
+            <SubjectView 
+                branch={branch} 
+                branchTitle={branchData.title} 
+                sem={slug[0]} 
+                subject={subject} 
+                cycle={slug[1]}
+                prevSubject={prevSubject}
+                nextSubject={nextSubject}
+                currentIndex={currentIndex}
+                totalSubjects={subjects.length}
+            />
+        );
     }
 
     notFound();
