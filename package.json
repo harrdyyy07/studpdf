@@ -5,7 +5,7 @@
   "main": "auth.js",
   "scripts": {
     "build": "npm --prefix web install && npm --prefix web run build",
-    "deploy": "vercel --prod",
+    "deploy": "npx wrangler deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

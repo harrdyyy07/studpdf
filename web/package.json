@@ -4,19 +4,20 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx @opennextjs/cloudflare build",
+    "build:next": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@uploadthing/react": "^7.3.3",
-    "mongoose": "^9.6.3",
     "next": "16.2.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "uploadthing": "^7.7.4"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -24,6 +25,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.2",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.0.0"
   }
 }
