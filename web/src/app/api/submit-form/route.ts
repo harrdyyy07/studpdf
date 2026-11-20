@@ -4,8 +4,9 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
     const webhookUrl =
+      process.env.NOTES_GOOGLE_SHEET_WEBHOOK_URL ||
       process.env.GOOGLE_SHEET_WEBHOOK_URL ||
-      "https://script.google.com/macros/s/AKfycbz2mhTGASB3y78ueo1lGov5_WyJvQ3jZbufn-VOd8DAZdbzxHn9cG5VKXvUtTyt166RBw/exec";
+      "https://script.google.com/macros/s/AKfycbxMcAAgcAZfPldSYOW63dBZBCO7u7zkLNs2RaGecM9oI7HMQXM_K-EgQGJKwbx3epf7/exec";
 
     if (!webhookUrl) {
       return NextResponse.json({ 

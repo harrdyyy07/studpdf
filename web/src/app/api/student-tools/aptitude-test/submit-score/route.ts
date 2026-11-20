@@ -5,7 +5,10 @@ export async function POST(req: Request) {
     const body = await req.json();
     
     // Use server-configured Google Sheet webhook URL (prevent SSRF by disallowing client-supplied URLs)
-    const webhookUrl = process.env.GOOGLE_SHEET_WEBHOOK_URL || "https://script.google.com/macros/s/AKfycbz2mhTGASB3y78ueo1lGov5_WyJvQ3jZbufn-VOd8DAZdbzxHn9cG5VKXvUtTyt166RBw/exec";
+    const webhookUrl =
+      process.env.APTITUDE_GOOGLE_SHEET_WEBHOOK_URL ||
+      process.env.GOOGLE_SHEET_WEBHOOK_URL ||
+      "https://script.google.com/macros/s/AKfycbz2mhTGASB3y78ueo1lGov5_WyJvQ3jZbufn-VOd8DAZdbzxHn9cG5VKXvUtTyt166RBw/exec";
 
     if (!webhookUrl) {
       return NextResponse.json({ 
