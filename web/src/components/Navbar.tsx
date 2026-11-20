@@ -2,9 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import SearchOverlay from './SearchOverlay';
 
 const Navbar = () => {
+    const pathname = usePathname();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -79,7 +81,7 @@ const Navbar = () => {
                 </div>
             )}
             
-            <div className="container nav-content">
+            <div className="nav-content">
                 <button 
                     className={`menu-toggle ${isMenuOpen ? 'active' : ''}`} 
                     aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
@@ -88,83 +90,129 @@ const Navbar = () => {
                     <span className="hamburger"></span>
                 </button>
                 
-                <Link href="/" className="logo">VTU<span> wise.</span></Link>
+                <Link href="/" className="logo"><span className="logo-vtu">VTU</span><span> wise.</span></Link>
                 
-                <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+                <div className={`nav-drawer-wrapper ${isMenuOpen ? 'active' : ''}`}>
                     <div className="mobile-drawer-header">
-                        <Link href="/" className="logo" onClick={() => setIsMenuOpen(false)}>VTU<span> wise.</span></Link>
-                        <button className="drawer-close" onClick={toggleMenu} aria-label="Close Menu">&times;</button>
-                    </div>
-                    <li><Link href="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-                    <li><Link href="/blog" onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
-                    
-                    <li className={`dropdown ${isMobileCalcOpen ? 'mobile-open' : ''}`}>
-                        <span className="dropdown-toggle" onClick={() => setIsMobileCalcOpen(!isMobileCalcOpen)}>
-                            Calculator <span className="dropdown-arrow">▾</span>
-                        </span>
-                        <div className="dropdown-menu">
-                            <Link href="/sgpa-calculator" onClick={() => setIsMenuOpen(false)}>SGPA Calculator</Link>
-                            <Link href="/cgpa-calculator" onClick={() => setIsMenuOpen(false)}>CGPA Calculator</Link>
-                            <Link href="/student-tools/vtu-results" onClick={() => setIsMenuOpen(false)}>VTU Results</Link>
-                        </div>
-                    </li>
-
-                    <li className={`dropdown ${isMobileToolsOpen ? 'mobile-open' : ''}`}>
-                        <span className="dropdown-toggle" onClick={() => setIsMobileToolsOpen(!isMobileToolsOpen)}>
-                            Tools <span className="dropdown-arrow">▾</span>
-                        </span>
-                        <div className="dropdown-menu">
-                            <Link href="/student-tools" onClick={() => setIsMenuOpen(false)}>All Tools</Link>
-                            <Link href="/student-tools/resume-builder" onClick={() => setIsMenuOpen(false)}>Resume Builder</Link>
-                            <Link href="/student-tools/code-practice" onClick={() => setIsMenuOpen(false)}>Code Practice</Link>
-                            <Link href="/student-tools/quiz" onClick={() => setIsMenuOpen(false)}>Quiz Arena</Link>
-                            <Link href="/student-tools/typing-test" onClick={() => setIsMenuOpen(false)}>Typing Test</Link>
-                        </div>
-                    </li>
-                    
-                    <li><Link href="/upload" onClick={() => setIsMenuOpen(false)}>Upload</Link></li>
-                    <li><Link href="/student-tools/vtu-results" onClick={() => setIsMenuOpen(false)}>Results</Link></li>
-                    <li><a href="https://vtu.ac.in/en/category/examination/" target="_blank" rel="noopener noreferrer">Academics</a></li>
-                    <li className={`dropdown ${isMobileLegalOpen ? 'mobile-open' : ''}`}>
-                        <span className="dropdown-toggle" onClick={() => setIsMobileLegalOpen(!isMobileLegalOpen)}>
-                            Legal <span className="dropdown-arrow">▾</span>
-                        </span>
-                        <div className="dropdown-menu">
-                            <Link href="/legal/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
-                            <Link href="/legal/privacy" onClick={() => setIsMenuOpen(false)}>Privacy Policy</Link>
-                            <Link href="/legal/terms" onClick={() => setIsMenuOpen(false)}>Terms &amp; Conditions</Link>
-                            <Link href="/legal/disclaimer" onClick={() => setIsMenuOpen(false)}>Disclaimer</Link>
-                            <Link href="/legal/faqs" onClick={() => setIsMenuOpen(false)}>FAQs</Link>
-                            <Link href="/legal/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
-                        </div>
-                    </li>
-                    
-                    <li className="mobile-only-action">
-                        <button className="theme-switch" aria-label="Toggle Theme" onClick={toggleTheme}>
-                            <svg className="icon-moon-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                            <div className="switch-knob"></div>
-                            <svg className="icon-sun-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <Link href="/" className="logo" onClick={() => setIsMenuOpen(false)}>
+                            <span className="logo-vtu">VTU</span><span> wise.</span>
+                        </Link>
+                        <button className="drawer-close" onClick={toggleMenu} aria-label="Close Menu">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
                         </button>
-                    </li>
-                    <li className="mobile-only-action">
-                        <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" rel="noopener noreferrer" className="btn-join-mobile">Join Us</a>
-                    </li>
-                </ul>
+                    </div>
+
+                    <ul className="nav-links">
+                        <li><Link href="/" className={pathname === '/' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+                        <li><Link href="/blog" className={pathname?.startsWith('/blog') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
+                        
+                        <li className={`dropdown ${isMobileCalcOpen ? 'mobile-open' : ''}`}>
+                            <span className={`dropdown-toggle ${pathname?.startsWith('/sgpa') || pathname?.startsWith('/cgpa') ? 'active' : ''}`} onClick={() => setIsMobileCalcOpen(!isMobileCalcOpen)}>
+                                Calculator
+                                <svg className="dropdown-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </span>
+                            <div className="dropdown-menu">
+                                <Link href="/sgpa-calculator" onClick={() => setIsMenuOpen(false)}>SGPA Calculator</Link>
+                                <Link href="/cgpa-calculator" onClick={() => setIsMenuOpen(false)}>CGPA Calculator</Link>
+                                <Link href="/student-tools/vtu-results" onClick={() => setIsMenuOpen(false)}>VTU Results</Link>
+                            </div>
+                        </li>
+
+                        <li className={`dropdown ${isMobileToolsOpen ? 'mobile-open' : ''}`}>
+                            <span className={`dropdown-toggle ${pathname?.startsWith('/student-tools') && !pathname?.includes('vtu-results') ? 'active' : ''}`} onClick={() => setIsMobileToolsOpen(!isMobileToolsOpen)}>
+                                Tools
+                                <svg className="dropdown-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </span>
+                            <div className="dropdown-menu">
+                                <Link href="/student-tools" onClick={() => setIsMenuOpen(false)}>All Tools</Link>
+                                <Link href="/student-tools/resume-builder" onClick={() => setIsMenuOpen(false)}>Resume Builder</Link>
+                                <Link href="/student-tools/code-practice" onClick={() => setIsMenuOpen(false)}>Code Practice</Link>
+                                <Link href="/student-tools/quiz" onClick={() => setIsMenuOpen(false)}>Quiz Arena</Link>
+                                <Link href="/student-tools/typing-test" onClick={() => setIsMenuOpen(false)}>Typing Test</Link>
+                            </div>
+                        </li>
+                        
+                        <li><Link href="/upload" className={pathname === '/upload' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Upload</Link></li>
+                        <li><Link href="/student-tools/vtu-results" className={pathname === '/student-tools/vtu-results' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Results</Link></li>
+                        <li><a href="https://vtu.ac.in/en/category/examination/" target="_blank" rel="noopener noreferrer">Academics</a></li>
+                        <li className={`dropdown ${isMobileLegalOpen ? 'mobile-open' : ''}`}>
+                            <span className={`dropdown-toggle ${pathname?.startsWith('/legal') ? 'active' : ''}`} onClick={() => setIsMobileLegalOpen(!isMobileLegalOpen)}>
+                                Legal
+                                <svg className="dropdown-chevron" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </span>
+                            <div className="dropdown-menu">
+                                <Link href="/legal/about" onClick={() => setIsMenuOpen(false)}>About Us</Link>
+                                <Link href="/legal/privacy" onClick={() => setIsMenuOpen(false)}>Privacy Policy</Link>
+                                <Link href="/legal/terms" onClick={() => setIsMenuOpen(false)}>Terms &amp; Conditions</Link>
+                                <Link href="/legal/disclaimer" onClick={() => setIsMenuOpen(false)}>Disclaimer</Link>
+                                <Link href="/legal/faqs" onClick={() => setIsMenuOpen(false)}>FAQs</Link>
+                                <Link href="/legal/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div className="mobile-drawer-footer">
+                        <div className="mobile-theme-row">
+                            <div className="mobile-theme-info">
+                                <span className="mobile-theme-title">Theme</span>
+                                <span className="mobile-theme-state">{theme === 'dark' ? 'Dark Mode' : 'Light Mode'}</span>
+                            </div>
+                            <button className="theme-icon-btn" aria-label="Toggle Theme" onClick={toggleTheme}>
+                                {theme === 'dark' ? (
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <circle cx="12" cy="12" r="5"></circle>
+                                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                    </svg>
+                                ) : (
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                    </svg>
+                                )}
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="nav-actions">
                     <button className="nav-search-btn" aria-label="Search" onClick={() => setIsSearchOpen(true)}>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                     </button>
-                    
-                    <div className="nav-separator"></div>
 
-                    <button className="theme-switch" aria-label="Toggle Theme" onClick={toggleTheme}>
-                        <svg className="icon-moon-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                        <div className="switch-knob"></div>
-                        <svg className="icon-sun-side" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <button className="theme-icon-btn" aria-label="Toggle Theme" onClick={toggleTheme}>
+                        {theme === 'dark' ? (
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        ) : (
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        )}
                     </button>
-                    
-                    <a href="https://whatsapp.com/channel/0029Vav2A1CEwEk0N2paBj3X" target="_blank" rel="noopener noreferrer" className="btn-join">Join Us</a>
                 </div>
             </div>
             {isMenuOpen && <div className="mobile-overlay active" onClick={toggleMenu}></div>}
