@@ -3,24 +3,20 @@ import { NextResponse } from 'next/server';
 export async function POST(req: Request) {
   try {
     const body = await req.json();
+    
+    // Specifically use the Notes Upload Webhook URL
     const webhookUrl =
       process.env.NOTES_GOOGLE_SHEET_WEBHOOK_URL ||
-      process.env.GOOGLE_SHEET_WEBHOOK_URL ||
       "https://script.google.com/macros/s/AKfycbxMcAAgcAZfPldSYOW63dBZBCO7u7zkLNs2RaGecM9oI7HMQXM_K-EgQGJKwbx3epf7/exec";
 
-    if (!webhookUrl) {
-      return NextResponse.json({ 
-        success: false, 
-        error: 'GOOGLE_SHEET_WEBHOOK_URL is not configured on the server. Please check your .env file.' 
-      }, { status: 500 });
-    }
-
-    const fileList = Array.isArray(body.files) ? body.files : [];
-    const fileUrls = fileList.map((f: any) => f?.url || f).filter(Boolean).join('\n');
-    const fileNames = fileList.map((f: any) => f?.name || '').filter(Boolean).join(', ');
-    const materialTypesStr = Array.isArray(body.materialTypes) 
-      ? body.materialTypes.join(', ') 
-      : (body.materialTypes || '');
+    const rawFiles = Array.isArray(body.files) ? body.files : [];
+    const fileUrls = rawFiles.map((f: any) => f?.url || f).filter(Boolean).join('\n');
+    const fileNames = rawFiles.map((f: any) => f?.name || '').filter(Boolean).join(', ');
+    
+    const materialTypesArray = Array.isArray(body.materialTypes)
+      ? body.materialTypes
+      : body.materialTypes ? [body.materialTypes] : [];
+    const materialTypesStr = materialTypesArray.join(', ');
 
     const payload = {
       timestamp: new Date().toISOString(),
@@ -34,9 +30,10 @@ export async function POST(req: Request) {
       subjectCode: body.subjectCode || '',
       subjectName: body.subjectName || '',
       hallOfFame: body.hallOfFame || '',
-      materialTypes: materialTypesStr,
+      materialTypes: materialTypesArray,
+      materialTypesString: materialTypesStr,
       materials: materialTypesStr,
-      files: fileList,
+      files: rawFiles,
       fileUrls: fileUrls,
       fileNames: fileNames,
     };
@@ -58,6 +55,15 @@ export async function POST(req: Request) {
     } catch {
       data = { result: responseText };
     }
+
+    if (!response.ok) {
+      console.error('[submit-form] Webhook returned non-200 status:', response.status, responseText);
+      return NextResponse.json({ 
+        success: false, 
+        error: `Google Sheets returned HTTP ${response.status}`,
+        details: responseText
+      }, { status: 502 });
+    }
     
     return NextResponse.json({ 
       success: true, 
@@ -66,7 +72,7 @@ export async function POST(req: Request) {
     }, { status: 200 });
 
   } catch (error: any) {
-    console.error('Google Sheets submission error:', error);
+    console.error('[submit-form] Error during submission:', error);
     return NextResponse.json({ 
       success: false, 
       error: error.message || 'Server error during submission' 
