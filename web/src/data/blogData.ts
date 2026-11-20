@@ -857,7 +857,7 @@ export const blogPosts: BlogPost[] = [
         tag: "VTU Updates",
         imageBg: "linear-gradient(135deg, #0f172a, #1e293b, #334155)",
         content: `
-            <img src="/images/weather_alert_banner.png" alt="IMD Heavy Rain Alert July 8 2026" />
+            <img src="/images/weather_alert_banner.jpg" alt="IMD Heavy Rain Alert July 8 2026" />
             <p>India is witnessing an intense phase of the southwest monsoon, with heavy rainfall affecting several regions across the country. The <strong>India Meteorological Department (IMD)</strong> has issued a weather alert for <strong>July 8, 2026</strong>, warning of heavy rain, thunderstorms, lightning, and strong winds reaching speeds of <strong>up to 85 km/h</strong> in multiple states.</p>
 
             <p>According to the IMD, the next 12 hours are expected to be particularly challenging for parts of North and East India, where severe weather conditions could disrupt normal life. Residents are advised to remain cautious, while farmers and fishermen have been urged to take necessary safety precautions.</p>
@@ -1322,7 +1322,7 @@ export const blogPosts: BlogPost[] = [
         tag: "Exam Updates",
         imageBg: "linear-gradient(135deg, #0a3d62, #3c6382)",
         content: `
-            <img src="/images/sbipo.png" alt="sbi po" />
+            <img src="/images/sbipo.jpg" alt="sbi po" />
             <p>The <strong>State Bank of India (SBI)</strong> has officially started the <strong>SBI PO Apply Online 2026</strong> process for <strong>1,500 Probationary Officer (PO)</strong> vacancies. Graduates aspiring to build a rewarding career in the banking sector can now submit their online applications through the official SBI Careers portal or directly through the IBPS registration portal.</p>
 
             <p><strong>📌 Direct Apply Link:</strong> <a href="https://ibpsreg.ibps.in/sbipojun26/" target="_blank" rel="noopener noreferrer">https://ibpsreg.ibps.in/sbipojun26/</a></p>
@@ -1801,7 +1801,7 @@ export const blogPosts: BlogPost[] = [
             <p><strong>Visvesvaraya Technological University (VTU), Belagavi</strong>, has once again surprised students by announcing the <strong>6th semester results in just 5 minutes</strong>. What's even more impressive is that this isn't the first record the university has broken. Earlier, VTU had declared the <strong>8th semester results in 10 minutes</strong>, which itself was considered a major achievement.</p>
 
             <p>Now, the university has managed to cut that time in half, setting a new benchmark for result processing.</p>
-            <img src="/images/vtu cong.png" alt="vtu congratulations" />
+            <img src="/images/vtu_cong.jpg" alt="vtu congratulations" />
 
             <h2>From 10 Minutes to Just 5 – A Remarkable Improvement</h2>
 
@@ -1883,7 +1883,7 @@ export const blogPosts: BlogPost[] = [
             <p>The Central Board of Secondary Education (CBSE) is expected to declare the <strong>Class 10 Second Board Exam Result 2026</strong> very soon, likely by <strong>June 30, 2026</strong>. The exams were conducted between May 15 and May 21, 2026, and over 6.68 lakh students participated.</p>
 
             <p>Here is everything you need to know about checking your scores and how the new two-board exam system works.</p>
-            <img src="/images/results.png" alt="results" />
+            <img src="/images/results.jpg" alt="results" />
 
 
             <h2>Where to Check Your Results</h2>

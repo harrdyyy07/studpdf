@@ -120,6 +120,9 @@ function parseVtuHtml(html: string): any {
   };
 }
 
+// In-memory cache for recent student results to reduce load and avoid repeat scrapes
+const resultCache = new Map<string, { data: any, expiresAt: number }>();
+
 export async function POST(req: Request) {
   const agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
   try {
@@ -134,6 +137,16 @@ export async function POST(req: Request) {
     const sanitizedUsn = usn.trim().toUpperCase();
     if (!/^[0-9][A-Z]{2}[0-9]{2}[A-Z]{2,3}[0-9]{2,3}$/.test(sanitizedUsn)) {
       return NextResponse.json({ success: false, error: 'Invalid USN format' }, { status: 400 });
+    }
+
+    // Check if result was recently fetched to save serverless execution quota
+    const cached = resultCache.get(sanitizedUsn);
+    if (cached && cached.expiresAt > Date.now()) {
+      return NextResponse.json({
+        success: true,
+        source: 'cache',
+        data: cached.data
+      });
     }
 
     // Sanitize and whitelist indexPage to prevent SSRF and Path Traversal
@@ -163,6 +176,12 @@ export async function POST(req: Request) {
 
     const html = await res.text();
     const parsedData = parseVtuHtml(html);
+
+    // Cache successful result for 10 minutes (prevents duplicate scraping)
+    resultCache.set(sanitizedUsn, {
+      data: parsedData,
+      expiresAt: Date.now() + 10 * 60 * 1000
+    });
 
     return NextResponse.json({
       success: true,

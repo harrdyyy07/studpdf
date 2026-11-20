@@ -29,8 +29,18 @@ async function getIndexPageForCycle(cycleFile: string): Promise<string> {
   return fallbackMap[cycleFile] || '/MJ26cbcs/index.php';
 }
 
+// In-memory cache for active paths to reduce external fetch calls and serverless execution time
+const pathCache = new Map<string, { data: { indexPage: string, captchaPage: string }, expiresAt: number }>();
+
 // Helper to scrape the active exam paths dynamically
 async function findActivePaths(targetCycle: string | null): Promise<{ indexPage: string, captchaPage: string }> {
+  const cacheKey = targetCycle || '__latest__';
+  const now = Date.now();
+  const cached = pathCache.get(cacheKey);
+  if (cached && cached.expiresAt > now) {
+    return cached.data;
+  }
+
   const defaultPath = '/MJ26cbcs/index.php';
   const agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
@@ -50,10 +60,14 @@ async function findActivePaths(targetCycle: string | null): Promise<{ indexPage:
     }
 
     const indexPage = await getIndexPageForCycle(cycleFile);
-    return {
+    const result = {
       indexPage: indexPage,
       captchaPage: `${indexPage.substring(0, indexPage.lastIndexOf('/') + 1)}`
     };
+
+    // Cache for 15 minutes
+    pathCache.set(cacheKey, { data: result, expiresAt: now + 15 * 60 * 1000 });
+    return result;
   } catch (e) {
     console.error('Error finding active paths:', e);
     return {
