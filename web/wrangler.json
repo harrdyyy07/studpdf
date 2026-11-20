@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "studpdf",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "GOOGLE_SHEET_WEBHOOK_URL": "https://script.google.com/macros/s/AKfycbz2mhTGASB3y78ueo1lGov5_WyJvQ3jZbufn-VOd8DAZdbzxHn9cG5VKXvUtTyt166RBw/exec"
+  }
+}
