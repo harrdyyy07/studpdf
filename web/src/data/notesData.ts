@@ -2304,6 +2304,14 @@ export const siteData: SiteData = {
                       {id: 4, name: "Module-4 notes", desc: "Hydraulics & Pneumatics bme702 Module-4 Notes", link:"https://drive.google.com/file/d/1jSQuNZzuaK2YXJwVgnCNuXCap-OFb5kS/view?usp=drive_link", type:"notes"}, 
                       {id: 5, name: "Module-5 notes", desc: "Hydraulics & Pneumatics bme702 Module-5 Notes", link:"https://drive.google.com/file/d/16tlL2hbCGQVs3T2TCVCJcOQM576PBxPK/view?usp=drive_link", type:"notes"}              
               ] },
+              { name: "Control Engineering", code: "BME703", credits: "3 CR", slug: "control-engineering-ce-bme703-vtu-notes", modules: [
+                      {id: 1, name: "Module-1 notes", desc: "Control Engineering bme703 Module-1 Notes", link:"https://drive.google.com/file/d/1GT8wRFqmQbxUXbUaIfoodF1m2Vf-yKHx/view?usp=drive_link", type:"notes"},
+                      {id: 2, name: "Module-2 notes", desc: "Control Engineering bme703 Module-2 Notes", link:"https://drive.google.com/file/d/1GbuXOV4eZnun8LzJ-eEXgeh8PZpLPyNc/view?usp=drive_link", type:"notes"},  
+                      {id: 3, name: "Module-3 notes", desc: "Control Engineering bme703 Module-3 Notes", link:"https://drive.google.com/file/d/1R1t72XWnEySx6nyfTYE0KOqycRPVCA9B/view?usp=drive_link", type:"notes"}, 
+                      {id: 4, name: "Module-4 notes", desc: "Control Engineering bme703 Module-4 Notes", link:"https://drive.google.com/file/d/1VLMS4VA6UHs1krlg1wKCjfjOKWjx8AC_/view?usp=drive_link", type:"notes"}, 
+                      {id: 5, name: "Module-5 notes", desc: "Control Engineering bme703 Module-5 Notes", link:"https://drive.google.com/file/d/1Gtw_AJk1XDzN2ofAEu0dXuy48G8eSagx/view?usp=drive_link", type:"notes"}              
+              ] },
+              
                      
                 ]
             }
