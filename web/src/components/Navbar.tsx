@@ -107,6 +107,7 @@ const Navbar = () => {
 
                     <ul className="nav-links">
                         <li><Link href="/" className={pathname === '/' ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+                        <li><Link href="/model-papers" className={pathname?.startsWith('/model-papers') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Model Papers</Link></li>
                         <li><Link href="/blog" className={pathname?.startsWith('/blog') ? 'active' : ''} onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
                         
                         <li className={`dropdown ${isMobileCalcOpen ? 'mobile-open' : ''}`}>
@@ -132,6 +133,8 @@ const Navbar = () => {
                             </span>
                             <div className="dropdown-menu">
                                 <Link href="/student-tools" onClick={() => setIsMenuOpen(false)}>All Tools</Link>
+                                <Link href="/model-papers" onClick={() => setIsMenuOpen(false)}>Model Papers</Link>
+                                <Link href="/previous-year-question-papers" onClick={() => setIsMenuOpen(false)}>Previous Year Papers</Link>
                                 <Link href="/student-tools/resume-builder" onClick={() => setIsMenuOpen(false)}>Resume Builder</Link>
                                 <Link href="/student-tools/code-practice" onClick={() => setIsMenuOpen(false)}>Code Practice</Link>
                                 <Link href="/student-tools/quiz" onClick={() => setIsMenuOpen(false)}>Quiz Arena</Link>

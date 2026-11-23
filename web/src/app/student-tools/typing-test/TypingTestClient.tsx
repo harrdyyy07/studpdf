@@ -284,15 +284,7 @@ export default function TypingTestClient() {
     }, [isCompleted]);
 
     // Live Metrics Calculations
-    const getElapsedSeconds = () => {
-        if (!started) return 0;
-        if (endTimeRef.current && startTimeRef.current) {
-            return Math.max(1, (endTimeRef.current - startTimeRef.current) / 1000);
-        }
-        return Math.max(1, duration - timeLeft);
-    };
-
-    const elapsedSeconds = getElapsedSeconds();
+    const elapsedSeconds = !started ? 0 : Math.max(1, duration - timeLeft);
     const timeInMinutes = Math.max(elapsedSeconds / 60, 0.0167); // avoid division by zero
 
     // Correct vs Error calculation

@@ -36,7 +36,9 @@ export const AdSenseSideRails: React.FC<AdSenseSideRailsProps> = ({
     if (typeof window === 'undefined') return;
 
     const checkSize = () => {
-      const matchesWidth = window.innerWidth >= 1200;
+      // Container is max 1200px. Skyscraper ads need 140px on left and right + margins.
+      // Only show rails when viewport has at least 1520px width so ads never overlap content.
+      const matchesWidth = window.innerWidth >= 1520;
       const matchesHeight = window.innerHeight >= 600;
       setShouldShow(matchesWidth && matchesHeight);
     };

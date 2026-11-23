@@ -60,7 +60,7 @@ const Footer = () => {
                     <ul className="footer-links footer-dropdown-menu">
                         <li><a href="https://vtu.ac.in/academic-calendar/" target="_blank" rel="noopener noreferrer">Academic Calendar</a></li>
                         <li><a href="https://results.vtu.ac.in/" target="_blank" rel="noopener noreferrer">VTU Result</a></li>
-                        <li><a href="https://vtu.ac.in/model-question-paper-b-e-b-tech-b-arch/" target="_blank" rel="noopener noreferrer">VTU Model Paper</a></li>
+                        <li><Link href="/model-papers">VTU Model Papers</Link></li>
                         <li><a href="https://vtu.ac.in/en/category/examination/" target="_blank" rel="noopener noreferrer">VTU Examination</a></li>
                     </ul>
                 </div>
