@@ -165,7 +165,7 @@ const ModelPapers2025Client = () => {
                             </p>
                         </div>
                         <div className="self-start sm:self-auto shrink-0">
-                            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 shadow-xs">
+                            <span className="mp-code-pill-emerald inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 shadow-xs">
                                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                                 {filteredPapers.length} Subjects Available
                             </span>
@@ -173,8 +173,8 @@ const ModelPapers2025Client = () => {
                     </div>
 
                     {/* Modern Flexbox Search Input Box (Zero text/icon overlap) */}
-                    <div 
-                        className="w-full rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-slate-50/80 dark:bg-slate-800/60 focus-within:border-emerald-600 focus-within:bg-white dark:focus-within:bg-slate-900 focus-within:ring-4 focus-within:ring-emerald-500/10 transition-all shadow-sm mb-3"
+                    <div
+                        className="mp-search-input-box w-full rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-slate-50/80 dark:bg-slate-800/80 focus-within:border-emerald-600 focus-within:bg-white dark:focus-within:bg-slate-900 focus-within:ring-4 focus-within:ring-emerald-500/10 transition-all shadow-sm mb-3"
                         style={{
                             display: 'flex',
                             alignItems: 'center',
@@ -186,7 +186,7 @@ const ModelPapers2025Client = () => {
                             boxSizing: 'border-box'
                         }}
                     >
-                        <div 
+                        <div
                             className="shrink-0 flex items-center justify-center text-emerald-500 dark:text-emerald-400"
                             style={{ flexShrink: 0, width: '22px', height: '22px' }}
                         >
@@ -202,7 +202,7 @@ const ModelPapers2025Client = () => {
                             onChange={(e) => setSearchQuery(e.target.value)}
                             autoComplete="off"
                             spellCheck="false"
-                            className="flex-1 w-full bg-transparent border-0 outline-none text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 text-sm md:text-base font-medium"
+                            className="flex-1 w-full bg-transparent border-0 outline-none text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-400 text-sm md:text-base font-medium"
                             style={{
                                 border: 'none',
                                 outline: 'none',
@@ -213,7 +213,6 @@ const ModelPapers2025Client = () => {
                                 padding: '0 4px',
                                 margin: 0,
                                 fontSize: '1rem',
-                                color: 'inherit',
                                 boxShadow: 'none'
                             }}
                         />
@@ -233,13 +232,13 @@ const ModelPapers2025Client = () => {
                     {/* Quick Popular Search Tags */}
                     {!searchQuery && (
                         <div className="flex items-center gap-1.5 text-xs text-slate-500 dark:text-slate-400 mb-5 flex-wrap">
-                            <span className="font-semibold text-slate-400">Popular:</span>
+                            <span className="font-semibold text-slate-400 dark:text-slate-500">Popular:</span>
                             {['1BMATC101', '1BPHYS102', '1BCHEM102', '1BPYTK107', '1BPOPS103'].map((tag) => (
                                 <button
                                     key={tag}
                                     type="button"
                                     onClick={() => setSearchQuery(tag)}
-                                    className="px-2 py-0.5 rounded-md font-mono text-[11px] bg-slate-100 hover:bg-emerald-50 hover:text-emerald-600 dark:bg-slate-800 dark:hover:bg-emerald-950/60 dark:hover:text-emerald-300 border border-slate-200/70 dark:border-slate-700 transition-colors cursor-pointer"
+                                    className="mp-tag-btn mp-tag-btn-emerald px-2.5 py-1 rounded-lg font-mono text-[11px] font-semibold bg-slate-100 hover:bg-emerald-50 hover:text-emerald-600 text-slate-700 dark:bg-slate-800 dark:hover:bg-emerald-950/70 dark:text-slate-300 dark:hover:text-emerald-300 border border-slate-200/80 dark:border-slate-700/80 transition-colors cursor-pointer"
                                 >
                                     {tag}
                                 </button>
@@ -256,7 +255,7 @@ const ModelPapers2025Client = () => {
                             {(selectedCategory !== 'ALL' || searchQuery) && (
                                 <button
                                     onClick={() => { setSelectedCategory('ALL'); setSearchQuery(''); }}
-                                    className="text-xs font-bold text-emerald-600 hover:text-emerald-800 dark:text-emerald-400 transition-colors cursor-pointer"
+                                    className="text-xs font-bold text-emerald-600 hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300 transition-colors cursor-pointer"
                                 >
                                     Reset filters
                                 </button>
@@ -272,13 +271,13 @@ const ModelPapers2025Client = () => {
                                         onClick={() => setSelectedCategory(cat.key)}
                                         className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-bold transition-all cursor-pointer select-none border ${isSelected
                                             ? 'bg-emerald-600 text-white border-emerald-600 shadow-md shadow-emerald-600/30 scale-[1.02]'
-                                            : 'bg-slate-100 hover:bg-slate-200/80 text-slate-700 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 border-slate-200/80 dark:border-slate-700'
+                                            : 'mp-filter-chip-inactive bg-slate-100 hover:bg-slate-200/80 text-slate-700 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-200 border-slate-200/80 dark:border-slate-700'
                                             }`}
                                     >
                                         <span>{cat.label}</span>
-                                        <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold ${isSelected
+                                        <span className={`mp-chip-count px-1.5 py-0.5 rounded-full text-[10px] font-bold ${isSelected
                                             ? 'bg-white/25 text-white'
-                                            : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-400'
+                                            : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
                                             }`}>
                                             {count}
                                         </span>
@@ -301,10 +300,10 @@ const ModelPapers2025Client = () => {
 
                 {/* Results Grid */}
                 {filteredPapers.length === 0 ? (
-                    <div className="text-center py-16 p-8 rounded-3xl border-2 border-dashed border-slate-200 dark:border-gray-800 mb-16 bg-white dark:bg-slate-900/50">
+                    <div className="mp-empty-state text-center py-16 p-8 rounded-3xl border-2 border-dashed border-slate-200 dark:border-slate-800 mb-16 bg-white dark:bg-slate-900/50">
                         <div className="text-5xl mb-3">🔍</div>
-                        <h3 className="text-lg font-bold text-slate-800 dark:text-white mb-1">No Model Papers Found</h3>
-                        <p className="text-sm text-slate-500 dark:text-gray-400 mb-5 max-w-md mx-auto">
+                        <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-1">No Model Papers Found</h3>
+                        <p className="text-sm text-slate-600 dark:text-slate-400 mb-5 max-w-md mx-auto">
                             No 2025 scheme papers matched your search for &ldquo;{searchQuery}&rdquo;. Try another subject code or keyword.
                         </p>
                         <button
@@ -324,11 +323,11 @@ const ModelPapers2025Client = () => {
                                 <div>
                                     {/* Card Top Row: Code Pill Left, Cycle Badge Right */}
                                     <div className="flex items-center justify-between gap-2 mb-3.5">
-                                        <span className="font-mono text-xs font-black tracking-wider px-3.5 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/80 shadow-xs flex items-center gap-1.5">
+                                        <span className="mp-code-pill-emerald font-mono text-xs font-black tracking-wider px-3.5 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/80 shadow-xs flex items-center gap-1.5">
                                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 dark:bg-emerald-400" />
                                             {paper.code || '2025 SCHEME'}
                                         </span>
-                                        <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700 flex items-center gap-1.5">
+                                        <span className="mp-meta-pill text-xs font-bold px-3 py-1 rounded-full bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border border-slate-200/80 dark:border-slate-700 flex items-center gap-1.5">
                                             ✨ {paper.stream || '1st / 2nd Sem'}
                                         </span>
                                     </div>
@@ -339,7 +338,7 @@ const ModelPapers2025Client = () => {
                                     </h3>
 
                                     {/* Scheme / BOS Subtitle */}
-                                    <div className="flex items-center gap-2 text-xs font-semibold text-slate-400 dark:text-slate-500 mb-5">
+                                    <div className="mp-meta-sub flex items-center gap-2 text-xs font-semibold text-slate-500 dark:text-slate-400 mb-5">
                                         <span>2025 Scheme CBCS</span>
                                         <span>•</span>
                                         <span>Official VTU Belagavi Board of Studies</span>
@@ -348,7 +347,7 @@ const ModelPapers2025Client = () => {
 
                                 {/* Card Footer: Direct Download CTA Button */}
                                 <div className="pt-4 border-t border-slate-100 dark:border-slate-800/80 mt-auto">
-                                    <div className="text-[11px] font-extrabold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-3 flex items-center justify-between">
+                                    <div className="mp-card-footer-label text-[11px] font-extrabold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3 flex items-center justify-between">
                                         <span>Official Board of Studies Paper:</span>
                                         <span className="text-emerald-600 dark:text-emerald-400 font-bold">Verified PDF</span>
                                     </div>
@@ -387,7 +386,7 @@ const ModelPapers2025Client = () => {
                         <h3 className="font-extrabold text-lg sm:text-xl text-slate-900 dark:text-white mb-1.5">
                             Looking for 3rd to 8th Semester Papers?
                         </h3>
-                        <p className="text-sm text-slate-600 dark:text-gray-400 leading-relaxed">
+                        <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                             Access 204+ subjects across all engineering branches under the 2022 Scheme regulations.
                         </p>
                     </div>
