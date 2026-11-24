@@ -158,6 +158,7 @@ const Navbar = () => {
                                 <Link href="/legal/terms" onClick={() => setIsMenuOpen(false)}>Terms &amp; Conditions</Link>
                                 <Link href="/legal/disclaimer" onClick={() => setIsMenuOpen(false)}>Disclaimer</Link>
                                 <Link href="/legal/faqs" onClick={() => setIsMenuOpen(false)}>FAQs</Link>
+                                <Link href="/support" onClick={() => setIsMenuOpen(false)}>Support Us</Link>
                                 <Link href="/legal/contact" onClick={() => setIsMenuOpen(false)}>Contact Us</Link>
                             </div>
                         </li>
