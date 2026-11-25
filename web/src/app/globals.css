@@ -719,6 +719,151 @@
   color: #94a3b8 !important;
 }
 
+/* ─────────────────────────────────────────────────────────────
+   Previous Year Question Papers (PYQP) Redesign Styles
+   ───────────────────────────────────────────────────────────── */
+
+.pyqp-branch-card {
+  border-radius: 1.25rem;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  box-shadow: 0 4px 16px -4px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+.pyqp-branch-card:hover {
+  border-color: rgba(79, 70, 229, 0.35);
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.1);
+}
+
+[data-theme='dark'] .pyqp-branch-card,
+.dark .pyqp-branch-card {
+  background: #0f172a;
+  border-color: #1e293b;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme='dark'] .pyqp-branch-card:hover,
+.dark .pyqp-branch-card:hover {
+  border-color: rgba(99, 102, 241, 0.45);
+}
+
+.pyqp-branch-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.35rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .pyqp-branch-trigger {
+    padding: 1.4rem 1.75rem;
+  }
+}
+
+.pyqp-branch-trigger:hover {
+  background: rgba(248, 250, 252, 0.9);
+}
+
+[data-theme='dark'] .pyqp-branch-trigger:hover,
+.dark .pyqp-branch-trigger:hover {
+  background: rgba(30, 41, 59, 0.55);
+}
+
+.pyqp-paper-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.875rem;
+  padding: 0.25rem 1.35rem 1.5rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .pyqp-paper-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0.25rem 1.75rem 1.75rem;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .pyqp-paper-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.pyqp-paper-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.85rem;
+  padding: 1.1rem 1rem;
+  border-radius: 1rem;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.pyqp-paper-card:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  border-color: #4f46e5;
+  box-shadow: 0 12px 24px -8px rgba(79, 70, 229, 0.2);
+}
+
+[data-theme='dark'] .pyqp-paper-card,
+.dark .pyqp-paper-card {
+  background: rgba(30, 41, 59, 0.55);
+  border-color: #334155;
+}
+
+[data-theme='dark'] .pyqp-paper-card:hover,
+.dark .pyqp-paper-card:hover {
+  background: rgba(30, 41, 59, 0.95);
+  border-color: #818cf8;
+  box-shadow: 0 12px 24px -8px rgba(99, 102, 241, 0.28);
+}
+
+.pyqp-cta-banner {
+  margin-top: 2.5rem;
+  padding: 1.75rem 1.5rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
+  border: 1.5px solid rgba(79, 70, 229, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .pyqp-cta-banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2.25rem;
+  }
+}
+
+[data-theme='dark'] .pyqp-cta-banner,
+.dark .pyqp-cta-banner {
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.14) 0%, rgba(30, 41, 59, 0.7) 100%);
+  border-color: rgba(99, 102, 241, 0.28);
+}
+
 :root {
   --font-dm-sans: 'DM Sans', system-ui, sans-serif;
   --font-marck-script: 'Marck Script', cursive;
