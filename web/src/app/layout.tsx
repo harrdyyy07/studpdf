@@ -7,6 +7,7 @@ import Script from "next/script";
 import Preloader from "@/components/Preloader";
 import WhatsAppPopup from "@/components/WhatsAppPopup";
 import WhatsAppFloating from "@/components/WhatsAppFloating";
+import SupportPopup from "@/components/SupportPopup";
 import AdSenseSideRails from "@/components/AdSenseSideRails";
 
   
@@ -123,6 +124,7 @@ export default function RootLayout({
         <AdSenseSideRails />
         <WhatsAppPopup />
         <WhatsAppFloating />
+        <SupportPopup />
         <Footer />
       </body>
     </html>

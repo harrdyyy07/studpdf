@@ -6,9 +6,9 @@ export const SchemeSelector: React.FC = () => {
   return (
     <div>
       <SectionHeader
-        eyebrow="Scheme Regulations"
-        title="Select Scheme Regulations"
-        subtitle="Choose your enrolled syllabus scheme to access subject-wise model question papers and official examination blueprints."
+        eyebrow="Choose Your Scheme"
+        title="Select Your Syllabus Scheme"
+        subtitle="Pick the scheme matching your year of admission to access subject-wise official VTU model question papers."
         align="left"
         className="mb-10"
       />
@@ -16,36 +16,44 @@ export const SchemeSelector: React.FC = () => {
       <div className="mp-schemes-grid grid md:grid-cols-2 gap-6 items-stretch">
         {/* 2025 Scheme Card */}
         <SchemeCard
-          badgeLabel="Newly Revised 2025"
+          schemeYear="2025"
+          badgeLabel="1st Year • New"
           badgeVariant="green"
           badgeDot
+          audienceTitle="1st & 2nd Semester Students"
+          audienceSubtitle="Students who joined engineering in 2025–26 (Physics & Chemistry Cycles)."
+          quickTags={['15 Core Subjects', 'Sem 1 & 2', 'P-Cycle & C-Cycle']}
           icon={<span>📘</span>}
           title="2025 Scheme Model Papers"
-          description="Formulated for 1st and 2nd Semester students enrolled under the newly revised 2025 CBCS guidelines. Covers Physics and Chemistry cycles with updated question distribution."
+          description="Official model papers under the newly revised 2025 CBCS guidelines for first-year engineering."
           checklist={[
-            { label: '15 Core Subjects: Mathematics, Physics, Chemistry, C, Python' },
-            { label: 'Cycle-Wise: P-Cycle & C-Cycle specific paper structure' },
-            { label: 'Official PDFs: Direct downloads from VTU Belagavi Board of Studies' },
+            { lead: 'Subjects', label: 'Mathematics, Physics, Chemistry, C, Python & core courses' },
+            { lead: 'Cycle-Wise', label: 'Organized by P-Cycle & C-Cycle paper structure' },
+            { lead: 'Official PDFs', label: 'Direct downloads from VTU Belagavi Board of Studies' },
           ]}
-          ctaLabel="Access 2025 Model Papers"
+          ctaLabel="Open 2025 Scheme Papers"
           ctaHref="/model-papers/2025-scheme"
           accentColor="emerald"
         />
 
         {/* 2022 Scheme Card */}
         <SchemeCard
-          badgeLabel="Core Curriculum (1st–8th Sem)"
+          schemeYear="2022"
+          badgeLabel="All Branches • 1st–8th Sem"
           badgeVariant="indigo"
           badgeDot
+          audienceTitle="2nd, 3rd & 4th Year (Sem 1–8)"
+          audienceSubtitle="Students admitted in 2022, 2023, or 2024 across all engineering branches."
+          quickTags={['204 Subjects', '909 Paper Sets', 'All Branches']}
           icon={<span>📚</span>}
           title="2022 Scheme Model Papers"
-          description="Complete repository of model question papers across all engineering departments (CSE, ISE, ECE, EEE, Mech, Civil, AIML & more) spanning 1st through 8th semesters."
+          description="Complete repository for CSE, ISE, ECE, EEE, Mech, Civil, AIML & all departmental electives."
           checklist={[
-            { label: '204 Subjects: All branches & departmental electives' },
-            { label: '909 Question Paper Sets: Multiple sets per subject (Set 1, 2, 3)' },
-            { label: 'Instant Filter: Quick search by Subject Code or Title' },
+            { lead: '204 Subjects', label: 'Covers all branches & departmental electives' },
+            { lead: '909 Paper Sets', label: 'Multiple sets per subject (Set 1, Set 2, Set 3)' },
+            { lead: 'Instant Filter', label: 'Quick search by Subject Code or Subject Title' },
           ]}
-          ctaLabel="Access 2022 Model Papers"
+          ctaLabel="Open 2022 Scheme Papers"
           ctaHref="/model-papers/2022-scheme"
           accentColor="indigo"
         />
