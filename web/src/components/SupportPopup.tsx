@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const DISMISS_STORAGE_KEY = 'vtuwise_support_popup_dismissed_at';
-const DISMISS_COOLDOWN_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 const SHOW_DELAY_MS = 25000; // 25 seconds after page load
 
 const SupportPopup: React.FC = () => {
@@ -13,16 +12,8 @@ const SupportPopup: React.FC = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [isClosing, setIsClosing] = useState(false);
 
-    const dismiss = useCallback((cooldownMs: number = DISMISS_COOLDOWN_MS) => {
+    const dismiss = useCallback(() => {
         setIsClosing(true);
-        try {
-            localStorage.setItem(
-                DISMISS_STORAGE_KEY,
-                String(Date.now() + cooldownMs)
-            );
-        } catch {
-            // Ignore storage errors (e.g. private browsing)
-        }
         setTimeout(() => {
             setIsVisible(false);
             setIsClosing(false);
@@ -124,7 +115,7 @@ const SupportPopup: React.FC = () => {
             <div className="vtu-support-actions">
                 <Link
                     href="/support"
-                    onClick={() => dismiss(14 * 24 * 60 * 60 * 1000)}
+                    onClick={dismiss}
                     className="vtu-support-cta"
                 >
                     <span>Support Us</span>

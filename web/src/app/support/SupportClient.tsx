@@ -6,8 +6,20 @@ import Link from 'next/link';
 
 const CASHFREE_URL = 'https://payments.cashfree.com/forms/vtuwise';
 const PAYMENT_MODES = ['UPI', 'Google Pay', 'PhonePe', 'Paytm', 'Cards', 'NetBanking'];
+const SUPPORT_POPUP_DISMISS_KEY = 'vtuwise_support_popup_dismissed_at';
+const PAY_CLICK_COOLDOWN_MS = 24 * 60 * 60 * 1000; // 1 day
 
 const SupportClient: React.FC = () => {
+    const handlePayClick = () => {
+        try {
+            localStorage.setItem(
+                SUPPORT_POPUP_DISMISS_KEY,
+                String(Date.now() + PAY_CLICK_COOLDOWN_MS)
+            );
+        } catch {
+            // Ignore storage errors (e.g. private browsing)
+        }
+    };
     return (
         <div className="support-page">
             <div className="support-glow" aria-hidden="true" />
@@ -59,6 +71,7 @@ const SupportClient: React.FC = () => {
                     <a
                         href={CASHFREE_URL}
                         target="_parent"
+                        onClick={handlePayClick}
                         className="support-primary-btn"
                     >
                         <span>Contribute Now</span>
@@ -86,6 +99,7 @@ const SupportClient: React.FC = () => {
                         <a
                             href={CASHFREE_URL}
                             target="_parent"
+                            onClick={handlePayClick}
                             title="Click here to pay on Cashfree"
                             className="support-cashfree-badge"
                         >
